@@ -1,0 +1,134 @@
+{
+  "0": [
+    {
+      "ore": {
+        "id": "minecraft:coal_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 72,
+      "size": 140,
+      "chance": 1000
+    },
+    {
+      "ore": {
+        "id": "minecraft:iron_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 72,
+      "size": 90,
+      "chance": 2000
+    },
+    {
+      "ore": {
+        "id": "minecraft:gold_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 32,
+      "size": 90,
+      "chance": 17000
+    },
+    {
+      "ore": {
+        "id": "minecraft:redstone_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 16,
+      "size": 80,
+      "chance": 5000
+    },
+    {
+      "ore": {
+        "id": "minecraft:diamond_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 16,
+      "size": 80,
+      "chance": 47000
+    },
+    {
+      "ore": {
+        "id": "minecraft:lapis_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 32,
+      "size": 70,
+      "chance": 47000
+    },
+    {
+      "ore": {
+        "id": "actuallyadditions:block_misc",
+        "state": {
+          "type": "ore_black_quartz"
+        }
+      },
+      "toReplace": {
+        "id": "minecraft:stone",
+        "state": {
+          "variant": "stone"
+        }
+      },
+      "minY": 0,
+      "maxY": 45,
+      "size": 60,
+      "chance": 5000
+    }
+  ],
+  "-1": [
+    {
+      "ore": {
+        "id": "minecraft:quartz_ore",
+        "state": {}
+      },
+      "toReplace": {
+        "id": "minecraft:netherrack",
+        "state": {}
+      },
+      "minY": 7,
+      "maxY": 117,
+      "size": 110,
+      "chance": 1000
+    }
+  ]
+}

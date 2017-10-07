@@ -1,0 +1,6 @@
+
+{
+  "Name": "transporter",
+  "Registry ID": "personalcars:entitytransporter",
+  "Class": "com.personalcars.entity.EntityTransporter"
+}

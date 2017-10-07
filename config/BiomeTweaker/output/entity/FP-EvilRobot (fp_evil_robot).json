@@ -1,0 +1,6 @@
+
+{
+  "Name": "FP-EvilRobot",
+  "Registry ID": "fp:evil_robot",
+  "Class": "futurepack.common.entity.EntityEvilRobot"
+}
