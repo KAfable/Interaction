@@ -9,11 +9,11 @@ guiScale:0
 particles:0
 bobView:true
 anaglyph3d:false
-maxFps:60
+maxFps:260
 fboEnable:true
 difficulty:2
 fancyGraphics:true
-ao:2
+ao:0
 renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
@@ -91,7 +91,16 @@ key_Mode Switch Key:50
 key_Side Inventory Key:46
 key_Hub Expand Key:45
 key_key.staff_mode.desc:50
+key_keybind.baublesinventory:48
 key_psimisc.keybind:46
+key_quark.keybind.lockBuilding:37
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -104,16 +113,7 @@ key_quark.emote.shrug:0
 key_quark.emote.headbang:0
 key_quark.emote.weep:0
 key_quark.emote.facepalm:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.keybind.toggleAutojump:48
-key_quark.keybind.lockBuilding:37
-key_keybind.baublesinventory:48
 key_key.betterquesting.quests:41
 key_key.cavern.miningAssist:47
 key_key.cavern.magicSpelling:34
@@ -150,6 +150,7 @@ key_Mekanism Item Mode Switch:50
 key_Mekanism Armor Mode Switch:34
 key_Mekanism Feet Mode Switch:35
 key_Mekanism Voice:22
+key_key.appliedenergistics2.terminal:0
 key_bbw.key.mode:50
 key_bbw.key.fluidmode:33
 key_mod.chiselsandbits.chiselmode.single:0
