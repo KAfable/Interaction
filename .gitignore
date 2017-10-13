@@ -13,5 +13,9 @@ options.txt
 config/jei/
 config/theoneprobe.cfg
 config/BiomeTweaker/output/
+<<<<<<< HEAD
 config/IC2.ini
 config/InvTweaks.cfg
+=======
+screenshots/
+>>>>>>> dde1f8015ef71f8cfa6323013a268127d2f06f74
