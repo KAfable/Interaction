@@ -1,0 +1,23 @@
+{
+    "machine": "portal_fabricator",
+    "registryName": "tier1Portal",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:iron_ingot"
+        },
+	{
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "lava",
+	    "amount": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+	    "item": "minecraft:gold_ingot"
+        }
+    ]
+}
