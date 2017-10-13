@@ -19,6 +19,10 @@ recipes.addShaped(<sgextraparts:polisher>, [
   [null, <ore:logWood>, null],
   [null, <ore:stickWood>, null]]);
 
+<minecraft:flint_and_steel>.displayName = "Flint and Stone";
+recipes.remove(<minecraft:flint_and_steel>);
+recipes.addShapeless(<minecraft:flint_and_steel>, [rstone, <minecraft:flint>]);
+
 recipes.removeShaped(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
   [<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>],
