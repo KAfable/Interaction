@@ -167,7 +167,7 @@ recipes.remove(<skyresources:quickdropper>);
 recipes.addShaped(<skyresources:quickdropper>, [
   [rstone, rstone, rstone],
   [rstone, <minecraft:dropper>, rstone],
-  rstone, null, rstone]]);
+  [rstone, null, rstone]]);
 recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
   [rstone, null, rstone],
