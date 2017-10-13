@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "SPOOKY",
     "DENSE",
-    "MAGICAL",
-    "FOREST"
+    "FOREST",
+    "MAGICAL"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -132,7 +132,7 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cavern.entity.EntityCaveman",
+      "Entity Class": "cavern.entity.EntityCavenicCreeper",
       "Weight": 30,
       "Min Group Count": 1,
       "Max Group Count": 1
