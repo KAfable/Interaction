@@ -1,0 +1,6 @@
+
+{
+  "Name": "cyclicmagic.magic_missile",
+  "Registry ID": "cyclicmagic:magic_missile",
+  "Class": "com.lothrazar.cyclicmagic.component.wandmissile.EntityHomingProjectile"
+}
