@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "CONIFEROUS",
-    "COLD",
-    "FOREST"
+    "FOREST",
+    "COLD"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -77,6 +77,30 @@
       "Weight": 6,
       "Min Group Count": 3,
       "Max Group Count": 7
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -129,12 +153,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlizz",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "vazkii.quark.world.entity.EntityDweller",
       "Weight": 10,
       "Min Group Count": 1,
@@ -153,10 +171,10 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "mekanism.common.entity.EntityBabySkeleton",
-      "Weight": 40,
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlizz",
+      "Weight": 10,
       "Min Group Count": 1,
-      "Max Group Count": 3
+      "Max Group Count": 4
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -223,6 +241,12 @@
       "Weight": 30,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mekanism.common.entity.EntityBabySkeleton",
+      "Weight": 40,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Water Creatures": [
@@ -248,48 +272,5 @@
     }
   ],
   "Spawn Biome": true,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "tanzanite"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "BOREAL": [
-      20
-    ]
-  }
+  "Tweaked": false
 }

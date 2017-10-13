@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "SPOOKY",
     "DENSE",
-    "FOREST",
-    "SPOOKY"
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -65,6 +65,30 @@
       "Weight": 6,
       "Min Group Count": 3,
       "Max Group Count": 7
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -224,50 +248,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "amber"
-      }
-    ],
-    "SHROOM Generators": [
-      {
-        "ID": "flora",
-        "Name": "toadstools"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "WET_TEMPERATE": [
-      20
-    ]
-  }
+  "Tweaked": false
 }

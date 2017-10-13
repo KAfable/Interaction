@@ -1,6 +1,6 @@
 
 {
-  "ID": 115,
+  "ID": 46,
   "Name": "Tyros",
   "Resource Location": "fp:tyros",
   "Class": "futurepack.common.dim.biome.BiomeTyros",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HOT",
     "WET",
+    "HOT",
     "JUNGLE"
   ],
   "BiomeManager Entries": {},
@@ -190,28 +190,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

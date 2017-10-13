@@ -20,8 +20,8 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HOT",
     "SANDY",
+    "HOT",
     "DRY"
   ],
   "BiomeManager Entries": {},
@@ -89,12 +89,6 @@
       "Max Group Count": 4
     },
     {
-      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlitz",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "vazkii.quark.world.entity.EntityDweller",
       "Weight": 10,
       "Min Group Count": 1,
@@ -105,6 +99,12 @@
       "Weight": 10,
       "Min Group Count": 1,
       "Max Group Count": 2
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlitz",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 4
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -196,49 +196,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "tiny_cacti"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "lakes",
-        "Name": "quicksand"
-      },
-      {
-        "ID": "ore_single",
-        "Name": "ruby"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "HOT_DESERT": [
-      30
-    ],
-    "WASTELAND": [
-      1
-    ]
-  }
+  "Tweaked": false
 }

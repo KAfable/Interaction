@@ -1,6 +1,6 @@
 
 {
-  "ID": 118,
+  "ID": 41,
   "Name": "Storage Cell",
   "Resource Location": "appliedenergistics2:storage_biome",
   "Class": "appeng.spatial.BiomeGenStorage",
@@ -20,7 +20,8 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "VOID"
+    "PLAINS",
+    "COLD"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -102,28 +103,5 @@
   ],
   "Spawnable Cave Creatures": [],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

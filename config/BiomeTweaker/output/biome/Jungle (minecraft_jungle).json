@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "WET",
     "DENSE",
     "HOT",
-    "WET",
     "JUNGLE"
   ],
   "BiomeManager Entries": {},
@@ -62,6 +62,30 @@
       "Weight": 10,
       "Min Group Count": 4,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -132,12 +156,6 @@
       "Max Group Count": 2
     },
     {
-      "Entity Class": "mekanism.common.entity.EntityBabySkeleton",
-      "Weight": 40,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
       "Weight": 20,
       "Min Group Count": 1,
@@ -202,6 +220,12 @@
       "Weight": 30,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mekanism.common.entity.EntityBabySkeleton",
+      "Weight": 40,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Water Creatures": [
@@ -227,64 +251,5 @@
     }
   ],
   "Spawn Biome": true,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "leaf_piles"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "flora",
-        "Name": "shrubs"
-      },
-      {
-        "ID": "flora",
-        "Name": "rafflesia"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      },
-      {
-        "ID": "flora",
-        "Name": "sprouts"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "topaz"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "TROPICAL": [
-      15
-    ]
-  }
+  "Tweaked": false
 }

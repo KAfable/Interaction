@@ -86,6 +86,24 @@
       "Max Group Count": 2
     },
     {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityDepthsGhoul",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityLesserShoggoth",
+      "Weight": 3,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
       "Weight": 20,
       "Min Group Count": 1,
@@ -175,28 +193,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

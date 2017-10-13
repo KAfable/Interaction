@@ -1,6 +1,6 @@
 
 {
-  "ID": 112,
+  "ID": 43,
   "Name": "Menelaus",
   "Resource Location": "fp:menelaus",
   "Class": "futurepack.common.dim.biome.BiomeMenelaus",
@@ -20,10 +20,10 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
+    "SAVANNA",
     "HOT",
-    "DRY",
     "HILLS",
-    "SAVANNA"
+    "DRY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -191,28 +191,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

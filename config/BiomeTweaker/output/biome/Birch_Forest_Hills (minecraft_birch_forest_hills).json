@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
-    "HILLS"
+    "HILLS",
+    "FOREST"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -48,6 +48,30 @@
       "Weight": 8,
       "Min Group Count": 4,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -201,70 +225,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "leaf_piles"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "flora",
-        "Name": "dead_leaf_piles"
-      },
-      {
-        "ID": "flora",
-        "Name": "clover_patches"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      },
-      {
-        "ID": "flora",
-        "Name": "poison_ivy"
-      },
-      {
-        "ID": "double_flora",
-        "Name": "flax"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "amber"
-      }
-    ],
-    "SHROOM Generators": [
-      {
-        "ID": "flora",
-        "Name": "toadstools"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

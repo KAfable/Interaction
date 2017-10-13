@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "PLAINS",
-    "RARE",
-    "HOT",
     "SAVANNA",
-    "SPARSE"
+    "PLAINS",
+    "SPARSE",
+    "HOT",
+    "RARE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -69,6 +69,30 @@
       "Weight": 8,
       "Min Group Count": 4,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -121,12 +145,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlitz",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "vazkii.quark.world.entity.EntityDweller",
       "Weight": 10,
       "Min Group Count": 1,
@@ -137,6 +155,12 @@
       "Weight": 10,
       "Min Group Count": 1,
       "Max Group Count": 2
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlitz",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 4
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -228,44 +252,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "ruby"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

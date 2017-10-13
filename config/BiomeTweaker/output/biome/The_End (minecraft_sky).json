@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "END",
-    "COLD",
-    "DRY"
+    "DRY",
+    "COLD"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -32,6 +32,12 @@
       "Weight": 10,
       "Min Group Count": 4,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie",
+      "Weight": 5,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -110,42 +116,5 @@
   ],
   "Spawnable Cave Creatures": [],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "ORE_PRE Generators": [
-      {
-        "ID": "crystals",
-        "Name": "crystals"
-      },
-      {
-        "ID": "ore_single",
-        "Name": "amethyst"
-      },
-      {
-        "ID": "ore_single",
-        "Name": "biome_essence"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

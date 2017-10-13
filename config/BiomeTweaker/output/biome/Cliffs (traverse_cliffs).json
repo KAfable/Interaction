@@ -1,6 +1,6 @@
 
 {
-  "ID": 139,
+  "ID": 61,
   "Name": "Cliffs",
   "Resource Location": "traverse:cliffs",
   "Class": "prospector.traverse.world.biomes.BiomeCliffs",
@@ -20,9 +20,9 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "COLD",
     "MOUNTAIN",
-    "HILLS"
+    "HILLS",
+    "COLD"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -74,12 +74,84 @@
       "Weight": 5,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicSkeleton",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicCreeper",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicZombie",
+      "Weight": 30,
+      "Min Group Count": 2,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicSpider",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicWitch",
+      "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCrazySkeleton",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCrazyCreeper",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCrazyZombie",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCrazySpider",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCavenicBear",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cavern.entity.EntityCaveman",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     }
   ],
   "Spawnable Water Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntitySquid",
       "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "cavern.entity.EntityAquaSquid",
+      "Weight": 100,
       "Min Group Count": 4,
       "Max Group Count": 4
     }
@@ -93,28 +165,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

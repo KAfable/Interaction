@@ -21,9 +21,9 @@
   "Enable Snow": true,
   "Dictionary Types": [
     "CONIFEROUS",
-    "COLD",
+    "SNOWY",
     "FOREST",
-    "SNOWY"
+    "COLD"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [
@@ -130,12 +130,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlizz",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "vazkii.quark.world.entity.EntityDweller",
       "Weight": 10,
       "Min Group Count": 1,
@@ -152,6 +146,12 @@
       "Weight": 25,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBlizz",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 4
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -243,48 +243,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "tanzanite"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "TUNDRA": [
-      10
-    ]
-  }
+  "Tweaked": false
 }

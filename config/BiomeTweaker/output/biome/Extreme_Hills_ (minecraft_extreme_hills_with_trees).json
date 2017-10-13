@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
+    "SPARSE",
     "MOUNTAIN",
-    "SPARSE"
+    "FOREST"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -107,12 +107,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBasalz",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "vazkii.quark.world.entity.EntityDweller",
       "Weight": 10,
       "Min Group Count": 1,
@@ -123,6 +117,12 @@
       "Weight": 10,
       "Min Group Count": 1,
       "Max Group Count": 2
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBasalz",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 4
     },
     {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
@@ -214,56 +214,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "leaf_piles"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "flora",
-        "Name": "dead_leaf_piles"
-      },
-      {
-        "ID": "flora",
-        "Name": "shrubs"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "TREE Generators": [
-      {
-        "ID": "weighted",
-        "Name": "trees"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {}
+  "Tweaked": false
 }

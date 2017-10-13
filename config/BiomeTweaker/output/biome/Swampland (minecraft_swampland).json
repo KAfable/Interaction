@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SWAMP",
-    "WET"
+    "WET",
+    "SWAMP"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -64,6 +64,30 @@
       "Weight": 6,
       "Min Group Count": 3,
       "Max Group Count": 7
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilCow",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilChicken",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilSheep",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [
@@ -136,6 +160,24 @@
     {
       "Entity Class": "teamroots.embers.entity.EntityAncientGolem",
       "Weight": 25,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityDepthsGhoul",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityAbyssalZombie",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityLesserShoggoth",
+      "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 1
     },
@@ -229,107 +271,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false,
-  "BOP Generators": {
-    "LILYPAD Generators": [
-      {
-        "ID": "flora",
-        "Name": "medium_lily"
-      },
-      {
-        "ID": "flora",
-        "Name": "algae"
-      },
-      {
-        "ID": "flora",
-        "Name": "water_reeds"
-      },
-      {
-        "ID": "flora",
-        "Name": "small_lily"
-      },
-      {
-        "ID": "flora",
-        "Name": "flower_lily"
-      },
-      {
-        "ID": "flora",
-        "Name": "tiny_lily"
-      }
-    ],
-    "FLOWERS Generators": [
-      {
-        "ID": "flora",
-        "Name": "glowshrooms"
-      },
-      {
-        "ID": "flora",
-        "Name": "cattail"
-      },
-      {
-        "ID": "weighted",
-        "Name": "flowers"
-      },
-      {
-        "ID": "flora",
-        "Name": "miners_delight"
-      },
-      {
-        "ID": "columns",
-        "Name": "stone_formations"
-      },
-      {
-        "ID": "flora",
-        "Name": "roots"
-      },
-      {
-        "ID": "flora",
-        "Name": "koru"
-      },
-      {
-        "ID": "double_flora",
-        "Name": "double_cattail"
-      }
-    ],
-    "GRASS Generators": [
-      {
-        "ID": "weighted",
-        "Name": "grass"
-      }
-    ],
-    "SAND Generators": [
-      {
-        "ID": "ore_single",
-        "Name": "malachite"
-      }
-    ],
-    "SAND_PASS2 Generators": [
-      {
-        "ID": "waterside",
-        "Name": "mud"
-      }
-    ],
-    "SHROOM Generators": [
-      {
-        "ID": "flora",
-        "Name": "toadstools"
-      }
-    ],
-    "TREE Generators": [
-      {
-        "ID": "weighted",
-        "Name": "trees"
-      }
-    ]
-  },
-  "BOP Owner": "OTHER",
-  "BOP Weight Map": {},
-  "BOP Climate Weights": {
-    "COLD_SWAMP": [
-      5
-    ],
-    "HOT_SWAMP": [
-      5
-    ]
-  }
+  "Tweaked": false
 }
