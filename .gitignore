@@ -7,3 +7,6 @@ logs/
 null/
 saves/
 minecraftinstance.json
+usernamecache.json
+usercache.json
+options.txt
