@@ -12,14 +12,24 @@ val SOC = <skyresources:baseitemcomponent:1>;
 val p = <skyresources:baseitemcomponent:3>;
 val QAC = <skyresources:baseitemcomponent:6>;
 
+// Polisher - microcrafting tool for polished wood
 recipes.remove(<sgextraparts:polisher>);
-recipes.addShaped(<sgextraparts:polisher>, [[null, <ore:logWood>, null],[null, <ore:logWood>, null],[null, <ore:stickWood>, null]]);
+recipes.addShaped(<sgextraparts:polisher>, [
+  [null, <ore:logWood>, null],
+  [null, <ore:logWood>, null],
+  [null, <ore:stickWood>, null]]);
 
 recipes.removeShaped(<immersiveengineering:tool>);
-recipes.addShaped(<immersiveengineering:tool>, [[<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>],[null, <ore:gearWood>, null],[null, pwood, null]]);
+recipes.addShaped(<immersiveengineering:tool>, [
+  [<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>],
+  [null, <ore:gearWood>, null],
+  [null, pwood, null]]);
 
 recipes.removeShaped(<ore:gearWood>);
-recipes.addShaped(<contenttweaker:material_part:13>, [[null, pwood, null],[pwood, <sgextraparts:polisher>, pwood],[null, pwood, null]]);
+recipes.addShaped(<contenttweaker:material_part:13>, [
+  [null, pwood, null],
+  [pwood, <sgextraparts:polisher>, pwood],
+  [null, pwood, null]]);
 
 mods.skyresources.combustion.addRecipe(<minecraft:coal:1>*4, [<minecraft:log>*32], 100);
 
@@ -38,10 +48,16 @@ recipes.addShaped(<minecraft:torch>, [[<minecraft:coal:1>],[pwood]]);
 recipes.addShaped(<minecraft:torch>*4, [[<minecraft:coal>],[pwood]]);
 
 recipes.remove(<skyresources:blazepowderblock>);
-recipes.addShaped(<skyresources:blazepowderblock>, [[blaze, blaze, blaze],[blaze, blaze, blaze],[blaze, blaze, blaze]]);
+recipes.addShaped(<skyresources:blazepowderblock>, [
+  [blaze, blaze, blaze],
+  [blaze, blaze, blaze],
+  [blaze, blaze, blaze]]);
 
 recipes.remove(<minecraft:furnace>);
-recipes.addShaped(<minecraft:furnace>, [[cob, cob, cob],[cob, blaze, cob],[sslab, sslab, sslab]]);
+recipes.addShaped(<minecraft:furnace>, [
+  [cob, cob, cob],
+  [cob, blaze, cob],
+  [sslab, sslab, sslab]]);
 
 recipes.addShapeless(blaze, [<immersiveengineering:tool>, <minecraft:bowl>, <minecraft:gunpowder>, <minecraft:coal:1>]);
 recipes.addShapeless(<minecraft:gunpowder>, [<immersiveengineering:tool>, <minecraft:bowl>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]);
@@ -53,21 +69,30 @@ recipes.addShaped(<skyresources:heat:1>,[[pstone, pstone, pstone],[pstone, <mine
 #recipes.remove(<skyresources:casing:1>);
 #recipes.addShaped(<skyresources:casing:1>, [[stone, stone, stone],[stone, <ore:gearStone>, stone],[stone, stone, stone]]);
 
+// Grout
 recipes.remove(<tconstruct:soil>);
 mods.skyresources.combustion.addRecipe(<tconstruct:soil>*8, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
 mods.skyresources.combustion.addRecipe(<tconstruct:soil>*2, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
+// Reinforced Stone (custom)
 mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*144, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*1000]);
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296);
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
-recipes.addShaped(<contenttweaker:material_part:29>, [[null, rstone, null],[rstone, <immersiveengineering:tool>, rstone],[null, rstone, null]]);
-
-recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [[rstone,rstone,rstone],[rstone,rstone,rstone],[rstone,rstone,rstone]]);
+// Reinforced Stone Gear / Block / Ingot
+recipes.addShaped(<contenttweaker:material_part:29>, [
+  [null, rstone, null],
+  [rstone, <immersiveengineering:tool>, rstone],
+  [null, rstone, null]]);
+recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
+  [rstone,rstone,rstone],
+  [rstone,rstone,rstone],
+  [rstone,rstone,rstone]]);
 recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:1>]);
 recipes.addShaped(rstone, [[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>]]);
 recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
 
+// Replacing Iron tier sky resources with reinforced stone
 recipes.removeShaped(<skyresources:casing:3>);
 recipes.addShaped(<skyresources:casing:3>, [[rstone, rstone, rstone],[rstone, <contenttweaker:material_part:55>, rstone],[rstone, rstone, rstone]]);
 recipes.removeShaped(<skyresources:heat:3>);
@@ -83,11 +108,14 @@ mods.skyresources.combustion.removeRecipe(<skyresources:alchemyitemcomponent:2>)
 mods.skyresources.combustion.addRecipe(<skyresources:alchemyitemcomponent:2>, [<minecraft:gunpowder>*3, blaze*2, <minecraft:coal:1>], 1000);
 
 recipes.remove(<skyresources:alchemy:3>);
-recipes.addShaped(<skyresources:alchemy:3>, [[rstone, rstone, rstone],[rstone, <skyresources:alchemyitemcomponent:2>, rstone],[rstone, rstone, rstone]]);
+recipes.addShaped(<skyresources:alchemy:3>, [
+  [rstone, rstone, rstone],
+  [rstone, <skyresources:alchemyitemcomponent:2>, rstone],
+  [rstone, rstone, rstone]]);
 recipes.remove(<skyresources:fusiontable>);
 recipes.addShapeless(<skyresources:fusiontable>, [<ore:workbench>, <skyresources:alchemy:3>]);
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Stone";
-<skyresources:alchemyitemcomponent:7>.displayName = "False Gold";
+<skyresources:alchemyitemcomponent:7>.displayName = "Fool's Gold";
 <skyresources:alchemyitemcomponent:10>.displayName = "False Diamond";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:7>);
@@ -123,6 +151,7 @@ recipes.addShaped(<skyresources:waterextractor>, [[null, pwood, null],[pwood, pw
 recipes.remove(<minecraft:dropper>);
 recipes.addShaped(<minecraft:dropper>, [[pstone, pstone, pstone],[pstone, null, pstone],[pstone, null, pstone]]);
 
+
 <skyresources:baseitemcomponent:2>.displayName = "Cooling Component";
 recipes.remove(<skyresources:baseitemcomponent:2>);
 mods.tconstruct.Casting.addTableRecipe(<skyresources:baseitemcomponent:2>, rstone, <liquid:water>, 1000, true);
@@ -130,13 +159,25 @@ mods.tconstruct.Casting.addTableRecipe(<skyresources:baseitemcomponent:2>, rston
 recipes.remove(<skyresources:baseitemcomponent:1>);
 mods.skyresources.combustion.addRecipe(SOC, [<minecraft:gunpowder>*2, <minecraft:clay_ball>*2, <minecraft:coal:1>*2, blaze*3, rstone*8, <skyresources:baseitemcomponent:2>], 3000);
 recipes.remove(<skyresources:heat:6>);
-recipes.addShaped(<skyresources:heat:6>, [[nb,nb,nb],[nb,<minecraft:fire_charge>,nb],[nb,nb,nb]]);
+recipes.addShaped(<skyresources:heat:6>, [
+  [nb,nb,nb],
+  [nb,<minecraft:fire_charge>,nb],
+  [nb,nb,nb]]);
 recipes.remove(<skyresources:quickdropper>);
-recipes.addShaped(<skyresources:quickdropper>, [[rstone, rstone, rstone],[rstone, <minecraft:dropper>, rstone],[rstone, null, rstone]]);
+recipes.addShaped(<skyresources:quickdropper>, [
+  [rstone, rstone, rstone],
+  [rstone, <minecraft:dropper>, rstone],
+  rstone, null, rstone]]);
 recipes.remove(<minecraft:hopper>);
-recipes.addShaped(<minecraft:hopper>, [[rstone, null, rstone],[rstone, <minecraft:chest>, rstone],[null, rstone, null]]);
+recipes.addShaped(<minecraft:hopper>, [
+  [rstone, null, rstone],
+  [rstone, <minecraft:chest>, rstone],
+  [null, rstone, null]]);
 recipes.remove(<skyresources:combustioncollector>);
-recipes.addShaped(<skyresources:combustioncollector>, [[rstone, rstone, rstone],[rstone, <minecraft:hopper>, rstone],[rstone, rstone, rstone]]);
+recipes.addShaped(<skyresources:combustioncollector>, [
+  [rstone, rstone, rstone],
+  [rstone, <minecraft:hopper>, rstone],
+  [rstone, rstone, rstone]]);
 recipes.remove(<skyresources:rockcleaner>);
 
 mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
@@ -146,35 +187,36 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:sli
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed>, null, <liquid:slime>, 1000);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000);
 recipes.remove(<skyresources:heat:10>);
-recipes.addShaped(<skyresources:heat:10>, [[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],[<minecraft:end_stone>,<minecraft:fire_charge>,<minecraft:end_stone>],[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
+recipes.addShaped(<skyresources:heat:10>, [
+  [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
+  [<minecraft:end_stone>,<minecraft:fire_charge>,<minecraft:end_stone>],
+  [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
 recipes.remove(<skyresources:baseitemcomponent:6>);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16], 3000);
 recipes.remove(<skyresources:casing:10>);
-recipes.addShaped(<skyresources:casing:10>, [[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],[<minecraft:end_stone>,SOC,<minecraft:end_stone>],[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
+recipes.addShaped(<skyresources:casing:10>, [
+  [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
+  [<minecraft:end_stone>,SOC,<minecraft:end_stone>],
+  [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
 recipes.remove(<skyresources:combustionheater:10>);
-recipes.addShaped(<skyresources:combustionheater:10>, [[<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],[<minecraft:end_stone>,<skyresources:heat:10>,<minecraft:end_stone>],[<minecraft:end_stone>,SOC,<minecraft:end_stone>]]);
+recipes.addShaped(<skyresources:combustionheater:10>, [
+  [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
+  [<minecraft:end_stone>,<skyresources:heat:10>,<minecraft:end_stone>],
+  [<minecraft:end_stone>,SOC,<minecraft:end_stone>]]);
 recipes.remove(<skyresources:casing:12>);
-recipes.addShaped(<skyresources:casing:12>, [[p,p,p],[p,QAC,p],[p,p,p]]);
+recipes.addShaped(<skyresources:casing:12>, [
+  [p,p,p],
+  [p,QAC,p],
+  [p,p,p]]);
 mods.tconstruct.Casting.addTableRecipe(p, null, <liquid:putty>, 144);
 recipes.remove(<skyresources:heat:12>);
-recipes.addShaped(<skyresources:heat:12>, [[p,p,p],[p,<minecraft:fire_charge>,p],[p,p,p]]);
+recipes.addShaped(<skyresources:heat:12>, [
+  [p,p,p],
+  [p,<minecraft:fire_charge>,p],
+  [p,p,p]]);
 mods.tconstruct.Alloy.addRecipe(<liquid:putty>*144, [<liquid:glass-_slime_composite>*1000, <liquid:obsidian>*576, <liquid:reinforced_stone>*1296]);
 
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:5>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:5>, [p*4, <skyresources:alchemy:6>*12, <skyresources:alchemyitemcomponent:10>*8], 4.50);
 recipes.remove(<skyresources:crucibleinserter>);
 recipes.addShaped(<skyresources:crucibleinserter>, [[rstone, <minecraft:dropper>, rstone],[rstone, null, rstone],[rstone, null, rstone]]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
