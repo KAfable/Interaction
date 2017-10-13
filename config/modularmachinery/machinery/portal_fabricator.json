@@ -7,7 +7,6 @@
             "x": 0,
             "y": 0,
             "z": 0,
-            "nbt": {"casingColor":"16730368","items":{"inventoryArray":[{"holderEmpty":"1b","holderId":"0"},{"holderEmpty":"1b","holderId":"1"}],"outSlots":,"miscSlots":,"inSlots":,"sides":},"status":"0"},
             "elements": [
                 "modularmachinery:blockcontroller@1"
             ]
@@ -24,7 +23,6 @@
             "x": 1,
             "y": 2,
             "z": 1,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -401,7 +399,7 @@
             "x": -1,
             "y": 0,
             "z": 3,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -410,7 +408,7 @@
             "x": 0,
             "y": 0,
             "z": 3,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -435,7 +433,7 @@
             "x": 1,
             "y": 0,
             "z": 3,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -620,7 +618,6 @@
             "x": -2,
             "y": 0,
             "z": 2,
-            "nbt": {"busSize":"0","casingColor":"16730368","inventory":{"inventoryArray":[{"holderEmpty":"1b","holderId":"0"}],"outSlots":,"miscSlots":,"inSlots":,"sides":}},
             "elements": [
                 "modularmachinery:blockoutputbus@0"
             ]
@@ -629,7 +626,6 @@
             "x": -1,
             "y": 2,
             "z": 3,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -638,7 +634,6 @@
             "x": 0,
             "y": 2,
             "z": 3,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -647,7 +642,7 @@
             "x": -1,
             "y": 0,
             "z": 2,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -656,7 +651,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -665,7 +660,6 @@
             "x": 1,
             "y": 2,
             "z": 3,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -682,7 +676,7 @@
             "x": 1,
             "y": 0,
             "z": 2,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -691,7 +685,6 @@
             "x": 2,
             "y": 0,
             "z": 2,
-            "nbt": {"busSize":"0","casingColor":"16730368","inventory":{"inventoryArray":[{"holderEmpty":"1b","holderId":"0"}],"outSlots":,"miscSlots":,"inSlots":,"sides":}},
             "elements": [
                 "modularmachinery:blockinputbus@0"
             ]
@@ -708,7 +701,6 @@
             "x": -2,
             "y": 1,
             "z": 2,
-            "nbt": {"input":"0b","size":"0","casingColor":"16730368","tank":{"Empty":"","gasTag":{"Empty":""}}},
             "elements": [
                 "modularmachinery:blockfluidoutputhatch@0"
             ]
@@ -797,7 +789,6 @@
             "x": 2,
             "y": 1,
             "z": 2,
-            "nbt": {"input":"1b","size":"0","casingColor":"16730368","tank":{"Empty":"","gasTag":{"Empty":""}}},
             "elements": [
                 "modularmachinery:blockfluidinputhatch@0"
             ]
@@ -854,7 +845,6 @@
             "x": -1,
             "y": 2,
             "z": 2,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -871,7 +861,6 @@
             "x": 0,
             "y": 2,
             "z": 2,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -880,7 +869,7 @@
             "x": -1,
             "y": 0,
             "z": 1,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -889,7 +878,7 @@
             "x": 0,
             "y": 0,
             "z": 1,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -898,7 +887,6 @@
             "x": 1,
             "y": 2,
             "z": 2,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -915,7 +903,7 @@
             "x": 1,
             "y": 0,
             "z": 1,
-            "nbt": {"MachineData":{"curHU":"0.0f","huTick":"0.0f","itemHU":"0.0f"},"inv":{"Size":"1","Items":[]},"Empty":"","Energy":"0","pSignal":"0","Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
             "elements": [
                 "skyresources:casing@12"
             ]
@@ -1084,7 +1072,6 @@
             "x": -1,
             "y": 2,
             "z": 1,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
@@ -1101,7 +1088,6 @@
             "x": 0,
             "y": 2,
             "z": 1,
-            "nbt": {"Item":{"id":"minecraft:air","Count":"0b","Damage":"0s"},"Empty":"","amount":"0"},
             "elements": [
                 "skyresources:crucible@0"
             ]
