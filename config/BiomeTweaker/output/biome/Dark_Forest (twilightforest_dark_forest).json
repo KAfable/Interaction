@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPOOKY",
+    "FOREST",
     "DENSE",
-    "FOREST"
+    "SPOOKY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -127,18 +127,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicCreeper",
-      "Weight": 30,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCaveman",
-      "Weight": 30,
       "Min Group Count": 1,
       "Max Group Count": 1
     }
