@@ -35,6 +35,33 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+		"abyssalnite": {
+			"distribution": "fractal",
+			"generator": {
+				"block": "abyssalcraft:abyore",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 50,
+			"min-height": 50,
+			"max-height": 256,
+			"chunk-chance": 20,
+			"vein-height": 10,
+			"vein-diameter": 10,
+			"vertical-density": 1000,
+			"horizontal-density": 1,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SPOOKY"
+					}]},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [100]}
+		},
 		"aluminum": {
 			"distribution": "fractal",
 			"generator": {
@@ -63,7 +90,31 @@
 						"entry": "PLAINS"
 					}]},
 			"dimension": {
-				"restriction": "fractal",
+				"restriction": "whitelist",
+				"value": [100]}
+		},
+		"AntiCoralium": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "geode",
+				"block": "abyssalcraft:coraliumore",
+				"material": "minecraft:stone",
+				"cluster-size": "20",
+				"crust": "abyssalcraft:coraliumore",
+				"hollow": "true",
+				"filler": "abyssalcraft:antiwater"},
+			"cluster-count": 1,
+			"min-height": 10,
+			"max-height": 60,
+			"chunk-chance": 10,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{ "type": "dictionary",
+						"entry": "SPOOKY"}]},
+			"dimension": {
+				"restriction": "whitelist",
 				"value": [100]}
 		},
 		"coal": {
