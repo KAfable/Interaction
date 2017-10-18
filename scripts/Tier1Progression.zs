@@ -187,11 +187,11 @@ recipes.addShaped(<skyresources:combustioncollector>, [
   [rstone, rstone, rstone]]);
 recipes.remove(<skyresources:rockcleaner>);
 
-mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
-mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
-mods.tconstruct.Melting.addRecipe(<liquid:slime> * 1000, <tconstruct:slime_congealed>);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
-mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed>, null, <liquid:slime>, 1000);
+mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime_>, <liquid:glass>]);
+mods.tconstruct.Melting.addRecipe(<liquid:slime_> * 250, <minecraft:slime_ball>);
+mods.tconstruct.Melting.addRecipe(<liquid:slime_> * 1000, <tconstruct:slime_congealed>);
+mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime_>, 250);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed>, null, <liquid:slime_>, 1000);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000);
 recipes.remove(<skyresources:heat:10>);
 recipes.addShaped(<skyresources:heat:10>, [
