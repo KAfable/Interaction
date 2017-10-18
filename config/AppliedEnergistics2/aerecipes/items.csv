@@ -1339,6 +1339,310 @@ ic2:rotor_carbon, ic2.rotor_carbon.name
 ic2:dynamite, ic2.dynamite.name
 ic2:dynamite_sticky, ic2.dynamite_sticky.name
 ic2:remote, ic2.remote.name
+sonarcore:reinforcedstoneblock, Reinforced Stone
+sonarcore:reinforcedstonestairs, Reinforced Stone Stairs
+sonarcore:reinforcedstonefence, Reinforced Stone Fence
+sonarcore:reinforcedstonegate, Reinforced Stone Gate
+sonarcore:reinforcedstonebrick, Reinforced Stone Brick
+sonarcore:reinforcedstonebrickstairs, Reinforced Stone Brick Stairs
+sonarcore:reinforcedstonebrickfence, Reinforced Stone Brick Fence
+sonarcore:reinforcedstonebrickgate, Reinforced Stone Brick Gate
+sonarcore:reinforceddirtblock, Reinforced Dirt
+sonarcore:reinforceddirtstairs, Reinforced Dirt Stairs
+sonarcore:reinforceddirtfence, Reinforced Dirt Fence
+sonarcore:reinforceddirtgate, Reinforced Dirt Gate
+sonarcore:reinforceddirtbrick, Reinforced Dirt Brick
+sonarcore:reinforceddirtbrickstairs, Reinforced Dirt Brick Stairs
+sonarcore:reinforceddirtbrickfence, Reinforced Dirt Brick Fence
+sonarcore:reinforceddirtbrickgate, Reinforced Dirt Brick Gate
+sonarcore:stablestone_normal, Stable Stone
+sonarcore:stablestonerimmed_normal, Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_normal, Rimmed Black Stable Stone
+sonarcore:stablestone_black, Black Stable Stone
+sonarcore:stablestonerimmed_black, Black Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_black, Black Rimmed Black Stable Stone
+sonarcore:stablestone_blue, Blue Stable Stone
+sonarcore:stablestonerimmed_blue, Blue Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_blue, Blue Rimmed Black Stable Stone
+sonarcore:stablestone_brown, Brown Stable Stone
+sonarcore:stablestonerimmed_brown, Brown Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_brown, Brown Rimmed Black Stable Stone
+sonarcore:stablestone_cyan, Cyan Stable Stone
+sonarcore:stablestonerimmed_cyan, Cyan Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_cyan, Cyan Rimmed Black Stable Stone
+sonarcore:stablestone_green, Green Stable Stone
+sonarcore:stablestonerimmed_green, Green Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_green, Green Rimmed Black Stable Stone
+sonarcore:stablestone_lightblue, Light Blue Stable Stone
+sonarcore:stablestonerimmed_lightblue, Light Blue Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_lightblue, Light Blue Rimmed Black Stable Stone
+sonarcore:stablestone_lightgrey, Light Stable Stone
+sonarcore:stablestonerimmed_lightgrey, Light Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_lightgrey, Light Rimmed Black Stable Stone
+sonarcore:stablestone_lime, Lime Stable Stone
+sonarcore:stablestonerimmed_lime, Lime Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_lime, Lime Rimmed Black Stable Stone
+sonarcore:stablestone_magenta, Magenta Stable Stone
+sonarcore:stablestonerimmed_magenta, Magenta Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_magenta, Magenta Rimmed Black Stable Stone
+sonarcore:stablestone_orange, Orange Stable Stone
+sonarcore:stablestonerimmed_orange, Orange Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_orange, Orange Rimmed Black Stable Stone
+sonarcore:stablestone_pink, Pink Stable Stone
+sonarcore:stablestonerimmed_pink, Pink Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_pink, Pink Rimmed Black Stable Stone
+sonarcore:stablestone_plain, Plain Stable Stone
+sonarcore:stablestonerimmed_plain, Plain Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_plain, Plain Rimmed Black Stable Stone
+sonarcore:stablestone_purple, Purple Stable Stone
+sonarcore:stablestonerimmed_purple, Purple Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_purple, Purple Rimmed Black Stable Stone
+sonarcore:stablestone_red, Red Stable Stone
+sonarcore:stablestonerimmed_red, Red Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_red, Red Rimmed Black Stable Stone
+sonarcore:stablestone_yellow, Yellow Stable Stone
+sonarcore:stablestonerimmed_yellow, Yellow Rimmed Stable Stone
+sonarcore:stablestoneblackrimmed_yellow, Yellow Rimmed Black  Stable Stone
+sonarcore:stableglass, Stable Glass
+sonarcore:clearstableglass, Clear Stable Glass
+calculator:flawlessglass, Flawless Glass
+calculator:purifiedobsidian, Purified Obsidian
+calculator:powercube, Power Cube
+calculator:advancedpowercube, Advanced Power Cube
+calculator:creativepowercube, Creative Power Cube
+calculator:atomiccalculator, Atomic Calculator
+calculator:dynamiccalculator, Dynamic Calculator
+calculator:moduleworkstation, Module Workstation
+calculator:reinforcedfurnace, Reinforced Furnace
+calculator:reinforcedchest, Reinforced Chest
+calculator:stoneseparator, Stone Separator
+calculator:algorithmseparator, Algorithm Separator
+calculator:hungerprocessor, Hunger Processor
+calculator:healthprocessor, Health Processor
+calculator:amethystpiping, Amethyst Piping
+calculator:tanzanitepiping, Tanzanite Piping
+calculator:dockingstation, Docking Station
+calculator:atomicmultiplier, Atomic Multiplier
+calculator:extractionchamber, Extraction Chamber
+calculator:restorationchamber, Restoration Chamber
+calculator:reassemblychamber, Reassembly Chamber
+calculator:precisionchamber, Precision Chamber
+calculator:processingchamber, Processing Chamber
+calculator:analysingchamber, Analysing Chamber
+calculator:storagechamber, Storage Chamber
+calculator:fabricationchamber, Fabrication Chamber
+calculator:basicgreenhouse, Basic Greenhouse
+calculator:advancedgreenhouse, Advanced Greenhouse
+calculator:flawlessgreenhouse, Flawless Greenhouse
+calculator:co2generator, Carbon Dioxide Generator
+calculator:calculatorlocator, Calculator Locator
+calculator:calculatorplug, Calculator Plug
+calculator:conductormast, Conductor Mast
+calculator:conductormastblock, Conductor Mast
+calculator:weatherstation, Weather Station
+calculator:weatherstationblock, Weather Station
+calculator:transmitter, Transmitter
+calculator:transmitterblock, Transmitter
+calculator:starchextractor, Starch Extractor
+calculator:redstoneextractor, Redstone Extractor
+calculator:glowstoneextractor, Glowstone Extractor
+calculator:handcrankedgenerator, Hand Cranked Generator
+calculator:crankhandle, Crank Handle
+calculator:magneticflux, Magnetic Flux
+calculator:weathercontroller, Weather Controller
+calculator:rainsensor, Rain Sensor
+calculator:stoneassimilator, Stone Assimilator
+calculator:algorithmassimilator, Algorithm Assimilator
+calculator:gaslanternoff, Gas Lantern
+calculator:gaslanternon, Gas Lantern
+calculator:lantern, Lantern
+calculator:scarecrow, Scarecrow
+calculator:scarecrowblock, Scarecrow
+calculator:amethystlog, Amethyst Wood
+calculator:amethystplanks, Amethyst Planks
+calculator:amethyststairs, Amethyst Stairs
+calculator:amethystfence, Amethyst Fence
+calculator:amethystleaves, Amethyst Leaves
+calculator:amethystsapling, Amethyst Sapling
+calculator:tanzanitelog, Tanzanite Wood
+calculator:tanzaniteplanks, Tanzanite Planks
+calculator:tanzanitestairs, Tanzanite Stairs
+calculator:tanzanitefence, Tanzanite Fence
+calculator:tanzaniteleaves, Tanzanite Leaves
+calculator:tanzanitesapling, Tanzanite Sapling
+calculator:pearlog, Pear Wood
+calculator:pearplanks, Pear Planks
+calculator:pearstairs, Pear Stairs
+calculator:pearfence, Pear Fence
+calculator:pearleaves, Pear Leaves
+calculator:pearsapling, Pear Sapling
+calculator:diamondlog, Diamond Wood
+calculator:diamondplanks, Diamond Planks
+calculator:diamondstairs, Diamond Stairs
+calculator:diamondfence, Diamond Fence
+calculator:diamondleaves, Diamond Leaves
+calculator:diamondsapling, Diamond Sapling
+calculator:material:0, Amethyst Block
+calculator:material:1, Tanzanite Block
+calculator:material:2, Enriched Gold Block
+calculator:material:3, Reinforced Iron Block
+calculator:material:4, Weakened Diamond Block
+calculator:material:5, Flawless Diamond Block
+calculator:material:6, Fire Diamond Block
+calculator:material:7, Electric Diamond Block
+calculator:material:8, End Diamond Block
+calculator:material:9, Redstone Ingot Block
+calculator:cropbroccoli, Broccoli Plant
+calculator:cropprunae, Prunae Plant
+calculator:cropfiddledew, Fiddledew Plant
+calculator:infocalculator, Info Calculator
+calculator:calculator, Calculator
+calculator:craftingcalculator, Crafting Calculator
+calculator:scientificcalculator, Scientific Calculator
+calculator:flawlesscalculator, Flawless Calculator
+calculator:storagemodule, Storage Module
+calculator:warpmodule, Warp Module
+calculator:jumpmodule, Jump Module
+calculator:hungermodule, Hunger Module
+calculator:healthmodule, Health Module
+calculator:nutritionmodule, Nutrition Module
+calculator:terrainmodule, Basic Terrain Module
+calculator:advancedterrainmodule, Advanced Terrain Module
+calculator:energymodule, Energy Module
+calculator:locatormodule, Locator Module
+calculator:soil, Soil
+calculator:smallstone, Small Stone
+calculator:speedupgrade, Speed Upgrade
+calculator:energyupgrade, Energy Upgrade
+calculator:voidupgrade, Void Upgrade
+calculator:transferupgrade, Transfer Upgrade
+calculator:calculatorscreen, Calculator Screen
+calculator:calculatorassembly, Calculator Assembly
+calculator:advancedassembly, Advanced Assembly
+calculator:atomicmodule, Atomic Module
+calculator:atomicassembly, Atomic Assembly
+calculator:flawlessassembly, Flawless Assembly
+calculator:atomicbinder, Atomic Binder
+calculator:wrench, Wrench
+calculator:sickle, Sickle
+calculator:obsidiankey, Obsidian Key
+calculator:reinforcedsword, Reinforced Sword
+calculator:enrichedgoldsword, Enriched Gold Sword
+calculator:reinforcedironsword, Reinforced Iron Sword
+calculator:redstonesword, Redstone Sword
+calculator:weakeneddiamondsword, Weakened Diamond Sword
+calculator:flawlessdiamondsword, Flawless Diamond Sword
+calculator:firediamondsword, Fire Diamond Sword
+calculator:electricsword, Electric Sword
+calculator:endforgedsword, End Forged Sword
+calculator:reinforcedpickaxe, Reinforced Pickaxe
+calculator:enrichedgoldpickaxe, Enriched Gold Pickaxe
+calculator:reinforcedironpickaxe, Reinforced Iron Pickaxe
+calculator:redstonepickaxe, Redstone Pickaxe
+calculator:weakeneddiamondpickaxe, Weakened Diamond Pickaxe
+calculator:flawlessdiamondpickaxe, Flawless Diamond Pickaxe
+calculator:firediamondpickaxe, Fire Diamond Pickaxe
+calculator:electricpickaxe, Electric Pickaxe
+calculator:endforgedpickaxe, End Forged Pickaxe
+calculator:reinforcedaxe, Reinforced Axe
+calculator:enrichedgoldaxe, Enriched Gold Axe
+calculator:reinforcedironaxe, Reinforced Iron Axe
+calculator:redstoneaxe, Redstone Axe
+calculator:weakeneddiamondaxe, Weakened Diamond Axe
+calculator:flawlessdiamondaxe, Flawless Diamond Axe
+calculator:firediamondaxe, Fire Diamond Axe
+calculator:electricaxe, Electric Axe
+calculator:endforgedaxe, End Forged Axe
+calculator:reinforcedshovel, Reinforced Shovel
+calculator:enrichedgoldshovel, Enriched Gold Shovel
+calculator:reinforcedironshovel, Reinforced Iron Shovel
+calculator:redstoneshovel, Redstone Shovel
+calculator:weakeneddiamondshovel, Weakened Diamond Shovel
+calculator:flawlessdiamondshovel, Flawless Diamond Shovel
+calculator:firediamondshovel, Fire Diamond Shovel
+calculator:electricshovel, Electric Shovel
+calculator:endforgedshovel, End Forged Shovel
+calculator:reinforcedhoe, Reinforced Hoe
+calculator:enrichedgoldhoe, Enriched Gold Hoe
+calculator:reinforcedironhoe, Reinforced Iron Hoe
+calculator:redstonehoe, Redstone Hoe
+calculator:weakeneddiamondhoe, Weakened Diamond Hoe
+calculator:flawlessdiamondhoe, Flawless Diamond Hoe
+calculator:firediamondhoe, Fire Diamond Hoe
+calculator:electrichoe, Electric Hoe
+calculator:endforgedhoe, End Forged Hoe
+calculator:enrichedgold,  Enriched Gold
+calculator:enrichedgoldingot,  Enriched Gold Ingot
+calculator:reinforcedironingot, Reinforced Iron Ingot
+calculator:redstoneingot, Redstone Ingot
+calculator:weakeneddiamond, Weakened Diamond
+calculator:flawlessdiamond, Flawless Diamond
+calculator:firediamond, Fire Diamond
+calculator:electricdiamond, Electric Diamond
+calculator:enddiamond, End Diamond
+calculator:largeamethyst, Large Amethyst
+calculator:smallamethyst, Amethyst
+calculator:shardamethyst, Amethyst Shard
+calculator:largetanzanite, Large Tanzanite
+calculator:smalltanzanite, Tanzanite
+calculator:shardtanzanite, Tanzanite Shard
+calculator:broccoliseeds, Broccoli Seeds
+calculator:prunaeseeds, Prunae Seeds
+calculator:fiddledewfruit, Fiddledew Fruit
+calculator:broccoli, Broccoli
+calculator:pear, Pear
+calculator:rottenpear, Rotten Pear
+calculator:cookedbroccoli, Cooked Broccoli
+calculator:coaldust, Coal Dust
+calculator:enrichedcoal, Enriched Coal
+calculator:purifiedcoal, Purified Coal
+calculator:firecoal, Fire Coal
+calculator:controlledfuel, Controlled Fuel
+calculator:grenadecasing, Grenade Casing
+calculator:babygrenade, Baby Grenade
+calculator:grenade, Grenade
+calculator:circuitboard:0, Circuit
+calculator:circuitboard:1, Circuit
+calculator:circuitboard:2, Circuit
+calculator:circuitboard:3, Circuit
+calculator:circuitboard:4, Circuit
+calculator:circuitboard:5, Circuit
+calculator:circuitboard:6, Circuit
+calculator:circuitboard:7, Circuit
+calculator:circuitboard:8, Circuit
+calculator:circuitboard:9, Circuit
+calculator:circuitboard:10, Circuit
+calculator:circuitboard:11, Circuit
+calculator:circuitboard:12, Circuit
+calculator:circuitboard:13, Circuit
+calculator:circuitdamaged:0, Damaged Circuit
+calculator:circuitdamaged:1, Damaged Circuit
+calculator:circuitdamaged:2, Damaged Circuit
+calculator:circuitdamaged:3, Damaged Circuit
+calculator:circuitdamaged:4, Damaged Circuit
+calculator:circuitdamaged:5, Damaged Circuit
+calculator:circuitdamaged:6, Damaged Circuit
+calculator:circuitdamaged:7, Damaged Circuit
+calculator:circuitdamaged:8, Damaged Circuit
+calculator:circuitdamaged:9, Damaged Circuit
+calculator:circuitdamaged:10, Damaged Circuit
+calculator:circuitdamaged:11, Damaged Circuit
+calculator:circuitdamaged:12, Damaged Circuit
+calculator:circuitdamaged:13, Damaged Circuit
+calculator:circuitdirty:0, Dirty Circuit
+calculator:circuitdirty:1, Dirty Circuit
+calculator:circuitdirty:2, Dirty Circuit
+calculator:circuitdirty:3, Dirty Circuit
+calculator:circuitdirty:4, Dirty Circuit
+calculator:circuitdirty:5, Dirty Circuit
+calculator:circuitdirty:6, Dirty Circuit
+calculator:circuitdirty:7, Dirty Circuit
+calculator:circuitdirty:8, Dirty Circuit
+calculator:circuitdirty:9, Dirty Circuit
+calculator:circuitdirty:10, Dirty Circuit
+calculator:circuitdirty:11, Dirty Circuit
+calculator:circuitdirty:12, Dirty Circuit
+calculator:circuitdirty:13, Dirty Circuit
 draconicevolution:draconium_ore:0, Draconium Ore
 draconicevolution:draconium_ore:1, Nether Draconium Ore
 draconicevolution:draconium_ore:2, Ender Draconium Ore
@@ -2274,9 +2578,110 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
+forestry:bottler:0, Bottler
+forestry:carpenter:0, Carpenter
+forestry:centrifuge:0, Centrifuge
+forestry:fermenter:0, Fermenter
+forestry:moistener:0, Moistener
+forestry:squeezer:0, Squeezer
+forestry:still:0, Still
+forestry:rainmaker:0, Rainmaker
+forestry:fabricator:0, Thermionic Fabricator
+forestry:raintank:0, Rain Tank
+forestry:worktable:0, Worktable
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
+forestry:engine_peat:0, Peat-fired Engine
+forestry:engine_biogas:0, Biogas Engine
+forestry:engine_clockwork:0, Clockwork Engine
+forestry:habitat_locator, Habitat Locator
+forestry:imprinter, Imprinter
+forestry:cart.beehouse:0, Minecart with Bee House
+forestry:cart.beehouse:1, Minecart with Apiary
+forestry:frame_untreated, Untreated Frame
+forestry:frame_impregnated, Impregnated Frame
+forestry:frame_proven, Proven Frame
+forestry:honey_drop:0, Honey Drop
+forestry:pollen:0, Pollen Cluster
+forestry:pollen:1, Crystalline Pollen Cluster
+forestry:propolis:0, Propolis
+forestry:propolis:1, Sticky Propolis
+forestry:propolis:3, Silky Propolis
+forestry:honeydew, Honeydew
+forestry:royal_jelly, Royal Jelly
+forestry:wax_cast, Wax Cast
+forestry:bee_combs:0, Honey Comb
+forestry:bee_combs:2, Simmering Comb
+forestry:bee_combs:3, Stringy Comb
+forestry:bee_combs:4, Frozen Comb
+forestry:bee_combs:5, Dripping Comb
+forestry:bee_combs:6, Silky Comb
+forestry:bee_combs:7, Parched Comb
+forestry:bee_combs:15, Mossy Comb
+forestry:bee_combs:16, Mellow Comb
+forestry:apiarist_helmet, Apiarist's Hat
+forestry:apiarist_chest, Apiarist's Shirt
+forestry:apiarist_legs, Apiarist's Pants
+forestry:apiarist_boots, Apiarist's Shoes
+forestry:scoop, Scoop
+forestry:smoker, Bee Smoker
+forestry:apiary:0, Apiary
+forestry:bee_house:0, Bee House
+forestry:bee_chest:0, Apiarist's Chest
+forestry:beehives:0, Forest Hive
+forestry:beehives:1, Meadows Hive
+forestry:beehives:2, Modest Hive
+forestry:beehives:3, Tropical Hive
+forestry:beehives:4, Ender Hive
+forestry:beehives:5, Wintry Hive
+forestry:beehives:6, Marshy Hive
+forestry:candle:0, Unlit Candle
+forestry:stump:0, Candle Stump
+forestry:bee_combs_0:0, Honey Comb Block
+forestry:bee_combs_0:2, Simmering Comb Block
+forestry:bee_combs_0:3, Stringy Comb Block
+forestry:bee_combs_0:4, Frozen Comb Block
+forestry:bee_combs_0:5, Dripping Comb Block
+forestry:bee_combs_0:6, Silky Comb Block
+forestry:bee_combs_0:7, Parched Comb Block
+forestry:bee_combs_0:15, Mossy Comb Block
+forestry:bee_combs_1:0, Mellow Comb Block
+forestry:alveary.plain:0, Alveary
+forestry:alveary.swarmer:0, Alveary Swarmer
+forestry:alveary.fan:0, Alveary Fan
+forestry:alveary.heater:0, Alveary Heater
+forestry:alveary.hygro:0, Alveary Hygroregulator
+forestry:alveary.stabiliser:0, Alveary Stabiliser
+forestry:alveary.sieve:0, Alveary Sieve
 forestry:butterfly_chest:0, Lepidopterist's Chest
 forestry:cocoon:0, tile.for.cocoon.name
 forestry:cocoon.solid:0, tile.for.cocoon.solid.name
+forestry:stamps:0, Stamp (1n)
+forestry:stamps:1, Stamp (2n)
+forestry:stamps:2, Stamp (5n)
+forestry:stamps:3, Stamp (10n)
+forestry:stamps:4, Stamp (20n)
+forestry:stamps:5, Stamp (50n)
+forestry:stamps:6, Stamp (100n)
+forestry:letters, Letter
+forestry:catalogue, Catalogue
+forestry:mailbox:0, Mailbox
+forestry:trade_station:0, Trade Station
+forestry:stamp_collector:0, Stamp Collector
+forestry:engine_electrical:0, Electrical Engine
+forestry:engine_generator:0, Bio Generator
 forestry:grafter, Grafter
 forestry:grafter_proven, Proven Grafter
 forestry:logs.0:0, Larch Wood
@@ -2734,95 +3139,6 @@ forestry:wood_pile_decorative:0, Decorative Wood Pile
 forestry:ash_block:0, Ash Block
 forestry:loam:0, Loam
 forestry:tree_chest:0, Arborist's Chest
-forestry:engine_electrical:0, Electrical Engine
-forestry:engine_generator:0, Bio Generator
-forestry:habitat_locator, Habitat Locator
-forestry:imprinter, Imprinter
-forestry:cart.beehouse:0, Minecart with Bee House
-forestry:cart.beehouse:1, Minecart with Apiary
-forestry:frame_untreated, Untreated Frame
-forestry:frame_impregnated, Impregnated Frame
-forestry:frame_proven, Proven Frame
-forestry:honey_drop:0, Honey Drop
-forestry:pollen:0, Pollen Cluster
-forestry:pollen:1, Crystalline Pollen Cluster
-forestry:propolis:0, Propolis
-forestry:propolis:1, Sticky Propolis
-forestry:propolis:3, Silky Propolis
-forestry:honeydew, Honeydew
-forestry:royal_jelly, Royal Jelly
-forestry:wax_cast, Wax Cast
-forestry:bee_combs:0, Honey Comb
-forestry:bee_combs:2, Simmering Comb
-forestry:bee_combs:3, Stringy Comb
-forestry:bee_combs:4, Frozen Comb
-forestry:bee_combs:5, Dripping Comb
-forestry:bee_combs:6, Silky Comb
-forestry:bee_combs:7, Parched Comb
-forestry:bee_combs:15, Mossy Comb
-forestry:bee_combs:16, Mellow Comb
-forestry:apiarist_helmet, Apiarist's Hat
-forestry:apiarist_chest, Apiarist's Shirt
-forestry:apiarist_legs, Apiarist's Pants
-forestry:apiarist_boots, Apiarist's Shoes
-forestry:scoop, Scoop
-forestry:smoker, Bee Smoker
-forestry:apiary:0, Apiary
-forestry:bee_house:0, Bee House
-forestry:bee_chest:0, Apiarist's Chest
-forestry:beehives:0, Forest Hive
-forestry:beehives:1, Meadows Hive
-forestry:beehives:2, Modest Hive
-forestry:beehives:3, Tropical Hive
-forestry:beehives:4, Ender Hive
-forestry:beehives:5, Wintry Hive
-forestry:beehives:6, Marshy Hive
-forestry:candle:0, Unlit Candle
-forestry:stump:0, Candle Stump
-forestry:bee_combs_0:0, Honey Comb Block
-forestry:bee_combs_0:2, Simmering Comb Block
-forestry:bee_combs_0:3, Stringy Comb Block
-forestry:bee_combs_0:4, Frozen Comb Block
-forestry:bee_combs_0:5, Dripping Comb Block
-forestry:bee_combs_0:6, Silky Comb Block
-forestry:bee_combs_0:7, Parched Comb Block
-forestry:bee_combs_0:15, Mossy Comb Block
-forestry:bee_combs_1:0, Mellow Comb Block
-forestry:alveary.plain:0, Alveary
-forestry:alveary.swarmer:0, Alveary Swarmer
-forestry:alveary.fan:0, Alveary Fan
-forestry:alveary.heater:0, Alveary Heater
-forestry:alveary.hygro:0, Alveary Hygroregulator
-forestry:alveary.stabiliser:0, Alveary Stabiliser
-forestry:alveary.sieve:0, Alveary Sieve
-forestry:bottler:0, Bottler
-forestry:carpenter:0, Carpenter
-forestry:centrifuge:0, Centrifuge
-forestry:fermenter:0, Fermenter
-forestry:moistener:0, Moistener
-forestry:squeezer:0, Squeezer
-forestry:still:0, Still
-forestry:rainmaker:0, Rainmaker
-forestry:fabricator:0, Thermionic Fabricator
-forestry:raintank:0, Rain Tank
-forestry:worktable:0, Worktable
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
-forestry:engine_peat:0, Peat-fired Engine
-forestry:engine_biogas:0, Biogas Engine
-forestry:engine_clockwork:0, Clockwork Engine
 forestry:mushroom:0, tile.for.mushroom.name
 forestry:mushroom:1, tile.for.mushroom.name
 forestry:ffarm:0, Farm Block
@@ -2895,18 +3211,6 @@ forestry:adventurer_bag, Adventuring Backpack
 forestry:adventurer_bag_t2, Woven Adventuring Backpack
 forestry:builder_bag, Building Backpack
 forestry:builder_bag_t2, Woven Building Backpack
-forestry:stamps:0, Stamp (1n)
-forestry:stamps:1, Stamp (2n)
-forestry:stamps:2, Stamp (5n)
-forestry:stamps:3, Stamp (10n)
-forestry:stamps:4, Stamp (20n)
-forestry:stamps:5, Stamp (50n)
-forestry:stamps:6, Stamp (100n)
-forestry:letters, Letter
-forestry:catalogue, Catalogue
-forestry:mailbox:0, Mailbox
-forestry:trade_station:0, Trade Station
-forestry:stamp_collector:0, Stamp Collector
 forestry:greenhouse:0, Greenhouse Block
 forestry:greenhouse:3, Greenhouse Energy Distributor
 forestry:greenhouse:4, Greenhouse Control
@@ -2986,7 +3290,6 @@ pressure:canister:0, Canister - Hydrogen
 pressure:canister:0, Canister - Oxygen
 pressure:canister:0, Canister - Heavy Water
 pressure:canister:0, Canister - Molten Reinforced Stone
-pressure:canister:0, Canister - Molten Slime
 pressure:canister:0, Canister - Molten Glass-Slime Composite
 pressure:canister:0, Canister - Molten Putty
 pressure:canister:0, Canister - Experience
@@ -3048,6 +3351,7 @@ pressure:canister:0, Canister - Diesel
 pressure:canister:0, Canister - Lubricant
 pressure:canister:0, Canister - Gasoline
 pressure:canister:0, Canister - Distilled Water
+pressure:canister:0, Canister - Liquid Slime
 pressure:canister:0, Canister - Essence
 pressure:canister:0, Canister - Liquid Meat
 pressure:canister:0, Canister - Latex
@@ -3855,10 +4159,10 @@ skyresources:alchemyitemcomponent:3, Secundus Alchemical Dust
 skyresources:alchemyitemcomponent:4, Tertius Alchemical Dust
 skyresources:alchemyitemcomponent:5, Quartus Alchemical Dust
 skyresources:alchemyitemcomponent:6, Alchemical Coal
-skyresources:alchemyitemcomponent:7, Fool's Gold
-skyresources:alchemyitemcomponent:8, Alchemical Stone
+skyresources:alchemyitemcomponent:7, Alchemical Gold Ingot
+skyresources:alchemyitemcomponent:8, Alchemical Iron Ingot
 skyresources:alchemyitemcomponent:9, Alchemical Gold Needle
-skyresources:alchemyitemcomponent:10, False Diamond
+skyresources:alchemyitemcomponent:10, Alchemical Diamond
 skyresources:orealchdust:0, Iron Alchemical Ore Dust
 skyresources:orealchdust:1, Gold Alchemical Ore Dust
 skyresources:orealchdust:2, Copper Alchemical Ore Dust
@@ -3966,7 +4270,7 @@ skyresources:dirtygem:42, Dirty Black Quartz
 skyresources:dirtygem:43, Dirty Certus Quartz
 skyresources:baseitemcomponent:0, Plant Matter
 skyresources:baseitemcomponent:1, Simple Oscilator Component
-skyresources:baseitemcomponent:2, Cooling Component
+skyresources:baseitemcomponent:2, Frozen Iron Cooling Component
 skyresources:baseitemcomponent:3, Reinforced Putty
 skyresources:baseitemcomponent:4, Enriched Bonemeal
 skyresources:baseitemcomponent:5, Sawdust
@@ -4011,7 +4315,7 @@ skyresources:cactuscuttingknife, Cactus Cutting Knife
 skyresources:ironcuttingknife, Iron Cutting Knife
 skyresources:diamondcuttingknife, Diamond Cutting Knife
 skyresources:stonegrinder, Stone Rock Grinder
-skyresources:irongrinder, Reinforced Stone Grinder
+skyresources:irongrinder, Iron Rock Grinder
 skyresources:diamondgrinder, Diamond Rock Grinder
 skyresources:sandstoneinfusionstone, Sandstone Infusion Stone
 skyresources:redsandstoneinfusionstone, Red Sandstone Infusion Stone
@@ -4041,72 +4345,6 @@ solarfluxreborn:solarcell1, Photovoltaic Cell I
 solarfluxreborn:solarcell2, Photovoltaic Cell II
 solarfluxreborn:solarcell3, Photovoltaic Cell III
 solarfluxreborn:solarcell4, Photovoltaic Cell IV
-sonarcore:reinforcedstoneblock, Reinforced Stone
-sonarcore:reinforcedstonestairs, Reinforced Stone Stairs
-sonarcore:reinforcedstonefence, Reinforced Stone Fence
-sonarcore:reinforcedstonegate, Reinforced Stone Gate
-sonarcore:reinforcedstonebrick, Reinforced Stone Brick
-sonarcore:reinforcedstonebrickstairs, Reinforced Stone Brick Stairs
-sonarcore:reinforcedstonebrickfence, Reinforced Stone Brick Fence
-sonarcore:reinforcedstonebrickgate, Reinforced Stone Brick Gate
-sonarcore:reinforceddirtblock, Reinforced Dirt
-sonarcore:reinforceddirtstairs, Reinforced Dirt Stairs
-sonarcore:reinforceddirtfence, Reinforced Dirt Fence
-sonarcore:reinforceddirtgate, Reinforced Dirt Gate
-sonarcore:reinforceddirtbrick, Reinforced Dirt Brick
-sonarcore:reinforceddirtbrickstairs, Reinforced Dirt Brick Stairs
-sonarcore:reinforceddirtbrickfence, Reinforced Dirt Brick Fence
-sonarcore:reinforceddirtbrickgate, Reinforced Dirt Brick Gate
-sonarcore:stablestone_normal, Stable Stone
-sonarcore:stablestonerimmed_normal, Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_normal, Rimmed Black Stable Stone
-sonarcore:stablestone_black, Black Stable Stone
-sonarcore:stablestonerimmed_black, Black Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_black, Black Rimmed Black Stable Stone
-sonarcore:stablestone_blue, Blue Stable Stone
-sonarcore:stablestonerimmed_blue, Blue Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_blue, Blue Rimmed Black Stable Stone
-sonarcore:stablestone_brown, Brown Stable Stone
-sonarcore:stablestonerimmed_brown, Brown Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_brown, Brown Rimmed Black Stable Stone
-sonarcore:stablestone_cyan, Cyan Stable Stone
-sonarcore:stablestonerimmed_cyan, Cyan Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_cyan, Cyan Rimmed Black Stable Stone
-sonarcore:stablestone_green, Green Stable Stone
-sonarcore:stablestonerimmed_green, Green Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_green, Green Rimmed Black Stable Stone
-sonarcore:stablestone_lightblue, Light Blue Stable Stone
-sonarcore:stablestonerimmed_lightblue, Light Blue Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_lightblue, Light Blue Rimmed Black Stable Stone
-sonarcore:stablestone_lightgrey, Light Stable Stone
-sonarcore:stablestonerimmed_lightgrey, Light Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_lightgrey, Light Rimmed Black Stable Stone
-sonarcore:stablestone_lime, Lime Stable Stone
-sonarcore:stablestonerimmed_lime, Lime Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_lime, Lime Rimmed Black Stable Stone
-sonarcore:stablestone_magenta, Magenta Stable Stone
-sonarcore:stablestonerimmed_magenta, Magenta Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_magenta, Magenta Rimmed Black Stable Stone
-sonarcore:stablestone_orange, Orange Stable Stone
-sonarcore:stablestonerimmed_orange, Orange Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_orange, Orange Rimmed Black Stable Stone
-sonarcore:stablestone_pink, Pink Stable Stone
-sonarcore:stablestonerimmed_pink, Pink Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_pink, Pink Rimmed Black Stable Stone
-sonarcore:stablestone_plain, Plain Stable Stone
-sonarcore:stablestonerimmed_plain, Plain Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_plain, Plain Rimmed Black Stable Stone
-sonarcore:stablestone_purple, Purple Stable Stone
-sonarcore:stablestonerimmed_purple, Purple Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_purple, Purple Rimmed Black Stable Stone
-sonarcore:stablestone_red, Red Stable Stone
-sonarcore:stablestonerimmed_red, Red Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_red, Red Rimmed Black Stable Stone
-sonarcore:stablestone_yellow, Yellow Stable Stone
-sonarcore:stablestonerimmed_yellow, Yellow Rimmed Stable Stone
-sonarcore:stablestoneblackrimmed_yellow, Yellow Rimmed Black  Stable Stone
-sonarcore:stableglass, Stable Glass
-sonarcore:clearstableglass, Clear Stable Glass
 techreborn:thermal_generator, Thermal Generator
 techreborn:quantum_tank, Quantum Tank
 techreborn:quantum_chest, Quantum Chest
@@ -4855,6 +5093,77 @@ thermaldynamics:cover:0, Construction Foam Wall (Purple) Cover
 thermaldynamics:cover:0, Construction Foam Wall (Red) Cover
 thermaldynamics:cover:0, Construction Foam Wall (White) Cover
 thermaldynamics:cover:0, Construction Foam Wall (Yellow) Cover
+thermaldynamics:cover:0, Reinforced Stone Cover
+thermaldynamics:cover:0, Reinforced Stone Brick Cover
+thermaldynamics:cover:0, Reinforced Dirt Cover
+thermaldynamics:cover:0, Reinforced Dirt Brick Cover
+thermaldynamics:cover:0, Stable Stone Cover
+thermaldynamics:cover:0, Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Black Stable Stone Cover
+thermaldynamics:cover:0, Black Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Black Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Blue Stable Stone Cover
+thermaldynamics:cover:0, Blue Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Blue Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Brown Stable Stone Cover
+thermaldynamics:cover:0, Brown Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Brown Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Cyan Stable Stone Cover
+thermaldynamics:cover:0, Cyan Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Cyan Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Green Stable Stone Cover
+thermaldynamics:cover:0, Green Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Green Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Light Blue Stable Stone Cover
+thermaldynamics:cover:0, Light Blue Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Light Blue Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Light Stable Stone Cover
+thermaldynamics:cover:0, Light Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Light Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Lime Stable Stone Cover
+thermaldynamics:cover:0, Lime Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Lime Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Magenta Stable Stone Cover
+thermaldynamics:cover:0, Magenta Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Magenta Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Orange Stable Stone Cover
+thermaldynamics:cover:0, Orange Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Orange Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Pink Stable Stone Cover
+thermaldynamics:cover:0, Pink Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Pink Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Plain Stable Stone Cover
+thermaldynamics:cover:0, Plain Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Plain Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Purple Stable Stone Cover
+thermaldynamics:cover:0, Purple Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Purple Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Red Stable Stone Cover
+thermaldynamics:cover:0, Red Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Red Rimmed Black Stable Stone Cover
+thermaldynamics:cover:0, Yellow Stable Stone Cover
+thermaldynamics:cover:0, Yellow Rimmed Stable Stone Cover
+thermaldynamics:cover:0, Yellow Rimmed Black  Stable Stone Cover
+thermaldynamics:cover:0, Purified Obsidian Cover
+thermaldynamics:cover:0, Amethyst Wood Cover
+thermaldynamics:cover:0, Amethyst Planks Cover
+thermaldynamics:cover:0, Tanzanite Wood Cover
+thermaldynamics:cover:0, Tanzanite Planks Cover
+thermaldynamics:cover:0, Pear Wood Cover
+thermaldynamics:cover:0, Pear Planks Cover
+thermaldynamics:cover:0, Diamond Wood Cover
+thermaldynamics:cover:0, Diamond Planks Cover
+thermaldynamics:cover:0, Amethyst Block Cover
+thermaldynamics:cover:0, Tanzanite Block Cover
+thermaldynamics:cover:0, Enriched Gold Block Cover
+thermaldynamics:cover:0, Reinforced Iron Block Cover
+thermaldynamics:cover:0, Weakened Diamond Block Cover
+thermaldynamics:cover:0, Flawless Diamond Block Cover
+thermaldynamics:cover:0, Fire Diamond Block Cover
+thermaldynamics:cover:0, Electric Diamond Block Cover
+thermaldynamics:cover:0, End Diamond Block Cover
+thermaldynamics:cover:0, Redstone Ingot Block Cover
 thermaldynamics:cover:0, Draconium Ore Cover
 thermaldynamics:cover:0, Nether Draconium Ore Cover
 thermaldynamics:cover:0, Ender Draconium Ore Cover
@@ -4967,6 +5276,15 @@ thermaldynamics:cover:0, Block of Copper Cover
 thermaldynamics:cover:0, Block of Tin Cover
 thermaldynamics:cover:0, Block of Bronze Cover
 thermaldynamics:cover:0, Ash Bricks Cover
+thermaldynamics:cover:0, Honey Comb Block Cover
+thermaldynamics:cover:0, Simmering Comb Block Cover
+thermaldynamics:cover:0, Stringy Comb Block Cover
+thermaldynamics:cover:0, Frozen Comb Block Cover
+thermaldynamics:cover:0, Dripping Comb Block Cover
+thermaldynamics:cover:0, Silky Comb Block Cover
+thermaldynamics:cover:0, Parched Comb Block Cover
+thermaldynamics:cover:0, Mossy Comb Block Cover
+thermaldynamics:cover:0, Mellow Comb Block Cover
 thermaldynamics:cover:0, Larch Wood Cover
 thermaldynamics:cover:0, Teak Wood Cover
 thermaldynamics:cover:0, Desert Acacia Wood Cover
@@ -5099,15 +5417,6 @@ thermaldynamics:cover:0, Block of Charcoal Cover
 thermaldynamics:cover:0, Wood Pile Cover
 thermaldynamics:cover:0, Decorative Wood Pile Cover
 thermaldynamics:cover:0, Loam Cover
-thermaldynamics:cover:0, Honey Comb Block Cover
-thermaldynamics:cover:0, Simmering Comb Block Cover
-thermaldynamics:cover:0, Stringy Comb Block Cover
-thermaldynamics:cover:0, Frozen Comb Block Cover
-thermaldynamics:cover:0, Dripping Comb Block Cover
-thermaldynamics:cover:0, Silky Comb Block Cover
-thermaldynamics:cover:0, Parched Comb Block Cover
-thermaldynamics:cover:0, Mossy Comb Block Cover
-thermaldynamics:cover:0, Mellow Comb Block Cover
 thermaldynamics:cover:0, Chunk Loader Cover
 thermaldynamics:cover:0, Fertilized Dirt Cover
 thermaldynamics:cover:0, Lapis Glass Cover
@@ -5238,58 +5547,6 @@ thermaldynamics:cover:0, Alchemical Coal Block Cover
 thermaldynamics:cover:0, Block of Putty Cover
 thermaldynamics:cover:0, Blaze Powder Block Cover
 thermaldynamics:cover:0, Heavy Snow Cover
-thermaldynamics:cover:0, Reinforced Stone Cover
-thermaldynamics:cover:0, Reinforced Stone Brick Cover
-thermaldynamics:cover:0, Reinforced Dirt Cover
-thermaldynamics:cover:0, Reinforced Dirt Brick Cover
-thermaldynamics:cover:0, Stable Stone Cover
-thermaldynamics:cover:0, Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Black Stable Stone Cover
-thermaldynamics:cover:0, Black Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Black Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Blue Stable Stone Cover
-thermaldynamics:cover:0, Blue Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Blue Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Brown Stable Stone Cover
-thermaldynamics:cover:0, Brown Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Brown Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Cyan Stable Stone Cover
-thermaldynamics:cover:0, Cyan Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Cyan Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Green Stable Stone Cover
-thermaldynamics:cover:0, Green Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Green Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Light Blue Stable Stone Cover
-thermaldynamics:cover:0, Light Blue Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Light Blue Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Light Stable Stone Cover
-thermaldynamics:cover:0, Light Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Light Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Lime Stable Stone Cover
-thermaldynamics:cover:0, Lime Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Lime Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Magenta Stable Stone Cover
-thermaldynamics:cover:0, Magenta Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Magenta Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Orange Stable Stone Cover
-thermaldynamics:cover:0, Orange Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Orange Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Pink Stable Stone Cover
-thermaldynamics:cover:0, Pink Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Pink Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Plain Stable Stone Cover
-thermaldynamics:cover:0, Plain Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Plain Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Purple Stable Stone Cover
-thermaldynamics:cover:0, Purple Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Purple Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Red Stable Stone Cover
-thermaldynamics:cover:0, Red Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Red Rimmed Black Stable Stone Cover
-thermaldynamics:cover:0, Yellow Stable Stone Cover
-thermaldynamics:cover:0, Yellow Rimmed Stable Stone Cover
-thermaldynamics:cover:0, Yellow Rimmed Black  Stable Stone Cover
 thermaldynamics:cover:0, Galena Ore Cover
 thermaldynamics:cover:0, Iridium Ore Cover
 thermaldynamics:cover:0, Ruby Ore Cover
@@ -7705,6 +7962,65 @@ thermaldynamics:cover:0, Sky Stone Block Cover
 thermaldynamics:cover:0, Sky Stone Brick Cover
 thermaldynamics:cover:0, Sky Stone Small Brick Cover
 thermaldynamics:cover:0, Tiny TNT Cover
+thermaldynamics:cover:0, Block of Smokey Quartz Cover
+thermaldynamics:cover:0, Chiseled Smokey Quartz Block Cover
+thermaldynamics:cover:0, Pillar Smokey Quartz Block Cover
+thermaldynamics:cover:0, Block of Mana Quartz Cover
+thermaldynamics:cover:0, Chiseled Mana Quartz Block Cover
+thermaldynamics:cover:0, Pillar Mana Quartz Block Cover
+thermaldynamics:cover:0, Block of Blaze Quartz Cover
+thermaldynamics:cover:0, Chiseled Blaze Quartz Block Cover
+thermaldynamics:cover:0, Pillar Blaze Quartz Block Cover
+thermaldynamics:cover:0, Block of Lavender Quartz Cover
+thermaldynamics:cover:0, Chiseled Lavender Quartz Block Cover
+thermaldynamics:cover:0, Pillar Lavender Quartz Block Cover
+thermaldynamics:cover:0, Block of Redquartz Cover
+thermaldynamics:cover:0, Chiseled Redquartz Block Cover
+thermaldynamics:cover:0, Pillar Redquartz Block Cover
+thermaldynamics:cover:0, Block of Elven Quartz Cover
+thermaldynamics:cover:0, Chiseled Elven Quartz Block Cover
+thermaldynamics:cover:0, Pillar Elven Quartz Block Cover
+thermaldynamics:cover:0, Block of Sunny Quartz Cover
+thermaldynamics:cover:0, Chiseled Sunny Quartz Block Cover
+thermaldynamics:cover:0, Pillar Sunny Quartz Block Cover
+thermaldynamics:cover:0, Metamorphic Forest Stone Cover
+thermaldynamics:cover:0, Metamorphic Plains Stone Cover
+thermaldynamics:cover:0, Metamorphic Mountain Stone Cover
+thermaldynamics:cover:0, Metamorphic Fungal Stone Cover
+thermaldynamics:cover:0, Metamorphic Swamp Stone Cover
+thermaldynamics:cover:0, Metamorphic Desert Stone Cover
+thermaldynamics:cover:0, Metamorphic Taiga Stone Cover
+thermaldynamics:cover:0, Metamorphic Mesa Stone Cover
+thermaldynamics:cover:0, Metamorphic Forest Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Plains Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Mountain Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Fungal Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Swamp Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Desert Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Taiga Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Mesa Cobblestone Cover
+thermaldynamics:cover:0, Metamorphic Forest Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Plains Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Mountain Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Fungal Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Swamp Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Desert Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Taiga Stone Bricks Cover
+thermaldynamics:cover:0, Metamorphic Mesa Stone Bricks Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Forest Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Plains Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Mountain Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Fungal Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Swamp Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Desert Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Taiga Stone Brick Cover
+thermaldynamics:cover:0, Chiseled Metamorphic Mesa Stone Brick Cover
+thermaldynamics:cover:0, White Portuguese Pavement Cover
+thermaldynamics:cover:0, Black Portuguese Pavement Cover
+thermaldynamics:cover:0, Blue Portuguese Pavement Cover
+thermaldynamics:cover:0, Red Portuguese Pavement Cover
+thermaldynamics:cover:0, Yellow Portuguese Pavement Cover
+thermaldynamics:cover:0, Green Portuguese Pavement Cover
 thermaldynamics:cover:0, Livingrock Cover
 thermaldynamics:cover:0, Livingrock Brick Cover
 thermaldynamics:cover:0, Mossy Livingrock Brick Cover
@@ -7775,65 +8091,91 @@ thermaldynamics:cover:0, Vivid Grass Cover
 thermaldynamics:cover:0, Scorched Grass Cover
 thermaldynamics:cover:0, Infused Grass Cover
 thermaldynamics:cover:0, Mutated Grass Cover
-thermaldynamics:cover:0, Block of Smokey Quartz Cover
-thermaldynamics:cover:0, Chiseled Smokey Quartz Block Cover
-thermaldynamics:cover:0, Pillar Smokey Quartz Block Cover
-thermaldynamics:cover:0, Block of Mana Quartz Cover
-thermaldynamics:cover:0, Chiseled Mana Quartz Block Cover
-thermaldynamics:cover:0, Pillar Mana Quartz Block Cover
-thermaldynamics:cover:0, Block of Blaze Quartz Cover
-thermaldynamics:cover:0, Chiseled Blaze Quartz Block Cover
-thermaldynamics:cover:0, Pillar Blaze Quartz Block Cover
-thermaldynamics:cover:0, Block of Lavender Quartz Cover
-thermaldynamics:cover:0, Chiseled Lavender Quartz Block Cover
-thermaldynamics:cover:0, Pillar Lavender Quartz Block Cover
-thermaldynamics:cover:0, Block of Redquartz Cover
-thermaldynamics:cover:0, Chiseled Redquartz Block Cover
-thermaldynamics:cover:0, Pillar Redquartz Block Cover
-thermaldynamics:cover:0, Block of Elven Quartz Cover
-thermaldynamics:cover:0, Chiseled Elven Quartz Block Cover
-thermaldynamics:cover:0, Pillar Elven Quartz Block Cover
-thermaldynamics:cover:0, Block of Sunny Quartz Cover
-thermaldynamics:cover:0, Chiseled Sunny Quartz Block Cover
-thermaldynamics:cover:0, Pillar Sunny Quartz Block Cover
-thermaldynamics:cover:0, Metamorphic Forest Stone Cover
-thermaldynamics:cover:0, Metamorphic Plains Stone Cover
-thermaldynamics:cover:0, Metamorphic Mountain Stone Cover
-thermaldynamics:cover:0, Metamorphic Fungal Stone Cover
-thermaldynamics:cover:0, Metamorphic Swamp Stone Cover
-thermaldynamics:cover:0, Metamorphic Desert Stone Cover
-thermaldynamics:cover:0, Metamorphic Taiga Stone Cover
-thermaldynamics:cover:0, Metamorphic Mesa Stone Cover
-thermaldynamics:cover:0, Metamorphic Forest Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Plains Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Mountain Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Fungal Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Swamp Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Desert Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Taiga Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Mesa Cobblestone Cover
-thermaldynamics:cover:0, Metamorphic Forest Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Plains Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Mountain Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Fungal Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Swamp Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Desert Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Taiga Stone Bricks Cover
-thermaldynamics:cover:0, Metamorphic Mesa Stone Bricks Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Forest Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Plains Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Mountain Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Fungal Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Swamp Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Desert Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Taiga Stone Brick Cover
-thermaldynamics:cover:0, Chiseled Metamorphic Mesa Stone Brick Cover
-thermaldynamics:cover:0, White Portuguese Pavement Cover
-thermaldynamics:cover:0, Black Portuguese Pavement Cover
-thermaldynamics:cover:0, Blue Portuguese Pavement Cover
-thermaldynamics:cover:0, Red Portuguese Pavement Cover
-thermaldynamics:cover:0, Yellow Portuguese Pavement Cover
-thermaldynamics:cover:0, Green Portuguese Pavement Cover
+thermaldynamics:cover:0, Osmium Ore Cover
+thermaldynamics:cover:0, Copper Ore Cover
+thermaldynamics:cover:0, Tin Ore Cover
+thermaldynamics:cover:0, Obsidian TNT Cover
+thermaldynamics:cover:0, §8Black Plastic Block Cover
+thermaldynamics:cover:0, §cRed Plastic Block Cover
+thermaldynamics:cover:0, §2Green Plastic Block Cover
+thermaldynamics:cover:0, §6Brown Plastic Block Cover
+thermaldynamics:cover:0, §1Blue Plastic Block Cover
+thermaldynamics:cover:0, §5Purple Plastic Block Cover
+thermaldynamics:cover:0, §3Cyan Plastic Block Cover
+thermaldynamics:cover:0, §7Light Grey Plastic Block Cover
+thermaldynamics:cover:0, §8Grey Plastic Block Cover
+thermaldynamics:cover:0, §dPink Plastic Block Cover
+thermaldynamics:cover:0, §aLime Plastic Block Cover
+thermaldynamics:cover:0, §eYellow Plastic Block Cover
+thermaldynamics:cover:0, §9Light Blue Plastic Block Cover
+thermaldynamics:cover:0, §dMagenta Plastic Block Cover
+thermaldynamics:cover:0, §6Orange Plastic Block Cover
+thermaldynamics:cover:0, §fWhite Plastic Block Cover
+thermaldynamics:cover:0, §8Black Slick Plastic Block Cover
+thermaldynamics:cover:0, §cRed Slick Plastic Block Cover
+thermaldynamics:cover:0, §2Green Slick Plastic Block Cover
+thermaldynamics:cover:0, §6Brown Slick Plastic Block Cover
+thermaldynamics:cover:0, §1Blue Slick Plastic Block Cover
+thermaldynamics:cover:0, §5Purple Slick Plastic Block Cover
+thermaldynamics:cover:0, §3Cyan Slick Plastic Block Cover
+thermaldynamics:cover:0, §7Light Grey Slick Plastic Block Cover
+thermaldynamics:cover:0, §8Grey Slick Plastic Block Cover
+thermaldynamics:cover:0, §dPink Slick Plastic Block Cover
+thermaldynamics:cover:0, §aLime Slick Plastic Block Cover
+thermaldynamics:cover:0, §eYellow Slick Plastic Block Cover
+thermaldynamics:cover:0, §9Light Blue Slick Plastic Block Cover
+thermaldynamics:cover:0, §dMagenta Slick Plastic Block Cover
+thermaldynamics:cover:0, §6Orange Slick Plastic Block Cover
+thermaldynamics:cover:0, §fWhite Slick Plastic Block Cover
+thermaldynamics:cover:0, §8Black Plastic Glow Block Cover
+thermaldynamics:cover:0, §cRed Plastic Glow Block Cover
+thermaldynamics:cover:0, §2Green Plastic Glow Block Cover
+thermaldynamics:cover:0, §6Brown Plastic Glow Block Cover
+thermaldynamics:cover:0, §1Blue Plastic Glow Block Cover
+thermaldynamics:cover:0, §5Purple Plastic Glow Block Cover
+thermaldynamics:cover:0, §3Cyan Plastic Glow Block Cover
+thermaldynamics:cover:0, §7Light Grey Plastic Glow Block Cover
+thermaldynamics:cover:0, §8Grey Plastic Glow Block Cover
+thermaldynamics:cover:0, §dPink Plastic Glow Block Cover
+thermaldynamics:cover:0, §aLime Plastic Glow Block Cover
+thermaldynamics:cover:0, §eYellow Plastic Glow Block Cover
+thermaldynamics:cover:0, §9Light Blue Plastic Glow Block Cover
+thermaldynamics:cover:0, §dMagenta Plastic Glow Block Cover
+thermaldynamics:cover:0, §6Orange Plastic Glow Block Cover
+thermaldynamics:cover:0, §fWhite Plastic Glow Block Cover
+thermaldynamics:cover:0, §8Black Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §cRed Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §2Green Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §6Brown Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §1Blue Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §5Purple Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §3Cyan Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §7Light Grey Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §8Grey Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §dPink Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §aLime Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §eYellow Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §9Light Blue Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §dMagenta Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §6Orange Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §fWhite Reinforced Plastic Block Cover
+thermaldynamics:cover:0, §8Black Plastic Road Cover
+thermaldynamics:cover:0, §cRed Plastic Road Cover
+thermaldynamics:cover:0, §2Green Plastic Road Cover
+thermaldynamics:cover:0, §6Brown Plastic Road Cover
+thermaldynamics:cover:0, §1Blue Plastic Road Cover
+thermaldynamics:cover:0, §5Purple Plastic Road Cover
+thermaldynamics:cover:0, §3Cyan Plastic Road Cover
+thermaldynamics:cover:0, §7Light Grey Plastic Road Cover
+thermaldynamics:cover:0, §8Grey Plastic Road Cover
+thermaldynamics:cover:0, §dPink Plastic Road Cover
+thermaldynamics:cover:0, §aLime Plastic Road Cover
+thermaldynamics:cover:0, §eYellow Plastic Road Cover
+thermaldynamics:cover:0, §9Light Blue Plastic Road Cover
+thermaldynamics:cover:0, §dMagenta Plastic Road Cover
+thermaldynamics:cover:0, §6Orange Plastic Road Cover
+thermaldynamics:cover:0, §fWhite Plastic Road Cover
+thermaldynamics:cover:0, Salt Block Cover
 thermaldynamics:cover:0, Aquamarine Ore Cover
 thermaldynamics:cover:0, Block of Aquamarine Cover
 thermaldynamics:cover:0, Magnite Ore Cover
@@ -7939,91 +8281,6 @@ thermaldynamics:cover:0, Dark Brick Cover
 thermaldynamics:cover:0, Dark Blood Brick Cover
 thermaldynamics:cover:0, Dark Power Gem Block Cover
 thermaldynamics:cover:0, Block of Blood-Waxed Coal Cover
-thermaldynamics:cover:0, Osmium Ore Cover
-thermaldynamics:cover:0, Copper Ore Cover
-thermaldynamics:cover:0, Tin Ore Cover
-thermaldynamics:cover:0, Obsidian TNT Cover
-thermaldynamics:cover:0, §8Black Plastic Block Cover
-thermaldynamics:cover:0, §cRed Plastic Block Cover
-thermaldynamics:cover:0, §2Green Plastic Block Cover
-thermaldynamics:cover:0, §6Brown Plastic Block Cover
-thermaldynamics:cover:0, §1Blue Plastic Block Cover
-thermaldynamics:cover:0, §5Purple Plastic Block Cover
-thermaldynamics:cover:0, §3Cyan Plastic Block Cover
-thermaldynamics:cover:0, §7Light Grey Plastic Block Cover
-thermaldynamics:cover:0, §8Grey Plastic Block Cover
-thermaldynamics:cover:0, §dPink Plastic Block Cover
-thermaldynamics:cover:0, §aLime Plastic Block Cover
-thermaldynamics:cover:0, §eYellow Plastic Block Cover
-thermaldynamics:cover:0, §9Light Blue Plastic Block Cover
-thermaldynamics:cover:0, §dMagenta Plastic Block Cover
-thermaldynamics:cover:0, §6Orange Plastic Block Cover
-thermaldynamics:cover:0, §fWhite Plastic Block Cover
-thermaldynamics:cover:0, §8Black Slick Plastic Block Cover
-thermaldynamics:cover:0, §cRed Slick Plastic Block Cover
-thermaldynamics:cover:0, §2Green Slick Plastic Block Cover
-thermaldynamics:cover:0, §6Brown Slick Plastic Block Cover
-thermaldynamics:cover:0, §1Blue Slick Plastic Block Cover
-thermaldynamics:cover:0, §5Purple Slick Plastic Block Cover
-thermaldynamics:cover:0, §3Cyan Slick Plastic Block Cover
-thermaldynamics:cover:0, §7Light Grey Slick Plastic Block Cover
-thermaldynamics:cover:0, §8Grey Slick Plastic Block Cover
-thermaldynamics:cover:0, §dPink Slick Plastic Block Cover
-thermaldynamics:cover:0, §aLime Slick Plastic Block Cover
-thermaldynamics:cover:0, §eYellow Slick Plastic Block Cover
-thermaldynamics:cover:0, §9Light Blue Slick Plastic Block Cover
-thermaldynamics:cover:0, §dMagenta Slick Plastic Block Cover
-thermaldynamics:cover:0, §6Orange Slick Plastic Block Cover
-thermaldynamics:cover:0, §fWhite Slick Plastic Block Cover
-thermaldynamics:cover:0, §8Black Plastic Glow Block Cover
-thermaldynamics:cover:0, §cRed Plastic Glow Block Cover
-thermaldynamics:cover:0, §2Green Plastic Glow Block Cover
-thermaldynamics:cover:0, §6Brown Plastic Glow Block Cover
-thermaldynamics:cover:0, §1Blue Plastic Glow Block Cover
-thermaldynamics:cover:0, §5Purple Plastic Glow Block Cover
-thermaldynamics:cover:0, §3Cyan Plastic Glow Block Cover
-thermaldynamics:cover:0, §7Light Grey Plastic Glow Block Cover
-thermaldynamics:cover:0, §8Grey Plastic Glow Block Cover
-thermaldynamics:cover:0, §dPink Plastic Glow Block Cover
-thermaldynamics:cover:0, §aLime Plastic Glow Block Cover
-thermaldynamics:cover:0, §eYellow Plastic Glow Block Cover
-thermaldynamics:cover:0, §9Light Blue Plastic Glow Block Cover
-thermaldynamics:cover:0, §dMagenta Plastic Glow Block Cover
-thermaldynamics:cover:0, §6Orange Plastic Glow Block Cover
-thermaldynamics:cover:0, §fWhite Plastic Glow Block Cover
-thermaldynamics:cover:0, §8Black Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §cRed Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §2Green Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §6Brown Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §1Blue Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §5Purple Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §3Cyan Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §7Light Grey Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §8Grey Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §dPink Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §aLime Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §eYellow Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §9Light Blue Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §dMagenta Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §6Orange Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §fWhite Reinforced Plastic Block Cover
-thermaldynamics:cover:0, §8Black Plastic Road Cover
-thermaldynamics:cover:0, §cRed Plastic Road Cover
-thermaldynamics:cover:0, §2Green Plastic Road Cover
-thermaldynamics:cover:0, §6Brown Plastic Road Cover
-thermaldynamics:cover:0, §1Blue Plastic Road Cover
-thermaldynamics:cover:0, §5Purple Plastic Road Cover
-thermaldynamics:cover:0, §3Cyan Plastic Road Cover
-thermaldynamics:cover:0, §7Light Grey Plastic Road Cover
-thermaldynamics:cover:0, §8Grey Plastic Road Cover
-thermaldynamics:cover:0, §dPink Plastic Road Cover
-thermaldynamics:cover:0, §aLime Plastic Road Cover
-thermaldynamics:cover:0, §eYellow Plastic Road Cover
-thermaldynamics:cover:0, §9Light Blue Plastic Road Cover
-thermaldynamics:cover:0, §dMagenta Plastic Road Cover
-thermaldynamics:cover:0, §6Orange Plastic Road Cover
-thermaldynamics:cover:0, §fWhite Plastic Road Cover
-thermaldynamics:cover:0, Salt Block Cover
 thermaldynamics:cover:0, Yellorite Ore Cover
 thermaldynamics:cover:0, Anglesite Ore Cover
 thermaldynamics:cover:0, Benitoite Ore Cover
@@ -9000,6 +9257,8 @@ thermaldynamics:cover:0, Chiseled Marble Cover
 thermaldynamics:cover:0, Engraved Marble Cover
 thermaldynamics:cover:0, Runed Marble Cover
 thermaldynamics:cover:0, Sooty Marble Cover
+thermaldynamics:cover:0, tile.contenttweaker.energized_well.name Cover
+thermaldynamics:cover:0, tile.contenttweaker.destabilized_well.name Cover
 thermaldynamics:cover:0, End Emerald Ore Cover
 thermaldynamics:cover:0, Nether Redstone Ore Cover
 thermaldynamics:cover:0, End Iron Ore Cover
@@ -12514,6 +12773,77 @@ appliedenergistics2:facade:0, Cable Facade - Construction Foam Wall (Purple)
 appliedenergistics2:facade:0, Cable Facade - Construction Foam Wall (Red)
 appliedenergistics2:facade:0, Cable Facade - Construction Foam Wall (White)
 appliedenergistics2:facade:0, Cable Facade - Construction Foam Wall (Yellow)
+appliedenergistics2:facade:0, Cable Facade - Reinforced Stone
+appliedenergistics2:facade:0, Cable Facade - Reinforced Stone Brick
+appliedenergistics2:facade:0, Cable Facade - Reinforced Dirt
+appliedenergistics2:facade:0, Cable Facade - Reinforced Dirt Brick
+appliedenergistics2:facade:0, Cable Facade - Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Black Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Black Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Blue Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Blue Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Blue Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Brown Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Brown Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Brown Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Cyan Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Cyan Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Cyan Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Green Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Green Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Green Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Blue Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Blue Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Blue Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Light Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Lime Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Lime Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Lime Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Magenta Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Magenta Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Magenta Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Orange Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Orange Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Orange Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Pink Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Pink Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Pink Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Plain Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Plain Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Plain Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Purple Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Purple Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Purple Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Red Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Red Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Red Rimmed Black Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Yellow Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Yellow Rimmed Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Yellow Rimmed Black  Stable Stone
+appliedenergistics2:facade:0, Cable Facade - Purified Obsidian
+appliedenergistics2:facade:0, Cable Facade - Amethyst Wood
+appliedenergistics2:facade:0, Cable Facade - Amethyst Planks
+appliedenergistics2:facade:0, Cable Facade - Tanzanite Wood
+appliedenergistics2:facade:0, Cable Facade - Tanzanite Planks
+appliedenergistics2:facade:0, Cable Facade - Pear Wood
+appliedenergistics2:facade:0, Cable Facade - Pear Planks
+appliedenergistics2:facade:0, Cable Facade - Diamond Wood
+appliedenergistics2:facade:0, Cable Facade - Diamond Planks
+appliedenergistics2:facade:0, Cable Facade - Amethyst Block
+appliedenergistics2:facade:0, Cable Facade - Tanzanite Block
+appliedenergistics2:facade:0, Cable Facade - Enriched Gold Block
+appliedenergistics2:facade:0, Cable Facade - Reinforced Iron Block
+appliedenergistics2:facade:0, Cable Facade - Weakened Diamond Block
+appliedenergistics2:facade:0, Cable Facade - Flawless Diamond Block
+appliedenergistics2:facade:0, Cable Facade - Fire Diamond Block
+appliedenergistics2:facade:0, Cable Facade - Electric Diamond Block
+appliedenergistics2:facade:0, Cable Facade - End Diamond Block
+appliedenergistics2:facade:0, Cable Facade - Redstone Ingot Block
 appliedenergistics2:facade:0, Cable Facade - Draconium Ore
 appliedenergistics2:facade:0, Cable Facade - Nether Draconium Ore
 appliedenergistics2:facade:0, Cable Facade - Ender Draconium Ore
@@ -12577,6 +12907,15 @@ appliedenergistics2:facade:0, Cable Facade - Block of Copper
 appliedenergistics2:facade:0, Cable Facade - Block of Tin
 appliedenergistics2:facade:0, Cable Facade - Block of Bronze
 appliedenergistics2:facade:0, Cable Facade - Ash Bricks
+appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
+appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
+appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
+appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
+appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
+appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Larch Wood
 appliedenergistics2:facade:0, Cable Facade - Teak Wood
 appliedenergistics2:facade:0, Cable Facade - Desert Acacia Wood
@@ -12709,15 +13048,6 @@ appliedenergistics2:facade:0, Cable Facade - Block of Charcoal
 appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
 appliedenergistics2:facade:0, Cable Facade - Ash Block
 appliedenergistics2:facade:0, Cable Facade - Loam
-appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
-appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
-appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
-appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
-appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
-appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Chunk Loader
 appliedenergistics2:facade:0, Cable Facade - Limestone
 appliedenergistics2:facade:0, Cable Facade - Burnt Limestone
@@ -12835,58 +13165,6 @@ appliedenergistics2:facade:0, Cable Facade - Alchemical Coal Block
 appliedenergistics2:facade:0, Cable Facade - Block of Putty
 appliedenergistics2:facade:0, Cable Facade - Blaze Powder Block
 appliedenergistics2:facade:0, Cable Facade - Heavy Snow
-appliedenergistics2:facade:0, Cable Facade - Reinforced Stone
-appliedenergistics2:facade:0, Cable Facade - Reinforced Stone Brick
-appliedenergistics2:facade:0, Cable Facade - Reinforced Dirt
-appliedenergistics2:facade:0, Cable Facade - Reinforced Dirt Brick
-appliedenergistics2:facade:0, Cable Facade - Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Black Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Black Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Blue Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Blue Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Blue Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Brown Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Brown Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Brown Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Cyan Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Cyan Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Cyan Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Green Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Green Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Green Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Blue Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Blue Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Blue Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Light Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Lime Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Lime Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Lime Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Magenta Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Magenta Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Magenta Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Orange Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Orange Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Orange Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Pink Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Pink Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Pink Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Plain Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Plain Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Plain Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Purple Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Purple Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Purple Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Red Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Red Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Red Rimmed Black Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Yellow Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Yellow Rimmed Stable Stone
-appliedenergistics2:facade:0, Cable Facade - Yellow Rimmed Black  Stable Stone
 appliedenergistics2:facade:0, Cable Facade - Galena Ore
 appliedenergistics2:facade:0, Cable Facade - Iridium Ore
 appliedenergistics2:facade:0, Cable Facade - Ruby Ore
@@ -14882,53 +15160,6 @@ appliedenergistics2:facade:0, Cable Facade - Sky Stone
 appliedenergistics2:facade:0, Cable Facade - Sky Stone Block
 appliedenergistics2:facade:0, Cable Facade - Sky Stone Brick
 appliedenergistics2:facade:0, Cable Facade - Sky Stone Small Brick
-appliedenergistics2:facade:0, Cable Facade - Livingrock
-appliedenergistics2:facade:0, Cable Facade - Livingrock Brick
-appliedenergistics2:facade:0, Cable Facade - Mossy Livingrock Brick
-appliedenergistics2:facade:0, Cable Facade - Cracked Livingrock Brick
-appliedenergistics2:facade:0, Cable Facade - Chiseled Livingrock Brick
-appliedenergistics2:facade:0, Cable Facade - Livingwood
-appliedenergistics2:facade:0, Cable Facade - Livingwood Planks
-appliedenergistics2:facade:0, Cable Facade - Mossy Livingwood Planks
-appliedenergistics2:facade:0, Cable Facade - Framed Livingwood
-appliedenergistics2:facade:0, Cable Facade - Pattern Framed Livingwood
-appliedenergistics2:facade:0, Cable Facade - Glimmering Livingwood
-appliedenergistics2:facade:0, Cable Facade - Force Relay
-appliedenergistics2:facade:0, Cable Facade - Alchemy Catalyst
-appliedenergistics2:facade:0, Cable Facade - Block of Manasteel
-appliedenergistics2:facade:0, Cable Facade - Block of Terrasteel
-appliedenergistics2:facade:0, Cable Facade - Block of Elementium
-appliedenergistics2:facade:0, Cable Facade - Block of Mana Diamond
-appliedenergistics2:facade:0, Cable Facade - Block of Dragonstone
-appliedenergistics2:facade:0, Cable Facade - Dreamwood
-appliedenergistics2:facade:0, Cable Facade - Dreamwood Planks
-appliedenergistics2:facade:0, Cable Facade - Mossy Dreamwood Planks
-appliedenergistics2:facade:0, Cable Facade - Framed Dreamwood
-appliedenergistics2:facade:0, Cable Facade - Pattern Framed Dreamwood
-appliedenergistics2:facade:0, Cable Facade - Glimmering Dreamwood
-appliedenergistics2:facade:0, Cable Facade - Conjuration Catalyst
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Azulejo
-appliedenergistics2:facade:0, Cable Facade - Enchanted Soil
-appliedenergistics2:facade:0, Cable Facade - Blaze Mesh
-appliedenergistics2:facade:0, Cable Facade - Fel Pumpkin
-appliedenergistics2:facade:0, Cable Facade - Manastorm Charge
-appliedenergistics2:facade:0, Cable Facade - Shimmerrock
-appliedenergistics2:facade:0, Cable Facade - Shimmerwood Planks
 appliedenergistics2:facade:0, Cable Facade - Block of Smokey Quartz
 appliedenergistics2:facade:0, Cable Facade - Chiseled Smokey Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Pillar Smokey Quartz Block
@@ -14988,6 +15219,137 @@ appliedenergistics2:facade:0, Cable Facade - Blue Portuguese Pavement
 appliedenergistics2:facade:0, Cable Facade - Red Portuguese Pavement
 appliedenergistics2:facade:0, Cable Facade - Yellow Portuguese Pavement
 appliedenergistics2:facade:0, Cable Facade - Green Portuguese Pavement
+appliedenergistics2:facade:0, Cable Facade - Livingrock
+appliedenergistics2:facade:0, Cable Facade - Livingrock Brick
+appliedenergistics2:facade:0, Cable Facade - Mossy Livingrock Brick
+appliedenergistics2:facade:0, Cable Facade - Cracked Livingrock Brick
+appliedenergistics2:facade:0, Cable Facade - Chiseled Livingrock Brick
+appliedenergistics2:facade:0, Cable Facade - Livingwood
+appliedenergistics2:facade:0, Cable Facade - Livingwood Planks
+appliedenergistics2:facade:0, Cable Facade - Mossy Livingwood Planks
+appliedenergistics2:facade:0, Cable Facade - Framed Livingwood
+appliedenergistics2:facade:0, Cable Facade - Pattern Framed Livingwood
+appliedenergistics2:facade:0, Cable Facade - Glimmering Livingwood
+appliedenergistics2:facade:0, Cable Facade - Force Relay
+appliedenergistics2:facade:0, Cable Facade - Alchemy Catalyst
+appliedenergistics2:facade:0, Cable Facade - Block of Manasteel
+appliedenergistics2:facade:0, Cable Facade - Block of Terrasteel
+appliedenergistics2:facade:0, Cable Facade - Block of Elementium
+appliedenergistics2:facade:0, Cable Facade - Block of Mana Diamond
+appliedenergistics2:facade:0, Cable Facade - Block of Dragonstone
+appliedenergistics2:facade:0, Cable Facade - Dreamwood
+appliedenergistics2:facade:0, Cable Facade - Dreamwood Planks
+appliedenergistics2:facade:0, Cable Facade - Mossy Dreamwood Planks
+appliedenergistics2:facade:0, Cable Facade - Framed Dreamwood
+appliedenergistics2:facade:0, Cable Facade - Pattern Framed Dreamwood
+appliedenergistics2:facade:0, Cable Facade - Glimmering Dreamwood
+appliedenergistics2:facade:0, Cable Facade - Conjuration Catalyst
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Azulejo
+appliedenergistics2:facade:0, Cable Facade - Enchanted Soil
+appliedenergistics2:facade:0, Cable Facade - Blaze Mesh
+appliedenergistics2:facade:0, Cable Facade - Fel Pumpkin
+appliedenergistics2:facade:0, Cable Facade - Manastorm Charge
+appliedenergistics2:facade:0, Cable Facade - Shimmerrock
+appliedenergistics2:facade:0, Cable Facade - Shimmerwood Planks
+appliedenergistics2:facade:0, Cable Facade - Osmium Ore
+appliedenergistics2:facade:0, Cable Facade - Copper Ore
+appliedenergistics2:facade:0, Cable Facade - Tin Ore
+appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Black Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §cRed Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §2Green Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Brown Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §1Blue Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §5Purple Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §3Cyan Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §7Light Grey Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Grey Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dPink Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §aLime Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §eYellow Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §9Light Blue Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dMagenta Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Orange Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §fWhite Slick Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Glow Block
+appliedenergistics2:facade:0, Cable Facade - §8Black Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §cRed Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §2Green Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Brown Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §1Blue Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §5Purple Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §3Cyan Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §7Light Grey Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Grey Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dPink Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §aLime Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §eYellow Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §9Light Blue Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §dMagenta Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §6Orange Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §fWhite Reinforced Plastic Block
+appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Road
+appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Road
+appliedenergistics2:facade:0, Cable Facade - Salt Block
 appliedenergistics2:facade:0, Cable Facade - Aquamarine Ore
 appliedenergistics2:facade:0, Cable Facade - Block of Aquamarine
 appliedenergistics2:facade:0, Cable Facade - Magnite Ore
@@ -15103,90 +15465,6 @@ appliedenergistics2:facade:0, Cable Facade - Undead Plank
 appliedenergistics2:facade:0, Cable Facade - Dark Brick
 appliedenergistics2:facade:0, Cable Facade - Dark Blood Brick
 appliedenergistics2:facade:0, Cable Facade - Block of Blood-Waxed Coal
-appliedenergistics2:facade:0, Cable Facade - Osmium Ore
-appliedenergistics2:facade:0, Cable Facade - Copper Ore
-appliedenergistics2:facade:0, Cable Facade - Tin Ore
-appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Black Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §cRed Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §2Green Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Brown Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §1Blue Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §5Purple Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §3Cyan Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §7Light Grey Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Grey Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dPink Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §aLime Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §eYellow Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §9Light Blue Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dMagenta Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Orange Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §fWhite Slick Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Glow Block
-appliedenergistics2:facade:0, Cable Facade - §8Black Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §cRed Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §2Green Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Brown Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §1Blue Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §5Purple Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §3Cyan Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §7Light Grey Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Grey Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dPink Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §aLime Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §eYellow Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §9Light Blue Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §dMagenta Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §6Orange Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §fWhite Reinforced Plastic Block
-appliedenergistics2:facade:0, Cable Facade - §8Black Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §cRed Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §2Green Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §6Brown Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §1Blue Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §5Purple Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §3Cyan Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §7Light Grey Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §8Grey Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §dPink Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §aLime Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §eYellow Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §9Light Blue Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §dMagenta Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §6Orange Plastic Road
-appliedenergistics2:facade:0, Cable Facade - §fWhite Plastic Road
-appliedenergistics2:facade:0, Cable Facade - Salt Block
 appliedenergistics2:facade:0, Cable Facade - Yellorite Ore
 appliedenergistics2:facade:0, Cable Facade - Anglesite Ore
 appliedenergistics2:facade:0, Cable Facade - Benitoite Ore
@@ -16618,6 +16896,8 @@ appliedenergistics2:facade:0, Cable Facade - Engraved Marble
 appliedenergistics2:facade:0, Cable Facade - Runed Marble
 appliedenergistics2:facade:0, Cable Facade - Sooty Marble
 appliedenergistics2:facade:0, Cable Facade - Psidust Block
+appliedenergistics2:facade:0, Cable Facade - tile.contenttweaker.destabilized_well.name
+appliedenergistics2:facade:0, Cable Facade - tile.contenttweaker.energized_well.name
 appliedenergistics2:facade:0, Cable Facade - Missing
 appliedenergistics2:facade:0, Cable Facade - Missing
 appliedenergistics2:facade:0, Cable Facade - Missing
@@ -16994,6 +17274,169 @@ betterquesting:extra_life:1, Half Heart
 betterquesting:extra_life:2, Quarter Heart
 betterquesting:guide_book, Better Questing Starter Guide
 betterquesting:submit_station, Object Submission Station (OSS)
+botania:livingwood0stairs, tile.livingwood0Stairs.name
+botania:livingwood0slab:0, Livingwood Slab
+botania:livingwood0wall, tile.livingwood0Wall.name
+botania:livingwood1stairs, tile.livingwood1Stairs.name
+botania:livingwood1slab:0, Livingwood Plank Slab
+botania:livingrock0stairs, tile.livingrock0Stairs.name
+botania:livingrock0slab:0, Livingrock Slab
+botania:livingrock0wall, tile.livingrock0Wall.name
+botania:livingrock1stairs, tile.livingrock1Stairs.name
+botania:livingrock1slab:0, Livingrock Brick Slab
+botania:dreamwood0stairs, tile.dreamwood0Stairs.name
+botania:dreamwood0slab:0, Dreamwood Slab
+botania:dreamwood0wall, tile.dreamwood0Wall.name
+botania:dreamwood1stairs, tile.dreamwood1Stairs.name
+botania:dreamwood1slab:0, Dreamwood Plank Slab
+botania:quartztypedark:0, Block of Smokey Quartz
+botania:quartztypedark:1, Chiseled Smokey Quartz Block
+botania:quartztypedark:2, Pillar Smokey Quartz Block
+botania:quartzslabdarkhalf:0, Smokey Quartz Slab
+botania:quartzstairsdark, tile.quartzStairsDark.name
+botania:quartztypemana:0, Block of Mana Quartz
+botania:quartztypemana:1, Chiseled Mana Quartz Block
+botania:quartztypemana:2, Pillar Mana Quartz Block
+botania:quartzslabmanahalf:0, Mana Quartz Slab
+botania:quartzstairsmana, tile.quartzStairsMana.name
+botania:quartztypeblaze:0, Block of Blaze Quartz
+botania:quartztypeblaze:1, Chiseled Blaze Quartz Block
+botania:quartztypeblaze:2, Pillar Blaze Quartz Block
+botania:quartzslabblazehalf:0, Blaze Quartz Slab
+botania:quartzstairsblaze, tile.quartzStairsBlaze.name
+botania:quartztypelavender:0, Block of Lavender Quartz
+botania:quartztypelavender:1, Chiseled Lavender Quartz Block
+botania:quartztypelavender:2, Pillar Lavender Quartz Block
+botania:quartzslablavenderhalf:0, Lavender Quartz Slab
+botania:quartzstairslavender, tile.quartzStairsLavender.name
+botania:quartztypered:0, Block of Redquartz
+botania:quartztypered:1, Chiseled Redquartz Block
+botania:quartztypered:2, Pillar Redquartz Block
+botania:quartzslabredhalf:0, Redquartz Slab
+botania:quartzstairsred, tile.quartzStairsRed.name
+botania:quartztypeelf:0, Block of Elven Quartz
+botania:quartztypeelf:1, Chiseled Elven Quartz Block
+botania:quartztypeelf:2, Pillar Elven Quartz Block
+botania:quartzslabelfhalf:0, Elven Quartz Slab
+botania:quartzstairself, tile.quartzStairsElf.name
+botania:quartztypesunny:0, Block of Sunny Quartz
+botania:quartztypesunny:1, Chiseled Sunny Quartz Block
+botania:quartztypesunny:2, Pillar Sunny Quartz Block
+botania:quartzslabsunnyhalf:0, Sunny Quartz Slab
+botania:quartzstairssunny, tile.quartzStairsSunny.name
+botania:biomestonea:0, Metamorphic Forest Stone
+botania:biomestonea:1, Metamorphic Plains Stone
+botania:biomestonea:2, Metamorphic Mountain Stone
+botania:biomestonea:3, Metamorphic Fungal Stone
+botania:biomestonea:4, Metamorphic Swamp Stone
+botania:biomestonea:5, Metamorphic Desert Stone
+botania:biomestonea:6, Metamorphic Taiga Stone
+botania:biomestonea:7, Metamorphic Mesa Stone
+botania:biomestonea:8, Metamorphic Forest Cobblestone
+botania:biomestonea:9, Metamorphic Plains Cobblestone
+botania:biomestonea:10, Metamorphic Mountain Cobblestone
+botania:biomestonea:11, Metamorphic Fungal Cobblestone
+botania:biomestonea:12, Metamorphic Swamp Cobblestone
+botania:biomestonea:13, Metamorphic Desert Cobblestone
+botania:biomestonea:14, Metamorphic Taiga Cobblestone
+botania:biomestonea:15, Metamorphic Mesa Cobblestone
+botania:biomestoneb:0, Metamorphic Forest Stone Bricks
+botania:biomestoneb:1, Metamorphic Plains Stone Bricks
+botania:biomestoneb:2, Metamorphic Mountain Stone Bricks
+botania:biomestoneb:3, Metamorphic Fungal Stone Bricks
+botania:biomestoneb:4, Metamorphic Swamp Stone Bricks
+botania:biomestoneb:5, Metamorphic Desert Stone Bricks
+botania:biomestoneb:6, Metamorphic Taiga Stone Bricks
+botania:biomestoneb:7, Metamorphic Mesa Stone Bricks
+botania:biomestoneb:8, Chiseled Metamorphic Forest Stone Brick
+botania:biomestoneb:9, Chiseled Metamorphic Plains Stone Brick
+botania:biomestoneb:10, Chiseled Metamorphic Mountain Stone Brick
+botania:biomestoneb:11, Chiseled Metamorphic Fungal Stone Brick
+botania:biomestoneb:12, Chiseled Metamorphic Swamp Stone Brick
+botania:biomestoneb:13, Chiseled Metamorphic Desert Stone Brick
+botania:biomestoneb:14, Chiseled Metamorphic Taiga Stone Brick
+botania:biomestoneb:15, Chiseled Metamorphic Mesa Stone Brick
+botania:pavement:0, White Portuguese Pavement
+botania:pavement:1, Black Portuguese Pavement
+botania:pavement:2, Blue Portuguese Pavement
+botania:pavement:3, Red Portuguese Pavement
+botania:pavement:4, Yellow Portuguese Pavement
+botania:pavement:5, Green Portuguese Pavement
+botania:biomestonea0stairs, tile.biomeStoneA0Stairs.name
+botania:biomestonea0slab:0, Metamorphic Forest Stone Slab
+botania:biomestonea1stairs, tile.biomeStoneA1Stairs.name
+botania:biomestonea1slab:0, Metamorphic Plains Stone Slab
+botania:biomestonea2stairs, tile.biomeStoneA2Stairs.name
+botania:biomestonea2slab:0, Metamorphic Mountain Stone Slab
+botania:biomestonea3stairs, tile.biomeStoneA3Stairs.name
+botania:biomestonea3slab:0, Metamorphic Fungal Stone Slab
+botania:biomestonea4stairs, tile.biomeStoneA4Stairs.name
+botania:biomestonea4slab:0, Metamorphic Swamp Stone Slab
+botania:biomestonea5stairs, tile.biomeStoneA5Stairs.name
+botania:biomestonea5slab:0, Metamorphic Desert Stone Slab
+botania:biomestonea6stairs, tile.biomeStoneA6Stairs.name
+botania:biomestonea6slab:0, Metamorphic Taiga Stone Slab
+botania:biomestonea7stairs, tile.biomeStoneA7Stairs.name
+botania:biomestonea7slab:0, Metamorphic Mesa Stone Slab
+botania:biomestonea8stairs, tile.biomeStoneA8Stairs.name
+botania:biomestonea8slab:0, Metamorphic Forest Cobblestone Slab
+botania:biomestonea9stairs, tile.biomeStoneA9Stairs.name
+botania:biomestonea9slab:0, Metamorphic Plains Cobblestone Slab
+botania:biomestonea10stairs, tile.biomeStoneA10Stairs.name
+botania:biomestonea10slab:0, Metamorphic Mountain Cobblestone Slab
+botania:biomestonea11stairs, tile.biomeStoneA11Stairs.name
+botania:biomestonea11slab:0, Metamorphic Fungal Cobblestone Slab
+botania:biomestonea12stairs, tile.biomeStoneA12Stairs.name
+botania:biomestonea12slab:0, Metamorphic Swamp Cobblestone Slab
+botania:biomestonea13stairs, tile.biomeStoneA13Stairs.name
+botania:biomestonea13slab:0, Metamorphic Desert Cobblestone Slab
+botania:biomestonea14stairs, tile.biomeStoneA14Stairs.name
+botania:biomestonea14slab:0, Metamorphic Taiga Cobblestone Slab
+botania:biomestonea15stairs, tile.biomeStoneA15Stairs.name
+botania:biomestonea15slab:0, Metamorphic Mesa Cobblestone Slab
+botania:biomestoneb0stairs, tile.biomeStoneB0Stairs.name
+botania:biomestoneb0slab:0, Metamorphic Forest Stone Brick Slab
+botania:biomestoneb1stairs, tile.biomeStoneB1Stairs.name
+botania:biomestoneb1slab:0, Metamorphic Plains Stone Brick Slab
+botania:biomestoneb2stairs, tile.biomeStoneB2Stairs.name
+botania:biomestoneb2slab:0, Metamorphic Mountain Stone Brick Slab
+botania:biomestoneb3stairs, tile.biomeStoneB3Stairs.name
+botania:biomestoneb3slab:0, Metamorphic Fungal Stone Brick Slab
+botania:biomestoneb4stairs, tile.biomeStoneB4Stairs.name
+botania:biomestoneb4slab:0, Metamorphic Swamp Stone Brick Slab
+botania:biomestoneb5stairs, tile.biomeStoneB5Stairs.name
+botania:biomestoneb5slab:0, Metamorphic Desert Stone Brick Slab
+botania:biomestoneb6stairs, tile.biomeStoneB6Stairs.name
+botania:biomestoneb6slab:0, Metamorphic Taiga Stone Brick Slab
+botania:biomestoneb7stairs, tile.biomeStoneB7Stairs.name
+botania:biomestoneb7slab:0, Metamorphic Mesa Stone Bricks Slab
+botania:biomestonea0wall:0, Metamorphic Forest Cobblestone Wall
+botania:biomestonea0wall:1, Metamorphic Plains Cobblestone Wall
+botania:biomestonea0wall:2, Metamorphic Mountain Cobblestone Wall
+botania:biomestonea0wall:3, Metamorphic Fungal Cobblestone Wall
+botania:biomestonea0wall:4, Metamorphic Swamp Cobblestone Wall
+botania:biomestonea0wall:5, Metamorphic Desert Cobblestone Wall
+botania:biomestonea0wall:6, Metamorphic Taiga Cobblestone Wall
+botania:biomestonea0wall:7, Metamorphic Mesa Cobblestone Wall
+botania:pavement0stairs, tile.pavement0Stairs.name
+botania:pavement0slab:0, White Portuguese Pavement Slab
+botania:pavement1stairs, tile.pavement1Stairs.name
+botania:pavement1slab:0, Black Portuguese Pavement Slab
+botania:pavement2stairs, tile.pavement2Stairs.name
+botania:pavement2slab:0, Blue Portuguese Pavement Slab
+botania:pavement3stairs, tile.pavement3Stairs.name
+botania:pavement3slab:0, Red Portuguese Pavement Slab
+botania:pavement4stairs, tile.pavement4Stairs.name
+botania:pavement4slab:0, Yellow Portuguese Pavement Slab
+botania:pavement5stairs, tile.pavement5Stairs.name
+botania:pavement5slab:0, Green Portuguese Pavement Slab
+botania:shimmerrock0slab:0, Shimmerrock Slab
+botania:shimmerrock0stairs, tile.shimmerrock0Stairs.name
+botania:shimmerwoodplanks0slab:0, Shimmerwood Plank Slab
+botania:shimmerwoodplanks0stairs, tile.shimmerwoodPlanks0Stairs.name
+botania:managlasspane, tile.manaGlassPane.name
+botania:elfglasspane, tile.elfGlassPane.name
+botania:bifrostpermpane, tile.bifrostPermPane.name
 botania:lexicon, item.lexicon.name
 botania:petal:0, Mystical White Petal
 botania:petal:1, Mystical Orange Petal
@@ -17653,169 +18096,392 @@ botania:altgrass:3, Scorched Grass
 botania:altgrass:4, Infused Grass
 botania:altgrass:5, Mutated Grass
 botania:animatedtorch, tile.animatedTorch.name
-botania:livingwood0stairs, tile.livingwood0Stairs.name
-botania:livingwood0slab:0, Livingwood Slab
-botania:livingwood0wall, tile.livingwood0Wall.name
-botania:livingwood1stairs, tile.livingwood1Stairs.name
-botania:livingwood1slab:0, Livingwood Plank Slab
-botania:livingrock0stairs, tile.livingrock0Stairs.name
-botania:livingrock0slab:0, Livingrock Slab
-botania:livingrock0wall, tile.livingrock0Wall.name
-botania:livingrock1stairs, tile.livingrock1Stairs.name
-botania:livingrock1slab:0, Livingrock Brick Slab
-botania:dreamwood0stairs, tile.dreamwood0Stairs.name
-botania:dreamwood0slab:0, Dreamwood Slab
-botania:dreamwood0wall, tile.dreamwood0Wall.name
-botania:dreamwood1stairs, tile.dreamwood1Stairs.name
-botania:dreamwood1slab:0, Dreamwood Plank Slab
-botania:quartztypedark:0, Block of Smokey Quartz
-botania:quartztypedark:1, Chiseled Smokey Quartz Block
-botania:quartztypedark:2, Pillar Smokey Quartz Block
-botania:quartzslabdarkhalf:0, Smokey Quartz Slab
-botania:quartzstairsdark, tile.quartzStairsDark.name
-botania:quartztypemana:0, Block of Mana Quartz
-botania:quartztypemana:1, Chiseled Mana Quartz Block
-botania:quartztypemana:2, Pillar Mana Quartz Block
-botania:quartzslabmanahalf:0, Mana Quartz Slab
-botania:quartzstairsmana, tile.quartzStairsMana.name
-botania:quartztypeblaze:0, Block of Blaze Quartz
-botania:quartztypeblaze:1, Chiseled Blaze Quartz Block
-botania:quartztypeblaze:2, Pillar Blaze Quartz Block
-botania:quartzslabblazehalf:0, Blaze Quartz Slab
-botania:quartzstairsblaze, tile.quartzStairsBlaze.name
-botania:quartztypelavender:0, Block of Lavender Quartz
-botania:quartztypelavender:1, Chiseled Lavender Quartz Block
-botania:quartztypelavender:2, Pillar Lavender Quartz Block
-botania:quartzslablavenderhalf:0, Lavender Quartz Slab
-botania:quartzstairslavender, tile.quartzStairsLavender.name
-botania:quartztypered:0, Block of Redquartz
-botania:quartztypered:1, Chiseled Redquartz Block
-botania:quartztypered:2, Pillar Redquartz Block
-botania:quartzslabredhalf:0, Redquartz Slab
-botania:quartzstairsred, tile.quartzStairsRed.name
-botania:quartztypeelf:0, Block of Elven Quartz
-botania:quartztypeelf:1, Chiseled Elven Quartz Block
-botania:quartztypeelf:2, Pillar Elven Quartz Block
-botania:quartzslabelfhalf:0, Elven Quartz Slab
-botania:quartzstairself, tile.quartzStairsElf.name
-botania:quartztypesunny:0, Block of Sunny Quartz
-botania:quartztypesunny:1, Chiseled Sunny Quartz Block
-botania:quartztypesunny:2, Pillar Sunny Quartz Block
-botania:quartzslabsunnyhalf:0, Sunny Quartz Slab
-botania:quartzstairssunny, tile.quartzStairsSunny.name
-botania:biomestonea:0, Metamorphic Forest Stone
-botania:biomestonea:1, Metamorphic Plains Stone
-botania:biomestonea:2, Metamorphic Mountain Stone
-botania:biomestonea:3, Metamorphic Fungal Stone
-botania:biomestonea:4, Metamorphic Swamp Stone
-botania:biomestonea:5, Metamorphic Desert Stone
-botania:biomestonea:6, Metamorphic Taiga Stone
-botania:biomestonea:7, Metamorphic Mesa Stone
-botania:biomestonea:8, Metamorphic Forest Cobblestone
-botania:biomestonea:9, Metamorphic Plains Cobblestone
-botania:biomestonea:10, Metamorphic Mountain Cobblestone
-botania:biomestonea:11, Metamorphic Fungal Cobblestone
-botania:biomestonea:12, Metamorphic Swamp Cobblestone
-botania:biomestonea:13, Metamorphic Desert Cobblestone
-botania:biomestonea:14, Metamorphic Taiga Cobblestone
-botania:biomestonea:15, Metamorphic Mesa Cobblestone
-botania:biomestoneb:0, Metamorphic Forest Stone Bricks
-botania:biomestoneb:1, Metamorphic Plains Stone Bricks
-botania:biomestoneb:2, Metamorphic Mountain Stone Bricks
-botania:biomestoneb:3, Metamorphic Fungal Stone Bricks
-botania:biomestoneb:4, Metamorphic Swamp Stone Bricks
-botania:biomestoneb:5, Metamorphic Desert Stone Bricks
-botania:biomestoneb:6, Metamorphic Taiga Stone Bricks
-botania:biomestoneb:7, Metamorphic Mesa Stone Bricks
-botania:biomestoneb:8, Chiseled Metamorphic Forest Stone Brick
-botania:biomestoneb:9, Chiseled Metamorphic Plains Stone Brick
-botania:biomestoneb:10, Chiseled Metamorphic Mountain Stone Brick
-botania:biomestoneb:11, Chiseled Metamorphic Fungal Stone Brick
-botania:biomestoneb:12, Chiseled Metamorphic Swamp Stone Brick
-botania:biomestoneb:13, Chiseled Metamorphic Desert Stone Brick
-botania:biomestoneb:14, Chiseled Metamorphic Taiga Stone Brick
-botania:biomestoneb:15, Chiseled Metamorphic Mesa Stone Brick
-botania:pavement:0, White Portuguese Pavement
-botania:pavement:1, Black Portuguese Pavement
-botania:pavement:2, Blue Portuguese Pavement
-botania:pavement:3, Red Portuguese Pavement
-botania:pavement:4, Yellow Portuguese Pavement
-botania:pavement:5, Green Portuguese Pavement
-botania:biomestonea0stairs, tile.biomeStoneA0Stairs.name
-botania:biomestonea0slab:0, Metamorphic Forest Stone Slab
-botania:biomestonea1stairs, tile.biomeStoneA1Stairs.name
-botania:biomestonea1slab:0, Metamorphic Plains Stone Slab
-botania:biomestonea2stairs, tile.biomeStoneA2Stairs.name
-botania:biomestonea2slab:0, Metamorphic Mountain Stone Slab
-botania:biomestonea3stairs, tile.biomeStoneA3Stairs.name
-botania:biomestonea3slab:0, Metamorphic Fungal Stone Slab
-botania:biomestonea4stairs, tile.biomeStoneA4Stairs.name
-botania:biomestonea4slab:0, Metamorphic Swamp Stone Slab
-botania:biomestonea5stairs, tile.biomeStoneA5Stairs.name
-botania:biomestonea5slab:0, Metamorphic Desert Stone Slab
-botania:biomestonea6stairs, tile.biomeStoneA6Stairs.name
-botania:biomestonea6slab:0, Metamorphic Taiga Stone Slab
-botania:biomestonea7stairs, tile.biomeStoneA7Stairs.name
-botania:biomestonea7slab:0, Metamorphic Mesa Stone Slab
-botania:biomestonea8stairs, tile.biomeStoneA8Stairs.name
-botania:biomestonea8slab:0, Metamorphic Forest Cobblestone Slab
-botania:biomestonea9stairs, tile.biomeStoneA9Stairs.name
-botania:biomestonea9slab:0, Metamorphic Plains Cobblestone Slab
-botania:biomestonea10stairs, tile.biomeStoneA10Stairs.name
-botania:biomestonea10slab:0, Metamorphic Mountain Cobblestone Slab
-botania:biomestonea11stairs, tile.biomeStoneA11Stairs.name
-botania:biomestonea11slab:0, Metamorphic Fungal Cobblestone Slab
-botania:biomestonea12stairs, tile.biomeStoneA12Stairs.name
-botania:biomestonea12slab:0, Metamorphic Swamp Cobblestone Slab
-botania:biomestonea13stairs, tile.biomeStoneA13Stairs.name
-botania:biomestonea13slab:0, Metamorphic Desert Cobblestone Slab
-botania:biomestonea14stairs, tile.biomeStoneA14Stairs.name
-botania:biomestonea14slab:0, Metamorphic Taiga Cobblestone Slab
-botania:biomestonea15stairs, tile.biomeStoneA15Stairs.name
-botania:biomestonea15slab:0, Metamorphic Mesa Cobblestone Slab
-botania:biomestoneb0stairs, tile.biomeStoneB0Stairs.name
-botania:biomestoneb0slab:0, Metamorphic Forest Stone Brick Slab
-botania:biomestoneb1stairs, tile.biomeStoneB1Stairs.name
-botania:biomestoneb1slab:0, Metamorphic Plains Stone Brick Slab
-botania:biomestoneb2stairs, tile.biomeStoneB2Stairs.name
-botania:biomestoneb2slab:0, Metamorphic Mountain Stone Brick Slab
-botania:biomestoneb3stairs, tile.biomeStoneB3Stairs.name
-botania:biomestoneb3slab:0, Metamorphic Fungal Stone Brick Slab
-botania:biomestoneb4stairs, tile.biomeStoneB4Stairs.name
-botania:biomestoneb4slab:0, Metamorphic Swamp Stone Brick Slab
-botania:biomestoneb5stairs, tile.biomeStoneB5Stairs.name
-botania:biomestoneb5slab:0, Metamorphic Desert Stone Brick Slab
-botania:biomestoneb6stairs, tile.biomeStoneB6Stairs.name
-botania:biomestoneb6slab:0, Metamorphic Taiga Stone Brick Slab
-botania:biomestoneb7stairs, tile.biomeStoneB7Stairs.name
-botania:biomestoneb7slab:0, Metamorphic Mesa Stone Bricks Slab
-botania:biomestonea0wall:0, Metamorphic Forest Cobblestone Wall
-botania:biomestonea0wall:1, Metamorphic Plains Cobblestone Wall
-botania:biomestonea0wall:2, Metamorphic Mountain Cobblestone Wall
-botania:biomestonea0wall:3, Metamorphic Fungal Cobblestone Wall
-botania:biomestonea0wall:4, Metamorphic Swamp Cobblestone Wall
-botania:biomestonea0wall:5, Metamorphic Desert Cobblestone Wall
-botania:biomestonea0wall:6, Metamorphic Taiga Cobblestone Wall
-botania:biomestonea0wall:7, Metamorphic Mesa Cobblestone Wall
-botania:pavement0stairs, tile.pavement0Stairs.name
-botania:pavement0slab:0, White Portuguese Pavement Slab
-botania:pavement1stairs, tile.pavement1Stairs.name
-botania:pavement1slab:0, Black Portuguese Pavement Slab
-botania:pavement2stairs, tile.pavement2Stairs.name
-botania:pavement2slab:0, Blue Portuguese Pavement Slab
-botania:pavement3stairs, tile.pavement3Stairs.name
-botania:pavement3slab:0, Red Portuguese Pavement Slab
-botania:pavement4stairs, tile.pavement4Stairs.name
-botania:pavement4slab:0, Yellow Portuguese Pavement Slab
-botania:pavement5stairs, tile.pavement5Stairs.name
-botania:pavement5slab:0, Green Portuguese Pavement Slab
-botania:shimmerrock0slab:0, Shimmerrock Slab
-botania:shimmerrock0stairs, tile.shimmerrock0Stairs.name
-botania:shimmerwoodplanks0slab:0, Shimmerwood Plank Slab
-botania:shimmerwoodplanks0stairs, tile.shimmerwoodPlanks0Stairs.name
-botania:managlasspane, tile.manaGlassPane.name
-botania:elfglasspane, tile.elfGlassPane.name
-botania:bifrostpermpane, tile.bifrostPermPane.name
+mekanism:electricbow, Electric Bow
+mekanism:dust:0, Iron Dust
+mekanism:dust:1, Gold Dust
+mekanism:dust:2, Osmium Dust
+mekanism:dust:3, Copper Dust
+mekanism:dust:4, Tin Dust
+mekanism:dust:5, Silver Dust
+mekanism:dust:6, Lead Dust
+mekanism:ingot:0, Refined Obsidian Ingot
+mekanism:ingot:1, Osmium Ingot
+mekanism:ingot:2, Bronze Ingot
+mekanism:ingot:3, Glowstone Ingot
+mekanism:ingot:4, Steel Ingot
+mekanism:ingot:5, Copper Ingot
+mekanism:ingot:6, Tin Ingot
+mekanism:energytablet, Energy Tablet
+mekanism:speedupgrade, Speed Upgrade
+mekanism:energyupgrade, Energy Upgrade
+mekanism:filterupgrade, Filter Upgrade
+mekanism:mufflingupgrade, Muffling Upgrade
+mekanism:gasupgrade, Gas Upgrade
+mekanism:anchorupgrade, Anchor Upgrade
+mekanism:robit, Robit
+mekanism:atomicdisassembler, Atomic Disassembler
+mekanism:enrichedalloy, Enriched Alloy
+mekanism:reinforcedalloy, Reinforced Alloy
+mekanism:atomicalloy, Atomic Alloy
+mekanism:itemproxy, item.ItemProxy.name
+mekanism:controlcircuit:0, Basic Control Circuit
+mekanism:controlcircuit:1, Advanced Control Circuit
+mekanism:controlcircuit:2, Elite Control Circuit
+mekanism:controlcircuit:3, Ultimate Control Circuit
+mekanism:enrichediron, Enriched Iron
+mekanism:compressedcarbon, Compressed Carbon
+mekanism:compressedredstone, Compressed Redstone
+mekanism:compresseddiamond, Compressed Diamond
+mekanism:compressedobsidian, Compressed Obsidian
+mekanism:portableteleporter, Portable Teleporter
+mekanism:teleportationcore, Teleportation Core
+mekanism:clump:0, Iron Clump
+mekanism:clump:1, Gold Clump
+mekanism:clump:2, Osmium Clump
+mekanism:clump:3, Copper Clump
+mekanism:clump:4, Tin Clump
+mekanism:clump:5, Silver Clump
+mekanism:clump:6, Lead Clump
+mekanism:dirtydust:0, Dirty Iron Dust
+mekanism:dirtydust:1, Dirty Gold Dust
+mekanism:dirtydust:2, Dirty Osmium Dust
+mekanism:dirtydust:3, Dirty Copper Dust
+mekanism:dirtydust:4, Dirty Tin Dust
+mekanism:dirtydust:5, Dirty Silver Dust
+mekanism:dirtydust:6, Dirty Lead Dust
+mekanism:configurator, Configurator
+mekanism:networkreader, Network Reader
+mekanism:walkietalkie, Walkie-Talkie
+mekanism:jetpack, Jetpack
+mekanism:dictionary, Dictionary
+mekanism:gasmask, Gas Mask
+mekanism:scubatank, Scuba Tank
+mekanism:balloon:0, §8Black Balloon
+mekanism:balloon:1, §cRed Balloon
+mekanism:balloon:2, §2Green Balloon
+mekanism:balloon:3, §6Brown Balloon
+mekanism:balloon:4, §1Blue Balloon
+mekanism:balloon:5, §5Purple Balloon
+mekanism:balloon:6, §3Cyan Balloon
+mekanism:balloon:7, §7Light Grey Balloon
+mekanism:balloon:8, §8Grey Balloon
+mekanism:balloon:9, §dPink Balloon
+mekanism:balloon:10, §aLime Balloon
+mekanism:balloon:11, §eYellow Balloon
+mekanism:balloon:12, §9Light Blue Balloon
+mekanism:balloon:13, §dMagenta Balloon
+mekanism:balloon:14, §6Orange Balloon
+mekanism:balloon:15, §fWhite Balloon
+mekanism:shard:0, Iron Shard
+mekanism:shard:1, Gold Shard
+mekanism:shard:2, Osmium Shard
+mekanism:shard:3, Copper Shard
+mekanism:shard:4, Tin Shard
+mekanism:shard:5, Silver Shard
+mekanism:shard:6, Lead Shard
+mekanism:electrolyticcore, Electrolytic Core
+mekanism:sawdust, Sawdust
+mekanism:salt, Salt
+mekanism:crystal:0, Iron Crystal
+mekanism:crystal:1, Gold Crystal
+mekanism:crystal:2, Osmium Crystal
+mekanism:crystal:3, Copper Crystal
+mekanism:crystal:4, Tin Crystal
+mekanism:crystal:5, Silver Crystal
+mekanism:crystal:6, Lead Crystal
+mekanism:freerunners, Free Runners
+mekanism:armoredjetpack, Armored Jetpack
+mekanism:configurationcard, Configuration Card
+mekanism:craftingformula, Crafting Formula
+mekanism:seismicreader, Seismic Reader
+mekanism:substrate, Substrate
+mekanism:polyethene:0, HDPE Pellet
+mekanism:polyethene:1, HDPE Rod
+mekanism:polyethene:2, HDPE Sheet
+mekanism:polyethene:3, PlaStick
+mekanism:biofuel, Bio Fuel
+mekanism:flamethrower, Flamethrower
+mekanism:gaugedropper, Gauge Dropper
+mekanism:tierinstaller:0, Basic Tier Installer
+mekanism:tierinstaller:1, Advanced Tier Installer
+mekanism:tierinstaller:2, Elite Tier Installer
+mekanism:tierinstaller:3, Ultimate Tier Installer
+mekanism:otherdust:0, Diamond Dust
+mekanism:otherdust:1, Steel Dust
+mekanism:otherdust:3, Sulfur Dust
+mekanism:otherdust:4, Lithium Dust
+mekanism:otherdust:5, Refined Obsidian Dust
+mekanism:otherdust:6, Obsidian Dust
+mekanism:basicblock:0, Osmium Block
+mekanism:basicblock:1, Bronze Block
+mekanism:basicblock:2, Refined Obsidian
+mekanism:basicblock:3, Charcoal Block
+mekanism:basicblock:4, Refined Glowstone
+mekanism:basicblock:5, Steel Block
+mekanism:basicblock:6, Basic Bin
+mekanism:basicblock:6, Advanced Bin
+mekanism:basicblock:6, Elite Bin
+mekanism:basicblock:6, Ultimate Bin
+mekanism:basicblock:6, Creative Bin
+mekanism:basicblock:7, Teleporter Frame
+mekanism:basicblock:8, Steel Casing
+mekanism:basicblock:9, Dynamic Tank
+mekanism:basicblock:10, Structural Glass
+mekanism:basicblock:11, Dynamic Valve
+mekanism:basicblock:12, Copper Block
+mekanism:basicblock:13, Tin Block
+mekanism:basicblock:14, Thermal Evaporation Controller
+mekanism:basicblock:15, Thermal Evaporation Valve
+mekanism:basicblock2:0, Thermal Evaporation Block
+mekanism:basicblock2:1, Induction Casing
+mekanism:basicblock2:2, Induction Port
+mekanism:basicblock2:3, Basic Induction Cell
+mekanism:basicblock2:3, Advanced Induction Cell
+mekanism:basicblock2:3, Elite Induction Cell
+mekanism:basicblock2:3, Ultimate Induction Cell
+mekanism:basicblock2:4, Basic Induction Provider
+mekanism:basicblock2:4, Advanced Induction Provider
+mekanism:basicblock2:4, Elite Induction Provider
+mekanism:basicblock2:4, Ultimate Induction Provider
+mekanism:basicblock2:5, Superheating Element
+mekanism:basicblock2:6, Pressure Disperser
+mekanism:basicblock2:7, Boiler Casing
+mekanism:basicblock2:8, Boiler Valve
+mekanism:basicblock2:9, Security Desk
+mekanism:machineblock:0, Enrichment Chamber
+mekanism:machineblock:1, Osmium Compressor
+mekanism:machineblock:2, Combiner
+mekanism:machineblock:3, Crusher
+mekanism:machineblock:4, Digital Miner
+mekanism:machineblock:5, Basic Smelting Factory
+mekanism:machineblock:5, Basic Enriching Factory
+mekanism:machineblock:5, Basic Crushing Factory
+mekanism:machineblock:5, Basic Compressing Factory
+mekanism:machineblock:5, Basic Combining Factory
+mekanism:machineblock:5, Basic Purifying Factory
+mekanism:machineblock:5, Basic Injecting Factory
+mekanism:machineblock:5, Basic Infusing Factory
+mekanism:machineblock:6, Advanced Smelting Factory
+mekanism:machineblock:6, Advanced Enriching Factory
+mekanism:machineblock:6, Advanced Crushing Factory
+mekanism:machineblock:6, Advanced Compressing Factory
+mekanism:machineblock:6, Advanced Combining Factory
+mekanism:machineblock:6, Advanced Purifying Factory
+mekanism:machineblock:6, Advanced Injecting Factory
+mekanism:machineblock:6, Advanced Infusing Factory
+mekanism:machineblock:7, Elite Smelting Factory
+mekanism:machineblock:7, Elite Enriching Factory
+mekanism:machineblock:7, Elite Crushing Factory
+mekanism:machineblock:7, Elite Compressing Factory
+mekanism:machineblock:7, Elite Combining Factory
+mekanism:machineblock:7, Elite Purifying Factory
+mekanism:machineblock:7, Elite Injecting Factory
+mekanism:machineblock:7, Elite Infusing Factory
+mekanism:machineblock:8, Metallurgic Infuser
+mekanism:machineblock:9, Purification Chamber
+mekanism:machineblock:10, Energized Smelter
+mekanism:machineblock:11, Teleporter
+mekanism:machineblock:12, Electric Pump
+mekanism:machineblock:13, Personal Chest
+mekanism:machineblock:14, Chargepad
+mekanism:machineblock:15, Logistical Sorter
+mekanism:machineblock2:0, Rotary Condensentrator
+mekanism:machineblock2:1, Chemical Oxidizer
+mekanism:machineblock2:2, Chemical Infuser
+mekanism:machineblock2:3, Chemical Injection Chamber
+mekanism:machineblock2:4, Electrolytic Separator
+mekanism:machineblock2:5, Precision Sawmill
+mekanism:machineblock2:6, Chemical Dissolution Chamber
+mekanism:machineblock2:7, Chemical Washer
+mekanism:machineblock2:8, Chemical Crystallizer
+mekanism:machineblock2:9, Seismic Vibrator
+mekanism:machineblock2:10, Pressurized Reaction Chamber
+mekanism:machineblock2:11, Basic Fluid Tank
+mekanism:machineblock2:11, Advanced Fluid Tank
+mekanism:machineblock2:11, Elite Fluid Tank
+mekanism:machineblock2:11, Ultimate Fluid Tank
+mekanism:machineblock2:11, Creative Fluid Tank
+mekanism:machineblock2:12, Fluidic Plenisher
+mekanism:machineblock2:13, Laser
+mekanism:machineblock2:14, Laser Amplifier
+mekanism:machineblock2:15, Laser Tractor Beam
+mekanism:machineblock3:0, Quantum Entangloporter
+mekanism:machineblock3:1, Solar Neutron Activator
+mekanism:machineblock3:3, Oredictionificator
+mekanism:machineblock3:4, Resistive Heater
+mekanism:machineblock3:5, Formulaic Assemblicator
+mekanism:machineblock3:6, Fuelwood Heater
+mekanism:oreblock:0, Osmium Ore
+mekanism:oreblock:1, Copper Ore
+mekanism:oreblock:2, Tin Ore
+mekanism:energycube:0, Basic Energy Cube
+mekanism:energycube:0, Basic Energy Cube
+mekanism:energycube:0, Advanced Energy Cube
+mekanism:energycube:0, Advanced Energy Cube
+mekanism:energycube:0, Elite Energy Cube
+mekanism:energycube:0, Elite Energy Cube
+mekanism:energycube:0, Ultimate Energy Cube
+mekanism:energycube:0, Ultimate Energy Cube
+mekanism:energycube:0, Creative Energy Cube
+mekanism:energycube:0, Creative Energy Cube
+mekanism:transmitter:0, Basic Universal Cable
+mekanism:transmitter:0, Advanced Universal Cable
+mekanism:transmitter:0, Elite Universal Cable
+mekanism:transmitter:0, Ultimate Universal Cable
+mekanism:transmitter:1, Basic Mechanical Pipe
+mekanism:transmitter:1, Advanced Mechanical Pipe
+mekanism:transmitter:1, Elite Mechanical Pipe
+mekanism:transmitter:1, Ultimate Mechanical Pipe
+mekanism:transmitter:2, Basic Pressurized Tube
+mekanism:transmitter:2, Advanced Pressurized Tube
+mekanism:transmitter:2, Elite Pressurized Tube
+mekanism:transmitter:2, Ultimate Pressurized Tube
+mekanism:transmitter:3, Basic Logistical Transporter
+mekanism:transmitter:3, Advanced Logistical Transporter
+mekanism:transmitter:3, Elite Logistical Transporter
+mekanism:transmitter:3, Ultimate Logistical Transporter
+mekanism:transmitter:4, Restrictive Transporter
+mekanism:transmitter:5, Diversion Transporter
+mekanism:transmitter:6, Basic Thermodynamic Conductor
+mekanism:transmitter:6, Advanced Thermodynamic Conductor
+mekanism:transmitter:6, Elite Thermodynamic Conductor
+mekanism:transmitter:6, Ultimate Thermodynamic Conductor
+mekanism:obsidiantnt, Obsidian TNT
+mekanism:boundingblock, Bounding Block
+mekanism:gastank:0, Basic Gas Tank
+mekanism:gastank:0, Advanced Gas Tank
+mekanism:gastank:0, Elite Gas Tank
+mekanism:gastank:0, Ultimate Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:gastank:0, Creative Gas Tank
+mekanism:cardboardbox, Cardboard Box
+mekanism:glowpanel:0, §8Black Glow Panel
+mekanism:glowpanel:1, §cRed Glow Panel
+mekanism:glowpanel:2, §2Green Glow Panel
+mekanism:glowpanel:3, §6Brown Glow Panel
+mekanism:glowpanel:4, §1Blue Glow Panel
+mekanism:glowpanel:5, §5Purple Glow Panel
+mekanism:glowpanel:6, §3Cyan Glow Panel
+mekanism:glowpanel:7, §7Light Grey Glow Panel
+mekanism:glowpanel:8, §8Grey Glow Panel
+mekanism:glowpanel:9, §dPink Glow Panel
+mekanism:glowpanel:10, §aLime Glow Panel
+mekanism:glowpanel:11, §eYellow Glow Panel
+mekanism:glowpanel:12, §9Light Blue Glow Panel
+mekanism:glowpanel:13, §dMagenta Glow Panel
+mekanism:glowpanel:14, §6Orange Glow Panel
+mekanism:glowpanel:15, §fWhite Glow Panel
+mekanism:plasticblock:0, §8Black Plastic Block
+mekanism:plasticblock:1, §cRed Plastic Block
+mekanism:plasticblock:2, §2Green Plastic Block
+mekanism:plasticblock:3, §6Brown Plastic Block
+mekanism:plasticblock:4, §1Blue Plastic Block
+mekanism:plasticblock:5, §5Purple Plastic Block
+mekanism:plasticblock:6, §3Cyan Plastic Block
+mekanism:plasticblock:7, §7Light Grey Plastic Block
+mekanism:plasticblock:8, §8Grey Plastic Block
+mekanism:plasticblock:9, §dPink Plastic Block
+mekanism:plasticblock:10, §aLime Plastic Block
+mekanism:plasticblock:11, §eYellow Plastic Block
+mekanism:plasticblock:12, §9Light Blue Plastic Block
+mekanism:plasticblock:13, §dMagenta Plastic Block
+mekanism:plasticblock:14, §6Orange Plastic Block
+mekanism:plasticblock:15, §fWhite Plastic Block
+mekanism:slickplasticblock:0, §8Black Slick Plastic Block
+mekanism:slickplasticblock:1, §cRed Slick Plastic Block
+mekanism:slickplasticblock:2, §2Green Slick Plastic Block
+mekanism:slickplasticblock:3, §6Brown Slick Plastic Block
+mekanism:slickplasticblock:4, §1Blue Slick Plastic Block
+mekanism:slickplasticblock:5, §5Purple Slick Plastic Block
+mekanism:slickplasticblock:6, §3Cyan Slick Plastic Block
+mekanism:slickplasticblock:7, §7Light Grey Slick Plastic Block
+mekanism:slickplasticblock:8, §8Grey Slick Plastic Block
+mekanism:slickplasticblock:9, §dPink Slick Plastic Block
+mekanism:slickplasticblock:10, §aLime Slick Plastic Block
+mekanism:slickplasticblock:11, §eYellow Slick Plastic Block
+mekanism:slickplasticblock:12, §9Light Blue Slick Plastic Block
+mekanism:slickplasticblock:13, §dMagenta Slick Plastic Block
+mekanism:slickplasticblock:14, §6Orange Slick Plastic Block
+mekanism:slickplasticblock:15, §fWhite Slick Plastic Block
+mekanism:glowplasticblock:0, §8Black Plastic Glow Block
+mekanism:glowplasticblock:1, §cRed Plastic Glow Block
+mekanism:glowplasticblock:2, §2Green Plastic Glow Block
+mekanism:glowplasticblock:3, §6Brown Plastic Glow Block
+mekanism:glowplasticblock:4, §1Blue Plastic Glow Block
+mekanism:glowplasticblock:5, §5Purple Plastic Glow Block
+mekanism:glowplasticblock:6, §3Cyan Plastic Glow Block
+mekanism:glowplasticblock:7, §7Light Grey Plastic Glow Block
+mekanism:glowplasticblock:8, §8Grey Plastic Glow Block
+mekanism:glowplasticblock:9, §dPink Plastic Glow Block
+mekanism:glowplasticblock:10, §aLime Plastic Glow Block
+mekanism:glowplasticblock:11, §eYellow Plastic Glow Block
+mekanism:glowplasticblock:12, §9Light Blue Plastic Glow Block
+mekanism:glowplasticblock:13, §dMagenta Plastic Glow Block
+mekanism:glowplasticblock:14, §6Orange Plastic Glow Block
+mekanism:glowplasticblock:15, §fWhite Plastic Glow Block
+mekanism:reinforcedplasticblock:0, §8Black Reinforced Plastic Block
+mekanism:reinforcedplasticblock:1, §cRed Reinforced Plastic Block
+mekanism:reinforcedplasticblock:2, §2Green Reinforced Plastic Block
+mekanism:reinforcedplasticblock:3, §6Brown Reinforced Plastic Block
+mekanism:reinforcedplasticblock:4, §1Blue Reinforced Plastic Block
+mekanism:reinforcedplasticblock:5, §5Purple Reinforced Plastic Block
+mekanism:reinforcedplasticblock:6, §3Cyan Reinforced Plastic Block
+mekanism:reinforcedplasticblock:7, §7Light Grey Reinforced Plastic Block
+mekanism:reinforcedplasticblock:8, §8Grey Reinforced Plastic Block
+mekanism:reinforcedplasticblock:9, §dPink Reinforced Plastic Block
+mekanism:reinforcedplasticblock:10, §aLime Reinforced Plastic Block
+mekanism:reinforcedplasticblock:11, §eYellow Reinforced Plastic Block
+mekanism:reinforcedplasticblock:12, §9Light Blue Reinforced Plastic Block
+mekanism:reinforcedplasticblock:13, §dMagenta Reinforced Plastic Block
+mekanism:reinforcedplasticblock:14, §6Orange Reinforced Plastic Block
+mekanism:reinforcedplasticblock:15, §fWhite Reinforced Plastic Block
+mekanism:roadplasticblock:0, §8Black Plastic Road
+mekanism:roadplasticblock:1, §cRed Plastic Road
+mekanism:roadplasticblock:2, §2Green Plastic Road
+mekanism:roadplasticblock:3, §6Brown Plastic Road
+mekanism:roadplasticblock:4, §1Blue Plastic Road
+mekanism:roadplasticblock:5, §5Purple Plastic Road
+mekanism:roadplasticblock:6, §3Cyan Plastic Road
+mekanism:roadplasticblock:7, §7Light Grey Plastic Road
+mekanism:roadplasticblock:8, §8Grey Plastic Road
+mekanism:roadplasticblock:9, §dPink Plastic Road
+mekanism:roadplasticblock:10, §aLime Plastic Road
+mekanism:roadplasticblock:11, §eYellow Plastic Road
+mekanism:roadplasticblock:12, §9Light Blue Plastic Road
+mekanism:roadplasticblock:13, §dMagenta Plastic Road
+mekanism:roadplasticblock:14, §6Orange Plastic Road
+mekanism:roadplasticblock:15, §fWhite Plastic Road
+mekanism:plasticfence:0, §8Black Plastic Barrier
+mekanism:plasticfence:1, §cRed Plastic Barrier
+mekanism:plasticfence:2, §2Green Plastic Barrier
+mekanism:plasticfence:3, §6Brown Plastic Barrier
+mekanism:plasticfence:4, §1Blue Plastic Barrier
+mekanism:plasticfence:5, §5Purple Plastic Barrier
+mekanism:plasticfence:6, §3Cyan Plastic Barrier
+mekanism:plasticfence:7, §7Light Grey Plastic Barrier
+mekanism:plasticfence:8, §8Grey Plastic Barrier
+mekanism:plasticfence:9, §dPink Plastic Barrier
+mekanism:plasticfence:10, §aLime Plastic Barrier
+mekanism:plasticfence:11, §eYellow Plastic Barrier
+mekanism:plasticfence:12, §9Light Blue Plastic Barrier
+mekanism:plasticfence:13, §dMagenta Plastic Barrier
+mekanism:plasticfence:14, §6Orange Plastic Barrier
+mekanism:plasticfence:15, §fWhite Plastic Barrier
+mekanism:saltblock, Salt Block
 capabilityproxy:capability_proxy:0, Capability Proxy
 cavern:cavern_portal, Cavern Portal
 cavern:aqua_cavern_portal, Aqua Cavern Portal
@@ -18013,7 +18679,6 @@ ceramics:clay_bucket:0, Hydrogen Clay Bucket
 ceramics:clay_bucket:0, Oxygen Clay Bucket
 ceramics:clay_bucket:0, Heavy Water Clay Bucket
 ceramics:clay_bucket:0, Molten Reinforced Stone Clay Bucket
-ceramics:clay_bucket:0, Molten Slime Clay Bucket
 ceramics:clay_bucket:0, Molten Glass-Slime Composite Clay Bucket
 ceramics:clay_bucket:0, Molten Putty Clay Bucket
 ceramics:clay_bucket:0, Experience Clay Bucket
@@ -18073,6 +18738,7 @@ ceramics:clay_bucket:0, Diesel Clay Bucket
 ceramics:clay_bucket:0, Lubricant Clay Bucket
 ceramics:clay_bucket:0, Gasoline Clay Bucket
 ceramics:clay_bucket:0, Distilled Water Clay Bucket
+ceramics:clay_bucket:0, Liquid Slime Clay Bucket
 ceramics:clay_bucket:0, Essence Clay Bucket
 ceramics:clay_bucket:0, Liquid Meat Clay Bucket
 ceramics:clay_bucket:0, Latex Clay Bucket
@@ -19115,392 +19781,6 @@ evilcraft:spikey_claws, Spikey Claws
 evilcraft:spectral_glasses, Spectral Glasses
 evilcraft:box_of_eternal_closure:0, Box of Eternal Closure
 evilcraft:box_of_eternal_closure:0, Box of Eternal Closure
-mekanism:electricbow, Electric Bow
-mekanism:dust:0, Iron Dust
-mekanism:dust:1, Gold Dust
-mekanism:dust:2, Osmium Dust
-mekanism:dust:3, Copper Dust
-mekanism:dust:4, Tin Dust
-mekanism:dust:5, Silver Dust
-mekanism:dust:6, Lead Dust
-mekanism:ingot:0, Refined Obsidian Ingot
-mekanism:ingot:1, Osmium Ingot
-mekanism:ingot:2, Bronze Ingot
-mekanism:ingot:3, Glowstone Ingot
-mekanism:ingot:4, Steel Ingot
-mekanism:ingot:5, Copper Ingot
-mekanism:ingot:6, Tin Ingot
-mekanism:energytablet, Energy Tablet
-mekanism:speedupgrade, Speed Upgrade
-mekanism:energyupgrade, Energy Upgrade
-mekanism:filterupgrade, Filter Upgrade
-mekanism:mufflingupgrade, Muffling Upgrade
-mekanism:gasupgrade, Gas Upgrade
-mekanism:anchorupgrade, Anchor Upgrade
-mekanism:robit, Robit
-mekanism:atomicdisassembler, Atomic Disassembler
-mekanism:enrichedalloy, Enriched Alloy
-mekanism:reinforcedalloy, Reinforced Alloy
-mekanism:atomicalloy, Atomic Alloy
-mekanism:itemproxy, item.ItemProxy.name
-mekanism:controlcircuit:0, Basic Control Circuit
-mekanism:controlcircuit:1, Advanced Control Circuit
-mekanism:controlcircuit:2, Elite Control Circuit
-mekanism:controlcircuit:3, Ultimate Control Circuit
-mekanism:enrichediron, Enriched Iron
-mekanism:compressedcarbon, Compressed Carbon
-mekanism:compressedredstone, Compressed Redstone
-mekanism:compresseddiamond, Compressed Diamond
-mekanism:compressedobsidian, Compressed Obsidian
-mekanism:portableteleporter, Portable Teleporter
-mekanism:teleportationcore, Teleportation Core
-mekanism:clump:0, Iron Clump
-mekanism:clump:1, Gold Clump
-mekanism:clump:2, Osmium Clump
-mekanism:clump:3, Copper Clump
-mekanism:clump:4, Tin Clump
-mekanism:clump:5, Silver Clump
-mekanism:clump:6, Lead Clump
-mekanism:dirtydust:0, Dirty Iron Dust
-mekanism:dirtydust:1, Dirty Gold Dust
-mekanism:dirtydust:2, Dirty Osmium Dust
-mekanism:dirtydust:3, Dirty Copper Dust
-mekanism:dirtydust:4, Dirty Tin Dust
-mekanism:dirtydust:5, Dirty Silver Dust
-mekanism:dirtydust:6, Dirty Lead Dust
-mekanism:configurator, Configurator
-mekanism:networkreader, Network Reader
-mekanism:walkietalkie, Walkie-Talkie
-mekanism:jetpack, Jetpack
-mekanism:dictionary, Dictionary
-mekanism:gasmask, Gas Mask
-mekanism:scubatank, Scuba Tank
-mekanism:balloon:0, §8Black Balloon
-mekanism:balloon:1, §cRed Balloon
-mekanism:balloon:2, §2Green Balloon
-mekanism:balloon:3, §6Brown Balloon
-mekanism:balloon:4, §1Blue Balloon
-mekanism:balloon:5, §5Purple Balloon
-mekanism:balloon:6, §3Cyan Balloon
-mekanism:balloon:7, §7Light Grey Balloon
-mekanism:balloon:8, §8Grey Balloon
-mekanism:balloon:9, §dPink Balloon
-mekanism:balloon:10, §aLime Balloon
-mekanism:balloon:11, §eYellow Balloon
-mekanism:balloon:12, §9Light Blue Balloon
-mekanism:balloon:13, §dMagenta Balloon
-mekanism:balloon:14, §6Orange Balloon
-mekanism:balloon:15, §fWhite Balloon
-mekanism:shard:0, Iron Shard
-mekanism:shard:1, Gold Shard
-mekanism:shard:2, Osmium Shard
-mekanism:shard:3, Copper Shard
-mekanism:shard:4, Tin Shard
-mekanism:shard:5, Silver Shard
-mekanism:shard:6, Lead Shard
-mekanism:electrolyticcore, Electrolytic Core
-mekanism:sawdust, Sawdust
-mekanism:salt, Salt
-mekanism:crystal:0, Iron Crystal
-mekanism:crystal:1, Gold Crystal
-mekanism:crystal:2, Osmium Crystal
-mekanism:crystal:3, Copper Crystal
-mekanism:crystal:4, Tin Crystal
-mekanism:crystal:5, Silver Crystal
-mekanism:crystal:6, Lead Crystal
-mekanism:freerunners, Free Runners
-mekanism:armoredjetpack, Armored Jetpack
-mekanism:configurationcard, Configuration Card
-mekanism:craftingformula, Crafting Formula
-mekanism:seismicreader, Seismic Reader
-mekanism:substrate, Substrate
-mekanism:polyethene:0, HDPE Pellet
-mekanism:polyethene:1, HDPE Rod
-mekanism:polyethene:2, HDPE Sheet
-mekanism:polyethene:3, PlaStick
-mekanism:biofuel, Bio Fuel
-mekanism:flamethrower, Flamethrower
-mekanism:gaugedropper, Gauge Dropper
-mekanism:tierinstaller:0, Basic Tier Installer
-mekanism:tierinstaller:1, Advanced Tier Installer
-mekanism:tierinstaller:2, Elite Tier Installer
-mekanism:tierinstaller:3, Ultimate Tier Installer
-mekanism:otherdust:0, Diamond Dust
-mekanism:otherdust:1, Steel Dust
-mekanism:otherdust:3, Sulfur Dust
-mekanism:otherdust:4, Lithium Dust
-mekanism:otherdust:5, Refined Obsidian Dust
-mekanism:otherdust:6, Obsidian Dust
-mekanism:basicblock:0, Osmium Block
-mekanism:basicblock:1, Bronze Block
-mekanism:basicblock:2, Refined Obsidian
-mekanism:basicblock:3, Charcoal Block
-mekanism:basicblock:4, Refined Glowstone
-mekanism:basicblock:5, Steel Block
-mekanism:basicblock:6, Basic Bin
-mekanism:basicblock:6, Advanced Bin
-mekanism:basicblock:6, Elite Bin
-mekanism:basicblock:6, Ultimate Bin
-mekanism:basicblock:6, Creative Bin
-mekanism:basicblock:7, Teleporter Frame
-mekanism:basicblock:8, Steel Casing
-mekanism:basicblock:9, Dynamic Tank
-mekanism:basicblock:10, Structural Glass
-mekanism:basicblock:11, Dynamic Valve
-mekanism:basicblock:12, Copper Block
-mekanism:basicblock:13, Tin Block
-mekanism:basicblock:14, Thermal Evaporation Controller
-mekanism:basicblock:15, Thermal Evaporation Valve
-mekanism:basicblock2:0, Thermal Evaporation Block
-mekanism:basicblock2:1, Induction Casing
-mekanism:basicblock2:2, Induction Port
-mekanism:basicblock2:3, Basic Induction Cell
-mekanism:basicblock2:3, Advanced Induction Cell
-mekanism:basicblock2:3, Elite Induction Cell
-mekanism:basicblock2:3, Ultimate Induction Cell
-mekanism:basicblock2:4, Basic Induction Provider
-mekanism:basicblock2:4, Advanced Induction Provider
-mekanism:basicblock2:4, Elite Induction Provider
-mekanism:basicblock2:4, Ultimate Induction Provider
-mekanism:basicblock2:5, Superheating Element
-mekanism:basicblock2:6, Pressure Disperser
-mekanism:basicblock2:7, Boiler Casing
-mekanism:basicblock2:8, Boiler Valve
-mekanism:basicblock2:9, Security Desk
-mekanism:machineblock:0, Enrichment Chamber
-mekanism:machineblock:1, Osmium Compressor
-mekanism:machineblock:2, Combiner
-mekanism:machineblock:3, Crusher
-mekanism:machineblock:4, Digital Miner
-mekanism:machineblock:5, Basic Smelting Factory
-mekanism:machineblock:5, Basic Enriching Factory
-mekanism:machineblock:5, Basic Crushing Factory
-mekanism:machineblock:5, Basic Compressing Factory
-mekanism:machineblock:5, Basic Combining Factory
-mekanism:machineblock:5, Basic Purifying Factory
-mekanism:machineblock:5, Basic Injecting Factory
-mekanism:machineblock:5, Basic Infusing Factory
-mekanism:machineblock:6, Advanced Smelting Factory
-mekanism:machineblock:6, Advanced Enriching Factory
-mekanism:machineblock:6, Advanced Crushing Factory
-mekanism:machineblock:6, Advanced Compressing Factory
-mekanism:machineblock:6, Advanced Combining Factory
-mekanism:machineblock:6, Advanced Purifying Factory
-mekanism:machineblock:6, Advanced Injecting Factory
-mekanism:machineblock:6, Advanced Infusing Factory
-mekanism:machineblock:7, Elite Smelting Factory
-mekanism:machineblock:7, Elite Enriching Factory
-mekanism:machineblock:7, Elite Crushing Factory
-mekanism:machineblock:7, Elite Compressing Factory
-mekanism:machineblock:7, Elite Combining Factory
-mekanism:machineblock:7, Elite Purifying Factory
-mekanism:machineblock:7, Elite Injecting Factory
-mekanism:machineblock:7, Elite Infusing Factory
-mekanism:machineblock:8, Metallurgic Infuser
-mekanism:machineblock:9, Purification Chamber
-mekanism:machineblock:10, Energized Smelter
-mekanism:machineblock:11, Teleporter
-mekanism:machineblock:12, Electric Pump
-mekanism:machineblock:13, Personal Chest
-mekanism:machineblock:14, Chargepad
-mekanism:machineblock:15, Logistical Sorter
-mekanism:machineblock2:0, Rotary Condensentrator
-mekanism:machineblock2:1, Chemical Oxidizer
-mekanism:machineblock2:2, Chemical Infuser
-mekanism:machineblock2:3, Chemical Injection Chamber
-mekanism:machineblock2:4, Electrolytic Separator
-mekanism:machineblock2:5, Precision Sawmill
-mekanism:machineblock2:6, Chemical Dissolution Chamber
-mekanism:machineblock2:7, Chemical Washer
-mekanism:machineblock2:8, Chemical Crystallizer
-mekanism:machineblock2:9, Seismic Vibrator
-mekanism:machineblock2:10, Pressurized Reaction Chamber
-mekanism:machineblock2:11, Basic Fluid Tank
-mekanism:machineblock2:11, Advanced Fluid Tank
-mekanism:machineblock2:11, Elite Fluid Tank
-mekanism:machineblock2:11, Ultimate Fluid Tank
-mekanism:machineblock2:11, Creative Fluid Tank
-mekanism:machineblock2:12, Fluidic Plenisher
-mekanism:machineblock2:13, Laser
-mekanism:machineblock2:14, Laser Amplifier
-mekanism:machineblock2:15, Laser Tractor Beam
-mekanism:machineblock3:0, Quantum Entangloporter
-mekanism:machineblock3:1, Solar Neutron Activator
-mekanism:machineblock3:3, Oredictionificator
-mekanism:machineblock3:4, Resistive Heater
-mekanism:machineblock3:5, Formulaic Assemblicator
-mekanism:machineblock3:6, Fuelwood Heater
-mekanism:oreblock:0, Osmium Ore
-mekanism:oreblock:1, Copper Ore
-mekanism:oreblock:2, Tin Ore
-mekanism:energycube:0, Basic Energy Cube
-mekanism:energycube:0, Basic Energy Cube
-mekanism:energycube:0, Advanced Energy Cube
-mekanism:energycube:0, Advanced Energy Cube
-mekanism:energycube:0, Elite Energy Cube
-mekanism:energycube:0, Elite Energy Cube
-mekanism:energycube:0, Ultimate Energy Cube
-mekanism:energycube:0, Ultimate Energy Cube
-mekanism:energycube:0, Creative Energy Cube
-mekanism:energycube:0, Creative Energy Cube
-mekanism:transmitter:0, Basic Universal Cable
-mekanism:transmitter:0, Advanced Universal Cable
-mekanism:transmitter:0, Elite Universal Cable
-mekanism:transmitter:0, Ultimate Universal Cable
-mekanism:transmitter:1, Basic Mechanical Pipe
-mekanism:transmitter:1, Advanced Mechanical Pipe
-mekanism:transmitter:1, Elite Mechanical Pipe
-mekanism:transmitter:1, Ultimate Mechanical Pipe
-mekanism:transmitter:2, Basic Pressurized Tube
-mekanism:transmitter:2, Advanced Pressurized Tube
-mekanism:transmitter:2, Elite Pressurized Tube
-mekanism:transmitter:2, Ultimate Pressurized Tube
-mekanism:transmitter:3, Basic Logistical Transporter
-mekanism:transmitter:3, Advanced Logistical Transporter
-mekanism:transmitter:3, Elite Logistical Transporter
-mekanism:transmitter:3, Ultimate Logistical Transporter
-mekanism:transmitter:4, Restrictive Transporter
-mekanism:transmitter:5, Diversion Transporter
-mekanism:transmitter:6, Basic Thermodynamic Conductor
-mekanism:transmitter:6, Advanced Thermodynamic Conductor
-mekanism:transmitter:6, Elite Thermodynamic Conductor
-mekanism:transmitter:6, Ultimate Thermodynamic Conductor
-mekanism:obsidiantnt, Obsidian TNT
-mekanism:boundingblock, Bounding Block
-mekanism:gastank:0, Basic Gas Tank
-mekanism:gastank:0, Advanced Gas Tank
-mekanism:gastank:0, Elite Gas Tank
-mekanism:gastank:0, Ultimate Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:gastank:0, Creative Gas Tank
-mekanism:cardboardbox, Cardboard Box
-mekanism:glowpanel:0, §8Black Glow Panel
-mekanism:glowpanel:1, §cRed Glow Panel
-mekanism:glowpanel:2, §2Green Glow Panel
-mekanism:glowpanel:3, §6Brown Glow Panel
-mekanism:glowpanel:4, §1Blue Glow Panel
-mekanism:glowpanel:5, §5Purple Glow Panel
-mekanism:glowpanel:6, §3Cyan Glow Panel
-mekanism:glowpanel:7, §7Light Grey Glow Panel
-mekanism:glowpanel:8, §8Grey Glow Panel
-mekanism:glowpanel:9, §dPink Glow Panel
-mekanism:glowpanel:10, §aLime Glow Panel
-mekanism:glowpanel:11, §eYellow Glow Panel
-mekanism:glowpanel:12, §9Light Blue Glow Panel
-mekanism:glowpanel:13, §dMagenta Glow Panel
-mekanism:glowpanel:14, §6Orange Glow Panel
-mekanism:glowpanel:15, §fWhite Glow Panel
-mekanism:plasticblock:0, §8Black Plastic Block
-mekanism:plasticblock:1, §cRed Plastic Block
-mekanism:plasticblock:2, §2Green Plastic Block
-mekanism:plasticblock:3, §6Brown Plastic Block
-mekanism:plasticblock:4, §1Blue Plastic Block
-mekanism:plasticblock:5, §5Purple Plastic Block
-mekanism:plasticblock:6, §3Cyan Plastic Block
-mekanism:plasticblock:7, §7Light Grey Plastic Block
-mekanism:plasticblock:8, §8Grey Plastic Block
-mekanism:plasticblock:9, §dPink Plastic Block
-mekanism:plasticblock:10, §aLime Plastic Block
-mekanism:plasticblock:11, §eYellow Plastic Block
-mekanism:plasticblock:12, §9Light Blue Plastic Block
-mekanism:plasticblock:13, §dMagenta Plastic Block
-mekanism:plasticblock:14, §6Orange Plastic Block
-mekanism:plasticblock:15, §fWhite Plastic Block
-mekanism:slickplasticblock:0, §8Black Slick Plastic Block
-mekanism:slickplasticblock:1, §cRed Slick Plastic Block
-mekanism:slickplasticblock:2, §2Green Slick Plastic Block
-mekanism:slickplasticblock:3, §6Brown Slick Plastic Block
-mekanism:slickplasticblock:4, §1Blue Slick Plastic Block
-mekanism:slickplasticblock:5, §5Purple Slick Plastic Block
-mekanism:slickplasticblock:6, §3Cyan Slick Plastic Block
-mekanism:slickplasticblock:7, §7Light Grey Slick Plastic Block
-mekanism:slickplasticblock:8, §8Grey Slick Plastic Block
-mekanism:slickplasticblock:9, §dPink Slick Plastic Block
-mekanism:slickplasticblock:10, §aLime Slick Plastic Block
-mekanism:slickplasticblock:11, §eYellow Slick Plastic Block
-mekanism:slickplasticblock:12, §9Light Blue Slick Plastic Block
-mekanism:slickplasticblock:13, §dMagenta Slick Plastic Block
-mekanism:slickplasticblock:14, §6Orange Slick Plastic Block
-mekanism:slickplasticblock:15, §fWhite Slick Plastic Block
-mekanism:glowplasticblock:0, §8Black Plastic Glow Block
-mekanism:glowplasticblock:1, §cRed Plastic Glow Block
-mekanism:glowplasticblock:2, §2Green Plastic Glow Block
-mekanism:glowplasticblock:3, §6Brown Plastic Glow Block
-mekanism:glowplasticblock:4, §1Blue Plastic Glow Block
-mekanism:glowplasticblock:5, §5Purple Plastic Glow Block
-mekanism:glowplasticblock:6, §3Cyan Plastic Glow Block
-mekanism:glowplasticblock:7, §7Light Grey Plastic Glow Block
-mekanism:glowplasticblock:8, §8Grey Plastic Glow Block
-mekanism:glowplasticblock:9, §dPink Plastic Glow Block
-mekanism:glowplasticblock:10, §aLime Plastic Glow Block
-mekanism:glowplasticblock:11, §eYellow Plastic Glow Block
-mekanism:glowplasticblock:12, §9Light Blue Plastic Glow Block
-mekanism:glowplasticblock:13, §dMagenta Plastic Glow Block
-mekanism:glowplasticblock:14, §6Orange Plastic Glow Block
-mekanism:glowplasticblock:15, §fWhite Plastic Glow Block
-mekanism:reinforcedplasticblock:0, §8Black Reinforced Plastic Block
-mekanism:reinforcedplasticblock:1, §cRed Reinforced Plastic Block
-mekanism:reinforcedplasticblock:2, §2Green Reinforced Plastic Block
-mekanism:reinforcedplasticblock:3, §6Brown Reinforced Plastic Block
-mekanism:reinforcedplasticblock:4, §1Blue Reinforced Plastic Block
-mekanism:reinforcedplasticblock:5, §5Purple Reinforced Plastic Block
-mekanism:reinforcedplasticblock:6, §3Cyan Reinforced Plastic Block
-mekanism:reinforcedplasticblock:7, §7Light Grey Reinforced Plastic Block
-mekanism:reinforcedplasticblock:8, §8Grey Reinforced Plastic Block
-mekanism:reinforcedplasticblock:9, §dPink Reinforced Plastic Block
-mekanism:reinforcedplasticblock:10, §aLime Reinforced Plastic Block
-mekanism:reinforcedplasticblock:11, §eYellow Reinforced Plastic Block
-mekanism:reinforcedplasticblock:12, §9Light Blue Reinforced Plastic Block
-mekanism:reinforcedplasticblock:13, §dMagenta Reinforced Plastic Block
-mekanism:reinforcedplasticblock:14, §6Orange Reinforced Plastic Block
-mekanism:reinforcedplasticblock:15, §fWhite Reinforced Plastic Block
-mekanism:roadplasticblock:0, §8Black Plastic Road
-mekanism:roadplasticblock:1, §cRed Plastic Road
-mekanism:roadplasticblock:2, §2Green Plastic Road
-mekanism:roadplasticblock:3, §6Brown Plastic Road
-mekanism:roadplasticblock:4, §1Blue Plastic Road
-mekanism:roadplasticblock:5, §5Purple Plastic Road
-mekanism:roadplasticblock:6, §3Cyan Plastic Road
-mekanism:roadplasticblock:7, §7Light Grey Plastic Road
-mekanism:roadplasticblock:8, §8Grey Plastic Road
-mekanism:roadplasticblock:9, §dPink Plastic Road
-mekanism:roadplasticblock:10, §aLime Plastic Road
-mekanism:roadplasticblock:11, §eYellow Plastic Road
-mekanism:roadplasticblock:12, §9Light Blue Plastic Road
-mekanism:roadplasticblock:13, §dMagenta Plastic Road
-mekanism:roadplasticblock:14, §6Orange Plastic Road
-mekanism:roadplasticblock:15, §fWhite Plastic Road
-mekanism:plasticfence:0, §8Black Plastic Barrier
-mekanism:plasticfence:1, §cRed Plastic Barrier
-mekanism:plasticfence:2, §2Green Plastic Barrier
-mekanism:plasticfence:3, §6Brown Plastic Barrier
-mekanism:plasticfence:4, §1Blue Plastic Barrier
-mekanism:plasticfence:5, §5Purple Plastic Barrier
-mekanism:plasticfence:6, §3Cyan Plastic Barrier
-mekanism:plasticfence:7, §7Light Grey Plastic Barrier
-mekanism:plasticfence:8, §8Grey Plastic Barrier
-mekanism:plasticfence:9, §dPink Plastic Barrier
-mekanism:plasticfence:10, §aLime Plastic Barrier
-mekanism:plasticfence:11, §eYellow Plastic Barrier
-mekanism:plasticfence:12, §9Light Blue Plastic Barrier
-mekanism:plasticfence:13, §dMagenta Plastic Barrier
-mekanism:plasticfence:14, §6Orange Plastic Barrier
-mekanism:plasticfence:15, §fWhite Plastic Barrier
-mekanism:saltblock, Salt Block
 zerocore:debugtool, Debug Tool
 bigreactors:ingotmetals:0, Yellorium Ingot
 bigreactors:ingotmetals:1, Cyanite Ingot
@@ -20941,24 +21221,6 @@ integratedtunnels:part_exporter_world_fluid_item, item.items.integratedtunnels.p
 integratedtunnels:part_importer_world_block_item, item.items.integratedtunnels.part_importer_world_block_item.name
 integratedtunnels:part_exporter_world_block_item, item.items.integratedtunnels.part_exporter_world_block_item.name
 integratedtunnels:part_player_simulator_item, item.items.integratedtunnels.part_player_simulator_item.name
-ironchest:iron_gold_chest_upgrade, Iron to Gold Chest Upgrade
-ironchest:gold_diamond_chest_upgrade, Gold to Diamond Chest Upgrade
-ironchest:copper_silver_chest_upgrade, Copper to Silver Chest Upgrade
-ironchest:silver_gold_chest_upgrade, Silver to Gold Chest Upgrade
-ironchest:copper_iron_chest_upgrade, Copper to Iron Chest Upgrade
-ironchest:diamond_crystal_chest_upgrade, Diamond to Crystal Chest Upgrade
-ironchest:wood_iron_chest_upgrade, Wood to Iron Chest Upgrade
-ironchest:wood_copper_chest_upgrade, Wood to Copper Chest Upgrade
-ironchest:diamond_obsidian_chest_upgrade, Diamond to Obsidian Chest Upgrade
-ironchest:iron_gold_shulker_upgrade, Iron to Gold Shulker Box Upgrade
-ironchest:gold_diamond_shulker_upgrade, Gold to Diamond Shulker Box Upgrade
-ironchest:copper_silver_shulker_upgrade, Copper to Silver Shulker Box Upgrade
-ironchest:silver_gold_shulker_upgrade, Silver to Gold Shulker Box Upgrade
-ironchest:copper_iron_shulker_upgrade, Copper to Iron Shulker Box Upgrade
-ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrade
-ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
-ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
-ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
 ironchest:iron_chest:0, Iron Chest
 ironchest:iron_chest:1, Gold Chest
 ironchest:iron_chest:2, Diamond Chest
@@ -21079,6 +21341,24 @@ ironchest:iron_shulker_box_black:3, Black Copper Shulker Box
 ironchest:iron_shulker_box_black:4, Black Silver Shulker Box
 ironchest:iron_shulker_box_black:5, Black Crystal Shulker Box
 ironchest:iron_shulker_box_black:6, Black Obsidian Shulker Box
+ironchest:iron_gold_chest_upgrade, Iron to Gold Chest Upgrade
+ironchest:gold_diamond_chest_upgrade, Gold to Diamond Chest Upgrade
+ironchest:copper_silver_chest_upgrade, Copper to Silver Chest Upgrade
+ironchest:silver_gold_chest_upgrade, Silver to Gold Chest Upgrade
+ironchest:copper_iron_chest_upgrade, Copper to Iron Chest Upgrade
+ironchest:diamond_crystal_chest_upgrade, Diamond to Crystal Chest Upgrade
+ironchest:wood_iron_chest_upgrade, Wood to Iron Chest Upgrade
+ironchest:wood_copper_chest_upgrade, Wood to Copper Chest Upgrade
+ironchest:diamond_obsidian_chest_upgrade, Diamond to Obsidian Chest Upgrade
+ironchest:iron_gold_shulker_upgrade, Iron to Gold Shulker Box Upgrade
+ironchest:gold_diamond_shulker_upgrade, Gold to Diamond Shulker Box Upgrade
+ironchest:copper_silver_shulker_upgrade, Copper to Silver Shulker Box Upgrade
+ironchest:silver_gold_shulker_upgrade, Silver to Gold Shulker Box Upgrade
+ironchest:copper_iron_shulker_upgrade, Copper to Iron Shulker Box Upgrade
+ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrade
+ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
+ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
+ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
 mekanismgenerators:solarpanel, Solar Panel
 mekanismgenerators:hohlraum, Hohlraum
 mekanismgenerators:turbineblade, Turbine Blade
@@ -24399,6 +24679,76 @@ chiselsandbits:block_bit:0, Chiseled Bit - Construction Foam Wall (Black)
 chiselsandbits:block_bit:0, Chiseled Bit - Construction Foam Wall (Black)
 chiselsandbits:block_bit:0, Chiseled Bit - Construction Foam Wall (Black)
 chiselsandbits:block_bit:0, Chiseled Bit - Mining Pipe
+chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Dirt
+chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Dirt Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Black Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Black Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Blue Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Blue Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Blue Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Brown Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Brown Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Brown Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Cyan Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Cyan Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Cyan Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Green Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Green Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Green Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Light Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Lime Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Lime Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Lime Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Magenta Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Magenta Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Magenta Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Orange Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Orange Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Orange Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Pink Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Pink Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Pink Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Plain Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Plain Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Plain Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Purple Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Purple Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Purple Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Red Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Red Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Red Rimmed Black Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Yellow Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Yellow Rimmed Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Yellow Rimmed Black  Stable Stone
+chiselsandbits:block_bit:0, Chiseled Bit - Amethyst Wood Up/Down
+chiselsandbits:block_bit:0, Chiseled Bit - Amethyst Planks
+chiselsandbits:block_bit:0, Chiseled Bit - Tanzanite Wood Up/Down
+chiselsandbits:block_bit:0, Chiseled Bit - Tanzanite Planks
+chiselsandbits:block_bit:0, Chiseled Bit - Pear Wood Up/Down
+chiselsandbits:block_bit:0, Chiseled Bit - Pear Planks
+chiselsandbits:block_bit:0, Chiseled Bit - Diamond Wood Up/Down
+chiselsandbits:block_bit:0, Chiseled Bit - Diamond Planks
+chiselsandbits:block_bit:0, Chiseled Bit - Amethyst Block
+chiselsandbits:block_bit:0, Chiseled Bit - Tanzanite Block
+chiselsandbits:block_bit:0, Chiseled Bit - Enriched Gold Block
+chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Iron Block
+chiselsandbits:block_bit:0, Chiseled Bit - Weakened Diamond Block
+chiselsandbits:block_bit:0, Chiseled Bit - Flawless Diamond Block
+chiselsandbits:block_bit:0, Chiseled Bit - Fire Diamond Block
+chiselsandbits:block_bit:0, Chiseled Bit - Electric Diamond Block
+chiselsandbits:block_bit:0, Chiseled Bit - End Diamond Block
+chiselsandbits:block_bit:0, Chiseled Bit - Redstone Ingot Block
 chiselsandbits:block_bit:0, Chiseled Bit - Draconium Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Draconium Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Draconium Ore
@@ -24505,6 +24855,15 @@ chiselsandbits:block_bit:0, Chiseled Bit - Block of Copper
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Bronze
 chiselsandbits:block_bit:0, Chiseled Bit - Ash Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Honey Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Simmering Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Stringy Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Frozen Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Dripping Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Silky Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Parched Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Mossy Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Mellow Comb Block
 chiselsandbits:block_bit:0, Chiseled Bit - Larch Wood Up/Down
 chiselsandbits:block_bit:0, Chiseled Bit - Teak Wood Up/Down
 chiselsandbits:block_bit:0, Chiseled Bit - Desert Acacia Wood Up/Down
@@ -24635,15 +24994,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Acacia Wood Planks (Fireproof)
 chiselsandbits:block_bit:0, Chiseled Bit - Dark Oak Wood Planks (Fireproof)
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Charcoal
 chiselsandbits:block_bit:0, Chiseled Bit - Loam
-chiselsandbits:block_bit:0, Chiseled Bit - Honey Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Simmering Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Stringy Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Frozen Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Dripping Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Silky Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Parched Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Mossy Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Mellow Comb Block
 chiselsandbits:block_bit:0, Chiseled Bit - Chunk Loader
 chiselsandbits:block_bit:0, Chiseled Bit - Limestone
 chiselsandbits:block_bit:0, Chiseled Bit - Limestone Brick
@@ -24767,58 +25117,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Alchemical Coal Block
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Putty
 chiselsandbits:block_bit:0, Chiseled Bit - Blaze Powder Block
 chiselsandbits:block_bit:0, Chiseled Bit - Heavy Snow
-chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Dirt
-chiselsandbits:block_bit:0, Chiseled Bit - Reinforced Dirt Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Black Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Black Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Blue Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Blue Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Blue Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Brown Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Brown Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Brown Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Cyan Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Cyan Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Cyan Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Green Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Green Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Green Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Blue Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Light Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Lime Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Lime Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Lime Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Magenta Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Magenta Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Magenta Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Orange Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Orange Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Orange Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Pink Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Pink Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Pink Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Plain Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Plain Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Plain Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Purple Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Purple Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Purple Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Red Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Red Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Red Rimmed Black Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Yellow Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Yellow Rimmed Stable Stone
-chiselsandbits:block_bit:0, Chiseled Bit - Yellow Rimmed Black  Stable Stone
 chiselsandbits:block_bit:0, Chiseled Bit - Galena Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Iridium Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Ruby Ore
@@ -27440,6 +27738,65 @@ chiselsandbits:block_bit:0, Chiseled Bit - Sky Stone Block
 chiselsandbits:block_bit:0, Chiseled Bit - Sky Stone Brick
 chiselsandbits:block_bit:0, Chiseled Bit - Sky Stone Small Brick
 chiselsandbits:block_bit:0, Chiseled Bit - Tiny TNT
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Smokey Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Smokey Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Smokey Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Mana Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Mana Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Mana Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Blaze Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Blaze Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Blaze Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Lavender Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Lavender Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Lavender Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Redquartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Redquartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Redquartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Elven Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Elven Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Elven Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Block of Sunny Quartz
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Sunny Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Pillar Sunny Quartz Block
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Cobblestone
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Stone Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Forest Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Plains Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Mountain Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Fungal Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Swamp Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Desert Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Taiga Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Mesa Stone Brick
+chiselsandbits:block_bit:0, Chiseled Bit - White Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Black Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Blue Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Red Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Yellow Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Green Portuguese Pavement
 chiselsandbits:block_bit:0, Chiseled Bit - Livingrock
 chiselsandbits:block_bit:0, Chiseled Bit - Livingrock Brick
 chiselsandbits:block_bit:0, Chiseled Bit - Mossy Livingrock Brick
@@ -27502,65 +27859,90 @@ chiselsandbits:block_bit:0, Chiseled Bit - Fel Pumpkin South
 chiselsandbits:block_bit:0, Chiseled Bit - Manastorm Charge
 chiselsandbits:block_bit:0, Chiseled Bit - Shimmerrock
 chiselsandbits:block_bit:0, Chiseled Bit - Shimmerwood Planks
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Smokey Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Smokey Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Smokey Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Mana Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Mana Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Mana Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Blaze Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Blaze Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Blaze Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Lavender Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Lavender Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Lavender Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Redquartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Redquartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Redquartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Elven Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Elven Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Elven Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Block of Sunny Quartz
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Sunny Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Pillar Sunny Quartz Block
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Cobblestone
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Forest Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Plains Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mountain Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Fungal Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Swamp Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Desert Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Taiga Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Metamorphic Mesa Stone Bricks
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Forest Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Plains Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Mountain Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Fungal Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Swamp Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Desert Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Taiga Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Metamorphic Mesa Stone Brick
-chiselsandbits:block_bit:0, Chiseled Bit - White Portuguese Pavement
-chiselsandbits:block_bit:0, Chiseled Bit - Black Portuguese Pavement
-chiselsandbits:block_bit:0, Chiseled Bit - Blue Portuguese Pavement
-chiselsandbits:block_bit:0, Chiseled Bit - Red Portuguese Pavement
-chiselsandbits:block_bit:0, Chiseled Bit - Yellow Portuguese Pavement
-chiselsandbits:block_bit:0, Chiseled Bit - Green Portuguese Pavement
+chiselsandbits:block_bit:0, Chiseled Bit - Osmium Ore
+chiselsandbits:block_bit:0, Chiseled Bit - Copper Ore
+chiselsandbits:block_bit:0, Chiseled Bit - Tin Ore
+chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Black Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §cRed Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §2Green Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dPink Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §aLime Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Slick Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Glow Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Black Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §cRed Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §2Green Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dPink Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §aLime Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Reinforced Plastic Block
+chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Road
+chiselsandbits:block_bit:0, Chiseled Bit - Salt Block
 chiselsandbits:block_bit:0, Chiseled Bit - Aquamarine Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Aquamarine
 chiselsandbits:block_bit:0, Chiseled Bit - Magnite Ore
@@ -27680,90 +28062,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Dark Brick
 chiselsandbits:block_bit:0, Chiseled Bit - Dark Blood Brick
 chiselsandbits:block_bit:0, Chiseled Bit - Dark Power Gem Block
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Blood-Waxed Coal
-chiselsandbits:block_bit:0, Chiseled Bit - Osmium Ore
-chiselsandbits:block_bit:0, Chiseled Bit - Copper Ore
-chiselsandbits:block_bit:0, Chiseled Bit - Tin Ore
-chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Black Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §cRed Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §2Green Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dPink Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §aLime Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Slick Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Glow Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Black Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §cRed Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §2Green Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dPink Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §aLime Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Reinforced Plastic Block
-chiselsandbits:block_bit:0, Chiseled Bit - §8Black Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §cRed Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §2Green Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §6Brown Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §1Blue Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §5Purple Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §3Cyan Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §7Light Grey Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §8Grey Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §dPink Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §aLime Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §eYellow Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §9Light Blue Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §dMagenta Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §6Orange Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - §fWhite Plastic Road
-chiselsandbits:block_bit:0, Chiseled Bit - Salt Block
 chiselsandbits:block_bit:0, Chiseled Bit - Yellorite Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Yellorite Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Anglesite Ore
@@ -28734,6 +29032,8 @@ chiselsandbits:block_bit:0, Chiseled Bit - Chiseled Marble
 chiselsandbits:block_bit:0, Chiseled Bit - Engraved Marble
 chiselsandbits:block_bit:0, Chiseled Bit - Runed Marble
 chiselsandbits:block_bit:0, Chiseled Bit - Sooty Marble
+chiselsandbits:block_bit:0, Chiseled Bit - tile.contenttweaker.energized_well.name
+chiselsandbits:block_bit:0, Chiseled Bit - tile.contenttweaker.destabilized_well.name
 chiselsandbits:block_bit:0, Chiseled Bit - End Emerald Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Nether Redstone Ore
 chiselsandbits:block_bit:0, Chiseled Bit - End Iron Ore
@@ -28899,7 +29199,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Heavy Water
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
-chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit - Experience
 chiselsandbits:block_bit:0, Chiseled Bit - Milk
 chiselsandbits:block_bit:0, Chiseled Bit - Poison
@@ -28937,6 +29236,7 @@ chiselsandbits:block_bit:0, Chiseled Bit - Ethanol
 chiselsandbits:block_bit:0, Chiseled Bit - Biodiesel
 chiselsandbits:block_bit:0, Chiseled Bit - Liquid Concrete
 chiselsandbits:block_bit:0, Chiseled Bit - Molten Uranium
+chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
@@ -29101,6 +29401,7 @@ contenttweaker:robotarm3, Elite Robot Arm
 contenttweaker:robotarm2, Advanced Robot Arm
 contenttweaker:robotarm5, Insane Robot Arm
 contenttweaker:robotarm4, Super Robot Arm
+contenttweaker:energized_well:0, tile.contenttweaker.energized_well.name
 contenttweaker:piston6, Ultimate Electric Piston
 contenttweaker:piston5, Insane Electric Piston
 contenttweaker:sensor1, Basic Sensor
@@ -29140,6 +29441,7 @@ contenttweaker:valve6, Ultimate Valve
 contenttweaker:valve8, Divine Valve
 contenttweaker:conveyor1, item.contenttweaker.conveyor1.name
 contenttweaker:conveyor2, item.contenttweaker.conveyor2.name
+contenttweaker:destabilized_well:0, tile.contenttweaker.destabilized_well.name
 contenttweaker:conveyor7, item.contenttweaker.conveyor7.name
 contenttweaker:robotarm1, Basic Robot Arm
 contenttweaker:conveyor8, item.contenttweaker.conveyor8.name
@@ -31903,31 +32205,31 @@ rftoolsdim:structure_essence:8, Structure Swamp Hut Essence
 rftoolsdim:structure_essence:9, Structure Desert Temple Essence
 rftoolsdim:structure_essence:10, Structure Jungle Temple Essence
 rftoolsdim:structure_essence:11, Structure Igloo Essence
+rftoolsdim:known_dimlet:4, Sky Dimlet (Normal day)
+rftoolsdim:known_dimlet:9, Digit Dimlet (0)
+rftoolsdim:known_dimlet:3, Mob Dimlet (Default)
+rftoolsdim:known_dimlet:4, Sky Dimlet (Normal night)
+rftoolsdim:known_dimlet:6, Terrain Dimlet (Void)
 rftoolsdim:known_dimlet:12, Controller Dimlet (Default)
-rftoolsdim:known_dimlet:8, Time Dimlet (Normal)
+rftoolsdim:known_dimlet:1, Liquid Dimlet (Water)
+rftoolsdim:known_dimlet:10, Effect Dimlet (None)
+rftoolsdim:known_dimlet:12, Controller Dimlet (Single)
 rftoolsdim:known_dimlet:2, Material Dimlet (Stone)
+rftoolsdim:known_dimlet:8, Time Dimlet (Normal)
+rftoolsdim:known_dimlet:6, Terrain Dimlet (Flat)
+rftoolsdim:known_dimlet:13, Weather Dimlet (Default)
+rftoolsdim:known_dimlet:5, Structure Dimlet (None)
+rftoolsdim:known_dimlet:4, Sky Dimlet (Normal)
+rftoolsdim:known_dimlet:9, Digit Dimlet (9)
+rftoolsdim:known_dimlet:9, Digit Dimlet (1)
+rftoolsdim:known_dimlet:7, Feature Dimlet (None)
+rftoolsdim:known_dimlet:9, Digit Dimlet (2)
+rftoolsdim:known_dimlet:9, Digit Dimlet (3)
+rftoolsdim:known_dimlet:9, Digit Dimlet (4)
 rftoolsdim:known_dimlet:9, Digit Dimlet (5)
 rftoolsdim:known_dimlet:9, Digit Dimlet (6)
 rftoolsdim:known_dimlet:9, Digit Dimlet (7)
 rftoolsdim:known_dimlet:9, Digit Dimlet (8)
-rftoolsdim:known_dimlet:9, Digit Dimlet (9)
-rftoolsdim:known_dimlet:9, Digit Dimlet (0)
-rftoolsdim:known_dimlet:9, Digit Dimlet (1)
-rftoolsdim:known_dimlet:9, Digit Dimlet (2)
-rftoolsdim:known_dimlet:9, Digit Dimlet (3)
-rftoolsdim:known_dimlet:1, Liquid Dimlet (Water)
-rftoolsdim:known_dimlet:9, Digit Dimlet (4)
-rftoolsdim:known_dimlet:4, Sky Dimlet (Normal night)
-rftoolsdim:known_dimlet:12, Controller Dimlet (Single)
-rftoolsdim:known_dimlet:6, Terrain Dimlet (Flat)
-rftoolsdim:known_dimlet:7, Feature Dimlet (None)
-rftoolsdim:known_dimlet:5, Structure Dimlet (None)
-rftoolsdim:known_dimlet:10, Effect Dimlet (None)
-rftoolsdim:known_dimlet:4, Sky Dimlet (Normal)
-rftoolsdim:known_dimlet:6, Terrain Dimlet (Void)
-rftoolsdim:known_dimlet:4, Sky Dimlet (Normal day)
-rftoolsdim:known_dimlet:3, Mob Dimlet (Default)
-rftoolsdim:known_dimlet:13, Weather Dimlet (Default)
 rftoolsdim:efficiency_essence, Efficiency Essence
 rftoolsdim:mediocre_efficiency_essence, Mediocre Efficiency Essence
 rftoolsdim:empty_dimension_tab, Empty Dimension Tab
@@ -32116,19 +32418,6 @@ forestry:crated.minecraft.sapling.2, item.crated.minecraft.sapling.2.name
 forestry:crated.minecraft.sapling.3, item.crated.minecraft.sapling.3.name
 forestry:crated.minecraft.sapling.4, item.crated.minecraft.sapling.4.name
 forestry:crated.minecraft.sapling.5, item.crated.minecraft.sapling.5.name
-forestry:crated.forestry.fruits.0, item.crated.forestry.fruits.0.name
-forestry:crated.forestry.fruits.1, item.crated.forestry.fruits.1.name
-forestry:crated.forestry.fruits.2, item.crated.forestry.fruits.2.name
-forestry:crated.forestry.fruits.3, item.crated.forestry.fruits.3.name
-forestry:crated.forestry.fruits.4, item.crated.forestry.fruits.4.name
-forestry:crated.forestry.fruits.6, item.crated.forestry.fruits.6.name
-forestry:crated.forestry.fruits.5, item.crated.forestry.fruits.5.name
-forestry:crated.ic2.misc_resource.4, item.crated.ic2.misc_resource.4.name
-forestry:crated.ic2.crafting.0, item.crated.ic2.crafting.0.name
-forestry:crated.ic2.crafting.23, item.crated.ic2.crafting.23.name
-forestry:crated.ic2.misc_resource.3, item.crated.ic2.misc_resource.3.name
-forestry:crated.ic2.ingot.4, item.crated.ic2.ingot.4.name
-forestry:crated.ic2.ingot.1, item.crated.ic2.ingot.1.name
 forestry:crated.forestry.beeswax.0, item.crated.forestry.beeswax.0.name
 forestry:crated.forestry.pollen.0, item.crated.forestry.pollen.0.name
 forestry:crated.forestry.pollen.1, item.crated.forestry.pollen.1.name
@@ -32149,6 +32438,19 @@ forestry:crated.forestry.bee_combs.14, item.crated.forestry.bee_combs.14.name
 forestry:crated.forestry.bee_combs.15, item.crated.forestry.bee_combs.15.name
 forestry:crated.forestry.bee_combs.16, item.crated.forestry.bee_combs.16.name
 forestry:crated.forestry.refractory_wax.0, item.crated.forestry.refractory_wax.0.name
+forestry:crated.ic2.misc_resource.4, item.crated.ic2.misc_resource.4.name
+forestry:crated.ic2.crafting.0, item.crated.ic2.crafting.0.name
+forestry:crated.ic2.crafting.23, item.crated.ic2.crafting.23.name
+forestry:crated.ic2.misc_resource.3, item.crated.ic2.misc_resource.3.name
+forestry:crated.ic2.ingot.4, item.crated.ic2.ingot.4.name
+forestry:crated.ic2.ingot.1, item.crated.ic2.ingot.1.name
+forestry:crated.forestry.fruits.0, item.crated.forestry.fruits.0.name
+forestry:crated.forestry.fruits.1, item.crated.forestry.fruits.1.name
+forestry:crated.forestry.fruits.2, item.crated.forestry.fruits.2.name
+forestry:crated.forestry.fruits.3, item.crated.forestry.fruits.3.name
+forestry:crated.forestry.fruits.4, item.crated.forestry.fruits.4.name
+forestry:crated.forestry.fruits.6, item.crated.forestry.fruits.6.name
+forestry:crated.forestry.fruits.5, item.crated.forestry.fruits.5.name
 forestry:crated.natura.edibles.0, item.crated.natura.edibles.0.name
 forestry:crated.natura.edibles.1, item.crated.natura.edibles.1.name
 forestry:crated.natura.edibles.11, item.crated.natura.edibles.11.name
