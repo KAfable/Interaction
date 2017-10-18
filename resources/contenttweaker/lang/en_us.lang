@@ -1,0 +1,55 @@
+item.contenttweaker.motor1.name=Basic Motor
+item.contenttweaker.motor2.name=Advanced Motor
+item.contenttweaker.motor3.name=Elite Motor
+item.contenttweaker.motor4.name=Super Motor
+item.contenttweaker.motor5.name=Insane Motor
+item.contenttweaker.motor6.name=Ultimate Motor
+item.contenttweaker.motor7.name=Ludicrous Motor
+item.contenttweaker.motor8.name=Divine Motor
+
+item.contenttweaker.robotArm1.name=Basic Robot Arm
+item.contenttweaker.robotArm2.name=Advanced Robot Arm
+item.contenttweaker.robotArm3.name=Elite Robot Arm
+item.contenttweaker.robotArm4.name=Super Robot Arm
+item.contenttweaker.robotArm5.name=Insane Robot Arm
+item.contenttweaker.robotArm6.name=Ultimate Robot Arm
+item.contenttweaker.robotArm7.name=Ludicrous Robot Arm
+item.contenttweaker.robotArm8.name=Divine Robot Arm
+
+item.contenttweaker.piston1.name=Basic Electric Piston
+item.contenttweaker.piston2.name=Advanced Electric Piston
+item.contenttweaker.piston3.name=Elite Electric Piston
+item.contenttweaker.piston4.name=Super Electric Piston
+item.contenttweaker.piston5.name=Insane Electric Piston
+item.contenttweaker.piston6.name=Ultimate Electric Piston
+item.contenttweaker.piston7.name=Ludicrous Electric Piston
+item.contenttweaker.piston8.name=Divine Electric Piston
+
+item.contenttweaker.sensor1.name=Basic Sensor
+item.contenttweaker.sensor2.name=Advanced Sensor
+item.contenttweaker.sensor3.name=Elite Sensor
+item.contenttweaker.sensor4.name=Super Sensor
+item.contenttweaker.sensor5.name=Insane Sensor
+item.contenttweaker.sensor6.name=Ultimate Sensor
+item.contenttweaker.sensor7.name=Ludicrous Sensor
+item.contenttweaker.sensor8.name=Divine Sensor
+
+item.contenttweaker.emitter1.name=Basic Emitter
+item.contenttweaker.emitter2.name=Advanced Emitter
+item.contenttweaker.emitter3.name=Elite Emitter
+item.contenttweaker.emitter4.name=Super Emitter
+item.contenttweaker.emitter5.name=Insane Emitter
+item.contenttweaker.emitter6.name=Ultimate Emitter
+item.contenttweaker.emitter7.name=Ludicrous Emitter
+item.contenttweaker.emitter8.name=Divine Emitter
+
+item.contenttweaker.valve1.name=Basic Valve
+item.contenttweaker.valve2.name=Advanced Valve
+item.contenttweaker.valve3.name=Elite Valve
+item.contenttweaker.valve4.name=Super Valve
+item.contenttweaker.valve5.name=Insane Valve
+item.contenttweaker.valve6.name=Ultimate Valve
+item.contenttweaker.valve7.name=Ludicrous Valve
+item.contenttweaker.valve8.name=Divine Valve
+
+item.contenttweaker.astralmotor.name=Celestial Motor
