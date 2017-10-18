@@ -1,8 +1,8 @@
 {
-    "registryname": "portal_fabricator",
-    "localizedname": "Portal Fabricator",
-    "color": "ffffff",
-    "parts": [
+  "registryname": "portal_fabricator",
+  "localizedname": "Portal Fabricator",
+  "color": "000000",
+  "parts": [
         {
             "x": 0,
             "y": 0,
@@ -12,1012 +12,451 @@
             ]
         },
         {
-            "x": -1,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
             "x": -2,
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
+                "chisel:netherbrick@8"
             ]
         },
         {
             "x": -1,
             "y": 0,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:brick_stairs@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:brick_stairs@1"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 0,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
-            "z": 3,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 3,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 3,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_stairs@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_stairs@2"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_stairs@2"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_stairs@2"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 3,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_stairs@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "minecraft:brick_stairs@2"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_stairs@3"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_stairs@3"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_stairs@3"
+                "xtones:zeta@12"
             ]
         },
         {
             "x": 0,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
+            "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "minecraft:brick_block@0"
+                "chisel:factory@8"
             ]
         },
         {
             "x": 2,
-            "y": 3,
-            "z": 4,
+            "y": 0,
+            "z": 0,
             "elements": [
-                "minecraft:brick_stairs@3"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
+                "chisel:netherbrick@8"
             ]
         },
         {
             "x": -2,
             "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
             "z": 2,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:lava@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
             "elements": [
                 "modularmachinery:blockoutputbus@0"
             ]
         },
         {
             "x": -1,
-            "y": 2,
-            "z": 3,
+            "y": -1,
+            "z": 0,
             "elements": [
-                "skyresources:crucible@0"
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:lava@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "xtones:zeta@12"
             ]
         },
         {
             "x": 0,
-            "y": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "minecraft:enchanting_table@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
             "z": 3,
             "elements": [
-                "skyresources:crucible@0"
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:netherbrick@8"
             ]
         },
         {
             "x": -1,
             "y": 0,
-            "z": 2,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "z": 1,
             "elements": [
-                "skyresources:casing@12"
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
             ]
         },
         {
             "x": 0,
             "y": 0,
-            "z": 2,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "z": 1,
             "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "minecraft:glass@0"
+                "xtones:zeta@12"
             ]
         },
         {
             "x": 1,
             "y": 0,
-            "z": 2,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
+            "z": 1,
             "elements": [
-                "skyresources:casing@12"
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "xtones:zeta@12"
             ]
         },
         {
             "x": 2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "chisel:netherbrick@8"
+            ]
+        },
+        {
+            "x": 1,
             "y": 0,
+            "z": 3,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "xtones:zome@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "xtones:zome@12"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "xtones:zome@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
             "z": 2,
             "elements": [
                 "modularmachinery:blockinputbus@0"
             ]
         },
         {
-            "x": -2,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "minecraft:brick_stairs@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockfluidoutputhatch@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
             "x": -1,
             "y": -1,
-            "z": 1,
+            "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "xtones:zeta@12"
             ]
         },
         {
             "x": 0,
             "y": -1,
-            "z": 1,
+            "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "minecraft:lava@0"
             ]
         },
         {
             "x": 2,
             "y": 3,
-            "z": 3,
+            "z": 4,
             "elements": [
-                "minecraft:brick_stairs@1"
+                "xtones:zome@12"
             ]
         },
         {
             "x": 1,
-            "y": 1,
+            "y": -1,
             "z": 2,
             "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
+                "chisel:factory@8"
             ]
         },
         {
-            "x": 2,
-            "y": 1,
-            "z": 2,
+            "x": -1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "xtones:zeta@12"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4,
             "elements": [
                 "modularmachinery:blockfluidinputhatch@0"
             ]
         },
         {
-            "x": 1,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
             "x": 2,
             "y": -1,
-            "z": 1,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
             "z": 2,
             "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
-            "z": 1,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 1,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "nbt": {"Machine":{"id":"skyresources:combustionheater","Count":"1b","Damage":"12s"}},
-            "elements": [
-                "skyresources:casing@12"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "minecraft:brick_stairs@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "minecraft:netherrack@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "minecraft:brick_stairs@1"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "contenttweaker:glass-_slime_composite_molten@0"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "minecraft:brick_block@0"
+                "modularmachinery:blockinputbus@0"
             ]
         },
         {
@@ -1025,7 +464,7 @@
             "y": -1,
             "z": 4,
             "elements": [
-                "minecraft:brick_block@0"
+                "xtones:zeta@12"
             ]
         },
         {
@@ -1033,55 +472,15 @@
             "y": -1,
             "z": 4,
             "elements": [
-                "minecraft:brick_block@0"
+                "minecraft:lava@0"
             ]
         },
         {
-            "x": -2,
-            "y": 2,
-            "z": 1,
+            "x": 3,
+            "y": -1,
+            "z": 4,
             "elements": [
-                "minecraft:glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "skyresources:crucible@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "minecraft:fire@15"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "skyresources:crucible@0"
+                "xtones:zeta@12"
             ]
         }
     ]}

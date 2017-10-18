@@ -49,7 +49,7 @@ recipes.addShaped(<contenttweaker:material_part:13>, [
 mods.skyresources.combustion.addRecipe(<minecraft:coal:1>*4, [<minecraft:log>*32], 100);
 mods.skyresources.combustion.removeRecipe(<minecraft:coal>);
 mods.skyresources.combustion.addRecipe(<minecraft:coal>*4, [<minecraft:coal:1>*16], 600);
-mods.skyresources.combustion.addRecipe(sslab*3, [<minecraft:dirt>*6, <minecraft:clay>*12], 100);
+mods.skyresources.combustion.addRecipe(sslab, [<minecraft:clay>], 100);
 mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal>*4], 600);
 mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 95);
 recipes.remove(<skyresources:baseitemcomponent:6>);
@@ -303,8 +303,21 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edib
 mods.tconstruct.Casting.addTableRecipe(p, null, <liquid:putty>, 144);
 mods.tconstruct.Alloy.addRecipe(<liquid:putty>*144, [<liquid:glass-_slime_composite>*1000, <liquid:obsidian>*576, <liquid:reinforced_stone>*1296]);
 
+mods.tconstruct.Casting.addBasinRecipe(<xtones:zeta:12>, <skyresources:casing:6>, <liquid:putty>, 144);
+<xtones:zeta:12>.displayName = "Alchemical Baseplate";
+mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000);
+
 //Setting up for Portal Fabricator
 recipes.remove(p);
+recipes.remove(<skyresources:darkmatterblock>);
 <skyresources:darkmatterblock>.displayName = "Base Alchemical Beacon (Inactive)";
 <xtones:zome:12>.displayName = "Base Alchemical Beacon (Active)";
 recipes.addShaped(<skyresources:darkmatterblock>, [[p,p,p],[p,<skyresources:alchemyitemcomponent:5>,p],[p,<skyresources:alchemyitemcomponent:5>,p]]);
+recipes.remove(<minecraft:enchanting_table>);
+recipes.addShaped(<minecraft:enchanting_table>, [[null,<minecraft:book>,null],[<skyresources:alchemyitemcomponent:10>,<minecraft:obsidian>,<skyresources:alchemyitemcomponent:10>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
+<chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
+recipes.remove(<chisel:factory>);
+recipes.remove(<minecraft:tripwire_hook>);
+recipes.addShaped(<minecraft:tripwire_hook>, [[null, rstone,null],[null,<ore:stickWood>,null],[null,<ore:plankWood>,null]]);
+recipes.addShaped(<chisel:factory:8>*3, [[p,<minecraft:tripwire_hook>,p],[<contenttweaker:material_part:29>,QAC,<contenttweaker:material_part:29>],[p,<minecraft:tripwire_hook>,p]]);
+<chisel:factory:8>.displayName = "Basic Circuitry";
