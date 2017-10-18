@@ -268,7 +268,7 @@ recipes.addShapeless(<skyresources:fusiontable>, [<ore:workbench>, <skyresources
 <skyresources:alchemyitemcomponent:10>.displayName = "False Diamond";
 
 mods.tconstruct.Melting.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
-mods.tconstruct.Melting.addRecipe(<liquid:water> * 80, <minecraft:leaves:*>);
+mods.tconstruct.Melting.addRecipe(<liquid:water> * 200, <minecraft:leaves:*>);
 mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:3>, <skyresources:alchemyitemcomponent:8>, <liquid:lava>, 500, true);
 mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:4>, <skyresources:alchemyitemcomponent:7>, <liquid:lava>, 500, true);
 recipes.remove(<skyresources:endportalcore>);
