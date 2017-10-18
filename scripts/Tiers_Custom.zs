@@ -15,12 +15,10 @@ var putty = MaterialSystem.getMaterialBuilder().setName("Putty").setColor(334238
 var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10053171).build();
 var brick = MaterialSystem.getMaterialBuilder().setName("Brick").setColor(12016192).build();
 var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
-var slime = MaterialSystem.getMaterialBuilder().setName("Slime_").setColor(52224).build();
 var slimeg = MaterialSystem.getMaterialBuilder().setName("Glass-Slime Composite").setColor(3342210).build();
 var tier1_list = [putty, wood, brick, rstone] as Material[];
 
 rstone.registerPart("molten");
-slime.registerPart("molten");
 slimeg.registerPart("molten");
 putty.registerPart("molten");
 
