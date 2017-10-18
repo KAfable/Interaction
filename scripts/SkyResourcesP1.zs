@@ -82,6 +82,5 @@ mods.skyresources.combustion.removeRecipe(<minecraft:glowstone_dust>);
 
 mods.jei.JEI.removeAndHide(<skyresources:orealchdust:*>);
 val oreAlcDust = <skyresources:orealchdust>.definition;
-for meta in 0 to 21 {
-    mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(meta));
+for meta in 0 to 22 {mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(meta));
 }

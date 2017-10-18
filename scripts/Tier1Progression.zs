@@ -11,6 +11,11 @@ val nb = <minecraft:netherbrick>;
 val SOC = <skyresources:baseitemcomponent:1>;
 val p = <skyresources:baseitemcomponent:3>;
 val QAC = <skyresources:baseitemcomponent:6>;
+val altar = <botania:altar>.giveBack();
+val pure = <botania:specialflower>.withTag({type: "puredaisy"}).giveBack();
+
+// Botania
+recipes.addShapeless(<xtones:zome:12>, [pure, <skyresources:darkmatterblock>]);
 
 // Polisher
 recipes.remove(<sgextraparts:polisher>);
@@ -95,6 +100,8 @@ mods.skyresources.rockgrinder.addRecipe(<minecraft:coal>, <minecraft:netherrack>
 mods.skyresources.rockgrinder.addRecipe(<minecraft:quartz>, <minecraft:netherrack>, 0.01);
 
 //Tier 1 Crafting Recipes
+recipes.addShapeless(<minecraft:dye:15>*2, [<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>]);
+
 recipes.remove(<minecraft:torch>);
 recipes.addShaped(<minecraft:torch>, [[<minecraft:coal:1>],[pwood]]);
 recipes.addShaped(<minecraft:torch>*4, [[<minecraft:coal>],[pwood]]);
@@ -295,3 +302,9 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edib
 
 mods.tconstruct.Casting.addTableRecipe(p, null, <liquid:putty>, 144);
 mods.tconstruct.Alloy.addRecipe(<liquid:putty>*144, [<liquid:glass-_slime_composite>*1000, <liquid:obsidian>*576, <liquid:reinforced_stone>*1296]);
+
+//Setting up for Portal Fabricator
+recipes.remove(p);
+<skyresources:darkmatterblock>.displayName = "Base Alchemical Beacon (Inactive)";
+<xtones:zome:12>.displayName = "Base Alchemical Beacon (Active)";
+recipes.addShaped(<skyresources:darkmatterblock>, [[p,p,p],[p,<skyresources:alchemyitemcomponent:5>,p],[p,<skyresources:alchemyitemcomponent:5>,p]]);
