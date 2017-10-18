@@ -177,7 +177,7 @@
   "foamfix": "0.8.0-1.12",
   "itemscroller": "0.11.0",
   "modularrouters": "1.12.1-3.0.3",
-  "silentgems": "2.5.5",
+  "silentgems": "2.5.6",
   "cavern": "1.10.2",
   "clarity": "1.0",
   "refinedstorageaddons": "0.2",
