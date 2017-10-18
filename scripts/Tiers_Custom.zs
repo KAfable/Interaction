@@ -4,6 +4,7 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.Material;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.Block;
 
 var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt"] as string[];
 
@@ -113,3 +114,12 @@ for i in glowingValves {
 var astralMotor = VanillaFactory.createItem("astralmotor");
 astralMotor.glowing = true;
 astralMotor.register();
+
+// Wells
+var energized_well = VanillaFactory.createBlock("energized_well", <blockmaterial:rock>);
+energized_well.setLightValue(15);
+energized_well.register();
+
+var destabilized_well = VanillaFactory.createBlock("destabilized_well", <blockmaterial:rock>);
+destabilized_well.setLightValue(7);
+destabilized_well.register();
