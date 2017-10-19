@@ -1,20 +1,26 @@
 {
 	"populate": {
 		"apatite": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "forestry:resources",
+				"type": "plate",
+				"block": [{
+					"name": "forestry:resources",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 250,
+			"cluster-count": 1,
+			"chunk-chance": 40,
 			"min-height": 75,
 			"max-height": 256,
-			"chunk-chance": 20,
-			"vein-height": 15,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
@@ -30,26 +36,35 @@
 					{
 						"type": "dictionary",
 						"entry": "SAVANNA"
+					}
+					{
+						"type": "dictionary",
+						"entry": "COLD"
 					}]},
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [100]}
 		},
 		"abyssalnite": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "abyssalcraft:abyore",
+				"type": "plate",
+				"block": [{
+					"name": "abyssalcraft:abyore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 50,
-			"min-height": 50,
-			"max-height": 256,
+			"cluster-count": 1,
 			"chunk-chance": 20,
-			"vein-height": 10,
-			"vein-diameter": 10,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
+			"min-height": 0,
+			"max-height": 60,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
@@ -63,20 +78,26 @@
 				"value": [100]}
 		},
 		"aluminum": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": {"name":"techreborn:ore","metadata":4},
+				"type": "plate",
+				"block": [{
+					"name":"techreborn:ore",
+					"metadata":4,
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+				}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 200,
+			"cluster-count": 1,
+			"chunk-chance": 60,
 			"min-height": 32,
 			"max-height": 128,
-			"chunk-chance": 20,
-			"vein-height": 15,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
@@ -88,6 +109,10 @@
 					{
 						"type": "dictionary",
 						"entry": "PLAINS"
+					}
+					{
+						"type": "dictionary",
+						"entry": "SWAMP"
 					}]},
 			"dimension": {
 				"restriction": "whitelist",
@@ -106,32 +131,44 @@
 			"cluster-count": 1,
 			"min-height": 10,
 			"max-height": 60,
-			"chunk-chance": 10,
+			"chunk-chance": 15,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
-					{ "type": "dictionary",
-						"entry": "SPOOKY"}]},
+					{
+						"type": "dictionary",
+						"entry": "SPOOKY"
+					},
+					{
+						"type": "dictionary",
+						"entry": "SWAMP"
+					}
+						]},
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [100]}
 		},
 		"coal": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "minecraft:coal_ore",
+				"type": "plate",
+				"block": [{
+					"name": "minecraft:coal_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 24,
+				"height": 3
 			},
-			"cluster-count": 300,
-			"min-height": 50,
-			"max-height": 256,
-			"chunk-chance": 40,
-			"vein-height": 7,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
+			"cluster-count": 1,
+			"min-height": 20,
+			"max-height": 200,
+			"chunk-chance": 50,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -142,20 +179,25 @@
 			}
 		},
 		"copper": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "thermalfoundation:ore",
+				"type": "plate",
+				"block": [{
+					"name": "thermalfoundation:ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 250,
+			"cluster-count": 1,
+			"chunk-chance": 60,
 			"min-height": 55,
 			"max-height": 75,
-			"chunk-chance": 60,
-			"vein-height": 7,
-			"vein-diameter": 20,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -166,20 +208,29 @@
 			}
 		},
 		"gold": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "minecraft:gold_ore",
+				"type": "plate",
+				"block": [{
+					"name": "minecraft:gold_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:iron_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 50
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 12,
+				"height": 3
 			},
-			"cluster-count": 100,
-			"min-height": 11,
-			"max-height": 20,
-			"chunk-chance": 40,
-			"vein-height": 7,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1000,
+			"cluster-count": 1,
+			"chunk-chance": 70,
+			"min-height": 5,
+			"max-height": 35,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -190,20 +241,25 @@
 			}
 		},
 		"iron": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "minecraft:iron_ore",
+				"type": "plate",
+				"block": [{
+					"name": "minecraft:iron_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 3
+				"radius": 20,
+				"height": 3
 			},
-			"cluster-count": 200,
-			"min-height": 50,
+			"cluster-count": 1,
+			"min-height": 25,
 			"max-height": 65,
-			"chunk-chance": 40,
-			"vein-height": 7,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
+			"chunk-chance": 60,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -211,20 +267,25 @@
 				"value": [100]}
 		},
 		"lapis": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "minecraft:lapis_ore",
+				"type": "plate",
+				"block": [{
+					"name": "minecraft:lapis_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 200,
-			"min-height": 20,
+			"cluster-count": 1,
+			"chunk-chance": 90,
+			"min-height": 5,
 			"max-height": 32,
-			"chunk-chance": 70,
-			"vein-height": 7,
-			"vein-diameter": 12,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -235,20 +296,25 @@
 			}
 		},
 		"redstone": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": "minecraft:redstone_ore",
+				"type": "plate",
+				"block": [{
+					"name": "minecraft:redstone_ore",
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 24,
+				"height": 3
 			},
-			"cluster-count": 200,
+			"cluster-count": 1,
 			"min-height": 25,
 			"max-height": 40,
-			"chunk-chance": 60,
-			"vein-height": 7,
-			"vein-diameter": 24,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
+			"chunk-chance": 90,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -259,20 +325,26 @@
 			}
 		},
 		"zinc": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": {"name":"fp:erze","metadata":1},
+				"type": "plate",
+				"block": [{
+					"name": "fp:erze",
+					"metadata": 1,
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 100,
+			"cluster-count": 1,
 			"min-height": 5,
-			"max-height": 20,
-			"chunk-chance": 70,
-			"vein-height": 7,
-			"vein-diameter": 10,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
+			"max-height": 11,
+			"chunk-chance": 90,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -281,22 +353,26 @@
 					100]}
 		},
 		"tin": {
-			"distribution": "fractal",
+			"distribution": "uniform",
 			"generator": {
-				"block": {
+				"type": "plate",
+				"block": [{
 					"name": "thermalfoundation:ore",
-					"metadata": 1},
+					"metadata": 1,
+					"weight": 25
+					},
+					{
+					"name": "minecraft:stone",
+					"weight": 75
+					}],
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"radius": 16,
+				"height": 3
 			},
-			"cluster-count": 250,
+			"cluster-count": 1,
 			"min-height": 35,
 			"max-height": 55,
 			"chunk-chance": 60,
-			"vein-height": 7,
-			"vein-diameter": 20,
-			"vertical-density": 1000,
-			"horizontal-density": 1,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -305,6 +381,203 @@
 					100
 				]
 			}
-		}
+		},
+
+		"gravel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "gravel",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 8,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"diorite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "diorite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"granite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "granite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"andesite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "andesite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"silverfish": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "monster_egg",
+					"properties": {
+						"variant": "stone"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 9
+			},
+			"cluster-count": 7,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "id",
+						"entry": [
+							"extreme_hills",
+							"smaller_extreme_hills",
+							"extreme_hills_with_trees",
+							"mutated_extreme_hills",
+							"mutated_extreme_hills_with_trees"
+						]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"marble": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "astralsorcery:blockmarble",
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"clay": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "minecraft:clay",
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 10
+			},
+			"cluster-count": 30,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"aquamarine": {
+			"distribution": "underwater",
+			"generator": {
+				"block": "astralsorcery:blockcustomsandore",
+				"radius": 3,
+				"height": 1,
+				"slim": "false",
+			},
+			"cluster-count": 1,
+			"chunk-chance": 15
+			}
+
 	}
 }
