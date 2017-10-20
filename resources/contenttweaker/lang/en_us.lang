@@ -56,3 +56,6 @@ item.contenttweaker.astralmotor.name=Celestial Motor
 
 tile.contenttweaker.portalBlockt.name=Overworld Portal Block
 tile.contenttweaker.portalBlockf.name=Overworld Portal Block (Cage-less)
+
+item.contenttweaker.overworldessencel.name=Overworld Essence (Day)
+item.contenttweaker.overworldessencer.name=Overworld Essence (Night)
