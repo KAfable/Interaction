@@ -151,7 +151,7 @@
   "voidislandcontrol": "1.2.5",
   "ftbu": "4.1.6",
   "elulib": "0.1.7",
-  "dimensionalcontrol": "2.3.0",
+  "dimensionalcontrol": "2.4.0",
   "mcp": "9.42",
   "journeymap": "1.12.2-5.5.0rc1",
   "appliedenergistics2": "rv5-beta-1",
