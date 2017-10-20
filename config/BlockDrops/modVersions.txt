@@ -170,6 +170,7 @@
   "nutrition": "2.4.1",
   "akashictome": "1.2-10",
   "brandonscore": "2.3.3",
+  "magicbees": "1.0",
   "mysticalagriculture": "1.6.5",
   "craftingtweaks": "8.1.6",
   "tconstruct": "1.12-2.7.4.34",
