@@ -12,12 +12,11 @@ About: NPWD is a modpack designed to make the player go deeper (quite literally)
 3. Overworld
 4. Underworld (Multiple Versions)
 5. Nether
-The player starts in the Skyblock world and does what they can to get down to the overworld. There are little to no metals in the skyblock dimension (Maybe traces of copper) and it is designed to not be painful but to give the player a unique skyblock experience. After the player reaches the overworld, they play normal modded minecraft. However, they will find that resources are much rarer and some are even non existent in the overworld. Diamonds, emeralds, and some other expensive ores ar found deeper in the world, and in order to reach those places they must traverse to the underworld. Here, ore spawns in huge fractal chunks. The player must learn to prospect and search for large chunks of ore. There are multiple dimensions that are labeled as ‚ÄúUnderworld‚Äù, each having unique ores to the dimension. After the underworld, the traditional Nether and End progression is followed. 
+The player starts in the Skyblock world and does what they can to get down to the overworld. There are little to no metals in the skyblock dimension (Maybe traces of copper) and it is designed to not be painful but to give the player a unique skyblock experience. After the player reaches the overworld, they play normal modded minecraft. However, they will find that resources are much rarer and some are even non existent in the overworld. Diamonds, emeralds, and some other expensive ores ar found deeper in the world, and in order to reach those places they must traverse to the underworld. Here, ore spawns in huge fractal chunks. The player must learn to prospect and search for large chunks of ore. There are multiple dimensions that are labeled as ìUnderworldî, each having unique ores to the dimension. After the underworld, the traditional Nether and End progression is followed. 
 
 Suggestions: If anyone has any suggestions just post them here or message me (@DJJBanx) or @Vyraal1 directly. We are always open to new ideas
 
 ### To Do ###
-* Convert Environment to latest Forge version
 * Finish Sky Progression
 
 ### Contribution guidelines ###
