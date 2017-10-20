@@ -53,3 +53,6 @@ item.contenttweaker.valve7.name=Ludicrous Valve
 item.contenttweaker.valve8.name=Divine Valve
 
 item.contenttweaker.astralmotor.name=Celestial Motor
+
+tile.contenttweaker.portalBlockt.name=Overworld Portal Block
+tile.contenttweaker.portalBlockf.name=Overworld Portal Block (Cage-less)
