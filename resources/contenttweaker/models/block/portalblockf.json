@@ -1,7 +1,7 @@
 {
     "textures": {
         "0": "blocks/bedrock",
-        "1": "contenttweaker:blocks/cloudsHD",
+        "1": "contenttweaker:blocks/clouds",
 	  "2": "contenttweaker:blocks/sky"
     },
     "elements": [
