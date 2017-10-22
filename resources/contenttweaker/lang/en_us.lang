@@ -59,3 +59,9 @@ tile.contenttweaker.portalBlockf.name=Overworld Portal Block (Cage-less)
 
 item.contenttweaker.overworldessencel.name=Overworld Essence (Day)
 item.contenttweaker.overworldessencer.name=Overworld Essence (Night)
+
+tile.contenttweaker.portalBlockUnt.name=Underworld Portal Block (Copper Glass)
+tile.contenttweaker.portalBlockUnk.name=Underworld Portal Block (Aluminum Glass)
+tile.contenttweaker.portalBlockUnf.name=Underworld Portal Block (Cage-less)
+
+item.contenttweaker.underworldessence.name=Underworld Essence
