@@ -10,6 +10,7 @@ zsBlockf.register();
 var zsBlockj = VanillaFactory.createBlock("portalBlockt", <blockmaterial:rock>);
 zsBlockj.blockSoundType = <soundtype:metal>;
 zsBlockj.blockLayer = "CUTOUT";
+zsBlockj.setFullBlock(false);
 zsBlockj.register();
 
 var zsBlockUnf = VanillaFactory.createBlock("portalBlockUnf", <blockmaterial:rock>);
@@ -19,11 +20,13 @@ zsBlockUnf.register();
 var zsBlockUnj = VanillaFactory.createBlock("portalBlockUnt", <blockmaterial:rock>);
 zsBlockUnj.blockSoundType = <soundtype:metal>;
 zsBlockUnj.blockLayer = "CUTOUT";
+zsBlockUnj.setFullBlock(false);
 zsBlockUnj.register();
 
 var zsBlockUnk = VanillaFactory.createBlock("portalBlockUnk", <blockmaterial:rock>);
 zsBlockUnk.blockSoundType = <soundtype:metal>;
 zsBlockUnk.blockLayer = "CUTOUT";
+zsBlockUnk.setFullBlock(false);
 zsBlockUnk.register();
 
 var overworldEssenceL = VanillaFactory.createItem("overworldessencel");
