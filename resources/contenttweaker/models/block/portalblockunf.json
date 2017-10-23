@@ -1,8 +1,7 @@
 {
     "textures": {
         "0": "blocks/bedrock",
-        "1": "contenttweaker:blocks/cloudsHD",
-	  "2": "contenttweaker:blocks/sky"
+        "1": "contenttweaker:blocks/foreground2"
     },
     "elements": [
 		{
@@ -14,7 +13,7 @@
                 "east": { "texture": "#1"},
                 "south": { "texture": "#1"},
                 "west": { "texture": "#1"},
-                "up": { "texture": "#2"},
+                "up": { "texture": "#0"},
                 "down": { "texture": "#0"}
             }
 		}
