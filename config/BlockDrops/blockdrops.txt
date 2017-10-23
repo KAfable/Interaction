@@ -30,7 +30,7 @@
     "3pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}"
   },
   {
-    "name": "embers:ore_quartz",
+    "name": "minecraft:air",
     "meta": 0,
     "length": 1,
     "name0": "minecraft:quartz",

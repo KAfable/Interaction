@@ -1,6 +1,77 @@
-// Tier 2 Disabled
+//Disabled
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
+
+////////
+//Seeds
+///////
+
+var seedRemoved = [
+  <minecraft:melon_seeds>,
+  <minecraft:pumpkin_seeds>,
+  <minecraft:potato>,
+  <minecraft:carrot>,
+  <minecraft:beetroot_seeds>,
+  <natura:overworld_seeds>,
+  <natura:overworld_seeds:1>,
+  <extrautils2:redorchid>,
+  <silentgems:fluffypuffseeds>,
+  <actuallyadditions:item_rice_seed>,
+  <actuallyadditions:item_flax_seed>]
+  as IIngredient[];
+
+for item in seedRemoved {
+    vanilla.seeds.removeSeed(item);}
+
+////////////////////////////
+//Actually Additions
+////////////////////////////
+
+var aaDisabled = [
+  <actuallyadditions:item_mining_lens>]
+  as IItemStack[];
+
+////////////////////
+//Environmental Tech
+////////////////////
+var etDisabled = [
+  <environmentaltech:lightning_rod>,
+  <environmentaltech:lightning_rod_insulated>,
+  <environmentaltech:void_ore_miner_cont_1>,
+  <environmentaltech:void_ore_miner_cont_2>,
+  <environmentaltech:void_ore_miner_cont_3>,
+  <environmentaltech:void_ore_miner_cont_4>,
+  <environmentaltech:void_ore_miner_cont_5>,
+  <environmentaltech:void_ore_miner_cont_6>,
+  <environmentaltech:thermal_cell>]
+  as IItemStack[];
+
+for item in etDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
+
+////////////
+// Forestry
+///////////
+var fDisabled = [
+  <forestry:apiary>,
+  <forestry:miner_bag>,
+  <forestry:miner_bag_t2>,
+  <forestry:adventurer_bag>,
+  <forestry:adventurer_bag_t2>,
+  <forestry:builder_bag>,
+  <forestry:builder_bag_t2>,
+  <forestry:hunter_bag>,
+  <forestry:hunter_bag_t2>,
+  <forestry:forester_bag>,
+  <forestry:forester_bag_t2>,
+  <forestry:digger_bag>,
+  <forestry:digger_bag_t2>]
+  as IItemStack[];
+
+for item in fDisabled{
+    mods.jei.JEI.removeAndHide(item);}
 
 ////////////////////////////
 // Refined Storage Disabled
@@ -45,50 +116,5 @@ for item in rsDisable {
     mods.jei.JEI.removeAndHide(item);}
 
 ////////////
-// Forestry
-///////////
-var fDisabled = [
-  <forestry:apiary>,
-  <forestry:miner_bag>,
-  <forestry:miner_bag_t2>,
-  <forestry:adventurer_bag>,
-  <forestry:adventurer_bag_t2>,
-  <forestry:builder_bag>,
-  <forestry:builder_bag_t2>,
-  <forestry:hunter_bag>,
-  <forestry:hunter_bag_t2>,
-  <forestry:forester_bag>,
-  <forestry:forester_bag_t2>,
-  <forestry:digger_bag>,
-  <forestry:digger_bag_t2>]
-  as IItemStack[];
-
-print("ForestryTest1");
-for item in fDisabled{
-    mods.jei.JEI.removeAndHide(item);}
-print("ForestryTest1");
-
-////////////////////
-//Environmental Tech
-////////////////////
-var etDisabled = [
-  <environmentaltech:lightning_rod>,
-  <environmentaltech:lightning_rod_insulated>,
-  <environmentaltech:void_ore_miner_cont_1>,
-  <environmentaltech:void_ore_miner_cont_2>,
-  <environmentaltech:void_ore_miner_cont_3>,
-  <environmentaltech:void_ore_miner_cont_4>,
-  <environmentaltech:void_ore_miner_cont_5>,
-  <environmentaltech:void_ore_miner_cont_6>,
-  <environmentaltech:thermal_cell>]
-  as IItemStack[];
-
-for item in etDisabled{
-  mods.jei.JEI.removeAndHide(item);}
-
-////////////
 //Project E
 ///////////
-var peDisabled = [
-
-]
