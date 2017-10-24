@@ -1,5 +1,6 @@
 {
   "blockdrops": "1.3.0",
+  "bnbgamingcore": "@VERSION@",
   "noworldgen5you": "1.0.6",
   "factorytech": "0.0.1",
   "draconicevolution": "2.3.4",
@@ -40,6 +41,7 @@
   "advgenerators": "0.9.20.8",
   "teslacorelib": "1.0.10",
   "ceramics": "1.12-1.3.2",
+  "triumph": "1.5.2",
   "FML": "8.0.99.99",
   "thermalexpansion": "5.3.6",
   "rftoolsdim": "5.05",
@@ -52,6 +54,7 @@
   "ctgui": "1.0.0",
   "jei": "4.8.0.110",
   "bnbgaminglib": "2.8.2",
+  "modulardiversity": "0.1",
   "thermalcultivation": "0.1.1",
   "mekanism": "9.4.0",
   "thermalfoundation": "2.3.6",

@@ -36,10 +36,14 @@
 					{
 						"type": "dictionary",
 						"entry": "SAVANNA"
-					}
+					},
 					{
 						"type": "dictionary",
 						"entry": "COLD"
+					},
+					{
+						"type": "ID",
+						"entry": 67
 					}]},
 			"dimension": {
 				"restriction": "whitelist",

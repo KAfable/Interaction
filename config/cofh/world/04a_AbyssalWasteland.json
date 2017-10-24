@@ -28,26 +28,28 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		},
-		"liquifiedcoralium": {
+		"antiLiquifiedCoralium": {
 			"distribution": "uniform",
 			"generator": {
-				"type": "plate",
+				"type": "geode",
 				"block": [{
 					"name": "abyssalcraft:abylcorore",
-					"weight": 25
+					"weight": 80
 					},
 					{
 					"name": "abyssalcraft:stone",
 					"metadata": 1,
-					"weight": 75
+					"weight": 20
 					}],
-					"material": {
-						"name": "abyssalcraft:stone",
-						"metadata": 1},
-				"radius": 16,
-				"height": 3
+				"material": {
+					"name": "abyssalcraft:stone",
+					"metadata": 1},
+				"cluster-size": 20,
+				"crust": "abyssalcraft:abylcorore",
+				"hollow": "true",
+				"filler": "abyssalcraft:antiwater"}
 			},
 			"cluster-count": 1,
 			"chunk-chance": 50,
@@ -57,7 +59,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		},
 		"abyssalIron": {
 			"distribution": "uniform",
@@ -86,7 +88,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		},
 		"abyssalGold": {
 			"distribution": "uniform",
@@ -94,12 +96,12 @@
 				"type": "plate",
 				"block": [{
 					"name":"abyssalcraft:abygolore",
-					"weight": 25
+					"weight": 40
 					},
 					{
 					"name": "abyssalcraft:stone",
 					"metadata": 1,
-					"weight": 75
+					"weight": 60
 				}],
 				"material": {
 					"name": "abyssalcraft:stone",
@@ -115,7 +117,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		},
 		"abyssalNitre": {
 			"distribution": "uniform",
@@ -144,7 +146,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		},
 		"abyssalCopper": {
 			"distribution": "uniform",
@@ -173,7 +175,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": 50}
+				"value": [50]}
 		}
 	}
 }
