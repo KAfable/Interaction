@@ -81,6 +81,9 @@ mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:4>);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:5>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:5>, [p*4, <skyresources:alchemy:6>*12, <skyresources:alchemyitemcomponent:10>*8], 4.50);
 
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>,[<minecraft:ender_eye>,<minecraft:log>,<minecraft:yellow_flower>,<minecraft:red_flower>,<minecraft:sapling>,<minecraft:dirt>,<minecraft:grass>],20.00);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>,[<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, <minecraft:clay>, rstone, <skyresources:alchemyitemcomponent:7>, <minecraft:torch>],20.00);
+
 //Tier 1 Infusion Recipes
 var cow_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
 var chicken_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
@@ -303,7 +306,7 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edib
 mods.tconstruct.Casting.addTableRecipe(p, null, <liquid:putty>, 144);
 mods.tconstruct.Alloy.addRecipe(<liquid:putty>*144, [<liquid:glass-_slime_composite>*1000, <liquid:obsidian>*576, <liquid:reinforced_stone>*1296]);
 
-mods.tconstruct.Casting.addBasinRecipe(<xtones:zeta:12>, <skyresources:casing:6>, <liquid:putty>, 144);
+mods.tconstruct.Casting.addBasinRecipe(<xtones:zeta:12>*3, <skyresources:casing:6>, <liquid:putty>, 144);
 <xtones:zeta:12>.displayName = "Alchemical Baseplate";
 mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000);
 

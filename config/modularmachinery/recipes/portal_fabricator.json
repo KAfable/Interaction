@@ -6,18 +6,23 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:iron_ingot"
+            "item": "contenttweaker:overworldessencel"
         },
-	{
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:overworldessencer"
+        },
+	  {
             "type": "fluid",
             "io-type": "input",
-            "fluid": "lava",
+            "fluid": "glass",
 	    "amount": 1000
         },
         {
             "type": "item",
             "io-type": "output",
-	    "item": "minecraft:gold_ingot"
+	    "item": "contenttweaker:portalblockt"
         }
     ]
 }
