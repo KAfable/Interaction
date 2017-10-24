@@ -2,28 +2,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-
-////////
-//Seeds
-///////
-
-var seedRemoved = [
-  <minecraft:melon_seeds>,
-  <minecraft:pumpkin_seeds>,
-  <minecraft:potato>,
-  <minecraft:carrot>,
-  <minecraft:beetroot_seeds>,
-  <natura:overworld_seeds>,
-  <natura:overworld_seeds:1>,
-  <extrautils2:redorchid>,
-  <silentgems:fluffypuffseeds>,
-  <actuallyadditions:item_rice_seed>,
-  <actuallyadditions:item_flax_seed>]
-  as IIngredient[];
-
-for item in seedRemoved {
-    vanilla.seeds.removeSeed(item);}
-
 ////////////////////////////
 //Actually Additions
 ////////////////////////////
@@ -31,6 +9,72 @@ for item in seedRemoved {
 var aaDisabled = [
   <actuallyadditions:item_mining_lens>]
   as IItemStack[];
+
+for item in aaDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
+
+////////
+//Armors
+////////
+var armorRedundant = [
+  <techreborn:bronzehelmet>,
+  <techreborn:bronzeleggings>,
+  <techreborn:bronzechestplate>,
+  <techreborn:bronzeboots>,
+  <ic2:bronze_helmet>,
+  <ic2:bronze_leggings>,
+  <ic2:bronze_chestplate>,
+  <ic2:bronze_boots>,
+  <mekanismtools:bronzechestplate>,
+  <mekanismtools:bronzeleggings>,
+  <mekanismtools:bronzehelmet>,
+  <mekanismtools:bronzeboots>]
+  as IItemStack[];
+
+for item in armorRedundant{
+  mods.jei.JEI.removeAndHide(item);}
+
+
+////////
+//Cyclic
+////////
+var cycDisabled = [
+  <cyclicmagic:block_miner_smart>,
+  <cyclicmagic:tool_swap_match>,
+  <cyclicmagic:tool_prospector>,
+  <cyclicmagic:tool_swap>]
+  as IItemStack[];
+
+for item in cycDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
+
+////////////////
+//Energy Storage
+////////////////
+var energyDisabled = [
+  <immersiveengineering:metal_device0:2>,
+  <immersiveengineering:metal_device0:1>,
+  <immersiveengineering:metal_device0>,
+  <advgenerators:power_capacitor_redstone>,
+  <advgenerators:power_capacitor_advanced>,
+  <advgenerators:capacitor_kit_advanced>,
+  <advgenerators:power_capacitor_dense>,
+  <advgenerators:capacitor_kit_dense>,
+  <fluxnetworks:herculeanfluxstorage>,
+  <actuallyadditions:block_battery_box>,
+  <rftools:powercell_simple>,
+  <rftools:powercell>,
+  <rftools:powercell_advanced>,
+  <fluxnetworks:fluxstorage>,
+  <fluxnetworks:herculeanfluxstorage>,
+  <fluxnetworks:gargantuanfluxstorage>]
+  as IItemStack[];
+
+for item in energyDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
 
 ////////////////////
 //Environmental Tech
@@ -118,3 +162,24 @@ for item in rsDisable {
 ////////////
 //Project E
 ///////////
+
+////////
+//Seeds
+///////
+
+var seedRemoved = [
+  <minecraft:melon_seeds>,
+  <minecraft:pumpkin_seeds>,
+  <minecraft:potato>,
+  <minecraft:carrot>,
+  <minecraft:beetroot_seeds>,
+  <natura:overworld_seeds>,
+  <natura:overworld_seeds:1>,
+  <extrautils2:redorchid>,
+  <silentgems:fluffypuffseeds>,
+  <actuallyadditions:item_rice_seed>,
+  <actuallyadditions:item_flax_seed>]
+  as IIngredient[];
+
+for item in seedRemoved {
+    vanilla.seeds.removeSeed(item);}
