@@ -13,7 +13,6 @@ var aaDisabled = [
 for item in aaDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
-
 ////////
 //Armors
 ////////
@@ -75,7 +74,6 @@ var energyDisabled = [
 for item in energyDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
-
 ////////////////////
 //Environmental Tech
 ////////////////////
@@ -93,7 +91,6 @@ var etDisabled = [
 
 for item in etDisabled{
   mods.jei.JEI.removeAndHide(item);}
-
 
 ////////////
 // Forestry
@@ -115,6 +112,193 @@ var fDisabled = [
   as IItemStack[];
 
 for item in fDisabled{
+    mods.jei.JEI.removeAndHide(item);}
+
+///////
+//Gears
+///////
+var gearsDisabled = [
+  <forestry:gear_bronze>,
+  <forestry:gear_copper>,
+  <forestry:gear_tin>,
+  <hammercore:iron_gear>,
+  <teslacorelib:gear_wood>]
+  as IItemStack[];
+
+for item in gearsDisabled{
+    mods.jei.JEI.removeAndHide(item);}
+
+////////////////////
+//Ingots & Plates
+//////////////////
+var ipDisabled = [
+  <abyssalcraft:copperingot>,
+  <crossroads:ingot_copper>,
+  <factorytech:ingot>,
+  <forestry:ingot_copper>,
+  <fp:itemerze:2>,
+  <immersiveengineering:metal>,
+  <ic2:ingot:2>,
+  <magneticraft:ingots:2>,
+  <mekanism:ingot:5>,
+  <sgextraparts:ingot>,
+  <techreborn:ingot:4>,
+  <abyssalcraft:tiningot>,
+  <crossroads:ingot_tin>,
+  <forestry:ingot_tin>,
+  <fp:itemerze>,
+  <ic2:ingot:6>,
+  <magneticraft:ingots:13>,
+  <mekanism:ingot:6>,
+  <sgextraparts:ingot:1>,
+  <techreborn:ingot:10>,
+  <techreborn:ingot:13>,
+  <sgextraparts:ingot:5>,
+  <techreborn:ingot:8>,
+  <sgextraparts:ingot:3>,
+  <magneticraft:ingots:3>,
+  <ic2:ingot:3>,
+  <immersiveengineering:metal:2>,
+  <techreborn:ingot:9>,
+  <sgextraparts:ingot:4>,
+  <magneticraft:ingots:10>,
+  <immersiveengineering:metal:4>,
+  <factorytech:ingot:1>,
+  <crossroads:ingot_bronze>,
+  <forestry:ingot_bronze>,
+  <ic2:ingot:1>,
+  <mekanism:ingot:2>,
+  <sgextraparts:ingot:11>,
+  <techreborn:ingot:2>,
+  <immersiveengineering:metal:1>,
+  <magneticraft:ingots:7>,
+  <sgextraparts:ingot:6>,
+  <techreborn:ingot>,
+  <thermalfoundation:storage_alloy>,
+  <magneticraft:ingots:12>,
+  <techreborn:ingot:11>,
+  <sgextraparts:ingot:9>,
+  <sgextraparts:ingot:10>,
+  <magneticraft:ingots:11>,
+  <sgextraparts:ingot:12>,
+  <techreborn:ingot:5>,
+  <sgextraparts:ingot:15>,
+  <immersiveengineering:metal:7>,
+  <sgextraparts:ingot:19>,
+  <sgextraparts:ingot:18>,
+  <magneticraft:ingots:4>,
+  <techreborn:ingot:6>,
+  <sgextraparts:ingot:14>,
+  <factorytech:ingot:3>,
+  <sgextraparts:ingot:16>,
+  <immersiveengineering:metal:8>,
+  <ic2:ingot:5>,
+  <magneticraft:ingots:6>,
+  <sgextraparts:ingot:13>,
+  <techreborn:ingot:12>,
+  <techreborn:storage:4>,
+  <ic2:resource:8>,
+  <bigreactors:blockmetals:5>,
+  <immersiveengineering:metal:3>,
+  <ic2:ingot:4>,
+  <sgextraparts:ingot:2>,
+  <bigreactors:ingotmetals:5>,
+  <thermalfoundation:material:160>,
+  <immersiveengineering:metal:5>,
+  <fp:itemerze:1>,
+  <magneticraft:ingots:14>,
+  <sgextraparts:ingot:8>,
+  <sgextraparts:ingot:7>,
+  <fp:spaceship:13>,
+  <immersiveengineering:metal:32>,
+  <ic2:plate:3>,
+  <ic2:plate:5>,
+  <magneticraft:light_plates>,
+  <magneticraft:light_plates:3>,
+  <techreborn:plates>,
+  <techreborn:plates:24>,
+  <immersiveengineering:metal:39>,
+  <techreborn:plates:28>,
+  <magneticraft:light_plates:6>,
+  <ic2:plate:7>,
+  <immersiveengineering:metal:38>,
+  <techreborn:plates:18>,
+  <ic2:plate>,
+  <immersiveengineering:metal:30>,
+  <ic2:plate:1>,
+  <techreborn:plates:20>,
+  <techreborn:plates:29>,
+  <ic2:plate:8>]
+  as IItemStack[];
+
+for item in ipDisabled{
+    mods.jei.JEI.removeAndHide(item);}
+
+/////////
+//Nuggets
+/////////
+var nuggetsDisabled = [
+  <crossroads:nugget_copper>,
+  <factorytech:ore_dust:4>,
+  <immersiveengineering:metal:20>,
+  <magicbees:orepart:3>,
+  <magneticraft:nuggets:2>,
+  <techreborn:nuggets:4>,
+  <immersiveengineering:metal:29>,
+  <techreborn:nuggets:23>,
+  <techreborn:nuggets:9>,
+  <magneticraft:nuggets:10>,
+  <immersiveengineering:metal:24>,
+  <factorytech:ore_dust:5>,
+  <magicbees:orepart:5>,
+  <techreborn:nuggets:2>,
+  <techreborn:nuggets:8>,
+  <magneticraft:nuggets:3>,
+  <immersiveengineering:metal:22>,
+  <techreborn:nuggets:13>,
+  <magneticraft:nuggets:13>,
+  <magicbees:orepart:4>]
+  as IItemStack[];
+
+for item in nuggetsDisabled{
+    mods.jei.JEI.removeAndHide(item);}
+
+
+////////////////////////////
+// Ores Disabled
+////////////////////////////
+var mineralsDisabled = [
+  <crossroads:ore_copper>,
+  <factorytech:ore>,
+  <factorytech:ore:1>,
+  <crossroads:ore_native_copper>,
+  <forestry:resources:1>,
+  <ic2:resource:1>,
+  <mekanism:oreblock:1>,
+  <techreborn:ore:1>,
+  <techreborn:ore:12>,
+  <techreborn:ore2>,
+  <techreborn:ore2:1>,
+  <forestry:resources:2>,
+  <fp:erze>,
+  <fp:erze:2>,
+  <ic2:resource:2>,
+  <ic2:resource:3>,
+  <fp:erze:3>,
+  <magneticraft:ores>,
+  <immersiveengineering:ore>,
+  <immersiveengineering:ore:1>,
+  <immersiveengineering:ore:2>,
+  <immersiveengineering:ore:3>,
+  <immersiveengineering:ore:4>,
+  <immersiveengineering:ore:5>,
+  <mekanism:oreblock:2>,
+  <mysticalagriculture:nether_inferium_ore>,
+  <mysticalagriculture:inferium_ore>,
+  <crossroads:ore_tin>]
+  as IItemStack[];
+
+for item in mineralsDisabled{
     mods.jei.JEI.removeAndHide(item);}
 
 ////////////////////////////
@@ -158,6 +342,7 @@ var rsDisable = [
 
 for item in rsDisable {
     mods.jei.JEI.removeAndHide(item);}
+
 
 ////////////
 //Project E

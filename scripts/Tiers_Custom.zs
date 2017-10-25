@@ -22,15 +22,6 @@ rstone.registerPart("molten");
 slimeg.registerPart("molten");
 putty.registerPart("molten");
 
-// materialPart.getData().addValue("viscosity", "<number>"); To edit flow rates of materials
-// Lava has a density of 3000, and a viscosity of 6000
-
-//////////////////
-//Tier 2 Materials
-//////////////////
-var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
-var tier2_list = [fiery] as Material[];
-
 //Tier 1 Registration
 for i, mat in tier1_list {
     mat.registerParts(part_names);
@@ -39,8 +30,26 @@ for i, mat in tier1_list {
     blockData.addDataValue("hardness", "5");
     blockData.addDataValue("resistance", "30");
     blockData.addDataValue("harvestTool", "pickaxe");
-    blockData.addDataValue("harvestLevel", "1");
-}
+    blockData.addDataValue("harvestLevel", "1");}
+
+// materialPart.getData().addValue("viscosity", "<number>"); To edit flow rates of materials
+// Lava has a density of 3000, and a viscosity of 6000
+
+//////////////////
+//Tier 2 Materials
+//////////////////u
+var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
+var iron = MaterialSystem.getMaterialBuilder().setName("Iron").setColor(6032139).build();
+//var coralium =
+//var abyssalnite =
+//var aluminium =
+//var copper =
+//var gold =
+//var zinc =
+//var tin =
+
+var tier2_list = [fiery] as Material[];
+
 
 //Tier 2 Registration
 fiery.registerParts(part_names);

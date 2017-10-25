@@ -58,11 +58,11 @@ mods.jei.JEI.removeAndHide(<skyresources:alchemy:11>);
 <skyresources:darkmatterblock>.displayName = "Block of Putty";
 <skyresources:baseitemcomponent:3>.displayName = "Reinforced Putty";
 
-mods.jei.JEI.removeAndHide(<skyresources:dirtygem:*>);
-val dirtyGems = <skyresources:dirtygem>.definition;
-for meta in 0 to 43 {
-    mods.skyresources.rockgrinder.removeRecipe(dirtyGems.makeStack(meta));
-}
+//mods.jei.JEI.removeAndHide(<skyresources:dirtygem:*>);
+//val dirtyGems = <skyresources:dirtygem>.definition;
+//for meta in 0 to 43 {
+//    mods.skyresources.rockgrinder.removeRecipe(dirtyGems.makeStack(meta));
+//}
 
 mods.skyresources.cauldronclean.removeRecipe(<immersiveengineering:metal:9>);
 mods.skyresources.cauldronclean.removeRecipe(<immersiveengineering:metal:10>);
