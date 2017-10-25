@@ -1,0 +1,17 @@
+//Set icon item
+setIcon("minecraft:dirt")
+
+//Set title String
+setTitle("That's dirty!")
+
+//Set description String
+setDescription("Place a dirt, coarse dirt or podzol block")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "placedDirt" with the trigger type "minecraft:placed_block". This function returns the criteria as an object
+criteria = addCriteria("placedDirt", "minecraft:placed_block")
+
+//Sets the required block for the criteria. This is the block that needs to be placed by the player. First variable is the block name, second is the metadata and is not required.
+criteria.setBlock("minecraft:dirt")

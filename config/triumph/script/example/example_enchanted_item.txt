@@ -1,0 +1,17 @@
+//Set the icon item
+setIcon("minecraft:enchanted_book")
+
+//Set the title String
+setTitle("Enchanting")
+
+//Set the description String
+setDescription("Enchant a golden sword")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "enchanted" with the trigger type "minecraft:enchanted_item". This function returns the criteria as an object
+criteria = addCriteria("enchanted", "minecraft:enchanted_item")
+
+//Sets the required item for the criteria. This is the item that needs to be enchanted. First variable is the item name, second is the metadata and is not required.
+criteria.setItem("minecraft:golden_sword")

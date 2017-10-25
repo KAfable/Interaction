@@ -1,0 +1,18 @@
+//Set the icon item
+setIcon("minecraft:chest")
+
+//Set the title String
+setTitle("Chests!")
+
+//Set the description String
+setDescription("Craft a chest")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "crafted" with the trigger type "triumph:player_crafted_item". This function returns the criteria as an object
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+//Sets the ore dict for the criteria. An item from this ore dict is what needs to be crafted. Variable is the ore dict name.
+criteria.setOreDict("chest")
+
+//By not setting anything about requirements here, all criteria are automatically required

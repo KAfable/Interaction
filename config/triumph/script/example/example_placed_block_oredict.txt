@@ -1,0 +1,17 @@
+//Set icon item
+setIcon("minecraft:ender_chest")
+
+//Set title String
+setTitle("Placing chests")
+
+//Set description String
+setDescription("Place a chest")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "placed" with the trigger type "minecraft:placed_block". This function returns the criteria as an object
+criteria = addCriteria("placed", "minecraft:placed_block")
+
+//Sets the required block ore dict for the criteria. A block from this ore dict needs to be placed by the player.
+criteria.setBlockOreDict("chest")

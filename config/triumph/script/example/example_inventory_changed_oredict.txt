@@ -1,0 +1,16 @@
+//Set icon item
+setIcon("minecraft:record")
+
+//Set title String
+setTitle("Record Breaking")
+
+//Set description String
+setDescription("Get a record")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "hasRecord" with the trigger type "minecraft:inventory_changed". This function returns the criteria as an object
+criteria = addCriteria("hasRecord", "minecraft:inventory_changed")
+//Adds a required ore dict for the criteria. An item from this ore dict needs to be in the player inventory.
+criteria.addOreDict("record")

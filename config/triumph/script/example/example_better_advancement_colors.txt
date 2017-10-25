@@ -1,0 +1,22 @@
+//Set the icon item
+setIcon("minecraft:wooden_button")
+
+//Set the title String
+setTitle("Pretty Colors!")
+
+//Set the description String
+setDescription("Craft a wooden button")
+
+//Set Better Advancements icon/title colors. Supports single color int, 3 rgb ints, and hex color String.
+setUncompletedIconColor(16744448)
+setCompletedIconColor(128, 0, 255)
+setUncompletedTitleColor(65535)
+setCompletedTitleColor("00FF80")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "crafted" with the trigger type "triumph:player_crafted_item". This function returns the criteria as an object
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+//Sets the required item for the criteria. This is the item that needs to be crafted. First variable is the item name, second is the metadata and is not required.
+criteria.setItem("minecraft:wooden_button")

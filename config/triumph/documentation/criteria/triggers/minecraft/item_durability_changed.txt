@@ -1,0 +1,81 @@
+These are the functions which can be called on a minecraft:item_durability_changed 
+criteria trigger.
+
+
+
+setDeltaMinMax:
+    Arguments:
+        float, float
+    Usage:
+        min, max
+    Notes:
+        Sets the min and max delta.
+
+getItemData:
+    Notes:
+        Returns the ItemData object so functions can be called on it.
+
+setDeltaMax:
+    Arguments:
+        float
+    Usage:
+        max
+    Notes:
+        Sets the max delta.
+
+setDurabilityMin:
+    Arguments:
+        float
+    Usage:
+        min
+    Notes:
+        Sets the min item durability.
+
+setDeltaMin:
+    Arguments:
+        float
+    Usage:
+        min
+    Notes:
+        Sets the min delta.
+
+setDurabilityMax:
+    Arguments:
+        float
+    Usage:
+        max
+    Notes:
+        Sets the max item durability.
+
+setItem:
+    Arguments:
+        String, Integer
+    Usage:
+        item name, meta
+    Notes:
+        Sets the required item with the provided meta.
+
+setItem:
+    Arguments:
+        String
+    Usage:
+        item name
+    Notes:
+        Sets the required item. This counts for any meta.
+
+setOreDict:
+    Arguments:
+        String
+    Usage:
+        ore dict name
+    Notes:
+        Sets the ore dictionary for the trigger.
+
+setDurabilityMinMax:
+    Arguments:
+        float, float
+    Usage:
+        min, max
+    Notes:
+        Sets the min and max item durability.
+

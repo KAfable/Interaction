@@ -1,0 +1,17 @@
+//Set the icon item
+setIcon("minecraft:sapling")
+
+//Set the title String
+setTitle("I'm a tree!")
+
+//Set the description String
+setDescription("Enter a sapling block")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "entered" with the trigger type "minecraft:enter_block". This function returns the criteria as an object
+criteria = addCriteria("entered", "minecraft:enter_block")
+
+//Sets the required block oredict for the criteria. A block from this oredict needs to be entered.
+criteria.setOreDict("treeSapling")

@@ -1,0 +1,17 @@
+//Set icon item
+setIcon("minecraft:emerald")
+
+//Set title String
+setTitle("Ore dict trade")
+
+//Set description String
+setDescription("Trade for a gemEmerald with a villager")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "traded" with the trigger type "minecraft:villager_trade". This function returns the criteria as an object
+criteria = addCriteria("traded", "minecraft:villager_trade")
+
+//Sets the required item ore dict for the criteria. An item from this ore dict must be traded for.
+criteria.setOreDict("gemEmerald")

@@ -1,0 +1,17 @@
+//Set icon item
+setIcon("minecraft:iron_ore")
+
+//Set title String
+setTitle("Mining all day long")
+
+//Set description String
+setDescription("Break an iron ore block")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "brokeOre" with the trigger type "triumph:player_break_block". This function returns the criteria as an object
+criteria = addCriteria("brokeOre", "triumph:player_break_block")
+
+//Sets the required block ore dict for the criteria. A block from this ore dict needs to be broken by the player.
+criteria.setBlockOreDict("oreIron")

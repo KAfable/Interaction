@@ -1,0 +1,17 @@
+//Set the icon item
+setIcon("minecraft:carrot")
+
+//Set the title String
+setTitle("Mmmmmmmmmm, carrot")
+
+//Set the description String
+setDescription("Eat carrot, be happy")
+
+//Set the parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setParent("triumph:example/root")
+
+//Adds criteria named "consumed" with the trigger type "minecraft:consume_item". This function returns the criteria as an object
+criteria = addCriteria("consumed", "minecraft:consume_item")
+
+//Sets the required item oredict for the criteria. An item from this oredict needs to be consumed.
+criteria.setOreDict("cropCarrot")
