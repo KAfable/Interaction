@@ -13,6 +13,16 @@ var aaDisabled = [
 for item in aaDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
+////////////////////////////
+//Applied Energistics 2
+////////////////////////////
+var ae2Disabled = [
+  <appliedenergistics2:material:4>]
+  as IItemStack[];
+
+for item in ae2Disabled{
+  mods.jei.JEI.removeAndHide(item);}
+
 ////////
 //Armors
 ////////
@@ -91,6 +101,16 @@ var etDisabled = [
 
 for item in etDisabled{
   mods.jei.JEI.removeAndHide(item);}
+
+///////////////
+// FactoryTech
+///////////////
+var ftDisabled = [
+  <factorytech:sluice>]
+  as IItemStack[];
+
+for item in ftDisabled{
+    mods.jei.JEI.removeAndHide(item);}
 
 ////////////
 // Forestry
