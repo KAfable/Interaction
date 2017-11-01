@@ -51,7 +51,6 @@
   "codechickenlib": "3.1.3.313",
   "industrialwires": "1.6-21",
   "justenoughdimensions": "1.5.5",
-  "magneticraft": "2.0.3",
   "ctgui": "1.0.0",
   "jei": "4.8.0.110",
   "bnbgaminglib": "2.8.2",
@@ -197,6 +196,5 @@
   "silentgems": "2.5.8",
   "refinedstorageaddons": "0.2",
   "chiselsandbits": "14.9",
-  "djsattractor": "1.6",
-  "modelloader": "1.0.5"
+  "djsattractor": "1.6"
 }

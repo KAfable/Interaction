@@ -30,7 +30,7 @@
 				"restriction": "whitelist",
 				"value": [50]}
 		},
-		
+
 		"antiLiquifiedCoralium": {
 			"distribution": "uniform",
 			"generator": {
