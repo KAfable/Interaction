@@ -52,6 +52,15 @@ item.contenttweaker.valve6.name=Ultimate Valve
 item.contenttweaker.valve7.name=Ludicrous Valve
 item.contenttweaker.valve8.name=Divine Valve
 
+item.contenttweaker.impureDustBauxite.name=Impure Bauxite Dust
+item.contenttweaker.impureDustIron.name=Impure Iron Dust
+item.contenttweaker.impureDustCopper.name=Impure Copper Dust
+item.contenttweaker.impureDustGold.name=Impure Gold Dust
+item.contenttweaker.impureDustZinc.name=Impure Zinc Dust
+item.contenttweaker.impureDustTin.name=Impure Tin Dust
+item.contenttweaker.impureDustAbyssalnite.name=Impure Abyssalnite Dust
+
+
 item.contenttweaker.astralmotor.name=Celestial Motor
 
 tile.contenttweaker.portalBlockt.name=Overworld Portal Block

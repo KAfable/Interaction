@@ -4,7 +4,13 @@
       "0": "brick_block",
       "1": "reinforced_stone_block",
       "2": "putty_block",
-      "3": "wood_block"
+      "3": "wood_block",
+      "4": "gold_block",
+      "5": "copper_block",
+      "6": "fiery_infused_block",
+      "7": "iron_block",
+      "8": "aluminium_block",
+      "9": "abyssalnite_block"
     }
   }
 }

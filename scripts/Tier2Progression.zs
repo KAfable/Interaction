@@ -6,10 +6,14 @@ var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
 var petals = <botania:petal:*>;
 
+/////////////////
+// Astral Sorcery
+/////////////////
+recipes.removeShaped(<astralsorcery:blockblackmarble>);
+
 ////////////////
 //Ore Processing
 ////////////////
-
 // Furnace Removals
 furnace.remove(<ore:ingotLead>, <ore:oreLead>);
 furnace.remove(<ore:ingotLead>, <ic2:crushed:3>);
@@ -23,35 +27,46 @@ furnace.remove(<ore:ingotTin>, <ic2:crushed:5>);
 furnace.remove(<ore:ingotIron>, <ore:oreIron>);
 furnace.remove(<ore:ingotIron>, <ic2:crushed:2>);
 
-furnace.addRecipe(<ic2:crushed:3>, <ore:oreLead>);
+furnace.addRecipe(<contenttweaker:impuredustcopper>, <ore:oreCopper>);
+furnace.addRecipe(<thermalfoundation:material:192>*6, <contenttweaker:impuredustcopper>);
+mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:64>, <contenttweaker:impuredustcopper>);
 
-furnace.addRecipe(<ic2:crushed>, <ore:oreCopper>);
-furnace.addRecipe(<thermalfoundation:material:192>*6, <ic2:crushed>);
-<ic2:crushed>.displayName = "Impure Copper Dust";
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:64>, <ic2:crushed>);
+furnace.addRecipe(<contenttweaker:impuredustgold>, <ore:oreGold>);
+furnace.addRecipe(<minecraft:gold_nugget>*6, <contenttweaker:impuredustgold>);
+mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:1>, <contenttweaker:impuredustgold>);
 
-furnace.addRecipe(<ic2:crushed:1>, <ore:oreGold>);
-furnace.addRecipe(<minecraft:gold_nugget>*6, <ic2:crushed:1>);
-<ic2:crushed:1>.displayName = "Impure Gold Dust";
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:1>, <ic2:crushed:1>);
+furnace.addRecipe(<contenttweaker:impuredustiron>, <ore:oreIron>);
+furnace.addRecipe(<minecraft:iron_nugget>*6, <contenttweaker:impuredustiron>);
+mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material>, <contenttweaker:impuredustiron>);
 
-furnace.addRecipe(<ic2:crushed:2>, <ore:oreIron>);
-furnace.addRecipe(<minecraft:iron_nugget>*6, <ic2:crushed:2>);
-<ic2:crushed:2>.displayName = "Impure Iron Dust";
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material>, <ic2:crushed>);
+furnace.addRecipe(<contenttweaker:impuredusttin>, <ore:oreTin>);
+furnace.addRecipe(<thermalfoundation:material:193>*6, <contenttweaker:impuredusttin>);
+mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:65>, <contenttweaker:impuredusttin>);
 
-furnace.addRecipe(<ic2:crushed:5>, <ore:oreTin>);
-furnace.addRecipe(<thermalfoundation:material:193>*6, <ic2:crushed:5>);
-<ic2:crushed:5>.displayName = "Impure Tin Dust";
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:65>, <ic2:crushed:5>);
+furnace.addRecipe(<contenttweaker:impuredustabyssalnite>, <ore:oreAbyssalnite>);
+furnace.addRecipe(<abyssalcraft:ingotnugget>*6, <contenttweaker:impuredustabyssalnite>);
+mods.skyresources.cauldronclean.addRecipe(<acintegration:dust>, <contenttweaker:impuredustabyssalnite>);
 
-////////////////
-//Ore Prospector
-////////////////
+furnace.addRecipe(<contenttweaker:impuredustbauxite>, <techreborn:ore:4>);
+furnace.addRecipe(<thermalfoundation:material:196>*6, <contenttweaker:impuredustbauxite>);
+mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:5>, <contenttweaker:impuredustbauxite>);
+furnace.addRecipe(<thermalfoundation:material:132>, <techreborn:dust:5>);
+
+furnace.addRecipe(<contenttweaker:impuredustzinc>, <ore:oreZinc>);
+furnace.addRecipe(<techreborn:nuggets:18>*6, <contenttweaker:impuredustzinc>);
+mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:59>, <contenttweaker:impuredustzinc>);
+
+
+
+// Bronze Dusts
+recipes.remove(<techreborn:dust:7>);
+recipes.remove(<ic2:dust>);
+
+//////////////////////////////
+//Ore Prospector - Two Recipes
+///////////////////////////////
 <prospectors:prospector_lowest>.displayName = "Basic Prospector";
 recipes.removeShaped(<prospectors:prospector_lowest>);
-
-// Alternative Exploration Recipes
 recipes.addShaped(<prospectors:prospector_lowest>, [
   [null, <immersiveengineering:material>, glowRoses],
   [null, <abyssalcraft:dltlog>, <immersiveengineering:material>],
@@ -95,3 +110,48 @@ recipes.addShaped(<actuallyadditions:item_bag>, [
   [<minecraft:string>,<minecraft:leather>,<minecraft:string>],
   [<minecraft:string>, <ore:gearWood>,<minecraft:string>],
   [<minecraft:leather>, ibpb, <minecraft:leather>]]);
+
+////////////////////////////
+//Silent's Gems and Strainer
+////////////////////////////
+recipes.removeShaped(<waterstrainer:strainer_survivalist>);
+recipes.addShaped(<waterstrainer:strainer_survivalist>, [
+  [<contenttweaker:material_part:18>,<minecraft:leather>, <contenttweaker:material_part:18>],
+  [<minecraft:leather>, <waterstrainer:net>, <minecraft:leather>],
+  [<contenttweaker:material_part:18>, <minecraft:leather>, <contenttweaker:material_part:18>]]);
+<waterstrainer:strainer_survivalist>.displayName = "Lapidarist's Strainer";
+
+recipes.removeShaped(<waterstrainer:strainer_survivalist_solid>);
+recipes.addShaped(<waterstrainer:strainer_survivalist_solid>, [
+  [<contenttweaker:material_part:18>,<minecraft:obsidian>,<contenttweaker:material_part:18>],
+  [<minecraft:obsidian>, <waterstrainer:net>, <minecraft:obsidian>],
+  [<contenttweaker:material_part:18>, <minecraft:obsidian>, <contenttweaker:material_part:18>]]);
+<waterstrainer:strainer_survivalist_solid>.displayName = "Gemcutter's Strainer";
+
+recipes.removeShaped(<waterstrainer:strainer_survivalist_reinforced>);
+recipes.addShaped(<waterstrainer:strainer_survivalist_reinforced>, [
+  [<contenttweaker:material_part:18>, <ore:gemApatite>, <contenttweaker:material_part:18>],
+  [<ore:gemApatite>, <waterstrainer:net>, <ore:gemApatite>],
+  [<contenttweaker:material_part:18>, <ore:gemApatite>, <contenttweaker:material_part:18>]]);
+<waterstrainer:strainer_survivalist_reinforced>.displayName = "Jeweler's Strainer";
+
+recipes.removeShaped(<waterstrainer:strainer_survivalist_dense>);
+recipes.addShaped(<waterstrainer:strainer_survivalist_dense>, [
+  [<contenttweaker:material_part:17>, <minecraft:leather>,<contenttweaker:material_part:17>],
+  [<minecraft:leather>, <waterstrainer:net>, <minecraft:leather>],
+  [<contenttweaker:material_part:17>, <minecraft:leather>, <contenttweaker:material_part:17>]]);
+<waterstrainer:strainer_survivalist_dense>.displayName = "Lapidarist's Strainer (Dense)";
+
+recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_solid>);
+recipes.addShaped(<waterstrainer:strainer_survivalist_dense_solid>, [
+  [<contenttweaker:material_part:17>, <minecraft:obsidian>,<contenttweaker:material_part:17>],
+  [<minecraft:obsidian>, <waterstrainer:net>,<minecraft:obsidian>],
+  [<contenttweaker:material_part:17>, <minecraft:obsidian>, <contenttweaker:material_part:17>]]);
+<waterstrainer:strainer_survivalist_dense_solid>.displayName = "Gemcutter's Strainer (Dense)";
+
+recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_reinforced>);
+recipes.addShaped(<waterstrainer:strainer_survivalist_dense_reinforced>, [
+  [<ore:gemApatite>,  <minecraft:obsidian>, <ore:gemApatite>],
+  [ <minecraft:obsidian>, <waterstrainer:net>, <minecraft:obsidian>],
+  [<ore:gemApatite>,  <minecraft:obsidian>, <ore:gemApatite>]]);
+<waterstrainer:strainer_survivalist_dense_reinforced>.displayName = "Jeweler's Strainer (Dense)";

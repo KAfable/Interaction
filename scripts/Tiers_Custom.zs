@@ -6,7 +6,7 @@ import mods.contenttweaker.Material;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 
-var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt"] as string[];
+var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt", "dense_plate", "crystal", "crushed_ore", "casing"] as string[];
 
 //////////////////
 //Tier 1 Materials
@@ -40,28 +40,32 @@ for i, mat in tier1_list {
 //////////////////u
 var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
 var iron = MaterialSystem.getMaterialBuilder().setName("Iron").setColor(6032139).build();
-//var coralium =
-//var abyssalnite =
-//var aluminium =
-//var copper =
-//var gold =
-//var zinc =
-//var tin =
-
-var tier2_list = [fiery] as Material[];
-
+var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(3866733).build();
+var aluminium = MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(11975109).build();
+var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(12017419).build();
+var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
+//var zinc = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
+//var tin = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
+var tier2_list = [fiery, iron, abyssalnite, aluminium, copper, gold] as Material[];
 
 //Tier 2 Registration
-fiery.registerParts(part_names);
+for i, mat in tier2_list {
+  mat.registerParts(part_names);
 
-// Motors
-var motors = ["motor1", "motor2", "motor3", "motor4", "motor5", "motor6"] as string[];
-var glowingMotors = ["motor7", "motor8"] as string[];
-for i in motors {VanillaFactory.createItem(i).register();}
-for i in glowingMotors {
-  var tempMotor = VanillaFactory.createItem(i);
-  tempMotor.glowing = true;
-  tempMotor.register();}
+  var blockData = mat.registerPart("block").getData();
+  blockData.addDataValue("hardness", "5");
+  blockData.addDataValue("resistance", "30");
+  blockData.addDataValue("harvestTool", "pickaxe");
+  blockData.addDataValue("harvestLevel", "1");}
+
+////////////////
+//Microcrafting
+////////////////
+
+// Celestial Motor
+var astralMotor = VanillaFactory.createItem("astralmotor");
+astralMotor.glowing = true;
+astralMotor.register();
 
 // Conveyors
 var conveyors = ["conveyor1", "conveyor2", "conveyor3", "conveyor4", "conveyor5", "conveyor6"] as string[];
@@ -72,14 +76,18 @@ for i in glowingConveyors {
   tempConveyor.glowing = true;
   tempConveyor.register();}
 
-// Pistons
-var pistons = ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"] as string[];
-var glowingPistons = ["piston7","piston8"] as string[];
-for i in pistons {VanillaFactory.createItem(i).register();}
-for i in glowingPistons {
-  var tempPiston = VanillaFactory.createItem(i);
-  tempPiston.glowing = true;
-  tempPiston.register();}
+//Dusts
+var impureDusts = [
+  "impureDustBauxite",
+  "impureDustIron",
+  "impureDustCopper",
+  "impureDustGold",
+  "impureDustZinc",
+  "impureDustTin",
+  "impureDustAbyssalnite"
+  ] as string[];
+
+for i in impureDusts {VanillaFactory.createItem(i).register();}
 
 //Emitters
 var emitters = ["emitter1", "emitter2", "emitter3", "emitter4", "emitter5", "emitter6"] as string[];
@@ -90,14 +98,23 @@ for i in glowingEmitters {
     tempEmitter.glowing = true;
     tempEmitter.register();}
 
-// Sensors
-var sensors = ["sensor1", "sensor2", "sensor3", "sensor4", "sensor5", "sensor6"] as string[];
-var glowingSensors = ["sensor7","sensor8"] as string[];
-for i in sensors {VanillaFactory.createItem(i).register();}
-for i in glowingSensors {
-    var tempSensor = VanillaFactory.createItem(i);
-    tempSensor.glowing = true;
-    tempSensor.register();}
+// Motors
+var motors = ["motor1", "motor2", "motor3", "motor4", "motor5", "motor6"] as string[];
+var glowingMotors = ["motor7", "motor8"] as string[];
+for i in motors {VanillaFactory.createItem(i).register();}
+for i in glowingMotors {
+  var tempMotor = VanillaFactory.createItem(i);
+  tempMotor.glowing = true;
+  tempMotor.register();}
+
+// Pistons
+var pistons = ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"] as string[];
+var glowingPistons = ["piston7","piston8"] as string[];
+for i in pistons {VanillaFactory.createItem(i).register();}
+for i in glowingPistons {
+  var tempPiston = VanillaFactory.createItem(i);
+  tempPiston.glowing = true;
+  tempPiston.register();}
 
 // Robot Arms
 var robotArms = ["robotArm1", "robotArm2", "robotArm3", "robotArm4", "robotArm5", "robotArm6"] as string[];
@@ -108,6 +125,15 @@ for i in glowingRobotArms {
     tempRobotArm.glowing = true;
     tempRobotArm.register();}
 
+// Sensors
+var sensors = ["sensor1", "sensor2", "sensor3", "sensor4", "sensor5", "sensor6"] as string[];
+var glowingSensors = ["sensor7","sensor8"] as string[];
+for i in sensors {VanillaFactory.createItem(i).register();}
+for i in glowingSensors {
+    var tempSensor = VanillaFactory.createItem(i);
+    tempSensor.glowing = true;
+    tempSensor.register();}
+
 // Valves
 var valves = ["valve1", "valve2", "valve3", "valve4", "valve5", "valve6"] as string[];
 var glowingValves = ["valve7","valve8"] as string[];
@@ -117,10 +143,9 @@ for i in glowingValves {
     tempValve.glowing = true;
     tempValve.register();}
 
-// Celestial Motor
-var astralMotor = VanillaFactory.createItem("astralmotor");
-astralMotor.glowing = true;
-astralMotor.register();
+///////////
+// Blocks
+//////////
 
 // Wells
 var energized_well = VanillaFactory.createBlock("energized_well", <blockmaterial:rock>);

@@ -148,10 +148,26 @@ var gearsDisabled = [
 for item in gearsDisabled{
     mods.jei.JEI.removeAndHide(item);}
 
-////////////////////
-//Ingots & Plates
-//////////////////
+////////////////////////////
+//Ingots & Plates & Blocks
+/////////////////////////////
 var ipDisabled = [
+  <factorytech:ingot:2>,
+  <techreborn:storage2:9>,
+  <mekanism:basicblock:13>,
+  <ic2:resource:9>,
+  <fp:erz_blocke>,
+  <forestry:resource_storage:2>,
+  <mekanism:basicblock:1>,
+  <ic2:resource:5>,
+  <forestry:resource_storage:3>,
+  <ic2:resource:6>,
+  <factorytech:oreblock>,
+  <forestry:resource_storage:1>,
+  <fp:erz_blocke:2>,
+  <immersiveengineering:storage>,
+  <mekanism:basicblock:12>,
+  <techreborn:storage2:8>,
   <abyssalcraft:copperingot>,
   <crossroads:ingot_copper>,
   <factorytech:ingot>,
@@ -159,7 +175,6 @@ var ipDisabled = [
   <fp:itemerze:2>,
   <immersiveengineering:metal>,
   <ic2:ingot:2>,
-  <magneticraft:ingots:2>,
   <mekanism:ingot:5>,
   <sgextraparts:ingot>,
   <techreborn:ingot:4>,
@@ -168,7 +183,6 @@ var ipDisabled = [
   <forestry:ingot_tin>,
   <fp:itemerze>,
   <ic2:ingot:6>,
-  <magneticraft:ingots:13>,
   <mekanism:ingot:6>,
   <sgextraparts:ingot:1>,
   <techreborn:ingot:10>,
@@ -176,12 +190,10 @@ var ipDisabled = [
   <sgextraparts:ingot:5>,
   <techreborn:ingot:8>,
   <sgextraparts:ingot:3>,
-  <magneticraft:ingots:3>,
   <ic2:ingot:3>,
   <immersiveengineering:metal:2>,
   <techreborn:ingot:9>,
   <sgextraparts:ingot:4>,
-  <magneticraft:ingots:10>,
   <immersiveengineering:metal:4>,
   <factorytech:ingot:1>,
   <crossroads:ingot_bronze>,
@@ -191,29 +203,24 @@ var ipDisabled = [
   <sgextraparts:ingot:11>,
   <techreborn:ingot:2>,
   <immersiveengineering:metal:1>,
-  <magneticraft:ingots:7>,
   <sgextraparts:ingot:6>,
   <techreborn:ingot>,
   <thermalfoundation:storage_alloy>,
-  <magneticraft:ingots:12>,
   <techreborn:ingot:11>,
   <sgextraparts:ingot:9>,
   <sgextraparts:ingot:10>,
-  <magneticraft:ingots:11>,
   <sgextraparts:ingot:12>,
   <techreborn:ingot:5>,
   <sgextraparts:ingot:15>,
   <immersiveengineering:metal:7>,
   <sgextraparts:ingot:19>,
   <sgextraparts:ingot:18>,
-  <magneticraft:ingots:4>,
   <techreborn:ingot:6>,
   <sgextraparts:ingot:14>,
   <factorytech:ingot:3>,
   <sgextraparts:ingot:16>,
   <immersiveengineering:metal:8>,
   <ic2:ingot:5>,
-  <magneticraft:ingots:6>,
   <sgextraparts:ingot:13>,
   <techreborn:ingot:12>,
   <techreborn:storage:4>,
@@ -226,20 +233,16 @@ var ipDisabled = [
   <thermalfoundation:material:160>,
   <immersiveengineering:metal:5>,
   <fp:itemerze:1>,
-  <magneticraft:ingots:14>,
   <sgextraparts:ingot:8>,
   <sgextraparts:ingot:7>,
   <fp:spaceship:13>,
   <immersiveengineering:metal:32>,
   <ic2:plate:3>,
   <ic2:plate:5>,
-  <magneticraft:light_plates>,
-  <magneticraft:light_plates:3>,
   <techreborn:plates>,
   <techreborn:plates:24>,
   <immersiveengineering:metal:39>,
   <techreborn:plates:28>,
-  <magneticraft:light_plates:6>,
   <ic2:plate:7>,
   <immersiveengineering:metal:38>,
   <techreborn:plates:18>,
@@ -262,21 +265,17 @@ var nuggetsDisabled = [
   <factorytech:ore_dust:4>,
   <immersiveengineering:metal:20>,
   <magicbees:orepart:3>,
-  <magneticraft:nuggets:2>,
   <techreborn:nuggets:4>,
   <immersiveengineering:metal:29>,
   <techreborn:nuggets:23>,
   <techreborn:nuggets:9>,
-  <magneticraft:nuggets:10>,
   <immersiveengineering:metal:24>,
   <factorytech:ore_dust:5>,
   <magicbees:orepart:5>,
   <techreborn:nuggets:2>,
   <techreborn:nuggets:8>,
-  <magneticraft:nuggets:3>,
   <immersiveengineering:metal:22>,
   <techreborn:nuggets:13>,
-  <magneticraft:nuggets:13>,
   <magicbees:orepart:4>]
   as IItemStack[];
 
@@ -305,7 +304,6 @@ var mineralsDisabled = [
   <ic2:resource:2>,
   <ic2:resource:3>,
   <fp:erze:3>,
-  <magneticraft:ores>,
   <immersiveengineering:ore>,
   <immersiveengineering:ore:1>,
   <immersiveengineering:ore:2>,
@@ -388,3 +386,15 @@ var seedRemoved = [
 
 for item in seedRemoved {
     vanilla.seeds.removeSeed(item);}
+
+/////////
+//Weapons
+/////////
+var wepRedundant = [
+  <techreborn:bronzesword>,
+  <ic2:bronze_sword>,
+  <thermalfoundation:tool.sword_bronze>]
+  as IItemStack[];
+
+for item in wepRedundant {
+    mods.jei.JEI.removeAndHide(item);}
