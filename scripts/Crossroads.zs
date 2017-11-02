@@ -82,17 +82,17 @@ mods.tconstruct.Casting.removeTableRecipe(<abyssalcraft:cingot>);
 fcc.addRecipe(<thermalfoundation:material:130>, <liquid:silver>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:130>);
 
-fcc.addRecipe(<thermalfoundation:material:133>*144, <liquid:nickel>, 1000, 400);
+fcc.addRecipe(<thermalfoundation:material:133>, <liquid:nickel>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:133>);
 
-fcc.addRecipe(<thermalfoundation:material:134>*144, <liquid:platinum>, 1000, 400);
+fcc.addRecipe(<thermalfoundation:material:134>, <liquid:platinum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:134>);
 
-fcc.addRecipe(<thermalfoundation:material:161>*144, <liquid:electrum>, 1000, 400);
+fcc.addRecipe(<thermalfoundation:material:161>, <liquid:electrum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:161>);
 
-fcc.addRecipe(<thermalfoundation:material:164>*144, <liquid:constantan>, 1000, 400);
+fcc.addRecipe(<thermalfoundation:material:164>, <liquid:constantan>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:164>);
 
-fcc.addRecipe(<thermalfoundation:material:165>*144, <liquid:signalum>*144, 1000, 400);
+fcc.addRecipe(<thermalfoundation:material:165>, <liquid:signalum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);

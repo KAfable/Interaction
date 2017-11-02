@@ -57,10 +57,26 @@ furnace.addRecipe(<techreborn:nuggets:18>*6, <contenttweaker:impuredustzinc>);
 mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:59>, <contenttweaker:impuredustzinc>);
 
 
-
 // Bronze Dusts
 recipes.remove(<techreborn:dust:7>);
 recipes.remove(<ic2:dust>);
+
+
+////////////////////////////
+// MicroCrafting Ingredients
+////////////////////////////
+
+//Metal plates
+mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:320>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<minecraft:gold_ingot>, <thermalfoundation:material:33>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<minecraft:iron_ingot>, <thermalfoundation:material:32>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:129>, <thermalfoundation:material:321>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:355>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<minecraft:redstone_block>, <techreborn:plates:4>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<contenttweaker:material_part:67>, <contenttweaker:material_part:65>, null);
+mods.integrateddynamics.Squeezer.addRecipe(<mekanism:ingot:4>, <thermalfoundation:material:352>, null);
+
+
 
 //////////////////////////////
 //Ore Prospector - Two Recipes
