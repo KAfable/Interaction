@@ -1,5 +1,6 @@
 {
 	"populate": {
+
 		"rockCrystal": {
 			"distribution": "uniform",
 			"generator": {
@@ -50,8 +51,7 @@
 				"cluster-size": 20,
 				"crust": "abyssalcraft:abylcorore",
 				"hollow": "true",
-				"filler": "abyssalcraft:antiwater"}
-			},
+				"filler": "abyssalcraft:antiwater"},
 			"cluster-count": 1,
 			"chunk-chance": 50,
 			"min-height": 0,
@@ -80,8 +80,7 @@
 					"name": "abyssalcraft:stone",
 					"metadata": 1},
 				"radius": 16,
-				"height": 3
-			},
+				"height": 3},
 			"cluster-count": 1,
 			"chunk-chance": 60,
 			"min-height": 0,
@@ -205,6 +204,5 @@
 				]
 			}
 		}
-
 	}
 }

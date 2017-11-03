@@ -49,6 +49,7 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+
 		"abyssalnite": {
 			"distribution": "uniform",
 			"generator": {
@@ -81,6 +82,7 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+
 		"aluminum": {
 			"distribution": "uniform",
 			"generator": {
@@ -122,6 +124,7 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+
 		"AntiCoralium": {
 			"distribution": "uniform",
 			"generator": {
@@ -153,6 +156,7 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+
 		"coal": {
 			"distribution": "uniform",
 			"generator": {
@@ -182,6 +186,7 @@
 				]
 			}
 		},
+
 		"copper": {
 			"distribution": "uniform",
 			"generator": {
@@ -211,6 +216,7 @@
 				]
 			}
 		},
+
 		"gold": {
 			"distribution": "uniform",
 			"generator": {
@@ -244,6 +250,7 @@
 				]
 			}
 		},
+
 		"iron": {
 			"distribution": "uniform",
 			"generator": {
@@ -270,6 +277,7 @@
 				"restriction": "whitelist",
 				"value": [100]}
 		},
+
 		"lapis": {
 			"distribution": "uniform",
 			"generator": {
@@ -299,6 +307,7 @@
 				]
 			}
 		},
+
 		"redstone": {
 			"distribution": "uniform",
 			"generator": {
@@ -312,7 +321,7 @@
 					"weight": 75
 					}],
 				"material": "minecraft:stone",
-				"radius": 24,
+				"radius": 16,
 				"height": 3
 			},
 			"cluster-count": 1,
@@ -328,6 +337,7 @@
 				]
 			}
 		},
+
 		"zinc": {
 			"distribution": "uniform",
 			"generator": {
@@ -356,6 +366,7 @@
 				"value": [
 					100]}
 		},
+
 		"tin": {
 			"distribution": "uniform",
 			"generator": {
@@ -459,6 +470,7 @@
 				]
 			}
 		},
+
 		"andesite": {
 			"distribution": "uniform",
 			"generator": {
