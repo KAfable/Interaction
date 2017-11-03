@@ -5,11 +5,31 @@ import crafttweaker.item.IIngredient;
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
 var petals = <botania:petal:*>;
+var cb = <minecraft:clay_ball>;
+var brick = <minecraft:brick>;
 
 /////////////////
 // Astral Sorcery
 /////////////////
 recipes.removeShaped(<astralsorcery:blockblackmarble>);
+
+///////////////////////
+//Immersive Engineering
+///////////////////////
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.addShaped( , [[cb, brick, cb],[brick, <immersiveengineering:stone_decoration:10>, brick],[cb, brick, cb]]);
+
+
+/////////////////////////////////
+// Those spicy boi hammer recipes
+/////////////////////////////////
+recipes.removeShapeless(<immersiveengineering:metal:31>);
+recipes.removeShapeless(<immersiveengineering:metal:33>);
+recipes.removeShapeless(<immersiveengineering:metal:34>);
+recipes.removeShapeless(<immersiveengineering:metal:35>);
+recipes.removeShapeless(<immersiveengineering:metal:36>);
+recipes.removeShapeless(<immersiveengineering:metal:37>);
+recipes.removeShapeless(<immersiveengineering:metal:40>);
 
 ////////////////
 //Ore Processing
