@@ -17,7 +17,11 @@ recipes.removeShaped(<astralsorcery:blockblackmarble>);
 //Immersive Engineering
 ///////////////////////
 recipes.remove(<immersiveengineering:stone_decoration>);
-recipes.addShaped( , [[cb, brick, cb],[brick, <immersiveengineering:stone_decoration:10>, brick],[cb, brick, cb]]);
+recipes.addShaped(<immersiveengineering:stone_decoration>, [
+  [cb, brick, cb],
+  [brick, <immersiveengineering:stone_decoration:10>, brick],
+  [cb, brick, cb]]);
+recipes.remove(<immersiveengineering:stone_decoration:1>);
 
 
 /////////////////////////////////

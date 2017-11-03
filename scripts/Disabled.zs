@@ -148,6 +148,20 @@ var gearsDisabled = [
 for item in gearsDisabled{
     mods.jei.JEI.removeAndHide(item);}
 
+////////////////////////
+// Immersive Engineering
+////////////////////////
+var immDisabled = [
+  <immersiveengineering:wooden_device1>,
+  <immersiveengineering:material:10>]
+  as IItemStack[];
+
+for item in immDisabled{
+    recipes.remove(item);}
+
+<immersiveengineering:wooden_device1>.addTooltip(format.red("Disabled"));
+<immersiveengineering:material:10>.addTooltip(format.red("Disabled"));
+
 ////////////////////////////
 //Ingots & Plates & Blocks
 /////////////////////////////
