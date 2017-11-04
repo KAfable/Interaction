@@ -1,12 +1,57 @@
 //Tier 2 Progression
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.integrateddynamics.Squeezer as sq;
 
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
 var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
+
+//////////
+//Squeezer
+//////////
+var remove = [
+	<thermalfoundation:material:0>,
+	<thermalfoundation:material:1>,
+	<thermalfoundation:material:64>,
+	<thermalfoundation:material:65>,
+	<thermalfoundation:material:66>,
+	<thermalfoundation:material:67>,
+	<thermalfoundation:material:69>,
+	<thermalfoundation:material:70>,
+	<thermalfoundation:material:72>
+] as IItemStack[];
+var add = [
+	<contenttweaker:impuredustgold>,
+	<contenttweaker:impuredustiron>,
+	<contenttweaker:impuredustcopper>,
+	<contenttweaker:impuredusttin>
+] as IItemStack[];
+var comp = [
+	<minecraft:gold_ore>,
+	<minecraft:iron_ore>,
+	<thermalfoundation:ore:0>,
+	<thermalfoundation:ore:1>,
+	<thermalfoundation:ore:2>,
+	<thermalfoundation:ore:3>,
+	<thermalfoundation:ore:5>,
+	<thermalfoundation:ore:6>,
+	<thermalfoundation:ore:8>
+] as IItemStack[];
+for i, item in remove {
+	sq.removeRecipe(item, comp[i], null);
+}
+for i, item in add {
+	sq.addRecipe(add[i]*2, item, null);
+}
+sq.addRecipe(<contenttweaker:impuredustabyssalnite>*2, <abyssalcraft:abyore>, null);
+sq.addRecipe(<contenttweaker:impuredustzinc>*2, <fp:erze:1>, null);
+sq.addRecipe(<contenttweaker:impuredustbauxite>*2, <thermalfoundation:ore:4>, null);
+
+recipes.remove(<integrateddynamics:squeezer>);
+recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],[<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
 
 /////////////////
 // Astral Sorcery
@@ -22,6 +67,8 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
   [brick, <immersiveengineering:stone_decoration:10>, brick],
   [cb, brick, cb]]);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
+recipes.remove(<immersiveengineering:stone_decoration:2>);
+
 
 
 /////////////////////////////////
@@ -51,33 +98,35 @@ furnace.remove(<ore:ingotTin>, <ic2:crushed:5>);
 furnace.remove(<ore:ingotIron>, <ore:oreIron>);
 furnace.remove(<ore:ingotIron>, <ic2:crushed:2>);
 
+var configOreAmount = 4;
+
 furnace.addRecipe(<contenttweaker:impuredustcopper>, <ore:oreCopper>);
-furnace.addRecipe(<thermalfoundation:material:192>*6, <contenttweaker:impuredustcopper>);
+furnace.addRecipe(<thermalfoundation:material:192>*configOreAmount, <contenttweaker:impuredustcopper>);
 mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:64>, <contenttweaker:impuredustcopper>);
 
 furnace.addRecipe(<contenttweaker:impuredustgold>, <ore:oreGold>);
-furnace.addRecipe(<minecraft:gold_nugget>*6, <contenttweaker:impuredustgold>);
+furnace.addRecipe(<minecraft:gold_nugget>*configOreAmount, <contenttweaker:impuredustgold>);
 mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:1>, <contenttweaker:impuredustgold>);
 
 furnace.addRecipe(<contenttweaker:impuredustiron>, <ore:oreIron>);
-furnace.addRecipe(<minecraft:iron_nugget>*6, <contenttweaker:impuredustiron>);
+furnace.addRecipe(<minecraft:iron_nugget>*configOreAmount, <contenttweaker:impuredustiron>);
 mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material>, <contenttweaker:impuredustiron>);
 
 furnace.addRecipe(<contenttweaker:impuredusttin>, <ore:oreTin>);
-furnace.addRecipe(<thermalfoundation:material:193>*6, <contenttweaker:impuredusttin>);
+furnace.addRecipe(<thermalfoundation:material:193>*configOreAmount, <contenttweaker:impuredusttin>);
 mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:65>, <contenttweaker:impuredusttin>);
 
 furnace.addRecipe(<contenttweaker:impuredustabyssalnite>, <ore:oreAbyssalnite>);
-furnace.addRecipe(<abyssalcraft:ingotnugget>*6, <contenttweaker:impuredustabyssalnite>);
+furnace.addRecipe(<abyssalcraft:ingotnugget>*configOreAmount, <contenttweaker:impuredustabyssalnite>);
 mods.skyresources.cauldronclean.addRecipe(<acintegration:dust>, <contenttweaker:impuredustabyssalnite>);
 
 furnace.addRecipe(<contenttweaker:impuredustbauxite>, <techreborn:ore:4>);
-furnace.addRecipe(<thermalfoundation:material:196>*6, <contenttweaker:impuredustbauxite>);
+furnace.addRecipe(<thermalfoundation:material:196>*configOreAmount, <contenttweaker:impuredustbauxite>);
 mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:5>, <contenttweaker:impuredustbauxite>);
 furnace.addRecipe(<thermalfoundation:material:132>, <techreborn:dust:5>);
 
 furnace.addRecipe(<contenttweaker:impuredustzinc>, <ore:oreZinc>);
-furnace.addRecipe(<techreborn:nuggets:18>*6, <contenttweaker:impuredustzinc>);
+furnace.addRecipe(<techreborn:nuggets:18>*configOreAmount, <contenttweaker:impuredustzinc>);
 mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:59>, <contenttweaker:impuredustzinc>);
 
 
