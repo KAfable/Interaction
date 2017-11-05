@@ -9,10 +9,10 @@ recipes.addShaped(<ironchest:iron_chest:3>, [
   [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
 mods.tconstruct.Casting.addBasinRecipe(<crossroads:fluid_cooling_chamber>,<ironchest:iron_chest:3>, <liquid:tin>, 1296, true);
 
+
 //addRecipe(IItemStack output, ILiquidStack input, double maxTemp, double heatAdded)
 //mods.tconstruct.Casting.removeBasinRecipe(IItemStack output);
 //mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
-
 fcc.addRecipe(<minecraft:glass>, <liquid:glass>*144, 1000, 50);
 fcc.addRecipe(<tconstruct:materials>,<liquid:stone>*72, 1000, 50);
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:materials>);
@@ -60,7 +60,6 @@ mods.tconstruct.Casting.removeBasinRecipe(<thermalfoundation:material:162>);
 fcc.addRecipe(<thermalfoundation:material:163>, <liquid:bronze>*144, 1000, 100);
 mods.tconstruct.Casting.removeBasinRecipe(<thermalfoundation:material:163>);
 
-
 fcc.addRecipe(<techreborn:ingot:1>, <liquid:brass>*144, 1000, 100);
 mods.tconstruct.Casting.removeTableRecipe(<techreborn:ingot:1>);
 
@@ -96,3 +95,37 @@ mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:164>);
 
 fcc.addRecipe(<thermalfoundation:material:165>, <liquid:signalum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);
+
+
+//////////
+//Recipes
+/////////
+recipes.removeShaped(<crossroads:heat_cable_copper_wool>);
+recipes.addShaped(<crossroads:heat_cable_copper_wool>, [
+  [<ore:wool>, <ore:wool>, <ore:wool>],
+  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+  [<ore:wool>, <ore:wool>, <ore:wool>]]);
+
+recipes.removeShaped(<crossroads:heat_cable_copper_slime>);
+recipes.addShaped(<crossroads:heat_cable_copper_slime>, [
+  [<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],
+  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+  [<ore:slimeball>, <ore:slimeball>, <ore:slimeball>]]);
+
+recipes.removeShaped(<crossroads:heat_cable_copper_ice>);
+recipes.addShaped(<crossroads:heat_cable_copper_ice>, [
+  [<minecraft:packed_ice>, <minecraft:packed_ice>, <minecraft:packed_ice>],
+  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+  [<minecraft:packed_ice>, <minecraft:packed_ice>, <minecraft:packed_ice>]]);
+
+recipes.removeShaped(<crossroads:heat_cable_copper_obsidian>);
+recipes.addShaped(<crossroads:heat_cable_copper_obsidian>, [
+  [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],
+  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+  [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+
+recipes.removeShaped(<crossroads:heat_cable_copper_dirt>);
+recipes.addShaped(<crossroads:heat_cable_copper_dirt>, [
+  [<ore:dirt>, <ore:dirt>, <ore:dirt>],
+  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+  [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);

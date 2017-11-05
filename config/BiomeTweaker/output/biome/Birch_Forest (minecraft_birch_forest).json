@@ -139,6 +139,12 @@
       "Max Group Count": 1
     },
     {
+      "Entity Class": "teamroots.embers.entity.EntityAncientGolem",
+      "Weight": 25,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
       "Entity Class": "cavern.entity.EntityCavenicSkeleton",
       "Weight": 20,
       "Min Group Count": 1,

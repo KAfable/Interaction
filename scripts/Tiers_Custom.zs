@@ -7,10 +7,26 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 
 var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt", "dense_plate", "crystal", "crushed_ore", "casing"] as string[];
+var partTypeFoil = MaterialSystem.getPartBuilder().setName("Foil").setPartType(MaterialSystem.getPartType("item"));
+
+/* This is sample code atm for testing part types
+#loadercontenttweaker
+import mods.contenttweaker.VanillaFactory;
+var craftingTool = VanillaFactory.createItem("craftingtool");
+craftingTool.maxStackSize = 1;
+craftingTool.setMaxDamage(10);
+craftingTool.register();
+
+val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
+*/
+
+
+
 
 //////////////////
 //Tier 1 Materials
 //////////////////
+
 var putty = MaterialSystem.getMaterialBuilder().setName("Putty").setColor(3342387).build();
 var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10053171).build();
 var brick = MaterialSystem.getMaterialBuilder().setName("Brick").setColor(12016192).build();
@@ -61,6 +77,14 @@ for i, mat in tier2_list {
 ////////////////
 //Microcrafting
 ////////////////
+
+/*#l contenttweaker
+import mods.contenttweaker.VanillaFactory;
+var craftingTool = VanillaFactory.createItem("craftingtool");
+craftingTool.maxStackSize = 1;
+craftingTool.setMaxDamage(10);
+craftingTool.register();*/
+
 
 // Celestial Motor
 var astralMotor = VanillaFactory.createItem("astralmotor");

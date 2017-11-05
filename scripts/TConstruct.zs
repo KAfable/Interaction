@@ -7,7 +7,13 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 // Items
-mods.jei.JEI.removeAndHide(<tconstruct:cast_custom:4>);
+var itemDisabled = [
+  <tconstruct:cast_custom:3>,
+  <tconstruct:cast_custom:4>]
+  as IItemStack[];
+
+for item in itemDisabled {
+  mods.jei.JEI.removeAndHide(item);}
 
 // Basin Recipes
 var basinDisabled = [
@@ -34,6 +40,7 @@ for item in basinDisabled {
 
 // Table Recipes
 var tableDisabled = [
+  <tconstruct:cast_custom:3>,
   <tconstruct:cast_custom:4>,
   <ic2:ingot:6>,
   <ic2:plate:8>,
@@ -43,7 +50,8 @@ var tableDisabled = [
   <thermalfoundation:material:356>,
   <thermalfoundation:material:353>,
   <thermalfoundation:material:289>,
-  <thermalfoundation:material:257>
+  <thermalfoundation:material:257>,
+
   ] as IItemStack[];
 
 for item in tableDisabled {

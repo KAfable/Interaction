@@ -22,11 +22,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
   [brick, <immersiveengineering:stone_decoration:10>, brick],
   [cb, brick, cb]]);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
-
-
-/////////////////////////////////
-// Those spicy boi hammer recipes
-/////////////////////////////////
+//Hammer Recipes
 recipes.removeShapeless(<immersiveengineering:metal:31>);
 recipes.removeShapeless(<immersiveengineering:metal:33>);
 recipes.removeShapeless(<immersiveengineering:metal:34>);
@@ -34,6 +30,7 @@ recipes.removeShapeless(<immersiveengineering:metal:35>);
 recipes.removeShapeless(<immersiveengineering:metal:36>);
 recipes.removeShapeless(<immersiveengineering:metal:37>);
 recipes.removeShapeless(<immersiveengineering:metal:40>);
+
 
 ////////////////
 //Ore Processing
@@ -100,7 +97,44 @@ mods.integrateddynamics.Squeezer.addRecipe(<minecraft:redstone_block>, <techrebo
 mods.integrateddynamics.Squeezer.addRecipe(<contenttweaker:material_part:67>, <contenttweaker:material_part:65>, null);
 mods.integrateddynamics.Squeezer.addRecipe(<mekanism:ingot:4>, <thermalfoundation:material:352>, null);
 
+//Tool MicroCrafting
+//val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
+val hammers = <ore:hammerTool>;
+val hammerList = [
+  <thermalfoundation:tool.hammer_nickel:*>,
+  <thermalfoundation:tool.hammer_aluminum:*>,
+  <thermalfoundation:tool.hammer_lead:*>,
+  <thermalfoundation:tool.hammer_silver:*>,
+  <thermalfoundation:tool.hammer_tin:*>,
+  <thermalfoundation:tool.hammer_copper:*>,
+  <redstonearsenal:tool.hammer_flux:*>,
+  <immersiveengineering:tool:*>,
+  <ic2:forge_hammer:*>,
+  <roots:gold_hammer:*>,
+  <roots:diamond_hammer:*>,
+  <roots:iron_hammer:*>,
+  <roots:stone_hammer:*>,
+  <roots:wood_hammer:*>,
+  <thermalfoundation:tool.hammer_diamond:*>,
+  <thermalfoundation:tool.hammer_bronze:*>,
+  <thermalfoundation:tool.hammer_constantan:*>,
+  <thermalfoundation:tool.hammer_invar:*>,
+  <thermalfoundation:tool.hammer_electrum:*>,
+  <thermalfoundation:tool.hammer_steel:*>,
+  <thermalfoundation:tool.hammer_platinum:*>,
+  <thermalfoundation:tool.hammer_iron:*>,
+  <thermalfoundation:tool.hammer_gold:*>]
+  as IItemStack[];
 
+
+hammers.addItems(hammerList);
+
+val endPlate = <thermalfoundation:material:359>;
+val enderium = <thermalfoundation:material:167>;
+val useHammerTool = <ore:hammerTool>.transformDamage();
+recipes.addShapeless("hammer_endplate", 
+  endPlate,
+  [useHammerTool, enderium, enderium, enderium, enderium]);
 
 //////////////////////////////
 //Ore Prospector - Two Recipes
