@@ -41,14 +41,14 @@ var comp = [
 	<thermalfoundation:ore:8>
 ] as IItemStack[];
 for i, item in remove {
-	sq.removeRecipe(item, comp[i], null);
+	sq.removeRecipe(comp[i], item, null);
 }
 for i, item in add {
-	sq.addRecipe(add[i]*2, item, null);
+	sq.addRecipe(item, add[i]*2, null);
 }
-sq.addRecipe(<contenttweaker:impuredustabyssalnite>*2, <abyssalcraft:abyore>, null);
-sq.addRecipe(<contenttweaker:impuredustzinc>*2, <fp:erze:1>, null);
-sq.addRecipe(<contenttweaker:impuredustbauxite>*2, <thermalfoundation:ore:4>, null);
+sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>*2, null);
+sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>*2, null);
+sq.addRecipe(<thermalfoundation:ore:4>, <contenttweaker:impuredustbauxite>*2, null);
 
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],[<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
@@ -67,9 +67,6 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
   [brick, <immersiveengineering:stone_decoration:10>, brick],
   [cb, brick, cb]]);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
-<<<<<<< HEAD
-//Hammer Recipes
-=======
 recipes.remove(<immersiveengineering:stone_decoration:2>);
 
 
@@ -77,7 +74,6 @@ recipes.remove(<immersiveengineering:stone_decoration:2>);
 /////////////////////////////////
 // Those spicy boi hammer recipes
 /////////////////////////////////
->>>>>>> 6780179349dc55acd001fd082d58c385e3bfec23
 recipes.removeShapeless(<immersiveengineering:metal:31>);
 recipes.removeShapeless(<immersiveengineering:metal:33>);
 recipes.removeShapeless(<immersiveengineering:metal:34>);
