@@ -25,47 +25,6 @@ gs.addRecipe(<abyssalcraft:abyore>, <acintegration:dust>);
 //////////
 //Squeezer
 //////////
-<<<<<<< HEAD
-var remove = [
-	<thermalfoundation:material:0>,
-	<thermalfoundation:material:1>,
-	<thermalfoundation:material:64>,
-	<thermalfoundation:material:65>,
-	<thermalfoundation:material:66>,
-	<thermalfoundation:material:67>,
-	<thermalfoundation:material:69>,
-	<thermalfoundation:material:70>,
-	<thermalfoundation:material:72>
-  ] as IItemStack[];
-
-var add = [
-	<contenttweaker:impuredustgold>,
-	<contenttweaker:impuredustiron>,
-	<contenttweaker:impuredustcopper>,
-	<contenttweaker:impuredusttin>
-  ] as IItemStack[];
-
-var comp = [
-	<minecraft:gold_ore>,
-	<minecraft:iron_ore>,
-	<thermalfoundation:ore:0>,
-	<thermalfoundation:ore:1>,
-	<thermalfoundation:ore:2>,
-	<thermalfoundation:ore:3>,
-	<thermalfoundation:ore:5>,
-	<thermalfoundation:ore:6>,
-	<thermalfoundation:ore:8>
-  ] as IItemStack[];
-
-for i, item in remove {
-	sq.removeRecipe(item, comp[i], null);}
-for i, item in add {
-	sq.addRecipe(add[i]*2, item, null);}
-
-sq.addRecipe(<contenttweaker:impuredustabyssalnite>*2, <abyssalcraft:abyore>, null);
-sq.addRecipe(<contenttweaker:impuredustzinc>*2, <fp:erze:1>, null);
-sq.addRecipe(<contenttweaker:impuredustbauxite>*2, <thermalfoundation:ore:4>, null);
-=======
 sq.removeRecipesWithOutput(<thermalfoundation:material:0>);
 sq.removeRecipesWithOutput(<thermalfoundation:material:1>);
 sq.removeRecipesWithOutput(<thermalfoundation:material:64>);
@@ -75,16 +34,6 @@ sq.removeRecipesWithOutput(<thermalfoundation:material:67>);
 sq.removeRecipesWithOutput(<thermalfoundation:material:69>);
 sq.removeRecipesWithOutput(<thermalfoundation:material:70>);
 sq.removeRecipesWithOutput(<thermalfoundation:material:72>);
-
-//sq.removeRecipe(<minecraft:gold_ore>,<thermalfoundation:material:0>);
-//sq.removeRecipe(<minecraft:iron_ore>,<thermalfoundation:material:1>);
-//sq.removeRecipe(<thermalfoundation:ore:0>,<thermalfoundation:material:64>);
-//sq.removeRecipe(<thermalfoundation:ore:1>,<thermalfoundation:material:65>);
-//sq.removeRecipe(<thermalfoundation:ore:2>,<thermalfoundation:material:66>);
-//sq.removeRecipe(<thermalfoundation:ore:3>,<thermalfoundation:material:67>);
-//sq.removeRecipe(<thermalfoundation:ore:5>,<thermalfoundation:material:69>);
-//sq.removeRecipe(<thermalfoundation:ore:6>,<thermalfoundation:material:70>);
-//sq.removeRecipe(<thermalfoundation:ore:8>,<thermalfoundation:material:72>);
 
 sq.addRecipe(<minecraft:gold_ore>,<contenttweaker:impuredustgold>,null);
 sq.addRecipe(<minecraft:iron_ore>,<contenttweaker:impuredustiron>,null);
@@ -114,7 +63,6 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.remove(<immersiveengineering:stone_decoration:2>);
 
-<<<<<<< HEAD
 /////////////////
 // Hammer Removal
 var hammerRemoved = [
@@ -129,7 +77,6 @@ var hammerRemoved = [
 
 for i in hammerRemoved {
   recipes.removeShapeless(i);}
-=======
 
 
 /////////////////////////////////
@@ -142,8 +89,6 @@ recipes.removeShapeless(<immersiveengineering:metal:35>);
 recipes.removeShapeless(<immersiveengineering:metal:36>);
 recipes.removeShapeless(<immersiveengineering:metal:37>);
 recipes.removeShapeless(<immersiveengineering:metal:40>);
-
->>>>>>> 65784544c1e435c48017b645fea1a9217e878413
 
 ////////////////
 //Ore Processing
