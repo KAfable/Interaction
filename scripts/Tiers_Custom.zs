@@ -57,12 +57,12 @@ for i, mat in tier1_list {
 var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
 var iron = MaterialSystem.getMaterialBuilder().setName("Iron").setColor(6032139).build();
 var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(3866733).build();
-var aluminium = MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(11975109).build();
+var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
 var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(12017419).build();
 var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
 //var zinc = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
 //var tin = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-var tier2_list = [fiery, iron, abyssalnite, aluminium, copper, gold] as Material[];
+var tier2_list = [fiery, iron, abyssalnite, aluminum, copper, gold] as Material[];
 
 //Tier 2 Registration
 for i, mat in tier2_list {

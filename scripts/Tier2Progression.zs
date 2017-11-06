@@ -22,13 +22,15 @@ var remove = [
 	<thermalfoundation:material:69>,
 	<thermalfoundation:material:70>,
 	<thermalfoundation:material:72>
-] as IItemStack[];
+  ] as IItemStack[];
+
 var add = [
 	<contenttweaker:impuredustgold>,
 	<contenttweaker:impuredustiron>,
 	<contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredusttin>
-] as IItemStack[];
+  ] as IItemStack[];
+
 var comp = [
 	<minecraft:gold_ore>,
 	<minecraft:iron_ore>,
@@ -39,13 +41,13 @@ var comp = [
 	<thermalfoundation:ore:5>,
 	<thermalfoundation:ore:6>,
 	<thermalfoundation:ore:8>
-] as IItemStack[];
+  ] as IItemStack[];
+
 for i, item in remove {
-	sq.removeRecipe(item, comp[i], null);
-}
+	sq.removeRecipe(item, comp[i], null);}
 for i, item in add {
-	sq.addRecipe(add[i]*2, item, null);
-}
+	sq.addRecipe(add[i]*2, item, null);}
+
 sq.addRecipe(<contenttweaker:impuredustabyssalnite>*2, <abyssalcraft:abyore>, null);
 sq.addRecipe(<contenttweaker:impuredustzinc>*2, <fp:erze:1>, null);
 sq.addRecipe(<contenttweaker:impuredustbauxite>*2, <thermalfoundation:ore:4>, null);
@@ -67,25 +69,22 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
   [brick, <immersiveengineering:stone_decoration:10>, brick],
   [cb, brick, cb]]);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
-<<<<<<< HEAD
-//Hammer Recipes
-=======
 recipes.remove(<immersiveengineering:stone_decoration:2>);
 
+/////////////////
+// Hammer Removal
+var hammerRemoved = [
+  <immersiveengineering:metal:31>,
+  <immersiveengineering:metal:33>,
+  <immersiveengineering:metal:34>,
+  <immersiveengineering:metal:35>,
+  <immersiveengineering:metal:36>,
+  <immersiveengineering:metal:37>,
+  <immersiveengineering:metal:40>
+  ] as IItemStack[];
 
-
-/////////////////////////////////
-// Those spicy boi hammer recipes
-/////////////////////////////////
->>>>>>> 6780179349dc55acd001fd082d58c385e3bfec23
-recipes.removeShapeless(<immersiveengineering:metal:31>);
-recipes.removeShapeless(<immersiveengineering:metal:33>);
-recipes.removeShapeless(<immersiveengineering:metal:34>);
-recipes.removeShapeless(<immersiveengineering:metal:35>);
-recipes.removeShapeless(<immersiveengineering:metal:36>);
-recipes.removeShapeless(<immersiveengineering:metal:37>);
-recipes.removeShapeless(<immersiveengineering:metal:40>);
-
+for i in hammerRemoved {
+  recipes.removeShapeless(i);}
 
 ////////////////
 //Ore Processing
