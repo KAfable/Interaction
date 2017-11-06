@@ -2,6 +2,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.integrateddynamics.Squeezer as sq;
+import mods.crossroads.Grindstone as gs;
 
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
@@ -9,46 +10,48 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
+////////////
+//Grindstone
+////////////
+gs.removeRecipe(<crossroads:dust_copper>);
+gs.addRecipe(<minecraft:gold_ore>, <thermalfoundation:material:1>);
+gs.addRecipe(<minecraft:iron_ore>, <thermalfoundation:material:0>);
+gs.addRecipe(<thermalfoundation:ore:0>, <thermalfoundation:material:64>);
+gs.addRecipe(<thermalfoundation:ore:1>, <thermalfoundation:material:65>);
+gs.addRecipe(<fp:erze:1>, <techreborn:dust:59>);
+gs.addRecipe(<techreborn:ore:4>, <techreborn:dust:5>);
+gs.addRecipe(<abyssalcraft:abyore>, <acintegration:dust>);
+
 //////////
 //Squeezer
 //////////
-var remove = [
-	<thermalfoundation:material:0>,
-	<thermalfoundation:material:1>,
-	<thermalfoundation:material:64>,
-	<thermalfoundation:material:65>,
-	<thermalfoundation:material:66>,
-	<thermalfoundation:material:67>,
-	<thermalfoundation:material:69>,
-	<thermalfoundation:material:70>,
-	<thermalfoundation:material:72>
-] as IItemStack[];
-var add = [
-	<contenttweaker:impuredustgold>,
-	<contenttweaker:impuredustiron>,
-	<contenttweaker:impuredustcopper>,
-	<contenttweaker:impuredusttin>
-] as IItemStack[];
-var comp = [
-	<minecraft:gold_ore>,
-	<minecraft:iron_ore>,
-	<thermalfoundation:ore:0>,
-	<thermalfoundation:ore:1>,
-	<thermalfoundation:ore:2>,
-	<thermalfoundation:ore:3>,
-	<thermalfoundation:ore:5>,
-	<thermalfoundation:ore:6>,
-	<thermalfoundation:ore:8>
-] as IItemStack[];
-for i, item in remove {
-	sq.removeRecipe(comp[i], item, null);
-}
-for i, item in add {
-	sq.addRecipe(item, add[i]*2, null);
-}
-sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>*2, null);
-sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>*2, null);
-sq.addRecipe(<thermalfoundation:ore:4>, <contenttweaker:impuredustbauxite>*2, null);
+sq.removeRecipesWithOutput(<thermalfoundation:material:0>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:1>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:64>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:65>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:66>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:67>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:69>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:70>);
+sq.removeRecipesWithOutput(<thermalfoundation:material:72>);
+
+//sq.removeRecipe(<minecraft:gold_ore>,<thermalfoundation:material:0>);
+//sq.removeRecipe(<minecraft:iron_ore>,<thermalfoundation:material:1>);
+//sq.removeRecipe(<thermalfoundation:ore:0>,<thermalfoundation:material:64>);
+//sq.removeRecipe(<thermalfoundation:ore:1>,<thermalfoundation:material:65>);
+//sq.removeRecipe(<thermalfoundation:ore:2>,<thermalfoundation:material:66>);
+//sq.removeRecipe(<thermalfoundation:ore:3>,<thermalfoundation:material:67>);
+//sq.removeRecipe(<thermalfoundation:ore:5>,<thermalfoundation:material:69>);
+//sq.removeRecipe(<thermalfoundation:ore:6>,<thermalfoundation:material:70>);
+//sq.removeRecipe(<thermalfoundation:ore:8>,<thermalfoundation:material:72>);
+
+sq.addRecipe(<minecraft:gold_ore>,<contenttweaker:impuredustgold>,null);
+sq.addRecipe(<minecraft:iron_ore>,<contenttweaker:impuredustiron>,null);
+sq.addRecipe(<thermalfoundation:ore:0>,<contenttweaker:impuredustcopper>,null);
+sq.addRecipe(<thermalfoundation:ore:1>,<contenttweaker:impuredusttin>,null);
+sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>, null);
+sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>, null);
+sq.addRecipe(<techreborn:ore:4>, <contenttweaker:impuredustbauxite>, null);
 
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],[<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
@@ -98,6 +101,7 @@ furnace.remove(<ore:ingotTin>, <ore:oreTin>);
 furnace.remove(<ore:ingotTin>, <ic2:crushed:5>);
 furnace.remove(<ore:ingotIron>, <ore:oreIron>);
 furnace.remove(<ore:ingotIron>, <ic2:crushed:2>);
+furnace.remove(<ore:ingotZinc>, <ore:oreZinc>);
 
 var configOreAmount = 4;
 
