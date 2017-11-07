@@ -4,6 +4,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.integrateddynamics.Squeezer as sq;
 import mods.crossroads.Grindstone as gs;
+import mods.tconstruct.Casting as tc;
 
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
@@ -26,6 +27,7 @@ val ingots = [
   <ore:ingotZinc>,
   <ore:ingotAluminum>
   ] as IOreDictEntry[];
+
 val ores = [
   <ore:oreLead>,
   <ore:oreSilver>,
@@ -37,6 +39,7 @@ val ores = [
   <ore:oreZinc>,
   <ore:oreAluminum>
   ] as IOreDictEntry[];  
+
 val dusts = [
   <thermalfoundation:material:67>,
   <thermalfoundation:material:66>,
@@ -48,6 +51,7 @@ val dusts = [
   <techreborn:dust:59>,
   <techreborn:dust:5>
   ] as IIngredient[];
+
 val impure = [
   <contenttweaker:impuredustlead>,
   <contenttweaker:impuredustsilver>,
@@ -59,6 +63,7 @@ val impure = [
   <contenttweaker:impuredustzinc>,
   <contenttweaker:impuredustbauxite>
   ] as IItemStack[];
+
 val nuggets = [
   <thermalfoundation:material:195>,
   <thermalfoundation:material:194>,
@@ -70,6 +75,7 @@ val nuggets = [
   <techreborn:nuggets:18>,
   <thermalfoundation:material:196>
   ] as IItemStack[];
+
 var configOreAmount = 6;
 
 /////////
@@ -89,20 +95,11 @@ recipes.remove(<ic2:dust>);
 ////////////
 //Grindstone
 ////////////
-gs.removeRecipe(<crossroads:dust_copper>);
+gs.removeRecipe(<ore:oreCopper>);
+
 for i in 0 to 7 {
   gs.addRecipe(ores[i], dusts[i]);
 }
-
-/*
-gs.addRecipe(<ore:oreIron>, <thermalfoundation:material:0>);
-gs.addRecipe(<ore:oreGold>, <thermalfoundation:material:1>);
-gs.addRecipe(<ore:oreCopper>, <thermalfoundation:material:64>);
-gs.addRecipe(<ore:oreTin>, <thermalfoundation:material:65>);
-gs.addRecipe(<ore:oreZinc>, <techreborn:dust:59>);
-gs.addRecipe(<ore:oreAbyssalnite>, <acintegration:dust>);
-gs.addRecipe(<ore:oreBauxite>, <techreborn:dust:5>);
-*/
 
 //////////
 //Squeezer
@@ -164,17 +161,6 @@ var hammerRemoved = [
 
 for i in hammerRemoved {
   recipes.removeShapeless(i);}
-
-/////////////////////////////////
-// Hammer Recipes
-/////////////////////////////////
-recipes.removeShapeless(<immersiveengineering:metal:31>);
-recipes.removeShapeless(<immersiveengineering:metal:33>);
-recipes.removeShapeless(<immersiveengineering:metal:34>);
-recipes.removeShapeless(<immersiveengineering:metal:35>);
-recipes.removeShapeless(<immersiveengineering:metal:36>);
-recipes.removeShapeless(<immersiveengineering:metal:37>);
-recipes.removeShapeless(<immersiveengineering:metal:40>);
 
 ////////////////////////////
 // MicroCrafting Ingredients
@@ -239,8 +225,10 @@ val gearRemoved = [
   <teslacorelib:gear_wood>,
   <extrautils2:ingredients:1>
   ] as IItemStack[];
+
 for i in gearRemoved {
   recipes.remove(i);}
+
 val gearInput = [
   <thermalfoundation:material:32>,
   <thermalfoundation:material:33>,
@@ -251,6 +239,7 @@ val gearInput = [
   <thermalfoundation:material:355>,
   <contenttweaker:material_part:65>
   ] as IItemStack[];
+
 val gearOutput = [ 
   <thermalfoundation:material:24>,
   <thermalfoundation:material:25>,
@@ -261,12 +250,59 @@ val gearOutput = [
   <thermalfoundation:material:291>,
   <contenttweaker:material_part:64>
   ] as IItemStack[];
+
 for i in 0 to 8 {
   recipes.addShaped(gearOutput[i], [
     [gearInput[i], gearInput[i], gearInput[i]],
     [gearInput[i], <contenttweaker:material_part:21>, gearInput[i]],
     [gearInput[i], gearInput[i], gearInput[i]]]);
 }
+
+// Armor
+recipes.remove(<silentgems:craftingmaterial:24>);
+recipes.addShaped(<silentgems:craftingmaterial:24>, [
+  [<ore:string>, <minecraft:flint>, <ore:string>],
+  [<minecraft:flint>, <ore:wool>, <minecraft:flint>],
+  [<ore:string>, <minecraft:flint>, <ore:string>]]);
+
+recipes.remove(<minecraft:iron_helmet>);
+tc.addTableRecipe(<minecraft:iron_helmet>, <silentgems:armorframe>, <liquid:iron>, 720, true);
+recipes.remove(<minecraft:iron_chestplate>);
+tc.addTableRecipe(<minecraft:iron_chestplate>, <silentgems:armorframe:1>, <liquid:iron>, 1152, true);
+recipes.remove(<minecraft:iron_leggings>);
+tc.addTableRecipe(<minecraft:iron_leggings>, <silentgems:armorframe:2>, <liquid:iron>, 1008, true);
+recipes.remove(<minecraft:iron_boots>);
+tc.addTableRecipe(<minecraft:iron_boots>, <silentgems:armorframe:3>, <liquid:iron>, 576, true);
+
+recipes.remove(<thermalfoundation:armor.helmet_bronze>);
+tc.addTableRecipe(<thermalfoundation:armor.helmet_bronze>, <silentgems:armorframe>, <liquid:bronze>, 720, true);
+recipes.remove(<thermalfoundation:armor.plate_bronze>);
+tc.addTableRecipe(<thermalfoundation:armor.plate_bronze>, <silentgems:armorframe:1>, <liquid:bronze>, 1152, true);
+recipes.remove(<thermalfoundation:armor.legs_bronze>);
+tc.addTableRecipe(<thermalfoundation:armor.legs_bronze>, <silentgems:armorframe:2>, <liquid:bronze>, 1008, true);
+recipes.remove(<thermalfoundation:armor.boots_bronze>);
+tc.addTableRecipe(<thermalfoundation:armor.boots_bronze>, <silentgems:armorframe:3>, <liquid:bronze>, 576, true);
+
+recipes.remove(<abyssalcraft:ahelmet>);
+tc.addTableRecipe(<abyssalcraft:ahelmet>, <silentgems:armorframe>, <liquid:moltenabyssalnite>, 720, true);
+recipes.remove(<abyssalcraft:aplate>);
+tc.addTableRecipe(<abyssalcraft:aplate>, <silentgems:armorframe:1>, <liquid:moltenabyssalnite>, 1152, true);
+recipes.remove(<abyssalcraft:alegs>);
+tc.addTableRecipe(<abyssalcraft:alegs>, <silentgems:armorframe:2>, <liquid:moltenabyssalnite>, 1008, true);
+recipes.remove(<abyssalcraft:aboots>);
+tc.addTableRecipe(<abyssalcraft:aboots>, <silentgems:armorframe:3>, <liquid:moltenabyssalnite>, 576, true);
+
+recipes.remove(<abyssalcraft:corhelmet>);
+tc.addTableRecipe(<abyssalcraft:corhelmet>, <silentgems:armorframe>, <liquid:liquidcoralium>, 720, true);
+recipes.remove(<abyssalcraft:corplate>);
+tc.addTableRecipe(<abyssalcraft:corplate>, <silentgems:armorframe:1>, <liquid:liquidcoralium>, 1152, true);
+recipes.remove(<abyssalcraft:corlegs>);
+tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:2>, <liquid:liquidcoralium>, 1008, true);
+recipes.remove(<abyssalcraft:corboots>);
+tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:liquidcoralium>, 576, true);
+
+recipes.remove(<silentgems:craftingmaterial:25>);
+recipes.remove(<silentgems:craftingmaterial:26>);
 
 //Tool MicroCrafting
 //val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
