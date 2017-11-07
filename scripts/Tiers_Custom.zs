@@ -108,7 +108,9 @@ var impureDusts = [
   "impureDustGold",
   "impureDustZinc",
   "impureDustTin",
-  "impureDustAbyssalnite"
+  "impureDustAbyssalnite",
+  "impureDustLead",
+  "impureDustSilver"
   ] as string[];
 
 for i in impureDusts {VanillaFactory.createItem(i).register();}
