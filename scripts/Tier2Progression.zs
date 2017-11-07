@@ -293,16 +293,17 @@ recipes.remove(<abyssalcraft:aboots>);
 tc.addTableRecipe(<abyssalcraft:aboots>, <silentgems:armorframe:3>, <liquid:moltenabyssalnite>, 576, true);
 
 recipes.remove(<abyssalcraft:corhelmet>);
-tc.addTableRecipe(<abyssalcraft:corhelmet>, <silentgems:armorframe>, <liquid:liquidcoralium>, 720, true);
+tc.addTableRecipe(<abyssalcraft:corhelmet>, <silentgems:armorframe>, <liquid:moltenrefinedcoralium>, 720, true);
 recipes.remove(<abyssalcraft:corplate>);
-tc.addTableRecipe(<abyssalcraft:corplate>, <silentgems:armorframe:1>, <liquid:liquidcoralium>, 1152, true);
+tc.addTableRecipe(<abyssalcraft:corplate>, <silentgems:armorframe:1>, <liquid:moltenrefinedcoralium>, 1152, true);
 recipes.remove(<abyssalcraft:corlegs>);
-tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:2>, <liquid:liquidcoralium>, 1008, true);
+tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:2>, <liquid:moltenrefinedcoralium>, 1008, true);
 recipes.remove(<abyssalcraft:corboots>);
-tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:liquidcoralium>, 576, true);
+tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:moltenrefinedcoralium>, 576, true);
 
 recipes.remove(<silentgems:craftingmaterial:25>);
 recipes.remove(<silentgems:craftingmaterial:26>);
+
 
 //Tool MicroCrafting
 //val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
@@ -413,20 +414,20 @@ recipes.addShaped(<waterstrainer:strainer_survivalist_reinforced>, [
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_dense>, [
   [<contenttweaker:material_part:17>, <minecraft:leather>,<contenttweaker:material_part:17>],
-  [<minecraft:leather>, <waterstrainer:net>, <minecraft:leather>],
+  [<minecraft:leather>, <waterstrainer:net:1>, <minecraft:leather>],
   [<contenttweaker:material_part:17>, <minecraft:leather>, <contenttweaker:material_part:17>]]);
 <waterstrainer:strainer_survivalist_dense>.displayName = "Lapidarist's Strainer (Dense)";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_solid>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_dense_solid>, [
   [<contenttweaker:material_part:17>, <minecraft:obsidian>,<contenttweaker:material_part:17>],
-  [<minecraft:obsidian>, <waterstrainer:net>,<minecraft:obsidian>],
+  [<minecraft:obsidian>, <waterstrainer:net:1>,<minecraft:obsidian>],
   [<contenttweaker:material_part:17>, <minecraft:obsidian>, <contenttweaker:material_part:17>]]);
 <waterstrainer:strainer_survivalist_dense_solid>.displayName = "Gemcutter's Strainer (Dense)";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_reinforced>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_dense_reinforced>, [
   [<ore:gemApatite>,  <minecraft:obsidian>, <ore:gemApatite>],
-  [ <minecraft:obsidian>, <waterstrainer:net>, <minecraft:obsidian>],
+  [ <minecraft:obsidian>, <waterstrainer:net:1>, <minecraft:obsidian>],
   [<ore:gemApatite>,  <minecraft:obsidian>, <ore:gemApatite>]]);
 <waterstrainer:strainer_survivalist_dense_reinforced>.displayName = "Jeweler's Strainer (Dense)";

@@ -98,7 +98,7 @@ mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);
 
 
 //////////
-//Recipes
+// Cables
 /////////
 recipes.removeShaped(<crossroads:heat_cable_copper_wool>);
 recipes.addShaped(<crossroads:heat_cable_copper_wool>, [
@@ -129,3 +129,12 @@ recipes.addShaped(<crossroads:heat_cable_copper_dirt>, [
   [<ore:dirt>, <ore:dirt>, <ore:dirt>],
   [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+
+//////////
+// Gears
+/////////
+recipes.remove(<crossroads:gear_iron>);
+recipes.addShaped(<crossroads:gear_iron>, [
+  [<ore:nuggetIron>, <ore:nuggetIron>,<ore:nuggetIron>],
+  [<ore:nuggetIron>, <thermalfoundation:material:24>, <ore:nuggetIron>],
+  [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
