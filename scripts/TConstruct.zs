@@ -80,8 +80,9 @@ var basinDisabled = [
 
 for item in basinDisabled {
   tcc.removeBasinRecipe(item);}
-
+////////////////
 // Table Recipes
+////////////////
 var tableDisabled = [
   <tconstruct:cast_custom:3>,
   <tconstruct:cast_custom:4>,
@@ -98,3 +99,5 @@ var tableDisabled = [
 
 for item in tableDisabled {
   tcc.removeBasinRecipe(item);}
+
+// Gears

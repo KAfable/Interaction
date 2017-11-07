@@ -142,8 +142,8 @@ var gearsDisabled = [
   <forestry:gear_copper>,
   <forestry:gear_tin>,
   <hammercore:iron_gear>,
-  <teslacorelib:gear_wood>]
-  as IItemStack[];
+  <teslacorelib:gear_wood>,
+  ] as IItemStack[];
 
 for item in gearsDisabled{
     mods.jei.JEI.removeAndHide(item);}

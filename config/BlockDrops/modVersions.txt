@@ -29,7 +29,6 @@
   "techreborn": "2.7.10.327",
   "industrialforegoing": "1.12.2-1.12.1",
   "torchmaster": "1.6.1.53",
-  "unidict": "1.12.2-1.1b",
   "redstoneflux": "2.0.1",
   "soulshardstow": "1.12-2.7.3-52",
   "modtweaker": "4.0.4",

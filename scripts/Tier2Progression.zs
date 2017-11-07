@@ -122,25 +122,16 @@ val squeezerRemoved = [
   <thermalfoundation:material:67>,
   <thermalfoundation:material:69>,
   <thermalfoundation:material:70>,
-  <thermalfoundation:material:72>
-] as IItemStack[];
+  <thermalfoundation:material:72>,
+  <minecraft:emerald>,
+  <minecraft:diamond>,
+  <evilcraft:dark_gem>,
+  <minecraft:dye:4>*8,
+  <minecraft:redstone>*8
+  ] as IItemStack[];
 for i in squeezerRemoved {
   sq.removeRecipesWithOutput(i, null);  
 }
-
-sq.removeRecipesWithOutput(<minecraft:emerald>, null);
-sq.removeRecipesWithOutput(<minecraft:diamond>, null);
-sq.removeRecipesWithOutput(<evilcraft:dark_gem>, null);
-
-/*
-sq.addRecipe(<minecraft:gold_ore>,<contenttweaker:impuredustgold>,null);
-sq.addRecipe(<minecraft:iron_ore>,<contenttweaker:impuredustiron>,null);
-sq.addRecipe(<thermalfoundation:ore:0>,<contenttweaker:impuredustcopper>,null);
-sq.addRecipe(<thermalfoundation:ore:1>,<contenttweaker:impuredusttin>,null);
-sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>, null);
-sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>, null);
-sq.addRecipe(<techreborn:ore:4>, <contenttweaker:impuredustbauxite>, null);
-*/
 
 
 /////////////////
@@ -185,21 +176,97 @@ recipes.removeShapeless(<immersiveengineering:metal:36>);
 recipes.removeShapeless(<immersiveengineering:metal:37>);
 recipes.removeShapeless(<immersiveengineering:metal:40>);
 
-
-
 ////////////////////////////
 // MicroCrafting Ingredients
 ////////////////////////////
-
 //Metal plates
-mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:320>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<minecraft:gold_ingot>, <thermalfoundation:material:33>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<minecraft:iron_ingot>, <thermalfoundation:material:32>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:129>, <thermalfoundation:material:321>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:355>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<minecraft:redstone_block>, <techreborn:plates:4>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<contenttweaker:material_part:67>, <contenttweaker:material_part:65>, null);
-mods.integrateddynamics.Squeezer.addRecipe(<mekanism:ingot:4>, <thermalfoundation:material:352>, null);
+val squeezerPlateInput = [
+  <minecraft:iron_ingot>,
+  <minecraft:gold_ingot>,
+  <minecraft:redstone_block>,
+  <thermalfoundation:material:128>,
+  <thermalfoundation:material:129>,
+  <thermalfoundation:material:163>,
+  <abyssalcraft:abyingot>,
+  <mekanism:ingot:4>,
+  <techreborn:ingot:1>
+  ] as IItemStack[];
+
+val squeezerPlateOutput = [
+  <thermalfoundation:material:32>,
+  <thermalfoundation:material:33>,
+  <techreborn:plates:4>,
+  <thermalfoundation:material:320>,
+  <thermalfoundation:material:321>,
+  <thermalfoundation:material:355>,
+  <contenttweaker:material_part:65>,
+  <thermalfoundation:material:352>,
+  <techreborn:plates:17>
+  ] as IItemStack[];
+
+for i in 0 to 9 {
+  mods.integrateddynamics.Squeezer.addRecipe(squeezerPlateInput[i], squeezerPlateOutput[i], null);}
+
+//Gears
+val gearRemoved = [
+  <contenttweaker:material_part:5>,
+  <contenttweaker:material_part:13>,
+  <contenttweaker:material_part:21>,
+  <contenttweaker:material_part:37>,
+  <contenttweaker:material_part:64>,
+  <redstonearsenal:material:96>,
+  <teslacorelib:gear_diamond>,
+  <teslacorelib:gear_stone>,
+  <thermalfoundation:material:24>,
+  <thermalfoundation:material:25>,
+  <thermalfoundation:material:256>,
+  <thermalfoundation:material:257>,
+  <thermalfoundation:material:258>,
+  <thermalfoundation:material:259>,
+  <thermalfoundation:material:260>,
+  <thermalfoundation:material:261>,
+  <thermalfoundation:material:262>,
+  <thermalfoundation:material:263>,
+  <thermalfoundation:material:264>,
+  <thermalfoundation:material:288>,
+  <thermalfoundation:material:289>,
+  <thermalfoundation:material:290>,
+  <thermalfoundation:material:291>,
+  <thermalfoundation:material:292>,
+  <thermalfoundation:material:293>,
+  <thermalfoundation:material:294>,
+  <thermalfoundation:material:295>,
+  <teslacorelib:gear_wood>,
+  <extrautils2:ingredients:1>
+  ] as IItemStack[];
+for i in gearRemoved {
+  recipes.remove(i);}
+val gearInput = [
+  <thermalfoundation:material:32>,
+  <thermalfoundation:material:33>,
+  <thermalfoundation:material:320>,
+  <thermalfoundation:material:321>,
+  <thermalfoundation:material:324>,
+  <thermalfoundation:material:352>,
+  <thermalfoundation:material:355>,
+  <contenttweaker:material_part:65>
+  ] as IItemStack[];
+val gearOutput = [ 
+  <thermalfoundation:material:24>,
+  <thermalfoundation:material:25>,
+  <thermalfoundation:material:256>,
+  <thermalfoundation:material:257>,
+  <thermalfoundation:material:260>,
+  <thermalfoundation:material:288>,
+  <thermalfoundation:material:291>,
+  <contenttweaker:material_part:64>
+  ] as IItemStack[];
+for i in 0 to 8 {
+  recipes.addShaped(gearOutput[i], [
+    [gearInput[i], gearInput[i], gearInput[i]],
+    [gearInput[i], <contenttweaker:material_part:21>, gearInput[i]],
+    [gearInput[i], gearInput[i], gearInput[i]]]);
+}
 
 //Tool MicroCrafting
 //val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
@@ -230,15 +297,14 @@ val hammerList = [
   <thermalfoundation:tool.hammer_gold:*>]
   as IItemStack[];
 
-
 hammers.addItems(hammerList);
-
 val endPlate = <thermalfoundation:material:359>;
 val enderium = <thermalfoundation:material:167>;
 val useHammerTool = <ore:hammerTool>.transformDamage();
 recipes.addShapeless("hammer_endplate", 
   endPlate,
   [useHammerTool, enderium, enderium, enderium, enderium]);
+
 
 //////////////////////////////
 //Ore Prospector - Two Recipes
@@ -262,11 +328,6 @@ recipes.addShaped(<prospectors:prospector_low>, [
   [<ore:gemAquamarine>, <prospectors:prospector_lowest>, <ore:gemAquamarine>],
   [null, <ore:gemAquamarine>, null]]);
 mods.jei.JEI.addDescription(<prospectors:prospector_lowest>,"This prospector, upgraded with magical materials, has an attunement towards all ores that occur in the Abyssal Wasteland and Twilight Forest. It may have difficulty or limited use locating ores in other dimensions.");
-
-
-///////////////////////////
-// Portable Storage Tiering
-///////////////////////////
 
 // ProjectE
 recipes.removeShaped(<projecte:item.pe_philosophers_stone>);
