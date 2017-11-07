@@ -1,6 +1,7 @@
 //Tier 2 Progression
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.integrateddynamics.Squeezer as sq;
 import mods.crossroads.Grindstone as gs;
 
@@ -10,104 +11,33 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
-////////////
-//Grindstone
-////////////
-gs.removeRecipe(<crossroads:dust_copper>);
-gs.addRecipe(<minecraft:gold_ore>, <thermalfoundation:material:1>);
-gs.addRecipe(<minecraft:iron_ore>, <thermalfoundation:material:0>);
-gs.addRecipe(<thermalfoundation:ore:0>, <thermalfoundation:material:64>);
-gs.addRecipe(<thermalfoundation:ore:1>, <thermalfoundation:material:65>);
-gs.addRecipe(<fp:erze:1>, <techreborn:dust:59>);
-gs.addRecipe(<techreborn:ore:4>, <techreborn:dust:5>);
-gs.addRecipe(<abyssalcraft:abyore>, <acintegration:dust>);
-
-//////////
-//Squeezer
-//////////
-sq.removeRecipesWithOutput(<thermalfoundation:material:0>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:1>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:64>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:65>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:66>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:67>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:69>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:70>);
-sq.removeRecipesWithOutput(<thermalfoundation:material:72>);
-
-sq.addRecipe(<minecraft:gold_ore>,<contenttweaker:impuredustgold>,null);
-sq.addRecipe(<minecraft:iron_ore>,<contenttweaker:impuredustiron>,null);
-sq.addRecipe(<thermalfoundation:ore:0>,<contenttweaker:impuredustcopper>,null);
-sq.addRecipe(<thermalfoundation:ore:1>,<contenttweaker:impuredusttin>,null);
-sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>, null);
-sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>, null);
-sq.addRecipe(<techreborn:ore:4>, <contenttweaker:impuredustbauxite>, null);
->>>>>>> 65784544c1e435c48017b645fea1a9217e878413
-
-recipes.remove(<integrateddynamics:squeezer>);
-recipes.addShaped(<integrateddynamics:squeezer>, [[<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],[<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
-
-/////////////////
-// Astral Sorcery
-/////////////////
-recipes.removeShaped(<astralsorcery:blockblackmarble>);
-
-///////////////////////
-//Immersive Engineering
-///////////////////////
-recipes.remove(<immersiveengineering:stone_decoration>);
-recipes.addShaped(<immersiveengineering:stone_decoration>, [
-  [cb, brick, cb],
-  [brick, <immersiveengineering:stone_decoration:10>, brick],
-  [cb, brick, cb]]);
-recipes.remove(<immersiveengineering:stone_decoration:1>);
-recipes.remove(<immersiveengineering:stone_decoration:2>);
-
-/////////////////
-// Hammer Removal
-var hammerRemoved = [
-  <immersiveengineering:metal:31>,
-  <immersiveengineering:metal:33>,
-  <immersiveengineering:metal:34>,
-  <immersiveengineering:metal:35>,
-  <immersiveengineering:metal:36>,
-  <immersiveengineering:metal:37>,
-  <immersiveengineering:metal:40>
-  ] as IItemStack[];
-
-for i in hammerRemoved {
-  recipes.removeShapeless(i);}
-
-
-/////////////////////////////////
-// Those spicy boi hammer recipes
-/////////////////////////////////
-recipes.removeShapeless(<immersiveengineering:metal:31>);
-recipes.removeShapeless(<immersiveengineering:metal:33>);
-recipes.removeShapeless(<immersiveengineering:metal:34>);
-recipes.removeShapeless(<immersiveengineering:metal:35>);
-recipes.removeShapeless(<immersiveengineering:metal:36>);
-recipes.removeShapeless(<immersiveengineering:metal:37>);
-recipes.removeShapeless(<immersiveengineering:metal:40>);
-
 ////////////////
 //Ore Processing
 ////////////////
 // Furnace Removals
-furnace.remove(<ore:ingotLead>, <ore:oreLead>);
-furnace.remove(<ore:ingotLead>, <ic2:crushed:3>);
-furnace.remove(<ore:ingotGold>, <ore:oreGold>);
-furnace.remove(<ore:ingotGold>, <ic2:crushed:1>);
-furnace.remove(<ore:ingotAbyssalnite>, <ore:oreAbyssalnite>);
-furnace.remove(<ore:ingotCopper>, <ore:oreCopper>);
-furnace.remove(<ore:ingotCopper>, <ic2:crushed>);
-furnace.remove(<ore:ingotTin>, <ore:oreTin>);
-furnace.remove(<ore:ingotTin>, <ic2:crushed:5>);
-furnace.remove(<ore:ingotIron>, <ore:oreIron>);
-furnace.remove(<ore:ingotIron>, <ic2:crushed:2>);
-furnace.remove(<ore:ingotZinc>, <ore:oreZinc>);
+val outputODFurnaceRemoved = [
+  <ore:ingotLead>,
+  <ore:ingotGold>,
+  <ore:ingotAbyssalnite>,
+  <ore:ingotCopper>,
+  <ore:ingotTin>,
+  <ore:ingotIron>,
+  <ore:ingotZinc>
+  ] as IOreDictEntry[];
 
-var configOreAmount = 4;
+val inputODFurnaceRemoved = [
+  <ore:oreLead>,
+  <ore:oreGold>,
+  <ore:oreAbyssalnite>,
+  <ore:oreCopper>,
+  <ore:oreTin>,
+  <ore:oreIron>,
+  <ore:oreZinc>
+  ] as IOreDictEntry[];  
+for i in 0 to 8 {
+  furnace.remove(outputODFurnaceRemoved[i], inputODFurnaceRemoved[i]);}
+
+var configOreAmount = 6;
 
 furnace.addRecipe(<contenttweaker:impuredustcopper>, <ore:oreCopper>);
 furnace.addRecipe(<thermalfoundation:material:192>*configOreAmount, <contenttweaker:impuredustcopper>);
@@ -142,6 +72,126 @@ mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:59>, <contenttweaker:
 // Bronze Dusts
 recipes.remove(<techreborn:dust:7>);
 recipes.remove(<ic2:dust>);
+
+////////////
+//Grindstone
+////////////
+gs.removeRecipe(<crossroads:dust_copper>);
+val grindstoneOreAdded = [
+  <ore:oreIron>,
+  <ore:oreGold>,
+  <ore:oreCopper>,
+  <ore:oreTin>,
+  <ore:oreZinc>,
+  <ore:oreAbyssalnite>,
+  <ore:oreBauxite>
+  ] as IOreDictEntry[];
+
+val grindstoneDustAdded = [
+  <thermalfoundation:material:0>,
+  <thermalfoundation:material:1>,
+  <thermalfoundation:material:64>,
+  <thermalfoundation:material:65>,
+  <techreborn:dust:59>,
+  <acintegration:dust>,
+  <techreborn:dust:5>
+  ] as IIngredient[];
+
+for i in 0 to 7 {
+  gs.addRecipe(grindstoneOreAdded[i], grindstoneDustAdded[i]);
+}
+
+/*
+gs.addRecipe(<ore:oreIron>, <thermalfoundation:material:0>);
+gs.addRecipe(<ore:oreGold>, <thermalfoundation:material:1>);
+gs.addRecipe(<ore:oreCopper>, <thermalfoundation:material:64>);
+gs.addRecipe(<ore:oreTin>, <thermalfoundation:material:65>);
+gs.addRecipe(<ore:oreZinc>, <techreborn:dust:59>);
+gs.addRecipe(<ore:oreAbyssalnite>, <acintegration:dust>);
+gs.addRecipe(<ore:oreBauxite>, <techreborn:dust:5>);
+*/
+
+//////////
+//Squeezer
+//////////
+recipes.remove(<integrateddynamics:squeezer>);
+recipes.addShaped(<integrateddynamics:squeezer>, [
+  [<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],
+  [<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],
+  [<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
+
+val squeezerRemoved = [
+  <thermalfoundation:material:0>,
+  <thermalfoundation:material:1>,
+  <thermalfoundation:material:64>,
+  <thermalfoundation:material:65>,
+  <thermalfoundation:material:66>,
+  <thermalfoundation:material:67>,
+  <thermalfoundation:material:69>,
+  <thermalfoundation:material:70>,
+  <thermalfoundation:material:72>
+] as IItemStack[];
+for i in squeezerRemoved {
+  sq.removeRecipesWithOutput(i, null);  
+}
+
+sq.removeRecipesWithOutput(<minecraft:emerald>, null);
+sq.removeRecipesWithOutput(<minecraft:diamond>, null);
+sq.removeRecipesWithOutput(<evilcraft:dark_gem>, null);
+
+/*
+sq.addRecipe(<minecraft:gold_ore>,<contenttweaker:impuredustgold>,null);
+sq.addRecipe(<minecraft:iron_ore>,<contenttweaker:impuredustiron>,null);
+sq.addRecipe(<thermalfoundation:ore:0>,<contenttweaker:impuredustcopper>,null);
+sq.addRecipe(<thermalfoundation:ore:1>,<contenttweaker:impuredusttin>,null);
+sq.addRecipe(<abyssalcraft:abyore>, <contenttweaker:impuredustabyssalnite>, null);
+sq.addRecipe(<fp:erze:1>, <contenttweaker:impuredustzinc>, null);
+sq.addRecipe(<techreborn:ore:4>, <contenttweaker:impuredustbauxite>, null);
+*/
+
+
+/////////////////
+// Astral Sorcery
+/////////////////
+recipes.removeShaped(<astralsorcery:blockblackmarble>);
+
+///////////////////////
+//Immersive Engineering
+///////////////////////
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.addShaped(<immersiveengineering:stone_decoration>, [
+  [cb, brick, cb],
+  [brick, <immersiveengineering:stone_decoration:10>, brick],
+  [cb, brick, cb]]);
+recipes.remove(<immersiveengineering:stone_decoration:1>);
+recipes.remove(<immersiveengineering:stone_decoration:2>);
+
+/////////////////
+// Hammer Removal
+var hammerRemoved = [
+  <immersiveengineering:metal:31>,
+  <immersiveengineering:metal:33>,
+  <immersiveengineering:metal:34>,
+  <immersiveengineering:metal:35>,
+  <immersiveengineering:metal:36>,
+  <immersiveengineering:metal:37>,
+  <immersiveengineering:metal:40>
+  ] as IItemStack[];
+
+for i in hammerRemoved {
+  recipes.removeShapeless(i);}
+
+/////////////////////////////////
+// Hammer Recipes
+/////////////////////////////////
+recipes.removeShapeless(<immersiveengineering:metal:31>);
+recipes.removeShapeless(<immersiveengineering:metal:33>);
+recipes.removeShapeless(<immersiveengineering:metal:34>);
+recipes.removeShapeless(<immersiveengineering:metal:35>);
+recipes.removeShapeless(<immersiveengineering:metal:36>);
+recipes.removeShapeless(<immersiveengineering:metal:37>);
+recipes.removeShapeless(<immersiveengineering:metal:40>);
+
 
 
 ////////////////////////////
