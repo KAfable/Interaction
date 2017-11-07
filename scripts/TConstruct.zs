@@ -17,40 +17,46 @@ for item in itemDisabled {
   mods.jei.JEI.removeAndHide(item);}
 
 //Molten Recipes
+val ores = [
+  <thermalfoundation:ore:3>,
+  <thermalfoundation:ore:2>,
+  <minecraft:gold_ore>,
+  <abyssalcraft:abyore>,
+  <thermalfoundation:ore:0>,
+  <thermalfoundation:ore:1>,
+  <minecraft:iron_ore>,
+  <fp:erze:1>,
+  <thermalfoundation:ore:4>
+  ] as IItemStack[];  
 var liquidDisabled = [
-	<liquid:iron>,
-	<liquid:gold>,
-	<liquid:moltenabyssalnite>,
-	<liquid:zinc>,
-	<liquid:copper>,
-	<liquid:tin>,
-	<liquid:aluminum>
-] as ILiquidStack[];
-var dusts = [
-	<thermalfoundation:material:0>,
-	<thermalfoundation:material:1>,
-	<acintegration:dust:0>,
-	<techreborn:dust:59>,
-	<thermalfoundation:material:64>,
-	<thermalfoundation:material:65>,
-	<techreborn:dust:5>
-] as IItemStack[];
-var ores = [
-	<minecraft:iron_ore>,
-	<minecraft:gold_ore>,
-	<abyssalcraft:abyore>,
-	<fp:erze:1>,
-	<thermalfoundation:ore:0>,
-	<thermalfoundation:ore:1>
-] as IItemStack[];
-for i in 0 to 6 {
-	tcm.removeRecipe(liquidDisabled[i]*144, ores[i]);
-//tcm.removeRecipe(liquidDisabled[i]*144, dusts[i]);
+  <liquid:lead>,
+  <liquid:silver>,
+  <liquid:gold>,
+  <liquid:moltenabyssalnite>,
+  <liquid:copper>,
+  <liquid:tin>,
+  <liquid:iron>,
+  <liquid:zinc>,
+  <liquid:aluminum>
+  ] as ILiquidStack[];
+val impure = [
+  <contenttweaker:impuredustlead>,
+  <contenttweaker:impuredustsilver>,
+  <contenttweaker:impuredustgold>,
+  <contenttweaker:impuredustabyssalnite>,
+  <contenttweaker:impuredustcopper>,
+  <contenttweaker:impuredusttin>,
+  <contenttweaker:impuredustiron>,
+  <contenttweaker:impuredustzinc>,
+  <contenttweaker:impuredustbauxite>
+  ] as IItemStack[];
+
+for i in 0 to 9 {
+  tcm.removeRecipe(liquidDisabled[i]*144, ores[i]);
 }
-//for i in 0 to 7 {
-//	tcm.addRecipe(liquidDisabled[i]*144, dusts[i]);
-//}
-tcm.addRecipe(<liquid:aluminum>*144, <techreborn:dust:5>);
+for i in 0 to 9 {
+  tcm.addRecipe(liquidDisabled[i]*144, impure[i]);
+}
 
 // Basin Recipes
 var basinDisabled = [

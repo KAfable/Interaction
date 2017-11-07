@@ -15,59 +15,72 @@ var brick = <minecraft:brick>;
 //Ore Processing
 ////////////////
 // Furnace Removals
-val outputODFurnaceRemoved = [
+val ingots = [
   <ore:ingotLead>,
+  <ore:ingotSilver>,
   <ore:ingotGold>,
   <ore:ingotAbyssalnite>,
   <ore:ingotCopper>,
   <ore:ingotTin>,
   <ore:ingotIron>,
-  <ore:ingotZinc>
+  <ore:ingotZinc>,
+  <ore:ingotAluminum>
   ] as IOreDictEntry[];
-
-val inputODFurnaceRemoved = [
+val ores = [
   <ore:oreLead>,
+  <ore:oreSilver>,
   <ore:oreGold>,
   <ore:oreAbyssalnite>,
   <ore:oreCopper>,
   <ore:oreTin>,
   <ore:oreIron>,
-  <ore:oreZinc>
+  <ore:oreZinc>,
+  <ore:oreAluminum>
   ] as IOreDictEntry[];  
-for i in 0 to 8 {
-  furnace.remove(outputODFurnaceRemoved[i], inputODFurnaceRemoved[i]);}
-
+val dusts = [
+  <thermalfoundation:material:67>,
+  <thermalfoundation:material:66>,
+  <thermalfoundation:material:1>,
+  <acintegration:dust>,
+  <thermalfoundation:material:64>,
+  <thermalfoundation:material:65>,
+  <thermalfoundation:material:0>,
+  <techreborn:dust:59>,
+  <techreborn:dust:5>
+  ] as IIngredient[];
+val impure = [
+  <contenttweaker:impuredustlead>,
+  <contenttweaker:impuredustsilver>,
+  <contenttweaker:impuredustgold>,
+  <contenttweaker:impuredustabyssalnite>,
+  <contenttweaker:impuredustcopper>,
+  <contenttweaker:impuredusttin>,
+  <contenttweaker:impuredustiron>,
+  <contenttweaker:impuredustzinc>,
+  <contenttweaker:impuredustbauxite>
+  ] as IItemStack[];
+val nuggets = [
+  <thermalfoundation:material:195>,
+  <thermalfoundation:material:194>,
+  <minecraft:gold_nugget>,
+  <abyssalcraft:ingotnugget>,
+  <thermalfoundation:material:192>,
+  <thermalfoundation:material:193>,
+  <minecraft:iron_nugget>,
+  <techreborn:nuggets:18>,
+  <thermalfoundation:material:196>
+  ] as IItemStack[];
 var configOreAmount = 6;
 
-furnace.addRecipe(<contenttweaker:impuredustcopper>, <ore:oreCopper>);
-furnace.addRecipe(<thermalfoundation:material:192>*configOreAmount, <contenttweaker:impuredustcopper>);
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:64>, <contenttweaker:impuredustcopper>);
-
-furnace.addRecipe(<contenttweaker:impuredustgold>, <ore:oreGold>);
-furnace.addRecipe(<minecraft:gold_nugget>*configOreAmount, <contenttweaker:impuredustgold>);
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:1>, <contenttweaker:impuredustgold>);
-
-furnace.addRecipe(<contenttweaker:impuredustiron>, <ore:oreIron>);
-furnace.addRecipe(<minecraft:iron_nugget>*configOreAmount, <contenttweaker:impuredustiron>);
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material>, <contenttweaker:impuredustiron>);
-
-furnace.addRecipe(<contenttweaker:impuredusttin>, <ore:oreTin>);
-furnace.addRecipe(<thermalfoundation:material:193>*configOreAmount, <contenttweaker:impuredusttin>);
-mods.skyresources.cauldronclean.addRecipe(<thermalfoundation:material:65>, <contenttweaker:impuredusttin>);
-
-furnace.addRecipe(<contenttweaker:impuredustabyssalnite>, <ore:oreAbyssalnite>);
-furnace.addRecipe(<abyssalcraft:ingotnugget>*configOreAmount, <contenttweaker:impuredustabyssalnite>);
-mods.skyresources.cauldronclean.addRecipe(<acintegration:dust>, <contenttweaker:impuredustabyssalnite>);
-
-furnace.addRecipe(<contenttweaker:impuredustbauxite>, <techreborn:ore:4>);
-furnace.addRecipe(<thermalfoundation:material:196>*configOreAmount, <contenttweaker:impuredustbauxite>);
-mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:5>, <contenttweaker:impuredustbauxite>);
-furnace.addRecipe(<thermalfoundation:material:132>, <techreborn:dust:5>);
-
-furnace.addRecipe(<contenttweaker:impuredustzinc>, <ore:oreZinc>);
-furnace.addRecipe(<techreborn:nuggets:18>*configOreAmount, <contenttweaker:impuredustzinc>);
-mods.skyresources.cauldronclean.addRecipe(<techreborn:dust:59>, <contenttweaker:impuredustzinc>);
-
+/////////
+//Furnace
+/////////
+for i in 0 to 9 {
+  furnace.remove(ingots[i], ores[i]);}
+for i in 0 to 9 {
+  recipes.addShapeless(impure[i], [ores[i], <immersiveengineering:tool>]);}
+for i in 0 to 9 {
+  furnace.addRecipe(nuggets[i]*configOreAmount, impure[i]);}
 
 // Bronze Dusts
 recipes.remove(<techreborn:dust:7>);
@@ -77,28 +90,8 @@ recipes.remove(<ic2:dust>);
 //Grindstone
 ////////////
 gs.removeRecipe(<crossroads:dust_copper>);
-val grindstoneOreAdded = [
-  <ore:oreIron>,
-  <ore:oreGold>,
-  <ore:oreCopper>,
-  <ore:oreTin>,
-  <ore:oreZinc>,
-  <ore:oreAbyssalnite>,
-  <ore:oreBauxite>
-  ] as IOreDictEntry[];
-
-val grindstoneDustAdded = [
-  <thermalfoundation:material:0>,
-  <thermalfoundation:material:1>,
-  <thermalfoundation:material:64>,
-  <thermalfoundation:material:65>,
-  <techreborn:dust:59>,
-  <acintegration:dust>,
-  <techreborn:dust:5>
-  ] as IIngredient[];
-
 for i in 0 to 7 {
-  gs.addRecipe(grindstoneOreAdded[i], grindstoneDustAdded[i]);
+  gs.addRecipe(ores[i], dusts[i]);
 }
 
 /*
