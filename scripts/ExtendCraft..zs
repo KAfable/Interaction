@@ -1,0 +1,1 @@
+recipes.remove(<extendedcrafting:material:2>);
