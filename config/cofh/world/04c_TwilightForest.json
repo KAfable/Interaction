@@ -1,0 +1,54 @@
+{
+	"populate": {
+
+		"sulfur": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": { 
+					"name": "contenttweaker:sub_block_holder_0",
+					"metadata": 7},
+				"material": "minecraft:stone",
+				"cluster-size": 1000
+			},
+			"cluster-count": 15,
+			"min-height": 32,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": {
+						"type": "name",
+						"entry": "Fire Swamp"}
+					 },
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [7]}
+		},
+
+		"sootyMarble": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "astralsorcery:blockblackmarble"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 16
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": {
+						"type": "ID",
+						"entry": "Fire Swamp"}
+					 },
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [7]	
+			}
+		}
+	}
+}

@@ -42,8 +42,8 @@
 						"entry": "COLD"
 					},
 					{
-						"type": "ID",
-						"entry": 67
+						"type": "name",
+						"entry": "Crag Cliffs"
 					}]},
 			"dimension": {
 				"restriction": "whitelist",
@@ -115,7 +115,7 @@
 					{
 						"type": "dictionary",
 						"entry": "PLAINS"
-					}
+					},
 					{
 						"type": "dictionary",
 						"entry": "SWAMP"
@@ -541,7 +541,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "minecraft:clay",
+					"name": "minecraft:clay"
 				},
 				"material": "minecraft:stone",
 				"cluster-size": 10
@@ -566,7 +566,7 @@
 				"block": "astralsorcery:blockcustomsandore",
 				"radius": 3,
 				"height": 1,
-				"slim": "false",
+				"slim": "false"
 			},
 			"cluster-count": 1,
 			"chunk-chance": 15

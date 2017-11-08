@@ -1,6 +1,7 @@
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.MaterialPart;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.Material;
 import mods.contenttweaker.Item;
@@ -19,7 +20,6 @@ craftingTool.register();
 
 val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
 */
-
 
 
 
@@ -72,6 +72,9 @@ for i, mat in tier2_list {
   blockData.addDataValue("resistance", "30");
   blockData.addDataValue("harvestTool", "pickaxe");
   blockData.addDataValue("harvestLevel", "1");}
+
+
+
 
 ////////////////
 //Microcrafting
@@ -180,3 +183,12 @@ energized_well.register();
 var destabilized_well = VanillaFactory.createBlock("destabilized_well", <blockmaterial:rock>);
 destabilized_well.setLightValue(7);
 destabilized_well.register();
+
+//Sulfur Ore
+val oreSul = MaterialSystem.getMaterialBuilder().setName("Sulfur").setColor(13421568).build().registerPart("ore").getData();
+oreSul.addDataValue("drops", "thermalfoundation:material:771, thermalfoundation:material:771");
+oreSul.addDataValue("variants", "minecraft:stone,minecraft:netherrack");
+oreSul.addDataValue("hardness", "3,3");
+oreSul.addDataValue("resistance", "15,15");
+oreSul.addDataValue("harvestLevel", "1,1");
+oreSul.addDataValue("harvestTool", "pickaxe,pickaxe");
