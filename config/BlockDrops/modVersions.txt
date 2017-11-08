@@ -194,7 +194,6 @@
   "blockcraftery": "0.1.3",
   "tinker_io": "release 2.5.6e",
   "natura": "1.12-4.3.0.23",
-  "wanionlib": "1.12.2-1.1",
   "worldstripper": "1.4.1-1.12.1",
   "foamfix": "0.8.0-1.12",
   "itemscroller": "0.11.0",
