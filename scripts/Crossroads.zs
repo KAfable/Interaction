@@ -136,10 +136,10 @@ recipes.addShaped(<crossroads:heat_cable_copper_dirt>, [
 recipes.remove(<crossroads:gear_iron>);
 recipes.addShapeless(<crossroads:gear_iron>, [<ore:gearIron>, <crossroads:axle>]);
 recipes.remove(<crossroads:gear_gold>);
-recipes.addShapeless(<crossroads:gear_gold>, [<ore:geargold>, <crossroads:axle>]);
+recipes.addShapeless(<crossroads:gear_gold>, [<ore:gearGold>, <crossroads:axle>]);
 recipes.remove(<crossroads:gear_copper>);
-recipes.addShapeless(<crossroads:gear_copper>, [<ore:gearcopper>, <crossroads:axle>]);
+recipes.addShapeless(<crossroads:gear_copper>, [<ore:gearCopper>, <crossroads:axle>]);
 recipes.remove(<crossroads:gear_tin>);
-recipes.addShapeless(<crossroads:gear_tin>, [<ore:geartin>, <crossroads:axle>]);
+recipes.addShapeless(<crossroads:gear_tin>, [<ore:gearTin>, <crossroads:axle>]);
 recipes.remove(<crossroads:gear_bronze>);
-recipes.addShapeless(<crossroads:gear_bronze>, [<ore:gearbronze>, <crossroads:axle>]);
+recipes.addShapeless(<crossroads:gear_bronze>, [<ore:gearBronze>, <crossroads:axle>]);
