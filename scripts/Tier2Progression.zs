@@ -129,6 +129,7 @@ for i in 0 to 7 {
   gs.addRecipe(ores[i], dusts[i]);
 }
 
+gs.addRecipe(<immersiveengineering:material:6>,<immersiveengineering:material:17>);
 gs.addRecipe(<skyresources:techitemcomponent:3>, <minecraft:quartz>*2);
 gs.addRecipe(<minecraft:netherrack>, <minecraft:quartz>*4);
 gs.addRecipe(<minecraft:stone>, <skyresources:techitemcomponent>);

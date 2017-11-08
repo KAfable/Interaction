@@ -26,6 +26,16 @@ recipes.addShaped(<forestry:carpenter>, [
 [<ore:plateBronze>, <skyresources:combustionheater:12>, <ore:plateBronze>]
 ]);
 
+///////////////////////
+//Thermionic Fabricator
+///////////////////////
+recipes.remove(<forestry:fabricator>);
+recipes.addShaped(<forestry:fabricator>, [
+[<ore:plateGold>,<forestry:chipsets:1>,<ore:plateGold>],
+[<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
+[<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]
+]);
+
 ////////////////////
 //Carpenter Circuits 
 ////////////////////
@@ -40,17 +50,36 @@ carp.addRecipe(<contenttweaker:material_part:32>, [
 [null,<minecraft:clay_ball>,null],
 [<skyresources:techitemcomponent>,<minecraft:brick>,<skyresources:techitemcomponent>],
 [null,<minecraft:sand>,null]
-], 20);
+], 20, <liquid:water>*250);
 carp.addRecipe(<skyresources:baseitemcomponent:3>, [
 [null,<minecraft:slime_ball>,null],
 [<ore:dustObsidian>,<contenttweaker:material_part:32>,<ore:dustObsidian>],
 [null,<ore:glass>,null]
-], 20);
+], 20, <liquid:water>*250);
+carp.removeRecipe(<forestry:chipsets>);
 carp.addRecipe(<forestry:chipsets>*2, [
 [<ore:ingotTin>,<ore:materialResin>,<ore:ingotTin>],
 [<ore:plateTin>,QAC,<ore:plateTin>],
 [<ore:ingotTin>,<minecraft:redstone>,<ore:ingotTin>]], 
 20,<liquid:water>*1000);
+carp.removeRecipe(<forestry:chipsets:1>);
+carp.addRecipe(<forestry:chipsets:1>, [
+[<ore:ingotBronze>,<ore:materialResin>,<ore:ingotBronze>],
+[<ore:plateBronze>,<forestry:chipsets>,<ore:plateBronze>],
+[<ore:ingotBronze>,<immersiveengineering:material:17>,<ore:ingotBronze>]
+], 20, <liquid:water>*1000);
+carp.removeRecipe(<forestry:chipsets:2>);
+carp.addRecipe(<forestry:chipsets:2>, [
+[<ore:ingotIron>,<ore:materialResin>,<ore:ingotIron>],
+[<ore:plateIron>,<forestry:chipsets:1>,<ore:plateIron>],
+[<ore:ingotIron>,<forestry:thermionic_tubes:3>,<ore:ingotIron>]
+], 20, <liquid:water>*1000);
+carp.removeRecipe(<forestry:chipsets:3>);
+carp.addRecipe(<forestry:chipsets:3>, [
+[<ore:ingotGold>,<ore:materialResin>,<ore:ingotGold>],
+[<ore:plateGold>,<forestry:chipsets:2>,<ore:plateGold>],
+[<ore:ingotGold>,<forestry:thermionic_tubes:4>,<ore:ingotGold>]
+], 20, <liquid:water>*1000);
 
 ////////
 //Cables
