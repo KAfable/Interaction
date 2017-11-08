@@ -12,6 +12,21 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
+/////////
+//Pistons
+/////////
+recipes.remove(<minecraft:piston>);
+recipes.addShaped(<minecraft:piston>, [
+[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
+[<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
+[<ore:stone>,<ore:dustRedstone>,<ore:stone>]
+]);
+recipes.addShaped(<minecraft:piston>*8, [
+[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
+[<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
+[<ore:stone>,<ore:dustRedstone>,<ore:stone>]
+]);
+
 ////////////////
 //Ore Processing
 ////////////////
@@ -95,11 +110,15 @@ recipes.remove(<ic2:dust>);
 ////////////
 //Grindstone
 ////////////
-gs.removeRecipe(<ore:oreCopper>);
+gs.removeRecipe(<ore:dustCopper>);
+gs.removeRecipe(<ore:gravel>);
 
 for i in 0 to 7 {
   gs.addRecipe(ores[i], dusts[i]);
 }
+
+gs.addRecipe(<minecraft:netherrack>, <minecraft:quartz>*2);
+gs.addRecipe(<minecraft:stone>, <skyresources:techitemcomponent>);
 
 //////////
 //Squeezer
@@ -108,7 +127,7 @@ recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],
   [<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],
-  [<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
+[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
 
 val squeezerRemoved = [
   <thermalfoundation:material:0>,
@@ -254,7 +273,7 @@ val gearOutput = [
 for i in 0 to 8 {
   recipes.addShaped(gearOutput[i], [
     [gearInput[i], gearInput[i], gearInput[i]],
-    [gearInput[i], <contenttweaker:material_part:21>, gearInput[i]],
+    [gearInput[i], <ore:gearReinforcedStone>, gearInput[i]],
     [gearInput[i], gearInput[i], gearInput[i]]]);
 }
 

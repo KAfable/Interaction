@@ -24,7 +24,6 @@ recipes.addShaped(<sgextraparts:polisher>, [
   [null, <ore:logWood>, null],
   [null, <ore:stickWood>, null]]);
 
-recipes.remove(<minecraft:bucket>);
 recipes.addShaped(<minecraft:bucket>, [
   [rstone,<immersiveengineering:tool>,rstone],
   [pstone,rstone,pstone]]);
@@ -209,6 +208,17 @@ recipes.remove(<skyresources:rockcleaner>);
 #recipes.remove(<skyresources:casing:1>);
 #recipes.addShaped(<skyresources:casing:1>, [[stone, stone, stone],[stone, <ore:gearStone>, stone],[stone, stone, stone]]);
 
+recipes.addShaped(<teslacorelib:gear_stone>, [
+[null, pstone, null],
+[pstone, <ore:gearWood>, pstone],
+[null, pstone, null]
+]);
+recipes.addShaped(<teslacorelib:gear_stone>, [
+[null, pstone, null],
+[pstone, <immersiveengineering:tool>, pstone],
+[null, pstone, null]
+]);
+
 // Grout
 recipes.remove(<tconstruct:soil>);
 mods.skyresources.combustion.addRecipe(<tconstruct:soil>*8, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
@@ -224,6 +234,10 @@ recipes.addShaped(<contenttweaker:material_part:29>, [
   [null, rstone, null],
   [rstone, <immersiveengineering:tool>, rstone],
   [null, rstone, null]]);
+recipes.addShaped(<contenttweaker:material_part:29>, [
+  [null, rstone, null],
+  [rstone, <ore:gearStone>, rstone],
+  [null, rstone, null]]);
 recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
   [rstone,rstone,rstone],
   [rstone,rstone,rstone],
@@ -236,7 +250,7 @@ recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
 recipes.removeShaped(<skyresources:casing:3>);
 recipes.addShaped(<skyresources:casing:3>, [
   [rstone, rstone, rstone],
-  [rstone, <contenttweaker:material_part:55>, rstone],
+  [rstone, <ore:gearReinforcedStone>, rstone],
   [rstone, rstone, rstone]]);
 recipes.removeShaped(<skyresources:heat:3>);
 recipes.remove(<skyresources:combustionheater:3>);
