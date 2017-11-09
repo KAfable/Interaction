@@ -17,15 +17,15 @@ var brick = <minecraft:brick>;
 /////////
 recipes.remove(<minecraft:piston>);
 recipes.addShaped(<minecraft:piston>, [
-[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-[<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
-[<ore:stone>,<ore:dustRedstone>,<ore:stone>]
-]);
+  [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
+  [<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
+  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]
+  ]);
 recipes.addShaped(<minecraft:piston>*8, [
-[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-[<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
-[<ore:stone>,<ore:dustRedstone>,<ore:stone>]
-]);
+  [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
+  [<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
+  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]
+  ]);
 
 ////////////////
 //Ore Processing
