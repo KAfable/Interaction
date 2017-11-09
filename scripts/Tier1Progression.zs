@@ -210,14 +210,14 @@ recipes.remove(<skyresources:rockcleaner>);
 #recipes.addShaped(<skyresources:casing:1>, [[stone, stone, stone],[stone, <ore:gearStone>, stone],[stone, stone, stone]]);
 
 recipes.addShaped(<teslacorelib:gear_stone>, [
-[null, pstone, null],
-[pstone, <ore:gearWood>, pstone],
-[null, pstone, null]
+  [null, pstone, null],
+  [pstone, <ore:gearWood>, pstone],
+  [null, pstone, null]
 ]);
 recipes.addShaped(<teslacorelib:gear_stone>, [
-[null, pstone, null],
-[pstone, <immersiveengineering:tool>, pstone],
-[null, pstone, null]
+  [null, pstone, null],
+  [pstone, <immersiveengineering:tool>, pstone],
+  [null, pstone, null]
 ]);
 
 // Grout
@@ -244,7 +244,10 @@ recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
   [rstone,rstone,rstone],
   [rstone,rstone,rstone]]);
 recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:1>]);
-recipes.addShaped(rstone, [[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],[<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>]]);
+recipes.addShaped(rstone, [
+  [<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],
+  [<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>],
+  [<contenttweaker:material_part:31>,<contenttweaker:material_part:31>,<contenttweaker:material_part:31>]]);
 recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
 
 // Replacing Iron tier sky resources with reinforced stone
@@ -295,16 +298,25 @@ mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 recipes.remove(<skyresources:lifeinjector>);
 recipes.remove(<skyresources:redsandstoneinfusionstone>);
 recipes.remove(<skyresources:sandstoneinfusionstone>);
-recipes.addShaped(<skyresources:lifeinjector>, [[null, <skyresources:alchemicalinfusionstone>, null],[null, log, null],[log, log, log]]);
+recipes.addShaped(<skyresources:lifeinjector>, [
+  [null, <skyresources:alchemicalinfusionstone>, null],
+  [null, log, null],
+  [log, log, log]]);
 mods.skyresources.infusion.removeRecipe(<skyresources:itemhealthgem>);
 mods.skyresources.infusion.addRecipe(<skyresources:itemhealthgem>, <skyresources:alchemyitemcomponent:10>, <minecraft:leaves:*>, 15);
 furnace.addRecipe(<minecraft:netherrack>, <skyresources:techitemcomponent:3>);
 mods.skyresources.infusion.addRecipe(<skyresources:techitemcomponent:3>*8, <skyresources:techitemcomponent>*8, <minecraft:sand:1>, 19);
 recipes.remove(<skyresources:diamondgrinder>);
-recipes.addShaped(<skyresources:diamondgrinder>, [[<skyresources:alchemyitemcomponent:10>, null,null],[null,<skyresources:alchemyitemcomponent:10>,null],[null,null,stick]]);
+recipes.addShaped(<skyresources:diamondgrinder>, [
+  [<skyresources:alchemyitemcomponent:10>, null,null],
+  [null,<skyresources:alchemyitemcomponent:10>,null],
+  [null,null,stick]]);
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
-recipes.addShaped(<skyresources:irongrinder>, [[rstone, null, null],[null, rstone, null],[null, null, stick]]);
+recipes.addShaped(<skyresources:irongrinder>, [
+  [rstone, null, null],
+  [null, rstone, null],
+  [null, null, stick]]);
 
 //Tinkers Recipes
 <skyresources:baseitemcomponent:2>.displayName = "Cooling Component";
@@ -330,12 +342,70 @@ recipes.remove(p);
 recipes.remove(<skyresources:darkmatterblock>);
 <skyresources:darkmatterblock>.displayName = "Base Alchemical Beacon (Inactive)";
 <xtones:zome:12>.displayName = "Base Alchemical Beacon (Active)";
-recipes.addShaped(<skyresources:darkmatterblock>, [[p,p,p],[p,<skyresources:alchemyitemcomponent:5>,p],[p,<skyresources:alchemyitemcomponent:5>,p]]);
+recipes.addShaped(<skyresources:darkmatterblock>, [
+  [p,p,p],
+  [p,<skyresources:alchemyitemcomponent:5>,p],
+  [p,<skyresources:alchemyitemcomponent:5>,p]]);
 recipes.remove(<minecraft:enchanting_table>);
-recipes.addShaped(<minecraft:enchanting_table>, [[null,<minecraft:book>,null],[<skyresources:alchemyitemcomponent:10>,<minecraft:obsidian>,<skyresources:alchemyitemcomponent:10>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
+recipes.addShaped(<minecraft:enchanting_table>, [
+  [null,<minecraft:book>,null],
+  [<skyresources:alchemyitemcomponent:10>,<minecraft:obsidian>,<skyresources:alchemyitemcomponent:10>],
+  [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
 <chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
 recipes.remove(<chisel:factory>);
 recipes.remove(<minecraft:tripwire_hook>);
-recipes.addShaped(<minecraft:tripwire_hook>, [[null, rstone,null],[null,<ore:stickWood>,null],[null,<ore:plankWood>,null]]);
-recipes.addShaped(<chisel:factory:8>*3, [[p,<minecraft:tripwire_hook>,p],[<contenttweaker:material_part:29>,QAC,<contenttweaker:material_part:29>],[p,<minecraft:tripwire_hook>,p]]);
+recipes.addShaped(<minecraft:tripwire_hook>, [
+  [null, rstone,null],
+  [null,<ore:stickWood>,null],
+  [null,<ore:plankWood>,null]]);
+recipes.addShaped(<chisel:factory:8>*3, [
+  [p,<minecraft:tripwire_hook>,p],
+  [<contenttweaker:material_part:29>,QAC,<contenttweaker:material_part:29>],
+  [p,<minecraft:tripwire_hook>,p]]);
 <chisel:factory:8>.displayName = "Basic Circuitry";
+
+//addDescription(IItemStack item, string[] desc);
+//each string inside the array will have it's own line(s)
+mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"}),
+  [ "Portal Fabricator",
+    "1 Machine Controller",
+    "2 Item Input",
+    "1 Item Output",
+    "1 Fluid Input Hatch",
+    "24 Alchemical Baseplate",
+    "10 Basic Circuitry",
+    "12 Reinforced Lava Concentrator",
+    "4 Base Alchemical Beacon",
+    "4 Buckets of Lava",
+    "1 Enchanting Table"]);
+
+mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ender_saturator"}),
+  [ "Ender Saturator",
+    "1 Machine Controller", 
+    "27x Korp:6",
+    "8 Kryp:4", 
+    "9 Kryp:7", 
+    "12 Korp:12",  
+    "12 Sync:13", 
+    "22 Hardened Enderium Glass", 
+    "3 Cache", 
+    "14 Iron Bars", 
+    "1 Energy Input Hatch",  
+    "1 Item Input", 
+    "1 Item Output",
+    "1 Fluid Input",
+    "3 Vena:6", 
+    "1 Bucket of Resonant Ender",
+    "2 Enderium Blocks",
+    "4 Editable Slants with Enderium Blocks" 
+    ]);
+
+mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_machine"}),
+  [ "Assembly Machine",
+    "1 Machine Controller",
+    "1 Item Input",
+    "1 Item Output",
+    "1 Fluid Input",
+    "1 Energy Input Hatch",
+    "All inputs and outputs can be substituted by machine casings"]);
+

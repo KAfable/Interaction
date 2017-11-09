@@ -78,7 +78,8 @@ var energyDisabled = [
   <rftools:powercell_advanced>,
   <fluxnetworks:fluxstorage>,
   <fluxnetworks:herculeanfluxstorage>,
-  <fluxnetworks:gargantuanfluxstorage>]
+  <fluxnetworks:gargantuanfluxstorage>,
+  <quantumstorage:quantum_battery>]
   as IItemStack[];
 
 for item in energyDisabled{
@@ -102,15 +103,6 @@ var etDisabled = [
 for item in etDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
-///////////////
-// FactoryTech
-///////////////
-var ftDisabled = [
-  <factorytech:sluice>]
-  as IItemStack[];
-
-for item in ftDisabled{
-    mods.jei.JEI.removeAndHide(item);}
 
 ////////////
 // Forestry
@@ -173,11 +165,6 @@ var ipDisabled = [
   <crossroads:ingot_bronze>,
   <crossroads:ingot_copper>,
   <crossroads:ingot_tin>,
-  <factorytech:ingot:1>,
-  <factorytech:ingot:2>,
-  <factorytech:ingot:3>,
-  <factorytech:ingot>,
-  <factorytech:oreblock>,
   <forestry:ingot_bronze>,
   <forestry:ingot_copper>,
   <forestry:ingot_tin>,
@@ -278,7 +265,6 @@ for item in ipDisabled{
 /////////
 var nuggetsDisabled = [
   <crossroads:nugget_copper>,
-  <factorytech:ore_dust:4>,
   <immersiveengineering:metal:20>,
   <magicbees:orepart:3>,
   <techreborn:nuggets:4>,
@@ -286,7 +272,6 @@ var nuggetsDisabled = [
   <techreborn:nuggets:23>,
   <techreborn:nuggets:9>,
   <immersiveengineering:metal:24>,
-  <factorytech:ore_dust:5>,
   <magicbees:orepart:5>,
   <techreborn:nuggets:2>,
   <techreborn:nuggets:8>,
@@ -309,8 +294,6 @@ var mineralsDisabled = [
   <embers:ore_copper>,
   <embers:ore_silver>,
   <embers:ore_lead>,
-  <factorytech:ore>,
-  <factorytech:ore:1>,
   <forestry:resources:1>,
   <forestry:resources:2>,
   <fp:erze>,
