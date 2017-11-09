@@ -21,8 +21,6 @@ craftingTool.register();
 val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
 */
 
-
-
 //////////////////
 //Tier 1 Materials
 //////////////////
@@ -87,6 +85,8 @@ craftingTool.maxStackSize = 1;
 craftingTool.setMaxDamage(10);
 craftingTool.register();*/
 
+var vulcanizedresin = VanillaFactory.createItem("vulcanizedresin");
+vulcanizedresin.register();
 
 // Celestial Motor
 var astralMotor = VanillaFactory.createItem("astralmotor");
