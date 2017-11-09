@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemDefinition;
+
 mods.jei.JEI.removeAndHide(<skyresources:dirtfurnace>);
 
 mods.jei.JEI.removeAndHide(<skyresources:combustionheater:2>);
@@ -58,7 +60,10 @@ mods.jei.JEI.removeAndHide(<skyresources:alchemy:11>);
 <skyresources:darkmatterblock>.displayName = "Block of Putty";
 <skyresources:baseitemcomponent:3>.displayName = "Reinforced Putty";
 
-mods.skyresources.rockgrinder.removeRecipe(<skyresources:dirtygem>);
+var gems = <skyresources:dirtygem>.definition;
+for i in 0 to 43 {
+  mods.skyresources.rockgrinder.removeRecipe(gems.makeStack(i));
+}
 mods.skyresources.rockgrinder.addRecipe(<minecraft:quartz>, <minecraft:netherrack>, 0.25);
 
 mods.skyresources.cauldronclean.removeRecipe(<immersiveengineering:metal:9>);

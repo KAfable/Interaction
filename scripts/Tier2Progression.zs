@@ -12,6 +12,18 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
+
+//////////
+//PipesEXU
+//////////
+recipes.remove(<extrautils2:pipe>);
+recipes.addShaped(<extrautils2:pipe>*8, [
+[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
+[<ore:glass>,<forestry:chipsets>,<ore:glass>],
+[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]
+]);
+
+
 /////////
 //Pistons
 /////////
@@ -117,8 +129,13 @@ for i in 0 to 7 {
   gs.addRecipe(ores[i], dusts[i]);
 }
 
-gs.addRecipe(<minecraft:netherrack>, <minecraft:quartz>*2);
+gs.addRecipe(<immersiveengineering:material:6>,<immersiveengineering:material:17>);
+gs.addRecipe(<skyresources:techitemcomponent:3>, <minecraft:quartz>*2);
+gs.addRecipe(<minecraft:netherrack>, <minecraft:quartz>*4);
 gs.addRecipe(<minecraft:stone>, <skyresources:techitemcomponent>);
+gs.addRecipe(<techreborn:rubber_log>, <ic2:misc_resource:4>);
+gs.addRecipe(<ic2:rubber_wood>, <ic2:misc_resource:4>);
+
 
 //////////
 //Squeezer
@@ -194,7 +211,8 @@ val squeezerPlateInput = [
   <thermalfoundation:material:163>,
   <abyssalcraft:abyingot>,
   <mekanism:ingot:4>,
-  <techreborn:ingot:1>
+  <techreborn:ingot:1>,
+  <minecraft:dye:4>
   ] as IItemStack[];
 
 val squeezerPlateOutput = [
@@ -206,10 +224,11 @@ val squeezerPlateOutput = [
   <thermalfoundation:material:355>,
   <contenttweaker:material_part:65>,
   <thermalfoundation:material:352>,
-  <techreborn:plates:17>
+  <techreborn:plates:17>,
+  <ic2:plate:4>
   ] as IItemStack[];
 
-for i in 0 to 9 {
+for i in 0 to 10 {
   mods.integrateddynamics.Squeezer.addRecipe(squeezerPlateInput[i], squeezerPlateOutput[i], null);}
 
 //Gears
