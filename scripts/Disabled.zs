@@ -103,6 +103,16 @@ var etDisabled = [
 for item in etDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
+/////////
+// Flight
+/////////
+var flightDisabled = [
+  <cyclicmagic:charm_air>]
+  as IItemStack[];
+
+for item in flightDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
 
 ////////////
 // Forestry
@@ -387,6 +397,27 @@ var seedRemoved = [
 
 for item in seedRemoved {
     vanilla.seeds.removeSeed(item);}
+
+////////
+//Tools
+///////
+var toolRedundant = [
+  <mekanismtools:obsidianpaxel>,
+  <mekanismtools:diamondpaxel>,
+  <mekanismtools:bronzepaxel>,
+  <mekanismtools:goldpaxel>,
+  <mekanismtools:osmiumpaxel>,
+  <mekanismtools:glowstonepaxel>,
+  <mekanismtools:steelpaxel>,
+  <mekanismtools:woodpaxel>,
+  <mekanismtools:stonepaxel>,
+  <mekanismtools:ironpaxel>,
+  <mekanismtools:lapislazulipaxel>
+  ]
+  as IItemStack[];
+
+for item in toolRedundant {
+    mods.jei.JEI.removeAndHide(item);}
 
 /////////
 //Weapons
