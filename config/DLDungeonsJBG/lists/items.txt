@@ -7084,13 +7084,13 @@ magicbees:mysteriousmagnet
 magicbees:moondial
 magicbees:manasteelgrafter
 magicbees:manasteelscoop
-magicbees:frames.resilient
-magicbees:frames.magic
-magicbees:frames.metabolic
+magicbees:frames.temporal
 magicbees:frames.oblivion
 magicbees:frames.necrotic
+magicbees:frames.magic
+magicbees:frames.metabolic
+magicbees:frames.resilient
 magicbees:frames.gentle
-magicbees:frames.temporal
 magicbees:hiveblock
 magicbees:effectjar
 magicbees:enchanted_earth

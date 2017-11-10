@@ -795,9 +795,9 @@ forestry:wood_pile
 forestry:wood_pile_decorative
 forestry:ash_block
 forestry:loam
-forestry:pods.dates
-forestry:pods.cocoa
 forestry:pods.papaya
+forestry:pods.cocoa
+forestry:pods.dates
 forestry:tree_chest
 forestry:butterfly_chest
 forestry:cocoon
