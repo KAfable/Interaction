@@ -23,16 +23,6 @@ astralmain.addItemEntryHelper(<astralsorcery:itemjournal>, 5, 0, [], []);
 astralmain.addItemEntryHelper(<astralsorcery:blockattunementrelay>, 10, 0, 
 	[Functions.setCount(2, 5)], []);
 
-val lushTable = LootTables.getTable("actuallyadditions:lush_caves");
-val lushcave = lushTable.getPool("main");
-lushcave.removeItemEntry(<minecraft:bone>);
-lushcave.removeItemEntry(<minecraft:leather_leggings>);
-lushcave.removeItemEntry(<minecraft:leather_boots>);
-lushcave.removeItemEntry(<minecraft:leather_helmet>);
-lushcave.removeItemEntry(<minecraft:leather_chestplate>);
-lushcave.removeItemEntry(<actuallyadditions:item_crystal:2>);
-lushcave.removeItemEntry(<actuallyadditions:item_crystal:4>);
-
 val ieHouse = LootTables.getTable("immersiveengineering:chests/engineers_house");
 val iePool = ieHouse.getPool("immersiveengineering:engineers_village_house");
 val ieRemoved = [
