@@ -30,7 +30,7 @@ recipes.addShaped(<extrautils2:pipe>*8, [
 recipes.remove(<minecraft:piston>);
 recipes.addShaped(<minecraft:piston>, [
   [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-  [<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
+[<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
   [<ore:stone>,<ore:dustRedstone>,<ore:stone>]
   ]);
 recipes.addShaped(<minecraft:piston>*8, [
