@@ -54,12 +54,12 @@ for i, mat in tier1_list {
 //////////////////u
 var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
 var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(3866733).build();
-var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
-var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(12017419).build();
-var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
+//var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
+//var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(12017419).build();
+//var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
 //var zinc = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
 //var tin = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-var tier2_list = [fiery, abyssalnite, aluminum, copper, gold] as Material[];
+var tier2_list = [fiery, abyssalnite] as Material[];
 
 //Tier 2 Registration
 for i, mat in tier2_list {
@@ -93,15 +93,6 @@ var astralMotor = VanillaFactory.createItem("astralmotor");
 astralMotor.glowing = true;
 astralMotor.register();
 
-// Conveyors
-var conveyors = ["conveyor1", "conveyor2", "conveyor3", "conveyor4", "conveyor5", "conveyor6"] as string[];
-var glowingConveyors = ["conveyor7","conveyor8"] as string[];
-for i in conveyors {VanillaFactory.createItem(i).register();}
-for i in glowingConveyors {
-  var tempConveyor = VanillaFactory.createItem(i);
-  tempConveyor.glowing = true;
-  tempConveyor.register();}
-
 //Dusts
 var impureDusts = [
   "impureDustBauxite",
@@ -116,60 +107,6 @@ var impureDusts = [
   ] as string[];
 
 for i in impureDusts {VanillaFactory.createItem(i).register();}
-
-//Emitters
-var emitters = ["emitter1", "emitter2", "emitter3", "emitter4", "emitter5", "emitter6"] as string[];
-var glowingEmitters = ["emitter7","emitter8"] as string[];
-for i in emitters {VanillaFactory.createItem(i).register();}
-for i in glowingEmitters {
-    var tempEmitter = VanillaFactory.createItem(i);
-    tempEmitter.glowing = true;
-    tempEmitter.register();}
-
-// Motors
-var motors = ["motor1", "motor2", "motor3", "motor4", "motor5", "motor6"] as string[];
-var glowingMotors = ["motor7", "motor8"] as string[];
-for i in motors {VanillaFactory.createItem(i).register();}
-for i in glowingMotors {
-  var tempMotor = VanillaFactory.createItem(i);
-  tempMotor.glowing = true;
-  tempMotor.register();}
-
-// Pistons
-var pistons = ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"] as string[];
-var glowingPistons = ["piston7","piston8"] as string[];
-for i in pistons {VanillaFactory.createItem(i).register();}
-for i in glowingPistons {
-  var tempPiston = VanillaFactory.createItem(i);
-  tempPiston.glowing = true;
-  tempPiston.register();}
-
-// Robot Arms
-var robotArms = ["robotArm1", "robotArm2", "robotArm3", "robotArm4", "robotArm5", "robotArm6"] as string[];
-var glowingRobotArms= ["robotArm7","robotArm8"] as string[];
-for i in robotArms {VanillaFactory.createItem(i).register();}
-for i in glowingRobotArms {
-    var tempRobotArm = VanillaFactory.createItem(i);
-    tempRobotArm.glowing = true;
-    tempRobotArm.register();}
-
-// Sensors
-var sensors = ["sensor1", "sensor2", "sensor3", "sensor4", "sensor5", "sensor6"] as string[];
-var glowingSensors = ["sensor7","sensor8"] as string[];
-for i in sensors {VanillaFactory.createItem(i).register();}
-for i in glowingSensors {
-    var tempSensor = VanillaFactory.createItem(i);
-    tempSensor.glowing = true;
-    tempSensor.register();}
-
-// Valves
-var valves = ["valve1", "valve2", "valve3", "valve4", "valve5", "valve6"] as string[];
-var glowingValves = ["valve7","valve8"] as string[];
-for i in valves {VanillaFactory.createItem(i).register();}
-for i in glowingValves {
-    var tempValve = VanillaFactory.createItem(i);
-    tempValve.glowing = true;
-    tempValve.register();}
 
 ///////////
 // Blocks

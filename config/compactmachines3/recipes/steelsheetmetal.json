@@ -1,0 +1,35 @@
+{
+  "name": "immersiveengineering:sheetmetal:8",
+  "target-item": "immersiveengineering:sheetmetal",
+  "target-meta": 8,
+  "target-count": 3,
+
+  "duration": 20,
+
+  "catalyst": "minecraft:blaze_powder",
+
+  "input-types": {
+    "x": { 
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9 }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ]
+  ]
+}

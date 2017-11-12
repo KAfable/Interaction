@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.forestry.Carpenter as carp;
+import mods.forestry.ThermionicFabricator as tf;
 
 var QAC = <skyresources:baseitemcomponent:6>;
 
@@ -35,6 +36,12 @@ recipes.addShaped(<forestry:fabricator>, [
 [<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
 [<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]
 ]);
+recipes.remove(<environmentaltech:diode>);
+tf.addCast(<environmentaltech:diode>*4,[
+[null,<skyresources:baseitemcomponent:3>,null],
+[<skyresources:baseitemcomponent:3>,<minecraft:redstone>,<skyresources:baseitemcomponent:3>],
+[<skyresources:baseitemcomponent:3>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<skyresources:baseitemcomponent:3>]
+],<liquid:glass>*500);
 
 ////////////////////
 //Carpenter Circuits 
