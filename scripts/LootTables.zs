@@ -23,6 +23,7 @@ astralmain.addItemEntryHelper(<astralsorcery:itemjournal>, 5, 0, [], []);
 astralmain.addItemEntryHelper(<astralsorcery:blockattunementrelay>, 10, 0, 
 	[Functions.setCount(2, 5)], []);
 
+/*
 val ieHouse = LootTables.getTable("immersiveengineering:chests/engineers_house");
 val iePool = ieHouse.getPool("immersiveengineering:engineers_village_house");
 val ieRemoved = [
@@ -33,9 +34,15 @@ val ieRemoved = [
 	<immersiveengineering:metal:23>,	// Silver Nugget
 	<immersiveengineering:metal:24>		// Nickel Nugget
 	] as IItemstack[];
-
 for i in ieRemoved {
 	iePool.removeItemEntry(i);
-}
+}*/
 
-
+val zomTable = LootTables.getTable("minecraft:entities/zombie");
+val zomPool = LootTables.getPool("main");
+zomPool.removeItemEntry(<minecraft:iron_ingot>);
+zomPool.addItemEntryHelper(<contenttweaker:material_part:32>, 1, 0 );
+zomPool.removeItemEntry(<minecraft:potato>);
+zomPool.addItemEntryHelper(<contenttweaker:material_part:32>, 1, 0 );
+zomPool.removeItemEntry(<minecraft:carrot>);
+zomPool.addItemEntryHelper(<contenttweaker:material_part:32>, 1, 0 );
