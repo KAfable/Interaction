@@ -46,6 +46,11 @@ tf.addCast(<environmentaltech:diode>*4,[
 ////////////////////
 //Carpenter Circuits 
 ////////////////////
+<forestry:chipsets>.displayName = "Basic Control Board";
+<forestry:chipsets:1>.displayName = "Bronze-Plated Control Board";
+<forestry:chipsets:2>.displayName = "Iron-Plated Control Board";
+<forestry:chipsets:3>.displayName = "Advanced Control Board";
+
 mods.tconstruct.Casting.addTableRecipe(<forestry:chipsets>, <skyresources:baseitemcomponent:6>, <liquid:tin>, 1296);
 
 carp.addRecipe(QAC, [
@@ -66,27 +71,29 @@ carp.addRecipe(<skyresources:baseitemcomponent:3>, [
 carp.removeRecipe(<forestry:chipsets>);
 carp.addRecipe(<forestry:chipsets>*2, [
 [<ore:ingotTin>,<ore:materialResin>,<ore:ingotTin>],
-[<ore:plateTin>,QAC,<ore:plateTin>],
+[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}),QAC,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
 [<ore:ingotTin>,<minecraft:redstone>,<ore:ingotTin>]], 
 20,<liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:1>);
 carp.addRecipe(<forestry:chipsets:1>, [
 [<ore:ingotBronze>,<ore:materialResin>,<ore:ingotBronze>],
-[<ore:plateBronze>,<forestry:chipsets>,<ore:plateBronze>],
+[<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<forestry:chipsets>,<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})],
 [<ore:ingotBronze>,<immersiveengineering:material:17>,<ore:ingotBronze>]
 ], 20, <liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:2>);
 carp.addRecipe(<forestry:chipsets:2>, [
 [<ore:ingotIron>,<ore:materialResin>,<ore:ingotIron>],
-[<ore:plateIron>,<forestry:chipsets:1>,<ore:plateIron>],
+[<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<forestry:chipsets>,<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})],
 [<ore:ingotIron>,<forestry:thermionic_tubes:3>,<ore:ingotIron>]
 ], 20, <liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:3>);
 carp.addRecipe(<forestry:chipsets:3>, [
 [<ore:ingotGold>,<ore:materialResin>,<ore:ingotGold>],
-[<ore:plateGold>,<forestry:chipsets:2>,<ore:plateGold>],
+[<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}),<forestry:chipsets:2>,<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})],
 [<ore:ingotGold>,<forestry:thermionic_tubes:4>,<ore:ingotGold>]
 ], 20, <liquid:water>*1000);
+
+carp.removeRecipe(<forestry:soldering_iron>);
 
 ////////
 //Cables
@@ -118,4 +125,14 @@ recipes.addShaped(<forestry:engine_biogas>, [
 [null,<thermaldynamics:duct_0>,null],
 [<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>],
 [<ore:blockBronze>,<minecraft:lava_bucket>,<ore:blockBronze>]
+]);
+
+///////////
+//Soldering
+///////////
+recipes.remove(<forestry:soldering_iron>);
+recipes.addShaped(<forestry:soldering_iron>, [
+[null,<ore:ingotIron>,null],
+[<ore:ingotIron>,null,<ore:ingotIron>],
+[null,null,<ore:ingotSteel>]
 ]);
