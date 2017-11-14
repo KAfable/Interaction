@@ -43,4 +43,5 @@ recipes.remove(<modularmachinery:blockcontroller>);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"}), [
 		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>],
 		[<ore:dyeOrange>, <minecraft:paper>, <ore:dyeOrange>],
-		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]];
+		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]
+]);

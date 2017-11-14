@@ -359,7 +359,7 @@ recipes.addShaped(<chisel:factory:8>*3, [
 <chisel:factory:8>.displayName = "Basic Circuitry";
 
 recipes.remove(<minecraft:fire_charge>);
-recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:gunpowder>, blaze, <minecraft:coal>);
+recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:gunpowder>, blaze, <minecraft:coal>]);
 
 //addDescription(IItemStack item, string[] desc);
 //each string inside the array will have it's own line(s)
