@@ -49,14 +49,14 @@ mods.skyresources.combustion.addRecipe(<minecraft:coal:1>*4, [<minecraft:log>*32
 mods.skyresources.combustion.removeRecipe(<minecraft:coal>);
 mods.skyresources.combustion.addRecipe(<minecraft:coal>*4, [<minecraft:coal:1>*16], 600);
 mods.skyresources.combustion.addRecipe(sslab, [<minecraft:clay>], 100);
-mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal>*4], 600);
+//mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal>*4], 600);
 mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 95);
 recipes.remove(<skyresources:baseitemcomponent:6>);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <ic2:misc_resource:4>*4], 3000);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <techreborn:part:31>*4], 3000);
 <skyresources:baseitemcomponent:1>.displayName = "Simple Oscilator Component";
 recipes.remove(<skyresources:baseitemcomponent:1>);
-mods.skyresources.combustion.addRecipe(SOC, [<minecraft:gunpowder>*2, <minecraft:clay_ball>*2, <minecraft:coal:1>*2, blaze*3, rstone*8, <skyresources:baseitemcomponent:2>], 3000);
+mods.skyresources.combustion.addRecipe(SOC, [<minecraft:gunpowder>*2, <minecraft:clay_ball>*2, <minecraft:coal>*2, blaze*3, rstone*8, <skyresources:baseitemcomponent:2>], 3000);
 
 
 //Tier 1 Extractor Recipes
@@ -108,12 +108,6 @@ recipes.addShapeless(<minecraft:dye:15>*2, [<skyresources:baseitemcomponent>,<sk
 recipes.remove(<minecraft:torch>);
 recipes.addShaped(<minecraft:torch>, [[<minecraft:coal:1>],[pwood]]);
 recipes.addShaped(<minecraft:torch>*4, [[<minecraft:coal>],[pwood]]);
-
-recipes.remove(<skyresources:blazepowderblock>);
-recipes.addShaped(<skyresources:blazepowderblock>, [
-  [blaze, blaze, blaze],
-  [blaze, blaze, blaze],
-  [blaze, blaze, blaze]]);
 
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
@@ -363,6 +357,9 @@ recipes.addShaped(<chisel:factory:8>*3, [
   [<contenttweaker:material_part:29>,QAC,<contenttweaker:material_part:29>],
   [p,<minecraft:tripwire_hook>,p]]);
 <chisel:factory:8>.displayName = "Basic Circuitry";
+
+recipes.remove(<minecraft:fire_charge>);
+recipes.addShapeless(<minecraft:fire_charge>, [<minecraft:gunpowder>, blaze, <minecraft:coal>);
 
 //addDescription(IItemStack item, string[] desc);
 //each string inside the array will have it's own line(s)
