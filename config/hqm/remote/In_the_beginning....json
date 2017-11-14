@@ -1,0 +1,1 @@
+{"name":"In the beginning...","description":"Tier 1 Quests","quests":[{"uuid":"ca99514a-35b5-4334-88af-29c1d60eeff0","name":"Wood?","description":"You know what must be done...","x":158,"y":97,"icon":{"id":"minecraft:log"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:log"},"required":4,"precision":"FUZZY"}]}],"commandrewards":[]}],"reputationBar":[]}
