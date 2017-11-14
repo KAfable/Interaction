@@ -9,31 +9,38 @@ var pcase = <skyresources:casing:12>;
 
 recipes.remove(<modularmachinery:blockinputbus>);
 recipes.addShaped(<modularmachinery:blockinputbus>, [
-[hopper],
-[pcase],
-[chest]
-]);
+	[hopper],
+	[pcase],
+	[chest]
+	]);
 recipes.remove(<modularmachinery:blockoutputbus>);
 recipes.addShaped(<modularmachinery:blockoutputbus>, [
-[chest],
-[pcase],
-[hopper]
-]);
+	[chest],
+	[pcase],
+	[hopper]
+	]);
 recipes.remove(<modularmachinery:blockfluidinputhatch>);
 recipes.addShaped(<modularmachinery:blockfluidinputhatch>, [
-[hopper],
-[pcase],
-[bucket]
-]);
+	[hopper],
+	[pcase],
+	[bucket]
+	]);
 recipes.remove(<modularmachinery:blockfluidoutputhatch>);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch>, [
-[bucket],
-[pcase],
-[hopper]
-]);
+	[bucket],
+	[pcase],
+	[hopper]
+	]);
 recipes.remove(<modularmachinery:blockcontroller>);
-recipes.addShaped(<modularmachinery:blockcontroller>, [[casing,p,casing],[casing,<ore:glass>,casing],[casing,<skyresources:alchemy:12>,casing]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, [
+	[casing,p,casing],
+	[casing,<ore:glass>,casing],
+	[casing,<skyresources:alchemy:12>,casing]]);
 
 recipes.remove(casing);
-
 recipes.remove(<modularmachinery:blockcontroller>);
+
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"}), [
+		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>],
+		[<ore:dyeOrange>, <minecraft:paper>, <ore:dyeOrange>],
+		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]];
