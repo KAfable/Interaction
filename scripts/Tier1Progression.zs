@@ -44,12 +44,15 @@ recipes.addShaped(<contenttweaker:material_part:13>, [
   [pwood, <sgextraparts:polisher>, pwood],
   [null, pwood, null]]);
 
+// Roots 2 Knife conflicts with Grinder
+recipes.remove(<roots:stone_knife>);
+
 // Tier 1 Combustion Recipes
 mods.skyresources.combustion.addRecipe(<minecraft:coal:1>*4, [<minecraft:log>*32], 100);
 mods.skyresources.combustion.removeRecipe(<minecraft:coal>);
 mods.skyresources.combustion.addRecipe(<minecraft:coal>*4, [<minecraft:coal:1>*16], 600);
 mods.skyresources.combustion.addRecipe(sslab, [<minecraft:clay>], 100);
-//mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal>*4], 600);
+mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal:1>*4, <minecraft:gunpowder>], 600);
 mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 95);
 recipes.remove(<skyresources:baseitemcomponent:6>);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <ic2:misc_resource:4>*4], 3000);
@@ -136,6 +139,9 @@ recipes.addShaped(<skyresources:crucibleinserter>, [
   [rstone, null, rstone],
   [rstone, null, rstone]]);
 
+recipes.addShapeless(<minecraft:fire_charge>, 
+  [<minecraft:gunpowder>, <minecraft:blaze_powder>, <minecraft:coal:1>]);
+
 recipes.remove(<skyresources:heat:12>);
 recipes.addShaped(<skyresources:heat:12>, [
   [p,p,p],
@@ -206,18 +212,15 @@ recipes.remove(<skyresources:rockcleaner>);
 recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null],
   [pstone, <ore:gearWood>, pstone],
-  [null, pstone, null]
-]);
+  [null, pstone, null]]);
 recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null],
   [pstone, <immersiveengineering:tool>, pstone],
-  [null, pstone, null]
-]);
+  [null, pstone, null]]);
 
 // Grout
-recipes.remove(<tconstruct:soil>);
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*8, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*2, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
+mods.skyresources.combustion.addRecipe(<tconstruct:soil>*32, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
+mods.skyresources.combustion.addRecipe(<tconstruct:soil>*8, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Reinforced Stone (custom)
 mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*144, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*1000]);

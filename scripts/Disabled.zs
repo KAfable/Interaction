@@ -58,6 +58,36 @@ var cycDisabled = [
 for item in cycDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
+///////
+// Dust
+///////
+
+var dustDisabled = [
+  <ic2:dust:7>,
+  <immersiveengineering:metal:19>,
+  <ic2:dust:14>,
+  <immersiveengineering:metal:12>,
+  <immersiveengineering:metal:11>,
+  <immersiveengineering:metal:18>,
+  <immersiveengineering:metal:9>,
+  <immersiveengineering:metal:10>,
+  <immersiveengineering:metal:13>,
+  <immersiveengineering:metal:14>,
+  <immersiveengineering:metal:15>,
+  <immersiveengineering:metal:16>,
+  <immersiveengineering:metal:17>,
+  <techreborn:dust:59>,
+  <techreborn:dust:24>,
+  <mekanism:dust:1>,
+  <actuallyadditions:item_dust:1>,
+  <techreborn:dust:27>,
+  <ic2:dust:8>,
+  <actuallyadditions:item_dust>,
+  <mekanism:dust>
+  ] as IItemStack[];
+
+for item in dustDisabled{
+  mods.jei.JEI.removeAndHide(item);}
 
 ////////////////
 //Energy Storage
