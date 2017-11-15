@@ -76,7 +76,6 @@ var dustDisabled = [
   <immersiveengineering:metal:15>,
   <immersiveengineering:metal:16>,
   <immersiveengineering:metal:17>,
-  <techreborn:dust:59>,
   <techreborn:dust:24>,
   <mekanism:dust:1>,
   <actuallyadditions:item_dust:1>,

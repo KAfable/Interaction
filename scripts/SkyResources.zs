@@ -81,14 +81,53 @@ val cauldronRemoved = [
 	<immersiveengineering:metal:11>,
 	<immersiveengineering:metal:12>,
 	<immersiveengineering:metal:13>,
+	<immersiveengineering:metal:14>,
 	<immersiveengineering:metal:18>,
 	<immersiveengineering:metal:19>,
-	<ic2:dust:8>
+	<ic2:dust:4>,
+	<ic2:dust:7>,
+	<ic2:dust:8>,
+	<ic2:dust:10>,
+	<ic2:dust:11>,	// Lithium
+	<ic2:dust:14>,
+	<ic2:dust:17>,
+	<thermalfoundation:material:68>,
+	<thermalfoundation:material:69>,
+	<thermalfoundation:material:70>,
+	<techreborn:dust:59>,
+	<fp:dust:12044>,
+	<fp:dust:14186>,
+	<mekanism:dust:2>,
+	<techreborn:dust:54>,
+	<techreborn:dust:55>,
+	<techreborn:dust:10>,
+	<techreborn:dust:30>,
+	<thermalfoundation:material:71>,
+	<thermalfoundation:material:72>,
+	<minecraft:emerald>,
+	<minecraft:diamond>,
+	<techreborn:gem>,
+	<techreborn:gem:1>,
+	<techreborn:gem:2>,
+	<techreborn:gem:3>,
+	<techreborn:gem:4>,
+	<silentgems:craftingmaterial>,
+	<silentgems:craftingmaterial:4>,
+	<skyresources:dirtygem:39>,
+	<evilcraft:dark_gem>,
+	<minecraft:quartz>,
+	<minecraft:dye:4>,
+	<actuallyadditions:item_misc:5>,
+	<bigreactors:dustmetals>,
+	<draconicevolution:draconium_dust>
 	] as IItemStack[];
 
 for i in cauldronRemoved {
-	mods.skyresources.cauldronclean.removeRecipe(i);	
-}
+	mods.skyresources.cauldronclean.removeRecipe(i);}
+
+val cauldronGemRemoved = <silentgems:gem>.definition;
+for item in 0 to 32 {
+	mods.skyresources.cauldronclean.removeRecipe(cauldronGemRemoved.makeStack(item));}
 
 mods.skyresources.combustion.removeRecipe(<minecraft:blaze_powder>);
 mods.skyresources.combustion.removeRecipe(<minecraft:gunpowder>);
@@ -100,6 +139,6 @@ mods.skyresources.combustion.removeRecipe(<minecraft:glowstone_dust>);
 
 mods.jei.JEI.removeAndHide(<skyresources:orealchdust:*>);
 val oreAlcDust = <skyresources:orealchdust>.definition;
-for meta in 0 to 22 {
-	mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(meta));
+for item in 0 to 22 {
+	mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(item));
 }
