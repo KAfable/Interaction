@@ -216,12 +216,13 @@ recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null]]);
 
 // Grout
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*32, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*8, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
+recipes.remove(<tconstruct:soil>);
+mods.skyresources.combustion.addRecipe(<tconstruct:soil>*16, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
+mods.skyresources.combustion.addRecipe(<tconstruct:soil>*4, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Reinforced Stone (custom)
-mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*144, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*1000]);
-mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296);
+mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*396, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*1000]);
+mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
 // Reinforced Stone Gear / Block / Ingot
