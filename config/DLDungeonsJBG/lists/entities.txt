@@ -67,7 +67,6 @@ astralsorcery:entitystarburst
 astralsorcery:entitystardust
 beneath:hand
 beneath:shadow
-betterquesting:placeholder
 botania:babylon_weapon
 botania:corporea_spark
 botania:doppleganger
@@ -307,11 +306,6 @@ mysticalagriculture:superium_arrow
 mysticalagriculture:supremium_arrow
 natura:imp
 natura:nitrocreeper
-personalcars:entitycompact
-personalcars:entityrace
-personalcars:entitysuv
-personalcars:entitytransporter
-personalcars:entitytruck
 projecte:fire_projectile
 projecte:homing_arrow
 projecte:lava_projectile
