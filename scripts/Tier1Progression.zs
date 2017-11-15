@@ -130,7 +130,7 @@ recipes.addShaped(<skyresources:heat>,[
 recipes.remove(<skyresources:heat:1>);
 recipes.addShaped(<skyresources:heat:1>,[
   [pstone, pstone, pstone],
-  [pstone, <minecraft:fire_charge>, pstone],
+  [pstone, <minecraft:gunpowder>, pstone],
   [pstone, pstone, pstone]]);
 
 recipes.remove(<skyresources:crucibleinserter>);
@@ -138,9 +138,6 @@ recipes.addShaped(<skyresources:crucibleinserter>, [
   [rstone, <minecraft:dropper>, rstone],
   [rstone, null, rstone],
   [rstone, null, rstone]]);
-
-recipes.addShapeless(<minecraft:fire_charge>, 
-  [<minecraft:gunpowder>, <minecraft:blaze_powder>, <minecraft:coal:1>]);
 
 recipes.remove(<skyresources:heat:12>);
 recipes.addShaped(<skyresources:heat:12>, [
