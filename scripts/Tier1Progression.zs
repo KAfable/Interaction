@@ -53,7 +53,7 @@ mods.skyresources.combustion.removeRecipe(<minecraft:coal>);
 mods.skyresources.combustion.addRecipe(<minecraft:coal>*4, [<minecraft:coal:1>*16], 600);
 mods.skyresources.combustion.addRecipe(sslab, [<minecraft:clay>], 100);
 mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal:1>*4, <minecraft:gunpowder>], 600);
-mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 95);
+mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 400);
 recipes.remove(<skyresources:baseitemcomponent:6>);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <ic2:misc_resource:4>*4], 3000);
 mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <techreborn:part:31>*4], 3000);
@@ -67,7 +67,7 @@ mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>
 mods.skyresources.waterextractor.insert.addRecipe(<harvestcraft:soggygarden>, <minecraft:tallgrass:1>, 1000);
 
 //Tier 1 Freezer Recipes
-mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallgrass:1>*20, 800);
+mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallgrass:1>*10, 800);
 
 //Tier 1 Fusion Recipes
 mods.skyresources.fusion.addRecipe(<harvestcraft:windygarden>, [<minecraft:tallgrass:1>, <minecraft:feather>], 0.75);

@@ -135,6 +135,7 @@
   "commoncapabilities": "1.4.0",
   "crafttweakerjei": "2.0.0",
   "plants2": "2.1.2",
+  "treegrowingsimulator": "0.0.4",
   "mtlib": "@VERSION@",
   "valkyrielib": "1.12-2.0.4b",
   "aromabackup": "2.1.1.3",
