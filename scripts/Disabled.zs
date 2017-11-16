@@ -411,15 +411,9 @@ for item in rsDisable {
 ///////
 
 var seedRemoved = [
-  <minecraft:melon_seeds>,
-  <minecraft:pumpkin_seeds>,
-  <minecraft:potato>,
-  <minecraft:carrot>,
-  <minecraft:beetroot_seeds>,
   <natura:overworld_seeds>,
   <natura:overworld_seeds:1>,
   <extrautils2:redorchid>,
-  <silentgems:fluffypuffseeds>,
   <actuallyadditions:item_rice_seed>,
   <actuallyadditions:item_flax_seed>]
   as IIngredient[];

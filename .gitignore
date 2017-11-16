@@ -33,3 +33,4 @@ dumps/
 config/hqm/remote/deaths.json
 config/hqm/remote/data.json
 config/waila/waila.cfg
+realms_persistence.json

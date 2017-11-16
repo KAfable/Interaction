@@ -1,4 +1,5 @@
 recipes.removeShapeless(<ic2:resource:12>, [null]);
+recipes.remove(<ic2:resource:12>);
 
 furnace.remove(<ic2:crafting>);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<ic2:misc_resource:4>);

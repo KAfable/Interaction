@@ -203,6 +203,7 @@ recipes.addShaped(<minecraft:dropper>, [
 
 recipes.remove(<skyresources:rockcleaner>);
 
+
 #recipes.remove(<skyresources:casing:1>);
 #recipes.addShaped(<skyresources:casing:1>, [[stone, stone, stone],[stone, <ore:gearStone>, stone],[stone, stone, stone]]);
 
@@ -221,7 +222,7 @@ mods.skyresources.combustion.addRecipe(<tconstruct:soil>*16, [<minecraft:sand>*4
 mods.skyresources.combustion.addRecipe(<tconstruct:soil>*4, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Reinforced Stone (custom)
-mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*396, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*1000]);
+mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
@@ -312,6 +313,12 @@ recipes.addShaped(<skyresources:irongrinder>, [
   [rstone, null, null],
   [null, rstone, null],
   [null, null, stick]]);
+
+//Fluffy Puff Seeds
+recipes.addShaped(<silentgems:fluffypuffseeds>, [
+  [null, <minecraft:feather>, null],
+  [<minecraft:feather>, <minecraft:wheat_seeds>,<minecraft:feather>],
+  [null, <minecraft:feather>, null]]);
 
 //Tinkers Recipes
 <skyresources:baseitemcomponent:2>.displayName = "Cooling Component";
