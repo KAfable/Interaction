@@ -162,6 +162,7 @@
   "tesla": "1.0.63",
   "cucumber": "1.0.3",
   "voidislandcontrol": "1.2.5",
+  "witherskelefix": "2.2.3",
   "ftbu": "4.2.2",
   "elulib": "0.1.7",
   "dimensionalcontrol": "2.5.1",
