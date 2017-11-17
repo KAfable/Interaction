@@ -16,6 +16,11 @@ var itemDisabled = [
 for item in itemDisabled {
   mods.jei.JEI.removeAndHide(item);}
 
+recipes.remove(<tconstruct:slime_boots>);
+recipes.remove(<tconstruct:slime_boots:1>);
+recipes.remove(<tconstruct:slime_boots:2>);
+recipes.remove(<tconstruct:slime_boots:4>);
+
 //Molten Recipes
 val ores = [
   <thermalfoundation:ore:3>,

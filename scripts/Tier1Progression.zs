@@ -98,6 +98,7 @@ mods.skyresources.infusion.addRecipe(cow_egg, <minecraft:wheat>*10, <minecraft:f
 mods.skyresources.infusion.addRecipe(chicken_egg, <harvestcraft:fruitbaititem>*10, <minecraft:farmland>, 19);
 mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10, wool, 19);
 mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
+mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
 
 //Tier 1 Rock Grinder Recipes
 mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
@@ -106,7 +107,18 @@ mods.skyresources.rockgrinder.addRecipe(<minecraft:coal>, <minecraft:netherrack>
 mods.skyresources.rockgrinder.addRecipe(<minecraft:quartz>, <minecraft:netherrack>, 0.01);
 
 //Tier 1 Crafting Recipes
-recipes.addShapeless(<minecraft:dye:15>*2, [<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>]);
+recipes.addShapeless(<minecraft:dye:15>*2, 
+  [<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>,<skyresources:baseitemcomponent>]);
+
+recipes.addShaped(<minecraft:cauldron>, [
+  [rstone, null, rstone],
+  [rstone, null, rstone],
+  [rstone, rstone, rstone]]);
+
+recipes.addShaped(<plants2:brewing_cauldron>,[
+  [<ore:plant>, <ore:plant>, <ore:plant>],
+  [<skyresources:alchemyitemcomponent:2>, <minecraft:cauldron>, <skyresources:alchemyitemcomponent:2>],
+  [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 
 recipes.remove(<minecraft:torch>);
 recipes.addShaped(<minecraft:torch>, [[<minecraft:coal:1>],[pwood]]);
@@ -203,10 +215,6 @@ recipes.addShaped(<minecraft:dropper>, [
 
 recipes.remove(<skyresources:rockcleaner>);
 
-
-#recipes.remove(<skyresources:casing:1>);
-#recipes.addShaped(<skyresources:casing:1>, [[stone, stone, stone],[stone, <ore:gearStone>, stone],[stone, stone, stone]]);
-
 recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null],
   [pstone, <ore:gearWood>, pstone],
@@ -218,8 +226,8 @@ recipes.addShaped(<teslacorelib:gear_stone>, [
 
 // Grout
 recipes.remove(<tconstruct:soil>);
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*16, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
-mods.skyresources.combustion.addRecipe(<tconstruct:soil>*4, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Reinforced Stone (custom)
 mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);

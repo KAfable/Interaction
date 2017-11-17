@@ -33,9 +33,9 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch>, [
 	]);
 recipes.remove(<modularmachinery:blockcontroller>);
 recipes.addShaped(<modularmachinery:blockcontroller>, [
-	[casing,p,casing],
-	[casing,<ore:glass>,casing],
-	[casing,<skyresources:alchemy:12>,casing]]);
+	[<skyresources:casing:12>, <ore:dyeOrange>, <skyresources:casing:12>],
+	[<ore:dyeOrange>, <skyresources:alchemy:12>, <ore:dyeOrange>],
+	[<skyresources:casing:12>, <ore:dyeOrange>, <skyresources:casing:12>]]);
 
 recipes.remove(casing);
 recipes.remove(<modularmachinery:blockcontroller>);
