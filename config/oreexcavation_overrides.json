@@ -4,7 +4,7 @@
       "itemID": "skyresources:stonegrinder:0",
       "speed": 1,
       "limit": 64,
-      "range": 4,
+      "range": 20,
       "exaustion": 0.1,
       "experience": 0
     },
@@ -12,7 +12,7 @@
       "itemID": "skyresources:irongrinder:0",
       "speed": 1,
       "limit": 64,
-      "range": 4,
+      "range": 20,
       "exaustion": 0.1,
       "experience": 0
     },
@@ -20,7 +20,7 @@
       "itemID": "skyresources:diamondgrinder:0",
       "speed": 1,
       "limit": 64,
-      "range": 4,
+      "range": 20,
       "exaustion": 0.1,
       "experience": 0
     }

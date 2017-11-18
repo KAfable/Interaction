@@ -7245,10 +7245,10 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
-    "name": "tp:ender_ore",
+    "name": "minecraft:air",
     "meta": 0,
     "length": 1,
-    "name0": "tp:ender_dust",
+    "name0": "minecraft:air",
     "meta0": 0,
     "0chance0": 301.18,
     "1chance0": 349.3,
@@ -7290,10 +7290,10 @@
     "3pair0": "{\n  \"left\": 2,\n  \"right\": 2\n}"
   },
   {
-    "name": "tp:lava_ore",
+    "name": "minecraft:air",
     "meta": 0,
     "length": 1,
-    "name0": "tp:lava_crystal",
+    "name0": "minecraft:air",
     "meta0": 0,
     "0chance0": 100.0,
     "1chance0": 149.94,

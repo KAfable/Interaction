@@ -1,1 +1,15 @@
-[]
+[
+	{
+	"mob": "minecraft:zombie",
+	"remove": "minecraft:iron_ingot"
+	},
+	{
+	"mob": "minecraft:witch",
+	"remove": "minecraft:glowstone"
+	},
+	{
+	"mob": "minecraft:witch",
+	"remove": "minecraft:redstone"
+	}
+
+]

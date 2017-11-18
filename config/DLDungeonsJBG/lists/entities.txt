@@ -137,6 +137,7 @@ cyclicmagic:tntminingbolt
 cyclicmagic:torchbolt
 cyclicmagic:turretminecart
 cyclicmagic:woolbolt
+darkutils:fake_tnt
 draconicevolution:chaosguardian
 draconicevolution:customarrow
 draconicevolution:dragonheartitem

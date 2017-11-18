@@ -279,7 +279,8 @@ recipes.addShaped(<skyresources:heatprovider:3>, [
   [rstone, rstone, rstone]]);
 
 mods.skyresources.combustion.removeRecipe(<skyresources:alchemyitemcomponent:2>);
-mods.skyresources.combustion.addRecipe(<skyresources:alchemyitemcomponent:2>, [<minecraft:gunpowder>*3, blaze*2, <minecraft:coal:1>], 1000);
+mods.skyresources.combustion.addRecipe(<skyresources:alchemyitemcomponent:2>*5, 
+  [<minecraft:gunpowder>*3, blaze*2, <minecraft:coal:1>], 1000);
 
 recipes.remove(<skyresources:alchemy:3>);
 recipes.addShaped(<skyresources:alchemy:3>, [
@@ -292,29 +293,36 @@ recipes.addShapeless(<skyresources:fusiontable>, [<ore:workbench>, <skyresources
 <skyresources:alchemyitemcomponent:7>.displayName = "Fool's Gold";
 <skyresources:alchemyitemcomponent:10>.displayName = "False Diamond";
 
+recipes.remove(<skyresources:endportalcore>);
+
 mods.tconstruct.Melting.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
 mods.tconstruct.Melting.addRecipe(<liquid:water> * 200, <minecraft:leaves:*>);
-mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:3>, <skyresources:alchemyitemcomponent:8>, <liquid:lava>, 500, true);
-mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:4>, <skyresources:alchemyitemcomponent:7>, <liquid:lava>, 500, true);
-recipes.remove(<skyresources:endportalcore>);
+mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:3>, 
+  <skyresources:alchemyitemcomponent:8>, <liquid:lava>, 125, true);
+
+mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:4>, 
+  <skyresources:alchemyitemcomponent:7>, <liquid:lava>, 125, true);
+
+
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [<skyresources:alchemyitemcomponent:7>, <skyresources:alchemyitemcomponent:4>], 4.50);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 recipes.remove(<skyresources:lifeinjector>);
-recipes.remove(<skyresources:redsandstoneinfusionstone>);
-recipes.remove(<skyresources:sandstoneinfusionstone>);
 recipes.addShaped(<skyresources:lifeinjector>, [
   [null, <skyresources:alchemicalinfusionstone>, null],
   [null, log, null],
   [log, log, log]]);
 mods.skyresources.infusion.removeRecipe(<skyresources:itemhealthgem>);
 mods.skyresources.infusion.addRecipe(<skyresources:itemhealthgem>, <skyresources:alchemyitemcomponent:10>, <minecraft:leaves:*>, 15);
+
 furnace.addRecipe(<minecraft:netherrack>, <skyresources:techitemcomponent:3>);
 mods.skyresources.infusion.addRecipe(<skyresources:techitemcomponent:3>*8, <skyresources:techitemcomponent>*8, <minecraft:sand:1>, 19);
+
 recipes.remove(<skyresources:diamondgrinder>);
 recipes.addShaped(<skyresources:diamondgrinder>, [
   [<skyresources:alchemyitemcomponent:10>, null,null],
   [null,<skyresources:alchemyitemcomponent:10>,null],
   [null,null,stick]]);
+
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
 recipes.addShaped(<skyresources:irongrinder>, [
@@ -334,10 +342,13 @@ recipes.remove(<skyresources:baseitemcomponent:2>);
 mods.tconstruct.Casting.addTableRecipe(<skyresources:baseitemcomponent:2>, rstone, <liquid:water>, 1000, true);
 
 mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
+
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
-mods.tconstruct.Melting.addRecipe(<liquid:slime> * 1000, <tconstruct:slime_congealed>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
+
+mods.tconstruct.Melting.addRecipe(<liquid:slime> * 1000, <tconstruct:slime_congealed>);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed>, null, <liquid:slime>, 1000);
+
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000);
 
 mods.tconstruct.Casting.addTableRecipe(p, null, <liquid:putty>, 144);
