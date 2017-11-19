@@ -23,6 +23,7 @@ abyssalcraft:demonsheep
 abyssalcraft:depthsghoul
 abyssalcraft:dragonboss
 abyssalcraft:dragonminion
+abyssalcraft:dreadedcharge
 abyssalcraft:dreadgolem
 abyssalcraft:dreadguard
 abyssalcraft:dreadling

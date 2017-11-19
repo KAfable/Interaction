@@ -7,7 +7,8 @@ import crafttweaker.item.IIngredient;
 ////////////////////////////
 
 var aaDisabled = [
-  <actuallyadditions:item_mining_lens>]
+  <actuallyadditions:item_mining_lens>,
+  <actuallyadditions:block_heat_collector>]
   as IItemStack[];
 
 for item in aaDisabled{
@@ -17,7 +18,12 @@ for item in aaDisabled{
 //Applied Energistics 2
 ////////////////////////////
 var ae2Disabled = [
-  <appliedenergistics2:material:4>]
+  <appliedenergistics2:material:4>,
+  <appliedenergistics2:certus_quartz_axe>,
+  <appliedenergistics2:certus_quartz_hoe>,
+  <appliedenergistics2:certus_quartz_spade>,
+  <appliedenergistics2:certus_quartz_pickaxe>,
+  <appliedenergistics2:certus_quartz_sword>]
   as IItemStack[];
 
 for item in ae2Disabled{
@@ -199,6 +205,7 @@ for item in immDisabled{
 var ipDisabled = [
   <abyssalcraft:copperingot>,
   <abyssalcraft:tiningot>,
+  <armorplus:steel_ingot>,
   <bigreactors:blockmetals:5>,
   <bigreactors:ingotmetals:5>,
   <crossroads:ingot_bronze>,

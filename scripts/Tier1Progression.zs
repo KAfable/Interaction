@@ -8,7 +8,6 @@ val pstone = <sgextraparts:genericitem:8>;
 val stone = <ore:stone>;
 val rstone = <contenttweaker:material_part:32>;
 val nb = <minecraft:netherbrick>;
-val SOC = <skyresources:baseitemcomponent:1>;
 val p = <skyresources:baseitemcomponent:3>;
 val QAC = <skyresources:baseitemcomponent:6>;
 val altar = <botania:altar>.giveBack();
@@ -48,19 +47,7 @@ recipes.addShaped(<contenttweaker:material_part:13>, [
 recipes.remove(<roots:stone_knife>);
 
 // Tier 1 Combustion Recipes
-mods.skyresources.combustion.addRecipe(<minecraft:coal:1>*4, [<minecraft:log>*32], 100);
-mods.skyresources.combustion.removeRecipe(<minecraft:coal>);
-mods.skyresources.combustion.addRecipe(<minecraft:coal>*4, [<minecraft:coal:1>*16], 600);
-mods.skyresources.combustion.addRecipe(sslab, [<minecraft:clay>], 100);
-mods.skyresources.combustion.addRecipe(blaze*4, [<minecraft:coal:1>*4, <minecraft:gunpowder>], 600);
 mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 400);
-recipes.remove(<skyresources:baseitemcomponent:6>);
-mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <ic2:misc_resource:4>*4], 3000);
-mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:6>, [SOC*4, <minecraft:end_stone>*8, <minecraft:quartz>*16, <techreborn:part:31>*4], 3000);
-<skyresources:baseitemcomponent:1>.displayName = "Simple Oscilator Component";
-recipes.remove(<skyresources:baseitemcomponent:1>);
-mods.skyresources.combustion.addRecipe(SOC, [<minecraft:gunpowder>*2, <minecraft:clay_ball>*2, <minecraft:coal>*2, blaze*3, rstone*8, <skyresources:baseitemcomponent:2>], 3000);
-
 
 //Tier 1 Extractor Recipes
 mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>, <harvestcraft:soggygarden>);
@@ -84,8 +71,10 @@ mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:4>);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:5>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:5>, [p*4, <skyresources:alchemy:6>*12, <skyresources:alchemyitemcomponent:10>*8], 4.50);
 
-mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>,[<minecraft:ender_eye>,<minecraft:log>,<minecraft:yellow_flower>,<minecraft:red_flower>,<minecraft:sapling>,<minecraft:dirt>,<minecraft:grass>],20.00);
-mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>,[<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, <minecraft:clay>, rstone, <skyresources:alchemyitemcomponent:7>, <minecraft:torch>],20.00);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>,
+  [<minecraft:ender_eye>,<minecraft:log>,<minecraft:yellow_flower>,<minecraft:red_flower>,<minecraft:sapling>,<minecraft:dirt>,<minecraft:grass>],20.00);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>,
+  [<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, <minecraft:clay>, rstone, <skyresources:alchemyitemcomponent:7>, <minecraft:torch>],20.00);
 
 //Tier 1 Infusion Recipes
 var cow_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
@@ -100,11 +89,18 @@ mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10,
 mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
 mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
 
+mods.skyresources.infusion.removeRecipe(<minecraft:reeds>);
+mods.skyresources.infusion.addRecipe(<minecraft:reeds>, <minecraft:pumpkin>, <minecraft:melon_block>, 19);
+
 //Tier 1 Rock Grinder Recipes
 mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:coal>, <minecraft:stone>, 0.005);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:coal>, <minecraft:netherrack>, 0.17);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:quartz>, <minecraft:netherrack>, 0.01);
+
+//Tier 1 Crucible Recipes
+mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
+
 
 //Tier 1 Crafting Recipes
 recipes.addShapeless(<minecraft:dye:15>*2, 
@@ -120,15 +116,16 @@ recipes.addShaped(<plants2:brewing_cauldron>,[
   [<skyresources:alchemyitemcomponent:2>, <minecraft:cauldron>, <skyresources:alchemyitemcomponent:2>],
   [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 
-recipes.remove(<minecraft:torch>);
-recipes.addShaped(<minecraft:torch>, [[<minecraft:coal:1>],[pwood]]);
-recipes.addShaped(<minecraft:torch>*4, [[<minecraft:coal>],[pwood]]);
-
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
   [cob, cob, cob],
   [cob, blaze, cob],
   [sslab, sslab, sslab]]);
+
+recipes.addShaped(<itank:blocktank>, [
+  [<ore:blockGlass>, <tconstruct:seared_tank:1>, <ore:blockGlass>],
+  [<ore:blockGlass>, <minecraft:bucket>, <ore:blockGlass>],
+  [<ore:blockGlass>, <tconstruct:seared_tank:1>, <ore:blockGlass>]]);
 
 recipes.addShapeless(blaze, [<immersiveengineering:tool>, <minecraft:bowl>, <minecraft:gunpowder>, <minecraft:coal:1>]);
 recipes.addShapeless(<minecraft:gunpowder>, [<immersiveengineering:tool>, <minecraft:bowl>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]);
@@ -162,67 +159,91 @@ recipes.addShaped(<skyresources:heat:10>, [
   [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
   [<minecraft:end_stone>,<minecraft:fire_charge>,<minecraft:end_stone>],
   [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
+
 recipes.remove(<skyresources:casing:10>);
 recipes.addShaped(<skyresources:casing:10>, [
   [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
   [<minecraft:end_stone>,SOC,<minecraft:end_stone>],
   [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>]]);
+
 recipes.remove(<skyresources:combustionheater:10>);
 recipes.addShaped(<skyresources:combustionheater:10>, [
   [<minecraft:end_stone>,<minecraft:end_stone>,<minecraft:end_stone>],
   [<minecraft:end_stone>,<skyresources:heat:10>,<minecraft:end_stone>],
   [<minecraft:end_stone>,SOC,<minecraft:end_stone>]]);
+
 recipes.remove(<skyresources:casing:12>);
 recipes.addShaped(<skyresources:casing:12>, [
   [p,p,p],
   [p,QAC,p],
   [p,p,p]]);
+
 recipes.remove(<skyresources:heat:6>);
 recipes.addShaped(<skyresources:heat:6>, [
   [nb,nb,nb],
   [nb,<minecraft:fire_charge>,nb],
   [nb,nb,nb]]);
+
 recipes.remove(<skyresources:quickdropper>);
 recipes.addShaped(<skyresources:quickdropper>, [
   [rstone, rstone, rstone],
   [rstone, <minecraft:dropper>, rstone],
   [rstone, null, rstone]]);
+
 recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
   [rstone, null, rstone],
   [rstone, <minecraft:chest>, rstone],
   [null, rstone, null]]);
+
 recipes.remove(<skyresources:combustioncollector>);
 recipes.addShaped(<skyresources:combustioncollector>, [
   [rstone, rstone, rstone],
   [rstone, <minecraft:hopper>, rstone],
   [rstone, rstone, rstone]]);
+
 recipes.remove(<skyresources:fluiddropper>);
 recipes.addShaped(<skyresources:fluiddropper>, [
   [pstone, pstone, pstone],
   [pstone, <skyresources:waterextractor>,pstone],
   [pstone, null, pstone]]);
+
 recipes.remove(<skyresources:waterextractor>);
 recipes.addShaped(<skyresources:waterextractor>, [
   [null, pwood, null],
   [pwood, pwood, pwood],
   [pwood, null, null]]);
+
 recipes.remove(<minecraft:dropper>);
 recipes.addShaped(<minecraft:dropper>, [
   [pstone, pstone, pstone],
   [pstone, null, pstone],
   [pstone, null, pstone]]);
 
-recipes.remove(<skyresources:rockcleaner>);
-
 recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null],
   [pstone, <ore:gearWood>, pstone],
   [null, pstone, null]]);
+
 recipes.addShaped(<teslacorelib:gear_stone>, [
   [null, pstone, null],
   [pstone, <immersiveengineering:tool>, pstone],
   [null, pstone, null]]);
+
+recipes.remove(<skyresources:rockcleaner>);
+
+recipes.remove(<darkutils:trap_move>);
+recipes.addShaped(<darkutils:trap_move>, [
+  [null, null, null],
+  [rstone, <ore:slimeball>, rstone],
+  [<ore:stone>, <minecraft:sugar>, <ore:stone>]]);
+
+recipes.addShaped(<silentgems:fluffypuffseeds>, [
+  [null, <minecraft:feather>, null],
+  [<minecraft:feather>, <minecraft:wheat_seeds>, <minecraft:feather>],
+  [null, <minecraft:feather>, null]]);
+
+
 
 // Grout
 recipes.remove(<tconstruct:soil>);
