@@ -324,25 +324,12 @@ mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:3>,
 mods.tconstruct.Casting.addTableRecipe(<skyresources:alchemyitemcomponent:4>, 
   <skyresources:alchemyitemcomponent:7>, <liquid:lava>, 125, true);
 
-
-mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [<skyresources:alchemyitemcomponent:7>, <skyresources:alchemyitemcomponent:4>], 4.50);
+mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, 
+  [<skyresources:alchemyitemcomponent:7>, <skyresources:alchemyitemcomponent:4>], 4.50);
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
-recipes.remove(<skyresources:lifeinjector>);
-recipes.addShaped(<skyresources:lifeinjector>, [
-  [null, <skyresources:alchemicalinfusionstone>, null],
-  [null, log, null],
-  [log, log, log]]);
-mods.skyresources.infusion.removeRecipe(<skyresources:itemhealthgem>);
-mods.skyresources.infusion.addRecipe(<skyresources:itemhealthgem>, <skyresources:alchemyitemcomponent:10>, <minecraft:leaves:*>, 15);
 
 furnace.addRecipe(<minecraft:netherrack>, <skyresources:techitemcomponent:3>);
 mods.skyresources.infusion.addRecipe(<skyresources:techitemcomponent:3>*8, <skyresources:techitemcomponent>*8, <minecraft:sand:1>, 19);
-
-recipes.remove(<skyresources:diamondgrinder>);
-recipes.addShaped(<skyresources:diamondgrinder>, [
-  [<skyresources:alchemyitemcomponent:10>, null,null],
-  [null,<skyresources:alchemyitemcomponent:10>,null],
-  [null,null,stick]]);
 
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
