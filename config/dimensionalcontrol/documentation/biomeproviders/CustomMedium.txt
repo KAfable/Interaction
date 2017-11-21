@@ -9,14 +9,6 @@ examples.
 
 
 
-magnify:
-    Arguments:
-        long, Genlayer, int
-    Usage:
-        seed offset, genlayer to zoom, zoom count
-    Notes:
-        Adds zoom count GenLayerZoom layers to the provided GenLayer. This is just a helper method to quickly add multiple GenLayerZoom layers at once.
-
 setGenLayers:
     Arguments:
         Genlayer, Genlayer
@@ -24,4 +16,12 @@ setGenLayers:
         genlayer, zoomed genlayer
     Notes:
         Sets the Genlayer chain for this BiomeProvider. The second layer should be the same as the first layer, but with an added GenLayerVoronoiZoom on the end. The first one is used for the lerped terrain generation, the second is used for the detailed biome map.
+
+magnify:
+    Arguments:
+        long, Genlayer, int
+    Usage:
+        seed offset, genlayer to zoom, zoom count
+    Notes:
+        Adds zoom count GenLayerZoom layers to the provided GenLayer. This is just a helper method to quickly add multiple GenLayerZoom layers at once.
 

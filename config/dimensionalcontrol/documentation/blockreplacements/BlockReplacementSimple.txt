@@ -1,40 +1,9 @@
 This extends BlockReplacement. Therefore, any scripting methods in BlockReplacement 
 can be used for block replacements of this type. This is a basic block replacement 
-with a min and max height setting.
+with a min and max height setting. If no block to replace is set, it will replace 
+any block.
 
 
-
-setBlockToReplace:
-    Arguments:
-        String, int
-    Usage:
-        block ID, meta
-    Notes:
-        Sets the block and meta to be replaced.
-
-setBlockToReplace:
-    Arguments:
-        String
-    Usage:
-        block ID
-    Notes:
-        Sets the block to be replaced with a meta of 0.
-
-setReplacement:
-    Arguments:
-        String
-    Usage:
-        block ID
-    Notes:
-        Sets the block replacement with a meta of 0.
-
-setReplacement:
-    Arguments:
-        String, int
-    Usage:
-        block ID, meta
-    Notes:
-        Sets the block replacement and meta.
 
 setMinHeight:
     Arguments:
@@ -52,9 +21,41 @@ setMaxHeight:
     Usage:
         height
     Default Values:
-        256
+        255
     Notes:
         Sets the max height for this block replacement.
+
+setReplacement:
+    Arguments:
+        String
+    Usage:
+        block ID
+    Notes:
+        Sets the block replacement with a meta of 0.
+
+setReplacement:
+    Arguments:
+        String, int
+    Usage:
+        block ID, meta
+    Notes:
+        Sets the block replacement and meta.
+
+setBlockToReplace:
+    Arguments:
+        String
+    Usage:
+        block ID
+    Notes:
+        Sets the block to be replaced with a meta of 0.
+
+setBlockToReplace:
+    Arguments:
+        String, int
+    Usage:
+        block ID, meta
+    Notes:
+        Sets the block and meta to be replaced.
 
 addGenerationPoint:
     Arguments:

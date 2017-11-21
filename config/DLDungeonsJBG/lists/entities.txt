@@ -173,7 +173,6 @@ evilcraft:werewolf
 extrautils2:boomerang
 extrautils2:chunkdata
 fluxnetworks:flux
-forestry:butterflyge
 forestry:cart.apiary
 forestry:cart.beehouse
 fp:crawler

@@ -67,7 +67,6 @@ for i in 0 to 9 {
 var basinDisabled = [
   <minecraft:iron_block>,
   <minecraft:gold_block>,
-  <chisel:blockcobalt>,
   <tconstruct:metal:1>,
   <tconstruct:metal:2>,
   <tconstruct:metal:4>,

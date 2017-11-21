@@ -355,21 +355,7 @@ val hammerList = [
   <thermalfoundation:tool.hammer_copper:*>,
   <redstonearsenal:tool.hammer_flux:*>,
   <immersiveengineering:tool:*>,
-  <ic2:forge_hammer:*>,
-  <roots:gold_hammer:*>,
-  <roots:diamond_hammer:*>,
-  <roots:iron_hammer:*>,
-  <roots:stone_hammer:*>,
-  <roots:wood_hammer:*>,
-  <thermalfoundation:tool.hammer_diamond:*>,
-  <thermalfoundation:tool.hammer_bronze:*>,
-  <thermalfoundation:tool.hammer_constantan:*>,
-  <thermalfoundation:tool.hammer_invar:*>,
-  <thermalfoundation:tool.hammer_electrum:*>,
-  <thermalfoundation:tool.hammer_steel:*>,
-  <thermalfoundation:tool.hammer_platinum:*>,
-  <thermalfoundation:tool.hammer_iron:*>,
-  <thermalfoundation:tool.hammer_gold:*>]
+  <ic2:forge_hammer:*>,]
   as IItemStack[];
 
 hammers.addItems(hammerList);
@@ -410,20 +396,6 @@ recipes.removeShaped(<projecte:item.pe_philosophers_stone>);
 var peBags = <projecte:item.pe_alchemical_bag:*>; //Reundant with Iron Backpacks - might re-add later
 recipes.removeShaped(peBags);
 
-// Iron Backpacks
-var ibpb = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}});
-var ibpi =  <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:iron", spec: "STORAGE"}});
-var ibpi2 = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:iron", spec: "UPGRADE"}});
-var ibpg = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:gold", spec: "STORAGE"}});
-var ibpg2 = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:gold", spec: "UPGRADE"}});
-var ibpd = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:diamond", spec: "STORAGE"}});
-var ibpd2 = <ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:diamond", spec: "UPGRADE"}});
-
-recipes.removeShaped(<actuallyadditions:item_bag>);
-recipes.addShaped(<actuallyadditions:item_bag>, [
-  [<minecraft:string>,<minecraft:leather>,<minecraft:string>],
-  [<minecraft:string>, <ore:gearWood>,<minecraft:string>],
-  [<minecraft:leather>, ibpb, <minecraft:leather>]]);
 
 ////////////////////////////
 //Silent's Gems and Strainer

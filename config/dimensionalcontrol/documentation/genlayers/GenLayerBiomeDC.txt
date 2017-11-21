@@ -11,6 +11,14 @@ Constructor:
     Notes:
         Constructs the layer with its seed and parent layer.
 
+setSpecialBiome:
+    Arguments:
+        String, Non_Null_Biome_ID
+    Usage:
+        biome type, biome ID
+    Notes:
+        Sets the special biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+
 addBiome:
     Arguments:
         String, Non_Null_Biome_ID, int
@@ -51,11 +59,15 @@ setSpecialVariantBiome:
     Notes:
         Sets the special variant biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
 
-setSpecialBiome:
+fillWithVanillaBiomes:
     Arguments:
-        String, Non_Null_Biome_ID
+        String
     Usage:
-        biome type, biome ID
+        biome type
     Notes:
-        Sets the special biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+        Fills the BiomeEntry list for the provided type with the entries it would contain in vanilla. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+
+fillWithVanillaBiomes:
+    Notes:
+        Fills all BiomeEntry lists with the entries they would contain in vanilla.
 

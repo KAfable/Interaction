@@ -15,10 +15,35 @@ var baxeRemoved = [
 	<tp:obsidian_battle>,
 	<tp:wooden_battle>
 	] as IItemStack[];
-
 for i in baxeRemoved {
 	recipes.remove(i);}
 
+//Stackable Regen Potions
 recipes.remove(<tp:med_kit>);
 recipes.addShapeless(<tp:med_kit>, [<minecraft:potion>.withTag({Potion: "minecraft:regeneration"})]);
+
+//Flint Armor
+recipes.remove(<tp:flint_helmet>);
+recipes.addShaped(<tp:flint_helmet>, [
+	[null, <minecraft:flint>, null],
+	[<minecraft:flint>, <silentgems:armorframe>, <minecraft:flint>],
+	[null, <minecraft:flint>, null]]);
+
+recipes.remove(<tp:flint_chestplate>);
+recipes.addShaped(<tp:flint_chestplate>, [
+	[null, <minecraft:flint>, null],
+	[<minecraft:flint>, <silentgems:armorframe:1>, <minecraft:flint>],
+	[null, <minecraft:flint>, null]]);
+
+recipes.remove(<tp:flint_leggings>);
+recipes.addShaped(<tp:flint_leggings>, [
+	[null, <minecraft:flint>, null],
+	[<minecraft:flint>, <silentgems:armorframe:2>, <minecraft:flint>],
+	[null, <minecraft:flint>, null]]);
+
+recipes.remove(<tp:flint_boots>);
+recipes.addShaped(<tp:flint_boots>, [
+	[null, <minecraft:flint>, null],
+	[<minecraft:flint>, <silentgems:armorframe:3>, <minecraft:flint>],
+	[null, <minecraft:flint>, null]]);
 

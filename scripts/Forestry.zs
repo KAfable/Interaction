@@ -12,36 +12,36 @@ var QAC = <skyresources:baseitemcomponent:6>;
 recipes.remove(<minecraft:minecart>);
 recipes.remove(<forestry:sturdy_machine>);
 recipes.addShaped(<minecraft:minecart>, [
-[<ore:plateIron>, null, <ore:plateIron>],
-[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]
-]);
+	[<ore:plateIron>, null, <ore:plateIron>],
+	[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]
+	]);
 recipes.addShaped(<forestry:sturdy_machine>, [
-[<ore:plateBrass>,<ore:plateBrass>,<ore:plateBrass>],
-[<ore:plateBrass>,<minecraft:minecart>,<ore:plateBrass>],
-[<ore:plateBrass>,<ore:plateBrass>,<ore:plateBrass>]
-]);
+	[<ore:plateBrass>,<ore:plateBrass>,<ore:plateBrass>],
+	[<ore:plateBrass>,<minecraft:minecart>,<ore:plateBrass>],
+	[<ore:plateBrass>,<ore:plateBrass>,<ore:plateBrass>]
+	]);
 recipes.remove(<forestry:carpenter>);
 recipes.addShaped(<forestry:carpenter>, [
-[<ore:plateBronze>, <ore:glass>, <ore:plateBronze>],
-[<ore:plateBronze>, <forestry:sturdy_machine>, <ore:plateBronze>],
-[<ore:plateBronze>, <skyresources:combustionheater:12>, <ore:plateBronze>]
-]);
+	[<ore:plateBronze>, <ore:glass>, <ore:plateBronze>],
+	[<ore:plateBronze>, <forestry:sturdy_machine>, <ore:plateBronze>],
+	[<ore:plateBronze>, <skyresources:combustionheater:12>, <ore:plateBronze>]
+	]);
 
 ///////////////////////
 //Thermionic Fabricator
 ///////////////////////
 recipes.remove(<forestry:fabricator>);
 recipes.addShaped(<forestry:fabricator>, [
-[<ore:plateGold>,<forestry:chipsets:1>,<ore:plateGold>],
-[<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
-[<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]
-]);
-recipes.remove(<environmentaltech:diode>);
+	[<ore:plateGold>,<forestry:chipsets:1>,<ore:plateGold>],
+	[<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
+	[<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]
+	]);
+/*recipes.remove(<environmentaltech:diode>);
 tf.addCast(<environmentaltech:diode>*4,[
-[null,<skyresources:baseitemcomponent:3>,null],
-[<skyresources:baseitemcomponent:3>,<minecraft:redstone>,<skyresources:baseitemcomponent:3>],
-[<skyresources:baseitemcomponent:3>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<skyresources:baseitemcomponent:3>]
-],<liquid:glass>*500);
+	[null,<skyresources:baseitemcomponent:3>,null],
+	[<skyresources:baseitemcomponent:3>,<minecraft:redstone>,<skyresources:baseitemcomponent:3>],
+	[<skyresources:baseitemcomponent:3>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<skyresources:baseitemcomponent:3>]
+	],<liquid:glass>*500);*/
 
 ////////////////////
 //Carpenter Circuits 

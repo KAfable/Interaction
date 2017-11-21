@@ -123,7 +123,7 @@ for item in energyDisabled{
 ////////////////////
 //Environmental Tech
 ////////////////////
-var etDisabled = [
+/*var etDisabled = [
   <environmentaltech:lightning_rod>,
   <environmentaltech:lightning_rod_insulated>,
   <environmentaltech:void_ore_miner_cont_1>,
@@ -136,7 +136,7 @@ var etDisabled = [
   as IItemStack[];
 
 for item in etDisabled{
-  mods.jei.JEI.removeAndHide(item);}
+  mods.jei.JEI.removeAndHide(item);}*/
 
 /////////
 // Flight
@@ -153,20 +153,8 @@ for item in flightDisabled{
 // Forestry
 ///////////
 var fDisabled = [
-  <forestry:apiary>,
-  <forestry:miner_bag>,
-  <forestry:miner_bag_t2>,
-  <forestry:adventurer_bag>,
-  <forestry:adventurer_bag_t2>,
-  <forestry:builder_bag>,
-  <forestry:builder_bag_t2>,
-  <forestry:hunter_bag>,
-  <forestry:hunter_bag_t2>,
-  <forestry:forester_bag>,
-  <forestry:forester_bag_t2>,
-  <forestry:digger_bag>,
-  <forestry:digger_bag_t2>]
-  as IItemStack[];
+  <forestry:apiary>
+  ]as IItemStack[];
 
 for item in fDisabled{
     mods.jei.JEI.removeAndHide(item);}
@@ -418,8 +406,6 @@ for item in rsDisable {
 ///////
 
 var seedRemoved = [
-  <natura:overworld_seeds>,
-  <natura:overworld_seeds:1>,
   <extrautils2:redorchid>,
   <actuallyadditions:item_rice_seed>,
   <actuallyadditions:item_flax_seed>]

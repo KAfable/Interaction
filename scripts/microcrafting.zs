@@ -48,7 +48,7 @@ recipes.addShaped(<advgenerators:iron_tubing>*3, [
 [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]
 ]);
 
-recipes.addShapeless(emitter, [control, <environmentaltech:diode>]);
+//recipes.addShapeless(emitter, [control, <environmentaltech:diode>]);
 recipes.addShaped(motor, [
 [magnet,<ore:stickIron>,magnet],
 [magnet,<ic2:crafting:5>,magnet],
@@ -81,8 +81,9 @@ recipes.addShaped(valve, [
 [<advgenerators:iron_tubing>, <ore:plateIron>, null]
 ]);
 recipes.remove(screen);
-recipes.addShaped(screen, [
-[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>],
-[<environmentaltech:diode>,control,<environmentaltech:diode>],
-[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>]
-]);
+/*recipes.addShaped(screen, [
+	[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>],
+	[<environmentaltech:diode>,control,<environmentaltech:diode>],
+	[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>]
+	]);
+*/

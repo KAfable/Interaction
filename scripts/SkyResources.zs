@@ -2,6 +2,12 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+var stoneReinforced = <contenttweaker:material_part:32>;
+
+//////////////////////////
+// Removal of Excess Tiers
+//////////////////////////
+
 val skyRemoved = [
 	<skyresources:dirtfurnace>,
 	<skyresources:combustionheater:2>,
@@ -32,50 +38,37 @@ val skyRemoved = [
 	<skyresources:heat:8>,
 	<skyresources:heat:9>,
 	<skyresources:heat:11>,
-	<skyresources:alchemy:1>,
 	<skyresources:alchemy:2>,
 	<skyresources:alchemy:4>,
 	<skyresources:alchemy:5>,
 	<skyresources:alchemy:7>,
 	<skyresources:alchemy:8>,
 	<skyresources:alchemy:9>,
-	<skyresources:alchemy:10>,
 	<skyresources:alchemy:11>,
-	<skyresources:alchemy>
+	<skyresources:wildlifeattractor>
 	] as IItemStack[];
+for item in skyRemoved { mods.jei.JEI.removeAndHide(item);}
 
-for item in skyRemoved {
-	mods.jei.JEI.removeAndHide(item);
-}
-
-<skyresources:combustionheater:3>.displayName = "Reinforced Stone Combustion Heater";
-<skyresources:combustionheater:12>.displayName = "Reinforced Putty Combusttion Heater";
-
-<skyresources:heatprovider:3>.displayName = "Reinforced Stone Heat Provider";
-<skyresources:heatprovider:12>.displayName = "Reinforced Putty Heat Provider";
-
-<skyresources:casing:3>.displayName = "Reinforced Stone Casing";
-<skyresources:casing:12>.displayName = "Reinforced Putty Casing";
-
-mods.jei.JEI.removeAndHide(<skyresources:condenser:*>);
-
-<skyresources:heat:3>.displayName = "Reinforced Stone Heat Component";
-<skyresources:heat:12>.displayName = "Reinforced Putty Heat Component";
-
-<skyresources:alchemy:3>.displayName = "Reinforced Stone Alchemy Component";
-<skyresources:alchemy:12>.displayName = "Reinforced Putty Alchemy Component";
-
-<skyresources:darkmatterblock>.displayName = "Block of Putty";
-<skyresources:baseitemcomponent:3>.displayName = "Reinforced Putty";
+//Can be used later in the higher ore multiplication process
+mods.jei.JEI.removeAndHide(<skyresources:orealchdust:*>);
+val oreAlcDust = <skyresources:orealchdust>.definition;
+for item in 0 to 25 { mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(item));}
 
 var gems = <skyresources:dirtygem>.definition;
 for i in 0 to 43 {
   mods.skyresources.rockgrinder.removeRecipe(gems.makeStack(i));
-}
+  mods.jei.JEI.removeAndHide(gems.makeStack(i));}
 
-mods.skyresources.rockgrinder.addRecipe(<minecraft:quartz>, <minecraft:netherrack>, 0.25);
-
+////////////////////
+// Cauldron Cleaning
+/////////////////////
 val cauldronRemoved = [
+	<actuallyadditions:item_misc:5>,
+	<bigreactors:dustmetals>,
+	<draconicevolution:draconium_dust>,
+	<evilcraft:dark_gem>,
+	<fp:dust:12044>,
+	<fp:dust:14186>,
 	<immersiveengineering:metal:9>,
 	<immersiveengineering:metal:10>,
 	<immersiveengineering:metal:11>,
@@ -91,35 +84,31 @@ val cauldronRemoved = [
 	<ic2:dust:11>,	// Lithium
 	<ic2:dust:14>,
 	<ic2:dust:17>,
-	<thermalfoundation:material:68>,
-	<thermalfoundation:material:69>,
-	<thermalfoundation:material:70>,
-	<techreborn:dust:59>,
-	<fp:dust:12044>,
-	<fp:dust:14186>,
 	<mekanism:dust:2>,
+	<minecraft:emerald>,
+	<minecraft:diamond>,
+	<minecraft:quartz>,
+	<minecraft:redstone>,
+	<minecraft:glowstone_dust>,
+	<minecraft:dye:4>,
+	<techreborn:dust:59>,
 	<techreborn:dust:54>,
 	<techreborn:dust:55>,
 	<techreborn:dust:10>,
 	<techreborn:dust:30>,
-	<thermalfoundation:material:71>,
-	<thermalfoundation:material:72>,
-	<minecraft:emerald>,
-	<minecraft:diamond>,
 	<techreborn:gem>,
 	<techreborn:gem:1>,
 	<techreborn:gem:2>,
 	<techreborn:gem:3>,
 	<techreborn:gem:4>,
+	<thermalfoundation:material:68>,
+	<thermalfoundation:material:69>,
+	<thermalfoundation:material:70>,
+	<thermalfoundation:material:71>,
+	<thermalfoundation:material:72>,
 	<silentgems:craftingmaterial>,
 	<silentgems:craftingmaterial:4>,
-	<skyresources:dirtygem:39>,
-	<evilcraft:dark_gem>,
-	<minecraft:quartz>,
-	<minecraft:dye:4>,
-	<actuallyadditions:item_misc:5>,
-	<bigreactors:dustmetals>,
-	<draconicevolution:draconium_dust>
+	<skyresources:dirtygem:39>
 	] as IItemStack[];
 
 for i in cauldronRemoved {
@@ -129,16 +118,102 @@ val cauldronGemRemoved = <silentgems:gem>.definition;
 for item in 0 to 32 {
 	mods.skyresources.cauldronclean.removeRecipe(cauldronGemRemoved.makeStack(item));}
 
-mods.skyresources.combustion.removeRecipe(<minecraft:blaze_powder>);
-mods.skyresources.combustion.removeRecipe(<minecraft:gunpowder>);
-mods.skyresources.combustion.removeRecipe(<minecraft:diamond>);
-mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
-mods.skyresources.combustion.removeRecipe(<minecraft:netherrack>);
-mods.skyresources.combustion.removeRecipe(<skyresources:baseitemcomponent:3>);
-mods.skyresources.combustion.removeRecipe(<minecraft:glowstone_dust>);
+////////////
+//Combustion
+////////////
+recipes.addShaped(<skyresources:quickdropper>, [
+  [stoneReinforced, stoneReinforced, stoneReinforced],
+  [stoneReinforced, <minecraft:dropper>, stoneReinforced],
+  [stoneReinforced, null, stoneReinforced]]);
+recipes.addShaped(<skyresources:combustioncollector>, [
+  [stoneReinforced, stoneReinforced, stoneReinforced],
+  [stoneReinforced, <minecraft:hopper>, stoneReinforced],
+  [stoneReinforced, stoneReinforced, stoneReinforced]]);
 
-mods.jei.JEI.removeAndHide(<skyresources:orealchdust:*>);
-val oreAlcDust = <skyresources:orealchdust>.definition;
-for item in 0 to 22 {
-	mods.skyresources.fusion.removeRecipe(oreAlcDust.makeStack(item));
-}
+mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 400);
+
+mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
+mods.skyresources.combustion.removeRecipe(<minecraft:snowball>);
+
+///////////
+//Condenser
+///////////
+
+
+
+//////////
+//Crucible 
+//////////
+recipes.remove(<skyresources:crucibleinserter>);
+recipes.addShaped(<skyresources:crucibleinserter>, [
+  [stoneReinforced, <minecraft:dropper>, stoneReinforced],
+  [stoneReinforced, null, stoneReinforced],
+  [stoneReinforced, null, stoneReinforced]]);
+
+mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
+
+/////////
+//Freezer
+/////////
+mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallgrass:1>*10, 800);
+
+////////
+//Fusion
+////////
+mods.skyresources.fusion.addRecipe(<harvestcraft:windygarden>, [<minecraft:tallgrass:1>, <minecraft:feather>], 0.75);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>,
+  [<minecraft:ender_eye>,<minecraft:log>,<minecraft:yellow_flower>,<minecraft:red_flower>,<minecraft:sapling>,<minecraft:dirt>,<minecraft:grass>],20.00);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>,
+  [<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, <minecraft:clay>, stoneReinforced, <skyresources:alchemyitemcomponent:7>, <minecraft:torch>],20.00);
+
+///////////
+//Extractor
+///////////
+mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>, <harvestcraft:soggygarden>);
+mods.skyresources.waterextractor.insert.addRecipe(<harvestcraft:soggygarden>, <minecraft:tallgrass:1>, 1000);
+
+//////////
+//Infusion
+//////////
+var cow_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
+var chicken_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
+var sheep_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:sheep"}});
+var pig_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:pig"}});
+var wool = <minecraft:wool>;
+
+mods.skyresources.infusion.addRecipe(cow_egg, <minecraft:wheat>*10, <minecraft:farmland>, 19);
+mods.skyresources.infusion.addRecipe(chicken_egg, <harvestcraft:fruitbaititem>*10, <minecraft:farmland>, 19);
+mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10, wool, 19);
+mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
+mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
+
+///////////////
+//Rock Grinder 
+///////////////
+//mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
+recipes.remove(<skyresources:irongrinder>);
+<skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
+recipes.addShaped(<skyresources:irongrinder>, [
+  [stoneReinforced, null, null],
+  [null, stoneReinforced, null],
+  [null, null, <minecraft:stick>]]);
+
+
+//////////////////
+//Reinforced Stone
+//////////////////
+// Replacing Iron tier sky resources with reinforced stone
+recipes.removeShaped(<skyresources:casing:3>);
+recipes.addShaped(<skyresources:casing:3>, [
+  [stoneReinforced, stoneReinforced, stoneReinforced],
+  [stoneReinforced, <ore:gearReinforcedStone>, stoneReinforced],
+  [stoneReinforced, stoneReinforced, stoneReinforced]]);
+
+////////////
+// Renamings
+////////////
+<skyresources:combustionheater:3>.displayName = "Reinforced Stone Combustion Heater";
+<skyresources:heatprovider:3>.displayName = "Reinforced Stone Heat Provider";
+<skyresources:casing:3>.displayName = "Reinforced Stone Casing";
+<skyresources:heat:3>.displayName = "Reinforced Stone Heat Component";
+<skyresources:alchemy:3>.displayName = "Reinforced Stone Alchemy Component";
