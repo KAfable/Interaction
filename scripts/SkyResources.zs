@@ -165,6 +165,8 @@ mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallg
 ////////
 //mods.skyresources.fusion.addRecipe(ItemStack output, ItemStack[] input, float catalystUsedPerCraft);
 //mods.skyresources.fusion.removeRecipe(ItemStack output);
+mods.skyresources.fusion.removeRecipe(<minecraft:dirt>);
+
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
