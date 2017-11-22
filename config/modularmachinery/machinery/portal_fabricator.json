@@ -1,14 +1,14 @@
 {
   "registryname": "portal_fabricator",
   "localizedname": "Portal Fabricator",
-  "color": "000000",
+  "color": "474c4f",
   "parts": [
         {
             "x": 0,
             "y": 0,
             "z": 0,
             "elements": [
-                "modularmachinery:blockcontroller@1"
+                "modularmachinery:blockcontroller"
             ]
         },
         {
@@ -32,7 +32,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -104,7 +104,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockoutputbus@0"
+                "modularmachinery:blockoutputbus"
             ]
         },
         {
@@ -152,7 +152,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -176,7 +176,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -192,7 +192,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -200,7 +200,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -208,7 +208,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -240,7 +240,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -384,7 +384,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockinputbus@0"
+                "modularmachinery:blockinputbus"
             ]
         },
         {
@@ -392,7 +392,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -408,7 +408,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -432,7 +432,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "chisel:factory@8"
+                "botania:livingrock@1"
             ]
         },
         {
@@ -448,7 +448,7 @@
             "y": -1,
             "z": 4,
             "elements": [
-                "modularmachinery:blockfluidinputhatch@0"
+                "modularmachinery:blockfluidinputhatch"
             ]
         },
         {
@@ -456,7 +456,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockinputbus@0"
+                "modularmachinery:blockinputbus"
             ]
         },
         {

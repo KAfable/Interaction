@@ -12,30 +12,6 @@ Constructor:
     Notes:
         Constructs the layer with the seed and parent.
 
-setSpecialBiome:
-    Arguments:
-        Non_Null_Biome_ID, Non_Null_Biome_ID
-    Usage:
-        heat ID, biome ID
-    Notes:
-        Sets the special biome for the provided heat id. What heat ids are available depends on the GenLayer used before this.
-
-addBiome:
-    Arguments:
-        Non_Null_Biome_ID, Non_Null_Biome_ID, int
-    Usage:
-        heat ID, biome ID, weight
-    Notes:
-        Adds the provided biome id to the provided heat id with the provided weight. What heat ids are available depends on the GenLayer used before this.
-
-addBiome:
-    Arguments:
-        Non_Null_Biome_ID, Non_Null_Biome_ID
-    Usage:
-        heat ID, biome ID
-    Notes:
-        Adds the provided biome id to the provided heat id with a weight of 1. What heat ids are available depends on the GenLayer used before this
-
 setSpecialVariantChance:
     Arguments:
         Non_Null_Biome_ID, int
@@ -59,4 +35,28 @@ setSpecialVariantBiome:
         heat ID, biome ID
     Notes:
         Sets the special variant biome for the provided heat id. What heat ids are available depends on the GenLayer used before this.
+
+addBiome:
+    Arguments:
+        Non_Null_Biome_ID, Non_Null_Biome_ID, int
+    Usage:
+        heat ID, biome ID, weight
+    Notes:
+        Adds the provided biome id to the provided heat id with the provided weight. What heat ids are available depends on the GenLayer used before this.
+
+addBiome:
+    Arguments:
+        Non_Null_Biome_ID, Non_Null_Biome_ID
+    Usage:
+        heat ID, biome ID
+    Notes:
+        Adds the provided biome id to the provided heat id with a weight of 1. What heat ids are available depends on the GenLayer used before this
+
+setSpecialBiome:
+    Arguments:
+        Non_Null_Biome_ID, Non_Null_Biome_ID
+    Usage:
+        heat ID, biome ID
+    Notes:
+        Sets the special biome for the provided heat id. What heat ids are available depends on the GenLayer used before this.
 

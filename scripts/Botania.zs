@@ -11,3 +11,6 @@ recipes.addShapeless(<botania:fertilizer>*2, [
 	<minecraft:dye:15>, <ore:botaniaDyes>, <ore:botaniaDyes>, <plants2:plantball>, <plants2:plantball>]);
 recipes.addShapeless(<botania:fertilizer>, [
 	<minecraft:dye:15>, <minecraft:dye:1>, <minecraft:dye:1>, <minecraft:dye:11>, <minecraft:dye:11>]);
+
+var botPlants = <botania:flower>.definition;
+for i in 0 to 16 {<ore:mysticPlant>.add(botPlants.makeStack(i));}

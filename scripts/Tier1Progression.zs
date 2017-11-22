@@ -34,10 +34,7 @@ recipes.addShapeless(<minecraft:gunpowder>*4, [<roots:stone_hammer>.anyDamage(),
   <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>,
   <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]);
 
-// Botania
-recipes.addShapeless(<xtones:zome:12>, [pure, <skyresources:darkmatterblock>]);
 
-// Polisher
 recipes.addShaped(<minecraft:bucket>, [
   [rstone,<immersiveengineering:tool>,rstone],
   [null,rstone,null]]);
@@ -51,8 +48,9 @@ recipes.addShaped(<minecraft:cauldron>, [
   [rstone, null, rstone],
   [rstone, rstone, rstone]]);
 
-recipes.addShaped(<plants2:brewing_cauldron>,[
-  [<ore:plant>, <ore:plant>, <ore:plant>],
+recipes.remove(<plants2:brewing_cauldron>);
+recipes.addShaped(<plants2:brewing_cauldron>, [
+  [<ore:mysticPlant>, <ore:mysticPlant>, <ore:mysticPlant>],
   [<skyresources:alchemyitemcomponent:2>, <minecraft:cauldron>, <skyresources:alchemyitemcomponent:2>],
   [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 
@@ -66,12 +64,12 @@ recipes.addShaped(<minecraft:hopper>, [
   [rstone, <minecraft:chest>, rstone],
   [null, rstone, null]]);
 
-
 recipes.remove(<darkutils:trap_move>);
 recipes.addShaped(<darkutils:trap_move>, [
   [null, null, null],
   [rstone, <ore:slimeball>, rstone],
   [<ore:stone>, <minecraft:sugar>, <ore:stone>]]);
+
 
 // Smeltery
 recipes.remove(<tconstruct:soil>);
@@ -107,26 +105,35 @@ mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000);
-mods.tconstruct.Casting.addBasinRecipe(<xtones:zeta:12>*3, <skyresources:casing:6>, <liquid:putty>, 144);
-<xtones:zeta:12>.displayName = "Alchemical Baseplate";
-mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000);
 
-//Setting up for Portal Fabricator
-<skyresources:darkmatterblock>.displayName = "Base Alchemical Beacon (Inactive)";
-<xtones:zome:12>.displayName = "Base Alchemical Beacon (Active)";
+///////////////////
+//Portal Fabricator
+///////////////////
+<xtones:zome:15>.displayName = "Base Alchemical Beacon";
+mods.skyresources.fusion.addRecipe(<xtones:zome:12>, [<minecraft:obsidian>], 0.75);
+recipes.addShapeless(<xtones:zome:12>, [pure, <xtones:zome:15>]);
+
+<xtones:zeta:12>.displayName = "Alchemical Baseplate";
+mods.skyresources.freezer.addRecipe(<xtones:zeta:12>, <embers:block_caminite_brick>, 1000);
+
 recipes.remove(<minecraft:enchanting_table>);
 recipes.addShaped(<minecraft:enchanting_table>, [
-  [null,<minecraft:book>,null],
-  [<skyresources:alchemyitemcomponent:10>,<minecraft:obsidian>,<skyresources:alchemyitemcomponent:10>],
-  [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
+  [null ,<minecraft:book>, null],
+  [<skyresources:alchemyitemcomponent:10>, <minecraft:obsidian>, <skyresources:alchemyitemcomponent:10>],
+  [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+
 <chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
+mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000);
+
+<chisel:factory:8>.displayName = "Basic Circuitry";
 recipes.remove(<chisel:factory>);
+
 recipes.remove(<minecraft:tripwire_hook>);
 recipes.addShaped(<minecraft:tripwire_hook>, [
   [null, rstone,null],
   [null,<ore:stickWood>,null],
   [null,<ore:plankWood>,null]]);
-<chisel:factory:8>.displayName = "Basic Circuitry";
+
 
 //addDescription(IItemStack item, string[] desc);
 //each string inside the array will have it's own line(s)
@@ -137,7 +144,7 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "1 Item Output",
     "1 Fluid Input Hatch",
     "24 Alchemical Baseplate",
-    "10 Basic Circuitry",
+    "10 Livingrock Bricks",
     "12 Reinforced Lava Concentrator",
     "4 Base Alchemical Beacon",
     "4 Buckets of Lava",

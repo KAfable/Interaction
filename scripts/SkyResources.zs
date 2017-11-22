@@ -133,7 +133,10 @@ recipes.addShaped(<skyresources:combustioncollector>, [
 mods.skyresources.combustion.addRecipe(<harvestcraft:shadedgarden>, [<minecraft:coal:1>*4,<harvestcraft:frostgarden>], 400);
 
 mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
+mods.skyresources.combustion.removeRecipe(<embers:shard_ember>);
+mods.skyresources.combustion.removeRecipe(<armorplus:lava_crystal>);
 mods.skyresources.combustion.removeRecipe(<minecraft:snowball>);
+
 
 ///////////
 //Condenser
@@ -160,11 +163,26 @@ mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallg
 ////////
 //Fusion
 ////////
-mods.skyresources.fusion.addRecipe(<harvestcraft:windygarden>, [<minecraft:tallgrass:1>, <minecraft:feather>], 0.75);
-mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>,
-  [<minecraft:ender_eye>,<minecraft:log>,<minecraft:yellow_flower>,<minecraft:red_flower>,<minecraft:sapling>,<minecraft:dirt>,<minecraft:grass>],20.00);
-mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>,
-  [<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, <minecraft:clay>, stoneReinforced, <skyresources:alchemyitemcomponent:7>, <minecraft:torch>],20.00);
+//mods.skyresources.fusion.addRecipe(ItemStack output, ItemStack[] input, float catalystUsedPerCraft);
+//mods.skyresources.fusion.removeRecipe(ItemStack output);
+<skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone";
+mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
+mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
+	<contenttweaker:material_part:32>, <minecraft:blaze_powder>*3], 0.20);
+
+mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
+mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [
+	<minecraft:coal_block>*6], 3.00);
+
+mods.skyresources.fusion.addRecipe(<harvestcraft:windygarden>, [<minecraft:tallgrass:1>*10, <minecraft:feather>], 0.75);
+
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>, [
+	<minecraft:ender_eye>, <minecraft:log>, <minecraft:yellow_flower>, 
+	<minecraft:red_flower>, <minecraft:sapling>, <minecraft:dirt>, <minecraft:grass>], 5.00);
+mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>, [
+	<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, 
+	<minecraft:clay>, stoneReinforced, <skyresources:alchemyitemcomponent:7>, 
+	<minecraft:torch>], 5.00);
 
 ///////////
 //Extractor
@@ -186,6 +204,8 @@ mods.skyresources.infusion.addRecipe(chicken_egg, <harvestcraft:fruitbaititem>*1
 mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10, wool, 19);
 mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
 mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
+mods.skyresources.infusion.addRecipe(<natura:nether_sapling>, <minecraft:sapling>, <tp:bone_block>, 8);
+
 
 ///////////////
 //Rock Grinder 
