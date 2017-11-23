@@ -8,23 +8,8 @@ val rstone = <contenttweaker:material_part:32>;
 val altar = <botania:altar>.giveBack();
 val pure = <botania:specialflower>.withTag({type: "puredaisy"}).giveBack();
 
-recipes.remove(<minecraft:furnace>);
-recipes.addShaped(<minecraft:furnace>, [
-  [<tconstruct:materials:2>, <tconstruct:materials:2>, <tconstruct:materials:2>],
-  [<tconstruct:materials:2>, null, <tconstruct:materials:2>],
-  [<tconstruct:materials:2>, <tconstruct:materials:2>, <tconstruct:materials:2>]]);
-recipes.addShaped(<minecraft:furnace>, [
-  [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
-  [<ore:cobblestone>, null, <ore:cobblestone>],
-  [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
-
-recipes.addShaped(<minecraft:dirt>*3, [
-  [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>],
-  [<ore:bark>, <minecraft:dirt>, <ore:bark>],
-  [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>]]);
-
 //Non-mob farm Bonemeal
-mods.tconstruct.Drying.addRecipe(<skyresources:baseitemcomponent>, <minecraft:dye:15>, 1200);
+mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 1200);
 
 //Non-mob farm Gunpowder
 recipes.addShapeless(<minecraft:gunpowder>*4, [<roots:wood_hammer>.anyDamage(), 
@@ -43,6 +28,37 @@ recipes.addShaped(<minecraft:bucket>, [
 recipes.remove(<roots:stone_knife>);
 
 //Crafting Recipes
+
+recipes.addShaped(<sgextraparts:polisher>, [
+  [<ore:logWood>, <ore:logWood>, null],
+  [<ore:stick>, <ore:stick>, null]]);
+
+recipes.remove(<minecraft:furnace>);
+recipes.addShaped(<minecraft:furnace>, [
+  [<tconstruct:materials:2>, <tconstruct:materials:2>, <tconstruct:materials:2>],
+  [<tconstruct:materials:2>, null, <tconstruct:materials:2>],
+  [<tconstruct:materials:2>, <tconstruct:materials:2>, <tconstruct:materials:2>]]);
+recipes.addShaped(<minecraft:furnace>, [
+  [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+  [<ore:cobblestone>, null, <ore:cobblestone>],
+  [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+
+recipes.addShaped(<minecraft:dirt>*3, [
+  [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>],
+  [<ore:bark>, <minecraft:dirt>, <ore:bark>],
+  [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>]]);
+
+//Wooden Gear
+recipes.addShaped(<contenttweaker:material_part:13>, [
+  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
+  [<ore:plankWood>, <roots:stone_hammer>.anyDamage(), <ore:plankWood>],
+  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]])
+
+recipes.addShaped(<botania:altar>, [
+  [<ceramics:clay_slab>, null, <ceramics:clay_slab>],
+  [null, <ceramics:clay_hard>, null],
+  [<ceramics:clay_hard>, <ceramics:clay_hard>, <ceramics:clay_hard>]]);
+
 recipes.addShaped(<minecraft:cauldron>, [
   [rstone, null, rstone],
   [rstone, null, rstone],

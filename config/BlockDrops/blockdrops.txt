@@ -9233,5 +9233,35 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "minecraft:air",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:clay_ball",
+    "meta0": 0,
+    "0chance0": 3600.0,
+    "1chance0": 3600.0,
+    "2chance0": 3600.0,
+    "3chance0": 3600.0,
+    "0pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "1pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "2pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "3pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}"
+  },
+  {
+    "name": "minecraft:air",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:clay_ball",
+    "meta0": 0,
+    "0chance0": 3600.0,
+    "1chance0": 3600.0,
+    "2chance0": 3600.0,
+    "3chance0": 3600.0,
+    "0pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "1pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "2pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}",
+    "3pair0": "{\n  \"left\": 36,\n  \"right\": 36\n}"
   }
 ]

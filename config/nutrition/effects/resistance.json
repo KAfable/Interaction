@@ -4,6 +4,6 @@
 	"amplifier": 0,
 	"minimum": 80,
 	"maximum": 100,
-	"detect": "average",
+	"detect": "all",
 	"enabled": true
 }

@@ -5,6 +5,22 @@ any block.
 
 
 
+setBlockToReplace:
+    Arguments:
+        String
+    Usage:
+        block ID
+    Notes:
+        Sets the block to be replaced with a meta of 0.
+
+setBlockToReplace:
+    Arguments:
+        String, int
+    Usage:
+        block ID, meta
+    Notes:
+        Sets the block and meta to be replaced.
+
 setMinHeight:
     Arguments:
         int
@@ -27,35 +43,19 @@ setMaxHeight:
 
 setReplacement:
     Arguments:
-        String
-    Usage:
-        block ID
-    Notes:
-        Sets the block replacement with a meta of 0.
-
-setReplacement:
-    Arguments:
         String, int
     Usage:
         block ID, meta
     Notes:
         Sets the block replacement and meta.
 
-setBlockToReplace:
+setReplacement:
     Arguments:
         String
     Usage:
         block ID
     Notes:
-        Sets the block to be replaced with a meta of 0.
-
-setBlockToReplace:
-    Arguments:
-        String, int
-    Usage:
-        block ID, meta
-    Notes:
-        Sets the block and meta to be replaced.
+        Sets the block replacement with a meta of 0.
 
 addGenerationPoint:
     Arguments:

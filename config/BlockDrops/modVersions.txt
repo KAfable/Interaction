@@ -130,7 +130,6 @@
   "controlling": "3.0.4",
   "circuits": "6.0.3",
   "calculator": "5.0.1",
-  "neid": "1.5.4.2",
   "ae2stuff": "0.7.0.4",
   "fencejumper": "1.0.1",
   "bookshelf": "2.2.498",

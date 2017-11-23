@@ -3,7 +3,8 @@
 	"potion": "minecraft:mining_fatigue",
 	"amplifier": 0,
 	"minimum": 0,
-	"maximum": 20,
-	"detect": "average",
+	"maximum": 30,
+	"detect": "any",
+	"nutrients": ["protein"],
 	"enabled": true
 }

@@ -3,7 +3,8 @@
 	"potion": "minecraft:weakness",
 	"amplifier": 0,
 	"minimum": 0,
-	"maximum": 10,
-	"detect": "average",
+	"maximum": 30,
+	"detect": "any",
+	"nutrients": ["grain"],
 	"enabled": true
 }
