@@ -1,0 +1,10 @@
+{
+	"name": "blindess",
+	"potion": "minecraft:blindness",
+	"amplifier": 0,
+	"minimum": 0,
+	"maximum": 30,
+	"detect": "any",
+	"nutrients": ["vegetable"],
+	"enabled": true
+}

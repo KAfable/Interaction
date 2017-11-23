@@ -1,0 +1,10 @@
+{
+	"name": "slowness",
+	"potion": "minecraft:slowness",
+	"amplifier": 0,
+	"minimum": 0,
+	"maximum": 30,
+	"detect": "any",
+	"nutrients": ["dairy"],
+	"enabled": true
+}
