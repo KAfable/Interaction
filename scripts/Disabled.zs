@@ -51,6 +51,17 @@ for item in armorRedundant{
   mods.jei.JEI.removeAndHide(item);}
 
 
+////////////
+//Buildcraft
+////////////
+var buildDisabled = [
+  <buildcraftcore:gear_wood>]
+  as IItemStack[];
+
+for item in buildDisabled{
+  mods.jei.JEI.removeAndHide(item);}
+
+
 ////////
 //Cyclic
 ////////
@@ -406,7 +417,6 @@ for item in rsDisable {
 ///////
 
 var seedRemoved = [
-  <extrautils2:redorchid>,
   <actuallyadditions:item_rice_seed>,
   <actuallyadditions:item_flax_seed>]
   as IIngredient[];

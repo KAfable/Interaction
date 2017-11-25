@@ -1,6 +1,6 @@
 {
-	"name": "malnutrition",
-	"potion": "nutrition:malnourished ",
+	"name": "malnourished",
+	"potion": "nutrition:malnourished",
 	"amplifier": 0,
 	"minimum": 0,
 	"maximum": 25,

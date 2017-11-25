@@ -12,23 +12,13 @@ val pure = <botania:specialflower>.withTag({type: "puredaisy"}).giveBack();
 mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 1200);
 
 //Non-mob farm Gunpowder
-recipes.addShapeless(<minecraft:gunpowder>*4, [<roots:wood_hammer>.anyDamage(), 
+recipes.addShapeless(<minecraft:gunpowder>*4, [<ore:toolHammer>.onlyDamageAtLeast(0), 
   <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, 
   <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]);
-recipes.addShapeless(<minecraft:gunpowder>*4, [<roots:stone_hammer>.anyDamage(), 
-  <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>,
-  <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]);
 
-
-recipes.addShaped(<minecraft:bucket>, [
-  [rstone,<immersiveengineering:tool>,rstone],
-  [null,rstone,null]]);
-
-// Roots 2 Knife conflicts with Grinder
-recipes.remove(<roots:stone_knife>);
-
+//////////////////
 //Crafting Recipes
-
+//////////////////
 recipes.addShaped(<sgextraparts:polisher>, [
   [<ore:logWood>, <ore:logWood>, null],
   [<ore:stick>, <ore:stick>, null]]);
@@ -48,21 +38,45 @@ recipes.addShaped(<minecraft:dirt>*3, [
   [<ore:bark>, <minecraft:dirt>, <ore:bark>],
   [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>]]);
 
+recipes.addShaped(<minecraft:bucket>, [
+  [<contenttweaker:material_part:32>, <ore:toolHammer>.onlyDamageAtLeast(0), <contenttweaker:material_part:32>],
+  [null, <contenttweaker:material_part:32>,null]]);
+
 //Wooden Gear
 recipes.addShaped(<contenttweaker:material_part:13>, [
   [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
-  [<ore:plankWood>, <roots:stone_hammer>.anyDamage(), <ore:plankWood>],
-  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]])
+  [<ore:plankWood>, <ore:toolHammer>.onlyDamageAtLeast(0), <ore:plankWood>],
+  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]]);
 
+//recipes.addShaped(<contenttweaker:material_part:13>, [
+//  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
+//  [<ore:plankWood>, <roots:stone_hammer>.anyDamage(), <ore:plankWood>],
+//  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]]);
+
+//Farming
+recipes.addShaped(<silentgems:fluffypuffseeds>, [
+  [null, <minecraft:feather>, null],
+  [<minecraft:feather>, <minecraft:wheat_seeds>,<minecraft:feather>],
+  [null, <minecraft:feather>, null]]);
+
+//Petal Apothecary
 recipes.addShaped(<botania:altar>, [
   [<ceramics:clay_slab>, null, <ceramics:clay_slab>],
   [null, <ceramics:clay_hard>, null],
   [<ceramics:clay_hard>, <ceramics:clay_hard>, <ceramics:clay_hard>]]);
+recipes.addShapeless(<minecraft:reeds> , [<botania:altar>, <minecraft:melon>, <minecraft:melon>,
+  <minecraft:melon>, <minecraft:melon>]);
 
 recipes.addShaped(<minecraft:cauldron>, [
   [rstone, null, rstone],
-  [rstone, null, rstone],
+  [rstone, <ore:toolHammer>.onlyDamageAtLeast(0), rstone],
   [rstone, rstone, rstone]]);
+
+recipes.remove(<minecraft:dropper>);
+recipes.addShaped(<minecraft:dropper>, [
+  [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+  [<ore:cobblestone>, <minecraft:lever>, <ore:cobblestone>],
+  [<ore:cobblestone>, <ore:trapdoorWood>, <ore:cobblestone>]]);
 
 recipes.remove(<plants2:brewing_cauldron>);
 recipes.addShaped(<plants2:brewing_cauldron>, [
@@ -75,10 +89,16 @@ recipes.addShaped(<itank:blocktank>, [
   [<ore:blockGlass>, <minecraft:bucket>, <ore:blockGlass>],
   [<ore:blockGlass>, <tconstruct:seared_tank:1>, <ore:blockGlass>]]);
 
+recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
-  [rstone, null, rstone],
-  [rstone, <minecraft:chest>, rstone],
-  [null, rstone, null]]);
+  [<contenttweaker:material_part:32>, null, <contenttweaker:material_part:32>],
+  [<contenttweaker:material_part:32>, <wopper:wopper>, <contenttweaker:material_part:32>],
+  [null, <contenttweaker:material_part:32>, null]]);
+
+recipes.addShaped(<minecraft:hopper>, [
+  [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
+  [<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
+  [null, <minecraft:iron_ingot>, null]]);
 
 recipes.remove(<darkutils:trap_move>);
 recipes.addShaped(<darkutils:trap_move>, [
@@ -86,11 +106,12 @@ recipes.addShaped(<darkutils:trap_move>, [
   [rstone, <ore:slimeball>, rstone],
   [<ore:stone>, <minecraft:sugar>, <ore:stone>]]);
 
-
 // Smeltery
 recipes.remove(<tconstruct:soil>);
-mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [<minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
-mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [<minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
+  <minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [
+  <minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Reinforced Stone
 mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);
@@ -100,7 +121,7 @@ mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinfo
 // Reinforced Stone Gear / Block / Ingot
 recipes.addShaped(<contenttweaker:material_part:29>, [
   [null, rstone, null],
-  [rstone, <immersiveengineering:tool>, rstone],
+  [rstone, <ore:toolHammer>.onlyDamageAtLeast(0), rstone],
   [null, rstone, null]]);
 recipes.addShaped(<contenttweaker:material_part:29>, [
   [null, rstone, null],
@@ -109,14 +130,7 @@ recipes.addShaped(<contenttweaker:material_part:29>, [
 recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:1>]);
 recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
 
-
-//Fluffy Puff Seeds
-recipes.addShaped(<silentgems:fluffypuffseeds>, [
-  [null, <minecraft:feather>, null],
-  [<minecraft:feather>, <minecraft:wheat_seeds>,<minecraft:feather>],
-  [null, <minecraft:feather>, null]]);
-
-//Tinkers Recipes
+//Casting / Alloying
 mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
@@ -126,7 +140,7 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edib
 //Portal Fabricator
 ///////////////////
 <xtones:zome:15>.displayName = "Base Alchemical Beacon";
-mods.skyresources.fusion.addRecipe(<xtones:zome:12>, [<minecraft:obsidian>], 0.75);
+mods.skyresources.fusion.addRecipe(<xtones:zome:15>, [<minecraft:obsidian>], 0.75);
 recipes.addShapeless(<xtones:zome:12>, [pure, <xtones:zome:15>]);
 
 <xtones:zeta:12>.displayName = "Alchemical Baseplate";
@@ -149,7 +163,6 @@ recipes.addShaped(<minecraft:tripwire_hook>, [
   [null, rstone,null],
   [null,<ore:stickWood>,null],
   [null,<ore:plankWood>,null]]);
-
 
 //addDescription(IItemStack item, string[] desc);
 //each string inside the array will have it's own line(s)

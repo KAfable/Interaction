@@ -384,7 +384,27 @@
 			"vanillafoodpantry:snowcone:7",
 			"vanillafoodpantry:snowcone:9",
 			"vanillafoodpantry:stewed:0",
-			"vanillafoodpantry:stewed:1"
+			"vanillafoodpantry:stewed:1",
+			"calculator:pear",
+			"calculator:fiddledewfruit",
+			"skyresources:cactusfruit",
+			"fp:erse",
+			"fp:itemfood:5",
+			"fp:itemfood:6",
+			"integrateddynamics:menril_berries",
+			"tp:cooked_apple",
+			"mysticalagriculture:inferium_apple",
+			"mysticalagriculture:prudentium_apple",
+ 			"mysticalagriculture:intermedium_apple",
+ 			"mysticalagriculture:superium_apple",
+ 			"mysticalagriculture:supremium_apple",
+ 			"harvestcraft:theatreboxitem",
+ 			"harvestcraft:bbqplatteritem",
+ 			"harvestcraft:weekendpicnicitem",
+ 			"harvestcraft:chimichangaitem",
+ 			"harvestcraft:tortillachipsitem",
+ 			"harvestcraft:chipsandsalsaitem"
+
 		]
 	}
 }

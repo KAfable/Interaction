@@ -71,9 +71,6 @@ for i, mat in tier2_list {
   blockData.addDataValue("harvestTool", "pickaxe");
   blockData.addDataValue("harvestLevel", "1");}
 
-
-
-
 ////////////////
 //Microcrafting
 ////////////////

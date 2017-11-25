@@ -1,4 +1,3 @@
-//Tier 2 Progression
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
@@ -6,6 +5,7 @@ import mods.integrateddynamics.Squeezer as sq;
 import mods.crossroads.Grindstone as gs;
 import mods.tconstruct.Casting as tc;
 
+//Tier 2 Progression
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
 var petals = <botania:petal:*>;
@@ -18,11 +18,9 @@ var brick = <minecraft:brick>;
 //////////
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped(<extrautils2:pipe>*8, [
-[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
-[<ore:glass>,<forestry:chipsets>,<ore:glass>],
-[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]
-]);
-
+  [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
+  [<ore:glass>,<forestry:chipsets>,<ore:glass>],
+  [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
 
 /////////
 //Pistons
@@ -341,31 +339,6 @@ tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:mo
 
 recipes.remove(<silentgems:craftingmaterial:25>);
 recipes.remove(<silentgems:craftingmaterial:26>);
-
-
-//Tool MicroCrafting
-//val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
-val hammers = <ore:hammerTool>;
-val hammerList = [
-  <thermalfoundation:tool.hammer_nickel:*>,
-  <thermalfoundation:tool.hammer_aluminum:*>,
-  <thermalfoundation:tool.hammer_lead:*>,
-  <thermalfoundation:tool.hammer_silver:*>,
-  <thermalfoundation:tool.hammer_tin:*>,
-  <thermalfoundation:tool.hammer_copper:*>,
-  <redstonearsenal:tool.hammer_flux:*>,
-  <immersiveengineering:tool:*>,
-  <ic2:forge_hammer:*>,]
-  as IItemStack[];
-
-hammers.addItems(hammerList);
-val endPlate = <thermalfoundation:material:359>;
-val enderium = <thermalfoundation:material:167>;
-val useHammerTool = <ore:hammerTool>.transformDamage();
-recipes.addShapeless("hammer_endplate", 
-  endPlate,
-  [useHammerTool, enderium, enderium, enderium, enderium]);
-
 
 //////////////////////////////
 //Ore Prospector - Two Recipes

@@ -1,4 +1,8 @@
+import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+// This script is for misc recipes such as ore dictionaries or those that don't belong anywhere else]
 
 print("Misc");
 
@@ -12,6 +16,7 @@ recipes.addShapeless(<minecraft:chest>, [<ore:chest>]);
 //Melons got overlooked
 <ore:listAllfruit>.add(<minecraft:melon>);
 
+//Bark Oredicting
 var myBark = <ore:bark>;
 var newBark = [
 	<roots:bark_spruce>,
@@ -22,3 +27,17 @@ var newBark = [
 	<roots:bark_oak>
 	] as IItemStack[];
 for i in newBark {myBark.add(i);}
+
+//val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
+
+// Adding hammers to ore dictionary
+val hammers = <ore:toolHammer>;
+val hammerList = [
+	<roots:stone_hammer:*>,
+	<roots:iron_hammer:*>,
+	<roots:wood_hammer:*>
+	] as IItemStack[];
+
+hammers.addItems(hammerList);
+
+

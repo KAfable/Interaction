@@ -8,6 +8,7 @@ var tings = ["piston","conveyor","motor","sensor","emitter","robotarm","valve"] 
 
 for tier in tiers {
 	for ting in tings {
-		val item = VanillaFactory.createItem(tier + ting);			item.register();
+		val item = VanillaFactory.createItem(tier + ting);			
+		item.register();
 	}
 }

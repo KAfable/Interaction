@@ -208,18 +208,30 @@ mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, 
 mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
 mods.skyresources.infusion.addRecipe(<natura:nether_sapling>, <minecraft:sapling>, <tp:bone_block>, 8);
 
+mods.skyresources.infusion.removeRecipe(<minecraft:reeds>);
 
 ///////////////
 //Rock Grinder 
 ///////////////
 //mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
+recipes.remove(<skyresources:stonegrinder>);
+recipes.addShaped(<skyresources:stonegrinder>, [
+  [<ore:cobblestone>, <ore:cobblestone>, null],
+  [<ore:cobblestone>, <ore:cobblestone>, null],
+  [null, null, <minecraft:stick>]]);
+
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
 recipes.addShaped(<skyresources:irongrinder>, [
-  [stoneReinforced, null, null],
-  [null, stoneReinforced, null],
+  [stoneReinforced, stoneReinforced, null],
+  [stoneReinforced, stoneReinforced, null],
   [null, null, <minecraft:stick>]]);
 
+recipes.remove(<skyresources:diamondgrinder>);
+//recipes.addShaped(<skyresources:diamondgrinder>, [
+//  [<ore:gemDiamond>, null, null],
+//  [null, <ore:gemDiamond>, null],
+//  [null, null, <minecraft:stick>]]);
 
 //////////////////
 //Reinforced Stone
@@ -229,6 +241,18 @@ recipes.removeShaped(<skyresources:casing:3>);
 recipes.addShaped(<skyresources:casing:3>, [
   [stoneReinforced, stoneReinforced, stoneReinforced],
   [stoneReinforced, <ore:gearReinforcedStone>, stoneReinforced],
+  [stoneReinforced, stoneReinforced, stoneReinforced]]);
+
+recipes.removeShaped(<skyresources:combustionheater:3>);
+recipes.addShaped(<skyresources:combustionheater:3>, [
+  [stoneReinforced, stoneReinforced, stoneReinforced],
+  [stoneReinforced, null, stoneReinforced],
+  [stoneReinforced, <skyresources:heat:3>, stoneReinforced]]);
+
+recipes.removeShaped(<skyresources:heat:3>);
+recipes.addShaped(<skyresources:heat:3>, [
+  [stoneReinforced, stoneReinforced, stoneReinforced],
+  [stoneReinforced, <minecraft:blaze_powder>, stoneReinforced],
   [stoneReinforced, stoneReinforced, stoneReinforced]]);
 
 ////////////
