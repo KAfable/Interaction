@@ -10,8 +10,10 @@ import crafttweaker.item.IIngredient;
 // Items
 var itemDisabled = [
   <tconstruct:cast_custom:3>,
-  <tconstruct:cast_custom:4>
-] as IItemStack[];
+  <tconstruct:cast_custom:4>,
+  <tconstruct:tooltables:3>,
+  <tconstruct:toolforge>
+  ] as IItemStack[];
 
 for item in itemDisabled {
   mods.jei.JEI.removeAndHide(item);}
@@ -21,8 +23,12 @@ recipes.remove(<tconstruct:slime_boots:1>);
 recipes.remove(<tconstruct:slime_boots:2>);
 recipes.remove(<tconstruct:slime_boots:4>);
 
-//Molten Recipes
-val ores = [
+  #Drying
+tcd.addRecipe(<minecraft:leather>, <tp:monster_jerky>, 6000);
+tcd.addRecipe(<minecraft:leather>, <tconstruct:edible:10>, 6000);
+
+  #Molten Recipes
+var ores = [
   <thermalfoundation:ore:3>,
   <thermalfoundation:ore:2>,
   <minecraft:gold_ore>,
@@ -32,7 +38,8 @@ val ores = [
   <minecraft:iron_ore>,
   <fp:erze:1>,
   <thermalfoundation:ore:4>
-  ] as IItemStack[];  
+  ] as IItemStack[]; 
+
 var liquidDisabled = [
   <liquid:lead>,
   <liquid:silver>,
@@ -63,7 +70,7 @@ for i in 0 to 9 {
   tcm.addRecipe(liquidDisabled[i]*144, impure[i]);
 }
 
-// Basin Recipes
+  #Basin Recipes
 var basinDisabled = [
   <minecraft:iron_block>,
   <minecraft:gold_block>,
@@ -80,13 +87,12 @@ var basinDisabled = [
   <techreborn:storage:5>,
   <techreborn:storage:8>,
   <techreborn:storage:10>
-] as IItemStack[];
+  ] as IItemStack[];
 
 for item in basinDisabled {
   tcc.removeBasinRecipe(item);}
-////////////////
-// Table Recipes
-////////////////
+
+  #Table Recipes
 var tableDisabled = [
   <tconstruct:cast_custom:3>,
   <tconstruct:cast_custom:4>,
@@ -99,9 +105,15 @@ var tableDisabled = [
   <thermalfoundation:material:353>,
   <thermalfoundation:material:289>,
   <thermalfoundation:material:257>,
-] as IItemStack[];
+  <tconstruct:pick_head>, 
+  <tconstruct:shovel_head>,
+  <tconstruct:shard>,
+  <tconstruct:sharpening_kit>,
+  <tconstruct:axe_head>
+  ] as IItemStack[];
 
 for item in tableDisabled {
-  tcc.removeBasinRecipe(item);}
+  tcc.removeTableRecipe(item);}
 
-// Gears
+  # Gears
+tcc.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:gear"}));

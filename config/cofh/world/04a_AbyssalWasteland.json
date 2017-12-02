@@ -186,7 +186,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "astralsorcery:blockmarble",
+					"name": "astralsorcery:blockmarble"
 				},
 				"material": "abyssalcraft:stone",
 				"cluster-size": 16

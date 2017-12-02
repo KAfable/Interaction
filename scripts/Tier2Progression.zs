@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+
 import mods.integrateddynamics.Squeezer as sq;
 import mods.crossroads.Grindstone as gs;
 import mods.tconstruct.Casting as tc;
@@ -12,6 +13,57 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
+////////
+//Plates
+////////
+var ingotPlateInput = [
+  <minecraft:iron_ingot>,
+  <minecraft:gold_ingot>,
+  <thermalfoundation:material:128>,
+  <thermalfoundation:material:129>,
+  <thermalfoundation:material:130>,
+  <thermalfoundation:material:131>,
+  <thermalfoundation:material:132>,
+  <thermalfoundation:material:133>,
+  <thermalfoundation:material:134>,
+  <thermalfoundation:material:135>,
+  <thermalfoundation:material:136>,
+  <thermalfoundation:material:160>,
+  <thermalfoundation:material:161>,
+  <thermalfoundation:material:162>,
+  <thermalfoundation:material:163>,
+  <thermalfoundation:material:164>,
+  <thermalfoundation:material:165>,
+  <thermalfoundation:material:166>,
+  <thermalfoundation:material:167>
+  ] as IItemStack[];
+
+var plateOutput = [
+  <thermalfoundation:material:32>,
+  <thermalfoundation:material:33>,
+  <thermalfoundation:material:320>,
+  <thermalfoundation:material:321>,
+  <thermalfoundation:material:322>,
+  <thermalfoundation:material:323>,
+  <thermalfoundation:material:324>,
+  <thermalfoundation:material:325>,
+  <thermalfoundation:material:326>,
+  <thermalfoundation:material:327>,
+  <thermalfoundation:material:328>,
+  <thermalfoundation:material:352>,
+  <thermalfoundation:material:353>,
+  <thermalfoundation:material:354>,
+  <thermalfoundation:material:355>,
+  <thermalfoundation:material:356>,
+  <thermalfoundation:material:357>,
+  <thermalfoundation:material:358>,
+  <thermalfoundation:material:359>
+  ] as IItemStack[];
+
+for i in 0 to 20 {
+  recipes.addShapeless(plateOutput[i], [
+    ingotPlateInput[i], ingotPlateInput[i], 
+    ingotPlateInput[i], ingotPlateInput[i], <ore:toolHammer>]);}
 
 //////////
 //PipesEXU
@@ -109,7 +161,7 @@ var configOreAmount = 6;
 for i in 0 to 9 {
   furnace.remove(ingots[i], ores[i]);}
 for i in 0 to 9 {
-  recipes.addShapeless(impure[i], [ores[i], <immersiveengineering:tool>]);}
+  recipes.addShapeless(impure[i], [ores[i], <ore:toolHammer>]);}
 for i in 0 to 9 {
   furnace.addRecipe(nuggets[i]*configOreAmount, impure[i]);}
 
@@ -141,8 +193,8 @@ gs.addRecipe(<ic2:rubber_wood>, <ic2:misc_resource:4>);
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],
-  [<ore:stickIron>, <skyresources:casing:12>,<ore:stickIron>],
-[<ore:gearReinforcedStone>,<minecraft:heavy_weighted_pressure_plate>,<ore:gearReinforcedStone>]]);
+  [<ore:gearReinforcedStone>, null, <ore:gearReinforcedStone>],
+  [<ore:stickIron>,<minecraft:heavy_weighted_pressure_plate>,<ore:stickIron>]]);
 
 val squeezerRemoved = [
   <thermalfoundation:material:0>,
@@ -163,7 +215,6 @@ val squeezerRemoved = [
 for i in squeezerRemoved {
   sq.removeRecipesWithOutput(i, null);  
 }
-
 
 /////////////////
 // Astral Sorcery
@@ -363,11 +414,55 @@ recipes.addShaped(<prospectors:prospector_low>, [
   [null, <ore:gemAquamarine>, null]]);
 mods.jei.JEI.addDescription(<prospectors:prospector_lowest>,"This prospector, upgraded with magical materials, has an attunement towards all ores that occur in the Abyssal Wasteland and Twilight Forest. It may have difficulty or limited use locating ores in other dimensions.");
 
+///////////////
+//Hammer Repair
+///////////////
+/*
+recipes.addShapeless("pickrepair",diaPick, //we start normal, by writing the output
+  [diaPick.anyDamage().marked("mark"),<minecraft:diamond>], //followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
+                              //We'll only need the input parameter, though.
+  function(out, ins, cInfo){  //It needs 3 parameters, one for the output, one for the inputs and one for crafting info. 
+    return ins.mark.withDamage(max(0,ins.mark.damage - 10)); //now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
+  }, 
+  null);  //We don't need a recipeAction here so just set it to null
+*/
+
+recipes.addShapeless("ironHammerRepair", <thermalfoundation:tool.hammer_iron>, 
+  [<thermalfoundation:tool.hammer_iron>.anyDamage().marked("mark").noReturn(), <minecraft:iron_ingot>],
+  function(out, ins, cInfo) {
+    return ins.mark.withDamage(max(0, ins.mark.damage - 400));
+    }, null);
+
+// Satchels
+recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
+
 // ProjectE
 recipes.removeShaped(<projecte:item.pe_philosophers_stone>);
 
 var peBags = <projecte:item.pe_alchemical_bag:*>; //Reundant with Iron Backpacks - might re-add later
 recipes.removeShaped(peBags);
+
 
 
 ////////////////////////////

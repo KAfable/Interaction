@@ -35,3 +35,5 @@ config/hqm/remote/data.json
 config/waila/waila.cfg
 realms_persistence.json
 config/tellme/
+TombManyGraves/savedInventories/
+TombManyGraves/friends.fdat

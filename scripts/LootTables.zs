@@ -8,6 +8,17 @@ import crafttweaker.item.IItemStack;
 //removeItemEntry(IItemStack stack)
 //addItemEntryHelper(IItemStack iStack, int weight, int quality, LootFunction[] functions, LootCondition[] conditions)
 
+var spider = LootTables.getTable("minecraft:entities/spider");
+var spiderPool1 = spider.getPool("pool1");
+
+spiderPool1.removeItemEntry(<minecraft:spider_eye>);
+
+var stranger = LootTables.getTable("dmonsters:stranger");
+var strangerPool = stranger.getPool("dmonsters:stranger");
+
+strangerPool.removeItemEntry(<minecraft:redstone>);
+
+
 /*
 val antipig = LootTables.getTable("abyssalcraft:entities/anti_pig");
 

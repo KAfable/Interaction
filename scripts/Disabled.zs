@@ -55,8 +55,8 @@ for item in armorRedundant{
 //Buildcraft
 ////////////
 var buildDisabled = [
-  <buildcraftcore:gear_wood>]
-  as IItemStack[];
+  <buildcraftbuilders:quarry>
+  ] as IItemStack[];
 
 for item in buildDisabled{
   mods.jei.JEI.removeAndHide(item);}
@@ -179,6 +179,9 @@ var gearsDisabled = [
   <forestry:gear_tin>,
   <hammercore:iron_gear>,
   <teslacorelib:gear_wood>,
+  <teslacorelib:gear_stone>,
+  <teslacorelib:gear_diamond>,
+  <buildcraftcore:gear_wood>
   ] as IItemStack[];
 
 for item in gearsDisabled{
@@ -210,6 +213,15 @@ var ipDisabled = [
   <crossroads:ingot_bronze>,
   <crossroads:ingot_copper>,
   <crossroads:ingot_tin>,
+  <embers:plate_aluminum>,
+  <embers:plate_bronze>,
+  <embers:plate_nickel>,
+  <embers:plate_lead>,
+  <embers:plate_electrum>,
+  <embers:plate_gold>,
+  <embers:plate_silver>,
+  <embers:plate_tin>,
+  <embers:plate_iron>,
   <forestry:ingot_bronze>,
   <forestry:ingot_copper>,
   <forestry:ingot_tin>,
@@ -229,6 +241,7 @@ var ipDisabled = [
   <ic2:ingot:5>,
   <ic2:ingot:6>,
   <ic2:plate:1>,
+  <ic2:plate:2>,
   <ic2:plate:3>,
   <ic2:plate:5>,
   <ic2:plate:7>,
@@ -242,9 +255,15 @@ var ipDisabled = [
   <immersiveengineering:metal:2>,
   <immersiveengineering:metal:3>,
   <immersiveengineering:metal:30>,
+  <immersiveengineering:metal:31>,
   <immersiveengineering:metal:32>,
+  <immersiveengineering:metal:33>,
+  <immersiveengineering:metal:34>,
+  <immersiveengineering:metal:36>,
+  <immersiveengineering:metal:37>,
   <immersiveengineering:metal:38>,
   <immersiveengineering:metal:39>,
+  <immersiveengineering:metal:40>,
   <immersiveengineering:metal:4>,
   <immersiveengineering:metal:5>,
   <immersiveengineering:metal:7>,
@@ -290,9 +309,11 @@ var ipDisabled = [
   <techreborn:ingot:8>,
   <techreborn:ingot:9>,
   <techreborn:ingot>,
+  <techreborn:plates:1>,
   <techreborn:plates:18>,
   <techreborn:plates:20>,
   <techreborn:plates:24>,
+  <techreborn:plates:25>,
   <techreborn:plates:28>,
   <techreborn:plates:29>,
   <techreborn:plates>,

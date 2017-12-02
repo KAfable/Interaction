@@ -1,26 +1,17 @@
 {
   "dimensions": [
     {
-      "dim": 100,
-      "dimensiontype": {
-        "id": 100,
-        "name": "Overworld",
-        "suffix": "_dim100",
-        "keeploaded": false,
-        "worldprovider": "WorldProviderSurfaceJED"
-      },
-            "worldinfo_onetime": {
-                "generatorName": "BIOMESOP"
-            }
+      "dim": 0,
+      "worldinfo":{}
     },
     {
-      "dim": 101,
-      "dimensiontype": {
-        "id": 101,
-        "name": "Nether",
-        "suffix": "_dim101",
-        "keeploaded": false,
-        "worldprovider": "WorldProviderHellJED"
+      "dim": 100,
+      "override":true,
+      "worldinfo": {
+        "JED": {
+          "CanRespawnHere": false,
+          "RespawnDimension": 0
+        }
       }
     }
   ]

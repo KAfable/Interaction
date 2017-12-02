@@ -7,8 +7,8 @@ import mods.contenttweaker.Material;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 
-var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt", "dense_plate", "crystal", "crushed_ore", "casing"] as string[];
 var partTypeFoil = MaterialSystem.getPartBuilder().setName("Foil").setPartType(MaterialSystem.getPartType("item"));
+var part_names = ["Ingot", "Beam", "Gear", "Bolt", "Dust", "Nugget", "Rod", "Plate", "Dense_Plate", "Crystal", "Crushed_Ore", "Casing"] as string[];
 
 /* This is sample code atm for testing part types
 #loadercontenttweaker
@@ -25,16 +25,13 @@ val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage(
 //Tier 1 Materials
 //////////////////
 
-var putty = MaterialSystem.getMaterialBuilder().setName("Putty").setColor(3342387).build();
 var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10053171).build();
-var brick = MaterialSystem.getMaterialBuilder().setName("Brick").setColor(12016192).build();
 var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
 var slimeg = MaterialSystem.getMaterialBuilder().setName("Glass-Slime Composite").setColor(3342210).build();
-var tier1_list = [putty, wood, brick, rstone] as Material[];
+var tier1_list = [wood, rstone] as Material[];
 
 rstone.registerPart("molten");
 slimeg.registerPart("molten");
-putty.registerPart("molten");
 
 //Tier 1 Registration
 for i, mat in tier1_list {

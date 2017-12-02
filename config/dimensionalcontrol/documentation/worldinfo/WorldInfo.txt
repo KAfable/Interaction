@@ -31,19 +31,11 @@ setCommandsAllowed:
     Notes:
         Sets if commands are allowed.
 
-setWorldType:
-    Arguments:
-        String
-    Usage:
-        WorldType ID
-    Notes:
-        Sets the world type.
-
-setRaining:
+setDifficultyLocked:
     Arguments:
         Boolean
     Notes:
-        Sets permanent raining.
+        Sets if the difficulty is locked.
 
 setThundering:
     Arguments:
@@ -51,11 +43,19 @@ setThundering:
     Notes:
         Sets permanent thundering.
 
-setDifficultyLocked:
+setRaining:
     Arguments:
         Boolean
     Notes:
-        Sets if the difficulty is locked.
+        Sets permanent raining.
+
+setWorldType:
+    Arguments:
+        String
+    Usage:
+        WorldType ID
+    Notes:
+        Sets the world type.
 
 setDifficulty:
     Arguments:

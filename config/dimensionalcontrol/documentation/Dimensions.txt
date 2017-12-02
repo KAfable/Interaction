@@ -3,6 +3,34 @@ for them. It is also where WorldInfo scripts and BiomePrinters are set.
 
 
 
+setPortalOreDict:
+    Arguments:
+        byte, int, int, String
+    Usage:
+        portal ID, first dimension ID, second dimension ID, block ID
+    Notes:
+        Sets the portal of the provided id to be made of the provided block with any meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127. The auto generated portal will be created using the default state of the provided block.
+
+addBiomePrinter:
+    Arguments:
+        int, int, int, int, int, int
+    Usage:
+        dimension ID, height, width, spacing, startX, startZ
+    Notes:
+        Used to add a biome printer for the selected dimension. I suggest 500 height, 500 width, 10 spacing, 0 startX, 0 startZ for most cases. This can take a long time, or even run the game out of memory in extreme cases, if the size is set too high. Images are saved to config/dimensionalcontrol/output and overwrite eachother.
+
+addBiomePrinter:
+    Arguments:
+        int, int, int, int, int, int, boolean
+    Usage:
+        dimension ID, height, width, spacing, startX, startZ, overwrite
+    Notes:
+        Used to add a biome printer for the selected dimension. I suggest 500 height, 500 width, 10 spacing, 0 startX, 0 startZ for most cases. This can take a long time, or even run the game out of memory in extreme cases, if the size is set too high. Images are saved to config/dimensionalcontrol/output and overwrite eachother if overwrite is set to true.
+
+getPortalIgniterData:
+    Notes:
+        Returns the ItemData object for the portal igniter so functions can be called on it.
+
 getPortalIgniterData:
     Arguments:
         byte
@@ -10,10 +38,6 @@ getPortalIgniterData:
         portal id
     Notes:
         Returns the ItemData object for the portal igniter for the provided portal id so functions can be called on it.
-
-getPortalIgniterData:
-    Notes:
-        Returns the ItemData object for the portal igniter so functions can be called on it.
 
 setPortalIgniterOreDict:
     Arguments:
@@ -63,37 +87,21 @@ setDimensionDefinition:
     Notes:
         Sets the DimensionDefiniton object for the provided dimensionID and returns it, so functions can be called on it. The same functions that can be called in a dimension script, can be called on this object. Documentation can be found in documentation/dimensions/DimensionScript.txt
 
-setPortalIgniter:
+setPortal:
     Arguments:
-        byte, String
+        byte, int, int, String
     Usage:
-        portal id, item name
+        portal ID, first dimension ID, second dimension ID, block ID
     Notes:
-        Sets the portal igniter for the provided portal id. This is the item that will be used to ignite the custom portal. This counts for any meta. Returns the ItemData object for the portal igniter.
+        Sets the portal of the provided id to be made of the provided block with the provided meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127
 
-setPortalIgniter:
+setPortal:
     Arguments:
-        byte, String, Integer, String
+        byte, int, int, String
     Usage:
-        portal id, item name, meta, NBT Json
+        portal ID, first dimension ID, second dimension ID, block ID
     Notes:
-        Sets the portal igniter with the provided meta and NBT for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
-
-setPortalIgniter:
-    Arguments:
-        byte, String, Integer
-    Usage:
-        portal id, item name, meta
-    Notes:
-        Sets the portal igniter with the provided meta for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
-
-setPortalIgniter:
-    Arguments:
-        String, Integer
-    Usage:
-        item name, meta
-    Notes:
-        Sets the portal igniter with the provided meta. This is the item that will be used to ignite any custom portals. Returns the ItemData object for the portal igniter.
+        Sets the portal of the provided id to be made of the provided block with any meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127. The auto generated portal will be created using the default state of the provided block.
 
 setPortalIgniter:
     Arguments:
@@ -105,51 +113,43 @@ setPortalIgniter:
 
 setPortalIgniter:
     Arguments:
+        String, Integer
+    Usage:
+        item name, meta
+    Notes:
+        Sets the portal igniter with the provided meta. This is the item that will be used to ignite any custom portals. Returns the ItemData object for the portal igniter.
+
+setPortalIgniter:
+    Arguments:
         String
     Usage:
         item name
     Notes:
         Sets the portal igniter. This is the item that will be used to ignite any custom portals. This counts for any meta. Returns the ItemData object for the portal igniter.
 
-setPortal:
+setPortalIgniter:
     Arguments:
-        byte, int, int, String
+        byte, String, Integer, String
     Usage:
-        portal ID, first dimension ID, second dimension ID, block ID
+        portal id, item name, meta, NBT Json
     Notes:
-        Sets the portal of the provided id to be made of the provided block with any meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127. The auto generated portal will be created using the default state of the provided block.
+        Sets the portal igniter with the provided meta and NBT for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
 
-setPortal:
+setPortalIgniter:
     Arguments:
-        byte, int, int, String
+        byte, String
     Usage:
-        portal ID, first dimension ID, second dimension ID, block ID
+        portal id, item name
     Notes:
-        Sets the portal of the provided id to be made of the provided block with the provided meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127
+        Sets the portal igniter for the provided portal id. This is the item that will be used to ignite the custom portal. This counts for any meta. Returns the ItemData object for the portal igniter.
 
-setPortalOreDict:
+setPortalIgniter:
     Arguments:
-        byte, int, int, String
+        byte, String, Integer
     Usage:
-        portal ID, first dimension ID, second dimension ID, block ID
+        portal id, item name, meta
     Notes:
-        Sets the portal of the provided id to be made of the provided block with any meta and travel between the two provided dimensions. Portal ID can be set to anything between -128 and 127. The auto generated portal will be created using the default state of the provided block.
-
-addBiomePrinter:
-    Arguments:
-        int, int, int, int, int, int, boolean
-    Usage:
-        dimension ID, height, width, spacing, startX, startZ, overwrite
-    Notes:
-        Used to add a biome printer for the selected dimension. I suggest 500 height, 500 width, 10 spacing, 0 startX, 0 startZ for most cases. This can take a long time, or even run the game out of memory in extreme cases, if the size is set too high. Images are saved to config/dimensionalcontrol/output and overwrite eachother if overwrite is set to true.
-
-addBiomePrinter:
-    Arguments:
-        int, int, int, int, int, int
-    Usage:
-        dimension ID, height, width, spacing, startX, startZ
-    Notes:
-        Used to add a biome printer for the selected dimension. I suggest 500 height, 500 width, 10 spacing, 0 startX, 0 startZ for most cases. This can take a long time, or even run the game out of memory in extreme cases, if the size is set too high. Images are saved to config/dimensionalcontrol/output and overwrite eachother.
+        Sets the portal igniter with the provided meta for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
 
 addDimension:
     Arguments:

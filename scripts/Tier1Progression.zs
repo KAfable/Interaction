@@ -48,11 +48,6 @@ recipes.addShaped(<contenttweaker:material_part:13>, [
   [<ore:plankWood>, <ore:toolHammer>.onlyDamageAtLeast(0), <ore:plankWood>],
   [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]]);
 
-//recipes.addShaped(<contenttweaker:material_part:13>, [
-//  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
-//  [<ore:plankWood>, <roots:stone_hammer>.anyDamage(), <ore:plankWood>],
-//  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]]);
-
 //Farming
 recipes.addShaped(<silentgems:fluffypuffseeds>, [
   [null, <minecraft:feather>, null],
@@ -101,10 +96,36 @@ recipes.addShaped(<minecraft:hopper>, [
   [null, <minecraft:iron_ingot>, null]]);
 
 recipes.remove(<darkutils:trap_move>);
-recipes.addShaped(<darkutils:trap_move>, [
+recipes.addShaped(<darkutils:trap_move>*2, [
   [null, null, null],
   [rstone, <ore:slimeball>, rstone],
-  [<ore:stone>, <minecraft:sugar>, <ore:stone>]]);
+  [<ore:dyeBlack>, <minecraft:sugar>, <ore:dyeBlack>]]);
+
+recipes.addShaped(<immersiveengineering:tool>, [
+  [null, <contenttweaker:material_part:32>, <ore:string>],
+  [null, <ore:stick>, <contenttweaker:material_part:32>],
+  [<ore:stick>, null, null]]);
+
+recipes.removeByRecipeName("common/string");
+recipes.removeByRecipeName("materials/slime_ball");
+recipes.removeByRecipeName("stuffedeggplantitem");
+recipes.addShapeless(<xtones:bitt:6>, [<contenttweaker:portalblockt>]);
+
+//Bed nerf
+recipes.remove(<minecraft:bed:*>);
+recipes.addShaped(<minecraft:bed>, [
+  [null, <minecraft:clock>, null],
+  [<ore:blockWool>,<ore:blockWool>, <ore:blockWool>],
+  [<extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>]]);
+
+<minecraft:bed:*>.addTooltip("For respawning options, see Respawn Obelisk");
+
+recipes.remove(<natura:respawn_obelisk>);
+recipes.addShaped(<natura:respawn_obelisk>, [
+  [<natura:nether_logs>, <natura:nether_logs>, <natura:nether_logs>],
+  [<natura:nether_logs>, <mysticalagriculture:crafting>, <natura:nether_logs>],
+  [<natura:nether_logs>, <natura:nether_logs>, <natura:nether_logs>]]);
+
 
 // Smeltery
 recipes.remove(<tconstruct:soil>);
@@ -118,23 +139,29 @@ mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*1
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
-// Reinforced Stone Gear / Block / Ingot
-recipes.addShaped(<contenttweaker:material_part:29>, [
+// Reinforced Stone Gear / Block / Ingot / Rod
+recipes.addShaped(<contenttweaker:material_part:140>*2, [
   [null, rstone, null],
+  [null, rstone, null]]);
+
+recipes.addShaped(<contenttweaker:material_part:29>, [
+  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>],
   [rstone, <ore:toolHammer>.onlyDamageAtLeast(0), rstone],
-  [null, rstone, null]]);
+  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>]]);
 recipes.addShaped(<contenttweaker:material_part:29>, [
-  [null, rstone, null],
+  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>],
   [rstone, <ore:gearStone>, rstone],
-  [null, rstone, null]]);
+  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>]]);
+
 recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:1>]);
+recipes.addShapeless(<contenttweaker:sub_block_holder_0:1>, [rstone*9]);
 recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
 
 //Casting / Alloying
 mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000);
+mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000, true);
 
 ///////////////////
 //Portal Fabricator
@@ -153,7 +180,7 @@ recipes.addShaped(<minecraft:enchanting_table>, [
   [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
 <chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
-mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000, true);
 
 <chisel:factory:8>.displayName = "Basic Circuitry";
 recipes.remove(<chisel:factory>);
@@ -164,6 +191,7 @@ recipes.addShaped(<minecraft:tripwire_hook>, [
   [null,<ore:stickWood>,null],
   [null,<ore:plankWood>,null]]);
 
+
 //addDescription(IItemStack item, string[] desc);
 //each string inside the array will have it's own line(s)
 mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"}),
@@ -172,12 +200,12 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "2 Item Input",
     "1 Item Output",
     "1 Fluid Input Hatch",
-    "24 Alchemical Baseplate",
+    "24 Alchemical Baseplate (Type 13)",
     "10 Livingrock Bricks",
     "12 Reinforced Lava Concentrator",
-    "4 Base Alchemical Beacon",
+    "4 Base Alchemical Beacon (Type 13)",
     "4 Buckets of Lava",
-    "1 Enchanting Table"]);
+    "1 Enchantment Table"]);
 
 mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ender_saturator"}),
   [ "Ender Saturator",
@@ -209,3 +237,5 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "1 Energy Input Hatch",
     "All inputs and outputs can be substituted by machine casings"]);
 
+mods.jei.JEI.addDescription(<contenttweaker:portalblockt>,
+  ["Constructed similar to a Nether Portal but uses a worm as an igniter. It can also be crafted into another block if you don't like the texture."]);

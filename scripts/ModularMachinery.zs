@@ -82,14 +82,9 @@ recipes.remove(<modularmachinery:blockenergyoutputhatch:6>);
 //Controllers
 recipes.remove(<modularmachinery:blockcontroller>);
 recipes.addShaped(<modularmachinery:blockcontroller>, [
-	[<skyresources:casing:3>, <ore:dyeOrange>, <skyresources:casing:3>],
-	[<ore:dyeOrange>, <skyresources:alchemy:12>, <ore:dyeOrange>],
-	[<skyresources:casing:3>, <ore:dyeOrange>, <skyresources:casing:3>]]);
-
-recipes.addShaped(<modularmachinery:blockcontroller>, [
-	[null, <ore:dyeOrange>, null],
-	[<ore:dyeOrange>, <skyresources:alchemy:12>, <ore:dyeOrange>],
-	[<ore:dyeOrange>, <skyresources:casing:3>]]);
+	[<ore:dyeOrange>, <minecraft:tripwire_hook>, <ore:dyeOrange>],
+	[<minecraft:tripwire_hook>, <actuallyadditions:item_worm>, <minecraft:tripwire_hook>],
+	[<ore:dyeOrange>, <skyresources:casing:3>, <ore:dyeOrange>]]);
 
 
 ////////////
