@@ -6,6 +6,8 @@ import mods.integrateddynamics.Squeezer as sq;
 import mods.crossroads.Grindstone as gs;
 import mods.tconstruct.Casting as tc;
 
+print("-------------- Tier 2 Progression Start --------------");
+
 //Tier 2 Progression
 var glowRoses = <silentgems:glowrose:*>;
 var slimyGrass = <tconstruct:slime_grass_tall:*>;
@@ -60,10 +62,15 @@ var plateOutput = [
   <thermalfoundation:material:359>
   ] as IItemStack[];
 
-for i in 0 to 20 {
+for i in 0 to 18 {
   recipes.addShapeless(plateOutput[i], [
     ingotPlateInput[i], ingotPlateInput[i], 
     ingotPlateInput[i], ingotPlateInput[i], <ore:toolHammer>]);}
+
+for i in 0 to 18 {
+  recipes.addShapeless(plateOutput[i], [
+    ingotPlateInput[i], ingotPlateInput[i], 
+    ingotPlateInput[i], ingotPlateInput[i], <ore:toolHammerThermal>.transformDamage(1)]);}
 
 //////////
 //PipesEXU
@@ -163,6 +170,8 @@ for i in 0 to 9 {
 for i in 0 to 9 {
   recipes.addShapeless(impure[i], [ores[i], <ore:toolHammer>]);}
 for i in 0 to 9 {
+  recipes.addShapeless(impure[i], [ores[i], <ore:toolHammerThermal>.transformDamage(1)]);}
+for i in 0 to 9 {
   furnace.addRecipe(nuggets[i]*configOreAmount, impure[i]);}
 
 // Bronze Dusts
@@ -187,34 +196,6 @@ gs.addRecipe(<techreborn:rubber_log>, <ic2:misc_resource:4>);
 gs.addRecipe(<ic2:rubber_wood>, <ic2:misc_resource:4>);
 
 
-//////////
-//Squeezer
-//////////
-recipes.remove(<integrateddynamics:squeezer>);
-recipes.addShaped(<integrateddynamics:squeezer>, [
-  [<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],
-  [<ore:gearReinforcedStone>, null, <ore:gearReinforcedStone>],
-  [<ore:stickIron>,<minecraft:heavy_weighted_pressure_plate>,<ore:stickIron>]]);
-
-val squeezerRemoved = [
-  <thermalfoundation:material:0>,
-  <thermalfoundation:material:1>,
-  <thermalfoundation:material:64>,
-  <thermalfoundation:material:65>,
-  <thermalfoundation:material:66>,
-  <thermalfoundation:material:67>,
-  <thermalfoundation:material:69>,
-  <thermalfoundation:material:70>,
-  <thermalfoundation:material:72>,
-  <minecraft:emerald>,
-  <minecraft:diamond>,
-  <evilcraft:dark_gem>,
-  <minecraft:dye:4>*8,
-  <minecraft:redstone>*8
-  ] as IItemStack[];
-for i in squeezerRemoved {
-  sq.removeRecipesWithOutput(i, null);  
-}
 
 /////////////////
 // Astral Sorcery
@@ -246,104 +227,6 @@ var hammerRemoved = [
 
 for i in hammerRemoved {
   recipes.removeShapeless(i);}
-
-////////////////////////////
-// MicroCrafting Ingredients
-////////////////////////////
-//Metal plates
-val squeezerPlateInput = [
-  <minecraft:iron_ingot>,
-  <minecraft:gold_ingot>,
-  <minecraft:redstone_block>,
-  <thermalfoundation:material:128>,
-  <thermalfoundation:material:129>,
-  <thermalfoundation:material:163>,
-  <abyssalcraft:abyingot>,
-  <mekanism:ingot:4>,
-  <techreborn:ingot:1>,
-  <minecraft:dye:4>
-  ] as IItemStack[];
-
-val squeezerPlateOutput = [
-  <thermalfoundation:material:32>,
-  <thermalfoundation:material:33>,
-  <techreborn:plates:4>,
-  <thermalfoundation:material:320>,
-  <thermalfoundation:material:321>,
-  <thermalfoundation:material:355>,
-  <contenttweaker:material_part:65>,
-  <thermalfoundation:material:352>,
-  <techreborn:plates:17>,
-  <ic2:plate:4>
-  ] as IItemStack[];
-
-for i in 0 to 10 {
-  mods.integrateddynamics.Squeezer.addRecipe(squeezerPlateInput[i], squeezerPlateOutput[i], null);}
-
-//Gears
-val gearRemoved = [
-  <contenttweaker:material_part:5>,
-  <contenttweaker:material_part:13>,
-  <contenttweaker:material_part:21>,
-  <contenttweaker:material_part:37>,
-  <contenttweaker:material_part:64>,
-  <redstonearsenal:material:96>,
-  <teslacorelib:gear_diamond>,
-  <teslacorelib:gear_stone>,
-  <thermalfoundation:material:24>,
-  <thermalfoundation:material:25>,
-  <thermalfoundation:material:256>,
-  <thermalfoundation:material:257>,
-  <thermalfoundation:material:258>,
-  <thermalfoundation:material:259>,
-  <thermalfoundation:material:260>,
-  <thermalfoundation:material:261>,
-  <thermalfoundation:material:262>,
-  <thermalfoundation:material:263>,
-  <thermalfoundation:material:264>,
-  <thermalfoundation:material:288>,
-  <thermalfoundation:material:289>,
-  <thermalfoundation:material:290>,
-  <thermalfoundation:material:291>,
-  <thermalfoundation:material:292>,
-  <thermalfoundation:material:293>,
-  <thermalfoundation:material:294>,
-  <thermalfoundation:material:295>,
-  <teslacorelib:gear_wood>,
-  <extrautils2:ingredients:1>
-  ] as IItemStack[];
-
-for i in gearRemoved {
-  recipes.remove(i);}
-
-val gearInput = [
-  <thermalfoundation:material:32>,
-  <thermalfoundation:material:33>,
-  <thermalfoundation:material:320>,
-  <thermalfoundation:material:321>,
-  <thermalfoundation:material:324>,
-  <thermalfoundation:material:352>,
-  <thermalfoundation:material:355>,
-  <contenttweaker:material_part:65>
-  ] as IItemStack[];
-
-val gearOutput = [ 
-  <thermalfoundation:material:24>,
-  <thermalfoundation:material:25>,
-  <thermalfoundation:material:256>,
-  <thermalfoundation:material:257>,
-  <thermalfoundation:material:260>,
-  <thermalfoundation:material:288>,
-  <thermalfoundation:material:291>,
-  <contenttweaker:material_part:64>
-  ] as IItemStack[];
-
-for i in 0 to 8 {
-  recipes.addShaped(gearOutput[i], [
-    [gearInput[i], gearInput[i], gearInput[i]],
-    [gearInput[i], <ore:gearReinforcedStone>, gearInput[i]],
-    [gearInput[i], gearInput[i], gearInput[i]]]);
-}
 
 // Armor
 recipes.remove(<silentgems:craftingmaterial:24>);
@@ -391,9 +274,17 @@ tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:mo
 recipes.remove(<silentgems:craftingmaterial:25>);
 recipes.remove(<silentgems:craftingmaterial:26>);
 
-//////////////////////////////
+recipes.remove(<immersiveengineering:material:1>);
+recipes.addShaped(<immersiveengineering:material:1>, [
+  [<minecraft:iron_ingot>],
+  [<minecraft:iron_ingot>]]);
+
+recipes.addShaped(<minecraft:armor_stand>, [
+  [<minecraft:stick>, <silentgems:armorframe:1>, <minecraft:stick>],
+  [null, <silentgems:armorframe:2>, null],
+  [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
+
 //Ore Prospector - Two Recipes
-///////////////////////////////
 <prospectors:prospector_lowest>.displayName = "Basic Prospector";
 recipes.removeShaped(<prospectors:prospector_lowest>);
 recipes.addShaped(<prospectors:prospector_lowest>, [
@@ -414,9 +305,7 @@ recipes.addShaped(<prospectors:prospector_low>, [
   [null, <ore:gemAquamarine>, null]]);
 mods.jei.JEI.addDescription(<prospectors:prospector_lowest>,"This prospector, upgraded with magical materials, has an attunement towards all ores that occur in the Abyssal Wasteland and Twilight Forest. It may have difficulty or limited use locating ores in other dimensions.");
 
-///////////////
 //Hammer Repair
-///////////////
 /*
 recipes.addShapeless("pickrepair",diaPick, //we start normal, by writing the output
   [diaPick.anyDamage().marked("mark"),<minecraft:diamond>], //followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
@@ -426,44 +315,17 @@ recipes.addShapeless("pickrepair",diaPick, //we start normal, by writing the out
   }, 
   null);  //We don't need a recipeAction here so just set it to null
 */
-
 recipes.addShapeless("ironHammerRepair", <thermalfoundation:tool.hammer_iron>, 
   [<thermalfoundation:tool.hammer_iron>.anyDamage().marked("mark").noReturn(), <minecraft:iron_ingot>],
   function(out, ins, cInfo) {
     return ins.mark.withDamage(max(0, ins.mark.damage - 400));
     }, null);
 
-// Satchels
-recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 52 as short}]}), [
-  <thermalexpansion:satchel>, 
-  <thermalexpansion:satchel>]);
-
-recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 52 as short}]}), [
-  <thermalexpansion:satchel>, 
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>]);
-
-recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 52 as short}]}), [
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>]);
-
-recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 52 as short}]}), [
-  <thermalexpansion:satchel>, 
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>,
-  <thermalexpansion:satchel>]);
-
-
 // ProjectE
 recipes.removeShaped(<projecte:item.pe_philosophers_stone>);
 
 var peBags = <projecte:item.pe_alchemical_bag:*>; //Reundant with Iron Backpacks - might re-add later
 recipes.removeShaped(peBags);
-
-
 
 ////////////////////////////
 //Silent's Gems and Strainer
@@ -509,3 +371,5 @@ recipes.addShaped(<waterstrainer:strainer_survivalist_dense_reinforced>, [
   [ <minecraft:obsidian>, <waterstrainer:net:1>, <minecraft:obsidian>],
   [<ore:gemApatite>,  <minecraft:obsidian>, <ore:gemApatite>]]);
 <waterstrainer:strainer_survivalist_dense_reinforced>.displayName = "Jeweler's Strainer (Dense)";
+
+print("-------------- Tier 2 Progression End --------------");

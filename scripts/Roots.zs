@@ -33,3 +33,6 @@ recipes.addShaped(<roots:wood_knife>, [
 <roots:wood_hammer>.maxDamage = 15;
 <roots:stone_hammer>.maxDamage = 31;
 <roots:iron_hammer>.maxDamage = 47;
+  
+  #Runestone (made by )
+//<roots:runestone>

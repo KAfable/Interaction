@@ -126,7 +126,6 @@ recipes.addShaped(<natura:respawn_obelisk>, [
   [<natura:nether_logs>, <mysticalagriculture:crafting>, <natura:nether_logs>],
   [<natura:nether_logs>, <natura:nether_logs>, <natura:nether_logs>]]);
 
-
 // Smeltery
 recipes.remove(<tconstruct:soil>);
 mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
@@ -140,9 +139,9 @@ mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <m
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
 // Reinforced Stone Gear / Block / Ingot / Rod
-recipes.addShaped(<contenttweaker:material_part:140>*2, [
-  [null, rstone, null],
-  [null, rstone, null]]);
+recipes.addShaped(<contenttweaker:material_part:140>, [
+  [rstone],
+  [rstone]]);
 
 recipes.addShaped(<contenttweaker:material_part:29>, [
   [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>],
@@ -162,6 +161,10 @@ mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000, true);
+
+//Flax 
+vanilla.seeds.addSeed(<actuallyadditions:item_flax_seed> % 150);
+
 
 ///////////////////
 //Portal Fabricator

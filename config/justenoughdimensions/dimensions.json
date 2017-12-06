@@ -2,17 +2,30 @@
   "dimensions": [
     {
       "dim": 0,
-      "worldinfo":{}
+      "worldinfo":{
+        "GameRules": {
+          "tfEnforcedProgression": "false"
+        }
+      }
     },
     {
       "dim": 100,
       "override":true,
+      "dimensiontype":
+        {
+          "id": 100,
+          "name": "Surface World"
+        },
       "worldinfo": {
-        "JED": {
+        "GameRules": {
+          "doNaturalRegen": "false"
+        }
+      },
+      "jed": 
+        {
           "CanRespawnHere": false,
           "RespawnDimension": 0
         }
-      }
     }
   ]
 }

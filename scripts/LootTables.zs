@@ -12,10 +12,11 @@ var spider = LootTables.getTable("minecraft:entities/spider");
 var spiderPool1 = spider.getPool("pool1");
 
 spiderPool1.removeItemEntry(<minecraft:spider_eye>);
+spiderPool1.addItemEntryJSON(<minecraft:spider_eye>, 20, 0, [
+	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'"], []);
 
 var stranger = LootTables.getTable("dmonsters:stranger");
 var strangerPool = stranger.getPool("dmonsters:stranger");
-
 strangerPool.removeItemEntry(<minecraft:redstone>);
 
 

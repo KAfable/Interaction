@@ -14,6 +14,29 @@ recipes.addShaped(<thermalexpansion:satchel>, [
 	[<minecraft:wool:11>, <minecraft:chest>, <minecraft:wool:11>],
 	[<minecraft:leather>, <minecraft:chest>, <minecraft:leather>]]);
 
+// Basic Satchel
+recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
+recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 52 as short}]}), [
+  <thermalexpansion:satchel>, 
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>,
+  <thermalexpansion:satchel>]);
+
 //Servos
 for i in 0 to 5 {
 	recipes.remove(servo.makeStack(i));
@@ -47,4 +70,5 @@ recipes.addShaped(<thermaldynamics:duct_16:2>, [
 recipes.addShaped(<thermaldynamics:duct_16:3>, [
 	[<ore:ingotIron>,<contenttweaker:basicvalve>,<ore:ingotIron>]]);
 
-recipes.removeByRecipeName("thermalfoundation:gravel");
+	#Acqueous Accumulator (replaced by Evilcraft Eternal Water Block)
+recipes.remove(<thermalexpansion:device>);

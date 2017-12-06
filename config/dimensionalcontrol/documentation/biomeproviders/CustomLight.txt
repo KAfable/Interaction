@@ -20,42 +20,6 @@ addBiome:
     Notes:
         Adds the provided biome id to the provided type with a weight of 1. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
 
-setSpecialVariantChance:
-    Arguments:
-        String, int
-    Usage:
-        biome type, chance
-    Notes:
-        Sets the chance for the special variant biome to be used for the provided type. The chance is 1 in the provided number. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
-
-setSpecialVariantChance:
-    Arguments:
-        int
-    Usage:
-        chance
-    Notes:
-        Sets the global chance for the special variant biome to be used. The chance is 1 in the provided number.
-
-setSpecialVariantBiome:
-    Arguments:
-        String, Non_Null_Biome_ID
-    Usage:
-        biome type, special variant biome ID
-    Notes:
-        Sets the special variant biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
-
-disableMushroomIslandLayer:
-    Arguments:
-        None
-    Notes:
-        Disables the mushroom island layer.
-
-disableDeepOceanLayer:
-    Arguments:
-        None
-    Notes:
-        Disables the deep ocean layer.
-
 setSpecialBiome:
     Arguments:
         String, Non_Null_Biome_ID
@@ -92,19 +56,19 @@ setOceanSize:
 
 addBiomeEdge:
     Arguments:
-        Non_Null_Biome_ID_Array, Non_Null_Biome_ID
-    Usage:
-        target biome IDs, edge biome ID
-    Notes:
-        Adds a biome edge for the provided biomes with no whitelist or blacklist.
-
-addBiomeEdge:
-    Arguments:
         Non_Null_Biome_ID_Array, Biome_ID_Array, Biome_ID_Array, Non_Null_Biome_ID
     Usage:
         target biome IDs, whitelist, blacklist, edge biome ID
     Notes:
         Adds a biome edge for the provided biomes with a whitelist and blacklist.
+
+addBiomeEdge:
+    Arguments:
+        Non_Null_Biome_ID_Array, Non_Null_Biome_ID
+    Usage:
+        target biome IDs, edge biome ID
+    Notes:
+        Adds a biome edge for the provided biomes with no whitelist or blacklist.
 
 addBiomeShore:
     Arguments:
@@ -137,4 +101,40 @@ setMutation:
         base biome ID, mutation biome ID
     Notes:
         Sets the mutation biome for the provided biomeID.
+
+setSpecialVariantChance:
+    Arguments:
+        String, int
+    Usage:
+        biome type, chance
+    Notes:
+        Sets the chance for the special variant biome to be used for the provided type. The chance is 1 in the provided number. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+
+setSpecialVariantChance:
+    Arguments:
+        int
+    Usage:
+        chance
+    Notes:
+        Sets the global chance for the special variant biome to be used. The chance is 1 in the provided number.
+
+setSpecialVariantBiome:
+    Arguments:
+        String, Non_Null_Biome_ID
+    Usage:
+        biome type, special variant biome ID
+    Notes:
+        Sets the special variant biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+
+disableDeepOceanLayer:
+    Arguments:
+        None
+    Notes:
+        Disables the deep ocean layer.
+
+disableMushroomIslandLayer:
+    Arguments:
+        None
+    Notes:
+        Disables the mushroom island layer.
 

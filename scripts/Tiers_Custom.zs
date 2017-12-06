@@ -10,75 +10,104 @@ import mods.contenttweaker.Block;
 var partTypeFoil = MaterialSystem.getPartBuilder().setName("Foil").setPartType(MaterialSystem.getPartType("item"));
 var part_names = ["Ingot", "Beam", "Gear", "Bolt", "Dust", "Nugget", "Rod", "Plate", "Dense_Plate", "Crystal", "Crushed_Ore", "Casing"] as string[];
 
-/* This is sample code atm for testing part types
-#loadercontenttweaker
-import mods.contenttweaker.VanillaFactory;
-var craftingTool = VanillaFactory.createItem("craftingtool");
-craftingTool.maxStackSize = 1;
-craftingTool.setMaxDamage(10);
-craftingTool.register();
-
-val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
+/* 
+  This is sample code atm for testing part types
+  var craftingTool = VanillaFactory.createItem("craftingtool");
+  craftingTool.maxStackSize = 1;
+  craftingTool.setMaxDamage(10);
+  craftingTool.register();
+  val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
 */
 
-//////////////////
-//Tier 1 Materials
-//////////////////
-
-var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10053171).build();
-var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
-var slimeg = MaterialSystem.getMaterialBuilder().setName("Glass-Slime Composite").setColor(3342210).build();
-var tier1_list = [wood, rstone] as Material[];
-
-rstone.registerPart("molten");
-slimeg.registerPart("molten");
-
-//Tier 1 Registration
-for i, mat in tier1_list {
-    mat.registerParts(part_names);
-
-    var blockData = mat.registerPart("block").getData();
-    blockData.addDataValue("hardness", "5");
-    blockData.addDataValue("resistance", "30");
-    blockData.addDataValue("harvestTool", "pickaxe");
-    blockData.addDataValue("harvestLevel", "1");}
-
-// materialPart.getData().addValue("viscosity", "<number>"); To edit flow rates of materials
-// Lava has a density of 3000, and a viscosity of 6000
-
-//////////////////
-//Tier 2 Materials
-//////////////////u
-var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(6032139).setHasEffect(true).build();
-var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(3866733).build();
-//var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
-//var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(12017419).build();
-//var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-//var zinc = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-//var tin = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-var tier2_list = [fiery, abyssalnite] as Material[];
-
-//Tier 2 Registration
-for i, mat in tier2_list {
-  mat.registerParts(part_names);
-
+/*
+  # How to Create a Block and adjust Data
   var blockData = mat.registerPart("block").getData();
   blockData.addDataValue("hardness", "5");
   blockData.addDataValue("resistance", "30");
   blockData.addDataValue("harvestTool", "pickaxe");
-  blockData.addDataValue("harvestLevel", "1");}
+  blockData.addDataValue("harvestLevel", "1");
+*/
 
-////////////////
+  #Abyssalnite
+var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(6815935).build();
+abyssalnite.registerPart("Gear");
+abyssalnite.registerPart("Plate");
+abyssalnite.registerPart("Beam");
+abyssalnite.registerPart("Bolt");
+abyssalnite.registerPart("Rod");
+abyssalnite.registerPart("Dense_Plate");
+
+  #Aluminum
+var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
+aluminum.registerPart("Dense_Plate");
+aluminum.registerPart("Beam");
+aluminum.registerPart("Bolt");
+aluminum.registerPart("Rod");
+aluminum.registerPart("Crystal");
+
+  #Copper
+var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(13396492).build();
+copper.registerPart("Dense_Plate");
+copper.registerPart("Beam");
+copper.registerPart("Bolt");
+copper.registerPart("Rod");
+copper.registerPart("Crystal");
+
+  #Fiery
+var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(16743700).setHasEffect(true).build();
+fiery.registerParts(part_names);
+
+  #Glass-Slime Composite
+var slimeg = MaterialSystem.getMaterialBuilder().setName("Glass-Slime Composite").setColor(3342210).build();
+slimeg.registerPart("molten");
+
+  #Gold
+var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
+gold.registerPart("Beam");
+gold.registerPart("Bolt");
+gold.registerPart("Rod");
+
+  #Redstone
+var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(15209752).build();
+redstone.registerPart("Rod");
+redstone.registerPart("Gear");
+
+
+  #Reinforced Stone
+var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
+rstone.registerPart("molten");
+rstone.registerParts(part_names);
+var rstoneBlock = rstone.registerPart("block").getData();
+rstoneBlock.addDataValue("hardness", "5");
+rstoneBlock.addDataValue("resistance", "30");
+rstoneBlock.addDataValue("harvestTool", "pickaxe");
+rstoneBlock.addDataValue("harvestLevel", "1");
+
+  #Tin
+var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(16777099).build();
+tin.registerPart("Dense_Plate");
+tin.registerPart("Beam");
+tin.registerPart("Bolt");
+tin.registerPart("Rod");
+
+  #Wood
+var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10050591).build();
+wood.registerPart("Dense_Plate");
+wood.registerPart("Plate");
+wood.registerPart("Beam");
+wood.registerPart("Bolt");
+wood.registerPart("Rod");
+wood.registerPart("Crystal");
+wood.registerPart("Gear");
+wood.registerPart("Casing");
+
+  #Zinc
+var zinc = MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(16777099).build();
+
+// materialPart.getData().addValue("viscosity", "<number>"); To edit flow rates of materials
+// Lava has a density of 3000, and a viscosity of 6000
+
 //Microcrafting
-////////////////
-
-/*#l contenttweaker
-import mods.contenttweaker.VanillaFactory;
-var craftingTool = VanillaFactory.createItem("craftingtool");
-craftingTool.maxStackSize = 1;
-craftingTool.setMaxDamage(10);
-craftingTool.register();*/
-
 var vulcanizedresin = VanillaFactory.createItem("vulcanizedresin");
 vulcanizedresin.register();
 
@@ -102,11 +131,7 @@ var impureDusts = [
 
 for i in impureDusts {VanillaFactory.createItem(i).register();}
 
-///////////
-// Blocks
-//////////
-
-// Wells
+  #Wells
 var energized_well = VanillaFactory.createBlock("energized_well", <blockmaterial:rock>);
 energized_well.setLightValue(15);
 energized_well.register();
