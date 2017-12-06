@@ -38,10 +38,10 @@ recipes.addShaped(<forestry:fabricator>, [
 	]);
 recipes.remove(<immersiveengineering:toolupgrade:10>);
 <immersiveengineering:toolupgrade:10>.displayName = "Diode";
-tf.addCast(<immersiveengineering:toolupgrade:10>*4,[
-	[null,<skyresources:baseitemcomponent:3>,null],
-	[<skyresources:baseitemcomponent:3>,<minecraft:redstone>,<skyresources:baseitemcomponent:3>],
-	[<skyresources:baseitemcomponent:3>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<skyresources:baseitemcomponent:3>]
+tf.addCast(<immersiveengineering:toolupgrade:10>*5,[
+	[null,<ore:itemRubber>,null],
+	[<ore:itemRubber>,<minecraft:redstone>,<ore:itemRubber>],
+	[<ore:itemRubber>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<ore:itemRubber>]
 	],<liquid:glass>*500);
 
 ////////////////////
