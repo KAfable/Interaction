@@ -48,7 +48,7 @@ recipes.addShaped(<advgenerators:iron_tubing>*3, [
 	[null, null, null],
 	[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
 
-//recipes.addShapeless(emitter, [control, <environmentaltech:diode>]);
+recipes.addShapeless(emitter, [control, <immersiveengineering:toolupgrade:10>]);
 recipes.addShaped(motor, [
 	[magnet,<ore:stickIron>,magnet],
 	[magnet,<ic2:crafting:5>,magnet],
@@ -81,12 +81,12 @@ recipes.addShaped(valve, [
 	[<advgenerators:iron_tubing>, <ore:plateIron>, null]]);
 
 recipes.remove(screen);
-/*recipes.addShaped(screen, [
-	[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>],
-	[<environmentaltech:diode>,control,<environmentaltech:diode>],
-	[<environmentaltech:diode>,<environmentaltech:diode>,<environmentaltech:diode>]
+recipes.addShaped(screen, [
+	[<immersiveengineering:toolupgrade:10>,<immersiveengineering:toolupgrade:10>,<immersiveengineering:toolupgrade:10>],
+	[<immersiveengineering:toolupgrade:10>,control,<immersiveengineering:toolupgrade:10>],
+	[<immersiveengineering:toolupgrade:10>,<immersiveengineering:toolupgrade:10>,<immersiveengineering:toolupgrade:10>]
 	]);
-*/
+
 
 	#Gears
 val gearRemoved = [

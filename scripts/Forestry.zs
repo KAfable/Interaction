@@ -24,7 +24,7 @@ recipes.remove(<forestry:carpenter>);
 recipes.addShaped(<forestry:carpenter>, [
 	[<ore:plateBronze>, <ore:glass>, <ore:plateBronze>],
 	[<ore:plateBronze>, <forestry:sturdy_machine>, <ore:plateBronze>],
-	[<ore:plateBronze>, <skyresources:combustionheater:12>, <ore:plateBronze>]
+	[<ore:plateBronze>, <skyresources:combustionheater:3>, <ore:plateBronze>]
 	]);
 
 ///////////////////////
@@ -36,12 +36,13 @@ recipes.addShaped(<forestry:fabricator>, [
 	[<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
 	[<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]
 	]);
-/*recipes.remove(<environmentaltech:diode>);
-tf.addCast(<environmentaltech:diode>*4,[
-	[null,<skyresources:baseitemcomponent:3>,null],
-	[<skyresources:baseitemcomponent:3>,<minecraft:redstone>,<skyresources:baseitemcomponent:3>],
-	[<skyresources:baseitemcomponent:3>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<skyresources:baseitemcomponent:3>]
-	],<liquid:glass>*500);*/
+recipes.remove(<immersiveengineering:toolupgrade:10>);
+<immersiveengineering:toolupgrade:10>.displayName = "Diode";
+tf.addCast(<immersiveengineering:toolupgrade:10>*5,[
+	[null,<ore:itemRubber>,null],
+	[<ore:itemRubber>,<minecraft:redstone>,<ore:itemRubber>],
+	[<ore:itemRubber>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<ore:itemRubber>]
+	],<liquid:glass>*500);
 
 ////////////////////
 //Carpenter Circuits 
@@ -51,27 +52,22 @@ tf.addCast(<environmentaltech:diode>*4,[
 <forestry:chipsets:2>.displayName = "Iron-Plated Control Board";
 <forestry:chipsets:3>.displayName = "Advanced Control Board";
 
-mods.tconstruct.Casting.addTableRecipe(<forestry:chipsets>, <skyresources:baseitemcomponent:6>, <liquid:tin>, 1296);
+//mods.tconstruct.Casting.addTableRecipe(<forestry:chipsets>, <skyresources:baseitemcomponent:6>, <liquid:tin>, 1296);
 
-carp.addRecipe(QAC, [
-[<ore:plateIron>, <minecraft:comparator>,<ore:plateIron>],
-[<ore:plateIron>, <ore:materialResin>,<ore:plateIron>],
-[<ore:plateIron>, <minecraft:quartz_block>,<ore:plateIron>]
-], 20);
+//carp.addRecipe(QAC, [[<ore:plateIron>, <minecraft:comparator>,<ore:plateIron>],[<ore:plateIron>, <ore:materialResin>,<ore:plateIron>],[<ore:plateIron>, <minecraft:quartz_block>,<ore:plateIron>]], 20);
+
 carp.addRecipe(<contenttweaker:material_part:32>, [
 [null,<minecraft:clay_ball>,null],
 [<skyresources:techitemcomponent>,<minecraft:brick>,<skyresources:techitemcomponent>],
 [null,<minecraft:sand>,null]
 ], 20, <liquid:water>*250);
-carp.addRecipe(<skyresources:baseitemcomponent:3>, [
-[null,<minecraft:slime_ball>,null],
-[<ore:dustObsidian>,<contenttweaker:material_part:32>,<ore:dustObsidian>],
-[null,<ore:glass>,null]
-], 20, <liquid:water>*250);
+
+//carp.addRecipe(<skyresources:baseitemcomponent:3>, [[null,<minecraft:slime_ball>,null],[<ore:dustObsidian>,<contenttweaker:material_part:32>,<ore:dustObsidian>],[null,<ore:glass>,null]], 20, <liquid:water>*250);
+
 carp.removeRecipe(<forestry:chipsets>);
 carp.addRecipe(<forestry:chipsets>*2, [
 [<ore:ingotTin>,<ore:materialResin>,<ore:ingotTin>],
-[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}),QAC,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
+[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}),<ore:plateTin>,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
 [<ore:ingotTin>,<minecraft:redstone>,<ore:ingotTin>]], 
 20,<liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:1>);
