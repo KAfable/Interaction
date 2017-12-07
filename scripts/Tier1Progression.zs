@@ -4,7 +4,7 @@ import crafttweaker.item.IIngredient;
 
 val stick = <ore:stickWood>;
 val stone = <ore:stone>;
-val rstone = <contenttweaker:material_part:32>;
+val rstone = <contenttweaker:material_part:35>;
 val altar = <botania:altar>.giveBack();
 val pure = <botania:specialflower>.withTag({type: "puredaisy"}).giveBack();
 
@@ -39,8 +39,8 @@ recipes.addShaped(<minecraft:dirt>*3, [
   [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>]]);
 
 recipes.addShaped(<minecraft:bucket>, [
-  [<contenttweaker:material_part:32>, <ore:toolHammer>.onlyDamageAtLeast(0), <contenttweaker:material_part:32>],
-  [null, <contenttweaker:material_part:32>,null]]);
+  [rstone, <ore:toolHammer>.onlyDamageAtLeast(0), rstone],
+  [null, rstone, null]]);
 
 //Wooden Gear
 recipes.addShaped(<contenttweaker:material_part:13>, [
@@ -86,9 +86,9 @@ recipes.addShaped(<itank:blocktank>, [
 
 recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
-  [<contenttweaker:material_part:32>, null, <contenttweaker:material_part:32>],
-  [<contenttweaker:material_part:32>, <wopper:wopper>, <contenttweaker:material_part:32>],
-  [null, <contenttweaker:material_part:32>, null]]);
+  [rstone, null, rstone],
+  [rstone, <wopper:wopper>, rstone],
+  [null, rstone, null]]);
 
 recipes.addShaped(<minecraft:hopper>, [
   [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
@@ -102,8 +102,8 @@ recipes.addShaped(<darkutils:trap_move>*2, [
   [<ore:dyeBlack>, <minecraft:sugar>, <ore:dyeBlack>]]);
 
 recipes.addShaped(<immersiveengineering:tool>, [
-  [null, <contenttweaker:material_part:32>, <ore:string>],
-  [null, <ore:stick>, <contenttweaker:material_part:32>],
+  [null, rstone, <ore:string>],
+  [null, <ore:stick>, rstone],
   [<ore:stick>, null, null]]);
 
 recipes.removeByRecipeName("common/string");
@@ -135,26 +135,30 @@ mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [
 
 // Reinforced Stone
 mods.tconstruct.Alloy.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);
-mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
+mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
 mods.tconstruct.Casting.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
 // Reinforced Stone Gear / Block / Ingot / Rod
-recipes.addShaped(<contenttweaker:material_part:140>, [
+recipes.addShaped(<contenttweaker:material_part:41>, [
   [rstone],
   [rstone]]);
 
-recipes.addShaped(<contenttweaker:material_part:29>, [
-  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>],
+recipes.addShaped(<contenttweaker:material_part:37>, [
+  [<contenttweaker:material_part:41>, rstone, <contenttweaker:material_part:41>],
   [rstone, <ore:toolHammer>.onlyDamageAtLeast(0), rstone],
-  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>]]);
-recipes.addShaped(<contenttweaker:material_part:29>, [
-  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>],
+  [<contenttweaker:material_part:41>, rstone, <contenttweaker:material_part:41>]]);
+recipes.addShaped(<contenttweaker:material_part:37>, [
+  [<contenttweaker:material_part:41>, rstone, <contenttweaker:material_part:41>],
   [rstone, <ore:gearStone>, rstone],
-  [<contenttweaker:material_part:140>, rstone, <contenttweaker:material_part:140>]]);
+  [<contenttweaker:material_part:41>, rstone, <contenttweaker:material_part:41>]]);
 
-recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:1>]);
-recipes.addShapeless(<contenttweaker:sub_block_holder_0:1>, [rstone*9]);
-recipes.addShapeless(<contenttweaker:material_part:31>*9, [rstone]);
+recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:2>]);
+recipes.addShapeless(<contenttweaker:sub_block_holder_0:1>, [rstone, rstone, rstone, rstone, rstone,
+  rstone, rstone, rstone, rstone]);
+recipes.addShapeless(<contenttweaker:material_part:40>*9, [rstone]);
+recipes.addShapeless(rstone, [<contenttweaker:material_part:40>, <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,
+  <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,<contenttweaker:material_part:40>,
+  <contenttweaker:material_part:40>,<contenttweaker:material_part:40>,<contenttweaker:material_part:40>]);
 
 //Casting / Alloying
 mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
@@ -183,7 +187,7 @@ recipes.addShaped(<minecraft:enchanting_table>, [
   [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
 
 <chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
-mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:1>, <liquid:lava>, 1000, true);
+mods.tconstruct.Casting.addBasinRecipe(<chisel:netherbrick:8>, <contenttweaker:sub_block_holder_0:2>, <liquid:lava>, 1000, true);
 
 <chisel:factory:8>.displayName = "Basic Circuitry";
 recipes.remove(<chisel:factory>);

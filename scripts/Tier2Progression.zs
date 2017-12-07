@@ -332,37 +332,37 @@ recipes.removeShaped(peBags);
 ////////////////////////////
 recipes.removeShaped(<waterstrainer:strainer_survivalist>);
 recipes.addShaped(<waterstrainer:strainer_survivalist>, [
-  [<contenttweaker:material_part:18>,<minecraft:leather>, <contenttweaker:material_part:18>],
+  [<minecraft:stick>, <minecraft:leather>, <minecraft:stick>],
   [<minecraft:leather>, <waterstrainer:net>, <minecraft:leather>],
-  [<contenttweaker:material_part:18>, <minecraft:leather>, <contenttweaker:material_part:18>]]);
+  [<minecraft:stick>, <minecraft:leather>, <minecraft:stick>]]);
 <waterstrainer:strainer_survivalist>.displayName = "Lapidarist's Strainer";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_solid>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_solid>, [
-  [<contenttweaker:material_part:18>,<minecraft:obsidian>,<contenttweaker:material_part:18>],
+  [<minecraft:stick>, <minecraft:obsidian>, <minecraft:stick>],
   [<minecraft:obsidian>, <waterstrainer:net>, <minecraft:obsidian>],
-  [<contenttweaker:material_part:18>, <minecraft:obsidian>, <contenttweaker:material_part:18>]]);
+  [<minecraft:stick>, <minecraft:obsidian>, <minecraft:stick>]]);
 <waterstrainer:strainer_survivalist_solid>.displayName = "Gemcutter's Strainer";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_reinforced>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_reinforced>, [
-  [<contenttweaker:material_part:18>, <ore:gemApatite>, <contenttweaker:material_part:18>],
+  [<minecraft:stick>, <ore:gemApatite>, <minecraft:stick>],
   [<ore:gemApatite>, <waterstrainer:net>, <ore:gemApatite>],
-  [<contenttweaker:material_part:18>, <ore:gemApatite>, <contenttweaker:material_part:18>]]);
+  [<minecraft:stick>, <ore:gemApatite>, <minecraft:stick>]]);
 <waterstrainer:strainer_survivalist_reinforced>.displayName = "Jeweler's Strainer";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_dense>, [
-  [<contenttweaker:material_part:17>, <minecraft:leather>,<contenttweaker:material_part:17>],
+  [<minecraft:stick>, <minecraft:leather>, <minecraft:stick>],
   [<minecraft:leather>, <waterstrainer:net:1>, <minecraft:leather>],
-  [<contenttweaker:material_part:17>, <minecraft:leather>, <contenttweaker:material_part:17>]]);
+  [<minecraft:stick>, <minecraft:leather>, <minecraft:stick>]]);
 <waterstrainer:strainer_survivalist_dense>.displayName = "Lapidarist's Strainer (Dense)";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_solid>);
 recipes.addShaped(<waterstrainer:strainer_survivalist_dense_solid>, [
-  [<contenttweaker:material_part:17>, <minecraft:obsidian>,<contenttweaker:material_part:17>],
+  [<minecraft:stick>, <minecraft:obsidian>, <minecraft:stick>],
   [<minecraft:obsidian>, <waterstrainer:net:1>,<minecraft:obsidian>],
-  [<contenttweaker:material_part:17>, <minecraft:obsidian>, <contenttweaker:material_part:17>]]);
+  [<minecraft:stick>, <minecraft:obsidian>, <minecraft:stick>]]);
 <waterstrainer:strainer_survivalist_dense_solid>.displayName = "Gemcutter's Strainer (Dense)";
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist_dense_reinforced>);
