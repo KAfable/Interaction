@@ -72,7 +72,6 @@ var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(
 redstone.registerPart("Rod");
 redstone.registerPart("Gear");
 
-
   #Reinforced Stone
 var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
 rstone.registerPart("molten");
@@ -82,6 +81,10 @@ rstoneBlock.addDataValue("hardness", "5");
 rstoneBlock.addDataValue("resistance", "30");
 rstoneBlock.addDataValue("harvestTool", "pickaxe");
 rstoneBlock.addDataValue("harvestLevel", "1");
+
+  #Rubber
+var rubber = MaterialSystem.getMaterialBuilder().setName("Rubber").setColor(1776664).build();
+rubber.registerPart("molten");
 
   #Tin
 var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(16777099).build();

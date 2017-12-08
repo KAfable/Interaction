@@ -164,7 +164,8 @@ for item in flightDisabled{
 // Forestry
 ///////////
 var fDisabled = [
-  <forestry:apiary>
+  <forestry:apiary>,
+  <forestry:engine_clockwork>
   ]as IItemStack[];
 
 for item in fDisabled{
@@ -208,11 +209,13 @@ var ipDisabled = [
   <abyssalcraft:copperingot>,
   <abyssalcraft:tiningot>,
   <armorplus:steel_ingot>,
+
   <bigreactors:blockmetals:5>,
   <bigreactors:ingotmetals:5>,
   <crossroads:ingot_bronze>,
   <crossroads:ingot_copper>,
   <crossroads:ingot_tin>,
+  <crossroads:block_bronze>,
   <embers:plate_aluminum>,
   <embers:plate_bronze>,
   <embers:plate_nickel>,
@@ -222,6 +225,17 @@ var ipDisabled = [
   <embers:plate_silver>,
   <embers:plate_tin>,
   <embers:plate_iron>,
+  <embers:block_bronze>,
+  <embers:block_aluminum>,
+  <embers:block_electrum>,
+  <embers:block_nickel>,
+  <embers:block_tin>,
+  <embers:block_copper>,
+  <embers:block_lead>,
+  <embers:block_silver>,
+  <embers:ingot_copper>,
+  <embers:ingot_silver>,
+  <embers:ingot_lead>,
   <forestry:ingot_bronze>,
   <forestry:ingot_copper>,
   <forestry:ingot_tin>,

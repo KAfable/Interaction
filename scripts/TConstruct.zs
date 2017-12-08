@@ -6,6 +6,9 @@ import mods.tconstruct.Melting as tcm;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+  
+  #Alloying
+
 
 // Items
 var itemDisabled = [
@@ -27,7 +30,31 @@ recipes.remove(<tconstruct:slime_boots:4>);
 tcd.addRecipe(<minecraft:leather>, <tp:monster_jerky>, 6000);
 tcd.addRecipe(<minecraft:leather>, <tconstruct:edible:10>, 6000);
 
-  #Molten Recipes
+  #Molten Recipes - mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
+  #Iron
+tcm.removeRecipe( <liquid:iron>);
+tcm.addRecipe(    <liquid:iron>*16,     <minecraft:iron_nugget>);
+tcm.addRecipe(    <liquid:iron>*96,     <contenttweaker:impuredustiron>);
+tcm.addRecipe(    <liquid:iron>*144,    <thermalfoundation:material:32>);
+tcm.addRecipe(    <liquid:iron>*144,    <thermalfoundation:material>);
+tcm.addRecipe(    <liquid:iron>*576,    <thermalfoundation:material:24>);
+tcm.addRecipe(    <liquid:iron>*720,    <minecraft:minecart>);
+tcm.addRecipe(    <liquid:iron>*144,    <immersiveengineering:material:1>);
+tcm.addRecipe(    <liquid:iron>*1152,   <minecraft:iron_horse_armor>);
+tcm.addRecipe(    <liquid:iron>*1152,   <tconstruct:large_plate>.withTag({Material: "iron"}));
+tcm.addRecipe(    <liquid:iron>*1296,   <minecraft:iron_block>);
+
+  #Copper
+tcm.removeRecipe( <liquid:copper>);
+tcm.addRecipe(    <liquid:copper>*16,   <thermalfoundation:material:192>);
+tcm.addRecipe(    <liquid:copper>*96,   <contenttweaker:impuredustcopper>);
+tcm.addRecipe(    <liquid:copper>*144,  <thermalfoundation:material:128>);
+tcm.addRecipe(    <liquid:copper>*144,  <thermalfoundation:material:320>);
+tcm.addRecipe(    <liquid:copper>*576,  <thermalfoundation:material:256>);
+tcm.addRecipe(    <liquid:copper>*1296, <thermalfoundation:storage>);
+
+  #Tin
+
 var ores = [
   <thermalfoundation:ore:3>,
   <thermalfoundation:ore:2>,
@@ -64,10 +91,7 @@ val impure = [
   ] as IItemStack[];
 
 for i in 0 to 9 {
-  tcm.removeRecipe(liquidDisabled[i]*144, ores[i]);
-}
-for i in 0 to 9 {
-  tcm.addRecipe(liquidDisabled[i]*144, impure[i]);
+  tcm.addRecipe(liquidDisabled[i]*96, impure[i]);
 }
 
   #Basin Recipes
@@ -96,15 +120,42 @@ for item in basinDisabled {
 var tableDisabled = [
   <tconstruct:cast_custom:3>,
   <tconstruct:cast_custom:4>,
+  <ic2:plate:0>,
+  <ic2:ingot:1>,
+  <ic2:ingot:5>,
   <ic2:ingot:6>,
+  <ic2:ingot:7>,
   <ic2:plate:8>,
+  <ic2:resource:5>,
+  <thermalfoundation:material:32>,
+  <thermalfoundation:material:33>,
   <thermalfoundation:material:257>,
-  <thermalfoundation:material:357>,
-  <thermalfoundation:material:293>,
-  <thermalfoundation:material:356>,
-  <thermalfoundation:material:353>,
   <thermalfoundation:material:289>,
-  <thermalfoundation:material:257>,
+  <thermalfoundation:material:291>,
+  <thermalfoundation:material:293>,
+  <thermalfoundation:material:322>,
+  <thermalfoundation:material:324>,
+  <thermalfoundation:material:325>,
+  <thermalfoundation:material:326>,
+  <thermalfoundation:material:327>,
+  <thermalfoundation:material:328>,
+  <thermalfoundation:material:353>,
+  <thermalfoundation:material:354>,
+  <thermalfoundation:material:356>,
+  <thermalfoundation:material:357>,
+  <thermalfoundation:material:358>,
+  <thermalfoundation:material:359>,
+  <redstonearsenal:material:128>,
+  <techreborn:plates:17>,
+  <techreborn:plates:19>,
+  <techreborn:plates:30>,
+  <techreborn:plates:31>,
+  <techreborn:plates:32>,
+  <techreborn:plates:33>,
+  <techreborn:plates:34>,
+  <techreborn:plates:35>,
+  <tconstruct:bow_string>, 
+  <tconstruct:fletching>, 
   <tconstruct:pick_head>, 
   <tconstruct:shovel_head>,
   <tconstruct:shard>,
@@ -175,11 +226,9 @@ var tableDisabled = [
   <tconstruct:tough_tool_rod>,
   <tconstruct:sign_head>,
   <tconstruct:scythe_head>,
-  <tconstruct:wide_guard>
+  <tconstruct:wide_guard>,
+  <tconstruct:cast>.withTag({PartType: "tconstruct:gear"})
   ] as IItemStack[];
 
 for item in tableDisabled {
   tcc.removeTableRecipe(item);}
-
-  # Gears
-tcc.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:gear"}));

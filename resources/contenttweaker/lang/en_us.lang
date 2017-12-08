@@ -62,13 +62,14 @@ item.contenttweaker.ludicrousconveyor.name=Ludicrous Conveyor
 item.contenttweaker.divineconveyor.name=Divine Conveyor
 
 item.contenttweaker.impureDustBauxite.name=Impure Bauxite Dust
+item.contenttweaker.impureDustLead.name=Impure Lead Dust
 item.contenttweaker.impureDustIron.name=Impure Iron Dust
 item.contenttweaker.impureDustCopper.name=Impure Copper Dust
 item.contenttweaker.impureDustGold.name=Impure Gold Dust
 item.contenttweaker.impureDustZinc.name=Impure Zinc Dust
 item.contenttweaker.impureDustTin.name=Impure Tin Dust
 item.contenttweaker.impureDustAbyssalnite.name=Impure Abyssalnite Dust
-
+item.contenttweaker.impureDustSilver.name=Impure Silver Dust
 
 item.contenttweaker.astralmotor.name=Celestial Motor
 

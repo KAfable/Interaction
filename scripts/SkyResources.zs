@@ -2,7 +2,7 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-var stoneReinforced = <contenttweaker:material_part:32>;
+var stoneReinforced = <contenttweaker:material_part:35>;
 
 //////////////////////////
 // Removal of Excess Tiers
@@ -170,21 +170,19 @@ mods.skyresources.fusion.removeRecipe(<minecraft:dirt>);
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone Ingot";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
-	<contenttweaker:material_part:32>, <minecraft:blaze_powder>*3], 0.20);
+	<contenttweaker:material_part:35>, <minecraft:blaze_powder>*3], 0.20);
 
 
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [
 	<minecraft:coal_block>*6], 3.00);
 
-
-
 mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>*2, [
 	<minecraft:ender_eye>, <minecraft:log>, <minecraft:yellow_flower>, 
 	<minecraft:red_flower>, <minecraft:sapling>, <minecraft:dirt>, <minecraft:grass>], 5.00);
 mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>*2, [
 	<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, 
-	<minecraft:clay>, <contenttweaker:sub_block_holder_0:1>, <minecraft:obsidian>, 
+	<minecraft:clay>, <contenttweaker:sub_block_holder_0:2>, <minecraft:obsidian>, 
 	<minecraft:torch>], 5.00);
 
 ///////////
@@ -257,9 +255,7 @@ recipes.addShaped(<skyresources:heat:3>, [
   [stoneReinforced, <minecraft:blaze_powder>, stoneReinforced],
   [stoneReinforced, stoneReinforced, stoneReinforced]]);
 
-////////////
 // Renamings
-////////////
 <skyresources:combustionheater:3>.displayName = "Reinforced Stone Combustion Heater";
 <skyresources:heatprovider:3>.displayName = "Reinforced Stone Heat Provider";
 <skyresources:casing:3>.displayName = "Reinforced Stone Casing";

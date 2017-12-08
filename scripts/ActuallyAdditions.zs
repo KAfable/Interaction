@@ -2,7 +2,7 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-print("Actually Additions");
+print("Actually Additions Start");
 
 recipes.addShaped(<actuallyadditions:item_worm>, [
 	[null, null, null],
@@ -15,3 +15,5 @@ recipes.addShaped(<actuallyadditions:item_bag>, [
 	[<minecraft:string>, <minecraft:leather>, <minecraft:string>],
 	[<minecraft:string>, <thermalexpansion:satchel>, <minecraft:string>],
 	[<minecraft:leather>, null, <minecraft:leather>]]);
+
+print("Actually Additions End");

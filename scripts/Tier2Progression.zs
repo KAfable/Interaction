@@ -3,7 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 import mods.integrateddynamics.Squeezer as sq;
-import mods.crossroads.Grindstone as gs;
+
 import mods.tconstruct.Casting as tc;
 
 print("-------------- Tier 2 Progression Start --------------");
@@ -15,185 +15,92 @@ var petals = <botania:petal:*>;
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
 
-////////
-//Plates
-////////
-var ingotPlateInput = [
-  <minecraft:iron_ingot>,
-  <minecraft:gold_ingot>,
-  <thermalfoundation:material:128>,
-  <thermalfoundation:material:129>,
-  <thermalfoundation:material:130>,
-  <thermalfoundation:material:131>,
-  <thermalfoundation:material:132>,
-  <thermalfoundation:material:133>,
-  <thermalfoundation:material:134>,
-  <thermalfoundation:material:135>,
-  <thermalfoundation:material:136>,
-  <thermalfoundation:material:160>,
-  <thermalfoundation:material:161>,
-  <thermalfoundation:material:162>,
-  <thermalfoundation:material:163>,
-  <thermalfoundation:material:164>,
-  <thermalfoundation:material:165>,
-  <thermalfoundation:material:166>,
-  <thermalfoundation:material:167>
-  ] as IItemStack[];
+  #Plates
+function makeHammerPlate(plate as IItemStack, ingot as IIngredient) {
+  recipes.addShapeless(plate, [ingot, ingot, ingot, ingot, <ore:toolHammer>]);}
 
-var plateOutput = [
-  <thermalfoundation:material:32>,
-  <thermalfoundation:material:33>,
-  <thermalfoundation:material:320>,
-  <thermalfoundation:material:321>,
-  <thermalfoundation:material:322>,
-  <thermalfoundation:material:323>,
-  <thermalfoundation:material:324>,
-  <thermalfoundation:material:325>,
-  <thermalfoundation:material:326>,
-  <thermalfoundation:material:327>,
-  <thermalfoundation:material:328>,
-  <thermalfoundation:material:352>,
-  <thermalfoundation:material:353>,
-  <thermalfoundation:material:354>,
-  <thermalfoundation:material:355>,
-  <thermalfoundation:material:356>,
-  <thermalfoundation:material:357>,
-  <thermalfoundation:material:358>,
-  <thermalfoundation:material:359>
-  ] as IItemStack[];
+  //makeHammerPlate(, );
+makeHammerPlate(<techreborn:plates:17>,           <ore:ingotBrass>);
+makeHammerPlate(<thermalfoundation:material:32>,  <ore:ingotIron>);
+makeHammerPlate(<minecraft:gold_ingot>,           <ore:ingotGold>);
+makeHammerPlate(<thermalfoundation:material:320>, <ore:ingotCopper>);
+makeHammerPlate(<thermalfoundation:material:321>, <ore:ingotTin>);
+makeHammerPlate(<thermalfoundation:material:322>, <ore:ingotSilver>);
+makeHammerPlate(<thermalfoundation:material:323>, <ore:ingotLead>);
+makeHammerPlate(<thermalfoundation:material:324>, <ore:ingotAluminum>);
+makeHammerPlate(<thermalfoundation:material:324>, <ore:ingotALuminium>);
+makeHammerPlate(<thermalfoundation:material:325>, <ore:ingotNickel>);
+makeHammerPlate(<thermalfoundation:material:326>, <ore:ingotPlatinum>);
+makeHammerPlate(<thermalfoundation:material:327>, <ore:ingotIridium>);
+makeHammerPlate(<thermalfoundation:material:328>, <ore:ingotMithril>);
+makeHammerPlate(<thermalfoundation:material:352>, <ore:ingotSteel>);
+makeHammerPlate(<thermalfoundation:material:353>, <ore:ingotElectrum>);
+makeHammerPlate(<thermalfoundation:material:354>, <ore:ingotInvar>);
+makeHammerPlate(<thermalfoundation:material:355>, <ore:ingotBronze>);
+makeHammerPlate(<thermalfoundation:material:356>, <ore:ingotConstantan>);
+makeHammerPlate(<thermalfoundation:material:357>, <ore:ingotSignalum>);
+makeHammerPlate(<thermalfoundation:material:358>, <ore:ingotLumium>);
+makeHammerPlate(<thermalfoundation:material:359>, <ore:ingotEnderium>);
+makeHammerPlate(<contenttweaker:material_part:42>, <contenttweaker:material_part:35>);
 
-for i in 0 to 18 {
-  recipes.addShapeless(plateOutput[i], [
-    ingotPlateInput[i], ingotPlateInput[i], 
-    ingotPlateInput[i], ingotPlateInput[i], <ore:toolHammer>]);}
-
-for i in 0 to 18 {
-  recipes.addShapeless(plateOutput[i], [
-    ingotPlateInput[i], ingotPlateInput[i], 
-    ingotPlateInput[i], ingotPlateInput[i], <ore:toolHammerThermal>.transformDamage(1)]);}
-
-//////////
 //PipesEXU
-//////////
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped(<extrautils2:pipe>*8, [
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
   [<ore:glass>,<forestry:chipsets>,<ore:glass>],
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
 
-/////////
-//Pistons
-/////////
+  #Pistons
 recipes.remove(<minecraft:piston>);
 recipes.addShaped(<minecraft:piston>, [
   [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-[<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
-  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]
-  ]);
+  [<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
+  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
 recipes.addShaped(<minecraft:piston>*8, [
   [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
   [<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
-  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]
-  ]);
+  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
 
-////////////////
-//Ore Processing
-////////////////
-// Furnace Removals
-val ingots = [
-  <ore:ingotLead>,
-  <ore:ingotSilver>,
-  <ore:ingotGold>,
-  <ore:ingotAbyssalnite>,
-  <ore:ingotCopper>,
-  <ore:ingotTin>,
-  <ore:ingotIron>,
-  <ore:ingotZinc>,
-  <ore:ingotAluminum>
-  ] as IOreDictEntry[];
 
-val ores = [
-  <ore:oreLead>,
-  <ore:oreSilver>,
-  <ore:oreGold>,
-  <ore:oreAbyssalnite>,
-  <ore:oreCopper>,
-  <ore:oreTin>,
-  <ore:oreIron>,
-  <ore:oreZinc>,
-  <ore:oreAluminum>
-  ] as IOreDictEntry[];  
+  #Furnace Removals
+furnace.remove(<ore:ingotLead>,         <ore:oreLead>);
+furnace.remove(<ore:ingotSilver>,       <ore:oreSilver>);
+furnace.remove(<ore:ingotGold>,         <ore:oreGold>);
+furnace.remove(<ore:ingotAbyssalnite>,  <ore:oreAbyssalnite>);
+furnace.remove(<ore:ingotCopper>,       <ore:oreCopper>);
+furnace.remove(<ore:ingotTin>,          <ore:oreTin>);
+furnace.remove(<ore:ingotIron>,         <ore:oreIron>);
+furnace.remove(<ore:ingotZinc>,         <ore:oreZinc>);
+furnace.remove(<ore:ingotAluminum>,     <ore:oreAluminum>);
 
-val dusts = [
-  <thermalfoundation:material:67>,
-  <thermalfoundation:material:66>,
-  <thermalfoundation:material:1>,
-  <acintegration:dust>,
-  <thermalfoundation:material:64>,
-  <thermalfoundation:material:65>,
-  <thermalfoundation:material:0>,
-  <techreborn:dust:59>,
-  <techreborn:dust:5>
-  ] as IIngredient[];
+  #Impure Hammer Crushing
+recipes.addShapeless(<contenttweaker:impuredustlead>,        [<ore:oreLead>,        <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustsilver>,      [<ore:oreSilver>,      <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustgold>,        [<ore:oreGold>,        <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustabyssalnite>, [<ore:oreAbyssalnite>, <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustcopper>,      [<ore:oreCopper>,      <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredusttin>,         [<ore:oreTin>,         <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustiron>,        [<ore:oreIron>,        <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustzinc>,        [<ore:oreZinc>,        <ore:toolHammer>]);
+recipes.addShapeless(<contenttweaker:impuredustbauxite>,     [<ore:oreAluminum>,    <ore:toolHammer>]);
 
-val impure = [
-  <contenttweaker:impuredustlead>,
-  <contenttweaker:impuredustsilver>,
-  <contenttweaker:impuredustgold>,
-  <contenttweaker:impuredustabyssalnite>,
-  <contenttweaker:impuredustcopper>,
-  <contenttweaker:impuredusttin>,
-  <contenttweaker:impuredustiron>,
-  <contenttweaker:impuredustzinc>,
-  <contenttweaker:impuredustbauxite>
-  ] as IItemStack[];
-
-val nuggets = [
-  <thermalfoundation:material:195>,
-  <thermalfoundation:material:194>,
-  <minecraft:gold_nugget>,
-  <abyssalcraft:ingotnugget>,
-  <thermalfoundation:material:192>,
-  <thermalfoundation:material:193>,
-  <minecraft:iron_nugget>,
-  <techreborn:nuggets:18>,
-  <thermalfoundation:material:196>
-  ] as IItemStack[];
-
+  #Impure Smelting
 var configOreAmount = 6;
+furnace.addRecipe(<thermalfoundation:material:195>*configOreAmount,  <contenttweaker:impuredustlead>);
+furnace.addRecipe(<thermalfoundation:material:194>*configOreAmount,  <contenttweaker:impuredustsilver>);
+furnace.addRecipe(<minecraft:gold_nugget>*configOreAmount,           <contenttweaker:impuredustgold>);
+furnace.addRecipe(<abyssalcraft:ingotnugget>*configOreAmount,        <contenttweaker:impuredustabyssalnite>);
+furnace.addRecipe(<thermalfoundation:material:192>*configOreAmount,  <contenttweaker:impuredustcopper>);
+furnace.addRecipe(<thermalfoundation:material:193>*configOreAmount,  <contenttweaker:impuredusttin>);
+furnace.addRecipe(<minecraft:iron_nugget>*configOreAmount,           <contenttweaker:impuredustiron>);
+furnace.addRecipe(<techreborn:nuggets:18>*configOreAmount,           <contenttweaker:impuredustzinc>);
+furnace.addRecipe(<thermalfoundation:material:196>*configOreAmount,  <contenttweaker:impuredustbauxite>);
 
-/////////
-//Furnace
-/////////
-for i in 0 to 9 {
-  furnace.remove(ingots[i], ores[i]);}
-for i in 0 to 9 {
-  recipes.addShapeless(impure[i], [ores[i], <ore:toolHammer>]);}
-for i in 0 to 9 {
-  recipes.addShapeless(impure[i], [ores[i], <ore:toolHammerThermal>.transformDamage(1)]);}
-for i in 0 to 9 {
-  furnace.addRecipe(nuggets[i]*configOreAmount, impure[i]);}
-
-// Bronze Dusts
+// Disallow crafting of bronze dust
 recipes.remove(<techreborn:dust:7>);
 recipes.remove(<ic2:dust>);
 
-////////////
-//Grindstone
-////////////
-gs.removeRecipe(<ore:dustCopper>);
-gs.removeRecipe(<ore:gravel>);
 
-for i in 0 to 7 {
-  gs.addRecipe(ores[i], dusts[i]);
-}
-
-gs.addRecipe(<immersiveengineering:material:6>,<immersiveengineering:material:17>);
-gs.addRecipe(<skyresources:techitemcomponent:3>, <minecraft:quartz>*2);
-gs.addRecipe(<minecraft:netherrack>, <minecraft:quartz>*4);
-gs.addRecipe(<minecraft:stone>, <skyresources:techitemcomponent>);
-gs.addRecipe(<techreborn:rubber_log>, <ic2:misc_resource:4>);
-gs.addRecipe(<ic2:rubber_wood>, <ic2:misc_resource:4>);
 
 
 

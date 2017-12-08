@@ -18,9 +18,10 @@ var baxeRemoved = [
 for i in baxeRemoved {
 	recipes.remove(i);}
 
-//Stackable Regen Potions
+	#Medkit
 recipes.remove(<tp:med_kit>);
 recipes.addShapeless(<tp:med_kit>, [<minecraft:potion>.withTag({Potion: "minecraft:regeneration"})]);
+<tp:med_kit>.maxStackSize = 64;
 
 //Flint Armor
 recipes.remove(<tp:flint_helmet>);
