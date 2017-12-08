@@ -1,1 +1,1 @@
-recipes.removeByRecipeName("mysticalagriculture/leather");
+recipes.removeByRecipeName("mysticalagriculture:leather");

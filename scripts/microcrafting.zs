@@ -154,3 +154,9 @@ for i in 0 to 8 {
     [gearInput[i], <ore:gearReinforcedStone>, gearInput[i]],
     [gearInput[i], gearInput[i], gearInput[i]]]);
 }
+
+  #Wood Gear
+recipes.addShaped(<contenttweaker:material_part:58>, [
+  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+  [<ore:plankWood>, null, <ore:plankWood>],
+  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);

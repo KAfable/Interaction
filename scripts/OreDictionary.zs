@@ -29,7 +29,6 @@ var newBark = [
 for i in newBark {myBark.add(i);}
 
 //val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
-
 // Adding hammers to ore dictionary
 var hammers = <ore:toolHammer>;
 var hammerList = [
@@ -38,28 +37,39 @@ var hammerList = [
 	<roots:wood_hammer:*>,
 	<immersiveengineering:tool>
 	] as IItemStack[];
-
 hammers.addItems(hammerList);
+	
+	#blockBronze
+#recipes.addShapeless(<thermalfoundation:storage_alloy:3>, [
+#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
+#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
+#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
 
-//Portal Block Ore Dict'ing
-//Overworld
-var overworld = <ore:portalOverworld>;
-overworld.add(<contenttweaker:portalblockt>);
-overworld.add(<xtones:bitt:6>);
+	#dustInvar
+recipes.remove(<techreborn:dust:26>);
+recipes.addShapeless(<thermalfoundation:material:98>, 
+	[<techreborn:smalldust:26>, <techreborn:smalldust:26>, <techreborn:smalldust:26>, <techreborn:smalldust:26>]);
 
-	#gearWood
-<ore:gearWood>.remove(<buildcraftcore:gear_wood>);
-<ore:gearWood>.remove(<teslacorelib:gear_wood>);
+	#dustIron
+<ore:dustIron>.remove(<ic2:dust:8>);
+
+	#dustStone
+<ore:dustStone>.add(<skyresources:techitemcomponent>);
+
+	#gearBronze
+<ore:gearBronze>.remove(<forestry:gear_bronze>);
+
+	#gearDiamond
+<ore:gearDiamond>.remove(<teslacorelib:gear_diamond>);
+
+	#gearIron
+<ore:gearIron>.remove(<hammercore:iron_gear>);
 
 	#gearStone
 <ore:gearStone>.remove(<teslacorelib:gear_stone>);
 
-	#gearIron
-<ore:gearIron>.remove(<buildcraftcore:gear_iron>);
-<ore:gearIron>.remove(<hammercore:iron_gear>);
-
-	#gearDiamond
-<ore:gearDiamond>.remove(<teslacorelib:gear_diamond>);
+	#gearWood
+<ore:gearWood>.remove(<teslacorelib:gear_wood>);
 
 	#ingotTIn
 <ore:ingotTin>.remove(<mekanism:ingot:6>);
@@ -108,10 +118,14 @@ overworld.add(<xtones:bitt:6>);
 <ore:plateTin>.remove(<embers:plate_tin>);
 	
 	#plateIron
-<ore:plateIron>.remove(<ic2:plate:3>);
 <ore:plateIron>.remove(<techreborn:plates>);
 <ore:plateIron>.remove(<immersiveengineering:metal:39>);
 <ore:plateIron>.remove(<embers:plate_iron>);
+
+	#Portal Block
+var overworld = <ore:portalOverworld>;
+overworld.add(<contenttweaker:portalblockt>);
+overworld.add(<xtones:bitt:6>);
 
 	#stickIron
 <ore:stickIron>.remove(<fp:spaceship:12>);

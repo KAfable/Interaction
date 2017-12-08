@@ -54,7 +54,7 @@ val squeezerPlateOutput = [
   <thermalfoundation:material:320>,
   <thermalfoundation:material:321>,
   <thermalfoundation:material:355>,
-  <contenttweaker:material_part:176>,
+  <contenttweaker:material_part:1>,
   <thermalfoundation:material:352>,
   <techreborn:plates:17>,
   <ic2:plate:4>
