@@ -8,7 +8,8 @@ import crafttweaker.item.IIngredient;
 
 var aaDisabled = [
   <actuallyadditions:item_mining_lens>,
-  <actuallyadditions:block_heat_collector>]
+  <actuallyadditions:block_heat_collector>,
+  <actuallyadditions:block_tiny_torch>]
   as IItemStack[];
 
 for item in aaDisabled{

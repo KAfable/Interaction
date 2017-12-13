@@ -204,8 +204,3 @@ gs.addRecipe(<ore:orePlatinum>, <thermalfoundation:material:70>);
 gs.addRecipe(<ore:oreNickel>, <thermalfoundation:material:69>);
   #Tier 4
 gs.addRecipe(<ore:oreDreadedAbyssalnite>, <acintegration:dust:2>);
-//gs.addRecipe(<ore:oreCinnabar>, );
-//gs.addRecipe(<ore:orePyrite>, );
-//gs.addRecipe(<ore:oreMagnetite>, );
-//gs.addRecipe(<ore:oreSphalerite>, );
-//gs.addRecipe(<ore:oreSodalite>, );
