@@ -72,3 +72,11 @@ recipes.addShaped(<thermaldynamics:duct_16:3>, [
 
 	#Acqueous Accumulator (replaced by Evilcraft Eternal Water Block)
 recipes.remove(<thermalexpansion:device>);
+
+recipes.remove(<thermaldynamics:duct_0>);
+<thermaldynamics:duct_0>.displayName = "Basic Fluxduct";
+
+recipes.addShaped(<thermaldynamics:duct_0>*8, [
+	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
+	[<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
+	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);
