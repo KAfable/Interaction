@@ -27,14 +27,6 @@ addBiome:
     Notes:
         Adds the provided biome id to the provided type with a weight of 1. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy"
 
-setSpecialBiome:
-    Arguments:
-        String, Non_Null_Biome_ID
-    Usage:
-        biome type, biome ID
-    Notes:
-        Sets the special biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
-
 setSpecialVariantChance:
     Arguments:
         int
@@ -70,4 +62,12 @@ fillWithVanillaBiomes:
         biome type
     Notes:
         Fills the BiomeEntry list for the provided type with the entries it would contain in vanilla. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
+
+setSpecialBiome:
+    Arguments:
+        String, Non_Null_Biome_ID
+    Usage:
+        biome type, biome ID
+    Notes:
+        Sets the special biome for the provided type. Type options are "Ocean", "Desert", "Warm", "Cool", "Icy".
 

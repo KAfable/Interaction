@@ -3,6 +3,18 @@ for them. It is also where WorldInfo scripts and BiomePrinters are set.
 
 
 
+addDimension:
+    Arguments:
+        int
+    Usage:
+        dimension ID
+    Notes:
+        Used to add a dimension with this id using the default overworld WorldProvider.
+
+getPortalIgniterData:
+    Notes:
+        Returns the ItemData object for the portal igniter so functions can be called on it.
+
 getPortalIgniterData:
     Arguments:
         byte
@@ -10,10 +22,6 @@ getPortalIgniterData:
         portal id
     Notes:
         Returns the ItemData object for the portal igniter for the provided portal id so functions can be called on it.
-
-getPortalIgniterData:
-    Notes:
-        Returns the ItemData object for the portal igniter so functions can be called on it.
 
 setPortalIgniterOreDict:
     Arguments:
@@ -45,19 +53,19 @@ setGlobalWorldInfo:
 
 setWorldInfoDefinition:
     Arguments:
-        int
-    Usage:
-        dimension ID
-    Notes:
-        Sets the WorldInfoDefinition object for the provided dimensionID and returns it, so functions can be called on it. The same functions that can be called in a worldinfo script, can be called on this object. Documentation can be found in documentation/worldinfo/WorldInfo.txt
-
-setWorldInfoDefinition:
-    Arguments:
         int, WorldInfoDefinition
     Usage:
         dimension ID, definition
     Notes:
         Sets the WorldInfoDefinition for the provided dimensionID.
+
+setWorldInfoDefinition:
+    Arguments:
+        int
+    Usage:
+        dimension ID
+    Notes:
+        Sets the WorldInfoDefinition object for the provided dimensionID and returns it, so functions can be called on it. The same functions that can be called in a worldinfo script, can be called on this object. Documentation can be found in documentation/worldinfo/WorldInfo.txt
 
 setWorldInfoForDimension:
     Arguments:
@@ -77,19 +85,19 @@ setScriptForDimension:
 
 setDimensionDefinition:
     Arguments:
-        int, DimensionDefinition
-    Usage:
-        dimension ID, dimension definition
-    Notes:
-        Sets the DimensionDefiniton for provided dimensionID.
-
-setDimensionDefinition:
-    Arguments:
         int
     Usage:
         dimension ID
     Notes:
         Sets the DimensionDefiniton object for the provided dimensionID and returns it, so functions can be called on it. The same functions that can be called in a dimension script, can be called on this object. Documentation can be found in documentation/dimensions/DimensionScript.txt
+
+setDimensionDefinition:
+    Arguments:
+        int, DimensionDefinition
+    Usage:
+        dimension ID, dimension definition
+    Notes:
+        Sets the DimensionDefiniton for provided dimensionID.
 
 setPortalIgniter:
     Arguments:
@@ -101,14 +109,6 @@ setPortalIgniter:
 
 setPortalIgniter:
     Arguments:
-        String
-    Usage:
-        item name
-    Notes:
-        Sets the portal igniter. This is the item that will be used to ignite any custom portals. This counts for any meta. Returns the ItemData object for the portal igniter.
-
-setPortalIgniter:
-    Arguments:
         String, Integer
     Usage:
         item name, meta
@@ -117,11 +117,19 @@ setPortalIgniter:
 
 setPortalIgniter:
     Arguments:
-        byte, String
+        String
     Usage:
-        portal id, item name
+        item name
     Notes:
-        Sets the portal igniter for the provided portal id. This is the item that will be used to ignite the custom portal. This counts for any meta. Returns the ItemData object for the portal igniter.
+        Sets the portal igniter. This is the item that will be used to ignite any custom portals. This counts for any meta. Returns the ItemData object for the portal igniter.
+
+setPortalIgniter:
+    Arguments:
+        byte, String, Integer, String
+    Usage:
+        portal id, item name, meta, NBT Json
+    Notes:
+        Sets the portal igniter with the provided meta and NBT for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
 
 setPortalIgniter:
     Arguments:
@@ -133,11 +141,11 @@ setPortalIgniter:
 
 setPortalIgniter:
     Arguments:
-        byte, String, Integer, String
+        byte, String
     Usage:
-        portal id, item name, meta, NBT Json
+        portal id, item name
     Notes:
-        Sets the portal igniter with the provided meta and NBT for the provided portal id. This is the item that will be used to ignite the custom portal. Returns the ItemData object for the portal igniter.
+        Sets the portal igniter for the provided portal id. This is the item that will be used to ignite the custom portal. This counts for any meta. Returns the ItemData object for the portal igniter.
 
 setPortal:
     Arguments:
@@ -178,12 +186,4 @@ addBiomePrinter:
         dimension ID, height, width, spacing, startX, startZ
     Notes:
         Used to add a biome printer for the selected dimension. I suggest 500 height, 500 width, 10 spacing, 0 startX, 0 startZ for most cases. This can take a long time, or even run the game out of memory in extreme cases, if the size is set too high. Images are saved to config/dimensionalcontrol/output and overwrite eachother.
-
-addDimension:
-    Arguments:
-        int
-    Usage:
-        dimension ID
-    Notes:
-        Used to add a dimension with this id using the default overworld WorldProvider.
 

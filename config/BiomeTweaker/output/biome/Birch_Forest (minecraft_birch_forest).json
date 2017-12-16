@@ -53,6 +53,12 @@
       "Max Group Count": 4
     },
     {
+      "Entity Class": "com.dmonsters.entity.EntityHauntedCow",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
       "Entity Class": "teamroots.roots.entity.EntityDeer",
       "Weight": 10,
       "Min Group Count": 3,
@@ -137,6 +143,60 @@
       "Weight": 5,
       "Min Group Count": 1,
       "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityMutantSteve",
+      "Weight": 4,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityFreezer",
+      "Weight": 4,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityClimber",
+      "Weight": 4,
+      "Min Group Count": 1,
+      "Max Group Count": 5
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityZombieChicken",
+      "Weight": 8,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityBaby",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityWideman",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityWoman",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityEntrail",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.dmonsters.entity.EntityStranger",
+      "Weight": 4,
+      "Min Group Count": 2,
+      "Max Group Count": 8
     },
     {
       "Entity Class": "teamroots.embers.entity.EntityAncientGolem",

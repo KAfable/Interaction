@@ -1,6 +1,6 @@
 
 {
-  "ID": 95,
+  "ID": 102,
   "Name": "Purified Dreadlands",
   "Resource Location": "abyssalcraft:purified_dreadlands",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenAbyDreadlands",

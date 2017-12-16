@@ -3,6 +3,14 @@ ChunkGenerator, BiomeProvider and BlockReplacements.
 
 
 
+setChunkGenerator:
+    Arguments:
+        String, String
+    Usage:
+        script name, ChunkGenerator type
+    Notes:
+        Sets the ChunkGenerator script and ChunkGenerator type. The ChunkGenerator type can be null. Type options are "SURFACE", "FLAT", "HELL", "END", "VOID"
+
 setWorldProvider:
     Arguments:
         String, String
@@ -18,14 +26,6 @@ setBiomeProvider:
         script name, BiomeProvider type
     Notes:
         Used to set the BiomeProvider script and BiomeProvider type. Neither option may be null. Type options are "SURFACE", "SINGLE", "CUSTOM_LIGHT", "CUSTOM_MEDIUM"
-
-setChunkGenerator:
-    Arguments:
-        String, String
-    Usage:
-        script name, ChunkGenerator type
-    Notes:
-        Sets the ChunkGenerator script and ChunkGenerator type. The ChunkGenerator type can be null. Type options are "SURFACE", "FLAT", "HELL", "END", "VOID"
 
 setWorldProviderType:
     Arguments:

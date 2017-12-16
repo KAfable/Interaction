@@ -18,14 +18,6 @@ Constructor:
 
 addData:
     Arguments:
-        Non_Null_Biome_ID_Array, int, Non_Null_Biome_ID, int
-    Usage:
-        biome IDs, required count, replacement biome ID, chance
-    Notes:
-        Sets the biomes to check neighbors for, the required count of acceptable neighbors, the replacement biome ID and a random chance. Chance for it to happen is 1/chance.
-
-addData:
-    Arguments:
         Non_Null_Biome_ID_Array, Biome_ID_Array, Biome_ID_Array, int, Non_Null_Biome_ID
     Usage:
         biome IDs, whitelist, blacklist, required count, replacement biome ID
@@ -39,6 +31,14 @@ addData:
         biome IDs, whitelist, blacklist, required count, replacement biome ID, chance
     Notes:
         Sets the biomes to check neighbors for, the whitelist/blacklist, the required count of acceptable neighbors, the replacement biome and a random chance. If there are at least requiredCount number of neighbors nearby that are in the whitelist/not in the blacklist, there is a 1/chance chance for the biome to be replaced with the replacement biome.
+
+addData:
+    Arguments:
+        Non_Null_Biome_ID_Array, int, Non_Null_Biome_ID, int
+    Usage:
+        biome IDs, required count, replacement biome ID, chance
+    Notes:
+        Sets the biomes to check neighbors for, the required count of acceptable neighbors, the replacement biome ID and a random chance. Chance for it to happen is 1/chance.
 
 addData:
     Arguments:

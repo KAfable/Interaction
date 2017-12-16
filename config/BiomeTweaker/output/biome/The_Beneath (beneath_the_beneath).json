@@ -1,6 +1,6 @@
 
 {
-  "ID": 100,
+  "ID": 107,
   "Name": "The Beneath",
   "Resource Location": "beneath:the_beneath",
   "Class": "com.shinoow.beneath.common.world.biome.BiomeDeepDank",

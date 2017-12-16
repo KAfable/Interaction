@@ -1,6 +1,6 @@
 
 {
-  "ID": 99,
+  "ID": 106,
   "Name": "Dark Realm",
   "Resource Location": "abyssalcraft:dark_realm",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarkRealm",

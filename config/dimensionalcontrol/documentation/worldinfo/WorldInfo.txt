@@ -11,6 +11,14 @@ setSeed:
     Notes:
         Sets the world seed.
 
+setWorldType:
+    Arguments:
+        String
+    Usage:
+        WorldType ID
+    Notes:
+        Sets the world type.
+
 setThundering:
     Arguments:
         Boolean
@@ -22,14 +30,6 @@ setRaining:
         Boolean
     Notes:
         Sets permanent raining.
-
-setWorldType:
-    Arguments:
-        String
-    Usage:
-        WorldType ID
-    Notes:
-        Sets the world type.
 
 setDifficulty:
     Arguments:

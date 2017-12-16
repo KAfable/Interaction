@@ -1,6 +1,6 @@
 
 {
-  "ID": 97,
+  "ID": 104,
   "Name": "Dreadlands Mountains",
   "Resource Location": "abyssalcraft:dreadlands_mountains",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenMountainDreadlands",
