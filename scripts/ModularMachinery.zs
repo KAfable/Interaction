@@ -6,6 +6,13 @@ var chest = <minecraft:chest>;
 var hopper = <minecraft:hopper>;
 var bucket = <minecraft:bucket>;
 
+//Machine Gearbox
+recipes.addShaped(<modularmachinery:blockcasing:3>,[
+[<techreborn:plates:35>,<ore:gearGold>,<techreborn:plates:35>],
+[<contenttweaker:material_part:18>,<mekanism:basicblock:8>,<contenttweaker:material_part:18>],
+[<techreborn:plates:35>,<ore:gearGold>,<techreborn:plates:35>]
+]);
+
 //Input Busses
 recipes.remove(<modularmachinery:blockinputbus>);
 recipes.addShaped(<modularmachinery:blockinputbus>, [
@@ -15,6 +22,12 @@ recipes.addShaped(<modularmachinery:blockinputbus>, [
 
 recipes.remove(<modularmachinery:blockinputbus:1>);
 recipes.remove(<modularmachinery:blockinputbus:2>);
+recipes.addShaped(<modularmachinery:blockinputbus:2>, [
+[<ore:dyeOrange>,<contenttweaker:basicrobotarm>,<ore:dyeOrange>],
+[<techreborn:plates:35>,<immersiveengineering:wooden_device0:3>,<techreborn:plates:35>],
+[<ore:dyeOrange>,<techreborn:plates:35>,<ore:dyeOrange>]
+]);
+
 recipes.remove(<modularmachinery:blockinputbus:3>);
 recipes.remove(<modularmachinery:blockinputbus:4>);
 recipes.remove(<modularmachinery:blockinputbus:5>);
@@ -29,6 +42,13 @@ recipes.addShaped(<modularmachinery:blockoutputbus>, [
 
 recipes.remove(<modularmachinery:blockoutputbus:1>);
 recipes.remove(<modularmachinery:blockoutputbus:2>);
+recipes.addShaped(<modularmachinery:blockoutputbus:2>, [
+[<ore:dyeOrange>,<techreborn:plates:35>,<ore:dyeOrange>],
+[<techreborn:plates:35>,<immersiveengineering:wooden_device0:3>,<techreborn:plates:35>],
+[<ore:dyeOrange>,<contenttweaker:basicrobotarm>,<ore:dyeOrange>]
+]);
+
+
 recipes.remove(<modularmachinery:blockoutputbus:3>);
 recipes.remove(<modularmachinery:blockoutputbus:4>);
 recipes.remove(<modularmachinery:blockoutputbus:5>);
@@ -66,6 +86,11 @@ recipes.remove(<modularmachinery:blockfluidoutputhatch:6>);
 recipes.remove(<modularmachinery:blockenergyinputhatch>);
 recipes.remove(<modularmachinery:blockenergyinputhatch:1>);
 recipes.remove(<modularmachinery:blockenergyinputhatch:2>);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, [
+[<ore:dyeOrange>,<thermaldynamics:duct_0>,<ore:dyeOrange>],
+[<ore:plateSteel>,<contenttweaker:basicvalve>,<ore:plateSteel>],
+[<ore:dyeOrange>,<thermaldynamics:duct_0>,<ore:dyeOrange>]
+]);
 recipes.remove(<modularmachinery:blockenergyinputhatch:3>);
 recipes.remove(<modularmachinery:blockenergyinputhatch:4>);
 recipes.remove(<modularmachinery:blockenergyinputhatch:5>);
@@ -85,6 +110,11 @@ recipes.addShaped(<modularmachinery:blockcontroller>, [
 	[<ore:dyeOrange>, <minecraft:tripwire_hook>, <ore:dyeOrange>],
 	[<minecraft:tripwire_hook>, <actuallyadditions:item_worm>, <minecraft:tripwire_hook>],
 	[<ore:dyeOrange>, <skyresources:casing:3>, <ore:dyeOrange>]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, [
+[<ore:dyeOrange>, <immersiveengineering:sheetmetal:9>, <ore:dyeOrange>],
+[<immersiveengineering:sheetmetal:9>, null, <immersiveengineering:sheetmetal:9>],
+[<ore:dyeOrange>, <immersiveengineering:sheetmetal:9>, <ore:dyeOrange>]
+]);
 
 
 ////////////

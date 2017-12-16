@@ -86,14 +86,6 @@ recipes.remove(<immersiveengineering:wirecoil>);
 recipes.remove(<immersiveengineering:wirecoil:1>);
 recipes.remove(<immersiveengineering:wirecoil:2>);
 
-recipes.remove(<thermaldynamics:duct_0>);
-<thermaldynamics:duct_0>.displayName = "Basic Fluxduct";
-
-recipes.addShaped(<thermaldynamics:duct_0>, [
-	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
-	[<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
-	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);
-
 //Engines
 recipes.remove(<forestry:engine_biogas>);
 recipes.remove(<forestry:engine_peat>);
