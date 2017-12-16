@@ -1,23 +1,29 @@
 {
 	"populate": {
 
-		"rockCrystal": {
+		"rockCrystal": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "astralsorcery:blockcustomore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "astralsorcery:blockcustomore",
+						"weight": 25
 					},
 					{
-					"name": "abyssalcraft:stone",
-					"metadata": 1,
-					"weight": 75
+						"name": "abyssalcraft:stone",
+						"metadata": 1,
+						"weight": 75
 					}
 				],
-				"material": {
+				"material": 
+				{
 					"name": "abyssalcraft:stone",
-					"metadata": 1},
+					"metadata": 1
+				},
 				"radius": 16,
 				"height": 1
 			},
@@ -27,60 +33,82 @@
 			"max-height": 65,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [50]}
+				"value": [50]
+			}
 		},
 
-		"antiLiquifiedCoralium": {
+
+		"antiLiquifiedCoralium": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "geode",
-				"block": [{
-					"name": "abyssalcraft:abylcorore",
-					"weight": 80
+				"block": 
+				[
+					{
+						"name": "abyssalcraft:abylcorore",
+						"weight": 80
 					},
 					{
+						"name": "abyssalcraft:stone",
+						"metadata": 1,
+						"weight": 20
+					}
+				],
+				"material": 
+				{
 					"name": "abyssalcraft:stone",
-					"metadata": 1,
-					"weight": 20
-					}],
-				"material": {
-					"name": "abyssalcraft:stone",
-					"metadata": 1},
+					"metadata": 1
+				},
 				"cluster-size": 20,
 				"crust": "abyssalcraft:abylcorore",
 				"hollow": "true",
-				"filler": "abyssalcraft:antiwater"},
+				"filler": "abyssalcraft:antiwater"
+			},
 			"cluster-count": 1,
 			"chunk-chance": 50,
 			"min-height": 0,
 			"max-height": 60,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [50]}
+				"value": 
+				[
+					50
+				]
+			}
 		},
 
 		"abyssalIron": {
 			"distribution": "uniform",
 			"generator": {
 				"type": "plate",
-				"block": [{
-					"name":"abyssalcraft:abyiroore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name":"abyssalcraft:abyiroore",
+						"weight": 25
 					},
 					{
+						"name": "abyssalcraft:stone",
+						"metadata": 1,
+						"weight": 75
+					}
+				],
+				"material": 
+				{
 					"name": "abyssalcraft:stone",
-					"metadata": 1,
-					"weight": 75
-				}],
-				"material": {
-					"name": "abyssalcraft:stone",
-					"metadata": 1},
-				"radius": 16,
-				"height": 3},
+					"metadata": 1
+				},
+					"radius": 16,
+					"height": 3
+				},
 			"cluster-count": 1,
 			"chunk-chance": 60,
 			"min-height": 0,

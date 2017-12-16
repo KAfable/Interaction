@@ -1,16 +1,23 @@
 {
-	"populate": {
-		"apatite": {
+	"populate": 
+	{
+
+
+		"apatite": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "forestry:resources",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "forestry:resources",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
+						"name": "minecraft:stone",
+						"weight": 75
 					}
 				],
 				"material": "minecraft:stone",
@@ -22,46 +29,53 @@
 			"min-height": 75,
 			"max-height": 256,
 			"retrogen": false,
-			"biome": {
+			"biome": 
+			{
 				"restriction": "whitelist",
-				"value": [
+				"value": 
+				[
 					{
 						"type": "dictionary",
-						"entry": "MOUNTAIN"
-					},
-					{
-						"type": "dictionary",
-						"entry": "HILLS"
-					},
-					{
-						"type": "dictionary",
-						"entry": "SAVANNA"
-					},
-					{
-						"type": "dictionary",
-						"entry": "COLD"
+						"entry": 
+						[
+							"MOUNTAIN",
+							"HILLS",
+							"SAVANNA",
+							"COLD"
+						]
 					},
 					{
 						"type": "name",
 						"entry": "Crag Cliffs"
-					}]},
-			"dimension": {
+					}
+				]
+			},
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [100]}
+				"value": [0]
+			}
 		},
 
-		"abyssalnite": {
+
+
+		"abyssalnite": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "abyssalcraft:abyore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "abyssalcraft:abyore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -71,31 +85,44 @@
 			"min-height": 0,
 			"max-height": 60,
 			"retrogen": false,
-			"biome": {
+			"biome": 
+			{
 				"restriction": "whitelist",
-				"value": [
+				"value": 
+				[
 					{
 						"type": "dictionary",
 						"entry": "SPOOKY"
-					}]},
-			"dimension": {
+					}
+				]
+			},
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [100]}
+				"value": [0]
+			}
 		},
 
-		"aluminum": {
+
+
+		"aluminum": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name":"techreborn:ore",
-					"metadata":4,
-					"weight": 25
+				"block": 
+				[
+					{
+						"name":"techreborn:ore",
+						"metadata":4,
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-				}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -105,44 +132,55 @@
 			"min-height": 32,
 			"max-height": 128,
 			"retrogen": false,
-			"biome": {
+			"biome": 
+			{
 				"restriction": "whitelist",
-				"value": [
+				"value": 
+				[
 					{
 						"type": "dictionary",
-						"entry": "FOREST"
+						"entry":
+						[
+							"FOREST",
+							"PLAINS",
+							"SWAMP"
+						]
 					},
-					{
-						"type": "dictionary",
-						"entry": "PLAINS"
-					},
-					{
-						"type": "dictionary",
-						"entry": "SWAMP"
-					}]},
-			"dimension": {
+
+				]
+			},
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [100]}
+				"value": [0]
+			}
 		},
 
-		"AntiCoralium": {
+
+
+		"AntiCoralium": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "geode",
 				"block": "abyssalcraft:coraliumore",
 				"material": "minecraft:stone",
 				"cluster-size": "20",
 				"crust": "abyssalcraft:coraliumore",
 				"hollow": "true",
-				"filler": "abyssalcraft:antiwater"},
+				"filler": "abyssalcraft:antiwater"
+			},
 			"cluster-count": 1,
 			"min-height": 10,
 			"max-height": 60,
 			"chunk-chance": 15,
 			"retrogen": false,
-			"biome": {
+			"biome": 
+			{
 				"restriction": "whitelist",
-				"value": [
+				"value": 
+				[
 					{
 						"type": "dictionary",
 						"entry": "SPOOKY"
@@ -151,24 +189,34 @@
 						"type": "dictionary",
 						"entry": "SWAMP"
 					}
-						]},
-			"dimension": {
+				]
+			},
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [100]}
+				"value": [0]
+			}
 		},
 
-		"coal": {
+
+
+		"coal": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "minecraft:coal_ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "minecraft:coal_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 24,
 				"height": 3
@@ -179,26 +227,32 @@
 			"chunk-chance": 50,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": [0]
 			}
 		},
 
-		"copper": {
+
+
+		"copper": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "thermalfoundation:ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "thermalfoundation:ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -209,30 +263,36 @@
 			"max-height": 75,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": [0]
 			}
 		},
 
-		"gold": {
+
+
+		"gold": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "minecraft:gold_ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "minecraft:gold_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:iron_ore",
-					"weight": 25
+						"name": "minecraft:iron_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 50
-					}],
+						"name": "minecraft:stone",
+						"weight": 50
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 12,
 				"height": 3
@@ -243,26 +303,32 @@
 			"max-height": 35,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": [0]
 			}
 		},
 
-		"iron": {
+
+
+		"iron": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "minecraft:iron_ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "minecraft:iron_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 20,
 				"height": 3
@@ -273,23 +339,32 @@
 			"chunk-chance": 60,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [100]}
+				"value": [0]
+			}
 		},
 
-		"lapis": {
+
+
+		"lapis": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "minecraft:lapis_ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "minecraft:lapis_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -300,26 +375,33 @@
 			"max-height": 32,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": 
+				[0]
 			}
 		},
 
-		"redstone": {
+
+
+		"redstone": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "minecraft:redstone_ore",
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "minecraft:redstone_ore",
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -330,27 +412,32 @@
 			"chunk-chance": 90,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": [0]
 			}
 		},
 
-		"zinc": {
+
+		"zinc": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "fp:erze",
-					"metadata": 1,
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "fp:erze",
+						"metadata": 1,
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -361,25 +448,33 @@
 			"chunk-chance": 90,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100]}
+				"value": [0]
+			}
 		},
 
-		"tin": {
+
+
+		"tin": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"type": "plate",
-				"block": [{
-					"name": "thermalfoundation:ore",
-					"metadata": 1,
-					"weight": 25
+				"block": 
+				[
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 1,
+						"weight": 25
 					},
 					{
-					"name": "minecraft:stone",
-					"weight": 75
-					}],
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
 				"material": "minecraft:stone",
 				"radius": 16,
 				"height": 3
@@ -390,17 +485,19 @@
 			"chunk-chance": 60,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "whitelist",
-				"value": [
-					100
-				]
+				"value": [0]
 			}
 		},
 
-		"gravel": {
+
+		"gravel": 
+		{
 			"distribution": "uniform",
-			"generator": {
+			"generator": 
+			{
 				"block": "gravel",
 				"material": "minecraft:stone",
 				"cluster-size": 33
@@ -412,19 +509,22 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1, 1, 7]
 			}
 		},
 
-		"diorite": {
+
+
+		"diorite": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": {
+			"generator": 
+			{
+				"block": 
+				{
 					"name": "stone",
-					"properties": {
+					"properties": 
+					{
 						"variant": "diorite"
 					}
 				},
@@ -436,21 +536,25 @@
 			"max-height": 80,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1,1,7]
 			}
 		},
 
-		"granite": {
+
+
+		"granite": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": {
+			"generator": 
+			{
+				"block": 
+				{
 					"name": "stone",
-					"properties": {
+					"properties": 
+					{
 						"variant": "granite"
 					}
 				},
@@ -462,21 +566,24 @@
 			"max-height": 80,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1,1,7]
 			}
 		},
 
+
+
 		"andesite": {
 			"distribution": "uniform",
-			"generator": {
-				"block": {
+			"generator": 
+			{
+				"block": 
+				{
 					"name": "stone",
-					"properties": {
+					"properties": 
+					{
 						"variant": "andesite"
 					}
 				},
@@ -488,21 +595,25 @@
 			"max-height": 80,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1,1,7]
 			}
 		},
 
-		"silverfish": {
+
+
+		"silverfish": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": {
+			"generator": 
+			{
+				"block": 
+				{
 					"name": "monster_egg",
-					"properties": {
+					"properties": 
+					{
 						"variant": "stone"
 					}
 				},
@@ -513,12 +624,15 @@
 			"min-height": 0,
 			"max-height": 128,
 			"retrogen": false,
-			"biome": {
+			"biome": 
+			{
 				"restriction": "whitelist",
-				"value": [
+				"value": 
+				[
 					{
 						"type": "id",
-						"entry": [
+						"entry": 
+						[
 							"extreme_hills",
 							"smaller_extreme_hills",
 							"extreme_hills_with_trees",
@@ -528,19 +642,22 @@
 					}
 				]
 			},
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1,1,7]
 			}
 		},
 
-		"clay": {
+
+
+		"clay": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": {
+			"generator": 
+			{
+				"block": 
+				{
 					"name": "minecraft:clay"
 				},
 				"material": "minecraft:stone",
@@ -551,18 +668,20 @@
 			"max-height": 80,
 			"retrogen": false,
 			"biome": "all",
-			"dimension": {
+			"dimension": 
+			{
 				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
+				"value": [-1,1]
 			}
 		},
 
-		"aquamarine": {
+
+
+		"aquamarine": 
+		{
 			"distribution": "underwater",
-			"generator": {
+			"generator": 
+			{
 				"block": "astralsorcery:blockcustomsandore",
 				"radius": 3,
 				"height": 1,
