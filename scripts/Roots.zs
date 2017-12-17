@@ -25,10 +25,10 @@ recipes.addShaped(<roots:diamond_knife>, [
   [<ore:stick>, null, null]]);
 
 recipes.remove(<roots:gold_knife>);
-recipes.addShaped(<roots:wood_knife>, [
+recipes.addShaped(<roots:gold_knife>, [
   [null, null, <ore:ingotGold>],
   [null, <ore:ingotGold>, null],
-  [<ore:ingotGold>, null, null]]);
+  [<ore:stick>, null, null]]);
 
 <roots:wood_hammer>.maxDamage = 15;
 <roots:stone_hammer>.maxDamage = 31;
