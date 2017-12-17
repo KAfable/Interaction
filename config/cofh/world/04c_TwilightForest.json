@@ -2,22 +2,22 @@
 	"populate": 
 	{
 
+
+
 		"sulfur": 
 		{
 			"distribution": "uniform",
 			"generator": 
 			{
-				"type": "cluster",
 				"block": 
 				{ 
-					"name": "contenttweaker:sub_block_holder_0",
-					"metadata": 7
+					"name": "contenttweaker:sub_block_holder_0"
 				},
 				"material": "minecraft:stone",
 				"cluster-size": 1000
 			},
 			"cluster-count": 15,
-			"min-height": 32,
+			"min-height": 35,
 			"max-height": 50,
 			"retrogen": false,
 			"biome": 
@@ -25,8 +25,8 @@
 				"restriction": "whitelist",
 				"value": 
 				{
-					"type": "name",
-					"entry": "Fire Swamp"
+					"type": "dictionary",
+					"entry": "Hot"
 				}
 			 },
 			"dimension": 
@@ -35,6 +35,8 @@
 				"value": [7]
 			}
 		},
+
+
 
 		"sootyMarble": 
 		{
@@ -46,7 +48,7 @@
 					"name": "astralsorcery:blockblackmarble"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 16
+				"cluster-size": 32
 			},
 			"cluster-count": 10,
 			"min-height": 0,
@@ -54,11 +56,11 @@
 			"retrogen": false,
 			"biome": 
 			{
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": 
 				{
-					"type": "ID",
-					"entry": "Fire Swamp"
+					"type": "dictionary",
+					"entry": "HOT"
 				}
 			},
 			"dimension": 
@@ -66,6 +68,55 @@
 				"restriction": "whitelist",
 				"value": [7]	
 			}
+		},
+
+
+
+		"darkGem": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name": "evilcraft:dark_ore",
+						"weight": 25
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 16,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 50,
+			"min-height": 0,
+			"max-height": 25,
+			"retrogen": false,
+			"biome": 
+			{
+				"restriction": "blacklist",
+				"value": 
+				[
+					{
+						"type": "dictionary",
+						"entry": "HOT"
+					}
+				]
+			},
+			"dimension": 
+			{
+				"restriction": "whitelist",
+				"value": [7]
+			}
 		}
+
+
+
 	}
 }

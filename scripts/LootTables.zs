@@ -250,6 +250,68 @@ temple.removePool("randomthings:slimeCube");
 temple.removePool("randomthings:biomeCrystal");
 	#Jungle Temple - Moms Spaghetti
 //Set the chance to 100%
+	#Simple Dungeon
+var simpleDungeon = LootTables.getTable("minecraft:chests/simple_dungeon");
+	#Simple Dungeon - main
+var simpleDungeonMain = simpleDungeon.getPool("main");
+simpleDungeonMain.removeEntry("minecraft:saddle");
+simpleDungeonMain.removeEntry("minecraft:golden_apple");
+simpleDungeonMain.removeEntry("minecraft:golden_apple#0");
+simpleDungeonMain.removeEntry("minecraft:name_tag");
+simpleDungeonMain.removeEntry("minecraft:golden_horse_armor");
+simpleDungeonMain.removeEntry("minecraft:iron_horse_armor");
+simpleDungeonMain.removeEntry("minecraft:diamond_horse_armor");
+simpleDungeonMain.removeEntry("abyssalcraft:abyssalnite_ingot");
+simpleDungeonMain.removeEntry("abyssalcraft:copper_ingot");
+simpleDungeonMain.removeEntry("abyssalcraft:tin_ingot");
+simpleDungeonMain.removeEntry("abyssalcraft:crystallized_zinc");
+simpleDungeonMain.removeEntry("abyssalcraft:coralium_gem");
+simpleDungeonMain.removeEntry("abyssalcraft:shadow_fragment");
+simpleDungeonMain.removeEntry("abyssalcraft:shadow_gem_shard");
+simpleDungeonMain.removeEntry("rftoolsdim:parcel");
+simpleDungeonMain.removeEntry("evilcraft:origins_of_darkness");
+simpleDungeonMain.removeEntry("evilcraft:condensed_blood");
+simpleDungeonMain.removeEntry("evilcraft:box_of_eternal_closure");
+	#Simple Dungeon - pool1
+var simpleDungeonPool1 = simpleDungeon.getPool("pool1");
+simpleDungeonPool1.removeEntry("minecraft:iron_ingot");
+simpleDungeonPool1.removeEntry("minecraft:gold_ingot");
+simpleDungeonPool1.removeEntry("minecraft:bread");
+simpleDungeonPool1.removeEntry("minecraft:wheat");
+simpleDungeonPool1.removeEntry("minecraft:redstone");
+simpleDungeonPool1.removeEntry("minecraft:coal");
+simpleDungeonPool1.removeEntry("minecraft:melon_seeds");
+simpleDungeonPool1.removeEntry("minecraft:pumpkin_seeds");
+simpleDungeonPool1.removeEntry("minecraft:beetroot_seeds");
+simpleDungeonPool1.removeEntry("evilcraft:origins_of_darkness");
+simpleDungeonPool1.removeEntry("evilcraft:condensed_blood");
+simpleDungeonPool1.removeEntry("evilcraft:box_of_eternal_closure");
+	#Simple Dungeon - pool2
+var simpleDungeonPool2 = simpleDungeon.getPool("pool2");
+simpleDungeonPool2.removeEntry("minecraft:bone");
+simpleDungeonPool2.removeEntry("minecraft:gunpowder");
+simpleDungeonPool2.removeEntry("minecraft:rotten_flesh");
+simpleDungeonPool2.removeEntry("minecraft:string");
+simpleDungeonPool2.removeEntry("evilcraft:origins_of_darkness");
+simpleDungeonPool2.removeEntry("evilcraft:condensed_blood");
+simpleDungeonPool2.removeEntry("evilcraft:box_of_eternal_closure");
+	#Simple Dungeon - ic2
+simpleDungeon.removePool("ic2");
+	#Simple Dungeon - reliquary
+var simpleDungeonReliquary = simpleDungeon.getPool("xreliquary_inject_pool");
+simpleDungeonReliquary.removeEntry("evilcraft:origins_of_darkness");
+simpleDungeonReliquary.removeEntry("evilcraft:condensed_blood");
+simpleDungeonReliquary.removeEntry("evilcraft:box_of_eternal_closure");
+	#Simple Dungeon - Randomt Things Lava Charm
+simpleDungeon.removePool("randomthings:lavaCharm");
+	#Simple Dungeon - Randomt Things Summoning Pendulum
+simpleDungeon.removePool("randomthings:summoningPendulum");
+	#Simple Dungeon - Magic Hood
+simpleDungeon.removePool("randomthings:magicHood");
+	#Simple Dungeon - Slime Cube
+simpleDungeon.removePool("randomthings:slimeCube");
+	#Simple Dungeon - Biome Crystal
+simpleDungeon.removePool("randomthings:biomeCrystal");
 	#Spider
 var spider = LootTables.getTable("minecraft:entities/spider");
 var spiderPool1 = spider.getPool("pool1");
@@ -263,7 +325,6 @@ strangerPool.removeItemEntry(<minecraft:redstone>);
 	#Village - Blacksmith
 var blacksmith = LootTables.getTable("minecraft:chests/village_blacksmith");
 	#Village - Blacksmith Main
-/*
 var blacksmithMain = blacksmith.getPool("main");
 	var blacksmithMainRemoved = [
 	"minecraft:diamond",
@@ -285,14 +346,14 @@ var blacksmithMain = blacksmith.getPool("main");
 	"rftoolsdim:parcel", 						
 	"evilcraft:origins_of_darkness",
 	"evilcraft:condensed_blood", 				
-	"evilcraft:box_of_eternal_closure"] as String[];
+	"evilcraft:box_of_eternal_closure"] as string[];
 	for i in blacksmithMainRemoved {blacksmithMain.removeEntry(i);}
 	#Village - Blacksmith Reliquary
 var blacksmithReliquary = blacksmith.getPool("randomthings:magicHood");
 	var bsReliquaryRemoved = [
 	"evilcraft:origins_of_darkness",
 	"evilcraft:condensed_blood",
-	"evilcraft:box_of_eternal_closure"] as String[];
+	"evilcraft:box_of_eternal_closure"] as string[];
 	for i in bsReliquaryRemoved {blacksmithReliquary.removeEntry(i);}
 	#Village - Blacksmith IC2
 blacksmith.removePool("ic2");
@@ -302,7 +363,7 @@ blacksmith.removePool("randomthings:magicHood");
 blacksmith.removePool("randomthings:biomeCrystal");
 	#Village - Blacksmith Botania - see Botania - Village Blacksmith
 	#Village - Immersive Engineers House
-*/
+
 var ieHouse = LootTables.getTable("immersiveengineering:chests/engineers_house");
 var iePool = ieHouse.getPool("immersiveengineering:engineers_village_house");
 /*
