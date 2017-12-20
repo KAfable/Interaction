@@ -23,7 +23,7 @@ recipes.remove(<tp:med_kit>);
 recipes.addShapeless(<tp:med_kit>, [<minecraft:potion>.withTag({Potion: "minecraft:regeneration"})]);
 <tp:med_kit>.maxStackSize = 64;
 
-//Flint Armor
+	#Flint Armor
 recipes.remove(<tp:flint_helmet>);
 recipes.addShaped(<tp:flint_helmet>, [
 	[null, <minecraft:flint>, null],
@@ -47,4 +47,3 @@ recipes.addShaped(<tp:flint_boots>, [
 	[null, <minecraft:flint>, null],
 	[<minecraft:flint>, <silentgems:armorframe:3>, <minecraft:flint>],
 	[null, <minecraft:flint>, null]]);
-

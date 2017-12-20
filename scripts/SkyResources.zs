@@ -121,6 +121,7 @@ for item in 0 to 32 {
 ////////////
 //Combustion
 ////////////
+recipes.remove(<skyresources:quickdropper>);
 recipes.addShaped(<skyresources:quickdropper>, [
   [stoneReinforced, stoneReinforced, stoneReinforced],
   [stoneReinforced, <minecraft:dropper>, stoneReinforced],

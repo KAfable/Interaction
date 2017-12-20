@@ -4,7 +4,7 @@ recipes.remove(<roots:wood_knife>);
 recipes.addShaped(<roots:wood_knife>, [
   [null, null, <ore:plankWood>],
   [null, <ore:plankWood>, null],
-  [<ore:stick>, null, null]]);
+  [<ore:plankWood>, null, null]]);
 
 recipes.remove(<roots:stone_knife>);
 recipes.addShaped(<roots:stone_knife>, [
@@ -16,13 +16,13 @@ recipes.remove(<roots:iron_knife>);
 recipes.addShaped(<roots:iron_knife>, [
   [null, null, <ore:ingotIron>],
   [null, <ore:ingotIron>, null],
-  [<ore:stick>, null, null]]);
+  [<ore:ingotIron>, null, null]]);
 
 recipes.remove(<roots:diamond_knife>);
 recipes.addShaped(<roots:diamond_knife>, [
   [null, null, <ore:gemDiamond>],
   [null, <ore:gemDiamond>, null],
-  [<ore:stick>, null, null]]);
+  [<ore:gemDiamond>, null, null]]);
 
 recipes.remove(<roots:gold_knife>);
 //recipes.addShaped(<roots:gold_knife>, [

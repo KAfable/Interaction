@@ -69,7 +69,6 @@ for item in buildDisabled{
 var cycDisabled = [
   <cyclicmagic:block_miner_smart>,
   <cyclicmagic:tool_swap_match>,
-  <cyclicmagic:tool_prospector>,
   <cyclicmagic:tool_swap>]
   as IItemStack[];
 
@@ -445,7 +444,8 @@ for item in toolRedundant {
 var wepRedundant = [
   <techreborn:bronzesword>,
   <ic2:bronze_sword>,
-  <thermalfoundation:tool.sword_bronze>]
+  <thermalfoundation:tool.sword_bronze>,
+  <tp:flint_sword>]
   as IItemStack[];
 
 for item in wepRedundant {

@@ -153,8 +153,8 @@ recipes.addShaped(<contenttweaker:material_part:37>, [
   [<contenttweaker:material_part:41>, rstone, <contenttweaker:material_part:41>]]);
 
 recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:2>]);
-recipes.addShapeless(<contenttweaker:sub_block_holder_0:1>, [rstone, rstone, rstone, rstone, rstone,
-  rstone, rstone, rstone, rstone]);
+recipes.addShapeless(<contenttweaker:sub_block_holder_0:2>, 
+  [rstone, rstone, rstone, rstone, rstone, rstone, rstone, rstone, rstone]);
 recipes.addShapeless(<contenttweaker:material_part:40>*9, [rstone]);
 recipes.addShapeless(rstone, [<contenttweaker:material_part:40>, <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,
   <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,<contenttweaker:material_part:40>,

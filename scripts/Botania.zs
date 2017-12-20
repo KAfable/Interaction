@@ -12,5 +12,11 @@ recipes.addShapeless(<botania:fertilizer>*2, [
 recipes.addShapeless(<botania:fertilizer>, [
 	<minecraft:dye:15>, <minecraft:dye:1>, <minecraft:dye:1>, <minecraft:dye:11>, <minecraft:dye:11>]);
 
+//Easier Pure Daisy
+recipes.addShaped(<botania:specialflower>.withTag({type: "puredaisy"}), [
+	[<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>],
+	[<ore:petalWhite>, <ore:plant>, <ore:petalWhite>],
+	[<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>]]);
+
 var botPlants = <botania:flower>.definition;
 for i in 0 to 16 {<ore:mysticPlant>.add(botPlants.makeStack(i));}

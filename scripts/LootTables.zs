@@ -234,6 +234,14 @@ pyramid.removePool("forestry_factory_items");
 pyramid.removePool("randomthings:biomeCrystal");
 	#Desert Pyramid - Mom's Spaghetti
 //Increase it to 25%, to have on average one spaghetti per temple
+	#Enderman
+var enderman = LootTables.getTable("minecraft:entities/enderman");
+var endermanMain = enderman.getPool("main");
+endermanMain.removeEntry("minecraft:ender_pearl");
+endermanMain.addItemEntryJSON(<minecraft:ender_pearl>, 1, 0, [
+	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'", 
+	"count: {min: 0.0, max: 1.0}, function: 'minecraft:looting_enchant'"],
+	[]);
 	#Jungle Temple
 var temple = LootTables.getTable("minecraft:chests/jungle_temple");
 	#Jungle Temple - Main

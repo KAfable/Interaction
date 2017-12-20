@@ -1,0 +1,1 @@
+waypoint:Home Base:H:-106:71:198:1:false:0:gui.xaero_default:false:0
