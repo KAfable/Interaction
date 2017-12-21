@@ -40,3 +40,4 @@ config/XaeroWaypoints/
 BotaniaVars.dat
 optionsshaders.txt
 .ReAuth.cfg
+mputils/
