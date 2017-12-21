@@ -39,3 +39,4 @@ config/IC2.ini
 config/XaeroWaypoints/
 BotaniaVars.dat
 optionsshaders.txt
+.ReAuth.cfg
