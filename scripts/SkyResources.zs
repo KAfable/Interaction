@@ -2,6 +2,8 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+print("-------------- Sky Resources Start --------------");
+
 var stoneReinforced = <contenttweaker:material_part:35>;
 
 //////////////////////////
@@ -161,40 +163,40 @@ mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
 /////////
 //mods.skyresources.freezer.addRecipe(<harvestcraft:frostgarden>, <minecraft:tallgrass:1>*10, 800);
 
-////////
 //Fusion
-////////
 //mods.skyresources.fusion.addRecipe(ItemStack output, ItemStack[] input, float catalystUsedPerCraft);
 //mods.skyresources.fusion.removeRecipe(ItemStack output);
 mods.skyresources.fusion.removeRecipe(<minecraft:dirt>);
-
+	#Secundus Alchemy Component
+mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:3>);
+mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:3>, [
+	<minecraft:slime_ball>*4, <minecraft:blaze_powder>*2, <skyresources:alchemyitemcomponent:8>,
+	], 1.00);
+	#Alchemical Reinforced Stone Ingot
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone Ingot";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
 	<contenttweaker:material_part:35>, <minecraft:blaze_powder>*3], 0.20);
-
-
+	#Alchemical Diamond
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [
 	<minecraft:coal_block>*6], 3.00);
-
+	#Overworld Essence
 mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencel>*2, [
 	<minecraft:ender_eye>, <minecraft:log>, <minecraft:yellow_flower>, 
-	<minecraft:red_flower>, <minecraft:sapling>, <minecraft:dirt>, <minecraft:grass>], 5.00);
+	<minecraft:red_flower>, <minecraft:sapling>, <minecraft:dirt>, <minecraft:grass>], 3.00);
 mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>*2, [
 	<minecraft:ender_eye>, <minecraft:stone>, <minecraft:cobblestone>, 
 	<minecraft:clay>, <contenttweaker:sub_block_holder_0:2>, <minecraft:obsidian>, 
-	<minecraft:torch>], 5.00);
+	<minecraft:torch>], 3.00);
 
-///////////
-//Extractor
-///////////
+	#Extractor
+mods.skyresources.waterextractor.extract.removeRecipe(20, null, <minecraft:leaves>);	
+mods.skyresources.waterextractor.extract.addRecipe(50, null, <minecraft:leaves>);
 //mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>, <harvestcraft:soggygarden>);
 
 
-//////////
 //Infusion
-//////////
 var cow_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
 var chicken_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}});
 var sheep_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:sheep"}});
@@ -211,9 +213,14 @@ mods.skyresources.infusion.addRecipe(<minecraft:nether_wart>, <minecraft:netherr
 
 mods.skyresources.infusion.removeRecipe(<minecraft:reeds>);
 
-///////////////
-//Rock Grinder 
-///////////////
+	#Plant Matter
+recipes.addShaped(<skyresources:baseitemcomponent>, [
+	[null, <ore:bark>, null],
+	[<ore:bark>, <ore:bark>, <ore:bark>],
+	[null, <ore:bark>, null]]);
+
+
+	#Rock Grinder 
 //mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
 recipes.remove(<skyresources:stonegrinder>);
 recipes.addShaped(<skyresources:stonegrinder>, [
@@ -262,3 +269,5 @@ recipes.addShaped(<skyresources:heat:3>, [
 <skyresources:casing:3>.displayName = "Reinforced Stone Casing";
 <skyresources:heat:3>.displayName = "Reinforced Stone Heat Component";
 <skyresources:alchemy:3>.displayName = "Reinforced Stone Alchemy Component";
+
+print("-------------- Sky Resources End --------------");

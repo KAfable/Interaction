@@ -181,8 +181,7 @@ var gearsDisabled = [
   <hammercore:iron_gear>,
   <teslacorelib:gear_wood>,
   <teslacorelib:gear_stone>,
-  <teslacorelib:gear_diamond>,
-  <buildcraftcore:gear_wood>
+  <teslacorelib:gear_diamond>
   ] as IItemStack[];
 
 for item in gearsDisabled{

@@ -2,6 +2,8 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+print("-------------- Tier 1 Progression Start --------------");
+
 val stick = <ore:stickWood>;
 val stone = <ore:stone>;
 val rstone = <contenttweaker:material_part:35>;
@@ -106,9 +108,7 @@ recipes.addShaped(<immersiveengineering:tool>, [
   [null, <ore:stick>, rstone],
   [<ore:stick>, null, null]]);
 
-recipes.removeByRecipeName("common/string");
-recipes.removeByRecipeName("materials/slime_ball");
-recipes.removeByRecipeName("stuffedeggplantitem");
+recipes.removeByRecipeName("immersivetech:materials/slime_ball");
 recipes.addShapeless(<xtones:bitt:6>, [<contenttweaker:portalblockt>]);
 
 //Bed nerf
@@ -161,7 +161,7 @@ recipes.addShapeless(rstone, [<contenttweaker:material_part:40>, <contenttweaker
   <contenttweaker:material_part:40>,<contenttweaker:material_part:40>,<contenttweaker:material_part:40>]);
 
 //Casting / Alloying
-mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>, <liquid:glass>]);
+mods.tconstruct.Alloy.addRecipe(<liquid:glass-_slime_composite>, [<liquid:slime>*10, <liquid:glass>*10]);
 mods.tconstruct.Melting.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000, true);
@@ -246,3 +246,5 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
 
 mods.jei.JEI.addDescription(<contenttweaker:portalblockt>,
   ["Constructed similar to a Nether Portal but uses a worm as an igniter. It can also be crafted into another block if you don't like the texture."]);
+
+print("-------------- Tier 1 Progression End --------------");

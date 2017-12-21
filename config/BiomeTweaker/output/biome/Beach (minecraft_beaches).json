@@ -177,72 +177,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "cavern.entity.EntityCavenicSkeleton",
-      "Weight": 20,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicCreeper",
-      "Weight": 30,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicZombie",
-      "Weight": 30,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicSpider",
-      "Weight": 30,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicWitch",
-      "Weight": 15,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCrazySkeleton",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCrazyCreeper",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCrazyZombie",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCrazySpider",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCavenicBear",
-      "Weight": 30,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "cavern.entity.EntityCaveman",
-      "Weight": 30,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
       "Entity Class": "flaxbeard.cyberware.common.entity.EntityCyberZombie",
       "Weight": 15,
       "Min Group Count": 1,
@@ -253,12 +187,6 @@
     {
       "Entity Class": "net.minecraft.entity.passive.EntitySquid",
       "Weight": 10,
-      "Min Group Count": 4,
-      "Max Group Count": 4
-    },
-    {
-      "Entity Class": "cavern.entity.EntityAquaSquid",
-      "Weight": 100,
       "Min Group Count": 4,
       "Max Group Count": 4
     }

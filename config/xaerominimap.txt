@@ -21,10 +21,10 @@ oldDeathpoints:true
 distance:1
 showCoords:true
 lockNorth:false
-zoom:3
-mapSize:2
+zoom:0
+mapSize:3
 entityAmount:1
-chunkGrid:1
+chunkGrid:4
 slimeChunks:false
 playersColor:15
 mobsColor:14

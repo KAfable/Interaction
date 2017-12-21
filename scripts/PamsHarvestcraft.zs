@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.skyresources.infusion as inf;
 
-print("Pam's Harvestcraft Start");
+print("-----------------------Pam's Harvestcraft Start--------------------------");
 
 var chips = <ore:foodChips>;
 chips.add(<harvestcraft:potatochipsitem>);
@@ -79,8 +79,11 @@ inf.addRecipe(<harvestcraft:paperbark_sapling>,		<harvestcraft:windygarden>, <mi
 inf.addRecipe(<harvestcraft:peach_sapling>,			<harvestcraft:windygarden>, <minecraft:sapling:4>, 10);
 inf.addRecipe(<harvestcraft:cashew_sapling>,		<harvestcraft:windygarden>, <minecraft:sapling:5>, 10);
 
+	#Stuffed Eggplant Nerf
+recipes.removeByRecipeName("harvestcraft:stuffedeggplantitem");
+
 furnace.remove(<minecraft:bread>);
 recipes.removeByRecipeName("natura:common/bread");
 furnace.addRecipe(<minecraft:bread>, <harvestcraft:doughitem>);
 
-print("Pam's Harvestcraft End");
+print("-----------------------------Pam's Harvestcraft End----------------------------------");
