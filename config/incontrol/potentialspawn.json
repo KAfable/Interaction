@@ -1,11 +1,6 @@
 [	
 	{
 		"dimension": 0,
-		"remove": "minecraft:witch"
-	},
-
-	{
-		"dimension": 0,
 		"block": "minecraft:netherrack",
 		"mobs": [
 			{
@@ -15,6 +10,8 @@
 				"groupcountmax": 2
 			}]
 	},
+
+
 
 	{
         "dimension": 0,
@@ -32,6 +29,8 @@
         ]
 	},
 
+
+
 	{
 		"dimension": 0,
 		"block": "minecraft:netherrack",
@@ -43,4 +42,6 @@
 				"groupcountmax": 2
 			}]
 	}
+
+	
 ]

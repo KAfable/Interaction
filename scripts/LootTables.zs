@@ -371,10 +371,9 @@ blacksmith.removePool("randomthings:magicHood");
 blacksmith.removePool("randomthings:biomeCrystal");
 	#Village - Blacksmith Botania - see Botania - Village Blacksmith
 	#Village - Immersive Engineers House
-
 var ieHouse = LootTables.getTable("immersiveengineering:chests/engineers_house");
 var iePool = ieHouse.getPool("immersiveengineering:engineers_village_house");
-/*
+	#Village - Immersive Engineers House
 var ieEntries = [
 	"steel_rod",
 	"aluminium_rod",
@@ -383,21 +382,19 @@ var ieEntries = [
 	"aluminium_ingot",
 	"lead_nugget",
 	"silver_nugget",
-	"nugget_nickel"] as String[];
-*/
-iePool.removeEntry("steel_rod");
-iePool.removeEntry("aluminium_rod");
-iePool.removeEntry("steel_component");
-iePool.removeEntry("copper_ingot");
-iePool.removeEntry("aluminium_ingot");
-iePool.removeEntry("lead_nugget");
-iePool.removeEntry("silver_nugget");
-iePool.removeEntry("nugget_nickel");
-//for i in ieEntries {iePool.removeEntry(i);}
+	"nugget_nickel"] as string[];
+	for i in ieEntries {iePool.removeEntry(i);}
 	#Wither Skeleton - Vanilla
 var witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton");
 witherSkeleton.removePool("xuLootDropOfEvil");
-
+	#Witch
+var witch = LootTables.getTable("minecraft:entities/witch");
+	#Witch - Main
+var witchMain = witch.getPool("main");
+witchMain.removeEntry("minecraft:glowstone_dust");
+witchMain.removeEntry("minecraft:redstone");
+witchMain.removeEntry("minecraft:stick");
+	#Zombie
 val zombie = LootTables.getTable("minecraft:entities/zombie");
 val zomPool1 = zombie.getPool("pool1");
 zomPool1.removeEntry("minecraft:iron_ingot");

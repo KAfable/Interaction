@@ -41,3 +41,7 @@ BotaniaVars.dat
 optionsshaders.txt
 .ReAuth.cfg
 mputils/
+config/AppliedEnergistics2/aerecipes/items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
+*.errored
+config/buildcraft/detailed.properties
