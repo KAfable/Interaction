@@ -45,3 +45,6 @@ config/AppliedEnergistics2/aerecipes/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 *.errored
 config/buildcraft/detailed.properties
+config/xaerominimap.txt
+config/XaeroWorldMap/
+config/AppliedEnergistics2/aerecipes/items.csv

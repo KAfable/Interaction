@@ -17,7 +17,8 @@ var baxeRemoved = [
 	] as IItemStack[];
 for i in baxeRemoved {
 	recipes.remove(i);}
-
+	#Obsidian Sword
+recipes.remove(<tp:obsidian_sword>);
 	#Medkit
 recipes.remove(<tp:med_kit>);
 recipes.addShapeless(<tp:med_kit>, [<minecraft:potion>.withTag({Potion: "minecraft:regeneration"})]);

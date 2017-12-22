@@ -136,6 +136,7 @@
   "betterquesting": "2.5.236",
   "controlling": "3.0.5",
   "cookingforblockheads": "6.3.17",
+  "xaeroworldmap": "1.2.2",
   "circuits": "6.0.3",
   "placebo": "1.1.0",
   "calculator": "5.0.2",
