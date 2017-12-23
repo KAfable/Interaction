@@ -1,0 +1,36 @@
+{
+  "name": "storageDrawerObsidian",
+  "target-item": "storagedrawers:upgrade_storage",
+  "target-count": 15,
+
+  "duration": 20,
+
+  "catalyst": "storagedrawers:upgrade_template",
+
+  "input-types": 
+  {
+    "x": 
+    { 
+      "id": "minecraft:obsidian"
+    }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "_", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ]
+  ]
+}

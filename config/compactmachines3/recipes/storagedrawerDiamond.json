@@ -1,0 +1,37 @@
+{
+  "name": "storageDrawerDiamond",
+  "target-item": "storagedrawers:upgrade_storage",
+  "target-meta": 3,
+  "target-count": 15,
+
+  "duration": 20,
+
+  "catalyst": "storagedrawers:upgrade_template",
+
+  "input-types": 
+  {
+    "x": 
+    { 
+      "id": "minecraft:diamond_block"
+    }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "_", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ]
+  ]
+}

@@ -118,7 +118,6 @@ mineshaftMain.removeEntry("abyssalcraft:shadow_fragment");
 mineshaftMain.removeEntry("abyssalcraft:shadow_gem_shard");
 mineshaftMain.removeEntry("rftoolsdim:parcel");
 mineshaftMain.removeEntry("astralsorcery:constellation_paper");
-mineshaftMain.removeItemEntry(<evilcraft:origins_of_darkness>);
 	#Abandoned Mineshaft - Pool1
 var mineshaftPool1 = mineshaft.getPool("pool1");
 mineshaftPool1.setRolls(1, 1);
@@ -132,9 +131,6 @@ mineshaftPool1.removeItemEntry(<minecraft:bread>);
 mineshaftPool1.removeItemEntry(<minecraft:melon_seeds>);
 mineshaftPool1.removeItemEntry(<minecraft:pumpkin_seeds>);
 mineshaftPool1.removeItemEntry(<minecraft:beetroot_seeds>);
-mineshaftPool1.removeItemEntry(<evilcraft:origins_of_darkness>);
-mineshaftPool1.removeItemEntry(<evilcraft:box_of_eternal_closure>);
-mineshaftPool1.removeEntry("evilcraft:condensed_blood");
 mineshaftPool1.addItemEntryHelper(<silentgems:enchantmenttoken:256>, 20, 0, [], []);
 	#Abandoned Mineshaft - Pool2
 var mineshaftPool2 = mineshaft.getPool("pool2");
@@ -142,14 +138,8 @@ mineshaftPool2.removeItemEntry(<minecraft:rail>);
 mineshaftPool2.removeItemEntry(<minecraft:golden_rail>);
 mineshaftPool2.removeItemEntry(<minecraft:detector_rail>);
 mineshaftPool2.removeItemEntry(<minecraft:activator_rail>);
-mineshaftPool2.removeItemEntry(<evilcraft:origins_of_darkness>);
-mineshaftPool2.removeItemEntry(<evilcraft:condensed_blood>);
-mineshaftPool2.removeItemEntry(<evilcraft:box_of_eternal_closure>);
 	#Abandoned Mineshaft - Reliquary
 var mineshaftReliquary = mineshaft.getPool("xreliquary_inject_pool");
-mineshaftReliquary.removeItemEntry(<evilcraft:origins_of_darkness>);
-mineshaftReliquary.removeItemEntry(<evilcraft:condensed_blood>);
-mineshaftReliquary.removeItemEntry(<evilcraft:box_of_eternal_closure>);
 	#Abandoned Mineshaft - IC2
 mineshaft.removePool("ic2");
 	#Abandoned Mineshaft - Forestry Tools
@@ -207,23 +197,14 @@ pyramidMain.removeEntry("abyssalcraft:shadow_gem_shard");
 pyramidMain.removeEntry("rftoolsdim:parcel");
 pyramidMain.removeEntry("silentgemsGems1");
 pyramidMain.removeEntry("silentgemsGems2");
-pyramidMain.removeEntry("evilcraft:origins_of_darkness");
-pyramidMain.removeEntry("evilcraft:condensed_blood");
-pyramidMain.removeEntry("evilcraft:box_of_eternal_closure");
 	#Desert Pyramid - Pool1
 var pyramidPool1 = pyramid.getPool("pool1");
 pyramidPool1.removeEntry("minecraft:bone");
 pyramidPool1.removeEntry("minecraft:rotten_flesh");
 pyramidPool1.removeEntry("minecraft:string");
 pyramidPool1.removeEntry("minecraft:sand");
-pyramidPool1.removeEntry("evilcraft:origins_of_darkness");
-pyramidPool1.removeEntry("evilcraft:condensed_blood");
-pyramidPool1.removeEntry("evilcraft:box_of_eternal_closure");
 	#Desert Pyramid - Reliquary
 var pyramidReliquary = 	pyramid.getPool("xreliquary_inject_pool");
-pyramidReliquary.removeEntry("evilcraft:origins_of_darkness");
-pyramidReliquary.removeEntry("evilcraft:condensed_blood");
-pyramidReliquary.removeEntry("evilcraft:box_of_eternal_closure");
 	#Desert Pyramid - IC2
 pyramid.removePool("ic2");
 	#Desert Pyramid - Forestry Factory Items
@@ -248,9 +229,6 @@ var temple = LootTables.getTable("minecraft:chests/jungle_temple");
 var templeMain = temple.getPool("main");
 	#Jungle Temple - Reliquary
 var templeReliquary = temple.getPool("xreliquary_inject_pool");
-templeReliquary.removeEntry("evilcraft:origins_of_darkness");
-templeReliquary.removeEntry("evilcraft:condensed_blood");
-templeReliquary.removeEntry("evilcraft:box_of_eternal_closure");
 	#Jungle Temple - IC2
 temple.removePool("ic2");
 	#Jungle Temple - Random Things
@@ -277,9 +255,6 @@ simpleDungeonMain.removeEntry("abyssalcraft:coralium_gem");
 simpleDungeonMain.removeEntry("abyssalcraft:shadow_fragment");
 simpleDungeonMain.removeEntry("abyssalcraft:shadow_gem_shard");
 simpleDungeonMain.removeEntry("rftoolsdim:parcel");
-simpleDungeonMain.removeEntry("evilcraft:origins_of_darkness");
-simpleDungeonMain.removeEntry("evilcraft:condensed_blood");
-simpleDungeonMain.removeEntry("evilcraft:box_of_eternal_closure");
 	#Simple Dungeon - pool1
 var simpleDungeonPool1 = simpleDungeon.getPool("pool1");
 simpleDungeonPool1.removeEntry("minecraft:iron_ingot");
@@ -291,25 +266,16 @@ simpleDungeonPool1.removeEntry("minecraft:coal");
 simpleDungeonPool1.removeEntry("minecraft:melon_seeds");
 simpleDungeonPool1.removeEntry("minecraft:pumpkin_seeds");
 simpleDungeonPool1.removeEntry("minecraft:beetroot_seeds");
-simpleDungeonPool1.removeEntry("evilcraft:origins_of_darkness");
-simpleDungeonPool1.removeEntry("evilcraft:condensed_blood");
-simpleDungeonPool1.removeEntry("evilcraft:box_of_eternal_closure");
 	#Simple Dungeon - pool2
 var simpleDungeonPool2 = simpleDungeon.getPool("pool2");
 simpleDungeonPool2.removeEntry("minecraft:bone");
 simpleDungeonPool2.removeEntry("minecraft:gunpowder");
 simpleDungeonPool2.removeEntry("minecraft:rotten_flesh");
 simpleDungeonPool2.removeEntry("minecraft:string");
-simpleDungeonPool2.removeEntry("evilcraft:origins_of_darkness");
-simpleDungeonPool2.removeEntry("evilcraft:condensed_blood");
-simpleDungeonPool2.removeEntry("evilcraft:box_of_eternal_closure");
 	#Simple Dungeon - ic2
 simpleDungeon.removePool("ic2");
 	#Simple Dungeon - reliquary
 var simpleDungeonReliquary = simpleDungeon.getPool("xreliquary_inject_pool");
-simpleDungeonReliquary.removeEntry("evilcraft:origins_of_darkness");
-simpleDungeonReliquary.removeEntry("evilcraft:condensed_blood");
-simpleDungeonReliquary.removeEntry("evilcraft:box_of_eternal_closure");
 	#Simple Dungeon - Randomt Things Lava Charm
 simpleDungeon.removePool("randomthings:lavaCharm");
 	#Simple Dungeon - Randomt Things Summoning Pendulum
@@ -351,18 +317,10 @@ var blacksmithMain = blacksmith.getPool("main");
 	"abyssalcraft:iron_upgrade_kit",
 	"abyssalcraft:gold_upgrade_kit", 			
 	"abyssalcraft:diamond_upgrade_kit",
-	"rftoolsdim:parcel", 						
-	"evilcraft:origins_of_darkness",
-	"evilcraft:condensed_blood", 				
-	"evilcraft:box_of_eternal_closure"] as string[];
+	"rftoolsdim:parcel"] as string[];
 	for i in blacksmithMainRemoved {blacksmithMain.removeEntry(i);}
 	#Village - Blacksmith Reliquary
 var blacksmithReliquary = blacksmith.getPool("randomthings:magicHood");
-	var bsReliquaryRemoved = [
-	"evilcraft:origins_of_darkness",
-	"evilcraft:condensed_blood",
-	"evilcraft:box_of_eternal_closure"] as string[];
-	for i in bsReliquaryRemoved {blacksmithReliquary.removeEntry(i);}
 	#Village - Blacksmith IC2
 blacksmith.removePool("ic2");
 	#Village - Blacksmith Random Things Magic Hood

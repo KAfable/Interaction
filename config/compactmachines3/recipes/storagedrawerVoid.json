@@ -1,0 +1,36 @@
+{
+  "name": "storagedrawers:upgrade_void",
+  "target-item": "storagedrawers:upgrade_void",
+  "target-count": 15,
+
+  "duration": 20,
+
+  "catalyst": "storagedrawers:upgrade_template",
+
+  "input-types": 
+  {
+    "x": 
+    { 
+      "id": "quantumstorage:trashcan"
+    }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ],
+    [
+      ["x", "x", "x"],
+      ["x", "x", "x"],
+      ["x", "x", "x"]
+    ]
+  ]
+}
