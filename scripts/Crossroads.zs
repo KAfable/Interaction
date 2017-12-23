@@ -97,6 +97,12 @@ mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:164>);
 fcc.addRecipe(<thermalfoundation:material:165>, <liquid:signalum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);
 
+  #Axle
+recipes.remove(<crossroads:axle>);
+recipes.addShaped(<crossroads:axle>, [
+  [null, <ore:ingotIron>, null],
+  [null, <ore:ingotIron>, null],
+  [null, <ore:ingotIron>, null]]);
 
   #Cables
 recipes.removeShaped(<crossroads:heat_cable_copper_wool>);

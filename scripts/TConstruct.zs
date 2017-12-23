@@ -127,6 +127,7 @@ var tableDisabled = [
   <ic2:ingot:7>,
   <ic2:plate:8>,
   <ic2:resource:5>,
+  <thermalfoundation:material:24>,
   <thermalfoundation:material:32>,
   <thermalfoundation:material:33>,
   <thermalfoundation:material:257>,

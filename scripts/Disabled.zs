@@ -77,8 +77,6 @@ for item in cycDisabled{
 
 ///////
 // Dust
-///////
-
 var dustDisabled = [
   <ic2:dust:7>,
   <immersiveengineering:metal:19>,
@@ -201,6 +199,14 @@ for item in immDisabled{
 <immersiveengineering:wooden_device1>.addTooltip(format.red("Disabled"));
 <immersiveengineering:material:10>.addTooltip(format.red("Disabled"));
 
+  #IC2
+var ic2Disabled = [
+  <ic2:te:50>]
+  as IItemStack[];
+
+for item in ic2Disabled{
+    recipes.remove(item);}
+
 ////////////////////////////
 //Ingots & Plates & Blocks
 /////////////////////////////
@@ -208,7 +214,6 @@ var ipDisabled = [
   <abyssalcraft:copperingot>,
   <abyssalcraft:tiningot>,
   <armorplus:steel_ingot>,
-
   <bigreactors:blockmetals:5>,
   <bigreactors:ingotmetals:5>,
   <crossroads:ingot_bronze>,

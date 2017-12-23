@@ -132,9 +132,7 @@ recipes.addShaped(<skyresources:combustioncollector>, [
   [stoneReinforced, stoneReinforced, stoneReinforced],
   [stoneReinforced, <minecraft:hopper>, stoneReinforced],
   [stoneReinforced, stoneReinforced, stoneReinforced]]);
-
-
-
+	#Removiung progression breaking recipes
 mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
 mods.skyresources.combustion.removeRecipe(<embers:shard_ember>);
 mods.skyresources.combustion.removeRecipe(<armorplus:lava_crystal>);
@@ -144,8 +142,6 @@ mods.skyresources.combustion.removeRecipe(<minecraft:snowball>);
 ///////////
 //Condenser
 ///////////
-
-
 
 //////////
 //Crucible 
@@ -194,7 +190,6 @@ mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>*2, [
 mods.skyresources.waterextractor.extract.removeRecipe(20, null, <minecraft:leaves>);	
 mods.skyresources.waterextractor.extract.addRecipe(50, null, <minecraft:leaves>);
 //mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>, <harvestcraft:soggygarden>);
-
 
 //Infusion
 var cow_egg = <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}});
