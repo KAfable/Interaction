@@ -128,6 +128,7 @@ recipes.addShaped(<natura:respawn_obelisk>, [
 
 // Smeltery
 recipes.remove(<tconstruct:soil>);
+mods.tconstruct.Melting.addRecipe(<liquid:lava> * 1000,<skyresources:blazepowderblock>);
 mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
   <minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
 mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [
