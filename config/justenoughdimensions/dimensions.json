@@ -9,8 +9,7 @@
         "GameRules": 
         {
           "tfEnforcedProgression": "false",
-          "doNaturalRegen": "false",
-          "naturalRegeneration": "false"
+          "doNaturalRegen": "false"
         }
       },
       "jed": 
@@ -27,8 +26,7 @@
         "GameRules":
         {
           "doWeathercycle": "false",
-          "doNaturalRegen": "false",
-          "naturalRegeneration": "false"
+          "doNaturalRegen": "false"
         }
       }
     },
@@ -44,8 +42,7 @@
         "GameRules":         
         {
           "doWeatherCycle": "false",
-          "doNaturalRegen": "true",
-          "naturalRegeneration": "true"
+          "doNaturalRegen": "true"
         }
       }
     }

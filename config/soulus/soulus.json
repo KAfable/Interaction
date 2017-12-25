@@ -825,7 +825,7 @@
 		"*": {
 			"*": {
 				"*": {
-					"spawn_chance": 1.0,
+					"spawn_chance": 0.0,
 					"has_drops": true
 				}
 			}
@@ -850,9 +850,9 @@
 			"max": 1.0
 		},
 		"max_upgrades": {
-			"range": 64,
+			"delay": 64,
 			"count": 64,
-			"delay": 64
+			"range": 64
 		},
 		"non_upgraded_count": {
 			"min": 1.0,
