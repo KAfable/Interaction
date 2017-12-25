@@ -11,6 +11,7 @@ var zsBlockj = VanillaFactory.createBlock("portalBlockt", <blockmaterial:rock>);
 zsBlockj.blockSoundType = <soundtype:metal>;
 zsBlockj.blockLayer = "CUTOUT";
 zsBlockj.setFullBlock(false);
+zsBlockj.setBlockHardness(5);
 zsBlockj.setBlockResistance(6000);
 zsBlockj.setToolLevel(0);
 zsBlockj.register();

@@ -6,7 +6,12 @@ alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopp
 alloy.addRecipe(<techreborn:ingot:1>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredustzinc>, 1200);
 
-
+	#Hammer
+recipes.remove(<immersiveengineering:tool>);
+recipes.addShaped(<immersiveengineering:tool>, [
+	[null, <contenttweaker:material_part:35>, <minecraft:string>],
+	[null, <minecraft:stick>, <contenttweaker:material_part:35>],
+	[<minecraft:stick>, null, null]]);
 
 
 // Hammer Removal
