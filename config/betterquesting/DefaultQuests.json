@@ -71,36 +71,6 @@
           "repeattime": -1,
           "simultaneous": false,
           "icon": {
-            "id": "minecraft:nether_star",
-            "Count": 1,
-            "OreDict": "",
-            "Damage": 0
-          },
-          "globalshare": false,
-          "questlogic": "AND",
-          "partysinglereward": false,
-          "snd_update": "minecraft:entity.player.levelup",
-          "autoclaim": false,
-          "ismain": false,
-          "name": "New Quest",
-          "desc": "No Description"
-        }
-      },
-      "tasks": [],
-      "rewards": [],
-      "preRequisites": [],
-      "questID": 1
-    },
-    {
-      "properties": {
-        "betterquesting": {
-          "issilent": false,
-          "snd_complete": "minecraft:entity.player.levelup",
-          "lockedprogress": false,
-          "tasklogic": "AND",
-          "repeattime": -1,
-          "simultaneous": false,
-          "icon": {
             "id": "skyresources:waterextractor",
             "Count": 1,
             "OreDict": "",
@@ -1780,7 +1750,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "xtones:zeta",
@@ -1883,7 +1853,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "contenttweaker:overworldessencel",
@@ -1991,7 +1961,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "xtones:zome",
@@ -2043,7 +2013,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "minecraft:enchanting_table",
@@ -2196,7 +2166,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "chisel:netherbrick",
@@ -2298,7 +2268,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "modularmachinery:blockcontroller",
@@ -2351,7 +2321,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
-          "visibility": "UNLOCKED",
+          "visibility": "NORMAL",
           "simultaneous": false,
           "icon": {
             "id": "modularmachinery:blockinputbus",
@@ -2549,7 +2519,7 @@
             "OreDict": "",
             "Damage": 0,
             "tag": {
-              "dynamicmachine:8": "modularmachinery:assembly_machine"
+              "dynamicmachine:8": "modularmachinery:portal_fabricator"
             }
           },
           "globalshare": false,
@@ -2558,13 +2528,15 @@
           "snd_update": "minecraft:entity.player.levelup",
           "autoclaim": false,
           "ismain": true,
-          "name": "Assembly Machine",
+          "name": "Portal Fabricator (Tier 2)",
           "desc": "No Description"
         }
       },
       "tasks": [],
       "rewards": [],
-      "preRequisites": [],
+      "preRequisites": [
+        46
+      ],
       "questID": 47
     },
     {
@@ -3031,12 +3003,12 @@
         }
       ],
       "lineID": 0,
-      "order": 1
+      "order": 2
     },
     {
       "properties": {
         "betterquesting": {
-          "name": "Master Plans",
+          "name": "Dimension Fabrication",
           "bg_image": "",
           "bg_size": 256,
           "desc": "You\u0027re cooking something up in the kitchen..."
@@ -3099,8 +3071,8 @@
         },
         {
           "size": 36,
-          "x": 216,
-          "y": 0,
+          "x": 78,
+          "y": 126,
           "id": 47
         }
       ],
@@ -3118,7 +3090,7 @@
       },
       "quests": [],
       "lineID": 2,
-      "order": 2
+      "order": 3
     },
     {
       "properties": {
@@ -3131,7 +3103,20 @@
       },
       "quests": [],
       "lineID": 3,
-      "order": 3
+      "order": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": ""
+        }
+      },
+      "quests": [],
+      "lineID": 4,
+      "order": 1
     }
   ],
   "format": "1.0.0"
