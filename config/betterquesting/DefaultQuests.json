@@ -2464,13 +2464,13 @@
           "autoclaim": false,
           "ismain": true,
           "name": "Tier 1 Complete!",
-          "desc": "You did it! Your plan worked! Now to make your way to the next dimension... The Overworld..."
+          "desc": "You did it! Your plan worked! Now to make your way to the next dimension... The Overworld... Place your blocks in a traditional nether portal fashion and then light the portal with a Worm (AA)."
         }
       },
       "tasks": [
         {
           "partialMatch": true,
-          "ignoreNBT": false,
+          "ignoreNBT": true,
           "consume": false,
           "groupDetect": false,
           "autoConsume": false,
@@ -2482,7 +2482,7 @@
               "Damage": 0
             },
             {
-              "id": "minecraft:fire_charge",
+              "id": "actuallyadditions:item_worm",
               "Count": 1,
               "OreDict": "",
               "Damage": 0
@@ -3082,15 +3082,15 @@
     {
       "properties": {
         "betterquesting": {
-          "name": "Overworld",
+          "name": "Overworld - Technology",
           "bg_image": "",
           "bg_size": 256,
-          "desc": "To the ground you return..."
+          "desc": "With technology, you rise..."
         }
       },
       "quests": [],
       "lineID": 2,
-      "order": 3
+      "order": 5
     },
     {
       "properties": {
@@ -3098,12 +3098,12 @@
           "name": "Underworld",
           "bg_image": "",
           "bg_size": 256,
-          "desc": "Deeper you go..."
+          "desc": "No Description"
         }
       },
       "quests": [],
       "lineID": 3,
-      "order": 4
+      "order": 8
     },
     {
       "properties": {
@@ -3117,6 +3117,58 @@
       "quests": [],
       "lineID": 4,
       "order": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": ""
+        }
+      },
+      "quests": [],
+      "lineID": 5,
+      "order": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Overworld - Prospecting",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "To the ground you return..."
+        }
+      },
+      "quests": [],
+      "lineID": 6,
+      "order": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": ""
+        }
+      },
+      "quests": [],
+      "lineID": 7,
+      "order": 7
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Overworld - Exploration",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Exploring to greater heights..."
+        }
+      },
+      "quests": [],
+      "lineID": 8,
+      "order": 6
     }
   ],
   "format": "1.0.0"
