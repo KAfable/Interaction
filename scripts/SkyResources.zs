@@ -110,7 +110,12 @@ val cauldronRemoved = [
 	<thermalfoundation:material:72>,
 	<silentgems:craftingmaterial>,
 	<silentgems:craftingmaterial:4>,
-	<skyresources:dirtygem:39>
+	<skyresources:dirtygem:39>,
+	<thermalfoundation:material>,
+	<nuclearcraft:dust:5>,
+	<nuclearcraft:dust:7>,
+	<nuclearcraft:dust:4>,
+	<nuclearcraft:dust:3>
 	] as IItemStack[];
 
 for i in cauldronRemoved {
