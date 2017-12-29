@@ -14,9 +14,9 @@ recipes.addShaped(<roots:stone_knife>, [
 
 recipes.remove(<roots:iron_knife>);
 recipes.addShaped(<roots:iron_knife>, [
-  [null, null, <ore:ingotIron>],
-  [null, <ore:ingotIron>, null],
-  [<ore:ingotIron>, null, null]]);
+  [null, null, <ore:ingotReinforcedStone>],
+  [null, <ore:ingotReinforcedStone>, null],
+  [<ore:stick>, null, null]]);
 
 recipes.remove(<roots:diamond_knife>);
 recipes.addShaped(<roots:diamond_knife>, [
