@@ -6,9 +6,16 @@ import mods.tconstruct.Melting as tcm;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-  
-  #Alloying
 
+  #Grout
+recipes.remove(<tconstruct:soil>);
+
+  #Seared Brick
+furnace.remove(<tconstruct:materials>);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
+  <minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
+mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [
+  <minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
 
 // Items
 var itemDisabled = [

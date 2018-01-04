@@ -1,4 +1,9 @@
 print("------------------Nuclearcraft Start------------------");
+	#Dominos Special
+recipes.remove(<nuclearcraft:dominos>);
+recipes.addShapeless(<nuclearcraft:dominos>, [
+	<harvestcraft:doughitem>, <minecraft:cooked_chicken>, <minecraft:cooked_beef>, <minecraft:cooked_porkchop>,
+	<minecraft:cooked_mutton>, <minecraft:brown_mushroom>, <minecraft:brown_mushroom>]);
 	#Alloy Furnace
 recipes.remove(<nuclearcraft:alloy_furnace_idle>);
 	#Ingot Former

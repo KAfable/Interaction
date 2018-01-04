@@ -459,7 +459,18 @@
  			"harvestcraft:chipsandsalsaitem",
  			"harvestcraft:cheezepuffsitem",
  			"harvestcraft:fortunecookieitem",
- 			"harvestcraft:mozzerellasticksitem"
+ 			"harvestcraft:mozzerellasticksitem",
+ 			"harvestcraft:koreandinneritem",
+ 			"harvestcraft:thankfuldinneritem",
+ 			"xreliquary:glowing_bread",
+ 			"harvestcraft:salisburysteakitem",
+ 			"nuclearcraft:dominos",
+ 			"harvestcraft:chickenandwafflesitem",
+ 			"harvestcraft:cheesyshrimpquinoaitem",
+ 			"harvestcraft:grilledcheesevegemitetoastitem",
+ 			"harvestcraft:crawfishetoufeeitem",
+ 			"harvestcraft:eggsbenedictitem",
+ 			"harvestcraft:jambalayaitem"
 		]
 	}
 }

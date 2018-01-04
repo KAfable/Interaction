@@ -87,7 +87,7 @@ var rubber = MaterialSystem.getMaterialBuilder().setName("Rubber").setColor(1776
 rubber.registerPart("molten");
 
   #Tin
-var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(16777099).build();
+var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(13816530).build();
 tin.registerPart("Dense_Plate");
 tin.registerPart("Beam");
 tin.registerPart("Bolt");

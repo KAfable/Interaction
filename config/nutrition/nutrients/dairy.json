@@ -332,7 +332,18 @@
  			"harvestcraft:cheddarandsourcreampotatochipsitem",
  			"harvestcraft:cheezepuffsitem",
  			"harvestcraft:chipsanddipitem",
- 			"harvestcraft:mozzerellasticksitem"
+ 			"harvestcraft:mozzerellasticksitem",
+ 			"harvestcraft:thankfuldinneritem",
+ 			"harvestcraft:salisburysteakitem",
+ 			"nuclearcraft:dominos",
+ 			"harvestcraft:chickenandwafflesitem",
+ 			"harvestcraft:cheesyshrimpquinoaitem",
+ 			"harvestcraft:grilledcheesevegemitetoastitem",
+ 			"harvestcraft:crawfishetoufeeitem",
+ 			"harvestcraft:butteritem",
+ 			"harvestcraft:eggsbenedictitem"
+
+
 		]
 	}
 }

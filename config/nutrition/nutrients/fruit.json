@@ -403,7 +403,12 @@
  			"harvestcraft:weekendpicnicitem",
  			"harvestcraft:chimichangaitem",
  			"harvestcraft:tortillachipsitem",
- 			"harvestcraft:chipsandsalsaitem"
+ 			"harvestcraft:chipsandsalsaitem",
+ 			"harvestcraft:thankfuldinneritem",
+ 			"fp:itemfood:2",
+ 			"fp:itemfood:3",
+ 			"fp:itemfood:4",
+ 			"harvestcraft:eggsbenedictitem"
 
 		]
 	}

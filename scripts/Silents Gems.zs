@@ -42,11 +42,12 @@ recipes.remove(<silentgems:leggings>);
 recipes.remove(<silentgems:boots>);
 recipes.remove(<silentgems:helmet>);
 recipes.remove(<silentgems:chestplate>);
+
 	#Polisher
 recipes.remove(<sgextraparts:polisher>);
 recipes.addShaped(<sgextraparts:polisher>, [
-	[<minecraft:log>, <minecraft:log>],
-	[<minecraft:stick>, <minecraft:stick>]]);
+  [<ore:logWood>, <ore:logWood>, null],
+  [<ore:stick>, <ore:stick>, null]]);
 	#Enchantment Token - Holding
 recipes.addShaped(<silentgems:enchantmenttoken>.withTag({TokenEnchantments: [{lvl: 1 as short, name: "cofhcore:holding"}]}), [
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>],

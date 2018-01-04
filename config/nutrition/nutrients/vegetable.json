@@ -575,7 +575,19 @@
  			"harvestcraft:surfandturfitem",
  			"harvestcraft:liverandonionsitem",
  			"harvestcraft:deviledeggitem",
- 			"abyssalcraft:mre"
+ 			"abyssalcraft:mre",
+ 			"harvestcraft:koreandinneritem",
+ 			"harvestcraft:thankfuldinneritem",
+ 			"fp:itemfood:2",
+ 			"fp:itemfood:3",
+ 			"fp:itemfood:4",
+ 			"harvestcraft:salisburysteakitem",
+ 			"nuclearcraft:dominos",
+ 			"harvestcraft:chickenandwafflesitem",
+ 			"harvestcraft:cheesyshrimpquinoaitem",
+ 			"harvestcraft:grilledcheesevegemitetoastitem",
+ 			"harvestcraft:crawfishetoufeeitem",
+ 			"harvestcraft:jambalayaitem"
 		]
 	}
 }
