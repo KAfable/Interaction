@@ -98,7 +98,7 @@ mods.tconstruct.Casting.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edib
 <xtones:zome:15>.displayName = "Base Alchemical Beacon";
 mods.skyresources.fusion.addRecipe(<xtones:zome:15>, [<minecraft:obsidian>], 0.75);
 
-recipes.addShapeless(<xtones:zome:12>,[<xtones:zome:15>, <botania:specialflower>.withTag({type: "puredaisy"}.giveBack()]);
+recipes.addShapeless(<xtones:zome:12>,[<xtones:zome:15>, <botania:specialflower>.withTag({type: "puredaisy"}).giveBack()]);
 
 mods.botania.PureDaisy.addRecipe(<xtones:zome:15>, <xtones:zome:12>, 1200);
 
