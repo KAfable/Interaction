@@ -16,6 +16,31 @@ for item in aaDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
 ////////////////////////////
+//XTones
+////////////////////////////
+var xtonesdisabled = [
+	<xtones:zeta>,
+	<xtones:zeta:1>,
+	<xtones:zeta:2>,
+	<xtones:zeta:3>,
+	<xtones:zeta:4>,
+	<xtones:zeta:5>,
+	<xtones:zeta:6>,
+	<xtones:zeta:7>,
+	<xtones:zeta:8>,
+	<xtones:zeta:9>,
+	<xtones:zeta:10>,
+	<xtones:zeta:11>,
+	<xtones:zeta:13>,
+	<xtones:zeta:14>,
+	<xtones:zeta:15>
+	] as IItemStack[];
+
+for item in xtonesdisabled {
+	mods.jei.JEI.removeAndHide(item);
+}
+
+////////////////////////////
 //Applied Energistics 2
 ////////////////////////////
 var ae2Disabled = [

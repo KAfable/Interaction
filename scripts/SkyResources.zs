@@ -170,7 +170,7 @@ mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
 mods.skyresources.fusion.removeRecipe(<minecraft:dirt>);
 	#Secundus Alchemy Component
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:3>);
-mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:3>, [
+mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:3>*3, [
 	<minecraft:slime_ball>*4, <minecraft:blaze_powder>*2, <skyresources:alchemyitemcomponent:8>,
 	], 1.00);
 	#Alchemical Reinforced Stone Ingot
@@ -208,7 +208,6 @@ mods.skyresources.infusion.addRecipe(chicken_egg, <harvestcraft:fruitbaititem>*1
 mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10, wool, 19);
 mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
 
-mods.skyresources.infusion.addRecipe(<natura:nether_sapling>, <minecraft:sapling>, <tp:bone_block>, 8);
 mods.skyresources.infusion.addRecipe(<minecraft:nether_wart>, <minecraft:netherrack>*8, <harvestcraft:pamwhitemushroomcrop>, 10);
 
 mods.skyresources.infusion.removeRecipe(<minecraft:reeds>);
