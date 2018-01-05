@@ -1918,7 +1918,7 @@
           "autoclaim": false,
           "ismain": true,
           "name": "Essence of Another Dimension...",
-          "desc": ""
+          "desc": "The dimension you are sensing is solid and abundant with resources and life. Construct the 3 aspects of this dimension. Essence of Day, Essence of Night, and a bucket of the sky!"
         }
       },
       "tasks": [
@@ -1940,6 +1940,17 @@
               "Count": 1,
               "OreDict": "",
               "Damage": 0
+            },
+            {
+              "id": "forge:bucketfilled",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0,
+              "tag": {
+                "SGProperties:10": {},
+                "FluidName:8": "srcrystalfluid",
+                "Amount:3": 1000
+              }
             }
           ],
           "taskID": "bq_standard:retrieval",
@@ -1948,8 +1959,9 @@
       ],
       "rewards": [],
       "preRequisites": [
-        29,
-        45
+        45,
+        56,
+        29
       ],
       "questID": 35
     },
@@ -3025,6 +3037,56 @@
       "rewards": [],
       "preRequisites": [],
       "questID": 55
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:alchemyitemcomponent",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Crystals of the Sky",
+          "desc": "Using alchemy, you can shatter some glass and use the shards to capture essence of the sky. Using these sky shards, you can melt them down in a crucible to get the liquid form of this essence."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:stone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        29
+      ],
+      "questID": 56
     }
   ],
   "questLines": [
@@ -3047,7 +3109,7 @@
         {
           "size": 24,
           "x": 300,
-          "y": 24,
+          "y": 30,
           "id": 1
         },
         {
@@ -3173,7 +3235,7 @@
         {
           "size": 24,
           "x": 240,
-          "y": 150,
+          "y": 114,
           "id": 22
         },
         {
@@ -3185,19 +3247,19 @@
         {
           "size": 24,
           "x": 240,
-          "y": 114,
+          "y": 150,
           "id": 24
-        },
-        {
-          "size": 24,
-          "x": 300,
-          "y": 132,
-          "id": 25
         },
         {
           "size": 24,
           "x": 270,
           "y": 150,
+          "id": 25
+        },
+        {
+          "size": 24,
+          "x": 240,
+          "y": 180,
           "id": 26
         },
         {
@@ -3269,7 +3331,7 @@
         {
           "size": 24,
           "x": 300,
-          "y": 168,
+          "y": 132,
           "id": 48
         },
         {
@@ -3293,8 +3355,14 @@
         {
           "size": 24,
           "x": 360,
-          "y": 132,
+          "y": 96,
           "id": 52
+        },
+        {
+          "size": 24,
+          "x": 300,
+          "y": 0,
+          "id": 56
         }
       ],
       "lineID": 0,

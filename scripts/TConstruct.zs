@@ -7,10 +7,25 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+var rstone = <contenttweaker:material_part:35>;
+
+  #Lava
+tcm.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
+
+  #Reinforced Stone
+tca.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);
+tcc.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
+tcc.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
+
+  #Glass Slime Composite and Ender Pearls
+tca.addRecipe(<liquid:glass-_slime_composite>*10, [<liquid:slime>*10, <liquid:glass>*10]);
+tcm.addRecipe(<liquid:slime> * 250, <minecraft:slime_ball>);
+tcc.addTableRecipe(<minecraft:slime_ball>, null, <liquid:slime>, 250);
+tcc.addTableRecipe(<minecraft:ender_pearl>, <tconstruct:edible:3>, <liquid:glass-_slime_composite>, 1000, true);
+
   #Slime Balls
 mods.skyresources.combustion.removeRecipe(<tconstruct:edible:1>);
 mods.skyresources.combustion.addRecipe(<tconstruct:edible:1>, [<minecraft:slime_ball>, <botania:dye:11>*2], 350);
-
 mods.skyresources.combustion.removeRecipe(<tconstruct:edible:2>);
 mods.skyresources.combustion.addRecipe(<tconstruct:edible:2>, [<minecraft:slime_ball>, <botania:dye:10>*2], 350);
 

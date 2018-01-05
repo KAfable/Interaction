@@ -1,20 +1,36 @@
 import mods.immersiveengineering.AlloySmelter as alloy;
 import mods.immersiveengineering.MetalPress as metalpress;
 
+var cb = <minecraft:clay_ball>;
+var brick = <minecraft:brick>;
+
 #Metal Press
 metalpress.removeRecipeByMold(<immersiveengineering:mold:4>);
 metalpress.addRecipe(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})*3, <ore:ingotCopper>, <immersiveengineering:mold:4>, 240);
 metalpress.addRecipe(<ic2:cable>.withTag({type: 2 as byte, insulation: 0 as byte})*4, <ore:ingotGold>, <immersiveengineering:mold:4>, 240);
 metalpress.addRecipe(<ic2:cable>.withTag({type: 4 as byte, insulation: 0 as byte})*3, <ore:ingotTin>, <immersiveengineering:mold:4>, 240);
 
+#Coke Brick Recipe Change
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.addShaped(<immersiveengineering:stone_decoration>, [
+  [cb, brick, cb],
+  [brick, <immersiveengineering:stone_decoration:10>, brick],
+  [cb, brick, cb]]);
+recipes.remove(<immersiveengineering:stone_decoration:1>);
+recipes.remove(<immersiveengineering:stone_decoration:2>);
+
 
 #Alloy Kiln
+//Bronze
 alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredusttin>, 1200);
+//Brass
 alloy.addRecipe(<techreborn:ingot:1>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredustzinc>, 1200);
-
-
+//Refined iron
+furnace.remove(<techreborn:ingot:19>);
+alloy.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>,
+	<minecraft:iron_ingot>, 1200);
 
 
 // Hammer Removal

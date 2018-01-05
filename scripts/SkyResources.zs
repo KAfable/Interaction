@@ -143,11 +143,6 @@ mods.skyresources.combustion.removeRecipe(<embers:shard_ember>);
 mods.skyresources.combustion.removeRecipe(<armorplus:lava_crystal>);
 mods.skyresources.combustion.removeRecipe(<minecraft:snowball>);
 
-
-///////////
-//Condenser
-///////////
-
 //////////
 //Crucible 
 //////////
@@ -158,6 +153,9 @@ recipes.addShaped(<skyresources:crucibleinserter>, [
   [stoneReinforced, null, stoneReinforced]]);
 
 mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
+
+mods.skyresources.crucible.removeRecipe(<fluid:srcrystalfluid>);
+mods.skyresources.crucible.addRecipe(<fluid:srcrystalfluid>*50, <skyresources:alchemyitemcomponent:1>);
 
 /////////
 //Freezer

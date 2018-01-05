@@ -10,6 +10,14 @@ recipes.addShaped(<extrautils2:scanner>, [
 	[<ore:stone>, <extrautils2:redstoneclock>, <ore:stone>],
 	[<ore:stone>, <contenttweaker:material_part:33>, <ore:stone>]]);
 
+	#Pipes
+recipes.remove(<extrautils2:pipe>);
+recipes.addShaped(<extrautils2:pipe>*8, [
+  [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
+  [<ore:glass>,<forestry:chipsets>,<ore:glass>],
+  [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
+
+
 	#Ring of Flying Squid
 recipes.remove(<extrautils2:chickenring:1>);
 

@@ -2,6 +2,34 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+/////////////////
+// Hammer Removal
+var hammerRemoved = [
+  <immersiveengineering:metal:31>,
+  <immersiveengineering:metal:33>,
+  <immersiveengineering:metal:34>,
+  <immersiveengineering:metal:35>,
+  <immersiveengineering:metal:36>,
+  <immersiveengineering:metal:37>,
+  <immersiveengineering:metal:40>
+  ] as IItemStack[];
+
+for i in hammerRemoved {
+  recipes.removeShapeless(i);}
+
+////////////////////////////
+//Furnace Removals
+////////////////////////////
+furnace.remove(<ore:ingotLead>,         <ore:oreLead>);
+furnace.remove(<ore:ingotSilver>,       <ore:oreSilver>);
+furnace.remove(<ore:ingotGold>,         <ore:oreGold>);
+furnace.remove(<ore:ingotAbyssalnite>,  <ore:oreAbyssalnite>);
+furnace.remove(<ore:ingotCopper>,       <ore:oreCopper>);
+furnace.remove(<ore:ingotTin>,          <ore:oreTin>);
+furnace.remove(<ore:ingotIron>,         <ore:oreIron>);
+furnace.remove(<ore:ingotZinc>,         <ore:oreZinc>);
+furnace.remove(<ore:ingotAluminum>,     <ore:oreAluminum>);
+
 ////////////////////////////
 //Actually Additions
 ////////////////////////////

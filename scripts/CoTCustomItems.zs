@@ -111,6 +111,16 @@ var zinc = MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(16777099
 // Lava has a density of 3000, and a viscosity of 6000
 
 //Microcrafting
+var tiers = ["basic","intermediate","advanced","elite","insane","ultimate","ludicrous","divine"] as string[];
+var tings = ["piston","conveyor","motor","sensor","emitter","robotarm","valve"] as string[];
+
+for tier in tiers {
+	for ting in tings {
+		val item = VanillaFactory.createItem(tier + ting);			
+		item.register();
+	}
+}
+
 var vulcanizedresin = VanillaFactory.createItem("vulcanizedresin");
 vulcanizedresin.register();
 
