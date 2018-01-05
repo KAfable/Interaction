@@ -2562,6 +2562,7 @@
           "lockedprogress": false,
           "tasklogic": "AND",
           "repeattime": -1,
+          "visibility": "ALWAYS",
           "simultaneous": false,
           "icon": {
             "id": "modularmachinery:itemblueprint",
@@ -2579,10 +2580,24 @@
           "autoclaim": false,
           "ismain": true,
           "name": "Portal Fabricator (Tier 2)",
-          "desc": "No Description"
+          "desc": "Ayyyyyyyy"
         }
       },
-      "tasks": [],
+      "tasks": [
+        {
+          "blocks": [
+            {
+              "blockID": "minecraft:log",
+              "meta": -1,
+              "nbt": {},
+              "amount": 1,
+              "oreDict": ""
+            }
+          ],
+          "taskID": "bq_standard:block_break",
+          "index": 0
+        }
+      ],
       "rewards": [],
       "preRequisites": [
         46
@@ -2854,6 +2869,162 @@
         40
       ],
       "questID": 52
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "ALWAYS",
+          "simultaneous": false,
+          "icon": {
+            "id": "prospectors:prospector_low",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Magical Prospecting",
+          "desc": "In the overworld it is a §4§nbad idea§r to cave. There aren\u0027t lots of small veins of ores. Instead there are rare huge veins that contain hundreds of ores. In order to find these ores you\u0027ll need to test the soil to see if there is traces of ores beneath the surface. Make a prospector for magical materials."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "prospectors:prospector_low",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        54
+      ],
+      "questID": 53
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "ALWAYS",
+          "simultaneous": false,
+          "icon": {
+            "id": "prospectors:prospector_lowest",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Prospecting",
+          "desc": "In the overworld it is a §4§nbad idea§r to cave. There aren\u0027t lots of small veins of ores. Instead there are rare huge veins that contain hundreds of ores. In order to find these ores you\u0027ll need to test the soil to see if there is traces of ores beneath the surface. Make a prospector for technological metals."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "prospectors:prospector_lowest",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        55
+      ],
+      "questID": 54
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "immersiveengineering:material",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 6
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Coke and Creosote",
+          "desc": "This is a useful multiblock that turns coal into coal coke. Coal coke has double the burn time of coal and produces creosote oil as a bi-product."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "immersiveengineering:stone_decoration",
+              "Count": 27,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "immersiveengineering:tool",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [],
+      "questID": 55
     }
   ],
   "questLines": [
@@ -3206,7 +3377,20 @@
           "desc": "With technology, you rise..."
         }
       },
-      "quests": [],
+      "quests": [
+        {
+          "size": 24,
+          "x": 30,
+          "y": 108,
+          "id": 54
+        },
+        {
+          "size": 24,
+          "x": 0,
+          "y": 108,
+          "id": 55
+        }
+      ],
       "lineID": 2,
       "order": 4
     },
@@ -3235,7 +3419,7 @@
       "quests": [
         {
           "size": 24,
-          "x": 72,
+          "x": 0,
           "y": 0,
           "id": 47
         }
@@ -3278,7 +3462,14 @@
           "desc": "Exploring to greater heights..."
         }
       },
-      "quests": [],
+      "quests": [
+        {
+          "size": 24,
+          "x": 0,
+          "y": 108,
+          "id": 53
+        }
+      ],
       "lineID": 8,
       "order": 3
     }
