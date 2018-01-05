@@ -71,6 +71,56 @@
           "repeattime": -1,
           "simultaneous": false,
           "icon": {
+            "id": "skyresources:alchemyitemcomponent",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 3
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Advanced Alchemy",
+          "desc": "So far you\u0027ve been using some basic alchemy powder. This powder is inefficient and only gives you 75% of the item you are trying to construct which forces you to use more resources. I think its about time for an upgrade. With this advanced powder you\u0027ll be able to get 175% more from your alchemical endeavours. Use some reinforced stone, slime, and blaze to craft some."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:alchemyitemcomponent",
+              "Count": 3,
+              "OreDict": "",
+              "Damage": 3
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        29
+      ],
+      "questID": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
             "id": "skyresources:waterextractor",
             "Count": 1,
             "OreDict": "",
@@ -1427,7 +1477,7 @@
           "snd_update": "minecraft:entity.player.levelup",
           "autoclaim": false,
           "ismain": false,
-          "name": "Plants: Sapplings",
+          "name": "Plants: Saplings",
           "desc": "Using infüsion you can make a several useful trees. Rubber, Menril, Ghost, and Slime will all serve you during your journey."
         }
       },
@@ -1664,7 +1714,7 @@
           "autoclaim": false,
           "ismain": false,
           "name": "Reinforced Stone",
-          "desc": "The strongest non-metal alloy. It takes 1 sand, 4 cobble, and 1 clay to get 6 ingots of this stone. You must pour this mixture onto pre-fired bricks to that they can set right."
+          "desc": "The strongest non-metal alloy. It takes 1 sand, 4 cobble, and 1 clay to get 6 ingots of this stone. In order to cast it, you will have to melt down these materials in the smeltery. Then pour the mixture onto fired clay allowing the reinforced stone to take a standard shape, such as a block or ingot."
         }
       },
       "tasks": [
@@ -2742,13 +2792,75 @@
         30
       ],
       "questID": 51
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "skyresources:combustioncollector",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": false,
+          "name": "Combustion Automaton",
+          "desc": "With this new reinforced material, you think you can fashion together a highly advanced combustion chamber. Firstly, you can make a collector that only grabs the items that have combusted. Secondly, you can make a trap door to drop items into the chamber. This way you won\u0027t loose any heat and can make a lot of combustion items quickly without the hassle of breaking blocks or collecting items yourself."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "skyresources:combustionheater",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "skyresources:quickdropper",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "skyresources:combustioncollector",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        40
+      ],
+      "questID": 52
     }
   ],
   "questLines": [
     {
       "properties": {
         "betterquesting": {
-          "name": "Sky",
+          "name": "Sky - Main",
           "bg_image": "",
           "bg_size": 256,
           "desc": "From the sky, you are born..."
@@ -2757,258 +2869,270 @@
       "quests": [
         {
           "size": 24,
-          "x": -246,
+          "x": 30,
           "y": 96,
           "id": 0
         },
         {
           "size": 24,
-          "x": -216,
+          "x": 300,
+          "y": 24,
+          "id": 1
+        },
+        {
+          "size": 24,
+          "x": 60,
           "y": 78,
           "id": 2
         },
         {
           "size": 24,
-          "x": -216,
+          "x": 60,
           "y": 150,
           "id": 3
         },
         {
           "size": 24,
-          "x": -216,
+          "x": 60,
           "y": 42,
           "id": 4
         },
         {
           "size": 24,
-          "x": -216,
+          "x": 60,
           "y": 114,
           "id": 5
         },
         {
           "size": 24,
-          "x": -186,
+          "x": 90,
           "y": 132,
           "id": 6
         },
         {
           "size": 24,
-          "x": -156,
+          "x": 120,
           "y": 114,
           "id": 7
         },
         {
           "size": 24,
-          "x": -186,
+          "x": 90,
           "y": 60,
           "id": 8
         },
         {
           "size": 24,
-          "x": -156,
+          "x": 120,
           "y": 78,
           "id": 9
         },
         {
           "size": 24,
-          "x": -276,
+          "x": 0,
           "y": 96,
           "id": 10
         },
         {
           "size": 24,
-          "x": -126,
+          "x": 150,
           "y": 96,
           "id": 11
         },
         {
           "size": 24,
-          "x": -96,
+          "x": 180,
           "y": 42,
           "id": 12
         },
         {
           "size": 24,
-          "x": -96,
-          "y": 78,
+          "x": 150,
+          "y": 60,
           "id": 13
         },
         {
           "size": 24,
-          "x": -156,
+          "x": 120,
           "y": 150,
           "id": 14
         },
         {
           "size": 24,
-          "x": -126,
+          "x": 150,
           "y": 132,
           "id": 15
         },
         {
           "size": 24,
-          "x": -96,
+          "x": 180,
           "y": 150,
           "id": 16
         },
         {
           "size": 24,
-          "x": -66,
+          "x": 210,
           "y": 150,
           "id": 17
         },
         {
           "size": 24,
-          "x": -96,
+          "x": 180,
           "y": 114,
           "id": 18
         },
         {
           "size": 24,
-          "x": -66,
+          "x": 210,
           "y": 42,
           "id": 19
         },
         {
           "size": 24,
-          "x": -66,
+          "x": 210,
           "y": 96,
           "id": 20
         },
         {
           "size": 24,
-          "x": -36,
+          "x": 240,
           "y": 42,
           "id": 21
         },
         {
           "size": 24,
-          "x": -36,
+          "x": 240,
           "y": 150,
           "id": 22
         },
         {
           "size": 24,
-          "x": -36,
+          "x": 180,
           "y": 78,
           "id": 23
         },
         {
           "size": 24,
-          "x": -36,
+          "x": 240,
           "y": 114,
           "id": 24
         },
         {
           "size": 24,
-          "x": 24,
+          "x": 300,
           "y": 132,
           "id": 25
         },
         {
           "size": 24,
-          "x": -6,
+          "x": 270,
           "y": 150,
           "id": 26
         },
         {
           "size": 24,
-          "x": -6,
+          "x": 270,
           "y": 114,
           "id": 27
         },
         {
           "size": 24,
-          "x": -36,
+          "x": 210,
           "y": 12,
           "id": 28
         },
         {
           "size": 24,
-          "x": -6,
+          "x": 270,
           "y": 42,
           "id": 29
         },
         {
           "size": 24,
-          "x": -6,
+          "x": 270,
           "y": 78,
           "id": 30
         },
         {
           "size": 24,
-          "x": 54,
+          "x": 330,
           "y": 78,
           "id": 31
         },
         {
           "size": 24,
-          "x": -6,
+          "x": 240,
           "y": 12,
           "id": 32
         },
         {
           "size": 24,
-          "x": 54,
-          "y": 114,
+          "x": 240,
+          "y": 78,
           "id": 34
         },
         {
           "size": 24,
-          "x": 24,
-          "y": 24,
+          "x": 270,
+          "y": 12,
           "id": 36
         },
         {
           "size": 24,
-          "x": 24,
+          "x": 300,
           "y": 60,
           "id": 39
         },
         {
           "size": 24,
-          "x": 54,
-          "y": 48,
+          "x": 330,
+          "y": 114,
           "id": 40
         },
         {
           "size": 24,
-          "x": 114,
-          "y": 78,
+          "x": 360,
+          "y": 60,
           "id": 42
         },
         {
           "size": 24,
-          "x": 24,
+          "x": 300,
           "y": 168,
           "id": 48
         },
         {
           "size": 24,
-          "x": 84,
-          "y": 96,
+          "x": 390,
+          "y": 78,
           "id": 49
         },
         {
           "size": 24,
-          "x": 84,
-          "y": 60,
+          "x": 330,
+          "y": 42,
           "id": 50
         },
         {
           "size": 24,
-          "x": 24,
+          "x": 300,
           "y": 96,
           "id": 51
+        },
+        {
+          "size": 24,
+          "x": 360,
+          "y": 132,
+          "id": 52
         }
       ],
       "lineID": 0,
-      "order": 2
+      "order": 0
     },
     {
       "properties": {
         "betterquesting": {
-          "name": "Dimension Fabrication",
+          "name": "Sky - Portals",
           "bg_image": "",
           "bg_size": 256,
           "desc": "You\u0027re cooking something up in the kitchen..."
@@ -3068,16 +3192,10 @@
           "x": 78,
           "y": 84,
           "id": 46
-        },
-        {
-          "size": 36,
-          "x": 78,
-          "y": 126,
-          "id": 47
         }
       ],
       "lineID": 1,
-      "order": 0
+      "order": 1
     },
     {
       "properties": {
@@ -3090,7 +3208,7 @@
       },
       "quests": [],
       "lineID": 2,
-      "order": 5
+      "order": 4
     },
     {
       "properties": {
@@ -3103,20 +3221,27 @@
       },
       "quests": [],
       "lineID": 3,
-      "order": 8
+      "order": 7
     },
     {
       "properties": {
         "betterquesting": {
-          "name": "",
+          "name": "Overworld - Portals",
           "bg_image": "",
           "bg_size": 256,
-          "desc": ""
+          "desc": "It\u0027s a piece of cake to bake a pretty cake"
         }
       },
-      "quests": [],
+      "quests": [
+        {
+          "size": 24,
+          "x": 72,
+          "y": 0,
+          "id": 47
+        }
+      ],
       "lineID": 4,
-      "order": 1
+      "order": 5
     },
     {
       "properties": {
@@ -3129,20 +3254,7 @@
       },
       "quests": [],
       "lineID": 5,
-      "order": 3
-    },
-    {
-      "properties": {
-        "betterquesting": {
-          "name": "Overworld - Prospecting",
-          "bg_image": "",
-          "bg_size": 256,
-          "desc": "To the ground you return..."
-        }
-      },
-      "quests": [],
-      "lineID": 6,
-      "order": 4
+      "order": 2
     },
     {
       "properties": {
@@ -3155,7 +3267,7 @@
       },
       "quests": [],
       "lineID": 7,
-      "order": 7
+      "order": 6
     },
     {
       "properties": {
@@ -3168,7 +3280,7 @@
       },
       "quests": [],
       "lineID": 8,
-      "order": 6
+      "order": 3
     }
   ],
   "format": "1.0.0"

@@ -7,6 +7,13 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+  #Slime Balls
+mods.skyresources.combustion.removeRecipe(<tconstruct:edible:1>);
+mods.skyresources.combustion.addRecipe(<tconstruct:edible:1>, [<minecraft:slime_ball>, <botania:dye:11>*2], 350);
+
+mods.skyresources.combustion.removeRecipe(<tconstruct:edible:2>);
+mods.skyresources.combustion.addRecipe(<tconstruct:edible:2>, [<minecraft:slime_ball>, <botania:dye:10>*2], 350);
+
   #Grout
 recipes.remove(<tconstruct:soil>);
 
