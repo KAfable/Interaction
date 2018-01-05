@@ -155,7 +155,7 @@ recipes.addShaped(<skyresources:crucibleinserter>, [
 mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
 
 mods.skyresources.crucible.removeRecipe(<fluid:srcrystalfluid>);
-mods.skyresources.crucible.addRecipe(<fluid:srcrystalfluid>*100, <skyresources:alchemyitemcomponent:1>);
+mods.skyresources.crucible.addRecipe(<fluid:srcrystalfluid>*250, <skyresources:alchemyitemcomponent:1>);
 
 /////////
 //Freezer
