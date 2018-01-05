@@ -4,6 +4,10 @@
     {
       "dim": 0,
       "override":true,
+      "dimensiontype":
+      {
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
       "worldinfo":
       {
         "GameRules": 
@@ -49,7 +53,8 @@
         "GameRules":         
         {
           "doWeatherCycle": "false",
-          "doNaturalRegen": "true"
+          "doNaturalRegen": "true",
+          "NaturalRegenration": "true"
         }
       }
     }
