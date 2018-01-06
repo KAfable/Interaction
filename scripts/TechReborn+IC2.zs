@@ -4,6 +4,9 @@ import crafttweaker.oredict.IOreDictEntry;
 
 print("--------------------TechReborn Start-----------------------");
 
+var refIron = <techreborn:ingot:19>;
+var bCir = <techreborn:part:29>;
+
 	#Too Easy Generators
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel>);
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel:1>);
@@ -12,15 +15,16 @@ mods.jei.JEI.removeAndHide(<techreborn:solar_panel:3>);
 mods.jei.JEI.removeAndHide(<techreborn:wind_mill>);
 mods.jei.JEI.removeAndHide(<techreborn:water_mill>);
 
+	#Basic Machine Frame
+recipes.addShaped(<techreborn:machine_frame>, [
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, null, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
+	
 print("--------------------TechReborn End-----------------------");
-
-print("IC2 Start");
-
-var refIron = <techreborn:ingot:19>;
-var bCir = <techreborn:part:29>;
-
+print("------------------------IC2 Start-------------------------");
 recipes.removeShapeless(<ic2:resource:12>, [null]);
-recipes.remove(<ic2:resource:12>);
+mods.jei.JEI.removeAndHide(<ic2:resource:12>);
 
 furnace.remove(<ic2:crafting>);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<ic2:misc_resource:4>);
@@ -40,12 +44,7 @@ recipes.remove(<techreborn:part:29>);
 recipes.addShapeless(<techreborn:part:29>, 
 	[<immersiveengineering:material:27>, <advgenerators:controller>, <forestry:soldering_iron>.giveBack()]);
 
-recipes.removeShaped(<techreborn:machine_frame>);
-recipes.addShaped(<ic2:resource:12>, [
-[refIron,refIron,refIron],
-[refIron,bCir,refIron],
-[refIron,refIron,refIron]
-]);
+
 
 recipes.remove(<techreborn:industrial_electrolyzer>);
 recipes.addShaped(<techreborn:industrial_electrolyzer>,[
@@ -69,5 +68,5 @@ recipes.remove(<ic2:ingot>);
 recipes.remove(<techreborn:dust:7>);
 recipes.remove(<ic2:dust>);
 
-print("IC2 End");
+print("------------------------IC2 End-------------------------");
 

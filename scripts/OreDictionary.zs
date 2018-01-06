@@ -63,7 +63,6 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:gearDiamond>.remove(<teslacorelib:gear_diamond>);
 
 	#gearIron
-<ore:gearIron>.remove(<hammercore:iron_gear>);
 
 	#gearStone
 <ore:gearStone>.remove(<teslacorelib:gear_stone>);

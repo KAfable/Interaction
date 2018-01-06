@@ -229,7 +229,6 @@ var gearsDisabled = [
   <forestry:gear_bronze>,
   <forestry:gear_copper>,
   <forestry:gear_tin>,
-  <hammercore:iron_gear>,
   <teslacorelib:gear_wood>,
   <teslacorelib:gear_stone>,
   <teslacorelib:gear_diamond>
