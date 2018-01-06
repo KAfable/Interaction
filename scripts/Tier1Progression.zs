@@ -35,8 +35,5 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "1 Energy Input Hatch",
     "All inputs and outputs can be substituted by machine casings"]);
 
-mods.jei.JEI.addDescription(<contenttweaker:portalblockt>,
-  ["Constructed similar to a Nether Portal but uses a worm as an igniter. It can also be crafted into another block if you don't like the texture."]);
-
 print("-------------- Tier 1 Progression End --------------");
 */
