@@ -6,9 +6,9 @@ var brick = <minecraft:brick>;
 
 #Metal Press
 metalpress.removeRecipeByMold(<immersiveengineering:mold:4>);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})*3, <ore:ingotCopper>, <immersiveengineering:mold:4>, 240);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 2 as byte, insulation: 0 as byte})*4, <ore:ingotGold>, <immersiveengineering:mold:4>, 240);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 4 as byte, insulation: 0 as byte})*3, <ore:ingotTin>, <immersiveengineering:mold:4>, 240);
+metalpress.addRecipe(<techreborn:cable>*3, <ore:ingotCopper>, <immersiveengineering:mold:4>, 240);
+metalpress.addRecipe(<techreborn:cable:2>*4, <ore:ingotGold>, <immersiveengineering:mold:4>, 240);
+metalpress.addRecipe(<techreborn:cable:1>*3, <ore:ingotTin>, <immersiveengineering:mold:4>, 240);
 
 #Coke Brick Recipe Change
 recipes.remove(<immersiveengineering:stone_decoration>);
@@ -62,10 +62,6 @@ recipes.addShaped(<immersiveengineering:wooden_device0:2>, [
 	[<immersiveengineering:tool>,<immersiveengineering:tool:1>,<forestry:soldering_iron>],
 	[<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>],
 	[<ore:workbench>,null,<immersiveengineering:wooden_decoration>]]);
-
-recipes.remove(<immersiveengineering:material:20>);
-recipes.addShapeless(<immersiveengineering:material:20>, [<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})]);
-recipes.addShapeless(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), [<immersiveengineering:material:20>]);
 
 recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
 recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [<minecraft:book>, <ore:wireCopper>]);

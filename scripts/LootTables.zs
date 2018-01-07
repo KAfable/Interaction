@@ -141,7 +141,7 @@ mineshaftPool2.removeItemEntry(<minecraft:activator_rail>);
 	#Abandoned Mineshaft - Reliquary
 var mineshaftReliquary = mineshaft.getPool("xreliquary_inject_pool");
 	#Abandoned Mineshaft - IC2
-mineshaft.removePool("ic2");
+#mineshaft.removePool("ic2");
 	#Abandoned Mineshaft - Forestry Tools
 mineshaft.removePool("forestry_factory_items");
 	#Abandoned Mineshaft - Random Things
@@ -206,7 +206,7 @@ pyramidPool1.removeEntry("minecraft:sand");
 	#Desert Pyramid - Reliquary
 var pyramidReliquary = 	pyramid.getPool("xreliquary_inject_pool");
 	#Desert Pyramid - IC2
-pyramid.removePool("ic2");
+#pyramid.removePool("ic2");
 	#Desert Pyramid - Forestry Factory Items
 pyramid.removePool("forestry_factory_items");
 	#Desert Pyramid - Forestry Bees
@@ -230,7 +230,7 @@ var templeMain = temple.getPool("main");
 	#Jungle Temple - Reliquary
 var templeReliquary = temple.getPool("xreliquary_inject_pool");
 	#Jungle Temple - IC2
-temple.removePool("ic2");
+#temple.removePool("ic2");
 	#Jungle Temple - Random Things
 temple.removePool("randomthings:slimeCube");
 temple.removePool("randomthings:biomeCrystal");
@@ -273,7 +273,7 @@ simpleDungeonPool2.removeEntry("minecraft:gunpowder");
 simpleDungeonPool2.removeEntry("minecraft:rotten_flesh");
 simpleDungeonPool2.removeEntry("minecraft:string");
 	#Simple Dungeon - ic2
-simpleDungeon.removePool("ic2");
+#simpleDungeon.removePool("ic2");
 	#Simple Dungeon - reliquary
 var simpleDungeonReliquary = simpleDungeon.getPool("xreliquary_inject_pool");
 	#Simple Dungeon - Randomt Things Lava Charm
@@ -322,7 +322,7 @@ var blacksmithMain = blacksmith.getPool("main");
 	#Village - Blacksmith Reliquary
 var blacksmithReliquary = blacksmith.getPool("randomthings:magicHood");
 	#Village - Blacksmith IC2
-blacksmith.removePool("ic2");
+#blacksmith.removePool("ic2");
 	#Village - Blacksmith Random Things Magic Hood
 blacksmith.removePool("randomthings:magicHood");
 	#Village - Blacksmith Random Things biome Crystal

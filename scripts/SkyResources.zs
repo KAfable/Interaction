@@ -79,13 +79,6 @@ val cauldronRemoved = [
 	<immersiveengineering:metal:14>,
 	<immersiveengineering:metal:18>,
 	<immersiveengineering:metal:19>,
-	<ic2:dust:4>,
-	<ic2:dust:7>,
-	<ic2:dust:8>,
-	<ic2:dust:10>,
-	<ic2:dust:11>,	// Lithium
-	<ic2:dust:14>,
-	<ic2:dust:17>,
 	<mekanism:dust:2>,
 	<minecraft:emerald>,
 	<minecraft:diamond>,

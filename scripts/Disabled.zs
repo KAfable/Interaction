@@ -104,15 +104,19 @@ for item in ae2Disabled{
 ////////
 //Armors
 ////////
+
+/*
+  <ic2:bronze_helmet>,
+  <ic2:bronze_leggings>,
+  <ic2:bronze_chestplate>,
+  <ic2:bronze_boots>,
+*/
+
 var armorRedundant = [
   <techreborn:bronzehelmet>,
   <techreborn:bronzeleggings>,
   <techreborn:bronzechestplate>,
   <techreborn:bronzeboots>,
-  <ic2:bronze_helmet>,
-  <ic2:bronze_leggings>,
-  <ic2:bronze_chestplate>,
-  <ic2:bronze_boots>,
   <mekanismtools:bronzechestplate>,
   <mekanismtools:bronzeleggings>,
   <mekanismtools:bronzehelmet>,
@@ -148,10 +152,14 @@ for item in cycDisabled{
 
 ///////
 // Dust
-var dustDisabled = [
+///////
+/*
   <ic2:dust:7>,
-  <immersiveengineering:metal:19>,
   <ic2:dust:14>,
+  <ic2:dust:8>,
+*/
+var dustDisabled = [
+  <immersiveengineering:metal:19>,
   <immersiveengineering:metal:12>,
   <immersiveengineering:metal:11>,
   <immersiveengineering:metal:18>,
@@ -166,7 +174,6 @@ var dustDisabled = [
   <mekanism:dust:1>,
   <actuallyadditions:item_dust:1>,
   <techreborn:dust:27>,
-  <ic2:dust:8>,
   <actuallyadditions:item_dust>,
   <mekanism:dust>
   ] as IItemStack[];
@@ -269,6 +276,7 @@ for item in immDisabled{
 <immersiveengineering:wooden_device1>.addTooltip(format.red("Disabled"));
 <immersiveengineering:material:10>.addTooltip(format.red("Disabled"));
 
+/*
   #IC2
 var ic2Disabled = [
   <ic2:te:50>]
@@ -276,10 +284,29 @@ var ic2Disabled = [
 
 for item in ic2Disabled{
     recipes.remove(item);}
-
+*/
 ////////////////////////////
 //Ingots & Plates & Blocks
 /////////////////////////////
+/*
+  <ic2:ingot:1>,
+  <ic2:ingot:2>,
+  <ic2:ingot:3>,
+  <ic2:ingot:4>,
+  <ic2:ingot:5>,
+  <ic2:ingot:6>,
+  <ic2:plate:1>,
+  <ic2:plate:2>,
+  <ic2:plate:3>,
+  <ic2:plate:5>,
+  <ic2:plate:7>,
+  <ic2:plate:8>,
+  <ic2:plate>,
+  <ic2:resource:5>,
+  <ic2:resource:6>,
+  <ic2:resource:8>,
+  <ic2:resource:9>,
+*/
 var ipDisabled = [
   <abyssalcraft:copperingot>,
   <abyssalcraft:tiningot>,
@@ -322,23 +349,6 @@ var ipDisabled = [
   <fp:itemerze:2>,
   <fp:itemerze>,
   <fp:spaceship:13>,
-  <ic2:ingot:1>,
-  <ic2:ingot:2>,
-  <ic2:ingot:3>,
-  <ic2:ingot:4>,
-  <ic2:ingot:5>,
-  <ic2:ingot:6>,
-  <ic2:plate:1>,
-  <ic2:plate:2>,
-  <ic2:plate:3>,
-  <ic2:plate:5>,
-  <ic2:plate:7>,
-  <ic2:plate:8>,
-  <ic2:plate>,
-  <ic2:resource:5>,
-  <ic2:resource:6>,
-  <ic2:resource:8>,
-  <ic2:resource:9>,
   <immersiveengineering:metal:1>,
   <immersiveengineering:metal:2>,
   <immersiveengineering:metal:3>,
@@ -441,6 +451,11 @@ for item in nuggetsDisabled{
 ////////////////////////////
 // Ores Disabled
 ////////////////////////////
+/*
+  <ic2:resource:1>,
+  <ic2:resource:2>,
+  <ic2:resource:3>,
+*/
 var mineralsDisabled = [
   <crossroads:ore_copper>,
   <crossroads:ore_native_copper>,
@@ -453,9 +468,6 @@ var mineralsDisabled = [
   <fp:erze>,
   <fp:erze:2>,
   <fp:erze:3>,
-  <ic2:resource:1>,
-  <ic2:resource:2>,
-  <ic2:resource:3>,
   <immersiveengineering:ore>,
   <immersiveengineering:ore:1>,
   <immersiveengineering:ore:2>,
@@ -515,9 +527,11 @@ for item in toolRedundant {
 /////////
 //Weapons
 /////////
+/*
+  <ic2:bronze_sword>,
+*/
 var wepRedundant = [
   <techreborn:bronzesword>,
-  <ic2:bronze_sword>,
   <thermalfoundation:tool.sword_bronze>,
   <tp:flint_sword>]
   as IItemStack[];

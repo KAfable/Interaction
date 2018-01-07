@@ -83,10 +83,10 @@ makeHammerPlate(<thermalfoundation:material:359>, <ore:ingotEnderium>);
 makeHammerPlate(<contenttweaker:material_part:42>, <contenttweaker:material_part:35>);
 
 	#Basic Microcrafting
-var cwire = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
-var gwire = <ic2:cable:2>.withTag({type: 2 as byte, insulation: 2 as byte});
-var twire = <ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte});
-var ccoil = <ic2:crafting:5>;
+var cwire = <techreborn:cable>;
+var gwire = <techreborn:cable:2>;
+var twire = <techreborn:cable:1>;
+var ccoil = <immersiveengineering:wirecoil>;
 var ccoilblock = <immersiveengineering:metal_decoration0>;
 var control = <advgenerators:controller>;
 var circuit3 = <forestry:chipsets:3>;
@@ -103,11 +103,11 @@ var screen = <rftools:screen>;
 
 recipes.addShapeless(magnet*2, [<minecraft:iron_ingot>, <immersiveengineering:tool>, magnet]);
 recipes.addShapeless(magnet*8, [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<immersiveengineering:tool>,magnet]);
-recipes.addShapeless(magnet, [<ic2:single_use_battery>, <ic2:crafting:5>, <minecraft:iron_ingot>]);
+recipes.addShapeless(magnet, [<techreborn:rebattery>, ccoil, <minecraft:iron_ingot>]);
 
 	#IC2 Coil
-recipes.remove(<ic2:crafting:5>);
-recipes.addShaped(<ic2:crafting:5>, [
+recipes.remove(ccoil);
+recipes.addShaped(ccoil, [
 	[cwire,cwire,cwire],
 	[cwire,<ore:stickIron>,cwire],
 	[cwire,cwire,cwire]]);
@@ -134,7 +134,7 @@ recipes.addShaped(<advgenerators:iron_tubing>*3, [
 recipes.addShapeless(emitter, [control, <immersiveengineering:toolupgrade:10>]);
 recipes.addShaped(motor, [
 	[magnet,<ore:stickIron>,magnet],
-	[magnet,<ic2:crafting:5>,magnet],
+	[magnet,ccoil,magnet],
 	[<ore:plateIron>,control,<ore:plateIron>]]);
 
 recipes.addShaped(conveyor, [

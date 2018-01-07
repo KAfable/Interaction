@@ -57,7 +57,7 @@ val squeezerPlateOutput = [
   <contenttweaker:material_part:1>,
   <thermalfoundation:material:352>,
   <techreborn:plates:17>,
-  <ic2:plate:4>
+  <techreborn:plates:10>
   ] as IItemStack[];
 
 for i in 0 to 10 {
