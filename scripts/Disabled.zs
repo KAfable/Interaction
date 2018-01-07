@@ -17,18 +17,36 @@ var hammerRemoved = [
 for i in hammerRemoved {
   recipes.removeShapeless(i);}
 
-////////////////////////////
-//Furnace Removals
-////////////////////////////
+
+  #Furnace Removals
 furnace.remove(<ore:ingotLead>,         <ore:oreLead>);
 furnace.remove(<ore:ingotSilver>,       <ore:oreSilver>);
 furnace.remove(<ore:ingotGold>,         <ore:oreGold>);
 furnace.remove(<ore:ingotAbyssalnite>,  <ore:oreAbyssalnite>);
 furnace.remove(<ore:ingotCopper>,       <ore:oreCopper>);
 furnace.remove(<ore:ingotTin>,          <ore:oreTin>);
+furnace.remove(<forestry:ingot_tin>,    <forestry:resources:2>);
+furnace.remove(<crossroads:ingot_tin>,  <crossroads:ore_tin>);
+furnace.remove(<abyssalcraft:tiningot>, <ore:oreTin>);
+furnace.remove(<techreborn:ingot:13>,   <ore:oreTin>);
+furnace.remove(<fp:itemerze>,           <ore:oreTin>);
 furnace.remove(<ore:ingotIron>,         <ore:oreIron>);
 furnace.remove(<ore:ingotZinc>,         <ore:oreZinc>);
 furnace.remove(<ore:ingotAluminum>,     <ore:oreAluminum>);
+furnace.remove(<ore:ingotOsmium>,       <ore:oreOsmium>);
+furnace.remove(<ore:ingotThorium>,      <ore:oreThorium>);
+furnace.remove(<ore:ingotUranium>,      <ore:oreUranium>);
+furnace.remove(<ore:ingotUranium>,      <ore:oreYellorite>);
+furnace.remove(<ore:ingotAstralStarmetal>,      <ore:oreAstralStarmetal>);
+furnace.remove(<ore:ingotMagnesium>,      <ore:oreMagnesium>);
+furnace.remove(<ore:ingotLithium>,      <ore:oreLithium>);
+furnace.remove(<ore:ingotIron>,      <ore:oreMagnetite>);
+furnace.remove(<ore:ingotDraconium>,      <draconicevolution:draconium_ore>);
+furnace.remove(<ore:ingotCobalt>,      <ore:oreCobalt>);
+furnace.remove(<ore:ingotBoron>,      <ore:oreBoron>);
+furnace.remove(<ore:ingotArdite>,      <ore:oreArdite>);
+furnace.remove(<ore:ingotNickel>,      <ore:oreNickel>);
+furnace.remove(<ore:ingotPlatinum>,      <ore:orePlatinum>);
 
 ////////////////////////////
 //Actually Additions
@@ -176,7 +194,7 @@ var energyDisabled = [
   <fluxnetworks:fluxstorage>,
   <fluxnetworks:herculeanfluxstorage>,
   <fluxnetworks:gargantuanfluxstorage>,
-  <quantumstorage:quantum_battery>]
+  <integrateddynamics:energy_battery>]
   as IItemStack[];
 
 for item in energyDisabled{

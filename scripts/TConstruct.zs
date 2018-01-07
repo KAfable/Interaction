@@ -38,6 +38,9 @@ mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
   <minecraft:sand>*4,<minecraft:gravel>*4,<minecraft:clay>], 400);
 mods.skyresources.combustion.addRecipe(<tconstruct:materials>*4, [
   <minecraft:sand>,<minecraft:gravel>,<minecraft:clay_ball>], 150);
+  
+  #Seared Furnace
+recipes.remove(<tconstruct:seared_furnace_controller>);
 
 // Items
 var itemDisabled = [
