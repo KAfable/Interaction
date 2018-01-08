@@ -42,9 +42,9 @@ mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:metal:5>);
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:ingots:5>);
 
 fcc.addRecipe(<thermalfoundation:material:128>, <liquid:copper>*144, 1000, 100);
-#mods.tconstruct.Casting.removeBasinRecipe(<ic2:resource:6>);
-#mods.tconstruct.Casting.removeTableRecipe(<ic2:ingot:2>);
-#mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:1>);
+mods.tconstruct.Casting.removeBasinRecipe(<ic2:resource:6>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:ingot:2>);
+mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:1>);
 
 fcc.addRecipe(<thermalfoundation:material:129>, <liquid:tin>*144, 1000, 100);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:129>);
@@ -184,8 +184,8 @@ gs.addRecipe(<ore:obsidian>,                <thermalfoundation:material:770>);
 gs.addRecipe(<ore:coal>,                    <thermalfoundation:material:768>);
 gs.addRecipe(<ore:charcoal>,                <thermalfoundation:material:769>);
 gs.addRecipe(<immersiveengineering:material:6>,   <immersiveengineering:material:17>); //Coal Coke
-gs.addRecipe(<techreborn:rubber_log>,             <techreborn:part:31>);
-#gs.addRecipe(<ic2:rubber_wood>,                   #<ic2:misc_resource:4>);
+gs.addRecipe(<techreborn:rubber_log>,             <ic2:misc_resource:4>);
+gs.addRecipe(<ic2:rubber_wood>,                   <ic2:misc_resource:4>);
     #Tier 2A
 gs.addRecipe(<ore:oreSaltpeter>,            <abyssalcraft:nitre>*3);
 gs.addRecipe(<ore:oreLiquifiedCoralium>,    <acintegration:dust:1>);

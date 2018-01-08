@@ -34,7 +34,7 @@ recipes.remove(<immersiveengineering:toolupgrade:10>);
 tf.addCast(<immersiveengineering:toolupgrade:10>*5,[
 	[null,<ore:itemRubber>,null],
 	[<ore:itemRubber>,<minecraft:redstone>,<ore:itemRubber>],
-	[<ore:itemRubber>, <techreborn:cable>,<ore:itemRubber>]
+	[<ore:itemRubber>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<ore:itemRubber>]
 	],<liquid:glass>*500);
 
 ////////////////////
@@ -57,25 +57,25 @@ carp.addRecipe(<contenttweaker:sub_block_holder_0:2>, [
 carp.removeRecipe(<forestry:chipsets>);
 carp.addRecipe(<forestry:chipsets>*2, [
 	[<ore:ingotTin>,<ore:materialResin>,<ore:ingotTin>],
-	[<techreborn:cable:1>,<ore:plateTin>,<techreborn:cable:1>],
+	[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}),<ore:plateTin>,<ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte})],
 	[<ore:ingotTin>,<minecraft:redstone>,<ore:ingotTin>]], 
 	20,<liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:1>);
 carp.addRecipe(<forestry:chipsets:1>, [
 	[<ore:ingotBronze>,<ore:materialResin>,<ore:ingotBronze>],
-	[<techreborn:cable>,<forestry:chipsets>,<techreborn:cable>],
+	[<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<forestry:chipsets>,<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})],
 	[<ore:ingotBronze>,<immersiveengineering:material:17>,<ore:ingotBronze>]
 	], 20, <liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:2>);
 carp.addRecipe(<forestry:chipsets:2>, [
 	[<ore:ingotIron>,<ore:materialResin>,<ore:ingotIron>],
-	[<techreborn:cable>,<forestry:chipsets>,<techreborn:cable>],
+	[<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<forestry:chipsets>,<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})],
 	[<ore:ingotIron>,<forestry:thermionic_tubes:3>,<ore:ingotIron>]
 	], 20, <liquid:water>*1000);
 carp.removeRecipe(<forestry:chipsets:3>);
 carp.addRecipe(<forestry:chipsets:3>, [
 	[<ore:ingotGold>,<ore:materialResin>,<ore:ingotGold>],
-	[<techreborn:cable:2>,<forestry:chipsets:2>,<techreborn:cable:2>],
+	[<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}),<forestry:chipsets:2>,<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})],
 	[<ore:ingotGold>,<forestry:thermionic_tubes:4>,<ore:ingotGold>]
 	], 20, <liquid:water>*1000);
 

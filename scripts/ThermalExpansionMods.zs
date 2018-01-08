@@ -77,6 +77,6 @@ recipes.remove(<thermaldynamics:duct_0>);
 <thermaldynamics:duct_0>.displayName = "Basic Fluxduct";
 
 recipes.addShaped(<thermaldynamics:duct_0>*8, [
-	[<techreborn:plates:10>,<techreborn:plates:10>,<techreborn:plates:10>],
+	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
 	[<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
-	[<techreborn:plates:10>,<techreborn:plates:10>,<techreborn:plates:10>]]);
+	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);

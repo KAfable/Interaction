@@ -5,8 +5,8 @@ import crafttweaker.item.IIngredient;
 	#Climbing Glove
 recipes.remove(<cyclicmagic:glove_climb>);
 recipes.addShaped(<cyclicmagic:glove_climb>, [
-	[<techreborn:part:31>, <techreborn:part:31>, <minecraft:leather>],
-	[<techreborn:part:31>, <ore:dyeBlack>, <minecraft:leather>],
+	[<ic2:misc_resource:4>, <ic2:misc_resource:4>, <minecraft:leather>],
+	[<ic2:misc_resource:4>, <ore:dyeBlack>, <minecraft:leather>],
 	[<minecraft:leather>, <minecraft:leather>, ]]);
 	#Clock
 recipes.remove(<cyclicmagic:clock>);

@@ -16,7 +16,7 @@
 	  {
             "type": "fluid",
             "io-type": "input",
-            "fluid": "sccrystalfluid",
+            "fluid": "glass",
 	    "amount": 1000
         },
         {

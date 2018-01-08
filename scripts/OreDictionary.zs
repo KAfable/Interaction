@@ -51,7 +51,7 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 	[<techreborn:smalldust:26>, <techreborn:smalldust:26>, <techreborn:smalldust:26>, <techreborn:smalldust:26>]);
 
 	#dustIron
-#<ore:dustIron>.remove(<ic2:dust:8>);
+<ore:dustIron>.remove(<ic2:dust:8>);
 
 	#dustStone
 <ore:dustStone>.add(<skyresources:techitemcomponent>);
@@ -98,7 +98,7 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 	#plateGold
 <ore:plateGold>.remove(<embers:plate_gold>);
 <ore:plateGold>.remove(<immersiveengineering:metal:40>);
-#<ore:plateGold>.remove(<ic2:plate:2>);
+<ore:plateGold>.remove(<ic2:plate:2>);
 <ore:plateGold>.remove(<techreborn:plates:1>);
 
 	#plateLead
