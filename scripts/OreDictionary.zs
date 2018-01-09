@@ -70,20 +70,20 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 	#gearWood
 <ore:gearWood>.remove(<teslacorelib:gear_wood>);
 
-	#ingotTIn
+	#ingotTin
 <ore:ingotTin>.remove(<mekanism:ingot:6>);
 <ore:ingotTin>.remove(<forestry:ingot_tin>);
 <ore:ingotTin>.remove(<techreborn:ingot:13>);
 <ore:ingotTin>.remove(<fp:itemerze>);
 <ore:ingotTin>.remove(<sgextraparts:ingot:1>);
 <ore:ingotTin>.remove(<abyssalcraft:tiningot>);
-
+	#ingotQuartzEnrichedIron
+<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 	#plateAluminum
-<ore:plateAluminum>.remove(<embers:plate_aluminum>);
 <ore:plateAluminum>.remove(<immersiveengineering:metal:31>);
 
 	#plateBronze
-<ore:plateBronze>.remove(<embers:plate_bronze>);
+<ore:plateBronze>.remove(<techreborn:plates:18>);
 
 	#plateConstantan/CuproNickel
 <ore:plateConstantan>.remove(<immersiveengineering:metal:36>);
@@ -92,7 +92,6 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:plateCopper>.remove(<embers:plate_copper>);
 
 	#plateElectrum
-<ore:plateElectrum>.remove(<embers:plate_electrum>);
 <ore:plateElectrum>.remove(<immersiveengineering:metal:37>);
 
 	#plateGold
@@ -102,24 +101,24 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:plateGold>.remove(<techreborn:plates:1>);
 
 	#plateLead
-<ore:plateNickel>.remove(<embers:plate_lead>);
+
 
 	#plateNickel
-<ore:plateNickel>.remove(<embers:plate_nickel>);
 <ore:plateNickel>.remove(<techreborn:plates:25>);
 <ore:plateNickel>.remove(<immersiveengineering:metal:34>);
 
 	#plateSilver
-<ore:plateSilver>.remove(<embers:plate_silver>);
+
 <ore:plateSilver>.remove(<immersiveengineering:metal:33>);
 
 	#plateTin
-<ore:plateTin>.remove(<embers:plate_tin>);
-	
+
+<ore:plateTin>.remove(<techreborn:plates:29>);
+
 	#plateIron
 <ore:plateIron>.remove(<techreborn:plates>);
 <ore:plateIron>.remove(<immersiveengineering:metal:39>);
-<ore:plateIron>.remove(<embers:plate_iron>);
+
 
 	#Portal Block
 var overworld = <ore:portalOverworld>;

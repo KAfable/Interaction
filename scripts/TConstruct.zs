@@ -104,7 +104,6 @@ var liquidDisabled = [
   <liquid:silver>,
   <liquid:gold>,
   <liquid:moltenabyssalnite>,
-  <liquid:copper>,
   <liquid:tin>,
   <liquid:iron>,
   <liquid:zinc>,
@@ -115,14 +114,13 @@ val impure = [
   <contenttweaker:impuredustsilver>,
   <contenttweaker:impuredustgold>,
   <contenttweaker:impuredustabyssalnite>,
-  <contenttweaker:impuredustcopper>,
   <contenttweaker:impuredusttin>,
   <contenttweaker:impuredustiron>,
   <contenttweaker:impuredustzinc>,
   <contenttweaker:impuredustbauxite>
   ] as IItemStack[];
 
-for i in 0 to 9 {
+for i in 0 to 8 {
   tcm.addRecipe(liquidDisabled[i]*96, impure[i]);
 }
 

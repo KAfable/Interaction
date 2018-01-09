@@ -33,7 +33,6 @@ var rsDisable = [
   <refinedstorage:fluid_interface>,
   <refinedstorage:wireless_transmitter>,
   <refinedstorage:wireless_grid>,
-  <refinedstorage:wireless_fluid_grid>,
   <refinedstorage:wireless_crafting_monitor>,
   <refinedstorageaddons:infinite_wireless_transmitter>,
   <refinedstorageaddons:network_bag>] //WIP
@@ -51,3 +50,4 @@ mods.jei.JEI.addDescription(<refinedstorage:controller>,
 
 recipes.remove(<refinedstorage:grid>);
 recipes.remove(<refinedstorage:disk_drive>);
+

@@ -2,6 +2,8 @@ import mods.integrateddynamics.Squeezer as sq;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+  #Generator
+
 	#Squeezer
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [

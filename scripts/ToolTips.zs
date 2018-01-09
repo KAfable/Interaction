@@ -20,4 +20,7 @@ mods.jei.JEI.addDescription(<contenttweaker:portalblockt>,
   ["Constructed similar to a Nether Portal but uses a worm as an igniter. It can also be crafted into another block if you don't like the texture."]);
 
 	# Iridium Shard
-<ic2:misc_resource:2>.addTooltip("Does not generate anymore in loot chests.");
+
+	# MedKits
+mods.jei.JEI.addDescription(<tp:med_kit>,
+	"Stackable regeneration potions! These can be crafted from any potion that has the 'regeneration' NBT tag.");

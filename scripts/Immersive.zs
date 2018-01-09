@@ -1,8 +1,19 @@
 import mods.immersiveengineering.AlloySmelter as alloy;
 import mods.immersiveengineering.MetalPress as metalpress;
 
+print("--------------------------------Immersive Engineering Start-------------------------------------");
+
 var cb = <minecraft:clay_ball>;
 var brick = <minecraft:brick>;
+	
+
+recipes.remove(<immersiveengineering:toolupgrade:10>);
+<immersiveengineering:toolupgrade:10>.displayName = "Diode";
+mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:toolupgrade:10>*5,[
+	[null,<ore:itemRubber>,null],
+	[<ore:itemRubber>,<minecraft:redstone>,<ore:itemRubber>],
+	[<ore:itemRubber>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),<ore:itemRubber>]
+	],<liquid:glass>*500);
 
 #Metal Press
 metalpress.removeRecipeByMold(<immersiveengineering:mold:4>);
@@ -70,3 +81,4 @@ recipes.addShapeless(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte
 recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
 recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [<minecraft:book>, <ore:wireCopper>]);
 
+print("--------------------------------Immersive Engineering End-------------------------------------");

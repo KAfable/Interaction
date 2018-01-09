@@ -22,7 +22,9 @@ recipes.remove(<tp:obsidian_sword>);
 	#Medkit
 recipes.remove(<tp:med_kit>);
 recipes.addShapeless(<tp:med_kit>, [<minecraft:potion>.withTag({Potion: "minecraft:regeneration"})]);
+recipes.addShapeless(<tp:med_kit>, [<minecraft:splash_potion>.withTag({Potion: "minecraft:regeneration"})]);
 <tp:med_kit>.maxStackSize = 64;
+
 
 	#Flint Armor
 recipes.remove(<tp:flint_helmet>);

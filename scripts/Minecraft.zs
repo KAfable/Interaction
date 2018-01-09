@@ -71,6 +71,12 @@ recipes.addShaped(<minecraft:hopper>, [
   [<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
   [null, <minecraft:iron_ingot>, null]]);
 
+  #Minecart
+recipes.remove(<minecraft:minecart>);
+recipes.addShaped(<minecraft:minecart>, [
+  [<ore:plateIron>, null, <ore:plateIron>],
+  [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
+
 	#Piston
 recipes.remove(<minecraft:piston>);
 recipes.addShaped(<minecraft:piston>, [

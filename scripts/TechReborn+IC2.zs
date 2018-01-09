@@ -3,7 +3,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 print("--------------------TechReborn Start-----------------------");
-
 var refIron = <techreborn:ingot:19>;
 var bCir = <techreborn:part:29>;
 
@@ -20,8 +19,8 @@ recipes.addShaped(<techreborn:machine_frame>, [
 	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
 	[<ore:plateRefinedIron>, null, <ore:plateRefinedIron>],
 	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
-	
 print("--------------------TechReborn End-----------------------");
+
 print("------------------------IC2 Start-------------------------");
 recipes.removeShapeless(<ic2:resource:12>, [null]);
 mods.jei.JEI.removeAndHide(<ic2:resource:12>);
@@ -44,21 +43,17 @@ recipes.remove(<techreborn:part:29>);
 recipes.addShapeless(<techreborn:part:29>, 
 	[<immersiveengineering:material:27>, <advgenerators:controller>, <forestry:soldering_iron>.giveBack()]);
 
-
-
 recipes.remove(<techreborn:industrial_electrolyzer>);
 recipes.addShaped(<techreborn:industrial_electrolyzer>,[
 [<ore:plateIron>,<techreborn:extractor>,<ore:plateIron>],
 [<ore:circuitBasic>,<techreborn:extractor>,<ore:circuitBasic>],
-[<ore:plateSteel>,<techreborn:extractor>,<ore:plateSteel>]
-]);
+[<ore:plateSteel>,<techreborn:extractor>,<ore:plateSteel>]]);
 
 recipes.remove(<techreborn:machine_casing>);
 recipes.addShaped(<techreborn:machine_casing>*2, [
 [<ore:plateSteel>,<techreborn:plates:34>,<ore:plateSteel>],
 [<ore:circuitBasic>,<mekanism:enrichedalloy>,<ore:circuitBasic>],
-[<ore:plateSteel>,<techreborn:plates:34>,<ore:plateSteel>]
-]);
+[<ore:plateSteel>,<techreborn:plates:34>,<ore:plateSteel>]]);
 
 recipes.remove(<ic2:ingot>);
 
