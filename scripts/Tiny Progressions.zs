@@ -50,3 +50,13 @@ recipes.addShaped(<tp:flint_boots>, [
 	[null, <minecraft:flint>, null],
 	[<minecraft:flint>, <silentgems:armorframe:3>, <minecraft:flint>],
 	[null, <minecraft:flint>, null]]);
+
+	#Growth Crystal (Tier 1)
+recipes.remove(<tp:growth_block>);
+<tp:growth_block>.addTooltip("WIP for Tier 5 recipe");
+	#Growth Crystal (Tier 2)
+recipes.remove(<tp:growth_upgrade>);
+<tp:growth_block>.addTooltip("WIP for Tier 6 recipe");
+	#Growth Crystal (Tier 3)
+recipes.remove(<tp:growth_upgrade_two>);
+<tp:growth_block>.addTooltip("WIP for Tier 8 recipe");

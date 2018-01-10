@@ -53,9 +53,19 @@ recipes.addShaped(<silentgems:enchantmenttoken>.withTag({TokenEnchantments: [{lv
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>],
 	[<actuallyadditions:block_giant_chest>, <minecraft:glowstone>, <actuallyadditions:block_giant_chest>],
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest> ]]);
+
+
+
+
 	#Torch Bandolier
 recipes.removeShaped(<silentgems:torchbandolier:1024>);
 recipes.addShaped(<silentgems:torchbandolier:1024>, [
 	[<ore:leather>, <ore:leather>, <ore:leather>],
 	[<ore:stickWood>, <actuallyadditions:block_giant_chest>, <ore:stickWood>],
 	[<ore:leather>, <ore:leather>, <ore:leather>]]);
+	#Iron Rod
+recipes.remove(<silentgems:craftingmaterial:7>);
+recipes.addShaped(<silentgems:craftingmaterial:7>*3,[
+	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>],
+	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>],
+	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>]]);
