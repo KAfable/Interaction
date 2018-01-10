@@ -123,14 +123,19 @@ for item in armorRedundant{
   mods.jei.JEI.removeAndHide(item);}
 
 
-////////////
-//Buildcraft
-////////////
-var buildDisabled = [
-  <buildcraftbuilders:quarry>
+
+  #Quarries
+var quarryDisabled = [
+  <buildcraftbuilders:quarry>,
+  <rftools:shape_card:2>,
+  <rftools:shape_card:3>,
+  <rftools:shape_card:4>,
+  <rftools:shape_card:5>,
+  <rftools:shape_card:6>,
+  <rftools:shape_card:7>
   ] as IItemStack[];
 
-for item in buildDisabled{
+for item in quarryDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
 
@@ -397,6 +402,7 @@ var ipDisabled = [
   <techreborn:storage:4>,
   <techreborn:storage2:8>,
   <techreborn:storage2:9>,
+  <techreborn:storage:14>,
   <thermalfoundation:storage_alloy>]
   as IItemStack[];
 

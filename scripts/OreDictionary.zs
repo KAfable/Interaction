@@ -40,10 +40,10 @@ var hammerList = [
 hammers.addItems(hammerList);
 	
 	#blockBronze
-#recipes.addShapeless(<thermalfoundation:storage_alloy:3>, [
-#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
-#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
-#	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
+recipes.addShapeless(<thermalfoundation:storage_alloy:3>, [
+	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
+	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
+	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
 
 	#dustInvar
 recipes.remove(<techreborn:dust:26>);
@@ -64,11 +64,14 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 
 	#gearIron
 
+	#gearTin
+<ore:gearTin>.remove(<forestry:gear_tin>);
 	#gearStone
 <ore:gearStone>.remove(<teslacorelib:gear_stone>);
 
 	#gearWood
 <ore:gearWood>.remove(<teslacorelib:gear_wood>);
+
 
 	#ingotTin
 <ore:ingotTin>.remove(<mekanism:ingot:6>);
@@ -79,11 +82,16 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:ingotTin>.remove(<abyssalcraft:tiningot>);
 	#ingotQuartzEnrichedIron
 <ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
+	#nuggetGem
+var gemShards = <silentgems:gemshard>.definition;
+for i in 0 to 48{
+    <ore:nuggetGem>.add(gemShards.makeStack(i));}
 	#plateAluminum
 <ore:plateAluminum>.remove(<immersiveengineering:metal:31>);
 
 	#plateBronze
 <ore:plateBronze>.remove(<techreborn:plates:18>);
+recipes.addShapeless(<thermalfoundation:material:355>, [<ore:plateBronze>]);
 
 	#plateConstantan/CuproNickel
 <ore:plateConstantan>.remove(<immersiveengineering:metal:36>);
@@ -101,24 +109,19 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:plateGold>.remove(<techreborn:plates:1>);
 
 	#plateLead
-
-
 	#plateNickel
 <ore:plateNickel>.remove(<techreborn:plates:25>);
 <ore:plateNickel>.remove(<immersiveengineering:metal:34>);
 
 	#plateSilver
-
 <ore:plateSilver>.remove(<immersiveengineering:metal:33>);
 
 	#plateTin
-
 <ore:plateTin>.remove(<techreborn:plates:29>);
 
 	#plateIron
 <ore:plateIron>.remove(<techreborn:plates>);
 <ore:plateIron>.remove(<immersiveengineering:metal:39>);
-
 
 	#Portal Block
 var overworld = <ore:portalOverworld>;
@@ -127,6 +130,8 @@ overworld.add(<xtones:bitt:6>);
 
 	#stickIron
 <ore:stickIron>.remove(<fp:spaceship:12>);
+<ore:stickIron>.add(<silentgems:craftingmaterial:7>);
+<ore:stickIron>.add(<psi:cad_assembly>);
 
 	#stickRedstone
 //<ore:stickRedstone>.add
