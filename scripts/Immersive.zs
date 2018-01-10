@@ -32,36 +32,37 @@ recipes.remove(<immersiveengineering:stone_decoration:2>);
 
 
 #Alloy Kiln
-//Bronze
+	#Bronze
 alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredusttin>, 1200);
-//Brass
+	#Brass
 alloy.addRecipe(<techreborn:ingot:1>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredustzinc>, 1200);
-//Refined iron
+	#Refined iron
 furnace.remove(<techreborn:ingot:19>);
 alloy.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>,
 	<minecraft:iron_ingot>, 1200);
 
+#Blast Furnace
+/*mods.immersiveengineering.BlastFurnace.addRecipe(output, input, time, optionalSlag);
+mods.immersiveengineering.BlastFurnace.removeRecipe(output);
+mods.immersiveengineering.BlastFurnace.addFuel(input, time);
+mods.immersiveengineering.BlastFurnace.removeFuel(output);*/
+	#Steel from Iron Ingot
+	#Steel from Iron Dust
 
-// Hammer Removal
+
+	#Engineers Hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
-[null,<contenttweaker:material_part:35>,<ore:string>],
-[null,<ore:stickWood>,<contenttweaker:material_part:35>],
-[<ore:stickWood>,null,null]
-]);
+	[null,<contenttweaker:material_part:35>,<ore:string>],
+	[null,<ore:stickWood>,<contenttweaker:material_part:35>],
+	[<ore:stickWood>,null,null]]);
 
 val iePlates = <immersiveengineering:metal>.definition;
 for i in 30 to 41{
     recipes.removeShapeless(iePlates.makeStack(i), [<*>, <immersiveengineering:tool>]);}
 
-//Renaming & Tooltips
-<immersiveengineering:stone_decoration:2>.addTooltip("The center of this recipe is hollow!");
-<immersiveengineering:material:27>.displayName = "Empty Circuit Board";
-<immersiveengineering:blueprint>.withTag({blueprint: "components"}).displayName = "Master in Electrical Engineering";
-
-//Crafting
 //recipes.remove(<immersiveengineering:metal_decoration1:1>);
 //recipes.addShaped(<immersiveengineering:metal_decoration1:1>*2, [
 //	[<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>],

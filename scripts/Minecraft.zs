@@ -71,6 +71,12 @@ recipes.addShaped(<minecraft:hopper>, [
   [<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
   [null, <minecraft:iron_ingot>, null]]);
 
+  #Iron Bars
+recipes.remove(<minecraft:iron_bars>*16);
+recipes.addShaped(<minecraft:iron_bars>, [
+  [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
+  [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
+
   #Minecart
 recipes.remove(<minecraft:minecart>);
 recipes.addShaped(<minecraft:minecart>, [

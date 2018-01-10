@@ -22,5 +22,12 @@
     "casings_item": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus"
+    ],
+    "ebf_casings": [
+        "modularmachinery:blockcasing",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch"
     ]
 }

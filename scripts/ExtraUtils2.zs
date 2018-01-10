@@ -62,6 +62,9 @@ recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_nethe
 	#Generator - Halitosis - Tier 5
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_dragonsbreath"}), true);
 
+	#Mechanical User // Maybe make them use Integrated Dynamics
+recipes.remove(<extrautils2:user>);
+
 
 	#Redstone Lantern
 recipes.remove(<extrautils2:redstonelantern>);

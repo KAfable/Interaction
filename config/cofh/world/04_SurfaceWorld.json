@@ -21,7 +21,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"radius": 16,
+				"radius": 20,
 				"height": 3
 			},
 			"cluster-count": 1,
@@ -282,7 +282,7 @@
 				[
 					{
 						"name": "minecraft:gold_ore",
-						"weight": 25
+						"weight": 35
 					},
 					{
 						"name": "minecraft:iron_ore",
@@ -290,7 +290,7 @@
 					},
 					{
 						"name": "minecraft:stone",
-						"weight": 50
+						"weight": 40
 					}
 				],
 				"material": "minecraft:stone",

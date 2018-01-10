@@ -54,7 +54,7 @@
         {
           "doWeatherCycle": "false",
           "doNaturalRegen": "true",
-          "NaturalRegenration": "true"
+          "naturalRegeneration": "true"
         }
       }
     }
