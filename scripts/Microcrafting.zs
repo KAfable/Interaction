@@ -2,12 +2,106 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
-	#Reinforced Stone Gear / Block / Ingot / Rod
-var rstone = <contenttweaker:material_part:35>;
+print("--------------------------Microcrafting Start-------------------------");
 
-recipes.addShaped(<contenttweaker:material_part:41>, [
-  [<ore:ingotReinforcedStone>],
-  [<ore:ingotReinforcedStone>]]);
+function makeBeamRecipe(output as IItemStack, core as IIngredient, support as IIngredient) {
+  recipes.addShaped(output, [
+    [null, support, core],
+    [support, core, support],
+    [core, support, null]]);
+}
+  #Reinforced Stone Beam
+makeBeamRecipe(<contenttweaker:material_part:68>, <ore:rodReinforcedStone>, <ore:itemRubber>);
+print("--------------------------Beam Recipes Intialized -------------------------");
+
+function makeBoltRecipe(output as IItemStack, input as IIngredient) {
+  recipes.addShaped(output, [
+    [input],
+    [input]]);
+}
+  #Iron Bolt
+makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+  #Steel Bolt
+makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+  #Wood Bolt
+makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+print("--------------------------Bolt Recipes Intialized -------------------------");
+
+print("--------------------------Casing Recipes Intialized -------------------------");
+
+print("--------------------------Crystal Recipes Intialized -------------------------");
+
+print("--------------------------Dense_Plate Recipes Intialized -------------------------");
+
+print("--------------------------Foil Recipes Intialized -------------------------");
+
+function makeGearRecipe(output as IItemStack, input1 as IIngredient, input2 as IIngredient) {
+  recipes.addShaped(output, [
+    [input2, input1, input2],
+    [input1, <ore:gearWood>, input1],
+    [input2, input1, input2]]);
+}
+  #Abyssalnite Gear
+makeGearRecipe(gearAbyssalnite, <ore:ingotAbyssalnite>, <ore:stickAbyssalnite>);
+  #Aluminum Gear
+makeGearRecipe(gearAluminum, <ore:ingotAluminum>, <ore:stickAluminum>);
+  #Copper Gear
+makeGearRecipe(gearCopper, <ore:ingotCopper>, <ore:stickAbyssalnite>); 
+  #Tin Gear
+makeGearRecipe(gearTin, <ore:ingotTin>, <ore:stickTin>); 
+  #Iron Gear
+makeGearRecipe(gearIron, <ore:ingotIron>, <ore:stickIron>);
+  #Reinforced Stone Gear
+makeGearRecipe(gearReinforcedStone, <ore:ingotReinforcedStone>, <ore:stickReinforcedStone>);
+  #Steel Gear
+makeGearRecipe(gearSteel, <ore:ingotSteel>, <ore:stickSteel>); 
+  #Stone Gear
+recipes.remove(gearStone);
+makeGearRecipe(gearStone, <ore:stone>, null); 
+  #Wood Gear
+recipes.addShaped(gearWood, [
+  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+  [<ore:plankWood>, null, <ore:plankWood>],
+  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
+print("--------------------------Gear Recipes Intialized -------------------------");
+
+function makeBlockToIngotRecipe(output as IItemStack, input as IIngredient){
+  recipes.addShaped(output*9, [
+    [input, input, input],
+    [input, input, input],
+    [input, input, input]]);
+}
+function makeNuggetToIngotRecipe(output as IItemStack, input as IIngredient){
+  recipes.addShapeless(output, 
+    [input, input, input, input, input, input, input, input, input]);
+}
+  #Reinforced Stone
+makeBlockToIngotRecipe(ingotReinforcedStone, <ore:blockReinforcedStone>);
+makeNuggetToIngotRecipe(ingotReinforcedStone, <ore:nuggetReinforcedStone>);
+print("--------------------------Ingot Recipes Intialized -------------------------");
+function makeIngotToNuggetRecipe(output as IItemStack, input as IIngredient){
+  recipes.addShapeless(output*9, 
+    [input]);
+}
+makeIngotToNuggetRecipe(nuggetReinforcedStone, <ore:ingotReinforcedStone>);
+
+
+print("--------------------------Nugget Recipes Intialized -------------------------");
+
+print("--------------------------Plate Recipes Intialized -------------------------");
+
+print("--------------------------Ring Recipes Intialized -------------------------");
+
+function makeStickRecipe(output as IItemStack, input as IIngredient){
+  recipes.addShaped(output, [
+    [input],
+    [input]]);
+}
+  #Reinforced Stone Rod
+makeStickRecipe(<contenttweaker:material_part:73>, <ore:ingotReinforcedStone>);
+print("--------------------------Rod/Stick Recipes Intialized -------------------------");
+
+print("--------------------------Rotor Recipes Intialized -------------------------");
 
 recipes.addShaped(<contenttweaker:material_part:37>, [
   [<contenttweaker:material_part:41>, <ore:ingotReinforcedStone>, <contenttweaker:material_part:41>],
@@ -17,20 +111,6 @@ recipes.addShaped(<contenttweaker:material_part:37>, [
   [<contenttweaker:material_part:41>, <ore:ingotReinforcedStone>, <contenttweaker:material_part:41>],
   [<ore:ingotReinforcedStone>, <ore:gearStone>, <ore:ingotReinforcedStone>],
   [<contenttweaker:material_part:41>, <ore:ingotReinforcedStone>, <contenttweaker:material_part:41>]]);
-
-recipes.addShapeless(rstone*9, [<contenttweaker:sub_block_holder_0:2>]);
-recipes.addShapeless(<contenttweaker:sub_block_holder_0:2>, 
-  [<ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>, <ore:ingotReinforcedStone>]);
-recipes.addShapeless(<contenttweaker:material_part:40>*9, [<ore:ingotReinforcedStone>]);
-recipes.addShapeless(rstone, [<contenttweaker:material_part:40>, <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,
-  <contenttweaker:material_part:40>, <contenttweaker:material_part:40>,<contenttweaker:material_part:40>,
-<contenttweaker:material_part:40>,<contenttweaker:material_part:40>,<contenttweaker:material_part:40>]);
-
-	#Wooden Gear
-recipes.addShaped(<contenttweaker:material_part:13>, [
-  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
-  [<ore:plankWood>, <ore:toolHammer>.onlyDamageAtLeast(0), <ore:plankWood>],
-  [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]]);
 
 	#Impure Smelting
 var configOreAmount = 6;
@@ -83,115 +163,3 @@ makeHammerPlate(<thermalfoundation:material:359>, <ore:ingotEnderium>);
 makeHammerPlate(<contenttweaker:material_part:42>, <contenttweaker:material_part:35>);
 
 	#Basic Microcrafting
-var cwire = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
-var gwire = <ic2:cable:2>.withTag({type: 2 as byte, insulation: 2 as byte});
-var twire = <ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte});
-var ccoil = <ic2:crafting:5>;
-var ccoilblock = <immersiveengineering:metal_decoration0>;
-var circuit3 = <forestry:chipsets:3>;
-var magnet = <fp:itemerze:4>;
-
-var emitter = <contenttweaker:basicemitter>;
-var motor = <contenttweaker:basicmotor>;
-var conveyor = <contenttweaker:basicconveyor>;
-var piston = <contenttweaker:basicpiston>;
-var sensor = <contenttweaker:basicsensor>;
-var valve = <contenttweaker:basicvalve>;
-var screen = <rftools:screen>;
-
-recipes.addShapeless(magnet*2, [<minecraft:iron_ingot>, <immersiveengineering:tool>, magnet]);
-recipes.addShapeless(magnet*8, [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>,<immersiveengineering:tool>,magnet]);
-recipes.addShapeless(magnet, [<ic2:single_use_battery>, <ic2:crafting:5>, <minecraft:iron_ingot>]);
-
-	#IE Copper Coil Block
-recipes.remove(<immersiveengineering:metal_decoration0>);
-recipes.addShaped(<immersiveengineering:metal_decoration0>, [
-	[ccoil,ccoil,ccoil],
-	[ccoil,ccoil,ccoil],
-	[ccoil,ccoil,ccoil]]);
-
-recipes.remove(<advgenerators:iron_tubing>);
-recipes.addShaped(<advgenerators:iron_tubing>*3, [
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-	[null, null, null],
-	[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
-
-
-
-recipes.addShaped(valve, [
-	[null, <ore:plateIron>, <advgenerators:iron_tubing>],
-	[<ore:plateIron>, <minecraft:lever>, <ore:plateIron>],
-	[<advgenerators:iron_tubing>, <ore:plateIron>, null]]);
-
-	#Gears
-val gearRemoved = [
-  <contenttweaker:material_part:5>,
-  <contenttweaker:material_part:13>,
-  <contenttweaker:material_part:21>,
-  <contenttweaker:material_part:37>,
-  <contenttweaker:material_part:64>,
-  <redstonearsenal:material:96>,
-  <teslacorelib:gear_diamond>,
-  <teslacorelib:gear_stone>,
-  <thermalfoundation:material:24>,
-  <thermalfoundation:material:25>,
-  <thermalfoundation:material:256>,
-  <thermalfoundation:material:257>,
-  <thermalfoundation:material:258>,
-  <thermalfoundation:material:259>,
-  <thermalfoundation:material:260>,
-  <thermalfoundation:material:261>,
-  <thermalfoundation:material:262>,
-  <thermalfoundation:material:263>,
-  <thermalfoundation:material:264>,
-  <thermalfoundation:material:288>,
-  <thermalfoundation:material:289>,
-  <thermalfoundation:material:290>,
-  <thermalfoundation:material:291>,
-  <thermalfoundation:material:292>,
-  <thermalfoundation:material:293>,
-  <thermalfoundation:material:294>,
-  <thermalfoundation:material:295>,
-  <teslacorelib:gear_wood>,
-  <extrautils2:ingredients:1>
-  ] as IItemStack[];
-
-for i in gearRemoved {
-  recipes.remove(i);}
-
-val gearInput = [
-  <thermalfoundation:material:32>,
-  <thermalfoundation:material:33>,
-  <thermalfoundation:material:320>,
-  <thermalfoundation:material:321>,
-  <thermalfoundation:material:324>,
-  <thermalfoundation:material:352>,
-  <thermalfoundation:material:355>,
-  <contenttweaker:material_part:65>,
-  <techreborn:plates:4>					//Redstone Plate
-  ] as IItemStack[];
-
-val gearOutput = [ 
-  <thermalfoundation:material:24>,
-  <thermalfoundation:material:25>,
-  <thermalfoundation:material:256>,
-  <thermalfoundation:material:257>,
-  <thermalfoundation:material:260>,
-  <thermalfoundation:material:288>,
-  <thermalfoundation:material:291>,
-  <contenttweaker:material_part:64>,
-  <contenttweaker:material_part:194>	//Redstone Gear
-  ] as IItemStack[];
-
-for i in 0 to 8 {
-  recipes.addShaped(gearOutput[i], [
-    [gearInput[i], gearInput[i], gearInput[i]],
-    [gearInput[i], <ore:gearReinforcedStone>, gearInput[i]],
-    [gearInput[i], gearInput[i], gearInput[i]]]);
-}
-
-  #Wood Gear
-recipes.addShaped(<contenttweaker:material_part:58>, [
-  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
-  [<ore:plankWood>, null, <ore:plankWood>],
-  [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);

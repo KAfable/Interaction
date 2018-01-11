@@ -85,14 +85,8 @@ tile.contenttweaker.portalBlockUnf.name=Underworld Portal Block (Cage-less)
 
 item.contenttweaker.underworldessence.name=Underworld Essence
 
-item.contenttweaker.as.name=Acacia Singularity
-item.contenttweaker.dcas.name=Double Compressed Acacia Singularity
-item.contenttweaker.tcas.name=Triple Compressed Acacia Singularity
-item.contenttweaker.quadas.name=Quadruple Compressed Acacia Singularity
-item.contenttweaker.quicas.name=Quintuple Compressed Acacia Singularity
-item.contenttweaker.sexas.name=Sextuple Compressed Acacia Singularity
-item.contenttweaker.sepas.name=Septuple Compressed Acacia Singularity
-item.contenttweaker.octas.name=Octuple Compressed Acacia Singularity
-item.contenttweaker.octass.name=Octuple Compressed Acacia Singularity Singularity
-
 item.contenttweaker.vulcanizedresin.name=Vulcanized Resin
+
+contenttweaker.part.foil=%s Foil
+contenttweaker.part.ring=%s Ring
+contenttweaker.part.rotor=%s Rotor

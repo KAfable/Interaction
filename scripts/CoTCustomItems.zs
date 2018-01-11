@@ -1,14 +1,39 @@
 #loader contenttweaker
-
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.MaterialPart;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.Material;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
+import mods.contenttweaker.PartBuilder;
 
-var partTypeFoil = MaterialSystem.getPartBuilder().setName("Foil").setPartType(MaterialSystem.getPartType("item"));
-var part_names = ["Ingot", "Beam", "Gear", "Bolt", "Dust", "Nugget", "Rod", "Plate", "Dense_Plate", "Crystal", "Crushed_Ore", "Casing"] as string[];
+
+  #Creating Rings
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Ring").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("ring").build();
+  #Creating Rotors
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Rotor").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("rotor").build();
+  #Creating Foil
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Foil").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("foil").build();
+  #Crushed Ore - changing ore dic from crushedOre to crushed
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Crushed_Ore").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("crushed").build();
+
+  #All Parts
+var parts = [
+  "Ingot", 
+  "Beam", 
+  "Gear", 
+  "Bolt", 
+  "Dust", 
+  "Nugget", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
 
 /* 
   This is sample code atm for testing part types
@@ -18,7 +43,6 @@ var part_names = ["Ingot", "Beam", "Gear", "Bolt", "Dust", "Nugget", "Rod", "Pla
   craftingTool.register();
   val useCraftingTool = <contenttweaker:craftingtool>.anyDamage().transformDamage();
 */
-
 /*
   # How to Create a Block and adjust Data
   var blockData = mat.registerPart("block").getData();
@@ -28,97 +52,205 @@ var part_names = ["Ingot", "Beam", "Gear", "Bolt", "Dust", "Nugget", "Rod", "Pla
   blockData.addDataValue("harvestLevel", "1");
 */
 
+print("---------------------Initializing material/part generation------------------------");
   #Abyssalnite
 var abyssalnite = MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(6815935).build();
-abyssalnite.registerPart("Gear");
-abyssalnite.registerPart("Plate");
-abyssalnite.registerPart("Beam");
-abyssalnite.registerPart("Bolt");
-abyssalnite.registerPart("Rod");
-abyssalnite.registerPart("Dense_Plate");
-
+var abyssalniteParts = [
+  "Beam", 
+  "Gear", 
+  "Bolt", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+abyssalnite.registerParts(abyssalniteParts);
+print("------------------Abyssalnite parts initialized----------------------");
   #Aluminum
 var aluminum = MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(11975109).build();
-aluminum.registerPart("Dense_Plate");
-aluminum.registerPart("Beam");
-aluminum.registerPart("Bolt");
-aluminum.registerPart("Rod");
-aluminum.registerPart("Crystal");
-
+var aluminumParts = [
+  "Beam", 
+  "Bolt", 
+  "Rod", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+aluminum.registerParts(aluminumParts);
+print("------------------Aluminum parts initialized----------------------");
   #Copper
 var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(13396492).build();
-copper.registerPart("Dense_Plate");
-copper.registerPart("Beam");
-copper.registerPart("Bolt");
-copper.registerPart("Rod");
-copper.registerPart("Crystal");
-
+var copperParts = [
+  "Beam", 
+  "Bolt", 
+  "Rod", 
+  "Dense_Plate", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+copper.registerParts(copperParts);
+print("------------------Copper parts initialized----------------------");
   #Fiery
 var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(16743700).setHasEffect(true).build();
-fiery.registerParts(part_names);
-
+fiery.registerParts(parts);
+print("------------------Fiery parts initialized----------------------");
   #Glass-Slime Composite
 var slimeg = MaterialSystem.getMaterialBuilder().setName("Glass-Slime Composite").setColor(3342210).build();
 slimeg.registerPart("molten");
-
+print("------------------Glass-Slime parts initialized----------------------");
   #Gold
 var gold = MaterialSystem.getMaterialBuilder().setName("Gold").setColor(16777099).build();
-gold.registerPart("Beam");
-gold.registerPart("Bolt");
-gold.registerPart("Rod");
-
+var goldParts = [
+  "Beam", 
+  "Bolt", 
+  "Rod", 
+  "Dense_Plate", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
+gold.registerParts(goldParts);
+print("------------------Gold parts initialized----------------------");
+  #Iron
+var iron = MaterialSystem.getMaterialBuilder().setName("Iron").setColor(15461355).build();
+var ironParts = [
+  "Beam", 
+  "Bolt",  
+  "Dense_Plate", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+iron.registerParts(ironParts);
+print("------------------Iron parts initialized----------------------");
   #Redstone
 var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(15209752).build();
-redstone.registerPart("Rod");
-redstone.registerPart("Gear");
-
+var redstoneParts = [
+  "Gear", 
+  "Bolt", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  ] as string[];
+redstone.registerParts(redstoneParts);
+print("------------------Redstone parts initialized----------------------");
   #Reinforced Stone
-var rstone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
-rstone.registerPart("molten");
-rstone.registerParts(part_names);
-var rstoneBlock = rstone.registerPart("block").getData();
+var reinforcedStone = MaterialSystem.getMaterialBuilder().setName("Reinforced Stone").setColor(11908533).build();
+var reinforcedStoneParts = [
+  "Ingot", 
+  "Beam", 
+  "Gear", 
+  "Bolt", 
+  "Dust", 
+  "Nugget", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
+reinforcedStone.registerPart("molten");
+reinforcedStone.registerParts(reinforcedStoneParts);
+var rstoneBlock = reinforcedStone.registerPart("block").getData();
 rstoneBlock.addDataValue("hardness", "5");
 rstoneBlock.addDataValue("resistance", "30");
 rstoneBlock.addDataValue("harvestTool", "pickaxe");
 rstoneBlock.addDataValue("harvestLevel", "1");
-
+print("------------------Reinforced Stone parts initialized----------------------");
   #Rubber
 var rubber = MaterialSystem.getMaterialBuilder().setName("Rubber").setColor(1776664).build();
-rubber.registerPart("molten");
-
+var rubberParts = [
+  "Dust", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Casing", 
+  "Ring"
+  ] as string[];
+rubber.registerParts(rubberParts);
+print("------------------Rubber parts initialized----------------------");
   #Tin
 var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(13816530).build();
-tin.registerPart("Dense_Plate");
-tin.registerPart("Beam");
-tin.registerPart("Bolt");
-tin.registerPart("Rod");
-
+var tinParts = [
+  "Beam", 
+  "Ring",
+  "Bolt", 
+  "Dense_Plate",
+  "Foil", 
+  "Rod"] as string[];
+tin.registerParts(tinParts);
+print("------------------Tin parts initialized----------------------");
+  #Steel
+var steel = MaterialSystem.getMaterialBuilder().setName("Steel").setColor(4290164406).build();
+var steelParts = [
+  "Beam", 
+  "Bolt",  
+  "Dense_Plate", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
+steel.registerParts(steelParts);
+print("------------------Steel parts initialized----------------------");
   #Wood
 var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10050591).build();
-wood.registerPart("Dense_Plate");
-wood.registerPart("Plate");
-wood.registerPart("Beam");
-wood.registerPart("Bolt");
-wood.registerPart("Rod");
-wood.registerPart("Crystal");
-wood.registerPart("Gear");
-wood.registerPart("Casing");
-
+var woodParts = [
+  "Beam", 
+  "Gear", 
+  "Bolt", 
+  "Dust", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+wood.registerParts(woodParts);
+print("------------------Wood parts initialized----------------------");
   #Zinc
 var zinc = MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(16777099).build();
+
+print("---------------------Initialized material/part generation------------------------");
 
 // materialPart.getData().addValue("viscosity", "<number>"); To edit flow rates of materials
 // Lava has a density of 3000, and a viscosity of 6000
 
-//Microcrafting
-var tiers = ["basic","intermediate","advanced","elite","insane","ultimate","ludicrous","divine"] as string[];
-var tings = ["piston","conveyor","motor","sensor","emitter","robotarm","valve"] as string[];
+  #Basic, Intermediate, Advanced, Elite, Insane, and Ultimate microcrafting parts
+var techTiers = ["basic","intermediate","advanced","elite","insane","ultimate"] as string[];
+var techParts = ["piston","conveyor","motor","sensor","emitter","robotarm","valve"] as string[];
 
-for tier in tiers {
-	for ting in tings {
-		val item = VanillaFactory.createItem(tier + ting);			
+for techTiers in techTiers {
+	for techParts in techParts {
+		var item = VanillaFactory.createItem(techTiers + techParts);			
 		item.register();
 	}
+}
+
+  #Ludicrous and Divine Microcrafting parts
+var lastTiers = ["ludicrous", "divine"] as string[];
+for lastTiers in lastTiers {
+  for techParts in techParts {
+    var item = VanillaFactory.createItem(lastTiers + techParts);
+    item.setMaxStackSize(1);
+    item.glowing = true;
+    item.register();
+  }
 }
 
 var vulcanizedresin = VanillaFactory.createItem("vulcanizedresin");
