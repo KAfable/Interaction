@@ -95,8 +95,7 @@ recipes.addShaped(<minecraft:piston>*8, [
   [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
 
 	#Sugar Cane
-mods.botania.Apothecary.addRecipe(<minecraft:reeds>, [<minecraft:melon>, <minecraft:melon>,
-  <minecraft:melon>, <minecraft:melon>]);
+mods.botania.Apothecary.addRecipe(<minecraft:reeds>, [<ore:petalLime>, <ore:petalLime>, <ore:petalGreen>, <ore:petalGreen>]);
 
 	#Tripwire Hook
 recipes.remove(<minecraft:tripwire_hook>);
