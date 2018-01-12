@@ -1705,7 +1705,7 @@
             "id": "contenttweaker:material_part",
             "Count": 1,
             "OreDict": "",
-            "Damage": 35
+            "Damage": 67
           },
           "globalshare": false,
           "questlogic": "AND",
@@ -1728,8 +1728,8 @@
             {
               "id": "contenttweaker:material_part",
               "Count": 1,
-              "OreDict": "ingotReinforcedStone",
-              "Damage": 35
+              "OreDict": "",
+              "Damage": 67
             }
           ],
           "taskID": "bq_standard:retrieval",
