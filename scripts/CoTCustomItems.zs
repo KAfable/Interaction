@@ -87,6 +87,19 @@ var aluminumParts = [
   ] as string[];
 aluminum.registerParts(aluminumParts);
 print("------------------Aluminum parts initialized----------------------");
+  #Bronze
+var bronze = MaterialSystem.getMaterialBuilder().setName("Bronze").setColor(13396492).build();
+var bronzeParts = [
+  "Beam", 
+  "Bolt", 
+  "Rod", 
+  "Dense_Plate", 
+  "Ring", 
+  "Rotor", 
+  "Foil"
+  ] as string[];
+bronze.registerParts(bronzeParts);
+print("------------------Bronze parts initialized----------------------");
   #Copper
 var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(13396492).build();
 var copperParts = [
@@ -132,6 +145,21 @@ var ironParts = [
   ] as string[];
 iron.registerParts(ironParts);
 print("------------------Iron parts initialized----------------------");
+  #Iridium
+var iridium = MaterialSystem.getMaterialBuilder().setName("Irdium").setColor(173183193).build();
+var iridiumParts = [
+  "Beam", 
+  "Bolt", 
+  "Rod", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
+iridium.registerParts(iridiumParts);
+print("------------------Iridiumn parts initialized----------------------");
   #Redstone
 var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(15209752).build();
 var redstoneParts = [

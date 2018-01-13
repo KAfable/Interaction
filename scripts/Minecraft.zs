@@ -20,14 +20,14 @@ mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcompo
 
 	#Bucket
 recipes.addShaped(<minecraft:bucket>, [
-  [<contenttweaker:material_part:35>, <ore:toolHammer>.onlyDamageAtLeast(0), <contenttweaker:material_part:35>],
-  [null, <contenttweaker:material_part:35>, null]]);
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [null, ingotReinforcedStone, null]]);
 
 	#Cauldron
 recipes.addShaped(<minecraft:cauldron>, [
-  [<contenttweaker:material_part:35>, null, <contenttweaker:material_part:35>],
-  [<contenttweaker:material_part:35>, <ore:toolHammer>.onlyDamageAtLeast(0), <contenttweaker:material_part:35>],
-  [<contenttweaker:material_part:35>, <contenttweaker:material_part:35>, <contenttweaker:material_part:35>]]);
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
 
 	#Dirt
 recipes.addShaped(<minecraft:dirt>*3, [
@@ -63,9 +63,9 @@ recipes.addShaped(<minecraft:enchanting_table>, [
 	#Hopper
 recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
-  [<contenttweaker:material_part:35>, null, <contenttweaker:material_part:35>],
-  [<contenttweaker:material_part:35>, <wopper:wopper>, <contenttweaker:material_part:35>],
-  [null, <contenttweaker:material_part:35>, null]]);
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [ingotReinforcedStone, <wopper:wopper>, ingotReinforcedStone],
+  [null, ingotReinforcedStone, null]]);
 recipes.addShaped(<minecraft:hopper>, [
   [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
   [<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
@@ -100,6 +100,6 @@ mods.botania.Apothecary.addRecipe(<minecraft:reeds>, [<ore:petalLime>, <ore:peta
 	#Tripwire Hook
 recipes.remove(<minecraft:tripwire_hook>);
 recipes.addShaped(<minecraft:tripwire_hook>, [
-  [null, <contenttweaker:material_part:35>,null],
+  [null, ingotReinforcedStone,null],
   [null,<ore:stickWood>,null],
   [null,<ore:plankWood>,null]]);

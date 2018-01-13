@@ -1,9 +1,9 @@
 
 print("-------------- Water Strainer Start --------------");
-
+  #Garden Trowel
 recipes.addShaped(<waterstrainer:garden_trowel>, [
   [null, null, <minecraft:dirt>],
-  [null, <contenttweaker:material_part:35>, null],
+  [null, <ore:ingotReinforced>, null],
   [<ore:stickWood>, null, null]]);
 
 recipes.removeShaped(<waterstrainer:strainer_survivalist>);

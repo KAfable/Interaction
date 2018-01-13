@@ -13,10 +13,10 @@
             "io-type": "input",
             "item": "contenttweaker:overworldessencer"
         },
-	  {
+	    {
             "type": "fluid",
             "io-type": "input",
-            "fluid": "sccrystalfluid",
+            "fluid": "srcrystalfluid",
 	    "amount": 1000
         },
         {

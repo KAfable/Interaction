@@ -10,8 +10,12 @@ var tiers = [<ore:ingotIron>,<ore:ingotInvar>,<ore:ingotElectrum>,<ore:ingotSign
 	#Acqueous Accumulator (replaced by Evilcraft Eternal Water Block)
 mods.jei.JEI.removeAndHide(<thermalexpansion:device>);
 
+	#Compactor
+recipes.remove(<thermalexpansion:machine:5>);
+<thermalexpansion:machine:5>.addTooltip("Compactor recipe WIP");
+
 	#Hammers
-	#Hammer Repair
+
 /*
 function repairHammer (recName as string, hammer as IItemStack, repairMaterial as IItemStack, repairValue as int) {
 	recipes.addShapeless(recName, hammer, [
@@ -23,6 +27,7 @@ function repairHammer (recName as string, hammer as IItemStack, repairMaterial a
 }
 repairHammer("copperHammerRepair", <thermalfoundation:tool.hammer_copper>, <thermalfoundation:material:128>, 200);
 */
+	#Hammer Repair
 recipes.addShapeless("electrumHammerRepair", <thermalfoundation:tool.hammer_electrum>, [
 	<thermalfoundation:tool.hammer_electrum>.anyDamage().marked("mark").noReturn(), <ore:ingotElectrum>],
   	function(out, ins, cInfo) {
@@ -149,8 +154,6 @@ recipes.remove(<thermaldynamics:duct_16:4>);
 recipes.remove(<thermaldynamics:duct_16:6>);
 
 recipes.remove(<thermaldynamics:duct_0>);
-<thermaldynamics:duct_0>.displayName = "Basic Fluxduct";
-
 recipes.addShaped(<thermaldynamics:duct_0>*8, [
 	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
 	[<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],

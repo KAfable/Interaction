@@ -1,5 +1,9 @@
 {
   "savedSubBlockNames": {
-    "0": {}
+    "0": {
+      "0": "sulfur_ore_minecraft_stone",
+      "1": "sulfur_ore_minecraft_netherrack",
+      "2": "reinforced_stone_block"
+    }
   }
 }

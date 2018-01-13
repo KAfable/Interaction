@@ -7,15 +7,18 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-var rstone = <contenttweaker:material_part:35>;
+#Scope: Contains recipes of all Tinker items, as well as casting, drying, melting, and alloying 
+
 
   #Lava
 tcm.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
 
-  #Reinforced Stone
+  #Reinforced Stone Alloying`
 tca.addRecipe(<liquid:reinforced_stone>*432, [<liquid:stone>*144, <liquid:clay>*72, <liquid:glass>*500]);
+  #Reinforced Stone Block
 tcc.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, <minecraft:brick_block>, <liquid:reinforced_stone>, 1296, true);
-tcc.addTableRecipe(rstone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
+  #Reinforced Stone Ingot
+tcc.addTableRecipe(ingotReinforcedStone, <minecraft:brick>, <liquid:reinforced_stone>, 144, true);
 
   #Glass Slime Composite and Ender Pearls
 tca.addRecipe(<liquid:glass-_slime_composite>*10, [<liquid:slime>*10, <liquid:glass>*10]);
@@ -263,3 +266,4 @@ var tableDisabled = [
 
 for item in tableDisabled {
   tcc.removeTableRecipe(item);}
+
