@@ -1705,7 +1705,7 @@
             "id": "contenttweaker:material_part",
             "Count": 1,
             "OreDict": "",
-            "Damage": 67
+            "Damage": 35
           },
           "globalshare": false,
           "questlogic": "AND",
@@ -1728,8 +1728,8 @@
             {
               "id": "contenttweaker:material_part",
               "Count": 1,
-              "OreDict": "",
-              "Damage": 67
+              "OreDict": "ingotReinforcedStone",
+              "Damage": 35
             }
           ],
           "taskID": "bq_standard:retrieval",
@@ -1987,7 +1987,7 @@
           "autoclaim": false,
           "ismain": false,
           "name": "DIAMONDS?",
-          "desc": "No, these aren\u0027t real diamonds. But at least they look like real diamonds."
+          "desc": "No, these aren\u0027t real diamonds. But at least they look like real diamonds. §c(When crafting these I §lstrongly §r§crecommend using the second tier alchemy catalyst! The lower tier one has 75% efficiency!)"
         }
       },
       "tasks": [
