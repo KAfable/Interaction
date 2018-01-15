@@ -36,17 +36,31 @@
 				[
 					{
 						"type": "dictionary",
-						"entry": 
-						[
-							"MOUNTAIN",
-							"HILLS",
-							"SAVANNA",
-							"COLD"
-						]
+						"entry": "MOUNTAIN"
 					},
 					{
-						"type": "name",
-						"entry": "Crag Cliffs"
+						"type": "dictionary",
+						"entry": "HILLS"
+					},
+					{
+						"type": "dictionary",
+						"entry": "SAVANNA"
+					},
+					{
+						"type": "dictionary",
+						"entry": "COLD"
+					},
+					{
+						"type": "id",
+						"entry": "crag_cliffs"
+					},
+					{
+						"type": "id",
+						"entry": "cliffs"
+					},
+					{
+						"type": "id",
+						"entry": "canyon"
 					}
 				]
 			},
@@ -139,14 +153,16 @@
 				[
 					{
 						"type": "dictionary",
-						"entry":
-						[
-							"FOREST",
-							"PLAINS",
-							"SWAMP"
-						]
+						"entry": "SWAMP"
 					},
-
+					{
+						"type": "dictionary",
+						"entry": "PLAINS"
+					},
+					{
+						"type": "dictionary",
+						"entry": "FOREST"
+					}
 				]
 			},
 			"dimension": 
