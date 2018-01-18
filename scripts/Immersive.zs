@@ -55,7 +55,7 @@ mods.immersiveengineering.BlastFurnace.removeFuel(output);*/
 	#Engineers Hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
-	[null,ingotReinforcedStone,<ore:string>],
+	[null, ingotReinforcedStone,<ore:string>],
 	[null,<ore:stickWood>, ingotReinforcedStone],
 	[<ore:stickWood>,null,null]]);
 

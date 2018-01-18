@@ -2,6 +2,14 @@ import mods.integrateddynamics.Squeezer as sq;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+// Squeezer
+// inputStack, outputStack, outputFluid
+//mods.integrateddynamics.Squeezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
+// inputStack, outputStack, outputFluid
+//mods.integrateddynamics.Squeezer.removeRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
+// outputStack, outputFluid
+//mods.integrateddynamics.Squeezer.removeRecipesWithOutput(<minecraft:leather>, null);
+
   #Generator
 
 	#Squeezer
@@ -10,6 +18,9 @@ recipes.addShaped(<integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:iron_block>, <ore:stickIron>],
   [<ore:gearReinforcedStone>, null, <ore:gearReinforcedStone>],
   [<ore:stickIron>,<minecraft:heavy_weighted_pressure_plate>,<ore:stickIron>]]);
+
+recipes.remove(<integrateddynamics:mechanical_squeezer>);
+recipes.remove(<integrateddynamics:mechanical_drying_basin>);
 
 val squeezerRemoved = [
   <thermalfoundation:material:0>,
@@ -28,39 +39,9 @@ val squeezerRemoved = [
   <minecraft:redstone>*8,
   <minecraft:cobblestone>,
   <minecraft:gravel>,
-  <minecraft:flint>,
-
+  <minecraft:flint>
   ] as IItemStack[];
 for i in squeezerRemoved {
   sq.removeRecipesWithOutput(i, null);  
 }
 
-	#Plates (Squeezer)
-val squeezerPlateInput = [
-  <minecraft:iron_ingot>,
-  <minecraft:gold_ingot>,
-  <minecraft:redstone_block>,
-  <thermalfoundation:material:128>,
-  <thermalfoundation:material:129>,
-  <thermalfoundation:material:163>,
-  <abyssalcraft:abyingot>,
-  <mekanism:ingot:4>,
-  <techreborn:ingot:1>,
-  <minecraft:dye:4>
-  ] as IItemStack[];
-
-val squeezerPlateOutput = [
-  <thermalfoundation:material:32>,
-  <thermalfoundation:material:33>,
-  <techreborn:plates:4>,
-  <thermalfoundation:material:320>,
-  <thermalfoundation:material:321>,
-  <thermalfoundation:material:355>,
-  <contenttweaker:material_part:1>,
-  <thermalfoundation:material:352>,
-  <techreborn:plates:17>,
-  <ic2:plate:4>
-  ] as IItemStack[];
-
-for i in 0 to 10 {
-  mods.integrateddynamics.Squeezer.addRecipe(squeezerPlateInput[i], squeezerPlateOutput[i], null);}

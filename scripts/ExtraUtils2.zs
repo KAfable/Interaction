@@ -4,11 +4,6 @@ import crafttweaker.item.IItemDefinition;
 
 print("Extra Utilities 2 Start");
 
-recipes.remove(<extrautils2:scanner>);
-recipes.addShaped(<extrautils2:scanner>, [
-	[<ore:stone>, <minecraft:spider_eye>, <ore:stone>],
-	[<ore:stone>, <extrautils2:redstoneclock>, <ore:stone>],
-	[<ore:stone>, <contenttweaker:material_part:33>, <ore:stone>]]);
 
 	#Pipes
 recipes.remove(<extrautils2:pipe>);
@@ -16,7 +11,6 @@ recipes.addShaped(<extrautils2:pipe>*8, [
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
   [<ore:glass>,<forestry:chipsets>,<ore:glass>],
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
-
 
 	#Ring of Flying Squid
 recipes.remove(<extrautils2:chickenring:1>);
@@ -65,12 +59,21 @@ recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_drago
 	#Mechanical User // Maybe make them use Integrated Dynamics
 recipes.remove(<extrautils2:user>);
 
+	#Redstone Gear
+recipes.remove(<extrautils2:ingredients:1>);
 
 	#Redstone Lantern
 recipes.remove(<extrautils2:redstonelantern>);
 recipes.addShaped(<extrautils2:redstonelantern>, [
 	[<minecraft:redstone>, <extrautils2:screen>, <minecraft:redstone>], 
 	[<extrautils2:screen>, <extrautils2:redstoneclock>,<extrautils2:screen>],
-	[<minecraft:redstone>, <contenttweaker:material_part:33>, <minecraft:redstone>]]);
+	[<minecraft:redstone>, gearRedstone, <minecraft:redstone>]]);
 
-print("Extra Utilities 2 End");
+	#Scanner
+recipes.remove(<extrautils2:scanner>);
+recipes.addShaped(<extrautils2:scanner>, [
+	[<ore:stone>, <minecraft:spider_eye>, <ore:stone>],
+	[<ore:stone>, <extrautils2:redstoneclock>, <ore:stone>],
+	[<ore:stone>, gearRedstone, <ore:stone>]]);
+
+print("-----------------------------Extra Utilities 2 End--------------------------");
