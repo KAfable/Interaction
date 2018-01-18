@@ -9,7 +9,6 @@ import crafttweaker.item.IIngredient;
 
 #Scope: Contains recipes of all Tinker items, as well as casting, drying, melting, and alloying 
 
-
   #Lava
 tcm.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
 

@@ -8,9 +8,9 @@ var copCableInsultedIC2 = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as
 
 	#Basic Circuit Board
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>);
-recipes.addShaped(<forestry:chipsets>, [
+recipes.addShaped(<forestry:chipsets>*2, [
 	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2],
-	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
+	[plateTin, plateTin, plateTin],
 	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2]]);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets>, [
 	[null, null, null],
@@ -26,6 +26,16 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>, [
 	[null, null, null],
 	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
 	[null, null, null]], 40, <liquid:menrilresin>*1000);
+	#Refined Circuit Board
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+recipes.addShaped(<forestry:chipsets:2>, [
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
+
+	#Intricate Circuit Board
+
+
 	#Carpenter
 recipes.remove(<forestry:carpenter>);
 recipes.addShaped(<forestry:carpenter>, [

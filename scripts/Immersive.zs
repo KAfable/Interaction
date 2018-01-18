@@ -55,8 +55,8 @@ mods.immersiveengineering.BlastFurnace.removeFuel(output);*/
 	#Engineers Hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
-	[null,<contenttweaker:material_part:35>,<ore:string>],
-	[null,<ore:stickWood>,<contenttweaker:material_part:35>],
+	[null, ingotReinforcedStone,<ore:string>],
+	[null,<ore:stickWood>, ingotReinforcedStone],
 	[<ore:stickWood>,null,null]]);
 
 val iePlates = <immersiveengineering:metal>.definition;

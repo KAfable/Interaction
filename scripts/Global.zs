@@ -31,12 +31,12 @@ global conveyorLudicrous as IItemStack = <contenttweaker:ludicrousconveyor>;
 global conveyorDivine as IItemStack = <contenttweaker:divineconveyor>;
 
 	#Circuits
+
 global circuitBasic as IItemStack = <ic2:crafting:1>;
-circuitBasic.displayName = "Basic Circuit";
-global circuitIntermediate as IItemStack = <ic2:crafting:2>;
+	#IC2 parts cannot be renamed for some reason
+global circuitIntermediate as IItemStack = <advgenerators:controller>;
 circuitIntermediate.displayName = "Intermediate Circuit";
-global circuitAdvanced as IItemStack = <advgenerators:controller>;
-circuitAdvanced.displayName = "Advanced Circuit";
+global circuitAdvanced as IItemStack = <ic2:crafting:2>;
 global circuitElite as IItemStack = <gendustry:env_processor>;
 circuitElite.displayName = "Elite Circuit";
 global circuitInsane as IItemStack = <extendedcrafting:material:14>;
@@ -50,6 +50,7 @@ circuitDivine.displayName = "Divine Circuit";
 
 	#Energy Cables
 global fluxductBasic as IItemStack = <thermaldynamics:duct_0>;
+fluxductIntermediate.displayName = "Basic Fluxduct";
 global fluxductIntermediate as IItemStack = <thermaldynamics:duct_0:1>;
 fluxductIntermediate.displayName = "Intermediate Fluxduct";
 global fluxductAdvanced as IItemStack = <thermaldynamics:duct_0:2>;
@@ -137,6 +138,24 @@ global ingotIntermedium as IItemStack = <mysticalagriculture:crafting:35>;
 global ingotSuperium as IItemStack = <mysticalagriculture:crafting:36>;
 global ingotSupremium as IItemStack = <mysticalagriculture:crafting:37>;
 global ingotSoulium as IItemStack = <mysticalagriculture:crafting:38>;
+global ingotBrass as IItemStack = <techreborn:ingot:1>;
+global ingotCopper as IItemStack = <thermalfoundation:material:128>;
+global ingotAluminium as IItemStack = <frogcraftrebirth:metal_ingot>;
+global ingotAluminum as IItemStack = <thermalfoundation:material:132>;
+global ingotEnderium as IItemStack = <thermalfoundation:material:167>;
+global ingotBronze as IItemStack = <thermalfoundation:material:163>;
+global ingotConstantan as IItemStack = <thermalfoundation:material:164>;
+global ingotElectrum as IItemStack = <thermalfoundation:material:161>;
+global ingotInvar as IItemStack = <thermalfoundation:material:162>;
+global ingotIridium as IItemStack = <thermalfoundation:material:135>;
+global ingotLumium as IItemStack = <thermalfoundation:material:166>;
+global ingotSignalum as IItemStack = <thermalfoundation:material:165>;
+global ingotLead as IItemStack = <thermalfoundation:material:131>;
+global ingotMithril as IItemStack = <thermalfoundation:material:136>;
+global ingotNickel as IItemStack = <thermalfoundation:material:133>;
+global ingotPlatinum as IItemStack = <thermalfoundation:material:134>;
+global ingotTin as IItemStack = <thermalfoundation:material:129>;
+global ingotSilver as IItemStack = <thermalfoundation:material:130>;
 
 	#Machine Casings
 global casingBasic as IItemStack = <techreborn:machine_frame>;
@@ -170,26 +189,53 @@ global motorDivine as IItemStack = <contenttweaker:divinemotor>;
 global nuggetReinforcedStone as IItemStack = <contenttweaker:material_part:72>;
 
 	#Plates
+global plateAbyssalnite as IItemStack = <contenttweaker:material_part:4>;
+global plateAluminum as IItemStack = <thermalfoundation:material:324>;
+global plateBrass as IItemStack = <techreborn:plates:17>;
+global plateBronze as IItemStack = <thermalfoundation:material:355>;
+global plateConstantan as IItemStack = <thermalfoundation:material:356>;
+global plateCopper as IItemStack = <thermalfoundation:material:320>;
+global plateElectrum as IItemStack = <thermalfoundation:material:353>;
+global plateEnderium as IItemStack = <thermalfoundation:material:359>;
+global plateFluxedElectrum as IItemStack = <redstonearsenal:material:128>;
+global plateGlowstone as IItemStack = <contenttweaker:material_part:135>;
+global plateInvar as IItemStack = <thermalfoundation:material:354>;
+global plateIridium as IItemStack = <thermalfoundation:material:327>;
+global plateIron as IItemStack = <thermalfoundation:material:32>;
+global plateGold as IItemStack = <thermalfoundation:material:33>;
+global plateLapis as IItemStack = <ic2:plate:4>;
+global plateLead as IItemStack = <thermalfoundation:material:323>;
+global plateLumium as IItemStack = <thermalfoundation:material:358>;
+global plateMithril as IItemStack = <thermalfoundation:material:328>;
+global plateNickel as IItemStack = <thermalfoundation:material:325>;
+global platePlatinum as IItemStack = <thermalfoundation:material:326>;
+global plateRedstone as IItemStack = <contenttweaker:material_part:61>;	
+global plateReinforcedStone as IItemStack = <contenttweaker:material_part:74>;
 global plateRubber as IItemStack = <contenttweaker:material_part:85>;
-
+global plateTin as IItemStack = <thermalfoundation:material:321>;
+global plateSignalum as IItemStack = <thermalfoundation:material:357>;
+global plateSilver as IItemStack = <thermalfoundation:material:322>;
+global plateSteel as IItemStack = <thermalfoundation:material:352>;
 	#Processor
-global processorBasic as IItemStack = <refinedstorage:processor:3>;
-processorBasic.displayName = "Basic Processor";
-global processorIntermediate as IItemStack = <refinedstorage:processor:4>;
-processorIntermediate.displayName = "Intermediate Processor";
+//global processorBasic as IItemStack = <refinedstorage:processor:3>;
+//processorBasic.displayName = "Basic Processor";
+//global processorIntermediate as IItemStack = <refinedstorage:processor:4>;
+//processorIntermediate.displayName = "Intermediate Processor";
 global processorAdvanced as IItemStack = <appliedenergistics2:material:22>;
 processorAdvanced.displayName = "Advanced Processor";
 global processorElite as IItemStack = <appliedenergistics2:material:23>;
 processorElite.displayName = "Elite Processor";
 global processorInsane as IItemStack = <appliedenergistics2:material:24>;
 processorInsane.displayName = "Insane Processor";
-global processorUltimate as IItemStack = <refinedstorage:processor:5>;
-processorUltimate.displayName = "Ultimate Processor";
+//global processorUltimate as IItemStack = <refinedstorage:processor:5>;
+//processorUltimate.displayName = "Ultimate Processor";
 global processorLudicrous as IItemStack = <techreborn:part:1>;
 processorLudicrous.displayName = "Ludicrous Processor";
 global processorDivine as IItemStack = <techreborn:part>;
 processorDivine.displayName = "Divine Processor";
 
+	#Rod
+global rodRefinedIron as IItemStack = <contenttweaker:material_part:146>;
 	#Robot Arms
 global robotArmBasic as IItemStack = <contenttweaker:basicrobotarm>;
 global robotArmIntermediate as IItemStack = <contenttweaker:intermediaterobotarm>;

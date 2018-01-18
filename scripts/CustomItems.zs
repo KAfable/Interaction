@@ -37,9 +37,9 @@ recipes.addShaped(emitterBasic, [
 	[circuitBasic, fluxductBasic, <ore:stickCopper>]]);
 	#Basic Sensor
 recipes.addShaped(sensorBasic, [
-	[<ore:plateSteel>, null, <minecraft:ender_eye>],
-	[<ore:plateSteel>, <ore:stickCopper>, null],
-	[circuitBasic, <ore:plateSteel>, <ore:plateSteel>]]);
+	[<ore:plateTin>, null, <minecraft:ender_eye>],
+	[<ore:plateTin>, <ore:stickCopper>, null],
+	[circuitBasic, <ore:plateTin>, <ore:plateTin>]]);
 
 #Rings
 function makeRingRecipe(output as IItemStack, input as IOreDictEntry) {

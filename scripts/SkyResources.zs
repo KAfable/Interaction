@@ -4,8 +4,6 @@ import crafttweaker.item.IIngredient;
 
 print("-------------- Sky Resources Start --------------");
 
-var stoneReinforced = <contenttweaker:material_part:35>;
-
 //////////////////////////
 // Removal of Excess Tiers
 //////////////////////////
@@ -130,13 +128,13 @@ for item in 0 to 32 {
 ////////////
 recipes.remove(<skyresources:quickdropper>);
 recipes.addShaped(<skyresources:quickdropper>, [
-  [stoneReinforced, stoneReinforced, stoneReinforced],
-  [stoneReinforced, <minecraft:dropper>, stoneReinforced],
-  [stoneReinforced, null, stoneReinforced]]);
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone],
+  [ingotReinforcedStone, <minecraft:dropper>, ingotReinforcedStone],
+  [ingotReinforcedStone, null, ingotReinforcedStone]]);
 recipes.addShaped(<skyresources:combustioncollector>, [
-  [stoneReinforced, stoneReinforced, stoneReinforced],
-  [stoneReinforced, <minecraft:hopper>, stoneReinforced],
-  [stoneReinforced, stoneReinforced, stoneReinforced]]);
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone],
+  [ingotReinforcedStone, <minecraft:hopper>, ingotReinforcedStone],
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
 	#Removiung progression breaking recipes
 mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
 mods.skyresources.combustion.removeRecipe(<embers:shard_ember>);
@@ -149,9 +147,9 @@ mods.skyresources.combustion.removeRecipe(<minecraft:diamond>);
 //////////
 recipes.remove(<skyresources:crucibleinserter>);
 recipes.addShaped(<skyresources:crucibleinserter>, [
-  [stoneReinforced, <minecraft:dropper>, stoneReinforced],
-  [stoneReinforced, null, stoneReinforced],
-  [stoneReinforced, null, stoneReinforced]]);
+  [ingotReinforcedStone, <minecraft:dropper>, ingotReinforcedStone],
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [ingotReinforcedStone, null, ingotReinforcedStone]]);
 
 mods.skyresources.crucible.addRecipe(<fluid:lava>*1000, <minecraft:netherrack>);
 
@@ -176,7 +174,7 @@ mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:3>*3, [
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone Ingot";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
-	<contenttweaker:material_part:35>, <minecraft:blaze_powder>*3], 0.20);
+	ingotReinforcedStone, <minecraft:blaze_powder>*3], 0.20);
 	#Alchemical Diamond
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [
@@ -229,8 +227,8 @@ recipes.addShaped(<skyresources:stonegrinder>, [
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
 recipes.addShaped(<skyresources:irongrinder>, [
-  [stoneReinforced, stoneReinforced, null],
-  [stoneReinforced, stoneReinforced, null],
+  [ingotReinforcedStone, ingotReinforcedStone, null],
+  [ingotReinforcedStone, ingotReinforcedStone, null],
   [null, null, <minecraft:stick>]]);
 
 recipes.remove(<skyresources:diamondgrinder>);
@@ -245,21 +243,21 @@ recipes.remove(<skyresources:diamondgrinder>);
 // Replacing Iron tier sky resources with reinforced stone
 recipes.removeShaped(<skyresources:casing:3>);
 recipes.addShaped(<skyresources:casing:3>, [
-  [stoneReinforced, stoneReinforced, stoneReinforced],
-  [stoneReinforced, <ore:gearReinforcedStone>, stoneReinforced],
-  [stoneReinforced, stoneReinforced, stoneReinforced]]);
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone],
+  [ingotReinforcedStone, <ore:gearReinforcedStone>, ingotReinforcedStone],
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
 
 recipes.removeShaped(<skyresources:combustionheater:3>);
 recipes.addShaped(<skyresources:combustionheater:3>, [
-  [stoneReinforced, stoneReinforced, stoneReinforced],
-  [stoneReinforced, null, stoneReinforced],
-  [stoneReinforced, <skyresources:heat:3>, stoneReinforced]]);
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone],
+  [ingotReinforcedStone, null, ingotReinforcedStone],
+  [ingotReinforcedStone, <skyresources:heat:3>, ingotReinforcedStone]]);
 
 recipes.removeShaped(<skyresources:heat:3>);
 recipes.addShaped(<skyresources:heat:3>, [
-  [stoneReinforced, stoneReinforced, stoneReinforced],
-  [stoneReinforced, <minecraft:blaze_powder>, stoneReinforced],
-  [stoneReinforced, stoneReinforced, stoneReinforced]]);
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone],
+  [ingotReinforcedStone, <minecraft:blaze_powder>, ingotReinforcedStone],
+  [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
 
 // Renamings
 <skyresources:combustionheater:3>.displayName = "Reinforced Stone Combustion Heater";

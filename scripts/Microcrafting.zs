@@ -201,34 +201,89 @@ makeIngotToNuggetRecipe(nuggetReinforcedStone, <ore:ingotReinforcedStone>);
 
 print("--------------------------Nugget Recipes Intialized -------------------------");
 
-
-print("--------------------------Plate Recipes Intialized -------------------------");
   #Hammer Shapeless Recipes
 function makeHammerPlate(plate as IItemStack, ingot as IIngredient) {
   recipes.addShapeless(plate, [ingot, ingot, ingot, ingot, <ore:toolHammer>]);}
+  #Squeezer Plate Recipes
+function makeSqueezerPlateRecipe(plate as IItemStack, ingot as IItemStack) {
+  mods.integrateddynamics.Squeezer.addRecipe(ingot, plate, null);}
 
-makeHammerPlate(<techreborn:plates:17>,           <ore:ingotBrass>);
-makeHammerPlate(<thermalfoundation:material:32>,  <ore:ingotIron>);
-makeHammerPlate(<thermalfoundation:material:33>,  <ore:ingotGold>);
-makeHammerPlate(<thermalfoundation:material:320>, <ore:ingotCopper>);
-makeHammerPlate(<thermalfoundation:material:321>, <ore:ingotTin>);
-makeHammerPlate(<thermalfoundation:material:322>, <ore:ingotSilver>);
-makeHammerPlate(<thermalfoundation:material:323>, <ore:ingotLead>);
-makeHammerPlate(<thermalfoundation:material:324>, <ore:ingotAluminum>);
-makeHammerPlate(<thermalfoundation:material:324>, <ore:ingotALuminium>);
-makeHammerPlate(<thermalfoundation:material:325>, <ore:ingotNickel>);
-makeHammerPlate(<thermalfoundation:material:326>, <ore:ingotPlatinum>);
-makeHammerPlate(<thermalfoundation:material:327>, <ore:ingotIridium>);
-makeHammerPlate(<thermalfoundation:material:328>, <ore:ingotMithril>);
-makeHammerPlate(<thermalfoundation:material:352>, <ore:ingotSteel>);
-makeHammerPlate(<thermalfoundation:material:353>, <ore:ingotElectrum>);
-makeHammerPlate(<thermalfoundation:material:354>, <ore:ingotInvar>);
-makeHammerPlate(<thermalfoundation:material:355>, <ore:ingotBronze>);
-makeHammerPlate(<thermalfoundation:material:356>, <ore:ingotConstantan>);
-makeHammerPlate(<thermalfoundation:material:357>, <ore:ingotSignalum>);
-makeHammerPlate(<thermalfoundation:material:358>, <ore:ingotLumium>);
-makeHammerPlate(<thermalfoundation:material:359>, <ore:ingotEnderium>);
-makeHammerPlate(<contenttweaker:material_part:67>, <contenttweaker:material_part:74>);
+  #Abyssalnite Plates
+makeHammerPlate(plateAbyssalnite, <ore:ingotAbyssalnite>);
+makeSqueezerPlateRecipe(<abyssalcraft:abyingot>, plateAbyssalnite);
+  #Aluminum Plates
+makeHammerPlate(plateAluminum, <ore:ingotAluminum>);
+makeHammerPlate(plateAluminum, <ore:ingotAluminium>);
+makeSqueezerPlateRecipe(plateAluminum, ingotAluminium);
+makeSqueezerPlateRecipe(plateAluminum, ingotAluminum);
+  #Brass Plate
+makeHammerPlate(plateBrass, <ore:ingotBrass>);
+makeSqueezerPlateRecipe(ingotBrass, plateBrass);
+  #Bronze Plates
+makeHammerPlate(plateBronze, <ore:ingotBronze>);
+makeSqueezerPlateRecipe(plateBronze, ingotBronze);
+  #Copper Plates
+makeHammerPlate(plateCopper, <ore:ingotCopper>);
+makeSqueezerPlateRecipe(plateCopper, ingotCopper);
+  #Constantan Plates
+makeHammerPlate(plateConstantan, <ore:ingotConstantan>);
+makeSqueezerPlateRecipe(plateConstantan, ingotConstantan);
+  #Enderium Plates
+makeHammerPlate(plateEnderium, <ore:ingotEnderium>);
+makeSqueezerPlateRecipe(plateEnderium, ingotEnderium);
+  #Electrum Plates
+makeHammerPlate(plateElectrum, <ore:ingotElectrum>);
+makeSqueezerPlateRecipe(plateElectrum, ingotElectrum);
+  #Gold Plates
+makeHammerPlate(plateGold,  <ore:ingotGold>);
+makeSqueezerPlateRecipe(plateGold, <minecraft:gold_ingot>);
+  #Invar Plates
+makeHammerPlate(plateInvar, <ore:ingotInvar>);
+makeSqueezerPlateRecipe(plateInvar, ingotInvar);
+  #Iridium PLates
+makeHammerPlate(plateIridium, <ore:ingotIridium>);
+makeSqueezerPlateRecipe(plateIridium, ingotIridium);
+  #Iron Plates
+makeHammerPlate(plateIron,  <ore:ingotIron>);
+makeSqueezerPlateRecipe(plateIron, <minecraft:iron_ingot>);
+  #Lapis Plate
+makeHammerPlate(plateLapis,  <minecraft:lapis_block>);
+makeSqueezerPlateRecipe(plateLapis, <minecraft:lapis_block>);
+  #Lead Plates
+makeHammerPlate(plateLead, <ore:ingotLead>);
+makeSqueezerPlateRecipe(plateLead, ingotLead);
+  #Lumium Plates
+makeHammerPlate(plateLumium, <ore:ingotLumium>);
+makeSqueezerPlateRecipe(plateLumium, ingotLumium);
+  #Mithril Plates
+makeHammerPlate(plateMithril, <ore:ingotMithril>);
+makeSqueezerPlateRecipe(plateMithril, ingotMithril);
+  #Nickel Plates
+makeHammerPlate(plateNickel, <ore:ingotNickel>);
+makeSqueezerPlateRecipe(plateNickel, ingotNickel);
+  #Platinum PLates
+makeHammerPlate(platePlatinum, <ore:ingotPlatinum>);
+makeSqueezerPlateRecipe(platePlatinum, ingotPlatinum);
+  #Redstone Plate
+makeHammerPlate(plateRedstone, <minecraft:redstone_block>);
+makeSqueezerPlateRecipe(plateRedstone, <minecraft:redstone_block>);
+  #Reinforced Stone Plates
+makeHammerPlate(plateReinforcedStone, ingotReinforcedStone);
+makeSqueezerPlateRecipe(plateReinforcedStone, ingotReinforcedStone);
+  #Tin Plates
+makeHammerPlate(plateTin, <ore:ingotTin>);
+makeSqueezerPlateRecipe(plateTin, ingotTin);
+  #Steel Plates
+makeHammerPlate(plateSteel, <ore:ingotSteel>);
+makeSqueezerPlateRecipe(plateSteel, ingotSteel);
+  #Signalum Plates
+makeHammerPlate(plateSignalum, <ore:ingotSignalum>);
+makeSqueezerPlateRecipe(plateSignalum, ingotSignalum);
+  #Silver Plates
+makeHammerPlate(plateSilver, <ore:ingotSilver>);
+makeSqueezerPlateRecipe(plateSilver, ingotSilver);
+
+print("--------------------------Plate Recipes Intialized -------------------------");
 
 print("--------------------------Ring Recipes Intialized -------------------------");
 
@@ -237,8 +292,13 @@ function makeStickRecipe(output as IItemStack, input as IIngredient){
     [input],
     [input]]);
 }
+
+  #Copper Rod
+makeStickRecipe(<contenttweaker:material_part:24>, <ore:ingotCopper>);
   #Reinforced Stone Rod
 makeStickRecipe(<contenttweaker:material_part:73>, <ore:ingotReinforcedStone>);
+  #Refined Iron Rod
+makeStickRecipe(rodRefinedIron, <ore:ingotRefinedIron>);  
   #Steel Rod
 recipes.removeByRecipeName("immersiveengineering:material/stick_steel");
 makeStickRecipe(stickSteel, <ore:ingotSteel>);
