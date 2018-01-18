@@ -72,6 +72,8 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 	#gearWood
 <ore:gearWood>.remove(<teslacorelib:gear_wood>);
 
+	#ingotAluminum
+<ore:ingotAluminum>.add(<frogcraftrebirth:metal_ingot>);
 
 	#ingotTin
 <ore:ingotTin>.remove(<mekanism:ingot:6>);
@@ -80,8 +82,6 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:ingotTin>.remove(<fp:itemerze>);
 <ore:ingotTin>.remove(<sgextraparts:ingot:1>);
 <ore:ingotTin>.remove(<abyssalcraft:tiningot>);
-	#ingotQuartzEnrichedIron
-<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 	#nuggetGem
 var gemShards = <silentgems:gemshard>.definition;
 for i in 0 to 48{

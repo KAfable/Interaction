@@ -174,7 +174,7 @@ mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:3>*3, [
 <skyresources:alchemyitemcomponent:8>.displayName = "Alchemical Reinforced Stone Ingot";
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:8>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:8>, [
-	<contenttweaker:material_part:35>, <minecraft:blaze_powder>*3], 0.20);
+	ingotReinforcedStone, <minecraft:blaze_powder>*3], 0.20);
 	#Alchemical Diamond
 mods.skyresources.fusion.removeRecipe(<skyresources:alchemyitemcomponent:10>);
 mods.skyresources.fusion.addRecipe(<skyresources:alchemyitemcomponent:10>, [
