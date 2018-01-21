@@ -2,6 +2,8 @@ import mods.mekanism.infuser as inf;
 
 //inf.removeRecipe(<mekanism:controlcircuit>);
 
+print("-----------------------------------Mekanism Start----------------------------------");
+
 var casingSteel = <mekanism:basicblock:8>;
 
 recipes.remove(<mekanism:basicblock:8>);
@@ -16,3 +18,7 @@ recipes.addShaped(<mekanism:machineblock:8>, [
 	]);
 
 inf.addRecipe("TIN", 100, <twilightforest:fiery_ingot>, <contenttweaker:material_part:16>);
+	#Digital Miner
+recipes.remove(<mekanism:machineblock:4>);
+
+print("------------------------------------Mekanism End-----------------------------------");

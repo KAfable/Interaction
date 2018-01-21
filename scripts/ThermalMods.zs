@@ -142,7 +142,7 @@ recipes.addShaped(<thermaldynamics:duct_32>, [
 	#Fluiduct
 recipes.remove(<thermaldynamics:duct_16>);
 recipes.addShaped(<thermaldynamics:duct_16>, [
-	[<ore:ingotCopper>,<contenttweaker:basicvalve>,<ore:ingotCopper>]]);
+	[<ore:plateCopper>,<ore:blockGlass>, <ore:plateCopper>]]);
 
 	#Fluiduct (Hardened)
 recipes.remove(<thermaldynamics:duct_16:2>);

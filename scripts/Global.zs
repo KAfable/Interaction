@@ -31,10 +31,9 @@ global conveyorLudicrous as IItemStack = <contenttweaker:ludicrousconveyor>;
 global conveyorDivine as IItemStack = <contenttweaker:divineconveyor>;
 
 	#Circuits
-
 global circuitBasic as IItemStack = <ic2:crafting:1>;
 	#IC2 parts cannot be renamed for some reason
-global circuitIntermediate as IItemStack = <advgenerators:controller>;
+global circuitIntermediate as IItemStack = <techreborn:part:2>;
 circuitIntermediate.displayName = "Intermediate Circuit";
 global circuitAdvanced as IItemStack = <ic2:crafting:2>;
 global circuitElite as IItemStack = <gendustry:env_processor>;
@@ -217,25 +216,47 @@ global plateSignalum as IItemStack = <thermalfoundation:material:357>;
 global plateSilver as IItemStack = <thermalfoundation:material:322>;
 global plateSteel as IItemStack = <thermalfoundation:material:352>;
 	#Processor
-//global processorBasic as IItemStack = <refinedstorage:processor:3>;
-//processorBasic.displayName = "Basic Processor";
-//global processorIntermediate as IItemStack = <refinedstorage:processor:4>;
-//processorIntermediate.displayName = "Intermediate Processor";
+global processorBasic as IItemStack = <actuallyadditions:item_worm>;
+processorBasic.displayName = "Basic Processor";
+global processorIntermediate as IItemStack = <advgenerators:controller>;
+processorIntermediate.displayName = "Intermediate Processor";
 global processorAdvanced as IItemStack = <appliedenergistics2:material:22>;
 processorAdvanced.displayName = "Advanced Processor";
 global processorElite as IItemStack = <appliedenergistics2:material:23>;
 processorElite.displayName = "Elite Processor";
 global processorInsane as IItemStack = <appliedenergistics2:material:24>;
 processorInsane.displayName = "Insane Processor";
-//global processorUltimate as IItemStack = <refinedstorage:processor:5>;
-//processorUltimate.displayName = "Ultimate Processor";
-global processorLudicrous as IItemStack = <techreborn:part:1>;
+global processorUltimate as IItemStack = <techreborn:part:1>;
+processorUltimate.displayName = "Ultimate Processor";
+global processorLudicrous as IItemStack = <techreborn:part>;
 processorLudicrous.displayName = "Ludicrous Processor";
-global processorDivine as IItemStack = <techreborn:part>;
+global processorDivine as IItemStack = <waterstrainer:super_worm>;
 processorDivine.displayName = "Divine Processor";
+
+	#Ring
+//global ring as IItemStack = ;
+global ringCopper as IItemStack = <contenttweaker:material_part:26>;
+global ringIron as IItemStack = <contenttweaker:material_part:55>;
+global ringRubber as IItemStack = <contenttweaker:material_part:88>;
+global ringSteel as IItemStack = <contenttweaker:material_part:98>;
+global ringIridium as IItemStack = <contenttweaker:material_part:128>;
+global ringAbyssalnite as IItemStack = <contenttweaker:material_part:9>;
+global ringAluminum as IItemStack = <contenttweaker:material_part:19>;
+global ringFieryInfused as IItemStack = <contenttweaker:material_part:41>;
+global ringGold as IItemStack = <contenttweaker:material_part:49>;
+global ringReinforcedStone as IItemStack = <contenttweaker:material_part:79>;
+global ringTin as IItemStack = <contenttweaker:material_part:90>;
+global ringWood as IItemStack = <contenttweaker:material_part:109>;
+global ringBronze as IItemStack = <contenttweaker:material_part:118>;
+global ringGlowstone as IItemStack = <contenttweaker:material_part:155>;
+global ringRefinedIron as IItemStack = <contenttweaker:material_part:198>;
+global ringDiamond as IItemStack = <contenttweaker:material_part:254>;
+
 
 	#Rod
 global rodRefinedIron as IItemStack = <contenttweaker:material_part:146>;
+global rodRedstone as IItemStack = <contenttweaker:material_part:60>;
+
 	#Robot Arms
 global robotArmBasic as IItemStack = <contenttweaker:basicrobotarm>;
 global robotArmIntermediate as IItemStack = <contenttweaker:intermediaterobotarm>;
@@ -246,6 +267,9 @@ global robotArmUltimate as IItemStack = <contenttweaker:ultimaterobotarm>;
 global robotArmLudicrous as IItemStack = <contenttweaker:ludicrousrobotarm>;
 global robotArmDivine as IItemStack = <contenttweaker:divinerobotarm>;
 
+	#Rotor
+//global rotor as IItemStack = ;
+global rotorSteel as IItemStack = <contenttweaker:material_part:99>;
 	#Sensors
 global sensorBasic as IItemStack = <contenttweaker:basicsensor>;
 global sensorIntermediate as IItemStack = <contenttweaker:intermediatesensor>;

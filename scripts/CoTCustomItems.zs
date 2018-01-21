@@ -113,6 +113,18 @@ var copperParts = [
   ] as string[];
 copper.registerParts(copperParts);
 print("------------------Copper parts initialized----------------------");
+  #Diamond
+var diamond = MaterialSystem.getMaterialBuilder().setName("Diamond").setColor(8454143).build();
+var diamondParts = [
+  "Gear", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Casing", 
+  "Ring", 
+  "Foil"] as string[];
+diamond.registerParts(diamondParts);
+print("------------------Diamond parts initialized----------------------");
   #Fiery
 var fiery = MaterialSystem.getMaterialBuilder().setName("Fiery Infused").setColor(16743700).setHasEffect(true).build();
 fiery.registerParts(parts);

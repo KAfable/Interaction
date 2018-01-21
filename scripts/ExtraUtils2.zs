@@ -9,7 +9,7 @@ print("Extra Utilities 2 Start");
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped(<extrautils2:pipe>*8, [
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
-  [<ore:glass>,<forestry:chipsets>,<ore:glass>],
+  [<ore:blockGlass>,<forestry:chipsets>,<ore:blockGlass>],
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
 
 	#Ring of Flying Squid

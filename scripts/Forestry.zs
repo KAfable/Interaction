@@ -69,14 +69,14 @@ recipes.remove(<forestry:ffarm:5>);
 for i in 0 to 11 {
 	var tag as IData = { FarmBlock: i };
 	recipes.addShapeless(<forestry:ffarm:5>.withTag(tag), 
-		[<forestry:ffarm>.withTag(tag), <advgenerators:controller>]);
+		[<forestry:ffarm>.withTag(tag), gearRedstone]);
 }
 	#Farm Gearbox (Power Input)
 recipes.remove(<forestry:ffarm:2>);
 for i in 0 to 11 {
 	var tag as IData = { FarmBlock: i };
 	recipes.addShaped(<forestry:ffarm:2>.withTag(tag), [
-		[null, <actuallyadditions:block_breaker>, null],
+		[null, <industrialforegoing:block_destroyer>, null],
 		[null, <forestry:ffarm>.withTag(tag), null],
 		[<ore:gearTin>, <ore:gearTin>, <ore:gearTin>]]);
 }

@@ -1,0 +1,40 @@
+{
+  "name": "4k Fluid Storage cell",
+  "target-item": "extracells:storage.component",
+  "target-meta": 5,
+  "target-count": 1,
+
+  "duration": 10,
+
+  "catalyst": "extracells:storage.component",
+  "catalyst-meta": 4,
+
+  "input-types": 
+    {
+      "x": 
+        { 
+          "id": "tconstruct:seared",
+          "meta": 3
+        }
+    },
+
+  "symmetrical": true,
+  "shape": 
+    [
+      [
+        ["x", "x", "x"],
+        ["x", "x", "x"],
+        ["x", "x", "x"]
+      ],
+      [
+        ["x", "x", "x"],
+        ["x", "_", "x"],
+        ["x", "x", "x"]
+      ],
+      [
+        ["x", "x", "x"],
+        ["x", "x", "x"],
+        ["x", "x", "x"]
+      ]
+  ]
+}

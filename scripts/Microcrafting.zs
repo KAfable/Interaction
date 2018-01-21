@@ -21,12 +21,13 @@ function makeBoltRecipe(output as IItemStack, input as IIngredient) {
     [input],
     [input]]);
 }
+
   #Iron Bolt
-makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+makeBoltRecipe(boltIron*4, <ore:stickIron>);
   #Steel Bolt
-makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+makeBoltRecipe(boltSteel*4, <ore:stickSteel>);
   #Wood Bolt
-makeBoltRecipe(<contenttweaker:material_part:103>*4, <ore:stick>);
+makeBoltRecipe(boltWood*4, <ore:stickWood>);
 print("--------------------------Bolt Recipes Intialized -------------------------");
 
 function makeBlockCraftRecipe(output as IItemStack, input as IIngredient){
@@ -210,7 +211,7 @@ function makeSqueezerPlateRecipe(plate as IItemStack, ingot as IItemStack) {
 
   #Abyssalnite Plates
 makeHammerPlate(plateAbyssalnite, <ore:ingotAbyssalnite>);
-makeSqueezerPlateRecipe(<abyssalcraft:abyingot>, plateAbyssalnite);
+makeSqueezerPlateRecipe(plateAbyssalnite, <abyssalcraft:abyingot>);
   #Aluminum Plates
 makeHammerPlate(plateAluminum, <ore:ingotAluminum>);
 makeHammerPlate(plateAluminum, <ore:ingotAluminium>);
@@ -218,7 +219,7 @@ makeSqueezerPlateRecipe(plateAluminum, ingotAluminium);
 makeSqueezerPlateRecipe(plateAluminum, ingotAluminum);
   #Brass Plate
 makeHammerPlate(plateBrass, <ore:ingotBrass>);
-makeSqueezerPlateRecipe(ingotBrass, plateBrass);
+makeSqueezerPlateRecipe(plateBrass, ingotBrass);
   #Bronze Plates
 makeHammerPlate(plateBronze, <ore:ingotBronze>);
 makeSqueezerPlateRecipe(plateBronze, ingotBronze);
@@ -285,6 +286,22 @@ makeSqueezerPlateRecipe(plateSilver, ingotSilver);
 
 print("--------------------------Plate Recipes Intialized -------------------------");
 
+  #Rings
+function makeRingCraftRecipe(output as IItemStack, input as IOreDictEntry) {
+  recipes.addShaped(output*4, [
+    [input, input, input],
+    [input, null, input],
+    [input, input, input]]);
+}
+  #Copper Ring
+makeRingCraftRecipe(ringCopper, <ore:ingotCopper>);
+  #Iron Ring
+makeRingCraftRecipe(ringIron, <ore:ingotIron>);
+  #Steel Ring
+makeRingCraftRecipe(ringSteel, <ore:ingotSteel>);
+  #Rubber Ring
+makeRingCraftRecipe(ringRubber, <ore:itemRubber>);
+
 print("--------------------------Ring Recipes Intialized -------------------------");
 
 function makeStickRecipe(output as IItemStack, input as IIngredient){
@@ -293,8 +310,12 @@ function makeStickRecipe(output as IItemStack, input as IIngredient){
     [input]]);
 }
 
+  #Abyssalnite Rod
+makeStickRecipe(<contenttweaker:material_part:3>, <ore:ingotAbyssalnite>);
   #Copper Rod
 makeStickRecipe(<contenttweaker:material_part:24>, <ore:ingotCopper>);
+  #Redstone Rod
+makeStickRecipe(rodRedstone*4, <minecraft:redstone_block>);
   #Reinforced Stone Rod
 makeStickRecipe(<contenttweaker:material_part:73>, <ore:ingotReinforcedStone>);
   #Refined Iron Rod
@@ -304,6 +325,15 @@ recipes.removeByRecipeName("immersiveengineering:material/stick_steel");
 makeStickRecipe(stickSteel, <ore:ingotSteel>);
 
 print("--------------------------Rod/Stick Recipes Intialized -------------------------");
+function makeRotorCraftRecipe(output as IItemStack, primary as IIngredient, core as IIngredient) {
+  recipes.addShaped(output, [
+    [null, primary, null],
+    [primary, core, primary],
+    [null, primary, null]]);
+}
+
+  #Steel Rotor
+makeRotorCraftRecipe(rotorSteel, plateSteel, ringSteel);
 
 print("--------------------------Rotor Recipes Intialized -------------------------");
 

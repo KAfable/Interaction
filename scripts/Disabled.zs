@@ -143,7 +143,6 @@ for item in quarryDisabled{
 //Cyclic
 ////////
 var cycDisabled = [
-  <cyclicmagic:block_miner_smart>,
   <cyclicmagic:tool_swap_match>,
   <cyclicmagic:tool_swap>]
   as IItemStack[];

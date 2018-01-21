@@ -39,6 +39,14 @@ var hammerList = [
 	] as IItemStack[];
 hammers.addItems(hammerList);
 	
+	#breakerBasic
+<ore:breakerBasic>.add(<industrialforegoing:block_destroyer>);
+<ore:breakerBasic>.add(<randomthings:blockbreaker>);
+<ore:breakerBasic>.add(<embers:breaker>);
+
+	#breakerIntermediate
+<ore:breakerIntermediate>.add(<actuallyadditions:block_breaker>);
+
 	#blockBronze
 recipes.addShapeless(<thermalfoundation:storage_alloy:3>, [
 	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,

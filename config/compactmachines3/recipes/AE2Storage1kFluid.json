@@ -1,0 +1,39 @@
+{
+  "name": "1k Fluid Storage cell",
+  "target-item": "extracells:storage.component",
+  "target-meta": 4,
+  "target-count": 3,
+
+  "duration": 10,
+
+  "catalyst": "advgenerators:controller",
+
+  "input-types": 
+    {
+      "x": 
+        { 
+          "id": "tconstruct:seared",
+          "meta": 3
+        }
+    },
+
+  "symmetrical": true,
+  "shape": 
+    [
+      [
+        ["x", "x", "x"],
+        ["x", "_", "x"],
+        ["x", "x", "x"]
+      ],
+      [
+        ["x", "x", "x"],
+        ["x", "_", "x"],
+        ["x", "x", "x"]
+      ],
+      [
+        ["x", "x", "x"],
+        ["x", "_", "x"],
+        ["x", "x", "x"]
+      ]
+  ]
+}

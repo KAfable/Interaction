@@ -1,0 +1,44 @@
+{
+  "name": "64k Storage cell",
+  "target-item": "appliedenergistics2:material",
+  "target-meta": 38,
+  "target-count": 3,
+
+  "duration": 10,
+
+  "catalyst": "advgenerators:controller",
+
+  "input-types": 
+    {
+      "x": 
+      { 
+          "id": "ironchest:iron_chest",
+          "meta": 1
+      },
+      "y":
+      {
+          "id": "ironchest:iron_chest",
+          "meta": 2
+      }
+    },
+
+  "symmetrical": true,
+  "shape": 
+    [
+      [
+        ["y", "y", "y"],
+        ["y", "_", "y"],
+        ["y", "y", "y"]
+      ],
+      [
+        ["y", "y", "y"],
+        ["y", "_", "y"],
+        ["y", "y", "y"]
+      ],
+      [
+        ["y", "y", "y"],
+        ["y", "_", "y"],
+        ["y", "y", "y"]
+      ]
+  ]
+}

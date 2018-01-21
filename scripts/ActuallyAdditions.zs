@@ -2,13 +2,13 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-print("Actually Additions Start");
+print("--------------------------Actually Additions Start--------------------------");
 
 	#Small Crate
 recipes.remove(<actuallyadditions:block_giant_chest>);
 recipes.addShaped(<actuallyadditions:block_giant_chest>, [
 	[<ore:chestWood>, <ore:plankWood>, <ore:chestWood>],
-	[<ore:plankWood>, <abyssalcraft:crate>, <ore:plankWood>],
+	[<ore:plankWood>, <projecte:alchemical_chest>, <ore:plankWood>],
 	[<ore:chestWood>, <ore:plankWood>, <ore:chestWood>]]);
 	#Void Bag
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_void_bag>);
@@ -24,5 +24,7 @@ recipes.addShaped(<actuallyadditions:item_worm>, [
 	[null, null, null]]);
 	#Powered Furnace
 recipes.remove(<actuallyadditions:block_furnace_double>);
+	#Vertical Miner
+mods.jei.JEI.removeAndHide(<actuallyadditions:block_miner>);
 
-print("Actually Additions End");
+print("--------------------------Actually Additions End--------------------------");

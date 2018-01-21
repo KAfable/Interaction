@@ -10,8 +10,9 @@ import crafttweaker.item.IIngredient;
 // outputStack, outputFluid
 //mods.integrateddynamics.Squeezer.removeRecipesWithOutput(<minecraft:leather>, null);
 
-  #Generator
 
+print("--------------------------------Integrated Dynamics Start-----------------------------------");
+  #Generator
 	#Squeezer
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped(<integrateddynamics:squeezer>, [
@@ -21,9 +22,7 @@ recipes.addShaped(<integrateddynamics:squeezer>, [
 
 recipes.remove(<integrateddynamics:mechanical_squeezer>);
 recipes.remove(<integrateddynamics:mechanical_drying_basin>);
-
 val squeezerRemoved = [
-  <thermalfoundation:material:0>,
   <thermalfoundation:material:1>,
   <thermalfoundation:material:64>,
   <thermalfoundation:material:65>,
@@ -44,4 +43,5 @@ val squeezerRemoved = [
 for i in squeezerRemoved {
   sq.removeRecipesWithOutput(i, null);  
 }
+print("---------------------------------Integrated Dynamics End------------------------------------");
 

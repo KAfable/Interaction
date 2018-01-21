@@ -1,0 +1,44 @@
+{
+  "name": "4k Storage cell",
+  "target-item": "appliedenergistics2:material",
+  "target-meta": 36,
+  "target-count": 3,
+
+  "duration": 10,
+
+  "catalyst": "appliedenergistics2:material",
+  "catalyst-meta": 35,
+
+  "input-types": 
+    {
+      "x": 
+      { 
+          "id": "ironchest:iron_chest"
+      },
+      "y":
+      {
+          "id": "ironchest:iron_chest",
+          "meta": 1
+      }
+    },
+
+  "symmetrical": true,
+  "shape": 
+    [
+      [
+        ["x", "y", "x"],
+        ["y", "_", "y"],
+        ["x", "y", "x"]
+      ],
+      [
+        ["x", "y", "x"],
+        ["y", "_", "y"],
+        ["x", "y", "x"]
+      ],
+      [
+        ["x", "y", "x"],
+        ["y", "_", "y"],
+        ["x", "y", "x"]
+      ]
+  ]
+}
