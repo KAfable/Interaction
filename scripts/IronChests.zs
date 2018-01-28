@@ -5,18 +5,23 @@ print("-------------------------------Iron Chests Start-------------------------
 	#Copper Chest
 	//Recipes already done somewhere else, I should look for it and move it here.
 	#Iron Chest
-
 recipes.remove(<ironchest:iron_chest>);
+<ironchest:iron_chest>.addTooltip("Needs to be upgraded in world.");
 	#Silver Chest
 recipes.remove(<ironchest:iron_chest:4>);
+<ironchest:iron_chest:4>.addTooltip("Needs to be upgraded in world.");
 	#Gold Chest
 recipes.remove(<ironchest:iron_chest:1>);
+<ironchest:iron_chest:1>.addTooltip("Needs to be upgraded in world.");
 	#Diamond Chest
 recipes.remove(<ironchest:iron_chest:2>);
+<ironchest:iron_chest:2>.addTooltip("Needs to be upgraded in world.");
 	#Crystal Chest
 recipes.remove(<ironchest:iron_chest:5>);
+<ironchest:iron_chest:5>.addTooltip("Needs to be upgraded in world.");
 	#Obsidian Chest
 recipes.remove(<ironchest:iron_chest:6>);
+<ironchest:iron_chest:6>.addTooltip("Needs to be upgraded in world.");
 	
 function makeUpgradeRecipe(output as IItemStack, primary as IIngredient, core as IIngredient) {
 	recipes.addShaped(output, [

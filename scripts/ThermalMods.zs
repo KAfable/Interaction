@@ -14,6 +14,9 @@ mods.jei.JEI.removeAndHide(<thermalexpansion:device>);
 recipes.remove(<thermalexpansion:machine:5>);
 <thermalexpansion:machine:5>.addTooltip("Compactor recipe WIP");
 
+	#Compactor - Gearworking Die
+recipes.remove(<thermalexpansion:augment:337>);
+<thermalexpansion:augment:337>.addTooltip("Disabled until Modtweaker adds Gear Compator functionality");
 	#Hammers
 
 /*

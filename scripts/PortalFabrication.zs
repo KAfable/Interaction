@@ -18,7 +18,7 @@ mods.botania.PureDaisy.addRecipe(<xtones:zome:15>, <xtones:zome:12>, 1200);
 
   #Alchemical Baseplate
 <xtones:zeta:12>.displayName = "Alchemical Baseplate";
-mods.skyresources.freezer.addRecipe(<xtones:zeta:12>, <embers:block_caminite_brick>, 1000);
+mods.skyresources.freezer.addRecipe(<xtones:zeta:12>, <minecraft:bone_block>, 1000);
 
   #Reinforced Lava Concentrator
 <chisel:netherbrick:8>.displayName = "Reinforced Lava Concentrator";
@@ -38,7 +38,3 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "4 Base Alchemical Beacon (Type 13)",
     "4 Buckets of Lava",
     "1 Enchantment Table"]);
-
-
-	#Alternate Overworld Portal Block
-recipes.addShapeless(<xtones:bitt:6>, [<contenttweaker:portalblockt>]);

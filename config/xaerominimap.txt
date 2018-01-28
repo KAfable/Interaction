@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:155
+ignoreUpdate:156
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
@@ -14,7 +14,7 @@ showItems:true
 showOther:true
 showOtherTeam:true
 showWaypoints:true
-showIngameWaypoints:true
+showIngameWaypoints:false
 displayRedstone:true
 deathpoints:true
 oldDeathpoints:true

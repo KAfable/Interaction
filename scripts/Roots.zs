@@ -1,4 +1,4 @@
-
+/*
 // Roots 2 Knife conflicts with SR Grinders
 recipes.remove(<roots:wood_knife>);
 recipes.addShaped(<roots:wood_knife>, [
@@ -33,3 +33,4 @@ recipes.remove(<roots:gold_knife>);
 <roots:wood_hammer>.maxDamage = 15;
 <roots:stone_hammer>.maxDamage = 31;
 <roots:iron_hammer>.maxDamage = 47;
+*/

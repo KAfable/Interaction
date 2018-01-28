@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.skyresources.infusion as inf;
 
-print("Plants Start");
+print("-----------------------Plants Start-----------------------");
 
 recipes.remove(<plants2:brewing_cauldron>);
 recipes.addShaped(<plants2:brewing_cauldron>, [
@@ -10,7 +10,7 @@ recipes.addShaped(<plants2:brewing_cauldron>, [
   [<skyresources:alchemyitemcomponent:2>, <minecraft:cauldron>, <skyresources:alchemyitemcomponent:2>],
   [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 
-print("Plants End");
+print("-----------------------Plants End-----------------------");
 
 print("-----------------------Pam's Harvestcraft Start--------------------------");
 
@@ -89,11 +89,9 @@ inf.addRecipe(<harvestcraft:paperbark_sapling>,		<harvestcraft:windygarden>, <mi
 inf.addRecipe(<harvestcraft:peach_sapling>,			<harvestcraft:windygarden>, <minecraft:sapling:4>, 10);
 inf.addRecipe(<harvestcraft:cashew_sapling>,		<harvestcraft:windygarden>, <minecraft:sapling:5>, 10);
 
-	#Stuffed Eggplant Nerf
-recipes.removeByRecipeName("harvestcraft:stuffedeggplantitem");
-
+	#Bread
 furnace.remove(<minecraft:bread>);
-recipes.removeByRecipeName("natura:common/bread");
+//recipes.removeByRecipeName("natura:common/bread");
 furnace.addRecipe(<minecraft:bread>, <harvestcraft:doughitem>);
 
 print("-----------------------------Pam's Harvestcraft End----------------------------------");

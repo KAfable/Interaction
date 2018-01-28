@@ -7,8 +7,11 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-#Scope: Contains recipes of all Tinker items, as well as casting, drying, melting, and alloying 
+print("----------------Tinkers Construct Start-------------");
 
+  #Crafting Station
+recipes.remove(<tconstruct:tooltables>);
+recipes.addShapeless(<tconstruct:tooltables>, [<cyclicmagic:block_workbench>]);
   #Lava
 tcm.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
 
@@ -266,3 +269,13 @@ var tableDisabled = [
 for item in tableDisabled {
   tcc.removeTableRecipe(item);}
 
+var tconJEIDisabled = [
+  <tconstruct:hammer_head>,
+  <tconstruct:hammer>
+  ] as IItemStack[];
+
+for item in tconJEIDisabled {
+  mods.jei.JEI.removeAndHide(item);
+}
+
+print("-----------------Tinkers Construct End--------------");

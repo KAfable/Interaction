@@ -137,7 +137,6 @@ recipes.addShaped(<skyresources:combustioncollector>, [
   [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
 	#Removiung progression breaking recipes
 mods.skyresources.combustion.removeRecipe(<minecraft:redstone>);
-mods.skyresources.combustion.removeRecipe(<embers:shard_ember>);
 mods.skyresources.combustion.removeRecipe(<armorplus:lava_crystal>);
 mods.skyresources.combustion.removeRecipe(<minecraft:snowball>);
 mods.skyresources.combustion.removeRecipe(<minecraft:diamond>);

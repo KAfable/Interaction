@@ -26,5 +26,7 @@ recipes.addShaped(<actuallyadditions:item_worm>, [
 recipes.remove(<actuallyadditions:block_furnace_double>);
 	#Vertical Miner
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_miner>);
+	#Flax
+vanilla.seeds.addSeed(<actuallyadditions:item_flax_seed> % 10);
 
 print("--------------------------Actually Additions End--------------------------");

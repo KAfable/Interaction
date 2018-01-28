@@ -29,5 +29,36 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyinputhatch",
         "modularmachinery:blockfluidinputhatch"
+    ],
+    "casings_functional": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "basic_casing": [
+        "xtones:bitt@6"
+    ],
+    "intermediate_casing": [
+        "xtones:bitt@15"
+    ],
+    "advanced_casing": [
+        "xtones:bitt@14"
+    ],
+    "elite_casing": [
+        "xtones:bitt@0"
+    ],
+    "insane_casing": [
+        "xtones:bitt@1"
+    ],
+    "ultimate_casing": [
+        "xtones:bitt@11"
+    ],
+    "ludicrous_casing": [
+        "xtones:bitt@8"
+    ],
+    "divine_casing":[
+        "xtones:bitt@5"
     ]
 }

@@ -3,13 +3,19 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 print("--------------------TechReborn Start-----------------------");
-var refIron = <techreborn:ingot:19>;
-	#Electronic Circuit
-recipes.remove(<techreborn:part:29>);
+
 	#Advanced Circuit
 recipes.remove(<techreborn:part:30>);
-
-
+	#Advanced Processor / Energy Flow Circuit
+recipes.remove(processorAdvanced);
+	#Electronic Circuit
+recipes.remove(<techreborn:part:29>);
+	#Basic Machine Frame
+recipes.remove(<techreborn:machine_frame>);
+recipes.addShaped(<techreborn:machine_frame>, [
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, null, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
 	#Too Easy Generators
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel>);
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel:1>);
@@ -17,20 +23,26 @@ mods.jei.JEI.removeAndHide(<techreborn:solar_panel:2>);
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel:3>);
 mods.jei.JEI.removeAndHide(<techreborn:wind_mill>);
 mods.jei.JEI.removeAndHide(<techreborn:water_mill>);
-
-	#Basic Machine Frame
-recipes.remove(<techreborn:machine_frame>);
-recipes.addShaped(<techreborn:machine_frame>, [
-	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
-	[<ore:plateRefinedIron>, null, <ore:plateRefinedIron>],
-	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
-
 	#Industrial Electrolyzer
 recipes.remove(<techreborn:industrial_electrolyzer>);
 recipes.addShaped(<techreborn:industrial_electrolyzer>,[
 	[<ore:plateIron>, <techreborn:extractor>, <ore:plateIron>],
 	[circuitBasic, casingBasic, circuitBasic],
 	[<ore:plateSteel>, <techreborn:extractor>, <ore:plateSteel>]]);
+
+	#Iron Furnace Disabled due to redundancy
+mods.jei.JEI.removeAndHide(<techreborn:iron_furnace>);
+
+	#Iron Alloy Smelter
+recipes.remove(<techreborn:iron_alloy_furnace>);
+recipes.addShaped(<techreborn:iron_alloy_furnace>, [
+	[plateRefinedIron, plateRefinedIron, plateRefinedIron],
+	[<ic2:te:46>, null,<ic2:te:46>],
+	[plateRefinedIron, plateRefinedIron, plateRefinedIron]]);
+recipes.addShaped(<techreborn:iron_alloy_furnace>, [
+	[plateRefinedIron, plateRefinedIron, plateRefinedIron],
+	[<ic2:te:46>, null, <natura:netherrack_furnace>],
+	[plateRefinedIron, plateRefinedIron, plateRefinedIron]]);
 
 print("--------------------TechReborn End-----------------------");
 

@@ -1,10 +1,10 @@
-/*
+
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 print("-------------- Tier 1 Progression Start --------------");
-
+/*
 mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ender_saturator"}),
   [ "Ender Saturator",
     "1 Machine Controller", 
@@ -34,6 +34,5 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "1 Fluid Input",
     "1 Energy Input Hatch",
     "All inputs and outputs can be substituted by machine casings"]);
-
-print("-------------- Tier 1 Progression End --------------");
 */
+print("-------------- Tier 1 Progression End --------------");

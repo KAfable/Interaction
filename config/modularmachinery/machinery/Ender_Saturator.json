@@ -19,15 +19,6 @@
             ]
         },
         {
-            "x": 2,
-            "y": 2,
-            "z": 1,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@3"
-            ]
-        },
-        {
             "x": 1,
             "y": 0,
             "z": 0,
@@ -68,15 +59,6 @@
             ]
         },
         {
-            "x": 4,
-            "y": 2,
-            "z": 1,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@2"
-            ]
-        },
-        {
             "x": 3,
             "y": 0,
             "z": 0,
@@ -258,15 +240,6 @@
             "z": 0,
             "elements": [
                 "minecraft:iron_bars@0"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 2,
-            "z": 0,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@1"
             ]
         },
         {
@@ -347,15 +320,6 @@
             "z": 0,
             "elements": [
                 "xtones:korp@6"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 0,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@1"
             ]
         },
         {
@@ -800,15 +764,6 @@
         },
         {
             "x": -3,
-            "y": 2,
-            "z": 2,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@0"
-            ]
-        },
-        {
-            "x": -3,
             "y": 0,
             "z": 1,
             "elements": [
@@ -837,15 +792,6 @@
             "z": 2,
             "elements": [
                 "minecraft:iron_bars@0"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 2,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@0"
             ]
         },
         {
@@ -945,29 +891,11 @@
             ]
         },
         {
-            "x": -4,
-            "y": 2,
-            "z": 1,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@3"
-            ]
-        },
-        {
             "x": -3,
             "y": 2,
             "z": 1,
             "elements": [
                 "thermalfoundation:storage_alloy@7"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 1,
-            "nbt": {"state":{"Properties":{"type":"enderium"},"Name":"thermalfoundation:storage_alloy"}},
-            "elements": [
-                "blockcraftery:editable_slant@2"
             ]
         }
     ]}

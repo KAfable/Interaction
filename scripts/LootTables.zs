@@ -88,7 +88,6 @@ var functionalLoot = [
 	<botania:supertravelbelt>,
 	<darkutils:focus_sash>,
 	<actuallyadditions:item_suction_ring>,
-	<calculator:storagemodule>,
 	<botania:holycloak>,
 	<botania:unholycloak>,
 	<botania:balancecloak>,

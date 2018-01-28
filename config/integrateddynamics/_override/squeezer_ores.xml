@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:stone</item>
+        </input>
+        <output>
+            <item>minecraft:cobblestone</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:cobblestone</item>
+        </input>
+        <output>
+            <item>minecraft:gravel</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:gravel</item>
+        </input>
+        <output>
+            <item>minecraft:flint</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:stonebrick</item>
+        </input>
+        <output>
+            <item meta="2">minecraft:stonebrick</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item type="oredict">blockGlass</item>
+        </input>
+        <output>
+            <item>minecraft:sand</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:glowstone</item>
+        </input>
+        <output>
+            <item amount="4">minecraft:glowstone_dust</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:reeds</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:sugar</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:bone</item>
+        </input>
+        <output>
+            <item meta="15" amount="6">minecraft:dye</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <input>
+            <item>minecraft:blaze_rod</item>
+        </input>
+        <output>
+            <item amount="4">minecraft:blaze_powder</item>
+        </output>
+    </recipe>
+
+    <recipe type="integrateddynamics:squeezer">
+        <condition type="config">squeezer</condition>
+        <condition type="oredict">dustObsidian</condition>
+        <input>
+            <item>minecraft:obsidian</item>
+        </input>
+        <output>
+            <item type="oredict">dustObsidian</item>
+        </output>
+    </recipe>
+
+</recipes>

@@ -47,7 +47,7 @@ recipes.remove(<silentgems:chestplate>);
 recipes.remove(<sgextraparts:polisher>);
 recipes.addShaped(<sgextraparts:polisher>, [
   [<ore:logWood>, <ore:logWood>, null],
-  [<ore:stick>, <ore:stick>, null]]);
+  [<ore:stickWood>, <ore:stickWood>, null]]);
 	#Enchantment Token - Holding
 recipes.addShaped(<silentgems:enchantmenttoken>.withTag({TokenEnchantments: [{lvl: 1 as short, name: "cofhcore:holding"}]}), [
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>],

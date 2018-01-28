@@ -49,3 +49,4 @@ config/xaerominimap.txt
 config/XaeroWorldMap/
 config/AppliedEnergistics2/aerecipes/items.csv
 servers.dat
+astralsorcery/gatewayFilter/worldFilter.dat
