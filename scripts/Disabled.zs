@@ -90,12 +90,7 @@ for item in xtonesdisabled {
 //Applied Energistics 2
 ////////////////////////////
 var ae2Disabled = [
-  <appliedenergistics2:material:4>,
-  <appliedenergistics2:certus_quartz_axe>,
-  <appliedenergistics2:certus_quartz_hoe>,
-  <appliedenergistics2:certus_quartz_spade>,
-  <appliedenergistics2:certus_quartz_pickaxe>,
-  <appliedenergistics2:certus_quartz_sword>]
+  <appliedenergistics2:material:4>,]
   as IItemStack[];
 
 for item in ae2Disabled{
@@ -294,15 +289,6 @@ var ipDisabled = [
   <crossroads:ingot_copper>,
   <crossroads:ingot_tin>,
   <crossroads:block_bronze>,
-  <embers:plate_gold>,
-  <embers:plate_silver>,
-  <embers:plate_iron>,
-  <embers:block_copper>,
-  <embers:block_lead>,
-  <embers:block_silver>,
-  <embers:ingot_copper>,
-  <embers:ingot_silver>,
-  <embers:ingot_lead>,
   <forestry:ingot_bronze>,
   <forestry:ingot_copper>,
   <forestry:ingot_tin>,
@@ -360,6 +346,7 @@ var ipDisabled = [
   <mekanism:ingot:2>,
   <mekanism:ingot:5>,
   <mekanism:ingot:6>,
+  <nuclearcraft:alloy>,
   <sgextraparts:ingot:1>,
   <sgextraparts:ingot:10>,
   <sgextraparts:ingot:11>,
@@ -439,9 +426,6 @@ var mineralsDisabled = [
   <crossroads:ore_copper>,
   <crossroads:ore_native_copper>,
   <crossroads:ore_tin>,
-  <embers:ore_copper>,
-  <embers:ore_silver>,
-  <embers:ore_lead>,
   <forestry:resources:1>,
   <forestry:resources:2>,
   <fp:erze>,
@@ -472,18 +456,6 @@ for item in mineralsDisabled{
 ////////////
 //Project E
 ///////////
-
-////////
-//Seeds
-///////
-
-var seedRemoved = [
-  <actuallyadditions:item_rice_seed>,
-  <actuallyadditions:item_flax_seed>]
-  as IIngredient[];
-
-for item in seedRemoved {
-    vanilla.seeds.removeSeed(item);}
 
 ////////
 //Tools

@@ -13,7 +13,7 @@ recipes.remove(<nuclearcraft:manufactory_idle>);
 	#Blast Block
 recipes.remove(<nuclearcraft:fission_block:1>);
 	#Nuclear Furnace
-recipes.remove(<nuclearcraft:nuclear_furnace_idle>);
+
 	#isotope Separator
 recipes.remove(<nuclearcraft:isotope_separator_idle>);
 	#Cobblestone Generator

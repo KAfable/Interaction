@@ -250,9 +250,10 @@ var rubberParts = [
   "Dust", 
   "Rod", 
   "Plate", 
-  "Dense_Plate", 
+  "Dense_Plate",
   "Casing", 
-  "Ring"
+  "Ring",
+  "molten"
   ] as string[];
 rubber.registerParts(rubberParts);
 print("------------------Rubber parts initialized----------------------");

@@ -34,7 +34,7 @@ recipes.addShaped(<forestry:chipsets:2>, [
 	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
 
 	#Intricate Circuit Board
-
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
 
 	#Carpenter
 recipes.remove(<forestry:carpenter>);
@@ -42,6 +42,17 @@ recipes.addShaped(<forestry:carpenter>, [
 	[<ore:plateBronze>, <ore:blockGlass>, <ore:plateBronze>],
 	[<ore:plateBronze>, <forestry:sturdy_machine>, <ore:plateBronze>],
 	[<ore:plateBronze>, <forestry:chipsets>, <ore:plateBronze>]]);
+	#Carpenter Removal
+var carpenterRemoved = [
+	<forestry:ingot_bronze>,
+	<skyresources:beeattractor>,
+	<forestry:hardened_machine>] as IItemStack[];
+for i in carpenterRemoved {
+	mods.forestry.Carpenter.removeRecipe(i);
+}
+
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+
 	#Multifarm Materials
 var farmMaterials as IItemStack[] = [
 	<minecraft:stonebrick>,

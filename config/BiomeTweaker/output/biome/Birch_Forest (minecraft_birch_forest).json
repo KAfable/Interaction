@@ -59,18 +59,6 @@
       "Max Group Count": 8
     },
     {
-      "Entity Class": "teamroots.roots.entity.EntityDeer",
-      "Weight": 10,
-      "Min Group Count": 3,
-      "Max Group Count": 7
-    },
-    {
-      "Entity Class": "teamroots.roots.entity.EntitySprout",
-      "Weight": 6,
-      "Min Group Count": 3,
-      "Max Group Count": 7
-    },
-    {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
       "Weight": 20,
       "Min Group Count": 1,
@@ -197,12 +185,6 @@
       "Weight": 4,
       "Min Group Count": 2,
       "Max Group Count": 8
-    },
-    {
-      "Entity Class": "teamroots.embers.entity.EntityAncientGolem",
-      "Weight": 25,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "flaxbeard.cyberware.common.entity.EntityCyberZombie",

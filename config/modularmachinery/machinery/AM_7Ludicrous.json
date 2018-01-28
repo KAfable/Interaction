@@ -1,0 +1,47 @@
+{
+    "registryname": "ludicrous_assembly_machine",
+    "localizedname": "Ludicrous Assembly Machine",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "ludicrous_casing"
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": "ludicrous_casing"
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        }
+    ]}

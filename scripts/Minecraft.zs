@@ -1,33 +1,29 @@
 import mods.botania.Apothecary;
+import mods.artisanworktables.Worktable;
 
-	#Gunpowder
-//Non-mob farm Gunpowder
-recipes.addShapeless(<minecraft:gunpowder>*4, [<ore:toolHammer>.onlyDamageAtLeast(0), 
-  <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, 
-  <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]);
-	
-	#Bed
+  #Bed
 recipes.remove(<minecraft:bed:*>);
-recipes.addShaped(<minecraft:bed>, [
-  [null, <minecraft:clock>, null],
-  [<ore:blockWool>,<ore:blockWool>, <ore:blockWool>],
-  [<extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>]]);
+<minecraft:bed:*>.addTooltip("Disabled due to time skipping. For earlier respawning options, see Respawn Obelisk");
 
-<minecraft:bed:*>.addTooltip("For earlier respawning options, see Respawn Obelisk");
-
-	#Bonemeal
+  #Bonemeal
 mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 1200);
 
-	#Bucket
+  #Bucket
 recipes.addShaped(<minecraft:bucket>, [
   [ingotReinforcedStone, null, ingotReinforcedStone],
   [null, ingotReinforcedStone, null]]);
+
 
 	#Cauldron
 recipes.addShaped(<minecraft:cauldron>, [
   [ingotReinforcedStone, null, ingotReinforcedStone],
   [ingotReinforcedStone, null, ingotReinforcedStone],
   [ingotReinforcedStone, ingotReinforcedStone, ingotReinforcedStone]]);
+
+  #Charcoal
+furnace.remove(<minecraft:coal:1>, null);
+furnace.addRecipe(<minecraft:coal:1>, <skyresources:baseitemcomponent>*2);
+
 
 	#Dirt
 recipes.addShaped(<minecraft:dirt>*3, [
@@ -42,6 +38,13 @@ recipes.addShaped(<minecraft:dropper>, [
   [<ore:cobblestone>, <minecraft:lever>, <ore:cobblestone>],
   [<ore:cobblestone>, <ore:trapdoorWood>, <ore:cobblestone>]]);
 
+  #Enchanting Table
+recipes.remove(<minecraft:enchanting_table>);
+recipes.addShaped(<minecraft:enchanting_table>, [
+  [null ,<minecraft:book>, null],
+  [<skyresources:alchemyitemcomponent:10>, <minecraft:obsidian>, <skyresources:alchemyitemcomponent:10>],
+  [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+
 	#Furnace
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
@@ -53,12 +56,15 @@ recipes.addShaped(<minecraft:furnace>, [
   [<ore:cobblestone>, null, <ore:cobblestone>],
   [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
 
-	#Enchanting Table
-recipes.remove(<minecraft:enchanting_table>);
-recipes.addShaped(<minecraft:enchanting_table>, [
-  [null ,<minecraft:book>, null],
-  [<skyresources:alchemyitemcomponent:10>, <minecraft:obsidian>, <skyresources:alchemyitemcomponent:10>],
-  [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+  #Glowstone
+recipes.removeByRegex("reliquary:items/uncrafting/glowstone_dust");
+
+  #Gunpowder
+recipes.removeByRegex("natura:common/gunpowder");
+Worktable.addRecipeShapeless(
+  "basic", <minecraft:gunpowder>*4, <ore:toolHammer>, 1, 
+  [<minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>, 
+  <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]);
 
 	#Hopper
 recipes.remove(<minecraft:hopper>);
@@ -93,6 +99,11 @@ recipes.addShaped(<minecraft:piston>*8, [
   [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
   [<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
   [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
+
+
+  #Redstone
+recipes.removeByRegex("reliquary:items/uncrafting/redstone");
+
 
 	#Sugar Cane
 mods.botania.Apothecary.addRecipe(<minecraft:reeds>, [<ore:petalLime>, <ore:petalLime>, <ore:petalGreen>, <ore:petalGreen>]);

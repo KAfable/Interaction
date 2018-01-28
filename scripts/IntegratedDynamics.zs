@@ -22,6 +22,8 @@ recipes.addShaped(<integrateddynamics:squeezer>, [
 
 recipes.remove(<integrateddynamics:mechanical_squeezer>);
 recipes.remove(<integrateddynamics:mechanical_drying_basin>);
+
+/*
 val squeezerRemoved = [
   <thermalfoundation:material:1>,
   <thermalfoundation:material:64>,
@@ -42,6 +44,6 @@ val squeezerRemoved = [
   ] as IItemStack[];
 for i in squeezerRemoved {
   sq.removeRecipesWithOutput(i, null);  
-}
+}*/
 print("---------------------------------Integrated Dynamics End------------------------------------");
 

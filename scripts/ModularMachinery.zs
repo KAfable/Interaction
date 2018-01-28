@@ -1,3 +1,10 @@
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipePrimer;
+import crafttweaker.liquid.ILiquidStack;
+
+print("--------------Modular Machinery Start----------------");
+
+
 val casing = <modularmachinery:blockcasing>;
 val rstone = <contenttweaker:material_part:32>;
 val p = <skyresources:baseitemcomponent:3>;
@@ -140,3 +147,5 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 
 recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_machine"}), [
 		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"})]);
+
+print("---------------Modular Machinery End-----------------");

@@ -19,6 +19,7 @@ recipes.addShaped(<botania:altar>, [
   [<ceramics:clay_hard>, <ceramics:clay_hard>, <ceramics:clay_hard>]]);
 
 	#Pure Daisy
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "puredaisy"}));
 recipes.addShaped(<botania:specialflower>.withTag({type: "puredaisy"}), [
 	[<ore:petalWhite>, <ore:petalWhite>, <ore:petalWhite>],
 	[<ore:petalWhite>, <ore:plant>, <ore:petalWhite>],

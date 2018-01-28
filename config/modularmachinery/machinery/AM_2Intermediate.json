@@ -1,0 +1,48 @@
+{
+    "registryname": "intermediate_assembly_machine",
+    "localizedname": "Intermediate Assembly Machine",
+    "color": "aa833c",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "intermediate_casing"
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": "intermediate_casing"
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": "casings_functional"
+        }
+    ]}

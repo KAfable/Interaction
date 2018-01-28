@@ -1,4 +1,10 @@
-recipes.removeByRecipeName("natura:common/string");
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+print("-------------------Natura Start-----------------");
+
+//recipes.removeByRecipeName("natura:common/string");
 
 mods.skyresources.infusion.removeRecipe(<natura:nether_sapling>);
 mods.skyresources.infusion.addRecipe(<natura:nether_sapling>, <minecraft:bone_block>, <minecraft:sapling>, 8);
@@ -9,3 +15,6 @@ recipes.addShaped(<natura:respawn_obelisk>, [
   [<natura:nether_logs>, <natura:nether_logs>, <natura:nether_logs>],
   [<natura:nether_logs>, <mysticalagriculture:crafting>, <natura:nether_logs>],
   [<natura:nether_logs>, <natura:nether_logs>, <natura:nether_logs>]]);
+
+print("-------------------Natura End-----------------");
+

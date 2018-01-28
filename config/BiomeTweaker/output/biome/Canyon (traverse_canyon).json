@@ -1,6 +1,6 @@
 
 {
-  "ID": 96,
+  "ID": 98,
   "Name": "Canyon",
   "Resource Location": "traverse:canyon",
   "Class": "prospector.traverse.world.biomes.BiomeCanyon",
