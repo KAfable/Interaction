@@ -121,7 +121,6 @@ for item in armorRedundant{
 
   #Quarries
 var quarryDisabled = [
-  <buildcraftbuilders:quarry>,
   <rftools:shape_card:2>,
   <rftools:shape_card:3>,
   <rftools:shape_card:4>,
@@ -177,9 +176,6 @@ for item in dustDisabled{
 //Energy Storage
 ////////////////
 var energyDisabled = [
-  <immersiveengineering:metal_device0:2>,
-  <immersiveengineering:metal_device0:1>,
-  <immersiveengineering:metal_device0>,
   <advgenerators:power_capacitor_redstone>,
   <advgenerators:power_capacitor_advanced>,
   <advgenerators:capacitor_kit_advanced>,

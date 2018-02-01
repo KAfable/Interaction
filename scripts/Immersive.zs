@@ -3,39 +3,7 @@ import mods.immersiveengineering.MetalPress as metalpress;
 
 print("--------------------------------Immersive Engineering Start-------------------------------------");
 
-var cb = <minecraft:clay_ball>;
-var brick = <minecraft:brick>;
-
-	#Coke Brick
-recipes.remove(<immersiveengineering:stone_decoration>);
-recipes.addShaped(<immersiveengineering:stone_decoration>, [
-  [cb, brick, cb],
-  [brick, <immersiveengineering:stone_decoration:10>, brick],
-  [cb, brick, cb]]);
-
-  	#Disabling normal Blast brick
-mods.jei.JEI.removeAndHide(<immersiveengineering:stone_decoration:1>);
-
-	#Engineer's Workbench
-recipes.remove(<immersiveengineering:wooden_device0:2>);
-recipes.addShaped(<immersiveengineering:wooden_device0:2>, [
-	[<immersiveengineering:tool>,<immersiveengineering:tool:1>,<forestry:soldering_iron>],
-	[<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>],
-	[<ore:workbench>,null,<immersiveengineering:wooden_decoration>]]);
-
-	#Hemp
-vanilla.seeds.removeSeed(<immersiveengineering:seed>);
-
-	#Metal Press
-metalpress.removeRecipeByMold(<immersiveengineering:mold:4>);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})*3, <ore:ingotCopper>, <immersiveengineering:mold:4>, 240);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 2 as byte, insulation: 0 as byte})*4, <ore:ingotGold>, <immersiveengineering:mold:4>, 240);
-metalpress.addRecipe(<ic2:cable>.withTag({type: 4 as byte, insulation: 0 as byte})*3, <ore:ingotTin>, <immersiveengineering:mold:4>, 240);
-
-	#Reinforced Blast Brick
-recipes.remove(<immersiveengineering:stone_decoration:2>);
-
-#Alloy Kiln
+	#Alloy Kiln
 	#Bronze
 alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredusttin>, 1200);
@@ -47,22 +15,81 @@ furnace.remove(ingotRefinedIron);
 alloy.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>,
 	<minecraft:iron_ingot>, 1200);
 
+
+  	#Blast Brick (disabled)
+mods.jei.JEI.removeAndHide(<immersiveengineering:stone_decoration:1>);
+
+	#Blueprints (Components)
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
+
+	#Coke Brick
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.addShaped(<immersiveengineering:stone_decoration>, [
+  [<minecraft:clay_ball>, <minecraft:brick>, <minecraft:clay_ball>],
+  [<minecraft:brick>, <immersiveengineering:stone_decoration:10>, <minecraft:brick>],
+  [<minecraft:clay_ball>, <minecraft:brick>, <minecraft:clay_ball>]]);
+
+  	#Engineering Block - Heavy
+recipes.remove(<immersiveengineering:metal_decoration0:5>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [
+	[<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>],
+	[<ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>],
+	[<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]]);
+  	
+  	#Engineering Block - Light
+recipes.remove(<immersiveengineering:metal_decoration0:4>);
+  	
+  	#Engineering Block - Redstone
+recipes.remove(<immersiveengineering:metal_decoration0:3>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:3>, [
+	[<ore:plateIron>, null, <ore:plateIron>],
+	[gearRedstone, <ore:gearBronze>, gearRedstone],
+	[<ore:plateIron>, null, <ore:plateIron>]]);
+	
 	#Engineers Hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
 	[null, ingotReinforcedStone,<ore:string>],
 	[null,<ore:stickWood>, ingotReinforcedStone],
 	[<ore:stickWood>,null,null]]);
-
+	#Plate Removal
 val iePlates = <immersiveengineering:metal>.definition;
 for i in 30 to 41{
     recipes.removeShapeless(iePlates.makeStack(i), [<*>, <immersiveengineering:tool>]);}
 
-recipes.remove(<immersiveengineering:material:20>);
-recipes.addShapeless(<immersiveengineering:material:20>, [<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})]);
-recipes.addShapeless(<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), [<immersiveengineering:material:20>]);
+	#Engineer's Workbench
+recipes.remove(<immersiveengineering:wooden_device0:2>);
+recipes.addShaped(<immersiveengineering:wooden_device0:2>, [
+	[<immersiveengineering:tool>,<immersiveengineering:tool:1>,<forestry:soldering_iron>],
+	[<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>,<immersiveengineering:treated_wood>],
+	[<ore:workbench>,null,<immersiveengineering:wooden_decoration>]]);
 
-recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
-recipes.addShapeless(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [<minecraft:book>, <ore:wireCopper>]);
+	#Hemp
+vanilla.seeds.removeSeed(<immersiveengineering:seed>);
+
+	#Iron Mechanical Component
+recipes.remove(<immersiveengineering:material:8>);
+recipes.addShaped(<immersiveengineering:material:8>, [
+	[<ore:ingotIron>, null, <ore:ingotIron>],
+	[null, <ore:gearAbyssalnite>, null],
+	[<ore:ingotIron>, null, <ore:ingotIron>]]);
+
+	#Radiator
+recipes.remove(<immersiveengineering:metal_decoration0:7>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7>, [
+	[<ore:plateSteel>, <ore:plateCopper>, <ore:plateSteel>],
+	[<ore:plateCopper>, <nuclearcraft:cooler:1>, <ore:plateCopper>],
+	[<ore:plateSteel>, <ore:plateCopper>, <ore:plateSteel>]]);
+
+	#Reinforced Blast Brick
+recipes.remove(<immersiveengineering:stone_decoration:2>);
+//Check Compact Machines for Recipe
+
+	#Steel Mechanical Component
+recipes.remove(<immersiveengineering:material:9>);
+recipes.addShaped(<immersiveengineering:material:9>, [
+	[<ore:ingotSteel>, null, <ore:ingotSteel>],
+	[null, <ore:gearAbyssalnite>, null],
+	[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
 
 print("--------------------------------Immersive Engineering End-------------------------------------");

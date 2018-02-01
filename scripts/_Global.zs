@@ -259,7 +259,6 @@ global ringGlowstone as IItemStack = <contenttweaker:material_part:155>;
 global ringRefinedIron as IItemStack = <contenttweaker:material_part:198>;
 global ringDiamond as IItemStack = <contenttweaker:material_part:254>;
 
-
 	#Rod
 global rodRefinedIron as IItemStack = <contenttweaker:material_part:146>;
 global rodRedstone as IItemStack = <contenttweaker:material_part:60>;

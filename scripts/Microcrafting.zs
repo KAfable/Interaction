@@ -185,10 +185,7 @@ function cleanIngotRecipes(output as IItemStack) {
 }
 
 function makeBlockToIngotRecipe(output as IItemStack, input as IIngredient){
-  recipes.addShaped(output*9, [
-    [input, input, input],
-    [input, input, input],
-    [input, input, input]]);
+  recipes.addShapeless(output*9, [input]);
 }
 function makeNuggetToIngotRecipe(output as IItemStack, input as IIngredient){
   recipes.addShapeless(output, 
@@ -242,7 +239,6 @@ print("--------------------------Nugget Recipes Intialized ---------------------
 
   #Removing Plate Recipes
 function cleanPlateRecipes(plate as IItemStack) {
-  mods.thermalexpansion.Compactor.removePressRecipe(plate);
   mods.nuclearcraft.pressurizer.removeRecipe(plate);
   mods.techreborn.compressor.removeRecipe(plate);
 }
@@ -251,11 +247,12 @@ function cleanPlateRecipes(plate as IItemStack) {
 function makeHammerPlate(plate as IItemStack, ingot as IIngredient) {
   Worktable.addRecipeShapeless("basic", plate, <ore:toolHammer>, 1, 
     [ingot, ingot, ingot, ingot]);}
-
   #Squeezer Plate Recipes
 function makeSqueezerPlateRecipe(plate as IItemStack, ingot as IItemStack) {
   mods.integrateddynamics.Squeezer.addRecipe(ingot, plate, 1 as float);}
-
+function makeMetalPressPlateRecipe(plate as IItemStack, input as IIngredient, energy as int) {
+  mods.immersiveengineering.MetalPress.addRecipe(plate, input, <immersiveengineering:mold>, energy);
+}
 
   #Abyssalnite Plates
 makeHammerPlate(plateAbyssalnite, <ore:ingotAbyssalnite>);
@@ -314,12 +311,20 @@ makeSqueezerPlateRecipe(plateNickel, ingotNickel);
 makeHammerPlate(platePlatinum, <ore:ingotPlatinum>);
 makeSqueezerPlateRecipe(platePlatinum, ingotPlatinum);
   #Redstone Plate
-cleanPlateRecipes(<techreborn:plates:4>);
+mods.techreborn.compressor.removeRecipe(<techreborn:plates:4>);
+mods.thermalexpansion.Compactor.removePressRecipe(<extrautils2:ingredients>);
+mods.thermalexpansion.Compactor.removePressRecipe(<minecraft:redstone_block>);
 makeHammerPlate(plateRedstone, <minecraft:redstone_block>);
 makeSqueezerPlateRecipe(plateRedstone, <minecraft:redstone_block>);
+makeMetalPressPlateRecipe(plateRedstone, <minecraft:redstone_block>, 3200);
+mods.thermalexpansion.Compactor.addPressRecipe(plateRedstone, <minecraft:redstone_block>, 30000);
    #Refined Iron Plates
+mods.nuclearcraft.pressurizer.removeRecipe(<techreborn:plates:34>);
+mods.techreborn.compressor.removeRecipe(<techreborn:plates:34>);
+mods.thermalexpansion.Compactor.removePressRecipe(ingotRefinedIron);
 makeHammerPlate(plateRefinedIron, <ore:ingotRefinedIron>);
 makeSqueezerPlateRecipe(plateRefinedIron, ingotRefinedIron);
+
   #Reinforced Stone Plates
 makeHammerPlate(plateReinforcedStone, ingotReinforcedStone);
 makeSqueezerPlateRecipe(plateReinforcedStone, ingotReinforcedStone);

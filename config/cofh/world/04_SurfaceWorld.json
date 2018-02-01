@@ -3,6 +3,7 @@
 	{
 
 
+
 		"apatite": 
 		{
 			"distribution": "uniform",
@@ -67,7 +68,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -113,7 +114,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -168,7 +169,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -210,7 +211,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -246,7 +247,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -282,7 +283,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -322,7 +323,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -358,7 +359,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -395,7 +396,7 @@
 			{
 				"restriction": "whitelist",
 				"value": 
-				[0]
+				[100]
 			}
 		},
 
@@ -431,7 +432,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -467,7 +468,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -504,7 +505,7 @@
 			"dimension": 
 			{
 				"restriction": "whitelist",
-				"value": [0]
+				"value": [100]
 			}
 		},
 
@@ -687,7 +688,7 @@
 			"dimension": 
 			{
 				"restriction": "blacklist",
-				"value": [-1,1,7]
+				"value": [-1,1]
 			}
 		},
 

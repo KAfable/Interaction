@@ -1,75 +1,349 @@
 {
-	"populate": {
-		"leadsilver": {
+	"populate": 
+	{
+
+
+
+		"cavernLeadSilver": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": [
-{"name":"thermalfoundation:ore","metadata":3,"weight":50},
-{"name":"thermalfoundation:ore","metadata":2,"weight":50}
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"thermalfoundation:ore",
+						"metadata":3,
+						"weight":13
+					},
+					{
+						"name":"thermalfoundation:ore",
+						"metadata":2,
+						"weight":13
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 52
+					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 496
+				"radius": 20,
+				"height": 3
 			},
 			"cluster-count": 1,
-			"chunk-chance": 16,
+			"chunk-chance": 100,
 			"min-height": 0,
-			"max-height": 128,
+			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": [
-					98
-				]
+				"value": [99]
 			}
 		},
-		"leadsilver": {
+
+
+
+		"cavernPlatinumTungstenObsidian": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": [
-{"name":"thermalfoundation:ore","metadata":3,"weight":80},
-{"name":"thermalfoundation:ore","metadata":2,"weight":20}
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"thermalfoundation:ore",
+						"metadata":6,
+						"weight":15
+					},
+					{
+						"name":"techreborn:ore",
+						"metadata":8,
+						"weight":25
+					},
+					{
+						"name": "silentgems:hardenedrock",
+						"weight": 20
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 40
+					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 496
+				"radius": 16,
+				"height": 3
 			},
 			"cluster-count": 1,
-			"chunk-chance": 16,
+			"chunk-chance": 80,
 			"min-height": 0,
-			"max-height": 128,
+			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": [
-					98
-				]
+				"value": [99]
 			}
 		},
-		"leadsilver": {
+
+
+
+		"cavernDiamondGeode": 
+		{
 			"distribution": "uniform",
-			"generator": {
-				"block": [
-{"name":"thermalfoundation:ore","metadata":3,"weight":80},
-{"name":"thermalfoundation:ore","metadata":2,"weight":20}
-				],
+			"generator": 
+			{
+				"type": "geode",
+				"block": "minecraft:coal_block",
 				"material": "minecraft:stone",
-				"cluster-size": 496
+				"cluster-size": 100,
+				"crust": "minecraft:coal_block",
+				"hollow": "true",
+				"filler": "minecraft:diamond_ore"
 			},
 			"cluster-count": 1,
-			"chunk-chance": 16,
+			"min-height": 10,
+			"max-height": 135,
+			"chunk-chance": 60,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": 
+			{
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernQuartz": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"minecraft:quartz_ore",
+						"weight":25
+					},
+					{
+						"name":"appliedenergistics2:quartz_ore",
+						"weight":25
+					},
+										{
+						"name": "actuallyadditions:block_misc",
+						"metadata":3,
+						"weight": 25
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 20,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
 			"min-height": 0,
-			"max-height": 128,
+			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
-				"value": [
-					98
-				]
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernNickelIron": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"thermalfoundation:ore",
+						"metadata":5,
+						"weight":15
+					},
+					{
+						"name":"minecraft:iron_ore",
+						"weight":30
+					},
+										{
+						"name": "minecraft:stone",
+						"weight": 45
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 20,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 0,
+			"max-height": 135,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+		"cavernGemGeode": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "geode",
+				"block": "minecraft:diamond_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 100,
+				"crust": "minecraft:diamond_ore",
+				"hollow": "true",
+				"filler": "minecraft:emerald_ore"
+			},
+			"cluster-count": 1,
+			"min-height": 10,
+			"max-height": 135,
+			"chunk-chance": 100,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": 
+			{
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+		"cavernOilShaleIce": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"thermalfoundation:ore_fluid",
+						"metadata":1,
+						"weight":50
+					},
+					{
+						"name":"minecraft:ice",
+						"weight":25
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 52
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 16,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 0,
+			"max-height": 135,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernTungstenNickel": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"techreborn:ore",
+						"metadata":8,
+						"weight":35
+					},
+					{
+						"name":"thermalfoundation:ore",
+						"metadata":5,
+						"weight":35
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 50
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 20,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 0,
+			"max-height": 135,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernCopperNitre": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type": "plate",
+				"block": 
+				[
+					{
+						"name":"abyssalcraft:nitreore",
+						"weight":35
+					},
+					{
+						"name":"armorplus:ore_lava_crystal",
+						"weight":25
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 40
+					}
+				],
+				"material": "minecraft:stone",
+				"radius": 20,
+				"height": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 0,
+			"max-height": 135,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
 			}
 		}
-
 	}
-
 }

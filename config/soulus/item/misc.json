@@ -1,0 +1,25 @@
+{
+	"bone_chunks": {
+		"particle_count": 3
+	},
+	"bonemeal_nether": {
+		"particle_count": 50
+	},
+	"sledgehammer": {
+		"durability": 256
+	},
+	"glue": {
+		"always_edible": true,
+		"amount": 1,
+		"saturation": 0.0,
+		"duration": 32,
+		"quantity": 1,
+		"effects": [
+			{
+				"effect": "nausea",
+				"duration": 200,
+				"chance": 1.0
+			}
+		]
+	}
+}

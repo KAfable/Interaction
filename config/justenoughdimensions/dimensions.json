@@ -2,7 +2,7 @@
   "dimensions": 
   [
     {
-      "dim": 0,
+      "dim": 100,
       "override":true,
       "dimensiontype":
       {
@@ -12,17 +12,24 @@
       {
         "GameRules": 
         {
-          "tfEnforcedProgression": "false",
           "doNaturalRegen": "false",
           "naturalRegeneration": "false"
         }
       },
+      "worldinfo_onetime":
+      {
+        "generatorName:":"customized",
+        "generatorOptions": "{\"coordinateScale\":175.0,\"heightScale\":75.0,\"lowerLimitScale\":512.0,\"upperLimitScale\":512.0,\"depthNoiseScaleX\":200.0,\"depthNoiseScaleZ\":200.0,\"depthNoiseScaleExponent\":0.5,\"mainNoiseScaleX\":165.0,\"mainNoiseScaleY\":106.61267,\"mainNoiseScaleZ\":165.0,\"baseSize\":8.267606,\"stretchY\":13.387607,\"biomeDepthWeight\":1.2,\"biomeDepthOffset\":0.2,\"biomeScaleWeight\":3.4084506,\"biomeScaleOffset\":0.0,\"seaLevel\":63,\"useCaves\":false,\"useDungeons\":false,\"dungeonChance\":7,\"useStrongholds\":false,\"useVillages\":true,\"useMineShafts\":true,\"useTemples\":true,\"useMonuments\":true,\"useRavines\":false,\"useWaterLakes\":true,\"waterLakeChance\":49,\"useLavaLakes\":true,\"lavaLakeChance\":80,\"useLavaOceans\":false,\"fixedBiome\":-1,\"biomeSize\":4,\"riverSize\":5,\"dirtCount\":0,\"gravelCount\":0,\"graniteCount\":0,\"dioriteCount\":0,\"andesiteCount\":0,\"coalCount\":0,\"ironCount\":0,\"goldCount\":0,\"redstoneCount\":0,\"diamondCount\":0,\"lapisCount\":0}"
+      },
       "jed": 
         {
           "CanRespawnHere": false,
-          "RespawnDimension": 100
+          "RespawnDimension": 0
         }
     },
+
+
+
     {
       "dim": 7,
       "override":true,
@@ -34,15 +41,13 @@
           "doNaturalRegen": "false",
           "naturalRegeneration": "false"
         }
-      },
-      "jed":
-        {
-          "CanRespawnHere": false,
-          "RespawnDimension": 100
-        }
+      }
     },
+
+
+
     {
-      "dim": 100,
+      "dim": 0,
       "override":true,
       "dimensiontype":
       {
@@ -52,11 +57,19 @@
       {
         "GameRules":         
         {
-          "doWeatherCycle": "false",
-          "doNaturalRegen": "true",
-          "naturalRegeneration": "true"
+          "tfEnforcedProgression": "false",
+          "doWeatherCycle": "false"
         }
       }
-    }
+    },
+
+
+
+    
+      {
+        "dim": 99,
+        "biome": "minecraft:ice_flats"
+      }
+
   ]
 }

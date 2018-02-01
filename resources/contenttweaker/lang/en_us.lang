@@ -1,3 +1,5 @@
+
+
 item.contenttweaker.basicmotor.name=Basic Motor
 item.contenttweaker.intermediatemotor.name=Intermediate Motor
 item.contenttweaker.advancedmotor.name=Advanced Motor
@@ -75,6 +77,9 @@ item.contenttweaker.astralmotor.name=Celestial Motor
 
 tile.contenttweaker.portalBlockt.name=Overworld Portal Block
 tile.contenttweaker.portalBlockf.name=Overworld Portal Block (Cage-less)
+
+tile.contenttweaker.destabilized_well.name=Destabilized Well
+tile.contenttweaker.energized_well.name=Energized Well
 
 item.contenttweaker.overworldessencel.name=Overworld Essence (Day)
 item.contenttweaker.overworldessencer.name=Overworld Essence (Night)

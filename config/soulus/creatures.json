@@ -1,0 +1,16 @@
+{
+	"*": {
+		"*": {
+			"*": {
+				"spawn_chance": 1.0,
+				"drops": {
+					"all": {
+						"has_xp": true,
+						"whitelisted_drops": ["*"],
+						"blacklisted_drops": []
+					}
+				}
+			}
+		}
+	}
+}

@@ -8,13 +8,16 @@ print("--------------------TechReborn Start-----------------------");
 recipes.remove(<techreborn:part:30>);
 	#Advanced Processor / Energy Flow Circuit
 recipes.remove(processorAdvanced);
+	#Bauxite Dust
+recipes.removeByRegex("thermalfoundation:dust_19");
+recipes.remove(<techreborn:smalldust:5>);
 	#Electronic Circuit
 recipes.remove(<techreborn:part:29>);
 	#Basic Machine Frame
 recipes.remove(<techreborn:machine_frame>);
 recipes.addShaped(<techreborn:machine_frame>, [
 	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
-	[<ore:plateRefinedIron>, null, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, fluxductBasic, <ore:plateRefinedIron>],
 	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
 	#Too Easy Generators
 mods.jei.JEI.removeAndHide(<techreborn:solar_panel>);
@@ -47,20 +50,22 @@ recipes.addShaped(<techreborn:iron_alloy_furnace>, [
 print("--------------------TechReborn End-----------------------");
 
 print("------------------------IC2 Start-------------------------");
-	#Rubber
-<ore:materialResin>.add(<ic2:misc_resource:4>);
-
+	#Bronze Dust Removal
+recipes.remove(<techreborn:dust:7>);
+recipes.remove(<ic2:dust>);
 	#Electronic Circuit
 recipes.remove(<ic2:crafting:1>);
 recipes.addShaped(<ic2:crafting:1>, [
 	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
 	[<forestry:thermionic_tubes:8>, <forestry:chipsets>, <forestry:thermionic_tubes:8>],
-	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
+	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);	
+	#Machine Casing
+recipes.remove(<ic2:resource:12>);
+	#Rubber
+<ore:materialResin>.add(<ic2:misc_resource:4>);
 
 
-	#Disallow crafting of bronze dust
-recipes.remove(<techreborn:dust:7>);
-recipes.remove(<ic2:dust>);
+
 
 print("------------------------IC2 End-------------------------");
 
