@@ -1,5 +1,3 @@
-#comment to test github bot
-
 #priority 999
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
