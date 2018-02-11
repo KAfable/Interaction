@@ -9,6 +9,7 @@ print("-------------- Machines Start --------------");
 
 mods.techreborn.alloySmelter.removeAll();
 mods.techreborn.blastFurnace.removeAll();
+mods.techreborn.industrialGrinder.removeAll();
 
 
 print("-------------- Machines End --------------");

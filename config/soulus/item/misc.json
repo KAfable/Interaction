@@ -1,12 +1,6 @@
 {
-	"bone_chunks": {
-		"particle_count": 3
-	},
 	"bonemeal_nether": {
 		"particle_count": 50
-	},
-	"sledgehammer": {
-		"durability": 256
 	},
 	"glue": {
 		"always_edible": true,
@@ -21,5 +15,11 @@
 				"chance": 1.0
 			}
 		]
+	},
+	"sledgehammer": {
+		"durability": 256
+	},
+	"bone_chunks": {
+		"particle_count": 3
 	}
 }

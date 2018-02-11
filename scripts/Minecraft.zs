@@ -6,13 +6,14 @@ recipes.remove(<minecraft:bed:*>);
 <minecraft:bed:*>.addTooltip("Disabled due to time skipping. For earlier respawning options, see Respawn Obelisk");
 
   #Bonemeal
-mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 1200);
+mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 600);
+Worktable.addRecipeShapeless("basic", <minecraft:dye:15>*3, <ore:toolHammer>, 1, [<ore:bone>]);
 
   #Bucket
-recipes.addShaped(<minecraft:bucket>, [
+Worktable.addRecipeShaped(
+  "basic", <minecraft:bucket>, <ore:toolHammer>, 4, false, [
   [ingotReinforcedStone, null, ingotReinforcedStone],
   [null, ingotReinforcedStone, null]]);
-
 
 	#Cauldron
 recipes.addShaped(<minecraft:cauldron>, [
@@ -23,7 +24,6 @@ recipes.addShaped(<minecraft:cauldron>, [
   #Charcoal
 furnace.remove(<minecraft:coal:1>, null);
 furnace.addRecipe(<minecraft:coal:1>, <skyresources:baseitemcomponent>*2);
-
 
 	#Dirt
 recipes.addShaped(<minecraft:dirt>*3, [
@@ -78,8 +78,8 @@ recipes.addShaped(<minecraft:hopper>, [
   [null, <minecraft:iron_ingot>, null]]);
 
   #Iron Bars
-recipes.remove(<minecraft:iron_bars>*16);
-recipes.addShaped(<minecraft:iron_bars>, [
+recipes.remove(<minecraft:iron_bars>);
+recipes.addShaped(<minecraft:iron_bars>*16, [
   [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
   [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
 
@@ -89,17 +89,16 @@ recipes.addShaped(<minecraft:minecart>, [
   [<ore:plateIron>, null, <ore:plateIron>],
   [<ore:plateIron>,<ore:plateIron>,<ore:plateIron>]]);
 
+  #Planks - Oak
+recipes.addShaped(<minecraft:planks>, [
+  [<minecraft:wooden_slab>],
+  [<minecraft:wooden_slab>]]);
+
 	#Piston
-recipes.remove(<minecraft:piston>);
 recipes.addShaped(<minecraft:piston>, [
   [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-[<ore:gearReinforcedStone>,<ore:ingotIron>,<ore:gearReinforcedStone>],
+  [<ore:gearReinforcedStone>, ingotReinforcedStone, <ore:gearReinforcedStone>],
   [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
-recipes.addShaped(<minecraft:piston>*8, [
-  [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
-  [<ore:gearIron>,<ore:ingotIron>,<ore:gearIron>],
-  [<ore:stone>,<ore:dustRedstone>,<ore:stone>]]);
-
 
   #Redstone
 recipes.removeByRegex("reliquary:items/uncrafting/redstone");

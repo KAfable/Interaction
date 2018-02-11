@@ -14,18 +14,12 @@ print("-----------------------Plants End-----------------------");
 
 print("-----------------------Pam's Harvestcraft Start--------------------------");
 
-var chips = <ore:foodChips>;
-chips.add(<harvestcraft:potatochipsitem>);
-chips.add(<harvestcraft:cheddarandsourcreampotatochipsitem>);
-chips.add(<harvestcraft:bbqpotatochipsitem>);
-chips.add(<harvestcraft:sourcreamandonionpotatochipsitem>);
+	#Bread
+furnace.remove(<minecraft:bread>);
+furnace.addRecipe(<minecraft:bread>, <harvestcraft:doughitem>);
 
-recipes.remove(<harvestcraft:weekendpicnicitem>);
-recipes.addShapeless(<harvestcraft:weekendpicnicitem>, [
-	<harvestcraft:cuttingboarditem>, <harvestcraft:friedchickenitem>,
-	<harvestcraft:potatosaladitem>, <harvestcraft:springsaladitem>,
-	<harvestcraft:grilledcheeseitem>, <harvestcraft:cheddarandsourcreampotatochipsitem>,
-	<ore:listAllsoda>]);
+	#Fresh Water Buff
+recipes.addShapeless(<harvestcraft:freshwateritem>*4, [<minecraft:water_bucket>]);
 
 	# Gardens
 mods.skyresources.infusion.addRecipe(<harvestcraft:tropicalgarden>, <plants2:plantball>*10, <minecraft:tallgrass:1>, 19);
@@ -89,9 +83,13 @@ inf.addRecipe(<harvestcraft:paperbark_sapling>,		<harvestcraft:windygarden>, <mi
 inf.addRecipe(<harvestcraft:peach_sapling>,			<harvestcraft:windygarden>, <minecraft:sapling:4>, 10);
 inf.addRecipe(<harvestcraft:cashew_sapling>,		<harvestcraft:windygarden>, <minecraft:sapling:5>, 10);
 
-	#Bread
-furnace.remove(<minecraft:bread>);
-//recipes.removeByRecipeName("natura:common/bread");
-furnace.addRecipe(<minecraft:bread>, <harvestcraft:doughitem>);
+	#Weekend Picnic Buff
+recipes.remove(<harvestcraft:weekendpicnicitem>);
+recipes.addShapeless(<harvestcraft:weekendpicnicitem>, [
+	<harvestcraft:cuttingboarditem>, <harvestcraft:friedchickenitem>,
+	<harvestcraft:potatosaladitem>, <harvestcraft:springsaladitem>,
+	<harvestcraft:grilledcheeseitem>, <harvestcraft:cheddarandsourcreampotatochipsitem>,
+	<ore:listAllsoda>]);
+
 
 print("-----------------------------Pam's Harvestcraft End----------------------------------");

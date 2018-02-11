@@ -39,7 +39,13 @@ function makeBlockCraftRecipe(output as IItemStack, input as IIngredient){
   [input, input, input]]);
 }
 
+  #Reinforced Stone Block
 makeBlockCraftRecipe(blockReinforcedStone, ingotReinforcedStone);
+mods.forestry.Carpenter.addRecipe(blockReinforcedStone, [
+  [null, <minecraft:clay>, null],
+  [<skyresources:techitemcomponent>, <minecraft:brick_block>, <skyresources:techitemcomponent>],
+  [null, <minecraft:sandstone>, null]
+  ], 20, <liquid:lava>*100);
 
 
 print("--------------------------Block Recipes Intialized -------------------------");
@@ -48,7 +54,13 @@ print("--------------------------Casing Recipes Intialized ---------------------
 
 print("--------------------------Crystal Recipes Intialized -------------------------");
 
-print("--------------------------Dense_Plate Recipes Intialized -------------------------");
+print("--------------------------Dense Plate Recipes Intialized -------------------------");
+
+  #Aluminum Dust
+recipes.remove(dustAluminum);
+  #Copper Dust
+recipes.remove(dustCopper);
+print("--------------------------Dust Recipes Intialized -------------------------");
 
 print("--------------------------Foil Recipes Intialized -------------------------");
 
@@ -210,14 +222,42 @@ print("--------------------------Ingot Recipes Intialized ----------------------
 function cleanMoltenRecipes(output as ILiquidStack, input as IItemStack){
   mods.thermalexpansion.Crucible.removeRecipe(input);
   mods.tconstruct.Melting.removeRecipe(output);
-  mods.nuclearcraft.melter.removeRecipe(output);
 }
+
+function makeMoltenRecipes(input as string, output as ILiquidStack) {
+  var meltReference = {
+    "stick" : 72,
+    "ring" : 72,
+    "ingot" : 144,
+    "block" : 1296,
+    "nugget" : 16,
+    "plate" : 144, 
+    "gear" : 576,
+    "dust" : 144,
+    "foil" : 72,
+    "beam" : 288,
+    "casing" : 72,
+    "bolt" : 36
+  } as int[string];
+
+  for key, value in meltReference {
+    var odName as string = key~input;
+    var solidItem = oreDict.get(odName);
+    for item in solidItem.items{
+      mods.tconstruct.Melting.addRecipe(output*value, item);
+    }
+  }
+}
+
   #Tinkers Smeltery
 //  mods.tconstruct.Melting.addRecipe(output, input);
   #Thermal Expansion Magma Crucible
 //  mods.thermalexpansion.Crucible.addRecipe(output, input, 5000);
   #NuclearCraft Melter
 //  mods.nuclearcraft.melter.addRecipe(input, output, int processTime)
+
+  #Molten Aluminum
+mods.tconstruct.Melting.removeRecipe(<liquid:aluminum>);
 
   #Molten Rubber - Rubber
 mods.thermalexpansion.Crucible.addRecipe(<liquid:rubber>*144, <ic2:crafting>, 5000);
@@ -227,6 +267,16 @@ mods.nuclearcraft.melter.addRecipe(<ic2:crafting>, <liquid:rubber>*144, 800);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:rubber>*144, dustRubber, 5000);
 mods.tconstruct.Melting.addRecipe(<liquid:rubber>*144, dustRubber);
 mods.nuclearcraft.melter.addRecipe(dustRubber, <liquid:rubber>*144, 800);
+  #Molten Seared Stone
+mods.tconstruct.Melting.addRecipe(<fluid:stone>*1296, <extrautils2:compressedcobblestone>);
+  #Molten Steel
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>);
+makeMoltenRecipes("Steel", <liquid:steel>);
+
+
+
+
+
 
 print("--------------------------Molten Recipes Intialized -------------------------");
 
@@ -324,10 +374,12 @@ mods.techreborn.compressor.removeRecipe(<techreborn:plates:34>);
 mods.thermalexpansion.Compactor.removePressRecipe(ingotRefinedIron);
 makeHammerPlate(plateRefinedIron, <ore:ingotRefinedIron>);
 makeSqueezerPlateRecipe(plateRefinedIron, ingotRefinedIron);
-
   #Reinforced Stone Plates
 makeHammerPlate(plateReinforcedStone, ingotReinforcedStone);
 makeSqueezerPlateRecipe(plateReinforcedStone, ingotReinforcedStone);
+  #Rubber Plates
+makeHammerPlate(plateRubber, <ore:itemRubber>);
+makeSqueezerPlateRecipe(plateRubber, <ic2:crafting>);
   #Tin Plates
 makeHammerPlate(plateTin, <ore:ingotTin>);
 makeSqueezerPlateRecipe(plateTin, ingotTin);
@@ -361,25 +413,39 @@ makeRingCraftRecipe(ringRubber, <ore:itemRubber>);
 
 print("--------------------------Ring Recipes Intialized -------------------------");
 
-function makeStickRecipe(output as IItemStack, input as IIngredient){
+function makeStickCraftRecipe(output as IItemStack, input as IIngredient){
   recipes.addShaped(output, [
     [input],
     [input]]);
 }
 
+function makeStickWorktableRecipe(output as IItemStack, input as IIngredient) {
+  Worktable.createRecipeBuilder("basic")
+  .setShaped([[input],[input]])
+  .addTool(<ore:blacksmiths_cutters>, 5)
+  .setFluid(<fluid:lava>*125)
+  .addOutput(output)
+  .create();
+}
+
   #Abyssalnite Rod
-makeStickRecipe(<contenttweaker:material_part:3>, <ore:ingotAbyssalnite>);
+makeStickCraftRecipe(<contenttweaker:material_part:3>, <ore:ingotAbyssalnite>);
   #Copper Rod
-makeStickRecipe(<contenttweaker:material_part:24>, <ore:ingotCopper>);
+makeStickCraftRecipe(<contenttweaker:material_part:24>, <ore:ingotCopper>);
+  #Iron Rod
+makeStickCraftRecipe(stickIron, <ore:ingotIron>);
+makeStickWorktableRecipe(stickIron*2, <ore:ingotIron>);
   #Redstone Rod
-makeStickRecipe(rodRedstone*4, <minecraft:redstone_block>);
+makeStickCraftRecipe(stickRedstone*4, <minecraft:redstone_block>);
   #Reinforced Stone Rod
-makeStickRecipe(<contenttweaker:material_part:73>, <ore:ingotReinforcedStone>);
+makeStickCraftRecipe(stickReinforcedStone*2, <ore:ingotReinforcedStone>);
+makeStickWorktableRecipe(stickReinforcedStone*4, <ore:ingotReinforcedStone>);
   #Refined Iron Rod
-makeStickRecipe(rodRefinedIron, <ore:ingotRefinedIron>);  
+makeStickCraftRecipe(stickRefinedIron, <ore:ingotRefinedIron>);
+makeStickWorktableRecipe(stickRefinedIron, <ore:ingotRefinedIron>);
   #Steel Rod
-//recipes.removeByRecipeName("immersiveengineering:material/stick_steel");
-makeStickRecipe(stickSteel, <ore:ingotSteel>);
+recipes.removeByRegex("immersiveengineering:material/stick_steel");
+makeStickCraftRecipe(stickSteel, <ore:ingotSteel>);
 
 print("--------------------------Rod/Stick Recipes Intialized -------------------------");
 function makeRotorCraftRecipe(output as IItemStack, primary as IIngredient, core as IIngredient) {
@@ -404,12 +470,19 @@ furnace.addRecipe(<thermalfoundation:material:192>*nuggetAmt,  <contenttweaker:i
 furnace.addRecipe(<thermalfoundation:material:193>*nuggetAmt,  <contenttweaker:impuredusttin>);
 furnace.addRecipe(<minecraft:iron_nugget>*nuggetAmt,           <contenttweaker:impuredustiron>);
 furnace.addRecipe(<techreborn:nuggets:18>*nuggetAmt,           <contenttweaker:impuredustzinc>);
-furnace.addRecipe(<thermalfoundation:material:196>*nuggetAmt,  <contenttweaker:impuredustbauxite>);
 
 	#Impure Ores
 function makeImpureOreCraftRecipe(dust as IItemStack, ore as IIngredient) {
   Worktable.addRecipeShapeless("basic", dust, <ore:toolHammer>, 1, 
     [ore]);}
+
+makeImpureOreCraftRecipe(<contenttweaker:impuredustabyssalnite>, <ore:oreAbyssalnite>);
+makeImpureOreCraftRecipe(<contenttweaker:impuredustgold>, <ore:oreGold>);
+makeImpureOreCraftRecipe(<contenttweaker:impuredustiron>, <ore:oreIron>);
+makeImpureOreCraftRecipe(<contenttweaker:impuredustzinc>, <ore:oreZinc>);
+makeImpureOreCraftRecipe(<contenttweaker:impuredustcopper>, <ore:oreCopper>);
+makeImpureOreCraftRecipe(<contenttweaker:impuredusttin>, <ore:oreTin>);
+
 
 print("--------------------------Impure Recipes Intialized -------------------------");
 

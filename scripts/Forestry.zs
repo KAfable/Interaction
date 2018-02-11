@@ -6,35 +6,6 @@ import crafttweaker.data.IData;
 var tinCableInsulatedIC2 = <ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte});
 var copCableInsultedIC2 = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
 
-	#Basic Circuit Board
-mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>);
-recipes.addShaped(<forestry:chipsets>*2, [
-	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2],
-	[plateTin, plateTin, plateTin],
-	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2]]);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets>, [
-	[null, null, null],
-	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
-	[null, null, null]], 40, <liquid:menrilresin>*1000);
-	#Enhanced Circuit Board
-mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>);
-recipes.addShaped(<forestry:chipsets:1>, [
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
-	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>, [
-	[null, null, null],
-	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
-	[null, null, null]], 40, <liquid:menrilresin>*1000);
-	#Refined Circuit Board
-mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
-recipes.addShaped(<forestry:chipsets:2>, [
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
-	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
-
-	#Intricate Circuit Board
-mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
 
 	#Carpenter
 recipes.remove(<forestry:carpenter>);
@@ -48,10 +19,83 @@ var carpenterRemoved = [
 	<skyresources:beeattractor>,
 	<forestry:hardened_machine>] as IItemStack[];
 for i in carpenterRemoved {
-	mods.forestry.Carpenter.removeRecipe(i);
-}
-
+	mods.forestry.Carpenter.removeRecipe(i);}
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+
+	#Circuit Board - Basic 
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>);
+recipes.addShaped(<forestry:chipsets>*2, [
+	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2],
+	[plateTin, plateTin, plateTin],
+	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2]]);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets>, [
+	[null, null, null],
+	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
+	[null, null, null]], 40, <liquid:menrilresin>*1000);
+	
+	#Circuit Board - Enhanced 
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>);
+recipes.addShaped(<forestry:chipsets:1>, [
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
+	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>, [
+	[null, null, null],
+	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+	[null, null, null]], 40, <liquid:menrilresin>*1000);
+	
+	#Circuit Board - Intricate
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
+
+	#Circuit Board - Refined 
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+recipes.addShaped(<forestry:chipsets:2>, [
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
+	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
+
+
+	#Farm - Arboretum
+recipes.removeByRegex("forestry:arboretum");
+recipes.addShaped(<forestry:arboretum>, [
+	[<ore:plateBronze>, <ore:treeSapling>, <ore:plateBronze>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
+
+	#Farm - Farm (Crops)
+recipes.removeByRegex("forestry:farm_crops");
+recipes.addShaped(<forestry:farm_crops>, [
+	[<ore:plateBronze>, <ore:listAllseed>, <ore:plateBronze>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
+
+	#Farm - Farm (Gourd)
+recipes.removeByRegex("forestry:farm_gourd");
+recipes.addShaped(<forestry:farm_gourd>, [
+	[<ore:plateBronze>, <minecraft:melon_block>, <ore:plateBronze>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
+
+	#Farm - Farm (Netherwart)
+recipes.removeByRegex("forestry:farm_nether");
+recipes.addShaped(<forestry:farm_nether>, [
+	[<ore:plateBronze>, <ore:cropNetherWart>, <ore:plateBronze>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
+
+	#Farm - Farm (Ender)
+recipes.removeByRegex("forestry:farm_ender");
+recipes.addShaped(<forestry:farm_ender>, [
+	[<ore:plateBronze>, <minecraft:chorus_fruit>, <ore:plateBronze>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
+
+	#Farm - Peat_bog
+recipes.removeByRegex("forestry:peat_bog");
+recipes.addShaped(<forestry:peat_bog>, [
+	[<ore:brickPeat>, processorBasic, <ore:brickPeat>],
+	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<ore:brickPeat>, robotArmBasic, <ore:brickPeat>]]);
 
 	#Multifarm Materials
 var farmMaterials as IItemStack[] = [
@@ -116,44 +160,29 @@ recipes.addShaped(<forestry:sturdy_machine>, [
 	[<ore:plateBrass>,<minecraft:minecart>,<ore:plateBrass>],
 	[<ore:plateBrass>,<ore:plateBrass>,<ore:plateBrass>]]);	
 	#Thermionic Fabricator
-recipes.remove(<forestry:fabricator>);
-recipes.addShaped(<forestry:fabricator>, [
-	[<ore:plateGold>,<forestry:chipsets:1>,<ore:plateGold>],
-	[<forestry:chipsets:1>,<forestry:sturdy_machine>,<forestry:chipsets:1>],
-	[<ore:plateGold>,<minecraft:chest>,<ore:plateGold>]]);
+mods.jei.JEI.removeAndHide(<forestry:fabricator>);
+#All Recipes were moved to Artisan's Worktables
 
-mods.forestry.Carpenter.addRecipe(<contenttweaker:sub_block_holder_0:2>, [
-	[null, <minecraft:clay>, null],
-	[<skyresources:techitemcomponent>, <minecraft:brick_block>, <skyresources:techitemcomponent>],
-	[null, <minecraft:sandstone>, null]
-	], 20, <liquid:lava>*100);
-
+	#Soldering Iron
 mods.forestry.Carpenter.removeRecipe(<forestry:soldering_iron>);
 
-//Cables
-recipes.remove(<immersiveengineering:wirecoil>);
-recipes.remove(<immersiveengineering:wirecoil:1>);
-recipes.remove(<immersiveengineering:wirecoil:2>);
-
-//Engines
-recipes.remove(<forestry:engine_biogas>);
+	#Peat Engine
 recipes.remove(<forestry:engine_peat>);
 recipes.addShaped(<forestry:engine_peat>, [
 	[null,<thermaldynamics:duct_0>,null],
 	[<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>],
 	[<ore:blockBronze>,<forestry:peat>,<ore:blockBronze>]]);
-
+	#Biogas Engine
+recipes.remove(<forestry:engine_biogas>);
 recipes.addShaped(<forestry:engine_biogas>, [
 	[null,<thermaldynamics:duct_0>,null],
 	[<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>],
 	[<ore:blockBronze>,<minecraft:lava_bucket>,<ore:blockBronze>]]);
 
-///////////
-//Soldering
-///////////
+
+	#Soldering Iron
 recipes.remove(<forestry:soldering_iron>);
 recipes.addShaped(<forestry:soldering_iron>, [
-[null,<ore:ingotIron>,null],
-[<ore:ingotIron>,null,<ore:ingotIron>],
-[null,null,<ore:ingotSteel>]
-]);
+	[null,<ore:ingotIron>,null],
+	[<ore:ingotIron>,null,<ore:ingotIron>],
+	[null,null,<ore:ingotSteel>]]);

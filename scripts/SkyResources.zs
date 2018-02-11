@@ -188,7 +188,7 @@ mods.skyresources.fusion.addRecipe(<contenttweaker:overworldessencer>*2, [
 	<minecraft:torch>], 3.00);
 
 	#Extractor
-mods.skyresources.waterextractor.extract.removeRecipe(20, null, <minecraft:leaves>);	
+mods.skyresources.waterextractor.extract.removeRecipe(20, null, <ore:treeLeaves>);	
 mods.skyresources.waterextractor.extract.addRecipe(50, null, <minecraft:leaves>);
 //mods.skyresources.waterextractor.extract.addRecipe(20, <harvestcraft:aridgarden>, <harvestcraft:soggygarden>);
 

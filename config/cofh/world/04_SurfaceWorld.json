@@ -217,8 +217,63 @@
 
 
 
-		"coal": 
+		"Bog_earth":
 		{
+			"distribution": "surface",
+            "generator": {
+                "type": "lake",
+                "block": "minecraft:water",
+                "material": [
+                    "minecraft:dirt"
+                ],
+                "outline-block": "forestry:bog_earth"
+            },
+            "cluster-count": 1,
+            "chunk-chance": 50,
+            "min-height": 50,
+            "max-height": 80,
+            "biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					},
+                    			{
+						"type": "dictionary",
+						"entry": "SANDY"
+					},
+                    			{
+						"type": "dictionary",
+						"entry": "MOUNTAIN"
+					},
+					{
+						"type": "dictionary",
+						"entry": "OCEAN"
+					},
+                  			{
+						"type": "dictionary",
+						"entry": "FROZEN"
+					},
+					{
+						"type": "dictionary",
+						"entry": "SNOWY"
+					}
+				]
+			},
+            "in-village": false,
+            "retrogen": false,
+            "dimension": {
+				"restriction": "whitelist",
+				"value": [
+					100
+				]
+			}
+		},
+
+
+
+		"coal": {
 			"distribution": "uniform",
 			"generator": 
 			{

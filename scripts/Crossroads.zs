@@ -1,14 +1,12 @@
 import mods.crossroads.FluidCoolingChamber as fcc;
 import mods.crossroads.Grindstone as gs;
 
+print("---------------Crossroads Start------------------");
+print("----------------Crossroads End-------------------");
+
 
   #Fluid Cooling Chamber
-recipes.removeShaped(<ironchest:iron_chest:3>);
 recipes.removeShaped(<crossroads:fluid_cooling_chamber>);
-recipes.addShaped(<ironchest:iron_chest:3>, [
-  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
-  [<ore:plateCopper>, <ore:chestWood>, <ore:plateCopper>],
-  [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
 mods.tconstruct.Casting.addBasinRecipe(<crossroads:fluid_cooling_chamber>,<ironchest:iron_chest:3>, <liquid:tin>, 1296, true);
 
 //addRecipe(IItemStack output, ILiquidStack input, double maxTemp, double heatAdded)
@@ -97,6 +95,8 @@ mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:164>);
 fcc.addRecipe(<thermalfoundation:material:165>, <liquid:signalum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);
 
+
+
   #Axle
 recipes.remove(<crossroads:axle>);
 recipes.addShaped(<crossroads:axle>, [
@@ -151,13 +151,20 @@ recipes.addShapeless(<crossroads:gear_tin>, [<ore:gearTin>, <crossroads:axle>]);
 recipes.remove(<crossroads:gear_bronze>);
 recipes.addShapeless(<crossroads:gear_bronze>, [<ore:gearBronze>, <crossroads:axle>]);
 
+  #Rotary Pump
+recipes.removeByRecipeName("crossroads:rotary_pump");
+recipes.addShaped(<crossroads:rotary_pump>, [
+  [plateBronze, stickIron, plateBronze],
+  [plateBronze, stickIron, plateBronze],
+  [<ore:blockGlass>, stickIron, <ore:blockGlass>]]);
+
   #Grindstone
 //addRecipe(IItemStack input, IIngredient output1, @Optional IIngredient output2, @Optional IIngredient output3)
 //addRecipe(IOreDictEntry input, IIngredient output1, @Optional IIngredient output2, @Optional IIngredient output3)
 //removeRecipe(IItemStack input)
 //removeRecipe(IOreDictEntry input)
-gs.removeRecipe(<forestry:resources:1>);
 
+    # Cobblegen
 gs.removeRecipe(<ore:cobblestone>);
 gs.addRecipe(<ore:cobblestone>, <minecraft:gravel>);
 gs.removeRecipe(<ore:gravel>);
@@ -165,38 +172,42 @@ gs.addRecipe(<ore:gravel>, <minecraft:sand>, <minecraft:flint>);
 gs.removeRecipe(<ore:stone>);
 gs.addRecipe(<ore:stone>, <skyresources:techitemcomponent>);
 
-    # Cobblegen
-    # Tier 2
-gs.addRecipe(<ore:oreIron>,                 <thermalfoundation:material>);
-gs.addRecipe(<ore:oreApatite>,              <forestry:apatite>*5);
-gs.addRecipe(<ore:oreCoal>,                 <minecraft:coal>*2);
-gs.addRecipe(<ore:oreGold>,                 <thermalfoundation:material:1>);
-gs.addRecipe(<ore:oreBauxite>,              <techreborn:dust:5>);
-gs.addRecipe(<ore:oreTin>,                  <thermalfoundation:material:65>);
-gs.addRecipe(<ore:oreCopper>,               <thermalfoundation:material:64>);
-gs.addRecipe(<ore:oreLapis>,                <minecraft:dye:4>*7);
-gs.addRecipe(<ore:oreRedstone>,             <minecraft:redstone>*2);
-gs.addRecipe(<ore:oreZinc>,                 <techreborn:dust:59>);
-gs.addRecipe(<ore:oreCoralium>,             <abyssalcraft:coralium>*3);
-gs.addRecipe(<ore:oreAbyssalnite>,          <acintegration:dust>);
-gs.addRecipe(<ore:oreAquamarine>,           <astralsorcery:itemcraftingcomponent>*4);
-gs.addRecipe(<ore:obsidian>,                <thermalfoundation:material:770>);
-gs.addRecipe(<ore:coal>,                    <thermalfoundation:material:768>);
-gs.addRecipe(<ore:charcoal>,                <thermalfoundation:material:769>);
+  #Removing Initial Recipes
+gs.removeRecipe(<ore:oreCopper>);
+
+  #Dust Recipes
+gs.addRecipe(<ore:oreIron>,                 <thermalfoundation:material>, <minecraft:sand>);
+gs.addRecipe(<ore:oreApatite>,              <forestry:apatite>*5, <minecraft:sand>);
+gs.addRecipe(<ore:oreCoal>,                 <minecraft:coal>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreGold>,                 <thermalfoundation:material:1>, <minecraft:sand>);
+gs.addRecipe(<ore:oreBauxite>,              dustBauxite, <minecraft:sand>);
+gs.addRecipe(<ore:oreTin>,                  <thermalfoundation:material:65>, <minecraft:sand>);
+gs.addRecipe(<ore:oreCopper>,               <thermalfoundation:material:64>, <minecraft:sand>);
+gs.addRecipe(<ore:oreLapis>,                <minecraft:dye:4>*7, <minecraft:sand>);
+gs.addRecipe(<ore:oreRedstone>,             <minecraft:redstone>*7, <minecraft:sand>);
+gs.addRecipe(<ore:oreZinc>,                 <techreborn:dust:59>, <minecraft:sand>);
+gs.addRecipe(<ore:oreCoralium>,             <abyssalcraft:coralium>*3, <minecraft:sand>);
+gs.addRecipe(<ore:oreAbyssalnite>,          <acintegration:dust>, <minecraft:sand>);
+gs.addRecipe(<ore:oreAquamarine>,           <astralsorcery:itemcraftingcomponent>*4, <minecraft:sand>);
+gs.addRecipe(<ore:obsidian>,                <thermalfoundation:material:770>, <minecraft:sand>);
+gs.addRecipe(<ore:coal>,                    <thermalfoundation:material:768>, <minecraft:sand>);
+gs.addRecipe(<ore:charcoal>,                <thermalfoundation:material:769>, <minecraft:sand>);
 gs.addRecipe(<immersiveengineering:material:6>,   <immersiveengineering:material:17>); //Coal Coke
 gs.addRecipe(<techreborn:rubber_log>,             <ic2:misc_resource:4>);
 gs.addRecipe(<ic2:rubber_wood>,                   <ic2:misc_resource:4>);
+
     #Tier 2A
-gs.addRecipe(<ore:oreSaltpeter>,            <abyssalcraft:nitre>*3);
-gs.addRecipe(<ore:oreLiquifiedCoralium>,    <acintegration:dust:1>);
-gs.addRecipe(<ore:oreDark>,                 <evilcraft:dark_gem>*2);
+gs.addRecipe(<ore:oreSaltpeter>,            <abyssalcraft:nitre>*3, <minecraft:sand>);
+gs.addRecipe(<ore:oreLiquifiedCoralium>,    <acintegration:dust:1>, <minecraft:sand>);
+gs.addRecipe(<ore:oreDark>,                 <evilcraft:dark_gem>*2, <minecraft:sand>);
 gs.addRecipe(<ore:oreAstralStarmetal>,      <astralsorcery:itemcraftingcomponent:2>*2);
     #Tier 2B
-gs.addRecipe(<ore:oreSulfur>,               <thermalfoundation:material:771>*2);
-gs.addRecipe(<ore:oreQuartz>,               <minecraft:quartz>*2);
-gs.addRecipe(<ore:oreQuartzBlack>,          <actuallyadditions:item_misc:5>*2);
-gs.addRecipe(<ore:oreCertusQuartz>,         <appliedenergistics2:material>*2);
-gs.addRecipe(<ore:oreChargedCertusQuartz>,  <appliedenergistics2:material:1>*2);
+gs.addRecipe(<ore:oreSulfur>,               <thermalfoundation:material:771>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreQuartz>,               <minecraft:quartz>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreQuartzBlack>,          <actuallyadditions:item_misc:5>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreCertusQuartz>,         <appliedenergistics2:material>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreChargedCertusQuartz>,  <appliedenergistics2:material:1>*2, <minecraft:sand>);
+
   #Tier 3A/3B
 //gs.addRecipe(<ore:oreCobalt>, );
 //gs.addRecipe(<ore:oreArdite>, );

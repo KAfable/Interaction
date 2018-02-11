@@ -1,4 +1,7 @@
 {
+	"cell": {
+		"max_quantity": 64
+	},
 	"non_upgraded_delay": {
 		"min": 500.0,
 		"max": 1000.0
@@ -22,8 +25,5 @@
 		"range": 16,
 		"delay": 16,
 		"efficiency": 16
-	},
-	"cell": {
-		"max_quantity": 64
 	}
 }

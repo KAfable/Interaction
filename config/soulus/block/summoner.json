@@ -44,48 +44,6 @@
 	"style_potion_effects": {
 		"normal": [
 			{
-				"effect": "water_breathing",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "strength",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "slowness",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "invisibility",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "weakness",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "regeneration",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "speed",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "resistance",
-				"duration": 999999,
-				"chance": 0.1
-			}
-		],
-		"wood": [
-			{
 				"effect": "slowness",
 				"duration": 999999,
 				"chance": 0.2
@@ -97,57 +55,6 @@
 			},
 			{
 				"effect": "poison",
-				"duration": 999999,
-				"chance": 0.1
-			}
-		],
-		"blaze": [
-			{
-				"effect": "fire_resistance",
-				"duration": 999999,
-				"chance": 0.5
-			},
-			{
-				"effect": "regeneration",
-				"duration": 999999,
-				"chance": 0.2
-			},
-			{
-				"effect": "weakness",
-				"duration": 999999,
-				"chance": 0.1
-			}
-		],
-		"end_stone": [
-			{
-				"effect": "speed",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "absorption",
-				"duration": 999999,
-				"chance": 0.5
-			},
-			{
-				"effect": "strength",
-				"duration": 999999,
-				"chance": 0.2
-			}
-		],
-		"stone": [
-			{
-				"effect": "glowing",
-				"duration": 999999,
-				"chance": 0.1
-			},
-			{
-				"effect": "invisibility",
-				"duration": 999999,
-				"chance": 0.5
-			},
-			{
-				"effect": "wither",
 				"duration": 999999,
 				"chance": 0.1
 			}

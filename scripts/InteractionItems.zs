@@ -7,9 +7,9 @@ print("------------------------Custom Items Start-------------------------");
 #Basic Tier
 	#Basic Motor
 recipes.addShaped(motorBasic, [
-	[<ore:ringRubber>, fluxductBasic, <ore:stickSteel>],
-	[fluxductBasic, <ore:stickSteel>, fluxductBasic],
-	[<ore:stickSteel>, fluxductBasic, <ore:ringRubber>]]);
+	[<ore:ringRubber>, fluxductBasic, <ore:stickRefinedIron>],
+	[fluxductBasic, <ore:stickRefinedIron>, fluxductBasic],
+	[<ore:stickRefinedIron>, fluxductBasic, <ore:ringRubber>]]);
 	#Basic Valve
 recipes.addShaped(valveBasic, [
 	[<ore:boltSteel>, <ore:rotorSteel>, <ore:ringRubber>],
@@ -22,14 +22,14 @@ recipes.addShaped(conveyorBasic, [
 	[plateRubber, plateRubber, plateRubber]]);
 	#Basic Electric Piston
 recipes.addShaped(electricPistonBasic, [
-	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
-	[fluxductBasic, <ore:stickSteel>, <ore:stickSteel>],
-	[fluxductBasic, motorBasic, <ore:gearSteel>]]);
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
+	[fluxductBasic, <ore:stickRefinedIron>, <ore:stickRefinedIron>],
+	[fluxductBasic, motorBasic, <ore:gearRefinedIron>]]);
 	#Basic Robot Arm
 recipes.addShaped(robotArmBasic, [
-  [motorBasic, <ore:stickSteel>, motorBasic],
-  [<ore:stickSteel>, null, <ore:stickSteel>],
-  [null , null, <contenttweaker:basicpiston>]]);
+  [motorBasic, <ore:stickRefinedIron>, motorBasic],
+  [<ore:stickRefinedIron>, null, <ore:stickRefinedIron>],
+  [null , null, electricPistonBasic]]);
 	#Basic Emitter
 recipes.addShaped(emitterBasic, [
 	[<ore:stickCopper>, <ore:stickCopper>, circuitBasic],

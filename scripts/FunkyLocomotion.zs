@@ -38,9 +38,9 @@ recipes.remove(<funkylocomotion:teleporter>);
 	#Frames
 recipes.remove(<funkylocomotion:frame_0>);
 recipes.addShaped(<funkylocomotion:frame_0>*8, [
-	[rodRefinedIron, rodRefinedIron, rodRefinedIron],
-	[rodRefinedIron, null, rodRefinedIron],
-	[rodRefinedIron, rodRefinedIron, rodRefinedIron]]);
+	[stickRefinedIron, stickRefinedIron, stickRefinedIron],
+	[stickRefinedIron, null, stickRefinedIron],
+	[stickRefinedIron, stickRefinedIron, stickRefinedIron]]);
 	#iWrench
 recipes.remove(<funkylocomotion:wrench:1>);
 recipes.addShapeless(<funkylocomotion:wrench:1>, [<funkylocomotion:wrench>, <minecraft:ender_eye>]);

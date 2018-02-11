@@ -7,8 +7,7 @@ import crafttweaker.item.IIngredient;
 
 print("-------------- Ore Dictionary Start --------------");
 
-//Chest Conversion
-recipes.addShapeless(<minecraft:chest>, [<ore:chest>]);
+
 
 //Adding all aluminium to Aluminum
 <ore:gearAluminium>.add(<thermalfoundation:material:260>);
@@ -34,6 +33,8 @@ var hammerList = [
 	<thermalfoundation:tool.hammer_iron>,
 	<thermalfoundation:tool.hammer_diamond>,
 	<thermalfoundation:tool.hammer_gold>,
+	<artisanworktables:blacksmiths_hammer_flint>,
+	<artisanworktables:blacksmiths_hammer_wood>,
 	<artisanworktables:blacksmiths_hammer_bone>,
 	<artisanworktables:blacksmiths_hammer_nickel>,
 	<artisanworktables:blacksmiths_hammer_platinum>,
@@ -68,6 +69,19 @@ recipes.addShapeless(<thermalfoundation:storage_alloy:3>, [
 	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
 	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>,
 	<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
+
+	#Chest Conversion
+recipes.addShapeless(<minecraft:chest>, [<ore:chest>]);
+
+	#Chips Ore Dictionary
+var chips = <ore:foodChips>;
+chips.add(<harvestcraft:potatochipsitem>);
+chips.add(<harvestcraft:cheddarandsourcreampotatochipsitem>);
+chips.add(<harvestcraft:bbqpotatochipsitem>);
+chips.add(<harvestcraft:sourcreamandonionpotatochipsitem>);
+
+	#Coralium Chunk
+<ore:chunkCoralium>.add(<abyssalcraft:cchunk>);
 
 	#dustInvar
 recipes.remove(<techreborn:dust:26>);
@@ -146,7 +160,7 @@ recipes.addShapeless(<thermalfoundation:material:355>, [<ore:plateBronze>]);
 	#Portal Block
 var overworld = <ore:portalOverworld>;
 overworld.add(<contenttweaker:portalblockt>);
-overworld.add(<xtones:bitt:6>);
+overworld.add(<xtones:zion:6>);
 
 	#stickIron
 <ore:stickIron>.remove(<fp:spaceship:12>);

@@ -49,11 +49,16 @@ global circuitDivine as IItemStack = <extendedcrafting:material:19>;
 circuitDivine.displayName = "Divine Circuit";
 
 	#Dusts
+//global dust as IItemStack = ;
+global dustAluminum as IItemStack = <thermalfoundation:material:68>;
+global dustCopper as IItemStack = <thermalfoundation:material:64>;
+global dustBauxite as IItemStack = <techreborn:dust:5>;
 global dustRubber as IItemStack = <contenttweaker:material_part:83>;
+
 
 	#Energy Cables
 global fluxductBasic as IItemStack = <thermaldynamics:duct_0>;
-fluxductIntermediate.displayName = "Basic Fluxduct";
+fluxductBasic.displayName = "Basic Fluxduct";
 global fluxductIntermediate as IItemStack = <thermaldynamics:duct_0:1>;
 fluxductIntermediate.displayName = "Intermediate Fluxduct";
 global fluxductAdvanced as IItemStack = <thermaldynamics:duct_0:2>;
@@ -160,6 +165,7 @@ global ingotPlatinum as IItemStack = <thermalfoundation:material:134>;
 global ingotTin as IItemStack = <thermalfoundation:material:129>;
 global ingotSilver as IItemStack = <thermalfoundation:material:130>;
 global ingotRefinedIron as IItemStack = <techreborn:ingot:19>;
+global ingotRefinedCoralium as IItemStack = <abyssalcraft:cingot>;
 
 	#Machine Casings
 global casingBasic as IItemStack = <techreborn:machine_frame>;
@@ -178,6 +184,9 @@ global casingLudicrous as IItemStack = <thermalexpansion:frame:132>;
 casingLudicrous.displayName = "Ludicrous Machine Casing";
 global casingDivine	as IItemStack = <actuallyadditions:block_misc:8>;
 casingDivine.displayName = "Divine Machine Casing";
+
+	#Misc
+global itemRubber as IItemStack = <ic2:crafting>;
 
 	#Motors
 global motorBasic as IItemStack = <contenttweaker:basicmotor>;
@@ -259,10 +268,6 @@ global ringGlowstone as IItemStack = <contenttweaker:material_part:155>;
 global ringRefinedIron as IItemStack = <contenttweaker:material_part:198>;
 global ringDiamond as IItemStack = <contenttweaker:material_part:254>;
 
-	#Rod
-global rodRefinedIron as IItemStack = <contenttweaker:material_part:146>;
-global rodRedstone as IItemStack = <contenttweaker:material_part:60>;
-
 	#Robot Arms
 global robotArmBasic as IItemStack = <contenttweaker:basicrobotarm>;
 global robotArmIntermediate as IItemStack = <contenttweaker:intermediaterobotarm>;
@@ -287,8 +292,13 @@ global sensorLudicrous as IItemStack = <contenttweaker:ludicroussensor>;
 global sensorDivine as IItemStack = <contenttweaker:divinesensor>;
 
 	#Stick
-global stickSteel as IItemStack = <immersiveengineering:material:2>;
 global stickFluxInfused as IItemStack = <redstonearsenal:material:193>;
+global stickIron as IItemStack = <immersiveengineering:material:1>;	
+global stickRedstone as IItemStack = <contenttweaker:material_part:60>;
+global stickRefinedIron as IItemStack = <contenttweaker:material_part:146>;
+global stickReinforcedStone as IItemStack = <contenttweaker:material_part:73>;
+global stickSteel as IItemStack = <immersiveengineering:material:2>;
+
 
 	#Valve
 global valveBasic as IItemStack = <contenttweaker:basicvalve>;

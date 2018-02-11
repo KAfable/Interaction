@@ -90,42 +90,24 @@ tcm.addRecipe(    <liquid:copper>*144,  <thermalfoundation:material:320>);
 tcm.addRecipe(    <liquid:copper>*576,  <thermalfoundation:material:256>);
 tcm.addRecipe(    <liquid:copper>*1296, <thermalfoundation:storage>);
 
-  #Tin
-
-var ores = [
-  <thermalfoundation:ore:3>,
-  <thermalfoundation:ore:2>,
-  <minecraft:gold_ore>,
-  <abyssalcraft:abyore>,
-  <thermalfoundation:ore:0>,
-  <thermalfoundation:ore:1>,
-  <minecraft:iron_ore>,
-  <fp:erze:1>,
-  <thermalfoundation:ore:4>
-  ] as IItemStack[]; 
-
 var liquidDisabled = [
   <liquid:lead>,
   <liquid:silver>,
   <liquid:gold>,
-  <liquid:moltenabyssalnite>,
   <liquid:tin>,
   <liquid:iron>,
   <liquid:zinc>,
-  <liquid:aluminum>
   ] as ILiquidStack[];
 val impure = [
   <contenttweaker:impuredustlead>,
   <contenttweaker:impuredustsilver>,
   <contenttweaker:impuredustgold>,
-  <contenttweaker:impuredustabyssalnite>,
   <contenttweaker:impuredusttin>,
   <contenttweaker:impuredustiron>,
   <contenttweaker:impuredustzinc>,
-  <contenttweaker:impuredustbauxite>
   ] as IItemStack[];
 
-for i in 0 to 8 {
+for i in 0 to 6 {
   tcm.addRecipe(liquidDisabled[i]*96, impure[i]);
 }
 

@@ -2,9 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
-var servos = <thermaldynamics:servo>.definition;
-var retrieve = <thermaldynamics:retriever>.definition;
-var filter = <thermaldynamics:filter>.definition;
 var tiers = [<ore:ingotIron>,<ore:ingotInvar>,<ore:ingotElectrum>,<ore:ingotSignalum>,<ore:ingotEnderium>] as IOreDictEntry[];
 
 	#Acqueous Accumulator (replaced by Evilcraft Eternal Water Block)
@@ -93,22 +90,22 @@ recipes.addShaped(<thermalexpansion:satchel>, [
 	[<minecraft:leather>, <minecraft:chest>, <minecraft:leather>]]);
 
 	#Basic Satchel
-recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 52 as short}]}), [
+recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>]);
 
-recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 52 as short}]}), [
+recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>]);
 
-recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 52 as short}]}), [
+recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>]);
 
-recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 52 as short}]}), [
+recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>,
@@ -119,23 +116,11 @@ recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag(
 recipes.remove(<thermalexpansion:frame>);
 
 	#Servos
-for i in 0 to 5 {
-	recipes.remove(servos.makeStack(i));
-	recipes.addShaped(servos.makeStack(i), [
-	[<ore:nuggetIron>,<ore:circuitBasic>,<ore:nuggetIron>],
-	[tiers[i],<minecraft:redstone>,tiers[i]],
-	]);
-	recipes.remove(retrieve.makeStack(i));
-	recipes.addShaped(retrieve.makeStack(i), [
-	[<ore:nuggetIron>,<ore:circuitBasic>,<ore:nuggetIron>],
-	[tiers[i],<minecraft:ender_eye>,tiers[i]],
-	]);
-	recipes.remove(filter.makeStack(i));
-	recipes.addShaped(filter.makeStack(i), [
-	[<ore:nuggetIron>,<ore:circuitBasic>,<ore:nuggetIron>],
-	[tiers[i],<minecraft:paper>,tiers[i]],
-	]);
-}
+	#Servos - Hardened
+	#Servos - Reinforced
+	#Servos - Signalum
+	#Servos - Enderium
+
 
 	#Itemduct
 recipes.remove(<thermaldynamics:duct_32>);

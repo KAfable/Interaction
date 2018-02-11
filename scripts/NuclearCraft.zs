@@ -14,8 +14,18 @@ recipes.addShapeless(<nuclearcraft:dominos>, [
 	<minecraft:cooked_mutton>, <minecraft:brown_mushroom>, <minecraft:brown_mushroom>]);
 
 
+
+#Tier 2 Machines
+
+
+
+
+
+
 	#Alloy Furnace
 recipes.remove(<nuclearcraft:alloy_furnace_idle>);
+	#Cobblestone Generator
+recipes.remove(<nuclearcraft:cobblestone_generator>);
 	#Ingot Former
 recipes.remove(<nuclearcraft:ingot_former_idle>);
 	#Manufactory
@@ -25,8 +35,6 @@ recipes.remove(<nuclearcraft:fission_block:1>);
 	#Nuclear Furnace
 	#isotope Separator
 recipes.remove(<nuclearcraft:isotope_separator_idle>);
-	#Cobblestone Generator
-recipes.remove(<nuclearcraft:cobblestone_generator>);
 	#Fuel Reprocessor
 recipes.remove(<nuclearcraft:fuel_reprocessor_idle>);
 	#Melter

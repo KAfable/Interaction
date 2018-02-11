@@ -14,5 +14,16 @@ recipes.addShaped(<cyclicmagic:block_vacuum>, [
 	[plateReinforcedStone, <minecraft:lever>, plateReinforcedStone],
 	[<ore:hopper>, <ore:chestWood>, <ore:hopper>],
 	[<ore:hopper>, <ore:enderpearl>, <ore:hopper>]]);
+recipes.addShaped(<cyclicmagic:block_vacuum>, [
+	[<ore:plateIron>, <minecraft:lever>, <ore:plateIron>],
+	[<ore:hopper>, <ore:chestWood>, <ore:hopper>],
+	[<ore:hopper>, <ore:enderpearl>, <ore:hopper>]]);
 
+	#Lapis Lamp
+recipes.remove(<randomthings:lapislamp>);
+recipes.addShaped(<randomthings:lapislamp>, [
+	[null, <ore:gemLapis>, null],
+	[<ore:gemLapis>, <ore:torch>, <ore:gemLapis>],
+	[null, <ore:gemLapis>, null]]);
+	
 print("------------------Random Things End-----------------");

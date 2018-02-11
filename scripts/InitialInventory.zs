@@ -3,6 +3,7 @@ mods.initialinventory.InvHandler.addStartingItem(<cyclicmagic:cyclic_wand_build>
 mods.initialinventory.InvHandler.addStartingItem(<extrautils2:angelblock>);
 mods.initialinventory.InvHandler.addStartingItem(<minecraft:grass>*25);
 mods.initialinventory.InvHandler.addStartingItem(<minecraft:sapling>);
+mods.initialinventory.InvHandler.addStartingItem(<randomthings:lapislamp>*2);
 mods.initialinventory.InvHandler.addStartingItem(<akashictome:tome>.withTag(
 {
 	"akashictome:is_morphing":1 as byte,

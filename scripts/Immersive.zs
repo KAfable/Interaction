@@ -1,9 +1,10 @@
 import mods.immersiveengineering.AlloySmelter as alloy;
 import mods.immersiveengineering.MetalPress as metalpress;
+import mods.artisanworktables.Worktable;
 
 print("--------------------------------Immersive Engineering Start-------------------------------------");
 
-	#Alloy Kiln
+#Alloy Kiln
 	#Bronze
 alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopper>,
 	<contenttweaker:impuredusttin>, 1200);
@@ -91,5 +92,26 @@ recipes.addShaped(<immersiveengineering:material:9>, [
 	[<ore:ingotSteel>, null, <ore:ingotSteel>],
 	[null, <ore:gearAbyssalnite>, null],
 	[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
+
+	#Wire - Aluminium
+recipes.remove(<immersiveengineering:material:22>);
+Worktable.addRecipeShapeless("basic", <immersiveengineering:material:22>, <ore:blacksmiths_cutters>, 2, 
+  [plateAluminum]);
+	#Wire - Copper
+recipes.remove(<immersiveengineering:material:20>);
+Worktable.addRecipeShapeless("basic", <immersiveengineering:material:20>, <ore:blacksmiths_cutters>, 2, 
+  [plateCopper]);
+	#Wire - Electrum
+recipes.remove(<immersiveengineering:material:21>);
+Worktable.addRecipeShapeless("basic", <immersiveengineering:material:24>, <ore:blacksmiths_cutters>, 2, 
+  [plateElectrum]);
+	#Wire - Steel
+recipes.remove(<immersiveengineering:material:23>);
+Worktable.addRecipeShapeless("basic", <immersiveengineering:material:23>, <ore:blacksmiths_cutters>, 2, 
+  [plateSteel]);
+
+	#LV Wire Coil
+	#MV Wire Coil
+	#HV Wire Coil
 
 print("--------------------------------Immersive Engineering End-------------------------------------");

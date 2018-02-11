@@ -4,8 +4,11 @@ import crafttweaker.item.IIngredient;
 
 print("-------------------Natura Start-----------------");
 
-//recipes.removeByRecipeName("natura:common/string");
+	#Recipe Removals
+recipes.removeByRegex("natura:common/string");
+recipes.removeByRegex("natura:common/bread");
 
+	#Ghostwood Sapling
 mods.skyresources.infusion.removeRecipe(<natura:nether_sapling>);
 mods.skyresources.infusion.addRecipe(<natura:nether_sapling>, <minecraft:bone_block>, <minecraft:sapling>, 8);
 

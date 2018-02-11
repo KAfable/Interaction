@@ -3,7 +3,8 @@ import crafttweaker.item.IIngredient;
 
 print("-------------------------------Iron Chests Start------------------------------------");
 	#Copper Chest
-	//Recipes already done somewhere else, I should look for it and move it here.
+recipes.removeShaped(<ironchest:iron_chest:3>);
+<ironchest:iron_chest:3>.addTooltip("Needs to be upgraded in world.");
 	#Iron Chest
 recipes.remove(<ironchest:iron_chest>);
 <ironchest:iron_chest>.addTooltip("Needs to be upgraded in world.");

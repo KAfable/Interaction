@@ -33,7 +33,7 @@
 			},
 			"cluster-count": 1,
 			"chunk-chance": 100,
-			"min-height": 0,
+			"min-height": 75,
 			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
@@ -96,7 +96,7 @@
 			"generator": 
 			{
 				"type": "geode",
-				"block": "minecraft:coal_block",
+				"block": "minecraft:diamond_ore",
 				"material": "minecraft:stone",
 				"cluster-size": 100,
 				"crust": "minecraft:coal_block",
@@ -201,6 +201,7 @@
 		},
 
 
+
 		"cavernGemGeode": 
 		{
 			"distribution": "uniform",
@@ -215,7 +216,7 @@
 				"filler": "minecraft:emerald_ore"
 			},
 			"cluster-count": 1,
-			"min-height": 10,
+			"min-height": 75,
 			"max-height": 135,
 			"chunk-chance": 100,
 			"retrogen": false,
@@ -226,6 +227,8 @@
 				"value": [99]
 			}
 		},
+
+
 
 
 		"cavernOilShaleIce": 
@@ -256,7 +259,7 @@
 			},
 			"cluster-count": 1,
 			"chunk-chance": 80,
-			"min-height": 0,
+			"min-height": 50,
 			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
@@ -335,8 +338,8 @@
 				"height": 3
 			},
 			"cluster-count": 1,
-			"chunk-chance": 80,
-			"min-height": 0,
+			"chunk-chance": 120,
+			"min-height": 75,
 			"max-height": 135,
 			"retrogen": false,
 			"biome": "all",
@@ -344,6 +347,81 @@
 				"restriction": "whitelist",
 				"value": [99]
 			}
-		}
+		},
+
+
+
+		"cavernEnergizedWell": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type":"plate",
+				"block":"contenttweaker:energized_well",
+				"material":"minecraft:bedrock",
+				"radius": 2,
+				"height": 1
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 253,
+			"max-height": 255,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernDestabilizedWell": 
+		{
+			"distribution": "uniform",
+			"generator": 
+			{
+				"type":"plate",
+				"block":"contenttweaker:destabilized_well",
+				"material":"minecraft:bedrock",
+				"radius": 2,
+				"height": 1
+			},
+			"cluster-count": 1,
+			"chunk-chance": 80,
+			"min-height": 0,
+			"max-height": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		},
+
+
+
+		"cavernTestTrees": 
+		{
+			"distribution": "cave",
+			"generator": 
+			{
+				"type":"small-tree",
+				"block":"minecraft:glowstone",
+				"material":"minecraft:stone",
+				"surface":"minecraft:stone",
+				"leaves":"minecraft:iron_ore",
+				"relaxed-growth":true
+			},
+			"ceiling":true,
+			"cluster-count": 10,
+			"chunk-chance": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [99]
+			}
+		}		
 	}
 }
