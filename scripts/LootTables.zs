@@ -214,6 +214,81 @@ pyramid.removePool("forestry_factory_items");
 pyramid.removePool("randomthings:biomeCrystal");
 	#Desert Pyramid - Mom's Spaghetti
 //Increase it to 25%, to have on average one spaghetti per temple
+	#Dragon Cave - Fire
+var fireCave = LootTables.getTable("iceandfire:fire_dragon_cave");
+fireCave.removePool("main");
+
+var fireCavePool = fireCave.getPool("fire_dragon_cave");
+fireCavePool.removeEntry("minecraft:diamond");
+fireCavePool.removeEntry("minecraft:emerald");
+fireCavePool.removeEntry("minecraft:iron_ingot");
+fireCavePool.removeEntry("minecraft:bone");
+fireCavePool.removeEntry("iceandfire:manuscript");
+fireCavePool.removeEntry("minecraft:gold_nugget");
+fireCavePool.removeEntry("minecraft:web");
+fireCavePool.removeEntry("minecraft:iron_sword");
+fireCavePool.removeEntry("minecraft:iron_helmet");
+fireCavePool.removeEntry("minecraft:iron_chestplate");
+fireCavePool.removeEntry("minecraft:iron_leggings");
+fireCavePool.removeEntry("minecraft:iron_boots");
+
+var fireCaveSwordPool = fireCave.addPool("swordLoot", -98, 1, 0, 0);
+fireCaveSwordPool.addItemEntry(<cyclicmagic:sword_slowness>, 1, 0);
+fireCaveSwordPool.addItemEntry(<cyclicmagic:sword_weakness>, 1, 0);
+fireCaveSwordPool.addItemEntry(<cyclicmagic:sword_ender>, 1, 0);
+
+var fireCaveGeneralPool = fireCave.addPool("generalLoot", -2, 1, 0, 0);
+fireCaveGeneralPool.addItemEntry(<soulus:summoner>, 1, 0);
+fireCaveGeneralPool.addItemEntry(<twilightforest:magic_map_focus>, 4, 0);
+fireCaveGeneralPool.addItemEntry(<darkutils:ender_tether>, 20, 0);
+fireCaveGeneralPool.addItemEntryHelper(dustSulfur, 20, 0, [Functions.setCount(1, 4)], []);
+fireCaveGeneralPool.addItemEntryHelper(<bhc:red_heart>, 35, 0, [Functions.setCount(2, 5)], []);
+fireCaveGeneralPool.addItemEntryHelper(ingotSteel, 20, 0, [Functions.setCount(1, 4)], []);
+
+var fireCaveGemPool = fireCave.addPool("gemLoot", 1, 2, 0, 0);
+for i in 0 to 23 {
+	fireCaveGemPool.addItemEntry(<silentgems:gem>.definition.makeStack(i), 1, 0);
+}
+fireCaveGemPool.addItemEntry(<abyssalcraft:shadowgem>, 1, 0);
+
+	#Dragon Cave - Ice
+var iceCave = LootTables.getTable("iceandfire:ice_dragon_cave");
+iceCave.removePool("main");
+
+var iceCavePool = iceCave.getPool("ice_dragon_cave");
+iceCavePool.removeEntry("minecraft:diamond");
+iceCavePool.removeEntry("iceandfire:sapphire_gem");
+iceCavePool.removeEntry("minecraft:iron_ingot");
+iceCavePool.removeEntry("minecraft:bone");
+iceCavePool.removeEntry("iceandfire:manuscript");
+iceCavePool.removeEntry("iceandfire:silver_ingot");
+iceCavePool.removeEntry("iceandfire:silver_nugget");
+iceCavePool.removeEntry("minecraft:web");
+iceCavePool.removeEntry("iceandfire:silver_sword");
+iceCavePool.removeEntry("iceandfire:armor_silver_metal_helmet");
+iceCavePool.removeEntry("iceandfire:armor_silver_metal_chestplate");
+iceCavePool.removeEntry("iceandfire:armor_silver_metal_leggings");
+iceCavePool.removeEntry("iceandfire:armor_silver_metal_boots");
+
+var iceCaveSwordPool = iceCave.addPool("swordLoot", -98, 1, 0, 0);
+iceCaveSwordPool.addItemEntry(<cyclicmagic:sword_slowness>, 1, 0);
+iceCaveSwordPool.addItemEntry(<cyclicmagic:sword_weakness>, 1, 0);
+iceCaveSwordPool.addItemEntry(<cyclicmagic:sword_ender>, 1, 0);
+
+var iceCaveGeneralPool = iceCave.addPool("generalLoot", -2, 1, 0, 0);
+iceCaveGeneralPool.addItemEntry(<soulus:summoner>, 1, 0);
+iceCaveGeneralPool.addItemEntry(<twilightforest:magic_map_focus>, 4, 0);
+iceCaveGeneralPool.addItemEntry(<darkutils:ender_tether>, 20, 0);
+iceCaveGeneralPool.addItemEntryHelper(dustSaltpeter, 20, 0, [Functions.setCount(1, 4)], []);
+iceCaveGeneralPool.addItemEntryHelper(<bhc:red_heart>, 35, 0, [Functions.setCount(2, 5)], []);
+iceCaveGeneralPool.addItemEntryHelper(ingotAluminum, 20, 0, [Functions.setCount(1, 4)], []);
+
+var iceCaveGemPool = iceCave.addPool("gemLoot", 1, 2, 0, 0);
+for i in 24 to 47 {
+	iceCaveGemPool.addItemEntry(<silentgems:gem>.definition.makeStack(i), 1, 0);
+}
+iceCaveGemPool.addItemEntry(<abyssalcraft:shadowgem>, 1, 0);
+
 	#Enderman
 var enderman = LootTables.getTable("minecraft:entities/enderman");
 var endermanMain = enderman.getPool("main");

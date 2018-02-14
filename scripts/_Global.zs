@@ -54,7 +54,8 @@ global dustAluminum as IItemStack = <thermalfoundation:material:68>;
 global dustCopper as IItemStack = <thermalfoundation:material:64>;
 global dustBauxite as IItemStack = <techreborn:dust:5>;
 global dustRubber as IItemStack = <contenttweaker:material_part:83>;
-
+global dustSaltpeter as IItemStack = <thermalfoundation:material:772>;
+global dustSulfur as IItemStack = <thermalfoundation:material:771>;
 
 	#Energy Cables
 global fluxductBasic as IItemStack = <thermaldynamics:duct_0>;
@@ -148,7 +149,7 @@ global ingotSupremium as IItemStack = <mysticalagriculture:crafting:37>;
 global ingotSoulium as IItemStack = <mysticalagriculture:crafting:38>;
 global ingotBrass as IItemStack = <techreborn:ingot:1>;
 global ingotCopper as IItemStack = <thermalfoundation:material:128>;
-global ingotAluminium as IItemStack = <frogcraftrebirth:metal_ingot>;
+global ingotAluminium as IItemStack = <thermalfoundation:material:132>;
 global ingotAluminum as IItemStack = <thermalfoundation:material:132>;
 global ingotEnderium as IItemStack = <thermalfoundation:material:167>;
 global ingotBronze as IItemStack = <thermalfoundation:material:163>;

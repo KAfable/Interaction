@@ -1,9 +1,22 @@
 import mods.botania.Apothecary;
 import mods.artisanworktables.Worktable;
 
+
   #Bed
 recipes.remove(<minecraft:bed:*>);
 <minecraft:bed:*>.addTooltip("Disabled due to time skipping. For earlier respawning options, see Respawn Obelisk");
+
+  #Bookshelf
+recipes.remove(<minecraft:bookshelf>);
+Worktable.createRecipeBuilder("basic")
+  .setShaped([
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<minecraft:book>, <minecraft:book>, <minecraft:book>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
+  .addTool(<ore:toolHammer>, 5)
+  .setFluid(<fluid:experience>*1000)
+  .addOutput(<minecraft:bookshelf>)
+  .create();
 
   #Bonemeal
 mods.tconstruct.Drying.addRecipe(<minecraft:dye:15>, <skyresources:baseitemcomponent>, 600);

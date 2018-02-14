@@ -38,11 +38,6 @@ recipes.remove(<silentgems:katana>);
 #Allow any tier to be crafted if enabled in the config.
 mods.silentgems.setToolRecipe('katana', -1, ['hh', 'hs', 'hr'], ['s', 'ore:plankWood']);
 
-recipes.remove(<silentgems:leggings>);
-recipes.remove(<silentgems:boots>);
-recipes.remove(<silentgems:helmet>);
-recipes.remove(<silentgems:chestplate>);
-
 	#Polisher
 recipes.remove(<sgextraparts:polisher>);
 recipes.addShaped(<sgextraparts:polisher>, [
@@ -53,8 +48,6 @@ recipes.addShaped(<silentgems:enchantmenttoken>.withTag({TokenEnchantments: [{lv
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>],
 	[<actuallyadditions:block_giant_chest>, <minecraft:glowstone>, <actuallyadditions:block_giant_chest>],
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest> ]]);
-
-
 
 
 	#Torch Bandolier

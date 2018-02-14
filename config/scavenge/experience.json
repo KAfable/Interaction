@@ -1,0 +1,54 @@
+{
+  "drop_pools":
+  [
+    {
+      "name": "Bookshelf",
+      "type":
+      {
+        "type": "block",
+        "name": "minecraft:bookshelf",
+        "meta": 0
+      },
+      "properties":
+      [
+        {
+          "type": "require_item",
+          "name": "minecraft:bucket",
+          "meta": 0,
+          "amount": 1
+        },
+        {
+          "type": "consume_item",
+          "amount": 1,
+          "chance": 100
+        },
+        {
+          "type": "consume_block",
+          "chance": 100
+        }
+      ],
+      "drops":
+      [
+        {
+          "type": "item",
+          "name": "forge:bucketfilled",
+          "functions":
+          [
+            {
+              "function": "add_nbttag",
+              "key": "FluidName",
+              "type": "string",
+              "value": "experience"
+            },
+            {
+              "function": "add_nbttag",
+              "key": "Amount",
+              "type": "int",
+              "value": "1000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

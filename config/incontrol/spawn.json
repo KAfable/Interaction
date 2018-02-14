@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "mob": "primitivemobs:lost_miner",
+    "dimension": [0, 100],
+    "result": "deny"
+  }
+]

@@ -14,4 +14,6 @@ recipes.addShaped(<industrialforegoing:block_destroyer>, [
   [fluxductBasic, gearRedstone, fluxductBasic],
   [plateRubber, casingBasic, plateRubber],
   [fluxductBasic, <randomthings:blockbreaker>, fluxductBasic]]);
+  #Fluid Pump
+<industrialforegoing:fluid_pump>.addTooltip(format.aqua("Search algorithm is not optimized for oil pumping."));
 print("----------------------Industrial Foregoing End------------------------");

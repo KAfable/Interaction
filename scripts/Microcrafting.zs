@@ -259,6 +259,11 @@ function makeMoltenRecipes(input as string, output as ILiquidStack) {
   #Molten Aluminum
 mods.tconstruct.Melting.removeRecipe(<liquid:aluminum>);
 
+  #Molten Bronze
+mods.tconstruct.Melting.addRecipe(<liquid:bronze>*1152, <iceandfire:dragonscales_bronze>);
+
+  #Molten Iron
+mods.tconstruct.Melting.addRecipe(<liquid:iron>*1152, <iceandfire:dragonscales_gray>);
   #Molten Rubber - Rubber
 mods.thermalexpansion.Crucible.addRecipe(<liquid:rubber>*144, <ic2:crafting>, 5000);
 mods.tconstruct.Melting.addRecipe(<liquid:rubber>*144, <ic2:crafting>);
