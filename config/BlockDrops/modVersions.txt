@@ -48,6 +48,7 @@
   "eleccore": "1.8.434",
   "teslathingies": "1.0.12",
   "ic2": "2.8.53-ex112",
+  "igwmod": "1.4.3-14",
   "abyssalcraft": "1.9.4.3",
   "gamestages": "1.0.80",
   "buildcraftbuilders": "7.99.14",

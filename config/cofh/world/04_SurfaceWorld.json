@@ -224,9 +224,15 @@
                 "type": "lake",
                 "block": "minecraft:water",
                 "material": [
-                    "minecraft:dirt"
+                    "minecraft:dirt",
+                    "minecraft:grass"
                 ],
-                "outline-block": "forestry:bog_earth"
+                "use-material": true,
+                "outline-block": 
+                	{
+						"name": "forestry:bog_earth",
+						"metadata": 3
+					}
             },
             "cluster-count": 1,
             "chunk-chance": 50,

@@ -296,7 +296,7 @@ global sensorDivine as IItemStack = <contenttweaker:divinesensor>;
 global stickFluxInfused as IItemStack = <redstonearsenal:material:193>;
 global stickIron as IItemStack = <immersiveengineering:material:1>;	
 global stickRedstone as IItemStack = <contenttweaker:material_part:60>;
-global stickRefinedIron as IItemStack = <contenttweaker:material_part:146>;
+global stickRefinedIron as IItemStack = <contenttweaker:material_part:193>;
 global stickReinforcedStone as IItemStack = <contenttweaker:material_part:73>;
 global stickSteel as IItemStack = <immersiveengineering:material:2>;
 

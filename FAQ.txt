@@ -1,0 +1,77 @@
+=======
+==FAQ==
+=======
+
+1) You have 250+ mods in here, why not XYZ mod?
+Before I answer this question, let's define a couple of things first. Adding a mod to the pack comes with the opportunity cost in the form of loading times and Block ID's. A single world of minecraft can only support 4096 in a stable manner, I'm aware that Not Enough ID's(NEID) exists as a mod, however I've been informed that it can risk the worlds of players. This also corroborates with my own experience with NEID and some world corruption with Block ID's changing. 
+
+Back to Block ID's, given an established limit of 4096 blocks, let's say a mod like FuturePack which uses 177 Block IDs also ends up adding a ton of new content in terms of ore processing, exploration, and crafting mechanics. However truth be told is that it's ore processing and crafting mechanics are already reundant with the current 240+ mods I already have in the pack, leaving mostly the Block ID's regarding it's exploration as something that adds a new experience to the pack. So given a pack of this size, it just simply wasn't worth it to add to the pack when I was thinking of creating a specific experience with the player in mind. And yes, this does heavily bias mods that use less Block ID's rather than new and engaging content, oh well, I'm trying my best here to cram as much as novel content as I can into a pack and this is my main limit. Now as for actual mods.
+
+	a. FuturePack - Great mod, however it was too large in terms of Block IDs to include and already had lots of redundancy with the other planned tech mods in the pack, which had same functions but were more configurable and were more friendly to tiered progression. This leaves its dungeons, extra dimensions (Menelaus/Tyros), research mechanics as novel content to the pack, which wasn't worth the high Block ID count.
+
+	b. Infernal Mobs - not as configurable as I wanted per dimension, and lacked the GameStages integration during time of development. Also 
+
+	c. FactoryTech - I was doing early pack progression when I considered this mod, and by then it only came in Alpha and pretty buggy at the time, so unforunately it's mostly a timing difference. Another issue is it's place in the pack, FactoryTech seems to be desighed with it's own form of logistics in mind as part of it's challenge, however this pack is about mod interactions, and most tech mod piping is superior to FactoryTech's, boosting Factory Tech's own power level higher than normal since you can use other mod's piping.
+
+	d. Autoverse - hard to incentivize the player to use this as a form of item logistics and automation when there are simply other forms of item management that are 'easier' to understand and use. I'm not even that great with frame-style builds and quarry builds so I wasn't able to properly judge how strong Autoverse was, and since I don't understand the mod as well, I left it out.
+
+	e. Roots/Embers - They used to be in the pack, however due to the that the fact they were archived due to the developer's perception of the community, and disrupted my pack progression, I decided to just leave them out.
+
+	f. Environmental Tech - All forms of passive generation of power or resources is seriously discouraged or nerfed in the pack until endgame, so already ET doesn't thematically fit. In addition, the dev of this mod had been inactive during the development of the pack - so there wasn't anything new for me to explore. Lastly, 
+
+	g. BetweenLands - really sad about this one, however it was a choice between Twilight Forest and the BetweenLands. It just seemed that the Between Lands was mostly designed to be played by itself, and I had a hard time figuring out mod interactions with it. At least the Twilight Forest generates various amounts of bosses to fight with varying mechanics, this is one of the hardest decisions I actually had to make as I am a big fan of the Between Lands.
+
+	h. Biomes o'Plenty - It uses up a fair amount of Block ID's and finding uses for all of the new blocks it added was time consuming or just plain difficult. I also hate using this argument (as I include Tinkers and some seriously overused mods). but in terms of terrain-gen I did feel that BoP was overused, and elected to go with Traverse and custom world-generator settings.
+
+	i. Roguelike Dungeons - I arbitrarily chose Doomlike Dungeons over Roguelike as I heard Roguelike causes cascading worldgeneration and Doomlike Dungeons had more recent updates/more active dev. Also from a packdev standpoint, working with Doomlike Dungeons has been pretty straightforward, although it did require a fair amount of restarting and testing.
+
+	j. Minecolonies - During my pack's development, this seemed somewhat buggy for 1.12.2, and I was having a difficult time figuring out how to include it in progression.
+
+	k. Steve's Carts Reborn - 
+
+	l. Magneticcraft - the 1.12.2 version at the time didn't have the crafttweaker support sufficient enough for me to integrate it into the pack to make it worth using, and it also had far less features at the time than it's 1.7.10 version
+
+	m. Lycanite's Mobs - Not included due to time restraints, my own unfamiliarity with the mod, and from other pack developers commenting on how resource intensive it was. Personally I'm fine with how the mob models look, and I like the variety of mobs it adds to the world - however
+
+	n. Headscrumbs - not a fan of the mod, and doesn't thematically fit with the pack.
+
+	o. Iron Backpacks - redundant with TE Satchels, and at the time of pack development, it didn't have all of the features from it's 1.10 version.
+
+	p. Useful Nullifiers - Reundant with other blocks/items already added in the pack.
+
+	q. OpenComputers - I personally don't have too much experience with Lua, and what OC is capable of. So better than to be safe than sorry I disabled it as I didn't know how it could affect pack progression
+
+	r. /dank/null - Similar to Useful Nullfiers, already redundant with other blocks/items already added in the pack.
+
+	s. Zetta Industries - At the time the only novel content relative to the pack was the Big Battery, and energy storage is by default mostly disabled in the pack, so thematically it didn't fit. The other items and blocks were also redundant with all the mods present.
+
+	t. Refined Storage - Redundant, also AE2's channel system is pretty friendly to planning tiered progression packs (eg you can limit how large of infrastructure players have by gating Storage Busses and Dense Cables) whereas it was more difficult to piecemeal gate Refined Storage
+
+	u. EZStorage - did not thematically fit within the pack, and was difficult to tier in terms of progression
+
+	v. Ex Nihilo - One of the pack's main principles is the lack of passive resource generation, which is what this mod is entirely about, so it thematically did not fit.
+
+	w. PrimalCore - 
+
+	x. OpenBlocks - A lot of redundancies within already existing blocks in the mod.
+
+	y. Woot - Redundant with Deep Mob Learning, and my personal preference I find traditional mob farms more fun (yes despite the lag issues). I didn't design the pack with lag reasons in mind, otherwise it would be a lot smaller and worldgen a lot less intensive, so Woot thematically didn't fit.
+
+	z. CarryOn - Seems too powerful, and while I can configure what can be picked up or not, I always thought it was more fun to craft an item that did it specifically for me or design a Funky Locomotion system. Personal preference.
+
+	aa. WAWLA vs TOP - I liked TOP's integration better with other mods
+
+	ab. JourneyMap - It doesn't have filtered Waypoints, which Xaero's has (makes it useful when you want to separate your ore vein waypoints with structure/dungeon waypoints). Aside from that, they seemed to perfoem identically in always every way.
+
+	ac. Charcoal Pit - ;)
+
+	ad. Animania - From working with this mod - it seemed to introduce a lot of mod incompats when it came to passive mobs despite it's relatively small scope, lastly I couldn't think of creative ways to integrate the mod's mechanics into the pack progression.
+
+	ae. Valkyrien Warfare - Terrific mod, but I couldn't creatively fit it into a progression pack
+
+	af. Rustic - Well designed mod, however for the sake of progression and novel mechanics I couldn't justify it along with the Block ID's it occupied. I had some ideas for including Alchemy in the progression but in the end, in a progression pack for power gamers, I felt like it would fall off the wayside and be under appreciated despite the opportunity cost, sad to not include it.
+
+	ag. Quark - oh boy. Originally had this specifically for its enhanced dungeon generation, and using the realistic terrain settings. In the end Doomlike Dungeons was better suited to my needs and configurability, and I found out I could use JED/Dimensional Control to manually alter generator settings myself. The other large collection of features I may have originally wanted were not significant enough to justify the Block ID's used.
+
+
+2) 
