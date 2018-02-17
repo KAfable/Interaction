@@ -35,7 +35,7 @@ for i in 0 to 16 {<ore:mysticPlant>.add(botPlants.makeStack(i));}
 recipes.removeShaped(<botania:spreader>);
 recipes.addShaped(<botania:spreader>,
 	[[<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],
-	[<botania:livingwood>, <botania:petal>, null],
+	[<botania:livingwood>, <botania:petal:*>, null],
 	[<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]]);
 	
 	#Manasteel (from reinforced stone or dried bricks)
