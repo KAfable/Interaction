@@ -32,23 +32,32 @@ tc.addTableRecipe(<thermalfoundation:armor.legs_bronze>, <silentgems:armorframe:
 recipes.remove(<thermalfoundation:armor.boots_bronze>);
 tc.addTableRecipe(<thermalfoundation:armor.boots_bronze>, <silentgems:armorframe:3>, <liquid:bronze>, 576, true);
 
+recipes.remove(<botania:manasteelhelm>);
+tc.addTableRecipe(<botania:manasteelhelm>, <silentgems:armorframe:4>, <liquid:manasteel>, 720, true);
+recipes.remove(<botania:manasteelchest>);
+tc.addTableRecipe(<botania:manasteelchest>, <silentgems:armorframe:5>, <liquid:manasteel>, 1152, true);
+recipes.remove(<botania:manasteellegs>);
+tc.addTableRecipe(<botania:manasteellegs>, <silentgems:armorframe:6>, <liquid:manasteel>, 1008, true);
+recipes.remove(<botania:manasteelboots>);
+tc.addTableRecipe(<botania:manasteelboots>, <silentgems:armorframe:7>, <liquid:manasteel>, 576, true);
+
 recipes.remove(<abyssalcraft:ahelmet>);
-tc.addTableRecipe(<abyssalcraft:ahelmet>, <silentgems:armorframe>, <liquid:moltenabyssalnite>, 720, true);
+tc.addTableRecipe(<abyssalcraft:ahelmet>, <silentgems:armorframe:4>, <liquid:moltenabyssalnite>, 720, true);
 recipes.remove(<abyssalcraft:aplate>);
-tc.addTableRecipe(<abyssalcraft:aplate>, <silentgems:armorframe:1>, <liquid:moltenabyssalnite>, 1152, true);
+tc.addTableRecipe(<abyssalcraft:aplate>, <silentgems:armorframe:5>, <liquid:moltenabyssalnite>, 1152, true);
 recipes.remove(<abyssalcraft:alegs>);
-tc.addTableRecipe(<abyssalcraft:alegs>, <silentgems:armorframe:2>, <liquid:moltenabyssalnite>, 1008, true);
+tc.addTableRecipe(<abyssalcraft:alegs>, <silentgems:armorframe:6>, <liquid:moltenabyssalnite>, 1008, true);
 recipes.remove(<abyssalcraft:aboots>);
-tc.addTableRecipe(<abyssalcraft:aboots>, <silentgems:armorframe:3>, <liquid:moltenabyssalnite>, 576, true);
+tc.addTableRecipe(<abyssalcraft:aboots>, <silentgems:armorframe:7>, <liquid:moltenabyssalnite>, 576, true);
 
 recipes.remove(<abyssalcraft:corhelmet>);
-tc.addTableRecipe(<abyssalcraft:corhelmet>, <silentgems:armorframe>, <liquid:moltenrefinedcoralium>, 720, true);
+tc.addTableRecipe(<abyssalcraft:corhelmet>, <silentgems:armorframe:4>, <liquid:moltenrefinedcoralium>, 720, true);
 recipes.remove(<abyssalcraft:corplate>);
-tc.addTableRecipe(<abyssalcraft:corplate>, <silentgems:armorframe:1>, <liquid:moltenrefinedcoralium>, 1152, true);
+tc.addTableRecipe(<abyssalcraft:corplate>, <silentgems:armorframe:5>, <liquid:moltenrefinedcoralium>, 1152, true);
 recipes.remove(<abyssalcraft:corlegs>);
-tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:2>, <liquid:moltenrefinedcoralium>, 1008, true);
+tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:6>, <liquid:moltenrefinedcoralium>, 1008, true);
 recipes.remove(<abyssalcraft:corboots>);
-tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:3>, <liquid:moltenrefinedcoralium>, 576, true);
+tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:7>, <liquid:moltenrefinedcoralium>, 576, true);
 
 recipes.remove(<silentgems:craftingmaterial:25>);
 recipes.remove(<silentgems:craftingmaterial:26>);
