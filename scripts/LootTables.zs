@@ -301,6 +301,7 @@ endermanMain.addItemEntryJSON(<minecraft:ender_pearl>, 1, 0, [
 var temple = LootTables.getTable("minecraft:chests/jungle_temple");
 	#Jungle Temple - Main
 var templeMain = temple.getPool("main");
+templeMain.removeEntry("minecraft:diamond");
 	#Jungle Temple - Reliquary
 var templeReliquary = temple.getPool("xreliquary_inject_pool");
 	#Jungle Temple - IC2
