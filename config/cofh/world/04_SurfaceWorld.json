@@ -235,9 +235,11 @@
 					}
             },
             "cluster-count": 1,
-            "chunk-chance": 50,
+            "chunk-chance": 10,
             "min-height": 50,
             "max-height": 80,
+			"material": ["minecraft:dirt", "minecraft:grass"],
+			"follow-terrain": true,
             "biome": {
 				"restriction": "blacklist",
 				"value": [
