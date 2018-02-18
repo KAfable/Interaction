@@ -1,8 +1,7 @@
-=======
-==FAQ==
-=======
 
+===============================================
 1) You have 250+ mods in here, why not XYZ mod?
+===============================================
 Before I answer this question, let's define a couple of things first. Adding a mod to the pack comes with the opportunity cost in the form of loading times and Block ID's. A single world of minecraft can only support 4096 in a stable manner, I'm aware that Not Enough ID's(NEID) exists as a mod, however I've been informed that it can risk the worlds of players. This also corroborates with my own experience with NEID and some world corruption with Block ID's changing. 
 
 Back to Block ID's, given an established limit of 4096 blocks, let's say a mod like FuturePack which uses 177 Block IDs also ends up adding a ton of new content in terms of ore processing, exploration, and crafting mechanics. However truth be told is that it's ore processing and crafting mechanics are already reundant with the current 240+ mods I already have in the pack, leaving mostly the Block ID's regarding it's exploration as something that adds a new experience to the pack. So given a pack of this size, it just simply wasn't worth it to add to the pack when I was thinking of creating a specific experience with the player in mind. And yes, this does heavily bias mods that use less Block ID's rather than new and engaging content, oh well, I'm trying my best here to cram as much as novel content as I can into a pack and this is my main limit. Now as for actual mods.
@@ -51,7 +50,7 @@ Back to Block ID's, given an established limit of 4096 blocks, let's say a mod l
 
 	v. Ex Nihilo - One of the pack's main principles is the lack of passive resource generation, which is what this mod is entirely about, so it thematically did not fit.
 
-	w. PrimalCore - 
+	w. PrimalCore & BWM - Wasn't really interested in how this changed gameplay early on, I wanted a pack mostly about lots of resources and processing them with a variety of magic blocks/magic multiblocks with only a few realistic examples. They didn't fit thematically/
 
 	x. OpenBlocks - A lot of redundancies within already existing blocks in the mod.
 
@@ -74,4 +73,22 @@ Back to Block ID's, given an established limit of 4096 blocks, let's say a mod l
 	ag. Quark - oh boy. Originally had this specifically for its enhanced dungeon generation, and using the realistic terrain settings. In the end Doomlike Dungeons was better suited to my needs and configurability, and I found out I could use JED/Dimensional Control to manually alter generator settings myself. The other large collection of features I may have originally wanted were not significant enough to justify the Block ID's used.
 
 
-2) 
+================================================
+What kind of progression did you change in mods?
+================================================
+2) Short answer is a lot. Instead of gating entire mods behind other mods as is commonly seen in other packs, I've actually grouped all of the blocks in each mod by function and gated them. So you can touch on 10-20 different mods at each time, and will be constantly working between 10-20 mods at a time easily between all of the crafting mechanics, exploration, items, fluids, etc. that you have to handle. This also doesn't mean that by the time you 
+
+For more concrete examples here's some cases where we've upended traditional mod progression
+
+	a. Botania - Hydrangea is disabled, Endoflames is disabled. One of the earliest mana generators you have access to are the Narslimmus (thank god for Skyblock start eh?) and Dandelifeon. Dandelifeon's solutions are semi gimmicky, since you can just google the answers for proper placement of cells, therefore we nerfed its output, and made it one of the basic starting flowers. Kekimurus has went from an endgame flower to even more of an endgame flower due to all of the mod interactions regarding cakes.
+
+	b. IC2 - Entirely endgame. No early game IC2 because RF machines do what IC2 machines do better, however in the endgame with enough power nothing comes close to touching IC2's sheer processing speed.
+
+	c. Twilight Forest - The entire progression line is disabled. All of it. You can waltz into Troll Caves or into the Hydra Lair at your leisure. The Twilight Forest Bosses are going to be buffed so that there is a mix-up in how you tackle their progression, starting with the hydra because you it's lair has unique high concentrations of Saltpeter rarely found anywhere else. And let's be honest, the real boss in all of Twilight Forest was the giant block of obsidian anyways.
+
+	d. Thermal Expansion - The machine's are scattered everywhere in progression - you'll have an early fractionating still, but magma crucibles and pulverizers are midgame. Also you can't make Destabilized Redstone or Energized Glowstone anymore, you'll have to pump them out of the bedrock....ceilings, cause these liquids don't care about gravity.
+
+	e. Astral Sorcery - Oh boy.
+
+	f. Thermal Expansion - 
+

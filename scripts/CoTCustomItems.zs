@@ -7,15 +7,37 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.PartBuilder;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Fluid;
 
   #Creating Rings
-mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Ring").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("ring").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder()
+  .setName("Ring").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item"))
+  .setOreDictName("ring")
+  .build();
   #Creating Rotors
-mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Rotor").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("rotor").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder()
+  .setName("Rotor")
+  .setPartType(mods.contenttweaker.MaterialSystem.getPartType("item"))
+  .setOreDictName("rotor")
+  .build();
   #Creating Foil
-mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Foil").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("foil").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder()
+  .setName("Foil")
+  .setPartType(mods.contenttweaker.MaterialSystem.getPartType("item"))
+  .setOreDictName("foil")
+  .build();
   #Crushed Ore - changing ore dic from crushedOre to crushed
-mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Crushed_Ore").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("crushed").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder()
+  .setName("Crushed_Ore")
+  .setPartType(mods.contenttweaker.MaterialSystem.getPartType("item"))
+  .setOreDictName("crushed")
+  .build();
+  #Custom Fluids
+mods.contenttweaker.MaterialSystem.getPartBuilder()
+  .setName("custom_fluid")
+  .setPartType(mods.contenttweaker.MaterialSystem.getPartType("fluid"))
+  .build();
+
 
   #All Parts
 var parts = [
@@ -252,10 +274,10 @@ var rubberParts = [
   "Plate", 
   "Dense_Plate",
   "Casing", 
-  "Ring",
-  "molten"
+  "Ring"
   ] as string[];
 rubber.registerParts(rubberParts);
+rubber.registerPart("molten");
 print("------------------Rubber parts initialized----------------------");
   #Tin
 var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(13816530).build();
@@ -279,6 +301,47 @@ var steelParts = [
   "Foil"] as string[];
 steel.registerParts(steelParts);
 print("------------------Steel parts initialized----------------------");
+
+  #Hydrogen Sulfide
+var hydrogenSulfide = mods.contenttweaker.VanillaFactory.createFluid("hydrogen_sulfide", Color.fromHex("FFFFE6"));
+hydrogenSulfide.density = 200;
+hydrogenSulfide.gaseous = true;
+hydrogenSulfide.viscosity = 300;
+hydrogenSulfide.temperature = 1000;
+hydrogenSulfide.register();
+
+  #Sulfuric Diesel
+var sulfuricDiesel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_diesel", Color.fromHex("D1C28F"));
+sulfuricDiesel.density = 10000;
+sulfuricDiesel.viscosity = 10000;
+sulfuricDiesel.temperature = 671;
+sulfuricDiesel.register();
+  #Sulfuric Gasoline
+var sulfuricGasoline = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_gasoline", Color.fromHex("FFE03D"));
+sulfuricGasoline.density = 10000;
+sulfuricGasoline.viscosity = 10000;
+sulfuricGasoline.temperature = 671;
+sulfuricGasoline.register();
+  #Sulfuric Kerosene
+var sulfuricKerosene = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_kerosene", Color.fromHex("9CFFA6"));
+sulfuricKerosene.density = 10000;
+sulfuricKerosene.viscosity = 10000;
+sulfuricKerosene.temperature = 671;
+sulfuricKerosene.register();
+  #Sulfuric LPG
+var sulfuricLPG = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_lpg", Color.fromHex("FFFF00"));
+sulfuricLPG.density = 10000;
+sulfuricLPG.viscosity = 10000;
+sulfuricLPG.temperature = 671;
+sulfuricLPG.register();
+  #Sulfuric Naphtha
+var sulfuricNaphtha = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_naphtha", Color.fromHex("FFCC1A"));
+sulfuricNaphtha.density = 10000;
+sulfuricNaphtha.viscosity = 10000;
+sulfuricNaphtha.temperature = 671;
+sulfuricNaphtha.register();
+print("------------------Custom Fluids initialized----------------------");
+
   #Wood
 var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(10050591).build();
 var woodParts = [
@@ -325,9 +388,6 @@ for lastTiers in lastTiers {
     item.register();
   }
 }
-
-var vulcanizedresin = VanillaFactory.createItem("vulcanizedresin");
-vulcanizedresin.register();
 
 // Celestial Motor
 var astralMotor = VanillaFactory.createItem("astralmotor");

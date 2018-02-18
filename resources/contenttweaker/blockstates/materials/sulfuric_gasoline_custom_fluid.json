@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid",
+    "custom": {
+      "fluid": "sulfuric_gasoline_custom_fluid"
+    }
+  },
+  "variants": {
+    "normal": [{}]
+  }
+}

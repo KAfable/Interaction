@@ -95,3 +95,10 @@ item.contenttweaker.vulcanizedresin.name=Vulcanized Resin
 contenttweaker.part.foil=%s Foil
 contenttweaker.part.ring=%s Ring
 contenttweaker.part.rotor=%s Rotor
+
+fluid.contenttweaker.sulfuric_diesel.name=Sulfuric Diesel
+fluid.contenttweaker.sulfuric_gasoline.name=Sulfuric Gasoline
+fluid.contenttweaker.sulfuric_kerosene.name=Sulfuric Kerosene
+fluid.contenttweaker.sulfuric_lpg.name=Sulfuric LPG
+fluid.contenttweaker.sulfuric_Naphtha.name=Sulfuric Naphtha
+fluid.contenttweaker.hydrogen_sulfide.name=Hydrogen Sulfide

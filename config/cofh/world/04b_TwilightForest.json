@@ -4,14 +4,14 @@
 
 
 
-		"sulfur": 
+		"saltpeter": 
 		{
 			"distribution": "uniform",
 			"generator": 
 			{
 				"block": 
 				{ 
-					"name": "contenttweaker:sub_block_holder_0"
+					"name": "abyssalcraft:nitreore"
 				},
 				"material": "minecraft:stone",
 				"cluster-size": 1000
