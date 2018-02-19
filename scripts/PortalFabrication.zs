@@ -16,8 +16,8 @@ recipes.addShapeless(<xtones:zome:12>,[<xtones:zome:15>, <botania:specialflower>
 
 mods.botania.PureDaisy.addRecipe(<xtones:zome:15>, <xtones:zome:12>, 1200);
 
-  #Alchemical Baseplate
-<xtones:zeta:12>.displayName = "Alchemical Baseplate";
+  #Alchemical Baseplate Tier 1
+<xtones:zeta:12>.displayName = "Alchemical Baseplate (Tier 1)";
 mods.skyresources.freezer.addRecipe(<xtones:zeta:12>, <minecraft:bone_block>, 1000);
 
   #Reinforced Lava Concentrator
@@ -38,3 +38,18 @@ mods.jei.JEI.addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmac
     "4 Base Alchemical Beacon (Type 13)",
     "4 Buckets of Lava",
     "1 Enchantment Table"]);
+
+///////////////////////////
+//Tier 2
+///////////////////////////
+  #Dimension Stabilizer
+<botania:custombrick:2>.displayName = "Lapis Coated Dimension Stabilizer";
+
+  #Alchemical Baseplate Tier 2
+<xtones:ztyl:13>.displayName = "Alchemical Baseplate (Tier 2)";
+
+  #Infusion Cyrstals
+<iceandfire:dragon_ice_spikes>.displayName = "Infusion Crystals";
+
+  #Lava Crystal Alchemical Beacon
+<armorplus:block_lava_crystal>.displayName = "Lava Crystal Infused Alchemical Beacon";
