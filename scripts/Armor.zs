@@ -59,6 +59,17 @@ tc.addTableRecipe(<abyssalcraft:corlegs>, <silentgems:armorframe:6>, <liquid:mol
 recipes.remove(<abyssalcraft:corboots>);
 tc.addTableRecipe(<abyssalcraft:corboots>, <silentgems:armorframe:7>, <liquid:moltenrefinedcoralium>, 576, true);
 
+# Deep Resonance Radiation Suit - iron equivalent protection, no smeltery fluid
+recipes.removeShaped(<deepresonance:helmet>);
+recipes.addShaped(<deepresonance:helmet>, [[<deepresonance:resonating_plate>, <deepresonance:resonating_plate>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, <silentgems:armorframe:2>, <deepresonance:resonating_plate>], [null, null, null]]);
+recipes.removeShaped(<deepresonance:chest>);
+recipes.addShaped(<deepresonance:chest>, [[<deepresonance:resonating_plate>, <silentgems:armorframe:2>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, <deepresonance:resonating_plate>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, <deepresonance:resonating_plate>, <deepresonance:resonating_plate>]]);
+recipes.removeShaped(<deepresonance:leggings>);
+recipes.addShaped(<deepresonance:leggings>, [[<deepresonance:resonating_plate>, <deepresonance:resonating_plate>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, <silentgems:armorframe:2>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, null, <deepresonance:resonating_plate>]]);
+recipes.removeShaped(<deepresonance:boots>);
+recipes.addShaped(<deepresonance:boots>, [[null, null, null], [<deepresonance:resonating_plate>, <silentgems:armorframe:2>, <deepresonance:resonating_plate>], [<deepresonance:resonating_plate>, null, <deepresonance:resonating_plate>]]);
+
+
 recipes.remove(<silentgems:craftingmaterial:25>);
 recipes.remove(<silentgems:craftingmaterial:26>);
 
