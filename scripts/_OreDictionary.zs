@@ -83,6 +83,9 @@ chips.add(<harvestcraft:sourcreamandonionpotatochipsitem>);
 	#Coralium Chunk
 <ore:chunkCoralium>.add(<abyssalcraft:cchunk>);
 
+	#dustAsh
+<ore:dustAsh>.add(<iceandfire:ash>);
+
 	#dustInvar
 recipes.remove(<techreborn:dust:26>);
 recipes.addShapeless(<thermalfoundation:material:98>, 
