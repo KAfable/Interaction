@@ -1,19 +1,18 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
 
 print("-----------------Petroleum Start-----------------");
 
 //mods.thermalexpansion.Refinery.addRecipe(ILiquidStack output, WeightedItemStack outputItem, ILiquidStack input, int energy);
 
-	#Crude Oil
+	#Refinery - Removing old recipes
 mods.thermalexpansion.Refinery.removeRecipe(<liquid:crude_oil>);
-	#Liquifacted Coal
 mods.thermalexpansion.Refinery.removeRecipe(<liquid:coal>);
-	#
 mods.thermalexpansion.Refinery.removeRecipe(<liquid:oil>);
 
-	#Refinery
+	#Refinery - New Recipes
 mods.pneumaticcraft.refinery.removeRecipes(<liquid:oil>);
 mods.pneumaticcraft.refinery.addRecipe(<liquid:oil>*100, [
 	<liquid:sulfuric_naphtha>*20, 
@@ -34,13 +33,15 @@ var sulfuricFluids = {
 	<liquid:sulfuric_kerosene>:		<liquid:kerosene>,
 	<liquid:sulfuric_diesel>  :		<liquid:diesel>
 	} as IIngredient[IIngredient];
+
 	#Desulfurization - NC has important byproduct, Forestry does not
 for input, output in sulfuricFluids {
-	mods.nuclearcraft.chemical_reactor.addRecipe(input*100, <liquid:hydrogen>*100, <liquid:hydrogen_sulfide>, output*100, 80);
+	mods.nuclearcraft.chemical_reactor.addRecipe(input*100, <liquid:hydrogen>*100, <liquid:hydrogen_sulfide>*100, output*100, 80);
 	var stillInput as ILiquidStack= input;
 	var stillOutput as ILiquidStack = output;
 	mods.forestry.Still.addRecipe(stillOutput, stillInput, 80);
 }
+
 
 
 

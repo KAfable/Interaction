@@ -16,7 +16,7 @@ recipes.addShaped(<bhc:red_heart>, [
 recipes.remove(<bhc:red_heart_canister>);
 recipes.addShaped(<bhc:red_heart_canister>, [
 	[<ore:plateDenseRefinedIron>, <ore:densePlateTin>, <ore:plateDenseRefinedIron>],
-	[<ore:densePlateTin>, null, <ore:densePlateTin>],
+	[<ore:densePlateTin>, <bhc:red_heart>, <ore:densePlateTin>],
 	[<ore:plateDenseRefinedIron>, <ore:densePlateTin>, <ore:plateDenseRefinedIron>]]);
 <bhc:red_heart_canister>.addTooltip(format.yellow("Place into baubles slot manually, don't shift click."));
 	#Orange Heart
