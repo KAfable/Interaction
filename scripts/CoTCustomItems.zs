@@ -302,6 +302,11 @@ var steelParts = [
 steel.registerParts(steelParts);
 print("------------------Steel parts initialized----------------------");
 
+  #Diluted Sulfuric Acid
+var sulfuricAcidDiluted = mods.contenttweaker.VanillaFactory.createFluid("diluted_sulfuric_acid", Color.fromHex("aaaa55"));
+sulfuricAcidDiluted.temperature = 1000;
+sulfuricAcidDiluted.register();
+  
   #Hydrogen Sulfide
 var hydrogenSulfide = mods.contenttweaker.VanillaFactory.createFluid("hydrogen_sulfide", Color.fromHex("FFFFE6"));
 hydrogenSulfide.density = 200;
@@ -309,6 +314,20 @@ hydrogenSulfide.gaseous = true;
 hydrogenSulfide.viscosity = 300;
 hydrogenSulfide.temperature = 1000;
 hydrogenSulfide.register();
+
+  #Polyethylene
+var polyethylene = mods.contenttweaker.VanillaFactory.createFluid("polyethylene", Color.fromHex("e6e6e6"));
+polyethylene.density = 5000;
+polyethylene.viscosity = 10000;
+polyethylene.temperature = 1000;
+polyethylene.register();
+
+  #Polytetrafluoroethylene
+var teflon = mods.contenttweaker.VanillaFactory.createFluid("Polytetrafluoroethylene", Color.fromHex("d9d9d9"));
+teflon.density = 10000;
+teflon.viscosity = 10000;
+teflon.temperature = 1000;
+teflon.register();
 
   #Sulfuric Diesel
 var sulfuricDiesel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_diesel", Color.fromHex("D1C28F"));
@@ -340,6 +359,15 @@ sulfuricNaphtha.density = 10000;
 sulfuricNaphtha.viscosity = 10000;
 sulfuricNaphtha.temperature = 671;
 sulfuricNaphtha.register();
+
+  #Tolulene
+var tolulene = mods.contenttweaker.VanillaFactory.createFluid("tolulene", Color.fromHex("ff8533"));
+tolulene.density = 10000;
+tolulene.viscosity = 10000;
+tolulene.temperature = 671;
+tolulene.register();
+
+
 print("------------------Custom Fluids initialized----------------------");
 
   #Wood

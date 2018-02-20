@@ -51,6 +51,28 @@ mods.forestry.Carpenter.addRecipe(blockReinforcedStone, [
 print("--------------------------Block Recipes Intialized -------------------------");
 
 print("--------------------------Casing Recipes Intialized -------------------------");
+  #Ethylene - from Naphtha
+mods.forestry.Still.addRecipe(<liquid:liquidethene>*150, <liquid:refined_oil>*300, 100);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:liquidethene>*150, null, <liquid:refined_oil>*300, 10000);
+  #Hydrogen Sulfide
+mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:sulfur>*100, <liquid:hydrogen>*100, <liquid:hydrogen_sulfide>*50, <liquid:hydrogen_sulfide>*50, 100);
+  #Molten Plastic
+mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:sulfuric_acid>*200, <liquid:polyethylene>*200, <liquid:plastic>*200, <liquid:diluted_sulfuric_acid>*200, 100);
+  #Polyethylene - from Ethylene
+mods.forestry.Still.addRecipe(<liquid:polyethylene>*150, <liquid:liquidethene>*300, 100);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:polyethylene>*150, null, <liquid:liquidethene>*300, 10000);
+  #Polyethylene - Ethanol
+mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:ethanol>*100, <liquid:sulfuric_acid>*100, <liquid:polyethylene>*150, <liquid:diluted_sulfuric_acid>*500, 100);
+  #Sulfuric Acid from Diluted
+mods.forestry.Still.addRecipe(<liquid:sulfuric_acid>*100, <liquid:diluted_sulfuric_acid>*300, 100);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:sulfuric_acid>*100, null, <liquid:diluted_sulfuric_acid>*300, 10000);
+  #Sulfuric Acid from Hydrogen Sulfide
+mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:water>*100, <liquid:hydrogen_sulfide>*100, <liquid:sulfuric_acid>*50, <liquid:sulfuric_acid>*50, 100);
+  #Sulfur Dioxide
+mods.nuclearcraft.chemical_reactor.addRecipe(<liquid:hydrogen_sulfide>*100, <liquid:oxygen>*200, <liquid:water>*100, <liquid:sulfur_dioxide>*100, 100);
+  #Sulfur
+
+print("--------------------------Chemical Recipes Intialized -------------------------");
 
 print("--------------------------Crystal Recipes Intialized -------------------------");
 
@@ -277,12 +299,6 @@ mods.tconstruct.Melting.addRecipe(<fluid:stone>*1296, <extrautils2:compressedcob
   #Molten Steel
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>);
 makeMoltenRecipes("Steel", <liquid:steel>);
-
-
-
-
-
-
 print("--------------------------Molten Recipes Intialized -------------------------");
 
 function makeIngotToNuggetRecipe(output as IItemStack, input as IIngredient){

@@ -96,9 +96,16 @@ contenttweaker.part.foil=%s Foil
 contenttweaker.part.ring=%s Ring
 contenttweaker.part.rotor=%s Rotor
 
-fluid.contenttweaker.sulfuric_diesel.name=Sulfuric Diesel
-fluid.contenttweaker.sulfuric_gasoline.name=Sulfuric Gasoline
-fluid.contenttweaker.sulfuric_kerosene.name=Sulfuric Kerosene
-fluid.contenttweaker.sulfuric_lpg.name=Sulfuric LPG
-fluid.contenttweaker.sulfuric_Naphtha.name=Sulfuric Naphtha
-fluid.contenttweaker.hydrogen_sulfide.name=Hydrogen Sulfide
+
+fluid.diluted_sulfuric_acid=Diluted Sulfuric Acid
+fluid.hydrogen_sulfide=Hydrogen Sulfide
+fluid.polyethylene=Polyethylene
+fluid.polytetrafluoroethylene=Polytetrafluoroethylene (Teflon)
+fluid.sulfuric_diesel=Sulfuric Diesel
+fluid.sulfuric_gasoline=Sulfuric Gasoline
+fluid.sulfuric_kerosene=Sulfuric Kerosene
+fluid.sulfuric_lpg=Sulfuric LPG
+fluid.sulfuric_naphtha=Sulfuric Naphtha
+fluid.tolulene=Tolulene
+
+
