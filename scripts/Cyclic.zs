@@ -20,6 +20,12 @@ recipes.addShaped(<cyclicmagic:clock>, [
 	[<minecraft:redstone>, <extrautils2:redstoneclock>, <minecraft:redstone>],
 	[<minecraft:iron_ingot>, gearRedstone,<minecraft:iron_ingot>]]);
 	
+	#Combat Dynamite
+recipes.remove(<cyclicmagic:dynamite_safe>);
+recipes.addShaped(<cyclicmagic:dynamite_safe>*3, [
+	[<evilcraft:dark_spike>, <evilcraft:dark_spike>, <evilcraft:dark_spike>],
+	[null, <minecraft:tnt>, null],
+	[<evilcraft:dark_spike>, <evilcraft:dark_spike>, <evilcraft:dark_spike>]]);
 	#Torch Launcher
 recipes.remove(<cyclicmagic:tool_torch_launcher>);
 recipes.addShaped(<cyclicmagic:tool_torch_launcher>, [
@@ -28,6 +34,7 @@ recipes.addShaped(<cyclicmagic:tool_torch_launcher>, [
 	[<ore:logWood>, null, null]]);
 
 	#WorkBench
+recipes.remove(<cyclicmagic:block_workbench>);
 recipes.addShapeless(<cyclicmagic:block_workbench>, [<minecraft:crafting_table>]);
 
 

@@ -171,7 +171,7 @@ global ingotRefinedCoralium as IItemStack = <abyssalcraft:cingot>;
 	#Machine Casings
 global casingBasic as IItemStack = <techreborn:machine_frame>;
 casingBasic.displayName = "Basic Machine Casing";
-global casingIntermediate as IItemStack	= <modularmachinery:blockcasing:4>;
+global casingIntermediate as IItemStack	= <actuallyadditions:block_misc:9>;
 casingIntermediate.displayName = "Intermediate Machine Casing";
 global casingAdvanced as IItemStack	= <techreborn:machine_frame:1>;
 casingAdvanced.displayName	= "Advanced Machine Casing";

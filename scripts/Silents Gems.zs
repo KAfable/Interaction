@@ -41,8 +41,8 @@ mods.silentgems.setToolRecipe('katana', -1, ['hh', 'hs', 'hr'], ['s', 'ore:plank
 	#Polisher
 recipes.remove(<sgextraparts:polisher>);
 recipes.addShaped(<sgextraparts:polisher>, [
-  [<ore:logWood>, <ore:logWood>, null],
-  [<ore:stickWood>, <ore:stickWood>, null]]);
+  [<ore:logWood>, <ore:logWood>],
+  [<ore:stickWood>, <ore:stickWood>]]);
 	#Enchantment Token - Holding
 recipes.addShaped(<silentgems:enchantmenttoken>.withTag({TokenEnchantments: [{lvl: 1 as short, name: "cofhcore:holding"}]}), [
 	[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>, <actuallyadditions:block_giant_chest>],
@@ -62,3 +62,8 @@ recipes.addShaped(<silentgems:craftingmaterial:7>*3,[
 	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>],
 	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>],
 	[<ore:ingotIron>, <ore:nuggetGem>, <ore:ingotIron>]]);
+
+	#Soul Gem: Cow
+recipes.addShapeless(<minecraft:beef>*2, [<silentgems:soulgem>.withTag({sg_soul_gem: "Cow"})]);
+	#Soul Gem: Pig
+recipes.addShapeless(<minecraft:porkchop>*2, [<silentgems:soulgem>.withTag({sg_soul_gem: "Pig"})]);

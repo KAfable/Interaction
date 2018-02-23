@@ -3,7 +3,16 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 print("--------------------------Actually Additions Start--------------------------");
-
+	#Casing
+recipes.remove(casingIntermediate);
+recipes.addShaped(casingIntermediate, [
+	[plateAluminum, plateAluminum, plateAluminum],
+	[plateAluminum, fluxductBasic,plateAluminum],
+	[plateAluminum, plateAluminum, plateAluminum]]);
+	#Crusher
+recipes.remove(<actuallyadditions:block_grinder>);
+	#Double Crusher
+recipes.remove(<actuallyadditions:block_grinder_double>);
 	#Small Crate
 recipes.remove(<actuallyadditions:block_giant_chest>);
 recipes.addShaped(<actuallyadditions:block_giant_chest>, [
@@ -28,5 +37,7 @@ recipes.remove(<actuallyadditions:block_furnace_double>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_miner>);
 	#Flax
 vanilla.seeds.addSeed(<actuallyadditions:item_flax_seed> % 100);
+	#Flax - Combustion
+mods.skyresources.combustion.addRecipe(<actuallyadditions:item_flax_seed>, [<minecraft:spider_eye>, <minecraft:wheat_seeds>], 100);
 
 print("--------------------------Actually Additions End--------------------------");

@@ -45,7 +45,23 @@ val skyRemoved = [
 	<skyresources:alchemy:8>,
 	<skyresources:alchemy:9>,
 	<skyresources:alchemy:11>,
-	<skyresources:wildlifeattractor>
+	<skyresources:wildlifeattractor>,
+	<skyresources:condenser>,
+	<skyresources:condenser:1>,
+	<skyresources:condenser:2>,
+	<skyresources:condenser:3>,
+	<skyresources:condenser:4>,
+	<skyresources:condenser:5>,
+	<skyresources:condenser:6>,
+	<skyresources:condenser:7>,
+	<skyresources:condenser:8>,
+	<skyresources:condenser:9>,
+	<skyresources:condenser:10>,
+	<skyresources:condenser:11>,
+	<skyresources:condenser:12>,
+	<skyresources:condenser:13>,
+	<skyresources:condenser:14>,
+	<skyresources:condenser:15>
 	] as IItemStack[];
 for item in skyRemoved { mods.jei.JEI.removeAndHide(item);}
 
@@ -217,17 +233,12 @@ recipes.addShaped(<skyresources:baseitemcomponent>, [
 
 	#Rock Grinder 
 //mods.skyresources.rockgrinder.addRecipe(<minecraft:coal:1>, <minecraft:stone>, 0.07);
-recipes.remove(<skyresources:stonegrinder>);
-recipes.addShaped(<skyresources:stonegrinder>, [
-  [<ore:cobblestone>, <ore:cobblestone>, null],
-  [<ore:cobblestone>, <ore:cobblestone>, null],
-  [null, null, <minecraft:stick>]]);
 
 recipes.remove(<skyresources:irongrinder>);
 <skyresources:irongrinder>.displayName = "Reinforced Stone Grinder";
 recipes.addShaped(<skyresources:irongrinder>, [
-  [ingotReinforcedStone, ingotReinforcedStone, null],
-  [ingotReinforcedStone, ingotReinforcedStone, null],
+  [ingotReinforcedStone, null, null],
+  [null, <minecraft:stick>, null],
   [null, null, <minecraft:stick>]]);
 
 recipes.remove(<skyresources:diamondgrinder>);

@@ -3,6 +3,10 @@
 //mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 
 print("--------------------------Tooltips Start--------------------------------");
+#Astral Sorcery
+	#Conversion Wand
+<astralsorcery:itemexchangewand>.addTooltip(format.aqua("Replacing blocks above the void can cause significant lag as this simulates player breaking."));
+
 #Ores
 	# Apatite
 mods.jei.JEI.addDescription(<forestry:resources>, 

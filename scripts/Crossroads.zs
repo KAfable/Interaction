@@ -172,8 +172,10 @@ gs.addRecipe(<ore:gravel>, <minecraft:sand>, <minecraft:flint>);
 gs.removeRecipe(<ore:stone>);
 gs.addRecipe(<ore:stone>, <skyresources:techitemcomponent>);
 
+print("Copper Ore Removal Check");
   #Removing Initial Recipes
 gs.removeRecipe(<ore:oreCopper>);
+print("Copper Ore Removal Check");
 
   #Dust Recipes
 gs.addRecipe(<ore:oreIron>,                 <thermalfoundation:material>, <minecraft:sand>);
