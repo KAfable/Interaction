@@ -7,6 +7,7 @@ print("-------------------Natura Start-----------------");
 	#Recipe Removals
 recipes.removeByRegex("natura:common/string");
 recipes.removeByRegex("natura:common/bread");
+recipes.removeByRegex("natura:common/barley_flour");
 
 	#Ghostwood Sapling
 mods.skyresources.infusion.removeRecipe(<natura:nether_sapling>);

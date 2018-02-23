@@ -24,36 +24,71 @@ recipes.remove(<extrautils2:machine>, true);
 	
 	#Generator - Culinary - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}), [
+	[null, <botania:specialflower>.withTag({type: "gourmaryllis"}), null],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
 	#Generator - Death - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_death"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_death"}), [
+	[null, <tconstruct:soil:3>, null],
+	[<tconstruct:soil:3>, casingBasic, <tconstruct:soil:3>],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
+	#Generator - Furnace - Tier 2 (too easy)
+recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator"}), [
+	[null, electricPistonBasic, null],
+	[<minecraft:furnace>, casingBasic, <minecraft:furnace>],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
 	#Generator - Potion - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_potion"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_potion"}), [
+	[null, <plants2:brewing_cauldron>, null],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
 	#Generator - Frosty - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"}), true);
-	#Generator - Slimey (check how strong with slime farm)
-recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"}), [
+	[null, <ore:rodBlizz>, null],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
 	#Generator - Pink - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_pink"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_pink"}), [
+	[<ore:dyePink>, <ore:dyePink>, <ore:dyePink>],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
 	#Generator - Explosives - Tier 2
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), true);
-
-	#Generator - Survival - Tier 3 (too easy)
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}), [
+	[null, <forge:bucketfilled>.withTag({FluidName: "tolulene", Amount: 1000}), null],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
+	#Generator - Survival - Tier 2 (too easy)
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"}), true);
-	#Generator - Furnace - Tier 3 (too easy)
-recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"}), [
+	[<minecraft:furnace>, electricPistonBasic, <minecraft:clock>],
+	[null, casingBasic, null],
+	[electricPistonBasic, gearRedstone, electricPistonBasic]]);
+
+	#Generator - Slimey - Tier 3
+recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), true);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), [
+	[null, <xreliquary:mob_ingredient:4>, null],
+	[<xreliquary:mob_ingredient:4>, casingIntermediate, <xreliquary:mob_ingredient:4>],
+	[electricPistonIntermediate, gearRedstone, electricPistonIntermediate]]);
 	#Generator - Overclock - Tier 3
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}), true);
-
-	#Generator - Magmatic - Tier 4 (too easy)
+	#Generator - Magmatic - Tier 3 (too easy)
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}), true);
-	#Generator - Ender - Tier 4 (pair with spawners)
+	#Generator - Ender - Tier 3 (pair with spawners)
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ender"}), true);
-	#Generator - Enchantment - Tier 4 (pair with IF Enchanter)
+	#Generator - Enchantment - Tier 3 (pair with IF Enchanter)
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"}), true);
 
-	#Generator - Nether Star - Tier 5
+	#Generator - Nether Star - Tier 4
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), true);
-	#Generator - Halitosis - Tier 5
+	#Generator - Halitosis - Tier 4
 recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_dragonsbreath"}), true);
 
 	#Mechanical User // Maybe make them use Integrated Dynamics

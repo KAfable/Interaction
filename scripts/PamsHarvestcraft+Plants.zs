@@ -18,7 +18,15 @@ print("-----------------------Pam's Harvestcraft Start--------------------------
 furnace.remove(<minecraft:bread>);
 furnace.addRecipe(<minecraft:bread>, <harvestcraft:doughitem>);
 
+	#Dough Buff
+recipes.removeByRegex("harvestcraft:doughitem_itemsalt");
+recipes.removeByRegex("harvestcraft:doughitem_dustsalt");
+recipes.removeByRegex("harvestcraft:doughitem_foodsalt");
+recipes.addShapeless(<harvestcraft:doughitem>, [<harvestcraft:mixingbowlitem>, <ore:listAllwater>, <ore:foodFlour>]);
+recipes.addShapeless(<harvestcraft:doughitem>, [<harvestcraft:mixingbowlitem>, <ore:listAllwater>, <ore:foodFlour>, <ore:dustSalt>]);
+
 	#Fresh Water Buff
+recipes.removeByRegex("harvestcraft:freshwateritem_minecraft_water_bucket");
 recipes.addShapeless(<harvestcraft:freshwateritem>*4, [<minecraft:water_bucket>]);
 
 	# Gardens

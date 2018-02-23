@@ -14,10 +14,7 @@ recipes.addShaped(<modularmachinery:blockcasing>*2, [
 	[plateBronze, null, plateBronze]]);
 	#Machine Casing - Intermediate
 recipes.remove(<modularmachinery:blockcasing:4>);
-recipes.addShaped(<modularmachinery:blockcasing:4>, [
-	[plateAluminum, plateAluminum, plateAluminum],
-	[plateAluminum, fluxductBasic,plateAluminum],
-	[plateAluminum, plateAluminum, plateAluminum]]);
+
 
 #Input Busses
 	#Basic Item Input

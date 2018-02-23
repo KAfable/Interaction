@@ -226,6 +226,9 @@ function makeNuggetToIngotRecipe(output as IItemStack, input as IIngredient){
     [input, input, input, input, input, input, input, input, input]);
 }
   
+  #Ender Alloy (from Ender Utilities)
+mods.immersiveengineering.AlloySmelter.addRecipe(<enderutilities:enderpart>*2, <ore:ingotAluminum>*4, <minecraft:ender_pearl>*4, 800);
+
   #Bronze Ingot
 
   #Refined Iron
@@ -400,7 +403,7 @@ makeHammerPlate(plateReinforcedStone, ingotReinforcedStone);
 makeSqueezerPlateRecipe(plateReinforcedStone, ingotReinforcedStone);
   #Rubber Plates
 makeHammerPlate(plateRubber, <ore:itemRubber>);
-makeSqueezerPlateRecipe(plateRubber, <ic2:crafting>);
+
   #Tin Plates
 makeHammerPlate(plateTin, <ore:ingotTin>);
 makeSqueezerPlateRecipe(plateTin, ingotTin);

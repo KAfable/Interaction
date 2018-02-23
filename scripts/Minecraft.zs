@@ -38,6 +38,13 @@ recipes.addShaped(<minecraft:cauldron>, [
 furnace.remove(<minecraft:coal:1>, null);
 furnace.addRecipe(<minecraft:coal:1>, <skyresources:baseitemcomponent>*2);
 
+  #Comparator
+recipes.remove(<minecraft:comparator>);
+recipes.addShaped(<minecraft:comparator>, [
+  [null, <minecraft:redstone_torch>, null],
+  [<minecraft:redstone_torch>, gearRedstone, <minecraft:redstone_torch>],
+  [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
 	#Dirt
 recipes.addShaped(<minecraft:dirt>*3, [
   [<ore:treeLeaves>, <ore:bark>, <ore:treeLeaves>],
@@ -116,9 +123,14 @@ recipes.addShaped(<minecraft:piston>, [
   #Redstone
 recipes.removeByRegex("reliquary:items/uncrafting/redstone");
 
+  #Snowball
+recipes.addShapeless(<minecraft:snowball>*16, [<ore:rodBlizz>, <ore:sand>]);
 
 	#Sugar Cane
 mods.botania.Apothecary.addRecipe(<minecraft:reeds>, [<ore:petalLime>, <ore:petalLime>, <ore:petalGreen>, <ore:petalGreen>]);
+
+  #TNT
+recipes.remove(<minecraft:tnt>);
 
 	#Tripwire Hook
 recipes.remove(<minecraft:tripwire_hook>);

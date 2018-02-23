@@ -4,10 +4,7 @@ import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Functions;
 import crafttweaker.item.IItemStack;
 
-	#From https://github.com/Leviathan143/LootTweaker/wiki/Loot-Pools
-//removeEntry(String entryName)
-//removeItemEntry(IItemStack stack)
-//addItemEntryHelper(IItemStack iStack, int weight, int quality, LootFunction[] functions, LootCondition[] conditions)
+print("----------------LootTables Start------------------");
 
 	#Cosmetic Loot Rewards - the stuff people should care about (at least one per chest)
 var cosmeticItem = [
@@ -97,8 +94,6 @@ var functionalLoot = [
 	#Tool Loot Rewards
 var toolLoot = [
 	<botania:starsword>,
-	<exchangers:exdiamond>,
-	<exchangers:exemerald>,
 	<mysticalagriculture:intermedium_bow>,
 	<cyclicmagic:tool_torch_launcher>,
 	<cyclicmagic:tool_auto_torch>
@@ -107,7 +102,6 @@ var toolLoot = [
 	#Abandoned Mineshaft - Main
 var mineshaft = LootTables.getTable("minecraft:chests/abandoned_mineshaft");
 var mineshaftMain = mineshaft.getPool("main");
-mineshaftMain.removeItemEntry(<minecraft:iron_pickaxe>);
 mineshaftMain.removeEntry("empty");
 mineshaftMain.removeEntry("abyssalcraft:abyssalnite_ingot");
 mineshaftMain.removeEntry("abyssalcraft:copper_ingot");
@@ -120,6 +114,7 @@ mineshaftMain.removeEntry("astralsorcery:constellation_paper");
 	#Abandoned Mineshaft - Pool1
 var mineshaftPool1 = mineshaft.getPool("pool1");
 mineshaftPool1.setRolls(1, 1);
+/*
 mineshaftPool1.removeItemEntry(<minecraft:iron_ingot>);
 mineshaftPool1.removeItemEntry(<minecraft:gold_ingot>);
 mineshaftPool1.removeItemEntry(<minecraft:redstone>);
@@ -129,14 +124,16 @@ mineshaftPool1.removeItemEntry(<minecraft:coal>);
 mineshaftPool1.removeItemEntry(<minecraft:bread>);
 mineshaftPool1.removeItemEntry(<minecraft:melon_seeds>);
 mineshaftPool1.removeItemEntry(<minecraft:pumpkin_seeds>);
-mineshaftPool1.removeItemEntry(<minecraft:beetroot_seeds>);
+mineshaftPool1.removeItemEntry(<minecraft:beetroot_seeds>);*/
 mineshaftPool1.addItemEntryHelper(<silentgems:enchantmenttoken:256>, 20, 0, [], []);
 	#Abandoned Mineshaft - Pool2
 var mineshaftPool2 = mineshaft.getPool("pool2");
+/*
 mineshaftPool2.removeItemEntry(<minecraft:rail>);
 mineshaftPool2.removeItemEntry(<minecraft:golden_rail>);
 mineshaftPool2.removeItemEntry(<minecraft:detector_rail>);
 mineshaftPool2.removeItemEntry(<minecraft:activator_rail>);
+*/
 	#Abandoned Mineshaft - Reliquary
 var mineshaftReliquary = mineshaft.getPool("xreliquary_inject_pool");
 	#Abandoned Mineshaft - IC2
@@ -150,10 +147,12 @@ var mineshaftBotania = mineshaft.getPool("botania_inject_pool");
 	#Astral Sorcery Shrine
 val astralshrine = LootTables.getTable("astralsorcery:chest_shrine");
 val astralChest = astralshrine.getPool("astralsorcery:chest_shrine");
+/*
 astralChest.removeItemEntry(<minecraft:emerald>);
 astralChest.removeItemEntry(<minecraft:diamond>);
 astralChest.removeItemEntry(<minecraft:bone>);
 astralChest.removeItemEntry(<minecraft:glowstone_dust>);
+*/
 astralChest.addItemEntryHelper(<abyssalcraft:essence>, 20, 0, [], []);
 astralChest.addItemEntryHelper(<randomthings:itemcollector>, 10, 0, [], []);
 astralChest.addItemEntryHelper(<astralsorcery:itemhandtelescope>, 5, 0, [], []);
@@ -293,10 +292,19 @@ iceCaveGemPool.addItemEntry(<abyssalcraft:shadowgem>, 1, 0);
 var enderman = LootTables.getTable("minecraft:entities/enderman");
 var endermanMain = enderman.getPool("main");
 endermanMain.removeEntry("minecraft:ender_pearl");
-endermanMain.addItemEntryJSON(<minecraft:ender_pearl>, 1, 0, [
-	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'", 
-	"count: {min: 0.0, max: 1.0}, function: 'minecraft:looting_enchant'"],
-	[]);
+//endermanMain.addItemEntryJSON(<minecraft:ender_pearl>, 1, 0, [
+//	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'", 
+//	"count: {min: 0.0, max: 1.0}, function: 'minecraft:looting_enchant'"],
+//	[]);
+
+	#Fishing - Treasure
+var fishingTreasure = LootTables.getTable("minecraft:gameplay\fishing\treasure");
+var fishingTreasureMain = fishingTreasure.getPool("main");
+fishingTreasureMain.removeEntry("minecraft:bow");
+fishingTreasureMain.addItemEntryHelper(<minecraft:bow>, 1, 0, [Functions.enchantWithLevels(1, 2, false)], []);
+fishingTreasureMain.removeEntry("minecraft:book");
+fishingTreasureMain.addItemEntryHelper(<minecraft:book>, 1, 0, [Functions.enchantWithLevels(1, 2, true)], []);
+
 	#Jungle Temple
 var temple = LootTables.getTable("minecraft:chests/jungle_temple");
 	#Jungle Temple - Main
@@ -364,13 +372,13 @@ simpleDungeon.removePool("randomthings:biomeCrystal");
 	#Spider
 var spider = LootTables.getTable("minecraft:entities/spider");
 var spiderPool1 = spider.getPool("pool1");
-spiderPool1.removeItemEntry(<minecraft:spider_eye>);
-spiderPool1.addItemEntryJSON(<minecraft:spider_eye>, 20, 0, [
-	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'"], []);
+//spiderPool1.removeItemEntry(<minecraft:spider_eye>);
+//spiderPool1.addItemEntryJSON(<minecraft:spider_eye>, 20, 0, [
+//	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'"], []);
 	#Stranger - Deadly Monsters
 var stranger = LootTables.getTable("dmonsters:stranger");
 var strangerPool = stranger.getPool("dmonsters:stranger");
-strangerPool.removeItemEntry(<minecraft:redstone>);
+//strangerPool.removeItemEntry(<minecraft:redstone>);
 	#Village - Blacksmith
 var blacksmith = LootTables.getTable("minecraft:chests/village_blacksmith");
 	#Village - Blacksmith Main
@@ -431,3 +439,5 @@ witchMain.removeEntry("minecraft:stick");
 val zombie = LootTables.getTable("minecraft:entities/zombie");
 val zomPool1 = zombie.getPool("pool1");
 zomPool1.removeEntry("minecraft:iron_ingot");
+
+print("-----------------LootTables End-------------------");
