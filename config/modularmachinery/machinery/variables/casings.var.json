@@ -29,6 +29,13 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyinputhatch",
         "modularmachinery:blockfluidinputhatch"
+    ],    
+    "lcr_casings": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch"
     ],
     "casings_functional": [
         "modularmachinery:blockinputbus",

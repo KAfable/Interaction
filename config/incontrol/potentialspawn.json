@@ -1,17 +1,4 @@
 [	
-	{
-		"dimension": 0,
-		"block": "minecraft:netherrack",
-		"mobs": [
-			{
-				"mob": "minecraft:witch",
-				"weight": 1,
-				"groupcountmin": 1,
-				"groupcountmax": 2
-			}]
-	},
-
-
 
 	{
         "dimension": 0,
@@ -40,7 +27,36 @@
 				"groupcountmin": 1,
 				"groupcountmax": 2
 			}]
-	}
+	},
 
-	
+
+
+	{
+		"dimension": 0,
+		"remove": [
+				"emberroot:enderminy",
+				"dmonsters:mutantsteve",
+				"cyberware:cyberzombie",
+				"dmonsters:zombiechicken"
+		]
+	},
+
+
+
+	{
+		"dimension": 7,
+		"remove": [
+				"abyssalcraft:abyssalzombie",
+				"cyberware:cyberzombie"
+		]
+	},
+
+
+
+	{
+		"dimension": 100,
+		"remove": [
+				"cyberware:cyberzombie"
+		]
+	}
 ]

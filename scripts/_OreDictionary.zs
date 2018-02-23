@@ -123,6 +123,7 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:ingotTin>.remove(<fp:itemerze>);
 <ore:ingotTin>.remove(<sgextraparts:ingot:1>);
 <ore:ingotTin>.remove(<abyssalcraft:tiningot>);
+
 	#nuggetGem
 var gemShards = <silentgems:gemshard>.definition;
 for i in 0 to 48{

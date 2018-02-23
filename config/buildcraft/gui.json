@@ -15,7 +15,7 @@
   },
   "buildcraftlib:engine": {
     "ledger.power.is_open": {
-      "boolean": true
+      "boolean": false
     }
   }
 }

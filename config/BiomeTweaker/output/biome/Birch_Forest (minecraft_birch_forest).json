@@ -59,6 +59,36 @@
       "Max Group Count": 8
     },
     {
+      "Entity Class": "teamroots.emberroot.entity.deer.EntityDeer",
+      "Weight": 20,
+      "Min Group Count": 3,
+      "Max Group Count": 7
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.fairy.EntityFairy",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.hero.EntityFallenHero",
+      "Weight": 5,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.owl.EntityOwl",
+      "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.sprout.EntitySprout",
+      "Weight": 10,
+      "Min Group Count": 2,
+      "Max Group Count": 4
+    },
+    {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
       "Weight": 20,
       "Min Group Count": 1,
@@ -185,6 +215,60 @@
       "Weight": 4,
       "Min Group Count": 2,
       "Max Group Count": 8
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.cat.EntityWitherCat",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.creeper.EntityConcussionCreeper",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.endermini.EntityEnderminy",
+      "Weight": 17,
+      "Min Group Count": 2,
+      "Max Group Count": 5
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.golem.EntityAncientGolem",
+      "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.slime.EntityRainbowSlime",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.wolfdire.EntityDireWolf",
+      "Weight": 4,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.witch.EntityWitherWitch",
+      "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.knight.EntityFallenKnight",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
+      "Entity Class": "teamroots.emberroot.entity.frozen.EntityFrozenKnight",
+      "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     },
     {
       "Entity Class": "flaxbeard.cyberware.common.entity.EntityCyberZombie",

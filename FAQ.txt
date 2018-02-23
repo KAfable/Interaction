@@ -72,6 +72,8 @@ Back to Block ID's, given an established limit of 4096 blocks, let's say a mod l
 
 	ag. Quark - oh boy. Originally had this specifically for its enhanced dungeon generation, and using the realistic terrain settings. In the end Doomlike Dungeons was better suited to my needs and configurability, and I found out I could use JED/Dimensional Control to manually alter generator settings myself. The other large collection of features I may have originally wanted were not significant enough to justify the Block ID's used.
 
+	ah. Powered Thingies - This used to be in the pack for a long time, I originally meant it to be as a slower/basic version of the Modular Machine multiblocks due to the flexibility of the proposed crafttweaker support of its machines. However the documentation didn't seem very clear to me, and I wasn't even sure how to remove a recipe or even clear all of the recipe registry despite looking at the documentation. This, combined with the redundancy of Modular Machinery, made me decide that it was just too reundant with the pack. The animal gym is a pretty amusing way to generate RF though.
+
 
 ================================================
 What kind of progression did you change in mods?
