@@ -1,4 +1,4 @@
-ignoreUpdate:26
+ignoreUpdate:27
 updateNotification:true
 debug:false
 lighting:true

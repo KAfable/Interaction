@@ -1,0 +1,105 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "minecraft:lapis_ore:0"
+          ]
+        }
+
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "minecraft:lapis_ore:0"
+            ]
+          }
+        }
+      ]
+    },
+
+
+
+
+    {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "minecraft:redstone_ore:*",
+            "minecraft:lit_redstone_ore:*"
+          ]
+        }
+
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "minecraft:redstone_ore:0"
+            ]
+          },
+          "xp": {
+            "fixed": 0
+          }
+        }
+      ]
+    },
+
+
+
+        {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "minecraft:coal_ore:*"
+          ]
+        }
+
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "minecraft:coal_ore:0"
+            ]
+          }
+        }
+      ]
+    },
+
+
+
+        {
+      "match": {
+        "blocks": {
+          "type": "WHITELIST",
+          "blocks": [
+            "forestry:resources:0"
+          ]
+        }
+
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "forestry:resources:0"
+            ]
+          }
+        }
+      ]
+    }
+
+
+
+  ]
+}

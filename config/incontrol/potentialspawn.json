@@ -37,7 +37,11 @@
 				"emberroot:enderminy",
 				"dmonsters:mutantsteve",
 				"cyberware:cyberzombie",
-				"dmonsters:zombiechicken"
+				"dmonsters:zombiechicken",
+				"mekanism:babyskeleton",
+				"emberroot:knight_fallen",
+				"emberroot:dire_wolf",
+				"emberroot:withercat"
 		]
 	},
 
