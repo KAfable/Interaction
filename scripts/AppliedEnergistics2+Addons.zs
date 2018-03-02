@@ -2,7 +2,7 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.artisanworktables.Worktable;
-import mods.artisanworktables.IRecipeBuilder;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 print("--------------------------Applied Energistics2+AddOns Start --------------------------");
 

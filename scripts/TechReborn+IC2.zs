@@ -13,6 +13,10 @@ recipes.removeByRegex("thermalfoundation:dust_19");
 recipes.remove(<techreborn:smalldust:5>);
 	#Electronic Circuit
 recipes.remove(<techreborn:part:29>);
+recipes.addShaped(circuitBasic, [
+	[plateRubber, <ore:wireCopper>, plateRubber],
+	[plateRedstone, <ore:plateRefinedIron>, plateRedstone],
+	[<ore:wireCopper>, <ore:wireCopper>, <ore:wireCopper>]]);
 	#Basic Machine Frame
 recipes.remove(<techreborn:machine_frame>);
 recipes.addShaped(<techreborn:machine_frame>, [
@@ -55,10 +59,6 @@ recipes.remove(<techreborn:dust:7>);
 recipes.remove(<ic2:dust>);
 	#Electronic Circuit
 recipes.remove(<ic2:crafting:1>);
-recipes.addShaped(<ic2:crafting:1>, [
-	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
-	[<forestry:thermionic_tubes:8>, <forestry:chipsets>, <forestry:thermionic_tubes:8>],
-	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);	
 	#Machine Casing
 recipes.remove(<ic2:resource:12>);
 	#Rubber

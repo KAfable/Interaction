@@ -136,14 +136,79 @@ recipes.addShaped(<modularmachinery:blockcontroller>, [
 
 
 #Blueprints
-	#Portal Fabricator - Tier 2
+	#Portal Fabricator
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"}), [
-		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>],
-		[<ore:dyeOrange>, <minecraft:paper>, <ore:dyeOrange>],
-		[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]]);
+	[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>],
+	[<ore:dyeOrange>, <minecraft:paper>, <ore:dyeOrange>],
+	[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]]);
+	#Portal Fabricator - Tier 2
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator2"}),
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"})]);
+
+	#Electric Blast Furnace - Basic
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_ebf"}), [
+	[<ore:dyeBlack>, <minecraft:lava_bucket>, <ore:dyeBlack>],
+	[<minecraft:lava_bucket>, <minecraft:paper>, <minecraft:lava_bucket>],
+	[<ore:dyeBlack>, <minecraft:lava_bucket>, <ore:dyeBlack>]]);
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:divine_ebf"})]);
+	#Electric Blast Furnace - Intermediate
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:intermediate_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_ebf"})]);
+	#Electric Blast Furnace - Advanced
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:intermediate_ebf"})]);
+	#Electric Blast Furnace - Elite
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:elite_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_ebf"})]);
+	#Electric Blast Furnace - Insane
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:insane_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:elite_ebf"})]);
+	#Electric Blast Furnace - Ultimate
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:insane_ebf"})]);
+	#Electric Blast Furnace - Ludicrous
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ludicrous_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_ebf"})]);
+	#Electric Blast Furnace - Divine
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:divine_ebf"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ludicrous_ebf"})]);
+
+	#Large Chemical Reactor - Basic
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_lcr"}), [
+	[<ore:dyeOrange>, <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}), <ore:dyeOrange>],
+	[<forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}), <ore:dyeOrange>, <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000})],
+	[<ore:dyeOrange>, <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}), <ore:dyeOrange>]]);
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:divine_lcr"})]);
+	#Large Chemical Reactor - Intermediate
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:intermediate_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_lcr"})]);
+	#Large Chemical Reactor - Advanced
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:intermediate_lcr"})]);
+	#Large Chemical Reactor - Elite
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:elite_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_lcr"})]);
+	#Large Chemical Reactor - Insane
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:insane_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:elite_lcr"})]);
+	#Large Chemical Reactor - Ultimate
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:insane_lcr"})]);
+	#Large Chemical Reactor - Ludicrous
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ludicrous_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_lcr"})]);
+	#Large Chemical Reactor - Divine
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:divine_lcr"}), 
+	[<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ludicrous_lcr"})]);
 
 	#Universal Utility Machine
-recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_machine"}), [
-		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:portal_fabricator"})]);
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:basic_assembly_machine"}), [
+	[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>],
+	[<ore:dyeOrange>, processorBasic, <ore:dyeOrange>],
+	[<ore:dyeBlack>, <ore:dyeOrange>, <ore:dyeBlack>]]);
+
+
 
 print("---------------Modular Machinery End-----------------");

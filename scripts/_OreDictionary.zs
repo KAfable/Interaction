@@ -2,13 +2,12 @@
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 
 // This script is for misc recipes such as ore dictionaries or those that don't belong anywhere else]
 
 print("-------------- Ore Dictionary Start --------------");
-
-
-
 //Adding all aluminium to Aluminum
 <ore:gearAluminium>.add(<thermalfoundation:material:260>);
 <ore:ingotALuminium>.add(<thermalfoundation:material:132>);
@@ -33,27 +32,28 @@ var hammerList = [
 	<thermalfoundation:tool.hammer_iron>,
 	<thermalfoundation:tool.hammer_diamond>,
 	<thermalfoundation:tool.hammer_gold>,
-	<artisanworktables:blacksmiths_hammer_flint>,
-	<artisanworktables:blacksmiths_hammer_wood>,
-	<artisanworktables:blacksmiths_hammer_bone>,
-	<artisanworktables:blacksmiths_hammer_nickel>,
-	<artisanworktables:blacksmiths_hammer_platinum>,
-	<artisanworktables:blacksmiths_hammer_stone>,
-	<artisanworktables:blacksmiths_hammer_iron>,
-	<artisanworktables:blacksmiths_hammer_iron>,
-	<artisanworktables:blacksmiths_hammer_steel>,
-	<artisanworktables:blacksmiths_hammer_gold>,
-	<artisanworktables:blacksmiths_hammer_diamond>,
-	<artisanworktables:blacksmiths_hammer_tin>,
-	<artisanworktables:blacksmiths_hammer_manasteel>,
-	<artisanworktables:blacksmiths_hammer_aluminum>,
-	<artisanworktables:blacksmiths_hammer_bronze>,
-	<artisanworktables:blacksmiths_hammer_elementium>,
-	<artisanworktables:blacksmiths_hammer_terrasteel>,
-	<artisanworktables:blacksmiths_hammer_constantan>,
-	<artisanworktables:blacksmiths_hammer_copper>,
-	<artisanworktables:blacksmiths_hammer_electrum>,
-	<artisanworktables:blacksmiths_hammer_invar>
+	<artisanworktables:artisans_hammer_wood>,
+	<artisanworktables:artisans_hammer_stone>,
+	<artisanworktables:artisans_hammer_iron>,
+	<artisanworktables:artisans_hammer_gold>,
+	<artisanworktables:artisans_hammer_diamond>,
+	<artisanworktables:artisans_hammer_flint>,
+	<artisanworktables:artisans_hammer_bone>,
+	<artisanworktables:artisans_hammer_aluminum>,
+	<artisanworktables:artisans_hammer_bronze>,
+	<artisanworktables:artisans_hammer_constantan>,
+	<artisanworktables:artisans_hammer_copper>,
+	<artisanworktables:artisans_hammer_electrum>,
+	<artisanworktables:artisans_hammer_invar>,
+	<artisanworktables:artisans_hammer_lead>,
+	<artisanworktables:artisans_hammer_nickel>,
+	<artisanworktables:artisans_hammer_platinum>,
+	<artisanworktables:artisans_hammer_silver>,
+	<artisanworktables:artisans_hammer_steel>,
+	<artisanworktables:artisans_hammer_tin>,
+	<artisanworktables:artisans_hammer_manasteel>,
+	<artisanworktables:artisans_hammer_elementium>,
+	<artisanworktables:artisans_hammer_terrasteel>
 	] as IItemStack[];
 <ore:toolHammer>.addItems(hammerList);
 
@@ -124,6 +124,8 @@ recipes.addShapeless(<thermalfoundation:material:98>,
 <ore:ingotTin>.remove(<sgextraparts:ingot:1>);
 <ore:ingotTin>.remove(<abyssalcraft:tiningot>);
 
+	#itemRubber
+<ore:itemRubber>.remove(<industrialforegoing:plastic>);
 	#nuggetGem
 var gemShards = <silentgems:gemshard>.definition;
 for i in 0 to 48{
@@ -170,5 +172,73 @@ overworld.add(<xtones:zion:6>);
 <ore:stickIron>.remove(<fp:spaceship:12>);
 <ore:stickIron>.add(<silentgems:craftingmaterial:7>);
 <ore:stickIron>.add(<psi:cad_assembly>);
+
+print("-----------One Ingot To Rule Them All--------------");
+
+function metalRecipeFix(
+    oredictBlock  as IOreDictEntry,
+    oredictIngot  as IOreDictEntry,
+    oredictNugget as IOreDictEntry,
+    preferedBlock as IItemStack,
+    preferedIngot as IItemStack,
+    preferedNugget as IItemStack
+    ){
+	//Fix block to ingot recipes
+        for metalBlock in oredictBlock.items {
+            recipes.removeShaped(metalBlock);
+            recipes.removeShapeless(metalBlock);
+
+            recipes.addShapeless(preferedIngot * 9, [
+                metalBlock
+                ]);
+        }
+		
+        //Fix ingot to block and ingot to nugget recipes
+        for metalIngot in oredictIngot.items {
+            recipes.removeShaped(metalIngot * 9);
+            recipes.removeShapeless(metalIngot * 9);
+            recipes.removeShaped(metalIngot);
+            recipes.removeShapeless(metalIngot);
+
+            recipes.addShapeless(preferedNugget * 9, [metalIngot]);
+            recipes.addShapeless(preferedBlock, [
+                metalIngot, metalIngot, metalIngot,
+                metalIngot, metalIngot, metalIngot,
+                metalIngot, metalIngot, metalIngot]);
+        }
+		
+	//Fix nugget to ingot recipes
+        for metalNugget in oredictNugget.items {
+            recipes.removeShaped(metalNugget * 9);
+            recipes.removeShapeless(metalNugget * 9);
+
+            recipes.addShapeless(preferedIngot, [
+                metalNugget, metalNugget, metalNugget,
+                metalNugget, metalNugget, metalNugget,
+                metalNugget, metalNugget, metalNugget]);
+        }
+
+        //Backup oredict ingot to block and nugget to ingot recipes for if a player tries to combine various mod ingots
+        recipes.addShapeless(preferedBlock, [
+                oredictIngot, oredictIngot, oredictIngot,
+                oredictIngot, oredictIngot, oredictIngot,
+                oredictIngot, oredictIngot, oredictIngot]);
+        recipes.addShapeless(preferedIngot, [
+                oredictNugget, oredictNugget, oredictNugget,
+                oredictNugget, oredictNugget, oredictNugget,
+                oredictNugget, oredictNugget, oredictNugget]);
+}
+
+	#Copper Fix
+metalRecipeFix(
+    <ore:blockCopper>, <ore:ingotCopper>, <ore:nuggetCopper>,
+    <thermalfoundation:storage>, <thermalfoundation:material:128>, <thermalfoundation:material:192>
+    );
+
+    #Steel Fix
+metalRecipeFix(
+    <ore:blockSteel>, <ore:ingotSteel>, <ore:nuggetSteel>,
+    <mekanism:basicblock:5>, <mekanism:ingot:4>, <mekanism:nugget:4>
+    );
 
 print("-------------- Ore Dictionary End --------------");

@@ -8,8 +8,7 @@ print("-----------------Project E Start-----------------");
 var peBags = <projecte:item.pe_alchemical_bag:*>; //Reundant with Iron Backpacks - might re-add later
 recipes.removeShaped(peBags);
 
-	#Philosopher's Stone
-recipes.remove(<projecte:item.pe_philosophers_stone>);
+
 	#Alchemical Chest
 recipes.remove(<projecte:alchemical_chest>);
 recipes.addShaped(<projecte:alchemical_chest>, [
@@ -19,5 +18,14 @@ recipes.addShaped(<projecte:alchemical_chest>, [
 	#Condenser
 recipes.remove(<projecte:condenser_mk1>);
 recipes.remove(<projecte:condenser_mk2>);
+	#Covalence Dust - Low
+recipes.remove(<projecte:item.pe_covalence_dust>);
+	#Covalence Dust - Medium
+recipes.remove(<projecte:item.pe_covalence_dust:1>);
+	#Covalence Dust - High
+recipes.remove(<projecte:item.pe_covalence_dust:2>);
+
+	#Philosopher's Stone
+recipes.remove(<projecte:item.pe_philosophers_stone>);
 
 print("------------------Project E End------------------");

@@ -27,6 +27,7 @@ recipes.addShapeless(<harvestcraft:doughitem>, [<harvestcraft:mixingbowlitem>, <
 
 	#Fresh Water Buff
 recipes.removeByRegex("harvestcraft:freshwateritem_minecraft_water_bucket");
+recipes.removeByRegex("harvestcraft:freshwateritem_listallwater");
 recipes.addShapeless(<harvestcraft:freshwateritem>*4, [<minecraft:water_bucket>]);
 
 	# Gardens

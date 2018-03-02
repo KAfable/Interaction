@@ -1,11 +1,16 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.data.IData;
 
-var tiers = [<ore:ingotIron>,<ore:ingotInvar>,<ore:ingotElectrum>,<ore:ingotSignalum>,<ore:ingotEnderium>] as IOreDictEntry[];
+print("------------------Thermal Suite Start------------------");
 
-	#Acqueous Accumulator (replaced by Evilcraft Eternal Water Block)
-mods.jei.JEI.removeAndHide(<thermalexpansion:device>);
+var tiers = [
+  <ore:ingotIron>, 
+  <ore:ingotInvar>,
+  <ore:ingotElectrum>,
+  <ore:ingotSignalum>,
+  <ore:ingotEnderium>] as IOreDictEntry[];
 
 	#Compactor
 recipes.remove(<thermalexpansion:machine:5>);
@@ -14,19 +19,41 @@ recipes.remove(<thermalexpansion:machine:5>);
 	#Compactor - Gearworking Die
 recipes.remove(<thermalexpansion:augment:337>);
 <thermalexpansion:augment:337>.addTooltip("Disabled until Modtweaker adds Gear Compator functionality");
-	#Hammers
+	
+  #Fluiduct 
+recipes.remove(<thermaldynamics:duct_16>);
+recipes.addShaped(<thermaldynamics:duct_16>, [
+  [<ore:plateCopper>,<ore:blockGlass>, <ore:plateCopper>]]);
+  #Fluiduct Opaque
+recipes.remove(<thermaldynamics:duct_16:1>);
+recipes.addShapeless(<thermaldynamics:duct_16:1>, [<thermaldynamics:duct_16>]);
 
-/*
-function repairHammer (recName as string, hammer as IItemStack, repairMaterial as IItemStack, repairValue as int) {
-	recipes.addShapeless(recName, hammer, [
-		hammer.anyDamage().marked("mark").noReturn(), repairMaterial],
-  		function(out, ins, cInfo) {
-    		return ins.mark.withDamage(max(0, ins.mark.damage - repairValue));
-    		}, 
-    	null);
-}
-repairHammer("copperHammerRepair", <thermalfoundation:tool.hammer_copper>, <thermalfoundation:material:128>, 200);
-*/
+  #Fluiduct (Hardened)
+recipes.remove(<thermaldynamics:duct_16:2>);
+recipes.addShaped(<thermaldynamics:duct_16:2>, [
+  [<ore:plateSteel>, <thermaldynamics:duct_16>, <ore:plateSteel>]]);
+  #Fluiduct (Hardened Opaque)
+recipes.remove(<thermaldynamics:duct_16:3>);
+recipes.addShapeless(<thermaldynamics:duct_16:3>, [<thermaldynamics:duct_16:2>]);
+
+  #Fluiduct (Signalum Plated)
+recipes.remove(<thermaldynamics:duct_16:4>);
+  #Fluiduct (Signalum Plated Opaque)
+recipes.remove(<thermaldynamics:duct_16:5>);
+
+  #Fluiduct (Super Laminar)
+recipes.remove(<thermaldynamics:duct_16:6>);
+  #Fluiduct (Super Laminar Opaque)
+recipes.remove(<thermaldynamics:duct_16:7>);
+
+  #Fluxduct - Basic
+recipes.remove(<thermaldynamics:duct_0>);
+recipes.addShaped(<thermaldynamics:duct_0>*8, [
+  [<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
+  [<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
+  [<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);
+
+  #Hammers
 	#Hammer Repair
 recipes.addShapeless("electrumHammerRepair", <thermalfoundation:tool.hammer_electrum>, [
 	<thermalfoundation:tool.hammer_electrum>.anyDamage().marked("mark").noReturn(), <ore:ingotElectrum>],
@@ -82,29 +109,63 @@ recipes.addShapeless("platinumHammerRepair", <thermalfoundation:tool.hammer_plat
     	return ins.mark.withDamage(max(0, ins.mark.damage - 2500));}, null);
 
 
-	#Satchels
+  #Itemduct
+recipes.remove(<thermaldynamics:duct_32>);
+recipes.addShaped(<thermaldynamics:duct_32>, [
+  [<ore:plateTin>, <ore:blockGlass> ,<ore:plateTin>]]);
+
+  #Itemduct - Opaque
+recipes.remove(<thermaldynamics:duct_32:1>);
+recipes.addShapeless(<thermaldynamics:duct_32:1>, [<thermaldynamics:duct_32>]);
+
+  #Itemduct - Impulse
+mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_32>, <liquid:glowstone>);
+recipes.remove(<thermaldynamics:duct_32:2>);
+recipes.addShaped(<thermaldynamics:duct_32:2>, [
+  [null, <thermalfoundation:glass:3>, null],
+  [<ore:plateGold>, <thermaldynamics:duct_32>, <ore:plateGold>],
+  [null, <thermalfoundation:glass:3>, null]]);
+mods.botania.ManaInfusion.addInfusion(<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32>, 10000);
+
+  #Itemduct - Impulse Opaque
+mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200);
+recipes.remove(<thermaldynamics:duct_32:3>);
+recipes.addShapeless(<thermaldynamics:duct_32:3>, [<thermaldynamics:duct_32:2>]);
+
+  #Itemduct - Signalum Plated
+recipes.remove(<thermaldynamics:duct_32:4>);
+
+  #Itemduct - Signalum Plated Opaque
+recipes.remove(<thermaldynamics:duct_32:5>);
+recipes.addShapeless(<thermaldynamics:duct_32:5>, [<thermaldynamics:duct_32:4>]);
+
+  #Itemduct - Signalum Plated Impulse
+recipes.remove(<thermaldynamics:duct_32:6>);
+
+  #Itemduct - Signalum Plated Impulse Opaque
+recipes.remove(<thermaldynamics:duct_32:7>);
+recipes.addShapeless(<thermaldynamics:duct_32:7>, [<thermaldynamics:duct_32:6>]);
+
+	#Satchels - Basic
 recipes.remove(<thermalexpansion:satchel>);
 recipes.addShaped(<thermalexpansion:satchel>, [
 	[null, <minecraft:leather>, null],
 	[<minecraft:wool:11>, <minecraft:chest>, <minecraft:wool:11>],
 	[<minecraft:leather>, <minecraft:chest>, <minecraft:leather>]]);
 
-	#Basic Satchel
+	#Basic Satchel - Upgrade
 recipes.addShapeless("basicSatchelUpgrade", <thermalexpansion:satchel>.withTag({ench: [{lvl: 1 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>]);
-
 recipes.addShapeless("basicSatchelUpgrade2", <thermalexpansion:satchel>.withTag({ench: [{lvl: 2 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>]);
-
 recipes.addShapeless("basicSatchelUpgrade3", <thermalexpansion:satchel>.withTag({ench: [{lvl: 3 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>]);
-
 recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag({ench: [{lvl: 4 as short, id: 53 as short}]}), [
   <thermalexpansion:satchel>, 
   <thermalexpansion:satchel>,
@@ -112,37 +173,33 @@ recipes.addShapeless("basicSatchelUpgrade4", <thermalexpansion:satchel>.withTag(
   <thermalexpansion:satchel>,
   <thermalexpansion:satchel>]);
 
+  #Satchel - Hardened
+recipes.removeByRegex("thermalexpansion:satchel_1");
+
 	#Machine Frame
 recipes.remove(<thermalexpansion:frame>);
 
 	#Servos
+recipes.remove(<thermaldynamics:servo>);
+recipes.addShapeless(<thermaldynamics:servo>, [conveyorBasic]);
+<thermaldynamics:servo>.displayName = "Basic Servo";
 	#Servos - Hardened
+recipes.remove(<thermaldynamics:servo:1>);
+recipes.addShapeless(<thermaldynamics:servo:1>, [conveyorIntermediate]);
+<thermaldynamics:servo:1>.displayName = "Intermediate Servo";
 	#Servos - Reinforced
+recipes.remove(<thermaldynamics:servo:2>);
+recipes.addShapeless(<thermaldynamics:servo:2>, [conveyorAdvanced]);
+<thermaldynamics:servo:2>.displayName = "Advanced Servo";
 	#Servos - Signalum
+recipes.remove(<thermaldynamics:servo:3>);
+recipes.addShapeless(<thermaldynamics:servo:3>, [conveyorElite]);
+<thermaldynamics:servo:3>.displayName = "Elite Servo";
 	#Servos - Enderium
+recipes.remove(<thermaldynamics:servo:4>);
+recipes.addShapeless(<thermaldynamics:servo:4>, [conveyorInsane]);
+<thermaldynamics:servo:4>.displayName = "Insane Servo";
 
 
-	#Itemduct
-recipes.remove(<thermaldynamics:duct_32>);
-recipes.addShaped(<thermaldynamics:duct_32>, [
-	[<ore:ingotTin>,<contenttweaker:basicvalve>,<ore:ingotTin>]]);
 
-	#Fluiduct
-recipes.remove(<thermaldynamics:duct_16>);
-recipes.addShaped(<thermaldynamics:duct_16>, [
-	[<ore:plateCopper>,<ore:blockGlass>, <ore:plateCopper>]]);
-
-	#Fluiduct (Hardened)
-recipes.remove(<thermaldynamics:duct_16:2>);
-
-	#Fluiduct (Signalum Plated)
-recipes.remove(<thermaldynamics:duct_16:4>);
-
-	#Fluiduct (Super Laminar)
-recipes.remove(<thermaldynamics:duct_16:6>);
-
-recipes.remove(<thermaldynamics:duct_0>);
-recipes.addShaped(<thermaldynamics:duct_0>*8, [
-	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
-	[<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
-	[<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);
+print("-------------------Thermal Suite End-------------------");

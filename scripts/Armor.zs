@@ -9,7 +9,7 @@ recipes.remove(<armorplus:obsidian_leggings>);
 recipes.remove(<armorplus:obsidian_boots>);
 
 recipes.remove(<silentgems:craftingmaterial:24>);
-recipes.addShaped(<silentgems:craftingmaterial:24>, [
+recipes.addShaped(<silentgems:craftingmaterial:24>*4, [
   [<ore:string>, <minecraft:flint>, <ore:string>],
   [<minecraft:flint>, <ore:wool>, <minecraft:flint>],
   [<ore:string>, <minecraft:flint>, <ore:string>]]);

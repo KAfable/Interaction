@@ -2,6 +2,7 @@ import loottweaker.vanilla.loot.LootTables;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Functions;
+import loottweaker.vanilla.loot.Conditions;
 import crafttweaker.item.IItemStack;
 
 print("----------------LootTables Start------------------");
@@ -114,26 +115,26 @@ mineshaftMain.removeEntry("astralsorcery:constellation_paper");
 	#Abandoned Mineshaft - Pool1
 var mineshaftPool1 = mineshaft.getPool("pool1");
 mineshaftPool1.setRolls(1, 1);
-/*
-mineshaftPool1.removeItemEntry(<minecraft:iron_ingot>);
-mineshaftPool1.removeItemEntry(<minecraft:gold_ingot>);
-mineshaftPool1.removeItemEntry(<minecraft:redstone>);
-mineshaftPool1.removeItemEntry(<minecraft:dye:5>);
-mineshaftPool1.removeItemEntry(<minecraft:diamond>);
-mineshaftPool1.removeItemEntry(<minecraft:coal>);
-mineshaftPool1.removeItemEntry(<minecraft:bread>);
-mineshaftPool1.removeItemEntry(<minecraft:melon_seeds>);
-mineshaftPool1.removeItemEntry(<minecraft:pumpkin_seeds>);
-mineshaftPool1.removeItemEntry(<minecraft:beetroot_seeds>);*/
+
+mineshaftPool1.removeEntry("minecraft:iron_ingot");
+mineshaftPool1.removeEntry("minecraft:gold_ingot");
+mineshaftPool1.removeEntry("minecraft:redstone");
+mineshaftPool1.removeEntry("minecraft:dye:5");
+mineshaftPool1.removeEntry("minecraft:diamond");
+mineshaftPool1.removeEntry("minecraft:coal");
+mineshaftPool1.removeEntry("minecraft:bread");
+mineshaftPool1.removeEntry("minecraft:melon_seeds");
+mineshaftPool1.removeEntry("minecraft:pumpkin_seeds");
+mineshaftPool1.removeEntry("minecraft:beetroot_seeds");
 mineshaftPool1.addItemEntryHelper(<silentgems:enchantmenttoken:256>, 20, 0, [], []);
 	#Abandoned Mineshaft - Pool2
 var mineshaftPool2 = mineshaft.getPool("pool2");
-/*
-mineshaftPool2.removeItemEntry(<minecraft:rail>);
-mineshaftPool2.removeItemEntry(<minecraft:golden_rail>);
-mineshaftPool2.removeItemEntry(<minecraft:detector_rail>);
-mineshaftPool2.removeItemEntry(<minecraft:activator_rail>);
-*/
+
+mineshaftPool2.removeEntry("minecraft:rail");
+mineshaftPool2.removeEntry("minecraft:golden_rail");
+mineshaftPool2.removeEntry("minecraft:detector_rail");
+mineshaftPool2.removeEntry("minecraft:activator_rail");
+
 	#Abandoned Mineshaft - Reliquary
 var mineshaftReliquary = mineshaft.getPool("xreliquary_inject_pool");
 	#Abandoned Mineshaft - IC2
@@ -175,6 +176,12 @@ var botaniaBSMain = botaniaBS.getPool("main");
 var gGuardian1 = LootTables.getTable("botania:gaia_guardian");
 	#Botania - Gaia Guardian 2
 var gGuardian2 = LootTables.getTable("gaia_guardian_2");
+
+	#Climber
+//var climber = LootTables.getTable("dmonsters:climber");
+//var climberPool = climber.getPool("dmonsters:climber");
+//climberPool.removeEntry("minecraft:emerald");
+
 	#Desert Pyramid
 var pyramid = LootTables.getTable("minecraft:chests/desert_pyramid");
 	#Desert Pyramid - Main
@@ -291,19 +298,29 @@ iceCaveGemPool.addItemEntry(<abyssalcraft:shadowgem>, 1, 0);
 	#Enderman
 var enderman = LootTables.getTable("minecraft:entities/enderman");
 var endermanMain = enderman.getPool("main");
-endermanMain.removeEntry("minecraft:ender_pearl");
-//endermanMain.addItemEntryJSON(<minecraft:ender_pearl>, 1, 0, [
-//	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'", 
-//	"count: {min: 0.0, max: 1.0}, function: 'minecraft:looting_enchant'"],
-//	[]);
+var endermanGuaranteed = enderman.addPool("guaranteedPearl", 1, 1, 0, 0);
+endermanGuaranteed.addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [], [Conditions.killedByPlayer()]);
+
+	#Entrail
+//var entrail = LootTables.getTable("dmonsters:entrail");
+//var entrailPool = entrail.getPool("dmonsters:entrail");
+//entrailPool.removeEntry("minecraft:redstone");
+
+	#Freezer
+//var freezer = LootTables.getTable("dmonsters:freezer");
+//var freezerPool = freezer.getPool("dmonsters:freezer");
+//freezerPool.removeEntry("minecraft:diamond_horse_armor");
 
 	#Fishing - Treasure
-var fishingTreasure = LootTables.getTable("minecraft:gameplay\fishing\treasure");
+var fishingTreasure = LootTables.getTable("minecraft:gameplay/fishing/treasure");
 var fishingTreasureMain = fishingTreasure.getPool("main");
+
 fishingTreasureMain.removeEntry("minecraft:bow");
-fishingTreasureMain.addItemEntryHelper(<minecraft:bow>, 1, 0, [Functions.enchantWithLevels(1, 2, false)], []);
+fishingTreasureMain.addItemEntryHelper(<minecraft:bow>, 1, 0, [Functions.enchantWithLevels(1, 2, false)], [], "bowNerfed");
 fishingTreasureMain.removeEntry("minecraft:book");
-fishingTreasureMain.addItemEntryHelper(<minecraft:book>, 1, 0, [Functions.enchantWithLevels(1, 2, true)], []);
+fishingTreasureMain.addItemEntryHelper(<minecraft:book>, 1, 0, [Functions.enchantWithLevels(1, 2, true)], [], "bookNerfed");
+fishingTreasureMain.removeEntry("minecraft:fishing_rod");
+fishingTreasureMain.addItemEntryHelper(<minecraft:fishing_rod>, 1, 0, [Functions.enchantWithLevels(1, 30, true)], [], "rodSlightlyNerfed");
 
 	#Jungle Temple
 var temple = LootTables.getTable("minecraft:chests/jungle_temple");
@@ -372,13 +389,14 @@ simpleDungeon.removePool("randomthings:biomeCrystal");
 	#Spider
 var spider = LootTables.getTable("minecraft:entities/spider");
 var spiderPool1 = spider.getPool("pool1");
-//spiderPool1.removeItemEntry(<minecraft:spider_eye>);
-//spiderPool1.addItemEntryJSON(<minecraft:spider_eye>, 20, 0, [
-//	"count: {min: 1.0, max: 1.0}, function: 'minecraft:set_count'"], []);
+spiderPool1.removeItemEntry(<minecraft:spider_eye>);
+var spiderGuaranteed = spider.addPool("guaranteedEye", 1, 1, 0, 0);
+spiderGuaranteed.addItemEntryHelper(<minecraft:spider_eye>, 1, 0, [], [Conditions.killedByPlayer()]);
+
 	#Stranger - Deadly Monsters
-var stranger = LootTables.getTable("dmonsters:stranger");
-var strangerPool = stranger.getPool("dmonsters:stranger");
-//strangerPool.removeItemEntry(<minecraft:redstone>);
+//var stranger = LootTables.getTable("dmonsters:stranger");
+//var strangerPool = stranger.getPool("dmonsters:stranger");
+//strangerPool.removeEntry("minecraft:redstone");
 	#Village - Blacksmith
 var blacksmith = LootTables.getTable("minecraft:chests/village_blacksmith");
 	#Village - Blacksmith Main

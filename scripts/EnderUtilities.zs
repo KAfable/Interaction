@@ -1,9 +1,12 @@
 
 
 print("---------------------------------Embers/Soot Start-----------------------------------");
-	#Ender Steel
+	#Ender Alloy
 recipes.remove(<enderutilities:enderpart>);
 #Check MicorCrafting for the recipes
+
+	#Ebder Ally (Enchanced)
+recipes.remove(<enderutilities:enderpart:1>);
 
 	#Nullfier
 recipes.remove(<enderutilities:nullifier>);

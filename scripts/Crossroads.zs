@@ -135,6 +135,20 @@ recipes.addShaped(<crossroads:heat_cable_copper_dirt>, [
   [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
   [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
+  #Fluid Tube
+recipes.remove(<crossroads:fluid_tube>);
+recipes.addShaped(<crossroads:fluid_tube>*4, [
+  [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+  [null, null, null],
+  [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]]);
+
+  #Heat Exchanger
+recipes.remove(<crossroads:heat_exchanger>);
+recipes.addShaped(<crossroads:heat_exchanger>, [
+  [<ore:plateIron>, <ore:plateCopper>, <ore:plateIron>],
+  [<ore:plateCopper>, <ore:rotorCopper>, <ore:plateCopper>],
+  [<ore:plateIron>, <ore:plateCopper>, <ore:plateIron>]]);
+
   #Gears
 recipes.remove(<crossroads:gear_iron>);
 recipes.addShapeless(<crossroads:gear_iron>, [<ore:gearIron>, <crossroads:axle>]);
@@ -157,6 +171,13 @@ recipes.addShaped(<crossroads:rotary_pump>, [
   [plateBronze, stickIron, plateBronze],
   [plateBronze, stickIron, plateBronze],
   [<ore:blockGlass>, stickIron, <ore:blockGlass>]]);
+
+  #Steam Boiler
+recipes.remove(<crossroads:steam_boiler>);
+recipes.addShaped(<crossroads:steam_boiler>, [
+  [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+  [<ore:plateBronze>, <thermalexpansion:tank>, <ore:plateBronze>],
+  [<ore:plateCopper>, <ore:blockCopper>, <ore:plateCopper>]]);
 
   #Grindstone
 //addRecipe(IItemStack input, IIngredient output1, @Optional IIngredient output2, @Optional IIngredient output3)

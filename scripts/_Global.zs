@@ -212,7 +212,7 @@ global plateCopper as IItemStack = <thermalfoundation:material:320>;
 global plateElectrum as IItemStack = <thermalfoundation:material:353>;
 global plateEnderium as IItemStack = <thermalfoundation:material:359>;
 global plateFluxedElectrum as IItemStack = <redstonearsenal:material:128>;
-global plateGlowstone as IItemStack = <contenttweaker:material_part:135>;
+global plateGlowstone as IItemStack = <contenttweaker:material_part:151>;
 global plateInvar as IItemStack = <thermalfoundation:material:354>;
 global plateIridium as IItemStack = <thermalfoundation:material:327>;
 global plateIron as IItemStack = <thermalfoundation:material:32>;
@@ -282,6 +282,8 @@ global robotArmDivine as IItemStack = <contenttweaker:divinerobotarm>;
 	#Rotor
 //global rotor as IItemStack = ;
 global rotorSteel as IItemStack = <contenttweaker:material_part:99>;
+global rotorCopper as IItemStack = <contenttweaker:material_part:27>;
+
 	#Sensors
 global sensorBasic as IItemStack = <contenttweaker:basicsensor>;
 global sensorIntermediate as IItemStack = <contenttweaker:intermediatesensor>;

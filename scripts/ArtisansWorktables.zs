@@ -12,32 +12,32 @@ recipes.addShaped(<artisanworktables:worktable:5>, [
 	#blacksmiths_hammer
 function makeBlacksmithHammerCraftRecipe(output as IItemStack, handle as IIngredient, head as IIngredient){
 	recipes.addShaped(output, [
-		[head, head, head],
+		[head, <minecraft:string>, head],
 		[head, handle, head],
 		[null, handle, null]]);
 }
 var hammerIngredients = [
-	[<artisanworktables:blacksmiths_hammer_wood>, <ore:stickWood>, <ore:logWood>],
-	[<artisanworktables:blacksmiths_hammer_flint>, <ore:stickWood>, <ore:flint>],
-	[<artisanworktables:blacksmiths_hammer_bone>, <ore:stickWood>, <ore:bone>],
-	[<artisanworktables:blacksmiths_hammer_diamond>, <ore:stickWood>, <ore:gemDiamond>],
-	[<artisanworktables:blacksmiths_hammer_bronze>, <ore:stickRubber>, <ore:ingotBronze>],
-	[<artisanworktables:blacksmiths_hammer_copper>, <ore:stickRubber>, <ore:ingotCopper>],
-	[<artisanworktables:blacksmiths_hammer_constantan>, <ore:stickRubber>, <ore:ingotConstantan>],
-	[<artisanworktables:blacksmiths_hammer_electrum>, <ore:stickRubber>, <ore:ingotElectrum>],
-	[<artisanworktables:blacksmiths_hammer_invar>, <ore:stickRubber>, <ore:ingotInvar>],
-	[<artisanworktables:blacksmiths_hammer_lead>, <ore:stickRubber>, <ore:ingotLead>],
-	[<artisanworktables:blacksmiths_hammer_nickel>, <ore:stickRubber>, <ore:ingotNickel>],
-	[<artisanworktables:blacksmiths_hammer_platinum>, <ore:stickRubber>, <ore:ingotPlatinum>],
-	[<artisanworktables:blacksmiths_hammer_aluminum>, <ore:stickRubber>, <ore:ingotAluminum>],
-	[<artisanworktables:blacksmiths_hammer_tin>, <ore:stickRubber>, <ore:ingotTin>],
-	[<artisanworktables:blacksmiths_hammer_silver>, <ore:stickRubber>, <ore:ingotSilver>],
-	[<artisanworktables:blacksmiths_hammer_steel>, <ore:stickRubber>, <ore:ingotStee;>],
-	[<artisanworktables:blacksmiths_hammer_gold>, <ore:stickRubber>, <ore:ingotGold>],
-	[<artisanworktables:blacksmiths_hammer_iron>, <ore:stickRubber>, <ore:ingotIron>],
-	[<artisanworktables:blacksmiths_hammer_terrasteel>, <ore:livingwoodTwig>, <ore:ingotTerrasteel>],
-	[<artisanworktables:blacksmiths_hammer_manasteel>, <ore:livingwoodTwig>, <ore:ingotManasteel>],
-	[<artisanworktables:blacksmiths_hammer_elementium>, <ore:livingwoodTwig>, <ore:ingotElementium>]
+	[<artisanworktables:artisans_hammer_wood>, <ore:stickWood>, <ore:logWood>],
+	[<artisanworktables:artisans_hammer_flint>, <ore:stickWood>, <ore:flint>],
+	[<artisanworktables:artisans_hammer_bone>, <ore:stickWood>, <ore:bone>],
+	[<artisanworktables:artisans_hammer_diamond>, <ore:stickWood>, <ore:gemDiamond>],
+	[<artisanworktables:artisans_hammer_bronze>, <ore:stickRubber>, <ore:ingotBronze>],
+	[<artisanworktables:artisans_hammer_copper>, <ore:stickRubber>, <ore:ingotCopper>],
+	[<artisanworktables:artisans_hammer_constantan>, <ore:stickRubber>, <ore:ingotConstantan>],
+	[<artisanworktables:artisans_hammer_electrum>, <ore:stickRubber>, <ore:ingotElectrum>],
+	[<artisanworktables:artisans_hammer_invar>, <ore:stickRubber>, <ore:ingotInvar>],
+	[<artisanworktables:artisans_hammer_lead>, <ore:stickRubber>, <ore:ingotLead>],
+	[<artisanworktables:artisans_hammer_nickel>, <ore:stickRubber>, <ore:ingotNickel>],
+	[<artisanworktables:artisans_hammer_platinum>, <ore:stickRubber>, <ore:ingotPlatinum>],
+	[<artisanworktables:artisans_hammer_aluminum>, <ore:stickRubber>, <ore:ingotAluminum>],
+	[<artisanworktables:artisans_hammer_tin>, <ore:stickRubber>, <ore:ingotTin>],
+	[<artisanworktables:artisans_hammer_silver>, <ore:stickRubber>, <ore:ingotSilver>],
+	[<artisanworktables:artisans_hammer_steel>, <ore:stickRubber>, <ore:ingotStee;>],
+	[<artisanworktables:artisans_hammer_gold>, <ore:stickRubber>, <ore:ingotGold>],
+	[<artisanworktables:artisans_hammer_iron>, <ore:stickRubber>, <ore:ingotIron>],
+	[<artisanworktables:artisans_hammer_terrasteel>, <ore:livingwoodTwig>, <ore:ingotTerrasteel>],
+	[<artisanworktables:artisans_hammer_manasteel>, <ore:livingwoodTwig>, <ore:ingotManasteel>],
+	[<artisanworktables:artisans_hammer_elementium>, <ore:livingwoodTwig>, <ore:ingotElementium>]
 	] as IIngredient[][];
 
 for i in hammerIngredients {

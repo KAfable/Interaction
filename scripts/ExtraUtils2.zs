@@ -3,7 +3,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 
 print("Extra Utilities 2 Start");
-
+	
+	#Crusher
+recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}), true);
 
 	#Pipes
 recipes.remove(<extrautils2:pipe>);
@@ -110,5 +112,26 @@ recipes.addShaped(<extrautils2:scanner>, [
 	[<ore:stone>, <minecraft:spider_eye>, <ore:stone>],
 	[<ore:stone>, <extrautils2:redstoneclock>, <ore:stone>],
 	[<ore:stone>, gearRedstone, <ore:stone>]]);
+
+	#Upgrade - Base
+recipes.remove(<extrautils2:ingredients:9>);
+recipes.addShaped(<extrautils2:ingredients:9>, [
+	[null, <ore:plateRedstone>, null],
+	[<ore:plateRedstone>, circuitBasic, <ore:plateRedstone>],
+	[null, <ore:plateRedstone>, null]]);
+	
+	#Upgrade - Mining
+	
+	#Upgrade - Speed 
+recipes.remove(<extrautils2:ingredients:6>);
+recipes.addShaped(<extrautils2:ingredients:6>, [
+	[null, plateGlowstone, null],
+	[null, <extrautils2:ingredients:9>, null],
+	[null, <ore:manaPearl>, null]]);
+	#Upgrade - Speed (Magical)
+recipes.remove(<extrautils2:ingredients:15>);
+	#Upgrade - Speed (Ultimate)
+recipes.remove(<extrautils2:ingredients:16>);
+	#Upgrade - Stack
 
 print("-----------------------------Extra Utilities 2 End--------------------------");

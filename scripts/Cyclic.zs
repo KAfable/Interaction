@@ -6,6 +6,10 @@ import crafttweaker.item.IIngredient;
 recipes.remove(<cyclicmagic:tool_auto_torch>);
 //Make this recipe an astral sorcery related recipes
 	
+	#Boat Charm
+recipes.remove(<cyclicmagic:charm_boat>);
+mods.botania.ManaInfusion.addInfusion(<cyclicmagic:charm_boat>, <minecraft:boat>, 1000);
+
 	#Climbing Glove
 recipes.remove(<cyclicmagic:glove_climb>);
 recipes.addShaped(<cyclicmagic:glove_climb>, [

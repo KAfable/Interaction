@@ -2,8 +2,7 @@
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.artisanworktables.Worktable;
-import mods.artisanworktables.IRecipeBuilder;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 print("-------------- Calculator Start --------------");
 
@@ -32,6 +31,9 @@ recipes.remove(<sonarcore:reinforcedstoneblock>);
 recipes.addShaped(<sonarcore:reinforcedstoneblock>,[
 	[ingotReinforcedStone, ingotReinforcedStone],
 	[ingotReinforcedStone, ingotReinforcedStone]]);
+
+	#Stone Separator
+recipes.remove(<calculator:stoneseparator>);
 	
 	#Tool Removal
 val calcRemoved = [
@@ -48,10 +50,11 @@ recipes.removeByRegex("sonarcore:tile.stableglass84");
 recipes.addShaped(<sonarcore:stableglass>*4, [
 	[<ore:blockGlass>, plateRubber],
 	[plateRubber, <ore:blockGlass>]]);
-Worktable.createRecipeBuilder("basic")
+
+RecipeBuilder.get("basic")
     .setShapeless([<ore:blockGlass>, <ore:blockGlass>])
     .setFluid(<liquid:rubber> * 288)
-    .setTool(<ore:blacksmiths_cutters>, 4)
+    .addTool(<ore:artisansCutters>, 4)
     .addOutput(<sonarcore:stableglass>*4)
     .create();
 

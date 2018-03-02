@@ -146,7 +146,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("steelBasic", "basic_ebf", 1200)
 	.addEnergyPerTickInput(4000)
 	.addItemInput(<ore:ingotIron>, 2)
 	.addItemInput(<ore:dustCoal>, 1)
-	.addItemOutput(ingotSteel)
+	.addItemOutput(ingotSteel*2)
 	.build();
 	#Steel Ingot - Oxygen
 mods.modularmachinery.RecipeBuilder.newBuilder("steelBasicEfficient", "basic_ebf", 600)

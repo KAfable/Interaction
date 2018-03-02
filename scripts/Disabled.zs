@@ -195,24 +195,6 @@ var energyDisabled = [
 for item in energyDisabled{
   mods.jei.JEI.removeAndHide(item);}
 
-////////////////////
-//Environmental Tech
-////////////////////
-/*var etDisabled = [
-  <environmentaltech:lightning_rod>,
-  <environmentaltech:lightning_rod_insulated>,
-  <environmentaltech:void_ore_miner_cont_1>,
-  <environmentaltech:void_ore_miner_cont_2>,
-  <environmentaltech:void_ore_miner_cont_3>,
-  <environmentaltech:void_ore_miner_cont_4>,
-  <environmentaltech:void_ore_miner_cont_5>,
-  <environmentaltech:void_ore_miner_cont_6>,
-  <environmentaltech:thermal_cell>]
-  as IItemStack[];
-
-for item in etDisabled{
-  mods.jei.JEI.removeAndHide(item);}*/
-
 /////////
 // Flight
 /////////

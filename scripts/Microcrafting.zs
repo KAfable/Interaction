@@ -2,9 +2,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.artisanworktables.Worktable;
-import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeBuilder as mmRecBuild;
 import mods.modularmachinery.RecipePrimer;
+import mods.artisanworktables.builder.RecipeBuilder as awRecBuild;
 
 print("--------------------------Microcrafting Start-------------------------");
 
@@ -82,15 +82,33 @@ print("--------------------------Dense Plate Recipes Intialized ----------------
 recipes.remove(dustAluminum);
   #Copper Dust
 recipes.remove(dustCopper);
+  #Lapis Lazuli
+awRecBuild.get("basic")
+  .setShapeless([<ore:oreLapis>])
+  .addOutput(<minecraft:dye:4>*6)
+  .addTool(<ore:toolHammer>, 4)
+  .create();
+
+  #Redstone Dust
+awRecBuild.get("basic")
+  .setShapeless([<ore:oreRedstone>])
+  .addOutput(<minecraft:redstone>*6)
+  .addTool(<ore:toolHammer>, 4)
+  .create();
+
 print("--------------------------Dust Recipes Intialized -------------------------");
 
 print("--------------------------Foil Recipes Intialized -------------------------");
 
 function makeGearCraftRecipe(output as IItemStack, input1 as IIngredient, input2 as IIngredient) {
-  Worktable.addRecipeShaped( "basic", output, <ore:toolHammer>, 4, false, [
-    [input2, input1, input2],
-    [input1, <ore:gearWood>, input1],
-    [input2, input1, input2]]);
+  awRecBuild.get("basic")
+    .setShaped([
+      [input2, input1, input2],
+      [input1, <ore:gearWood>, input1],
+      [input2, input1, input2]])
+    .addTool(<ore:toolHammer>, 4)
+    .addOutput(output)
+    .create();
 }
 
 function makeGearCastingRecipe(output as IItemStack, cast as IItemStack, molten as ILiquidStack) {
@@ -319,8 +337,13 @@ function cleanPlateRecipes(plate as IItemStack) {
 
   #Hammer Shapeless Recipes
 function makeHammerPlate(plate as IItemStack, ingot as IIngredient) {
-  Worktable.addRecipeShapeless("basic", plate, <ore:toolHammer>, 1, 
-    [ingot, ingot, ingot, ingot]);}
+  awRecBuild.get("basic")
+    .setShapeless([ingot, ingot, ingot, ingot])
+    .addTool(<ore:toolHammer>, 1)
+    .addOutput(plate)
+    .create();
+}
+
   #Squeezer Plate Recipes
 function makeSqueezerPlateRecipe(plate as IItemStack, ingot as IItemStack) {
   mods.integrateddynamics.Squeezer.addRecipe(ingot, plate, 1 as float);}
@@ -444,12 +467,12 @@ function makeStickCraftRecipe(output as IItemStack, input as IIngredient){
 }
 
 function makeStickWorktableRecipe(output as IItemStack, input as IIngredient) {
-  Worktable.createRecipeBuilder("basic")
-  .setShaped([[input],[input]])
-  .addTool(<ore:blacksmiths_cutters>, 5)
-  .setFluid(<fluid:lava>*125)
-  .addOutput(output)
-  .create();
+  awRecBuild.get("basic")
+    .setShaped([[input],[input]])
+    .addTool(<ore:artisansCutters>, 5)
+    .setFluid(<fluid:lava>*125)
+    .addOutput(output)
+    .create();
 }
 
   #Abyssalnite Rod
@@ -479,8 +502,12 @@ function makeRotorCraftRecipe(output as IItemStack, primary as IIngredient, core
     [null, primary, null]]);
 }
 
+  #Copper Rotor
+makeRotorCraftRecipe(rotorCopper, <ore:plateCopper>, ringCopper);
   #Steel Rotor
 makeRotorCraftRecipe(rotorSteel, plateSteel, ringSteel);
+
+
 
 print("--------------------------Rotor Recipes Intialized -------------------------");
 
@@ -497,8 +524,12 @@ furnace.addRecipe(<techreborn:nuggets:18>*nuggetAmt,           <contenttweaker:i
 
 	#Impure Ores
 function makeImpureOreCraftRecipe(dust as IItemStack, ore as IIngredient) {
-  Worktable.addRecipeShapeless("basic", dust, <ore:toolHammer>, 1, 
-    [ore]);}
+  awRecBuild.get("basic")
+    .setShapeless([ore])
+    .addTool(<ore:toolHammer>, 1)
+    .addOutput(dust)
+    .create();
+}
 
 makeImpureOreCraftRecipe(<contenttweaker:impuredustabyssalnite>, <ore:oreAbyssalnite>);
 makeImpureOreCraftRecipe(<contenttweaker:impuredustgold>, <ore:oreGold>);
