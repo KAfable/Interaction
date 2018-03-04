@@ -92,7 +92,7 @@ mods.initialinventory.InvHandler.addStartingItem(<akashictome:tome>.withTag(
 				tag:{
 					"akashictome:definedMod": "extrautils2"
 			},
-					Damage: 0 as short
+				Damage: 0 as short
 			}, 
 		actuallyadditions: {
 				id: "actuallyadditions:item_booklet",
