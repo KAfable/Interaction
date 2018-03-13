@@ -11,10 +11,8 @@ import crafttweaker.item.IIngredient;
 <xtones:zome:15>.displayName = "Base Alchemical Beacon";
 mods.skyresources.fusion.addRecipe(<xtones:zome:15>, [<minecraft:obsidian>], 0.75);
 
-//Temp Recipe until Pure Daisy Fix
-recipes.addShapeless(<xtones:zome:12>,[<xtones:zome:15>, <botania:specialflower>.withTag({type: "puredaisy"}).giveBack()]);
-
-mods.botania.PureDaisy.addRecipe(<xtones:zome:15>, <xtones:zome:12>, 1200);
+  #Base Alchemical Beacon
+mods.botania.PureDaisy.addRecipe(<xtones:zome:15>, <xtones:zome:12>, 10);
 
   #Alchemical Baseplate Tier 1
 <xtones:zeta:12>.displayName = "Alchemical Baseplate (Tier 1)";

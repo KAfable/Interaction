@@ -14,11 +14,26 @@ recipes.addShapeless(<nuclearcraft:dominos>, [
 	<minecraft:cooked_mutton>, <minecraft:brown_mushroom>, <minecraft:brown_mushroom>]);
 
 
+	#Infinite Water Source - Tier 1
+recipes.remove(<nuclearcraft:water_source>);
+mods.abyssalcraft.InfusionRitual.addRitual("InfiniteWaterRitual", 0, -1, 100, true, 
+	<nuclearcraft:water_source>,
+	<botania:vial>, 
+	[<ore:gemAquamarine>, <ore:plateIron>, <ore:gemAquamarine>, 
+	<ore:plateIron>, <ore:gemAquamarine>, <ore:plateIron>, 
+	<ore:gemAquamarine>, <ore:plateIron>]); 
+game.setLocalization("ac.ritual.infusionRitualTest", "Infinite Water Source"); 
+game.setLocalization("ac.ritual.infusionRitualTest.desc", "Early stage magic block for novice mages.");
+recipes.addShaped(<nuclearcraft:water_source>, [
+	[<ore:gemAquamarine>, <ore:plateIron>, <ore:gemAquamarine>],
+	[<ore:plateIron>, <evilcraft:weather_container:2>, <ore:plateIron>],
+	[<ore:gemAquamarine>, <ore:plateIron>, <ore:gemAquamarine>]]);
 
-#Tier 2 Machines
-
-
-
+	#Infinite Water Source - Tier 2 (Compact)
+recipes.remove(<nuclearcraft:water_source_compact>);
+	
+	#Infinite Water Source - Tier 3 (Dense)
+recipes.remove(<nuclearcraft:water_source_dense>);
 
 
 

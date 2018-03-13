@@ -9,15 +9,18 @@ recipes.addShaped(<randomthings:blockbreaker>, [
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
 
 	#Item Collector
-recipes.remove(<cyclicmagic:block_vacuum>);
-recipes.addShaped(<cyclicmagic:block_vacuum>, [
-	[plateReinforcedStone, <minecraft:lever>, plateReinforcedStone],
+recipes.remove(<randomthings:itemcollector>);
+recipes.addShaped(<randomthings:itemcollector>, [
+	[plateReinforcedStone, null, plateReinforcedStone],
 	[<ore:hopper>, <ore:chestWood>, <ore:hopper>],
 	[<ore:hopper>, <ore:enderpearl>, <ore:hopper>]]);
-recipes.addShaped(<cyclicmagic:block_vacuum>, [
-	[<ore:plateIron>, <minecraft:lever>, <ore:plateIron>],
+recipes.addShaped(<randomthings:itemcollector>, [
+	[<ore:plateIron>, null, <ore:plateIron>],
 	[<ore:hopper>, <ore:chestWood>, <ore:hopper>],
 	[<ore:hopper>, <ore:enderpearl>, <ore:hopper>]]);
+
+	#Item Collector - Advanced
+recipes.remove(<randomthings:advanceditemcollector>);
 
 	#Lapis Lamp
 recipes.remove(<randomthings:lapislamp>);

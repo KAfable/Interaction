@@ -83,8 +83,6 @@ val cauldronRemoved = [
 	<bigreactors:dustmetals>,
 	<draconicevolution:draconium_dust>,
 	<evilcraft:dark_gem>,
-	<fp:dust:12044>,
-	<fp:dust:14186>,
 	<immersiveengineering:metal:9>,
 	<immersiveengineering:metal:10>,
 	<immersiveengineering:metal:11>,
@@ -93,13 +91,6 @@ val cauldronRemoved = [
 	<immersiveengineering:metal:14>,
 	<immersiveengineering:metal:18>,
 	<immersiveengineering:metal:19>,
-	<ic2:dust:4>,
-	<ic2:dust:7>,
-	<ic2:dust:8>,
-	<ic2:dust:10>,
-	<ic2:dust:11>,	// Lithium
-	<ic2:dust:14>,
-	<ic2:dust:17>,
 	<mekanism:dust:2>,
 	<minecraft:emerald>,
 	<minecraft:diamond>,
@@ -219,9 +210,7 @@ mods.skyresources.infusion.addRecipe(cow_egg, <minecraft:wheat>*10, <minecraft:f
 mods.skyresources.infusion.addRecipe(chicken_egg, <harvestcraft:fruitbaititem>*10, <minecraft:farmland>, 19);
 mods.skyresources.infusion.addRecipe(sheep_egg, <harvestcraft:grainbaititem>*10, wool, 19);
 mods.skyresources.infusion.addRecipe(pig_egg, <harvestcraft:veggiebaititem>*10, <minecraft:farmland>, 19);
-
 mods.skyresources.infusion.addRecipe(<minecraft:nether_wart>, <minecraft:netherrack>*8, <harvestcraft:pamwhitemushroomcrop>, 10);
-
 mods.skyresources.infusion.removeRecipe(<minecraft:reeds>);
 
 	#Plant Matter

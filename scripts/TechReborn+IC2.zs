@@ -8,9 +8,16 @@ print("--------------------TechReborn Start-----------------------");
 recipes.remove(<techreborn:part:30>);
 	#Advanced Processor / Energy Flow Circuit
 recipes.remove(processorAdvanced);
+
+
 	#Bauxite Dust
 recipes.removeByRegex("thermalfoundation:dust_19");
 recipes.remove(<techreborn:smalldust:5>);
+
+	#Copper Dust / Small Pile of Copper Dust
+mods.jei.JEI.removeAndHide(<techreborn:dust:14>);
+mods.jei.JEI.removeAndHide(<techreborn:smalldust:14>);
+
 	#Electronic Circuit
 recipes.remove(<techreborn:part:29>);
 recipes.addShaped(circuitBasic, [
@@ -44,28 +51,18 @@ mods.jei.JEI.removeAndHide(<techreborn:iron_furnace>);
 recipes.remove(<techreborn:iron_alloy_furnace>);
 recipes.addShaped(<techreborn:iron_alloy_furnace>, [
 	[plateRefinedIron, plateRefinedIron, plateRefinedIron],
-	[<ic2:te:46>, null,<ic2:te:46>],
+	[plateRefinedIron, null, <natura:netherrack_furnace>],
 	[plateRefinedIron, plateRefinedIron, plateRefinedIron]]);
-recipes.addShaped(<techreborn:iron_alloy_furnace>, [
-	[plateRefinedIron, plateRefinedIron, plateRefinedIron],
-	[<ic2:te:46>, null, <natura:netherrack_furnace>],
-	[plateRefinedIron, plateRefinedIron, plateRefinedIron]]);
+
+	#Pickaxes
+	#Pickaxe - Bronze
+mods.jei.JEI.removeAndHide(<techreborn:bronzepickaxe>);
+
+	#Rubber
+mods.techreborn.extractor.removeInputRecipe(<ore:slimeball>);
+mods.techreborn.extractor.removeInputRecipe(<techreborn:part:31>);
+mods.techreborn.extractor.removeInputRecipe(<techreborn:rubber_sapling>);
+mods.techreborn.extractor.removeInputRecipe(<techreborn:rubber_log>);
 
 print("--------------------TechReborn End-----------------------");
-
-print("------------------------IC2 Start-------------------------");
-	#Bronze Dust Removal
-recipes.remove(<techreborn:dust:7>);
-recipes.remove(<ic2:dust>);
-	#Electronic Circuit
-recipes.remove(<ic2:crafting:1>);
-	#Machine Casing
-recipes.remove(<ic2:resource:12>);
-	#Rubber
-<ore:materialResin>.add(<ic2:misc_resource:4>);
-
-
-
-
-print("------------------------IC2 End-------------------------");
 

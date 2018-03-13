@@ -1,12 +1,15 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+print("----------------Tiny Progressions Start----------------");
+
 recipes.remove(<tp:obsidian_helmet>);
 recipes.remove(<tp:obsidian_chestplate>);
 recipes.remove(<tp:obsidian_boots>);
 recipes.remove(<tp:obsidian_leggings>);
 
-//Battleaxes recipes removed, only used for Armoreable Mobs
+
+	#Battleaxes recipes removed, only used for Armoreable Mobs
 var baxeRemoved = [
 	<tp:stone_battle>,
 	<tp:iron_battle>,
@@ -17,6 +20,10 @@ var baxeRemoved = [
 	] as IItemStack[];
 for i in baxeRemoved {
 	recipes.remove(i);}
+
+	#Cooked Apple
+furnace.remove(<tp:cooked_apple>);
+
 	#Obsidian Sword
 recipes.remove(<tp:obsidian_sword>);
 	#Medkit
@@ -60,3 +67,13 @@ recipes.remove(<tp:growth_upgrade>);
 	#Growth Crystal (Tier 3)
 recipes.remove(<tp:growth_upgrade_two>);
 <tp:growth_block>.addTooltip("WIP for Tier 8 recipe");
+
+	#Reinforced Glass
+recipes.remove(<tp:reinforced_glass>);
+<tp:reinforced_glass>.addTooltip(format.aqua("Recipes WIP"));
+
+	#Toasted Bread
+furnace.remove(<tp:toasted_bread>);
+mods.jei.JEI.removeAndHide(<tp:toasted_bread>);
+
+print("-----------------Tiny Progressions End-----------------");

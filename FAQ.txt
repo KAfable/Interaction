@@ -26,7 +26,7 @@ Back to Block ID's, given an established limit of 4096 blocks, let's say a mod l
 
 	j. Minecolonies - During my pack's development, this seemed somewhat buggy for 1.12.2, and I was having a difficult time figuring out how to include it in progression.
 
-	k. Steve's Carts Reborn - 
+	k. Steve's Carts Reborn - This was hard to fit into progression, and while the idea of carts and moving entites is neate for early game automation (and makes for some great gameplay), I was unsure how much of it has changed since 1.7.10 or its status regarding bugs. Investigating this won't take long, but I also wasn't motivated as I felt I had enough early game content for the pack already.
 
 	l. Magneticcraft - the 1.12.2 version at the time didn't have the crafttweaker support sufficient enough for me to integrate it into the pack to make it worth using, and it also had far less features at the time than it's 1.7.10 version
 
@@ -73,6 +73,14 @@ Back to Block ID's, given an established limit of 4096 blocks, let's say a mod l
 	ag. Quark - oh boy. Originally had this specifically for its enhanced dungeon generation, and using the realistic terrain settings. In the end Doomlike Dungeons was better suited to my needs and configurability, and I found out I could use JED/Dimensional Control to manually alter generator settings myself. The other large collection of features I may have originally wanted were not significant enough to justify the Block ID's used.
 
 	ah. Powered Thingies - This used to be in the pack for a long time, I originally meant it to be as a slower/basic version of the Modular Machine multiblocks due to the flexibility of the proposed crafttweaker support of its machines. However the documentation didn't seem very clear to me, and I wasn't even sure how to remove a recipe or even clear all of the recipe registry despite looking at the documentation. This, combined with the redundancy of Modular Machinery, made me decide that it was just too reundant with the pack. The animal gym is a pretty amusing way to generate RF though.
+
+	aj. IC2 - I couldn't find a way to implement IC2 uniquely, and the main reasons for including it were suddenly becoming redundat (early game Rubber compat with Forestry was fixed after I requested for TR sap support, overclocking sytem could be replicated to a degree with Modular Machinery, the Replicator system can be replaced by MO's replication system whenever Coded gets the motivattion to do so). That pretty much left only Quantum Armor, and the EU energy system, both of which are unique enough to build enough mod interactions on (I mean the existence of EU is anti-interaction to a degree, since it's own energy system)
+
+	ak. Twilight Forest - The allure of the revamped sweet Naga Courtyard and the potential to finish the final castle wasn't worth the performance cost of the Twilight, especially in a pack as large as this. Also given the size of the Twilight Forest, it  greatly prolong the early game (which isn't a bad thing independently but I also have had content mods doing that as well), as the Twilight Forest gets outsized in terms of power by other mobs/mods quickly. This is probably the only time in the pack where bigger wasn't better, and in a smaller pack with a TF focus, it would be a very solid addition.
+
+	al. Futurepack - As a tech mod goes, FP is pretty expansive, however it was a combination of using too many block ID's and having too much reundancy with other tech mods. The main reason I wanted it was due to the worldgen it offered with the TecDungeons as well as the ability to go to space / other planets (I'm a big fan of the Tyros planet and was looking to alter its oregen and use Ruins in combiation to add a lot of variety in the structures). However, in the end, I was also biased towards Matter Overdrive to handle of the space travel (biased due to CodedOne's vision for the future of the mod).
+
+	am. Automated Redstone - it was a bit too much for what I wanted in the pack, I didn't want players to be creatin their own 16bit computers in minecraft - and this seemed to be pushing it over the top, and away from the game experience I wanted, instead I opted for SimpleLogic
 
 
 ================================================

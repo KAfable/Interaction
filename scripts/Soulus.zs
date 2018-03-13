@@ -1,5 +1,9 @@
 
 print("-------------- Soulus Start --------------");
+
+	#Books via Bark Recipe
+recipes.removeByRegex("soulus:misc/bark_book");
+
 	#Unloader
 recipes.remove(<soulus:unloader>);
 recipes.addShaped(<soulus:unloader>, [	

@@ -9,9 +9,20 @@ import crafttweaker.item.IIngredient;
 
 print("----------------Tinkers Construct Start-------------");
 
+  #Books - Pattern
+recipes.removeByRegex("tconstruct:tools/book");
+
   #Crafting Station
 recipes.remove(<tconstruct:tooltables>);
 recipes.addShapeless(<tconstruct:tooltables>, [<cyclicmagic:block_workbench>]);
+
+  #EFLN
+recipes.remove(<tconstruct:throwball:1>);
+<tconstruct:throwball:1>.addTooltip(format.aqua("Tier 4 Recipe WIP"));
+
+  #Grout
+recipes.remove(<tconstruct:soil>);
+
   #Lava
 tcm.addRecipe(<liquid:lava> * 1000, <skyresources:blazepowderblock>);
 
@@ -34,9 +45,6 @@ mods.skyresources.combustion.addRecipe(<tconstruct:edible:1>, [<minecraft:slime_
 mods.skyresources.combustion.removeRecipe(<tconstruct:edible:2>);
 mods.skyresources.combustion.addRecipe(<tconstruct:edible:2>, [<minecraft:slime_ball>, <botania:dye:10>*2], 350);
 
-  #Grout
-recipes.remove(<tconstruct:soil>);
-
   #Seared Brick
 furnace.remove(<tconstruct:materials>);
 mods.skyresources.combustion.addRecipe(<tconstruct:materials>*16, [
@@ -58,9 +66,16 @@ var itemDisabled = [
 for item in itemDisabled {
   mods.jei.JEI.removeAndHide(item);}
 
+
+  #Slime Boots
 recipes.remove(<tconstruct:slime_boots>);
+  #Slime Boots - Blue Slime
 recipes.remove(<tconstruct:slime_boots:1>);
+  #Slime Boots - Purple Slime
 recipes.remove(<tconstruct:slime_boots:2>);
+  #Congealed BLood Boots
+recipes.remove(<tconstruct:slime_boots:3>);
+  #Slime Boots - Orange
 recipes.remove(<tconstruct:slime_boots:4>);
 
   #Drying
@@ -69,17 +84,7 @@ tcd.addRecipe(<minecraft:leather>, <tconstruct:edible:10>, 6000);
 
   #Molten Recipes - mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
   #Iron
-tcm.removeRecipe( <liquid:iron>);
-tcm.addRecipe(    <liquid:iron>*16,     <minecraft:iron_nugget>);
-tcm.addRecipe(    <liquid:iron>*96,     <contenttweaker:impuredustiron>);
-tcm.addRecipe(    <liquid:iron>*144,    <thermalfoundation:material:32>);
-tcm.addRecipe(    <liquid:iron>*144,    <thermalfoundation:material>);
-tcm.addRecipe(    <liquid:iron>*576,    <thermalfoundation:material:24>);
-tcm.addRecipe(    <liquid:iron>*720,    <minecraft:minecart>);
-tcm.addRecipe(    <liquid:iron>*144,    <immersiveengineering:material:1>);
-tcm.addRecipe(    <liquid:iron>*1152,   <minecraft:iron_horse_armor>);
-tcm.addRecipe(    <liquid:iron>*1152,   <tconstruct:large_plate>.withTag({Material: "iron"}));
-tcm.addRecipe(    <liquid:iron>*1296,   <minecraft:iron_block>);
+
 
   #Copper
 tcm.removeRecipe( <liquid:copper>);
@@ -122,7 +127,6 @@ var basinDisabled = [
   <thermalfoundation:storage_alloy:4>,
   <abyssalcraft:ingotblock>,
   <abyssalcraft:ingotblock:1>,
-  <ic2:resource:10>,
   <techreborn:storage:2>,
   <techreborn:storage:3>,
   <techreborn:storage:5>,
@@ -137,13 +141,6 @@ for item in basinDisabled {
 var tableDisabled = [
   <tconstruct:cast_custom:3>,
   <tconstruct:cast_custom:4>,
-  <ic2:plate:0>,
-  <ic2:ingot:1>,
-  <ic2:ingot:5>,
-  <ic2:ingot:6>,
-  <ic2:ingot:7>,
-  <ic2:plate:8>,
-  <ic2:resource:5>,
   <thermalfoundation:material:24>,
   <thermalfoundation:material:32>,
   <thermalfoundation:material:33>,

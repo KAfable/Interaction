@@ -1,6 +1,0 @@
-
-{
-  "Name": "FP-Crawler",
-  "Registry ID": "fp:crawler",
-  "Class": "futurepack.common.entity.EntityCrawler"
-}
