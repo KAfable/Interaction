@@ -57,7 +57,7 @@ function makeEBFBasicGasRecipes(input as IOreDictEntry, gas as ILiquidStack, out
         } as string[int];
 
 	for key, value in ebf_tiers {
-		var recipeName = output.name ~"-gas-" ~value;
+		var recipeName = output.name~input.name ~"-gas-" ~value;
 		var overclockedTime = max(1, time/(pow(2,key)));
 		var overclockedRate = eRate*(pow(4, key));
 		mods.modularmachinery.RecipeBuilder.newBuilder(recipeName, value, overclockedTime)
@@ -132,6 +132,7 @@ furnace.remove(<ore:ingotAluminum>);
 makeEBFBasicRecipes(<ore:dustAluminum>, ingotAluminum, 4000, 1200);
 	#Aluminum Ingot - Efficient
 makeEBFBasicGasRecipes(<ore:dustAluminum>, <liquid:nitrogen>*1000, ingotAluminum, 2000, 600);
+
 	#Refined Coralium Ingot - Coralium Chunk
 makeEBFBasicRecipes(<ore:chunkCoralium>, ingotRefinedCoralium, 1000, 200);
 	#Refined Coralium Ingot - Coralium Dust
@@ -140,6 +141,7 @@ makeEBFBasicRecipes(<ore:dustLiquifiedCoralium>, ingotRefinedCoralium, 1000, 200
 makeEBFBasicGasRecipes(<ore:chunkCoralium>, <liquid:nitrogen>*1000, ingotRefinedCoralium, 500, 100);
 	#Refined Coralium Ingot - Nitrogen - Coralium Dust
 makeEBFBasicGasRecipes(<ore:dustLiquifiedCoralium>, <liquid:nitrogen>*1000, ingotRefinedCoralium, 500, 100);
+
 	#Steel Ingot
 furnace.remove(<ore:ingotSteel>);
 mods.modularmachinery.RecipeBuilder.newBuilder("steelBasic", "basic_ebf", 1200)

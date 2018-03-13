@@ -89,7 +89,6 @@ var functionalLoot = [
 	<botania:holycloak>,
 	<botania:unholycloak>,
 	<botania:balancecloak>,
-	<torchmaster:mega_torch:1>,
 	<cyclicmagic:soulstone>
 	] as IItemStack[];
 	#Tool Loot Rewards
@@ -119,7 +118,7 @@ mineshaftPool1.setRolls(1, 1);
 mineshaftPool1.removeEntry("minecraft:iron_ingot");
 mineshaftPool1.removeEntry("minecraft:gold_ingot");
 mineshaftPool1.removeEntry("minecraft:redstone");
-mineshaftPool1.removeEntry("minecraft:dye:5");
+mineshaftPool1.removeEntry("minecraft:dye");
 mineshaftPool1.removeEntry("minecraft:diamond");
 mineshaftPool1.removeEntry("minecraft:coal");
 mineshaftPool1.removeEntry("minecraft:bread");
@@ -137,8 +136,6 @@ mineshaftPool2.removeEntry("minecraft:activator_rail");
 
 	#Abandoned Mineshaft - Reliquary
 var mineshaftReliquary = mineshaft.getPool("xreliquary_inject_pool");
-	#Abandoned Mineshaft - IC2
-mineshaft.removePool("ic2");
 	#Abandoned Mineshaft - Forestry Tools
 mineshaft.removePool("forestry_factory_items");
 	#Abandoned Mineshaft - Random Things
@@ -148,12 +145,12 @@ var mineshaftBotania = mineshaft.getPool("botania_inject_pool");
 	#Astral Sorcery Shrine
 val astralshrine = LootTables.getTable("astralsorcery:chest_shrine");
 val astralChest = astralshrine.getPool("astralsorcery:chest_shrine");
-/*
-astralChest.removeItemEntry(<minecraft:emerald>);
-astralChest.removeItemEntry(<minecraft:diamond>);
-astralChest.removeItemEntry(<minecraft:bone>);
-astralChest.removeItemEntry(<minecraft:glowstone_dust>);
-*/
+
+astralChest.removeEntry("minecraft:emerald");
+astralChest.removeEntry("minecraft:diamond");
+astralChest.removeEntry("minecraft:bone");
+astralChest.removeEntry("minecraft:glowstone_dust");
+
 astralChest.addItemEntryHelper(<abyssalcraft:essence>, 20, 0, [], []);
 astralChest.addItemEntryHelper(<randomthings:itemcollector>, 10, 0, [], []);
 astralChest.addItemEntryHelper(<astralsorcery:itemhandtelescope>, 5, 0, [], []);
@@ -210,8 +207,6 @@ pyramidPool1.removeEntry("minecraft:string");
 pyramidPool1.removeEntry("minecraft:sand");
 	#Desert Pyramid - Reliquary
 var pyramidReliquary = 	pyramid.getPool("xreliquary_inject_pool");
-	#Desert Pyramid - IC2
-pyramid.removePool("ic2");
 	#Desert Pyramid - Forestry Factory Items
 pyramid.removePool("forestry_factory_items");
 	#Desert Pyramid - Forestry Bees
@@ -245,7 +240,6 @@ fireCaveSwordPool.addItemEntry(<cyclicmagic:sword_ender>, 1, 0);
 
 var fireCaveGeneralPool = fireCave.addPool("generalLoot", -2, 1, 0, 0);
 fireCaveGeneralPool.addItemEntry(<soulus:summoner>, 1, 0);
-fireCaveGeneralPool.addItemEntry(<twilightforest:magic_map_focus>, 4, 0);
 fireCaveGeneralPool.addItemEntry(<darkutils:ender_tether>, 20, 0);
 fireCaveGeneralPool.addItemEntryHelper(dustSulfur, 20, 0, [Functions.setCount(1, 4)], []);
 fireCaveGeneralPool.addItemEntryHelper(<bhc:red_heart>, 35, 0, [Functions.setCount(2, 5)], []);
@@ -283,7 +277,6 @@ iceCaveSwordPool.addItemEntry(<cyclicmagic:sword_ender>, 1, 0);
 
 var iceCaveGeneralPool = iceCave.addPool("generalLoot", -2, 1, 0, 0);
 iceCaveGeneralPool.addItemEntry(<soulus:summoner>, 1, 0);
-iceCaveGeneralPool.addItemEntry(<twilightforest:magic_map_focus>, 4, 0);
 iceCaveGeneralPool.addItemEntry(<darkutils:ender_tether>, 20, 0);
 iceCaveGeneralPool.addItemEntryHelper(dustSaltpeter, 20, 0, [Functions.setCount(1, 4)], []);
 iceCaveGeneralPool.addItemEntryHelper(<bhc:red_heart>, 35, 0, [Functions.setCount(2, 5)], []);
@@ -329,8 +322,6 @@ var templeMain = temple.getPool("main");
 templeMain.removeEntry("minecraft:diamond");
 	#Jungle Temple - Reliquary
 var templeReliquary = temple.getPool("xreliquary_inject_pool");
-	#Jungle Temple - IC2
-temple.removePool("ic2");
 	#Jungle Temple - Random Things
 temple.removePool("randomthings:slimeCube");
 temple.removePool("randomthings:biomeCrystal");
@@ -372,8 +363,6 @@ simpleDungeonPool2.removeEntry("minecraft:bone");
 simpleDungeonPool2.removeEntry("minecraft:gunpowder");
 simpleDungeonPool2.removeEntry("minecraft:rotten_flesh");
 simpleDungeonPool2.removeEntry("minecraft:string");
-	#Simple Dungeon - ic2
-simpleDungeon.removePool("ic2");
 	#Simple Dungeon - reliquary
 var simpleDungeonReliquary = simpleDungeon.getPool("xreliquary_inject_pool");
 	#Simple Dungeon - Randomt Things Lava Charm
@@ -389,9 +378,8 @@ simpleDungeon.removePool("randomthings:biomeCrystal");
 	#Spider
 var spider = LootTables.getTable("minecraft:entities/spider");
 var spiderPool1 = spider.getPool("pool1");
-spiderPool1.removeItemEntry(<minecraft:spider_eye>);
-var spiderGuaranteed = spider.addPool("guaranteedEye", 1, 1, 0, 0);
-spiderGuaranteed.addItemEntryHelper(<minecraft:spider_eye>, 1, 0, [], [Conditions.killedByPlayer()]);
+spiderPool1.removeEntry("minecraft:spider_eye");
+spiderPool1.addItemEntryHelper(<minecraft:spider_eye>, 1, 0, [], []);
 
 	#Stranger - Deadly Monsters
 //var stranger = LootTables.getTable("dmonsters:stranger");
@@ -422,8 +410,6 @@ var blacksmithMain = blacksmith.getPool("main");
 	for i in blacksmithMainRemoved {blacksmithMain.removeEntry(i);}
 	#Village - Blacksmith Reliquary
 var blacksmithReliquary = blacksmith.getPool("randomthings:magicHood");
-	#Village - Blacksmith IC2
-blacksmith.removePool("ic2");
 	#Village - Blacksmith Random Things Magic Hood
 blacksmith.removePool("randomthings:magicHood");
 	#Village - Blacksmith Random Things biome Crystal

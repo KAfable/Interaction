@@ -3,40 +3,12 @@
     {
       "match": {
         "blocks": {
-          "type": "WHITELIST",
           "blocks": [
-            "minecraft:lapis_ore:0"
+            "minecraft:redstone_ore:0",
+            "minecraft:lit_redstone_ore"
           ]
         }
-
       },
-      "replaceStrategy": "REPLACE_ALL",
-      "drops": [
-        {
-          "item": {
-            "items": [
-              "minecraft:lapis_ore:0"
-            ]
-          }
-        }
-      ]
-    },
-
-
-
-
-    {
-      "match": {
-        "blocks": {
-          "type": "WHITELIST",
-          "blocks": [
-            "minecraft:redstone_ore:*",
-            "minecraft:lit_redstone_ore:*"
-          ]
-        }
-
-      },
-      "replaceStrategy": "REPLACE_ALL",
       "drops": [
         {
           "item": {
@@ -44,57 +16,118 @@
               "minecraft:redstone_ore:0"
             ]
           },
-          "xp": {
-            "fixed": 0
-          }
+          "xpReplaceStrategy": "REPLACE"
         }
       ]
     },
 
 
 
-        {
+    {
       "match": {
         "blocks": {
-          "type": "WHITELIST",
           "blocks": [
-            "minecraft:coal_ore:*"
+            "minecraft:lapis_ore:0"
           ]
         }
-
       },
-      "replaceStrategy": "REPLACE_ALL",
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "minecraft:lapis_ore:0"
+            ]
+          },
+          "xpReplaceStrategy": "REPLACE"
+        }
+      ]
+    },
+
+
+
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:coal_ore:0"
+          ]
+        }
+      },
       "drops": [
         {
           "item": {
             "items": [
               "minecraft:coal_ore:0"
             ]
-          }
+          },
+          "xpReplaceStrategy": "REPLACE"
         }
       ]
     },
 
 
 
-        {
+    {
       "match": {
         "blocks": {
-          "type": "WHITELIST",
+          "blocks": [
+            "minecraft:redstone_ore:0",
+            "minecraft:lit_redstone_ore"
+          ]
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "minecraft:redstone_ore:0"
+            ]
+          },
+          "xpReplaceStrategy": "REPLACE"
+        }
+      ]
+    },
+
+
+
+    {
+      "match": {
+        "blocks": {
           "blocks": [
             "forestry:resources:0"
           ]
         }
-
       },
-      "replaceStrategy": "REPLACE_ALL",
       "drops": [
         {
           "item": {
             "items": [
               "forestry:resources:0"
             ]
-          }
+          },
+          "xpReplaceStrategy": "REPLACE"
+        }
+      ]
+    },
+
+
+
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "abyssalcraft:coraliumore:0"
+          ]
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items": [
+              "abyssalcraft:coraliumore:0"
+            ]
+          },
+          "xpReplaceStrategy": "REPLACE"
         }
       ]
     }

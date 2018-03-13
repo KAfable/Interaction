@@ -33,9 +33,9 @@ global conveyorDivine as IItemStack = <contenttweaker:divineconveyor>;
 	#Circuits
 global circuitBasic as IItemStack = <techreborn:part:29>;
 circuitBasic.displayName = "Basic Circuit";
-global circuitIntermediate as IItemStack = <ic2:crafting:1>;
+global circuitIntermediate as IItemStack = <matteroverdrive:isolinear_circuit>;
 circuitIntermediate.displayName = "Intermediate Circuit";
-global circuitAdvanced as IItemStack = <ic2:crafting:2>;
+global circuitAdvanced as IItemStack = <techreborn:part:30>;
 circuitAdvanced.displayName = "Advanced Circuit";
 global circuitElite as IItemStack = <appliedenergistics2:material:18>;
 circuitElite.displayName = "Elite Circuit";
@@ -56,6 +56,7 @@ global dustBauxite as IItemStack = <techreborn:dust:5>;
 global dustRubber as IItemStack = <contenttweaker:material_part:83>;
 global dustSaltpeter as IItemStack = <thermalfoundation:material:772>;
 global dustSulfur as IItemStack = <thermalfoundation:material:771>;
+global dustBronze as IItemStack = <thermalfoundation:material:99>;
 
 	#Energy Cables
 global fluxductBasic as IItemStack = <thermaldynamics:duct_0>;
@@ -117,6 +118,7 @@ global gearConstantan as IItemStack = <thermalfoundation:material:292>;
 global gearSignalum as IItemStack = <thermalfoundation:material:293>;
 global gearLumium as IItemStack = <thermalfoundation:material:294>;
 global gearEnderium as IItemStack = <thermalfoundation:material:295>;
+global gearRefinedIron as IItemStack = <contenttweaker:material_part:190>;
 
 	#Ingots
 global ingotManasteel as IItemStack = <botania:manaresource>;
@@ -187,7 +189,8 @@ global casingDivine	as IItemStack = <actuallyadditions:block_misc:8>;
 casingDivine.displayName = "Divine Machine Casing";
 
 	#Misc
-global itemRubber as IItemStack = <ic2:crafting>;
+global itemRubber as IItemStack = <techreborn:part:32>;
+global itemSap as IItemStack = <techreborn:part:31>;
 
 	#Motors
 global motorBasic as IItemStack = <contenttweaker:basicmotor>;
@@ -217,7 +220,6 @@ global plateInvar as IItemStack = <thermalfoundation:material:354>;
 global plateIridium as IItemStack = <thermalfoundation:material:327>;
 global plateIron as IItemStack = <thermalfoundation:material:32>;
 global plateGold as IItemStack = <thermalfoundation:material:33>;
-global plateLapis as IItemStack = <ic2:plate:4>;
 global plateLead as IItemStack = <thermalfoundation:material:323>;
 global plateLumium as IItemStack = <thermalfoundation:material:358>;
 global plateMithril as IItemStack = <thermalfoundation:material:328>;
@@ -231,6 +233,8 @@ global plateTin as IItemStack = <thermalfoundation:material:321>;
 global plateSignalum as IItemStack = <thermalfoundation:material:357>;
 global plateSilver as IItemStack = <thermalfoundation:material:322>;
 global plateSteel as IItemStack = <thermalfoundation:material:352>;
+global plateObsidian as IItemStack = <techreborn:plates:9>;
+global plateLapis as IItemStack = <contenttweaker:material_part:262>;
 
 	#Processor
 global processorBasic as IItemStack = <actuallyadditions:item_worm>;
@@ -295,6 +299,9 @@ global sensorLudicrous as IItemStack = <contenttweaker:ludicroussensor>;
 global sensorDivine as IItemStack = <contenttweaker:divinesensor>;
 
 	#Stick
+global stickAbyssalnite as IItemStack = <contenttweaker:material_part:3>;
+global stickBronze as IItemStack = <contenttweaker:material_part:116>;
+global stickCopper as IItemStack = <contenttweaker:material_part:24>;
 global stickFluxInfused as IItemStack = <redstonearsenal:material:193>;
 global stickIron as IItemStack = <immersiveengineering:material:1>;	
 global stickRedstone as IItemStack = <contenttweaker:material_part:60>;

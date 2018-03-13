@@ -4,6 +4,17 @@ import crafttweaker.oredict.IOreDictEntry;
 
 print("------------------------Custom Items Start-------------------------");
 
+	#Creosote Soaked Pellet
+furnace.setFuel(<contenttweaker:creosotepellet>, 5000);
+recipes.addShaped(<contenttweaker:creosotepellet>, [
+	[null, <minecraft:paper>, null],
+	[<minecraft:paper>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <minecraft:paper>],
+	[null, <minecraft:paper>, null]]);
+recipes.addShaped(<contenttweaker:creosotepellet>, [
+	[null, <ore:dustWood>, null],
+	[<ore:dustWood>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:dustWood>],
+	[null, <ore:dustWood>, null]]);
+
 #Basic Tier
 	#Basic Motor
 recipes.addShaped(motorBasic, [
@@ -20,6 +31,8 @@ recipes.addShaped(conveyorBasic, [
 	[plateRubber, plateRubber, plateRubber],
 	[motorBasic, fluxductBasic, motorBasic],
 	[plateRubber, plateRubber, plateRubber]]);
+recipes.addShapeless(<thermaldynamics:servo>, [conveyorBasic]);
+
 	#Basic Electric Piston
 recipes.addShaped(electricPistonBasic, [
 	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],

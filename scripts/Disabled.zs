@@ -29,7 +29,6 @@ furnace.remove(<forestry:ingot_tin>,    <forestry:resources:2>);
 furnace.remove(<crossroads:ingot_tin>,  <crossroads:ore_tin>);
 furnace.remove(<abyssalcraft:tiningot>, <ore:oreTin>);
 furnace.remove(<techreborn:ingot:13>,   <ore:oreTin>);
-furnace.remove(<fp:itemerze>,           <ore:oreTin>);
 furnace.remove(<ore:ingotIron>,         <ore:oreIron>);
 furnace.remove(<ore:ingotZinc>,         <ore:oreZinc>);
 furnace.remove(<ore:ingotAluminum>,     <ore:oreAluminum>);
@@ -104,10 +103,6 @@ var armorRedundant = [
   <techreborn:bronzeleggings>,
   <techreborn:bronzechestplate>,
   <techreborn:bronzeboots>,
-  <ic2:bronze_helmet>,
-  <ic2:bronze_leggings>,
-  <ic2:bronze_chestplate>,
-  <ic2:bronze_boots>,
   <mekanismtools:bronzechestplate>,
   <mekanismtools:bronzeleggings>,
   <mekanismtools:bronzehelmet>,
@@ -147,9 +142,7 @@ for item in cycDisabled{
 ///////
 // Dust
 var dustDisabled = [
-  <ic2:dust:7>,
   <immersiveengineering:metal:19>,
-  <ic2:dust:14>,
   <immersiveengineering:metal:12>,
   <immersiveengineering:metal:11>,
   <immersiveengineering:metal:18>,
@@ -164,7 +157,6 @@ var dustDisabled = [
   <mekanism:dust:1>,
   <actuallyadditions:item_dust:1>,
   <techreborn:dust:27>,
-  <ic2:dust:8>,
   <actuallyadditions:item_dust>,
   <mekanism:dust>
   ] as IItemStack[];
@@ -246,14 +238,6 @@ for item in immDisabled{
 <immersiveengineering:wooden_device1>.addTooltip(format.red("Disabled"));
 <immersiveengineering:material:10>.addTooltip(format.red("Disabled"));
 
-  #IC2
-var ic2Disabled = [
-  <ic2:te:50>]
-  as IItemStack[];
-
-for item in ic2Disabled{
-    recipes.remove(item);}
-
 ////////////////////////////
 //Ingots & Plates & Blocks
 /////////////////////////////
@@ -273,29 +257,6 @@ var ipDisabled = [
   <forestry:resource_storage:1>,
   <forestry:resource_storage:2>,
   <forestry:resource_storage:3>,
-  <fp:erz_blocke:2>,
-  <fp:erz_blocke>,
-  <fp:itemerze:1>,
-  <fp:itemerze:2>,
-  <fp:itemerze>,
-  <fp:spaceship:13>,
-  <ic2:ingot:1>,
-  <ic2:ingot:2>,
-  <ic2:ingot:3>,
-  <ic2:ingot:4>,
-  <ic2:ingot:5>,
-  <ic2:ingot:6>,
-  <ic2:plate:1>,
-  <ic2:plate:2>,
-  <ic2:plate:3>,
-  <ic2:plate:5>,
-  <ic2:plate:7>,
-  <ic2:plate:8>,
-  <ic2:plate>,
-  <ic2:resource:5>,
-  <ic2:resource:6>,
-  <ic2:resource:8>,
-  <ic2:resource:9>,
   <immersiveengineering:metal:1>,
   <immersiveengineering:metal:2>,
   <immersiveengineering:metal:3>,
@@ -406,12 +367,6 @@ var mineralsDisabled = [
   <crossroads:ore_tin>,
   <forestry:resources:1>,
   <forestry:resources:2>,
-  <fp:erze>,
-  <fp:erze:2>,
-  <fp:erze:3>,
-  <ic2:resource:1>,
-  <ic2:resource:2>,
-  <ic2:resource:3>,
   <immersiveengineering:ore>,
   <immersiveengineering:ore:1>,
   <immersiveengineering:ore:2>,
@@ -461,7 +416,6 @@ for item in toolRedundant {
 /////////
 var wepRedundant = [
   <techreborn:bronzesword>,
-  <ic2:bronze_sword>,
   <thermalfoundation:tool.sword_bronze>,
   <tp:flint_sword>]
   as IItemStack[];

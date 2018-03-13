@@ -1,6 +1,6 @@
 
 {
-  "ID": 80,
+  "ID": 53,
   "Name": "Autumnal Woods",
   "Resource Location": "traverse:autumnal_woods",
   "Class": "prospector.traverse.world.biomes.BiomeAutumnalWoods",
@@ -107,6 +107,18 @@
     {
       "Entity Class": "flaxbeard.cyberware.common.entity.EntityCyberZombie",
       "Weight": 15,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "matteroverdrive.entity.monster.EntityMeleeRougeAndroidMob",
+      "Weight": 25,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "matteroverdrive.entity.monster.EntityRangedRogueAndroidMob",
+      "Weight": 25,
       "Min Group Count": 1,
       "Max Group Count": 2
     }

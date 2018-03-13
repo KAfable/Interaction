@@ -1,60 +1,61 @@
 {
-	"*": {
-		"*": {
-			"minecraft:skeleton": {
-				"spawn_chance": 1.0,
-				"drops": {
-					"all": {
-						"has_xp": true,
-						"whitelisted_drops": [
-							"*"
-						],
-						"blacklisted_drops": [
-							"minecraft:bone"
-						]
-					}
-				}
-			},
-			"minecraft:stray": {
-				"spawn_chance": 1.0,
-				"drops": {
-					"all": {
-						"has_xp": true,
-						"whitelisted_drops": [
-							"*"
-						],
-						"blacklisted_drops": [
-							"minecraft:bone"
-						]
-					}
-				}
-			},
-			"minecraft:wither_skeleton": {
-				"spawn_chance": 1.0,
-				"drops": {
-					"all": {
-						"has_xp": true,
-						"whitelisted_drops": [
-							"*"
-						],
-						"blacklisted_drops": [
-							"minecraft:bone"
-						]
-					}
-				}
-			},
-			"*": {
-				"spawn_chance": 1.0,
-				"drops": {
-					"all": {
-						"has_xp": true,
-						"whitelisted_drops": [
-							"*"
-						],
-						"blacklisted_drops": []
-					}
-				}
-			}
-		}
-	}
+  "*": {
+    "*": {
+      "minecraft:skeleton": {
+        "spawn_chance": 1.0,
+        "drops": {
+          "all": {
+            "has_xp": true,
+            "whitelisted_drops": [
+              "*"
+            ],
+            "blacklisted_drops": []
+          }
+        }
+      },
+      "minecraft:stray": {
+        "spawn_chance": 1.0,
+        "drops": {
+          "all": {
+            "has_xp": true,
+            "whitelisted_drops": [
+              "*"
+            ],
+            "blacklisted_drops": []
+          }
+        }
+      },
+      "minecraft:wither_skeleton": {
+        "spawn_chance": 1.0,
+        "drops": {
+          "all": {
+            "has_xp": true,
+            "whitelisted_drops": [
+              "*"
+            ],
+            "blacklisted_drops": []
+          }
+        }
+      },
+      "*": {
+        "spawn_chance": 1.0,
+        "drops": {
+          "all": {
+            "has_xp": true,
+            "whitelisted_drops": [
+              "*"
+            ],
+            "blacklisted_drops": [
+              "soulus:bone_dry",
+              "soulus:bone_ender",
+              "soulus:bone_frozen",
+              "soulus:bone_fungal",
+              "soulus:bone_nether",
+              "soulus:bone_normal"
+            ]
+          }
+        }
+      }
+    }
+  }
 }

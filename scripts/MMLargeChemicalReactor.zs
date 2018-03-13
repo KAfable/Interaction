@@ -47,7 +47,7 @@ for i, tier in lcr_tiers {
 		var overclockedRate = 100*(pow(4, i));
 		mods.modularmachinery.RecipeBuilder.newBuilder(recipeName, tier, overclockedTime)
 			.addEnergyPerTickInput(overclockedRate)
-			.addItemInput(<ore:materialResin>, 3)
+			.addItemInput(<ore:dustRubber>, 3)
 			.addItemInput(<ore:dustSulfur>, 1)
 			.addFluidOutput(<liquid:rubber>*1296)
 			.build();

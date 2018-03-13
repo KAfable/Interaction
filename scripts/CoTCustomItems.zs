@@ -8,6 +8,7 @@ import mods.contenttweaker.Block;
 import mods.contenttweaker.PartBuilder;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.Fluid;
+import mods.contenttweaker.ActionResult;
 
   #Creating Rings
 mods.contenttweaker.MaterialSystem.getPartBuilder()
@@ -208,7 +209,21 @@ var iridiumParts = [
   "Rotor", 
   "Foil"] as string[];
 iridium.registerParts(iridiumParts);
-print("------------------Iridiumn parts initialized----------------------");
+print("------------------Iridium parts initialized----------------------");
+  #Lapis
+var lapis = MaterialSystem.getMaterialBuilder().setName("Lapis").setColor(2186684).build();
+var lapisParts = [
+  "Gear", 
+  "Bolt", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  ] as string[];
+lapis.registerParts(lapisParts);
+print("------------------Lapis parts initialized----------------------");
   #Redstone
 var redstone = MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(15209752).build();
 var redstoneParts = [
@@ -223,6 +238,24 @@ var redstoneParts = [
   ] as string[];
 redstone.registerParts(redstoneParts);
 print("------------------Redstone parts initialized----------------------");
+
+  #Refined Coralium
+var refinedCoralium = MaterialSystem.getMaterialBuilder().setName("Liquified Coralium").setColor(45869958).build();
+var refinedCoraliumParts = [ 
+  "Beam", 
+  "Gear", 
+  "Bolt", 
+  "Rod", 
+  "Plate", 
+  "Dense_Plate", 
+  "Crystal", 
+  "Crushed_Ore", 
+  "Casing", 
+  "Ring", 
+  "Rotor", 
+  "Foil"] as string[];
+refinedCoralium.registerParts(refinedCoraliumParts);
+
   #Refined Iron
 var refinedIron = MaterialSystem.getMaterialBuilder().setName("Refined Iron").setColor(14279653).build();
 var refinedIronParts = [
@@ -323,7 +356,7 @@ polyethylene.temperature = 1000;
 polyethylene.register();
 
   #Polytetrafluoroethylene
-var teflon = mods.contenttweaker.VanillaFactory.createFluid("Polytetrafluoroethylene", Color.fromHex("d9d9d9"));
+var teflon = mods.contenttweaker.VanillaFactory.createFluid("polytetrafluoroethylene", Color.fromHex("d9d9d9"));
 teflon.density = 10000;
 teflon.viscosity = 10000;
 teflon.temperature = 1000;
@@ -417,12 +450,16 @@ for lastTiers in lastTiers {
   }
 }
 
-// Celestial Motor
+  #Celestial Motor
 var astralMotor = VanillaFactory.createItem("astralmotor");
 astralMotor.glowing = true;
 astralMotor.register();
 
-//Dusts
+  #Creosote Soaked Pellet
+var creosotePellet = VanillaFactory.createItem("creosotepellet");
+creosotePellet.register();
+
+  #Dusts
 var impureDusts = [
   "impureDustBauxite",
   "impureDustIron",
@@ -437,6 +474,22 @@ var impureDusts = [
 
 for i in impureDusts {VanillaFactory.createItem(i).register();}
 
+  #Firestarter
+var firestarter = VanillaFactory.createItem("firestarter");
+
+firestarter.maxStackSize = 1;
+firestarter.maxDamage = 16;
+firestarter.onItemUse = function(player, world, pos, hand, facing, blockHit) {
+    var firePos = pos.getOffset(facing, 1);
+    if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
+        world.setBlockState(<block:minecraft:fire>, firePos);
+        player.getHeldItem(hand).damage(1, player);
+        return ActionResult.success();
+    }
+    return ActionResult.pass();
+};
+firestarter.register();
+
   #Wells
 var energized_well = VanillaFactory.createBlock("energized_well", <blockmaterial:rock>);
 energized_well.setLightValue(15);
@@ -446,7 +499,7 @@ var destabilized_well = VanillaFactory.createBlock("destabilized_well", <blockma
 destabilized_well.setLightValue(7);
 destabilized_well.register();
 
-//Sulfur Ore
+  #Sulfur Ore
 val oreSul = MaterialSystem.getMaterialBuilder().setName("Sulfur").setColor(13421568).build().registerPart("ore").getData();
 oreSul.addDataValue("drops", "thermalfoundation:material:771, thermalfoundation:material:771");
 oreSul.addDataValue("variants", "minecraft:stone,minecraft:netherrack");

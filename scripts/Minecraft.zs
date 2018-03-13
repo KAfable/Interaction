@@ -15,8 +15,7 @@ var boatArray = {
   <minecraft:birch_boat> : <minecraft:planks:2>,
   <minecraft:jungle_boat>: <minecraft:planks:3>,
   <minecraft:acacia_boat> : <minecraft:planks:4>,
-  <minecraft:dark_oak_boat>: <minecraft:planks:5>,
-  <ic2:boat:1> : <ic2:crafting>
+  <minecraft:dark_oak_boat>: <minecraft:planks:5>
   } as IItemStack[IItemStack];
 
 for output, input in boatArray {
@@ -70,7 +69,15 @@ recipes.addShaped(<minecraft:cauldron>, [
 
   #Charcoal
 furnace.remove(<minecraft:coal:1>, null);
-furnace.addRecipe(<minecraft:coal:1>, <skyresources:baseitemcomponent>*2);
+furnace.addRecipe(<minecraft:coal:1>, <skyresources:baseitemcomponent>);
+
+  #Coal
+furnace.remove(<minecraft:coal>);
+RecipeBuilder.get("basic")
+  .setShapeless([<ore:oreCoal>])
+  .addTool(<ore:toolHammer>, 1)
+  .addOutput(<minecraft:coal>)
+  .create();
 
   #Comparator
 recipes.remove(<minecraft:comparator>);
@@ -112,6 +119,7 @@ recipes.addShaped(<minecraft:furnace>, [
 
   #Glowstone
 recipes.removeByRegex("reliquary:items/uncrafting/glowstone_dust");
+mods.skyresources.combustion.removeRecipe(<minecraft:glowstone_dust>);
 
   #Gunpowder
 recipes.removeByRegex("natura:common/gunpowder");
@@ -123,21 +131,19 @@ RecipeBuilder.get("basic")
   .create();
 
 	#Hopper
-recipes.remove(<minecraft:hopper>);
 recipes.addShaped(<minecraft:hopper>, [
   [ingotReinforcedStone, null, ingotReinforcedStone],
   [ingotReinforcedStone, <wopper:wopper>, ingotReinforcedStone],
   [null, ingotReinforcedStone, null]]);
-recipes.addShaped(<minecraft:hopper>, [
-  [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
-  [<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
-  [null, <minecraft:iron_ingot>, null]]);
 
   #Iron Bars
 recipes.remove(<minecraft:iron_bars>);
 recipes.addShaped(<minecraft:iron_bars>*16, [
   [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>],
   [<ore:stickIron>, <ore:stickIron>, <ore:stickIron>]]);
+
+  #Lapis - Furance Removal
+furnace.remove(<minecraft:dye:4>);
 
   #Leather
 furnace.remove(<minecraft:leather>);

@@ -106,12 +106,41 @@ recipes.addShaped(<extrautils2:redstonelantern>, [
 	[<extrautils2:screen>, <extrautils2:redstoneclock>,<extrautils2:screen>],
 	[<minecraft:redstone>, gearRedstone, <minecraft:redstone>]]);
 
+	#Resonator
+recipes.remove(<extrautils2:resonator>);
+
+
 	#Scanner
 recipes.remove(<extrautils2:scanner>);
 recipes.addShaped(<extrautils2:scanner>, [
 	[<ore:stone>, <minecraft:spider_eye>, <ore:stone>],
 	[<ore:stone>, <extrautils2:redstoneclock>, <ore:stone>],
 	[<ore:stone>, gearRedstone, <ore:stone>]]);
+
+
+	#Spike - Iron
+var ironSwordUnbreaking3 = <minecraft:iron_sword>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]});
+recipes.remove(<extrautils2:spike_iron>);
+recipes.addShaped(<extrautils2:spike_iron>*2, [
+	[null, ironSwordUnbreaking3, null],
+	[ironSwordUnbreaking3, <minecraft:iron_block>, ironSwordUnbreaking3],
+	[<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>]]);
+	
+	#Spike - Gold (xp)
+var goldSwordUnbreaking3 = <minecraft:golden_sword>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]});
+recipes.remove(<extrautils2:spike_gold>);
+recipes.addShaped(<extrautils2:spike_gold>, [
+	[null, goldSwordUnbreaking3, null],
+	[goldSwordUnbreaking3, <extrautils2:decorativesolidwood:1>, goldSwordUnbreaking3],
+	[<extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood:1>]]);
+
+	#Spike - Diamond (xp + PLayer)
+recipes.remove(<extrautils2:spike_diamond>);
+
+	#Transfer Node - Items
+recipes.remove(<extrautils2:grocket>);
+	#Transfer Node - Fluids
+recipes.remove(<extrautils2:grocket:2>);
 
 	#Upgrade - Base
 recipes.remove(<extrautils2:ingredients:9>);
@@ -133,5 +162,10 @@ recipes.remove(<extrautils2:ingredients:15>);
 	#Upgrade - Speed (Ultimate)
 recipes.remove(<extrautils2:ingredients:16>);
 	#Upgrade - Stack
+recipes.remove(<extrautils2:ingredients:7>);
+recipes.addShaped(<extrautils2:ingredients:7>, [
+	[null, <ore:gearGold>, null],
+	[null, <extrautils2:ingredients:9>, null],
+	[null, valveBasic, null]]);
 
 print("-----------------------------Extra Utilities 2 End--------------------------");

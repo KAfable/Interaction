@@ -1,21 +1,7 @@
-import mods.immersiveengineering.AlloySmelter as alloy;
 import mods.immersiveengineering.MetalPress as metalpress;
-import mods.artisanworktables.Worktable;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 print("--------------------------------Immersive Engineering Start-------------------------------------");
-
-#Alloy Kiln
-	#Bronze
-alloy.addRecipe(<thermalfoundation:material:163>, <contenttweaker:impuredustcopper>,
-	<contenttweaker:impuredusttin>, 1200);
-	#Brass
-alloy.addRecipe(<techreborn:ingot:1>, <contenttweaker:impuredustcopper>,
-	<contenttweaker:impuredustzinc>, 1200);
-	#Refined iron
-furnace.remove(ingotRefinedIron);
-alloy.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>,
-	<minecraft:iron_ingot>, 1200);
-
 
   	#Blast Brick (disabled)
 mods.jei.JEI.removeAndHide(<immersiveengineering:stone_decoration:1>);
@@ -93,25 +79,43 @@ recipes.addShaped(<immersiveengineering:material:9>, [
 	[null, <ore:gearAbyssalnite>, null],
 	[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
 
+
 	#Wire - Aluminium
 recipes.remove(<immersiveengineering:material:22>);
-Worktable.addRecipeShapeless("basic", <immersiveengineering:material:22>, <ore:blacksmiths_cutters>, 2, 
-  [plateAluminum]);
+RecipeBuilder.get("basic")
+  .setShapeless([plateAluminum])
+  .addTool(<ore:artisansCutters>, 5)
+  .addOutput(<immersiveengineering:material:22>)
+  .create();
+
 	#Wire - Copper
 recipes.remove(<immersiveengineering:material:20>);
-Worktable.addRecipeShapeless("basic", <immersiveengineering:material:20>, <ore:blacksmiths_cutters>, 2, 
-  [plateCopper]);
+RecipeBuilder.get("basic")
+  .setShapeless([plateCopper])
+  .addTool(<ore:artisansCutters>, 5)
+  .addOutput(<immersiveengineering:material:20>)
+  .create();
+
 	#Wire - Electrum
 recipes.remove(<immersiveengineering:material:21>);
-Worktable.addRecipeShapeless("basic", <immersiveengineering:material:24>, <ore:blacksmiths_cutters>, 2, 
-  [plateElectrum]);
+RecipeBuilder.get("basic")
+  .setShapeless([plateElectrum])
+  .addTool(<ore:artisansCutters>, 5)
+  .addOutput(<immersiveengineering:material:21>)
+  .create();
+
 	#Wire - Steel
 recipes.remove(<immersiveengineering:material:23>);
-Worktable.addRecipeShapeless("basic", <immersiveengineering:material:23>, <ore:blacksmiths_cutters>, 2, 
-  [plateSteel]);
+RecipeBuilder.get("basic")
+  .setShapeless([plateSteel])
+  .addTool(<ore:artisansCutters>, 5)
+  .addOutput(<immersiveengineering:material:23>)
+  .create();
 
 	#LV Wire Coil
+
 	#MV Wire Coil
+
 	#HV Wire Coil
 
 print("--------------------------------Immersive Engineering End-------------------------------------");

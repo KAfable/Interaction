@@ -35,8 +35,6 @@ mods.jei.JEI.addDescription(<minecraft:lapis_ore>,"Spawns in the Surface World. 
 mods.jei.JEI.addDescription(<minecraft:redstone_ore>,"Spawns in the Surface World. Usually generates in veins of 32 x 32 blocks wide and 7 blocks tall mixed with stone with no biome restrictions.");
 	# Tin Ore
 mods.jei.JEI.addDescription(<thermalfoundation:ore:1>, "Spawns in the Surface World, Abyssal Wasteland, and [WIP]. Usually generates in veins of 32 x 32 blocks wide and 7 blocks tall mixed with stone with no biome restrictions.");
-	# Zinc Ore
-mods.jei.JEI.addDescription(<fp:erze:1>, "Spawns in the Surface World at lower elevations near lava. Usually generates in veins of 32 x 32 blocks wide and 7 blocks tall mixed with stone with no biome restrictions.");
 
 
 #Portal Block

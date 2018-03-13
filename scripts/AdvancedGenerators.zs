@@ -40,12 +40,7 @@ recipes.remove(<advgenerators:pressure_input>);
 recipes.remove(<advgenerators:pressure_output_select>);
 
 var agDisabled = [
-	<advgenerators:tesla_output>,
-	<advgenerators:eu_output_lv>,
-	<advgenerators:eu_output_mv>,
-	<advgenerators:eu_output_hv>,
-	<advgenerators:eu_output_ev>,
-	<advgenerators:eu_output_iv>] as IItemStack[];
+	<advgenerators:tesla_output>] as IItemStack[];
 
 for i in agDisabled {mods.jei.JEI.removeAndHide(i);}
 

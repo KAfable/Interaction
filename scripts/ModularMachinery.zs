@@ -5,7 +5,7 @@ import crafttweaker.liquid.ILiquidStack;
 print("--------------Modular Machinery Start----------------");
 
 #Casings
-	#Machine Gearbox
+	
 	#Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing>*2, [
@@ -15,6 +15,17 @@ recipes.addShaped(<modularmachinery:blockcasing>*2, [
 	#Machine Casing - Intermediate
 recipes.remove(<modularmachinery:blockcasing:4>);
 
+	#Machine Gearbox
+recipes.addShaped(<modularmachinery:blockcasing:3>, [
+	[plateBronze, <ore:gearAluminum>, plateBronze],
+	[<ore:gearAluminum>, casingBasic, <ore:gearAluminum>],
+	[plateBronze, <ore:gearAluminum>, plateBronze]]);
+
+	#Machine Circuitry
+recipes.addShaped(<modularmachinery:blockcasing:5>, [
+	[plateBronze, null, plateBronze],
+	[null, circuitBasic, null],
+	[plateBronze, null, plateBronze]]);
 
 #Input Busses
 	#Basic Item Input

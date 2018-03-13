@@ -2,7 +2,7 @@ import mods.crossroads.FluidCoolingChamber as fcc;
 import mods.crossroads.Grindstone as gs;
 
 print("---------------Crossroads Start------------------");
-print("----------------Crossroads End-------------------");
+
 
 
   #Fluid Cooling Chamber
@@ -40,9 +40,6 @@ mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:metal:5>);
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:ingots:5>);
 
 fcc.addRecipe(<thermalfoundation:material:128>, <liquid:copper>*144, 1000, 100);
-mods.tconstruct.Casting.removeBasinRecipe(<ic2:resource:6>);
-mods.tconstruct.Casting.removeTableRecipe(<ic2:ingot:2>);
-mods.tconstruct.Casting.removeTableRecipe(<ic2:plate:1>);
 
 fcc.addRecipe(<thermalfoundation:material:129>, <liquid:tin>*144, 1000, 100);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:129>);
@@ -74,9 +71,6 @@ mods.tconstruct.Casting.removeTableRecipe(<abyssalcraft:dreadiumingot>);
 fcc.addRecipe(<mekanism:ingot:4>, <liquid:steel>*144, 1000, 100);
 mods.tconstruct.Casting.removeTableRecipe(<mekanism:ingot:4>);
 
-fcc.addRecipe(<abyssalcraft:cingot>, <liquid:moltenrefinedcoralium>*144, 1000, 100);
-mods.tconstruct.Casting.removeTableRecipe(<abyssalcraft:cingot>);
-
 fcc.addRecipe(<thermalfoundation:material:130>, <liquid:silver>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:130>);
 
@@ -94,8 +88,6 @@ mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:164>);
 
 fcc.addRecipe(<thermalfoundation:material:165>, <liquid:signalum>*144, 1000, 400);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:165>);
-
-
 
   #Axle
 recipes.remove(<crossroads:axle>);
@@ -124,7 +116,7 @@ recipes.addShaped(<crossroads:heat_cable_copper_ice>, [
   [<minecraft:packed_ice>, <minecraft:packed_ice>, <minecraft:packed_ice>]]);
 
 recipes.removeShaped(<crossroads:heat_cable_copper_obsidian>);
-recipes.addShaped(<crossroads:heat_cable_copper_obsidian>, [
+recipes.addShaped(<crossroads:heat_cable_copper_obsidian>*3, [
   [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],
   [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
   [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
@@ -193,15 +185,15 @@ gs.addRecipe(<ore:gravel>, <minecraft:sand>, <minecraft:flint>);
 gs.removeRecipe(<ore:stone>);
 gs.addRecipe(<ore:stone>, <skyresources:techitemcomponent>);
 
-print("Copper Ore Removal Check");
+/*print("Copper Ore Removal Check");
   #Removing Initial Recipes
 gs.removeRecipe(<ore:oreCopper>);
 print("Copper Ore Removal Check");
-
+*/
   #Dust Recipes
 gs.addRecipe(<ore:oreIron>,                 <thermalfoundation:material>, <minecraft:sand>);
 gs.addRecipe(<ore:oreApatite>,              <forestry:apatite>*5, <minecraft:sand>);
-gs.addRecipe(<ore:oreCoal>,                 <minecraft:coal>*2, <minecraft:sand>);
+gs.addRecipe(<ore:oreCoal>,                 <minecraft:coal>, <minecraft:sand>);
 gs.addRecipe(<ore:oreGold>,                 <thermalfoundation:material:1>, <minecraft:sand>);
 gs.addRecipe(<ore:oreBauxite>,              dustBauxite, <minecraft:sand>);
 gs.addRecipe(<ore:oreTin>,                  <thermalfoundation:material:65>, <minecraft:sand>);
@@ -212,12 +204,10 @@ gs.addRecipe(<ore:oreZinc>,                 <techreborn:dust:59>, <minecraft:san
 gs.addRecipe(<ore:oreCoralium>,             <abyssalcraft:coralium>*3, <minecraft:sand>);
 gs.addRecipe(<ore:oreAbyssalnite>,          <acintegration:dust>, <minecraft:sand>);
 gs.addRecipe(<ore:oreAquamarine>,           <astralsorcery:itemcraftingcomponent>*4, <minecraft:sand>);
-gs.addRecipe(<ore:obsidian>,                <thermalfoundation:material:770>, <minecraft:sand>);
-gs.addRecipe(<ore:coal>,                    <thermalfoundation:material:768>, <minecraft:sand>);
-gs.addRecipe(<ore:charcoal>,                <thermalfoundation:material:769>, <minecraft:sand>);
+gs.addRecipe(<ore:obsidian>,                <thermalfoundation:material:770>);
+gs.addRecipe(<ore:coal>,                    <thermalfoundation:material:768>);
+gs.addRecipe(<ore:charcoal>,                <thermalfoundation:material:769>);
 gs.addRecipe(<immersiveengineering:material:6>,   <immersiveengineering:material:17>); //Coal Coke
-gs.addRecipe(<techreborn:rubber_log>,             <ic2:misc_resource:4>);
-gs.addRecipe(<ic2:rubber_wood>,                   <ic2:misc_resource:4>);
 
     #Tier 2A
 gs.addRecipe(<ore:oreSaltpeter>,            <abyssalcraft:nitre>*3, <minecraft:sand>);
@@ -244,3 +234,5 @@ gs.addRecipe(<ore:orePlatinum>, <thermalfoundation:material:70>);
 gs.addRecipe(<ore:oreNickel>, <thermalfoundation:material:69>);
   #Tier 4
 gs.addRecipe(<ore:oreDreadedAbyssalnite>, <acintegration:dust:2>);
+
+print("----------------Crossroads End-------------------");

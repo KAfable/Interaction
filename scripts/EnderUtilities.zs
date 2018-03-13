@@ -8,6 +8,10 @@ recipes.remove(<enderutilities:enderpart>);
 	#Ebder Ally (Enchanced)
 recipes.remove(<enderutilities:enderpart:1>);
 
+
+	#Ender Sword
+recipes.remove(<enderutilities:endersword>);
+
 	#Nullfier
 recipes.remove(<enderutilities:nullifier>);
 recipes.addShaped(<enderutilities:nullifier>, [

@@ -500,42 +500,6 @@
 		},
 
 
-		"zinc": 
-		{
-			"distribution": "uniform",
-			"generator": 
-			{
-				"type": "plate",
-				"block": 
-				[
-					{
-						"name": "fp:erze",
-						"metadata": 1,
-						"weight": 25
-					},
-					{
-						"name": "minecraft:stone",
-						"weight": 75
-					}
-				],
-				"material": "minecraft:stone",
-				"radius": 16,
-				"height": 3
-			},
-			"cluster-count": 1,
-			"min-height": 5,
-			"max-height": 11,
-			"chunk-chance": 90,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": 
-			{
-				"restriction": "whitelist",
-				"value": [100]
-			}
-		},
-
-
 
 		"tin": 
 		{

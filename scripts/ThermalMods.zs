@@ -12,6 +12,10 @@ var tiers = [
   <ore:ingotSignalum>,
   <ore:ingotEnderium>] as IOreDictEntry[];
 
+  #Bronze Blend
+recipes.removeByRegex("thermalfoundation:material_2");
+recipes.addShapeless(dustBronze*2, [<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustTin>]);
+
 	#Compactor
 recipes.remove(<thermalexpansion:machine:5>);
 <thermalexpansion:machine:5>.addTooltip("Compactor recipe WIP");
@@ -20,6 +24,43 @@ recipes.remove(<thermalexpansion:machine:5>);
 recipes.remove(<thermalexpansion:augment:337>);
 <thermalexpansion:augment:337>.addTooltip("Disabled until Modtweaker adds Gear Compator functionality");
 	
+  #Dynamos - Steam
+var steamDynamo = <thermalexpansion:dynamo>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
+recipes.remove(steamDynamo);
+recipes.addShaped(steamDynamo, [
+  [null, fluxductIntermediate, null],
+  [electricPistonIntermediate, fluxductIntermediate, electricPistonIntermediate],
+  [<mob_grinding_utils:tank>, casingAdvanced, motorIntermediate]]);
+
+  #Dynamos - Magma
+var magmaDynamo = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
+recipes.remove(magmaDynamo);
+recipes.addShaped(magmaDynamo, [
+  [null, fluxductAdvanced, null],
+  [<thermalexpansion:tank>, fluxductAdvanced, <thermalexpansion:tank>],
+  [electricPistonAdvanced, casingAdvanced, motorAdvanced]]);
+
+  #Dynamos - Compression
+var compressionDynamo = <thermalexpansion:dynamo:2>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
+recipes.remove(compressionDynamo);
+recipes.addShaped(compressionDynamo, [
+  [null, fluxductAdvanced, null],
+  [electricPistonAdvanced, fluxductAdvanced, electricPistonAdvanced],
+  [<mob_grinding_utils:tank>, casingAdvanced, motorAdvanced]]);
+
+  #Dynamos - Reactant
+var reactantDynamo = <thermalexpansion:dynamo:3>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
+recipes.remove(reactantDynamo);
+recipes.addShaped(reactantDynamo, [
+  [null, fluxductAdvanced, null],
+  [electricPistonAdvanced, <extrautils2:spike_iron>, electricPistonAdvanced],
+  [motorAdvanced, casingAdvanced, motorAdvanced]]);
+
+  #Dynamos - Enervation
+recipes.remove(<thermalexpansion:dynamo:4>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
+  #Dynamos - Numisatic
+recipes.remove(<thermalexpansion:dynamo:5>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte}));
+
   #Fluiduct 
 recipes.remove(<thermaldynamics:duct_16>);
 recipes.addShaped(<thermaldynamics:duct_16>, [
@@ -47,11 +88,11 @@ recipes.remove(<thermaldynamics:duct_16:6>);
 recipes.remove(<thermaldynamics:duct_16:7>);
 
   #Fluxduct - Basic
-recipes.remove(<thermaldynamics:duct_0>);
-recipes.addShaped(<thermaldynamics:duct_0>*8, [
-  [<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>],
+recipes.remove(fluxductBasic);
+recipes.addShaped(fluxductBasic*4, [
+  [null , <ore:plateRubber>, null],
   [<ore:plateRedstone>,<forestry:chipsets>,<ore:plateRedstone>],
-  [<ic2:plate:4>,<ic2:plate:4>,<ic2:plate:4>]]);
+  [null , <ore:plateRubber>, null]]);
 
   #Hammers
 	#Hammer Repair
@@ -146,6 +187,19 @@ recipes.remove(<thermaldynamics:duct_32:6>);
 recipes.remove(<thermaldynamics:duct_32:7>);
 recipes.addShapeless(<thermaldynamics:duct_32:7>, [<thermaldynamics:duct_32:6>]);
 
+  #Pickaxes
+  #Pickaxes - Bronze
+mods.jei.JEI.removeAndHide(<thermalfoundation:tool.pickaxe_bronze>);
+
+
+  #Portable Tank
+recipes.remove(<thermalexpansion:tank>);
+recipes.addShaped(<thermalexpansion:tank>, [
+  [<ore:plateCopper>, <ore:blockGlass>, <ore:plateCopper>],
+  [<ore:blockGlass>, null, <ore:blockGlass>],
+  [<ore:plateCopper>, <ore:blockGlass>, <ore:plateCopper>]]);
+
+
 	#Satchels - Basic
 recipes.remove(<thermalexpansion:satchel>);
 recipes.addShaped(<thermalexpansion:satchel>, [
@@ -200,6 +254,12 @@ recipes.remove(<thermaldynamics:servo:4>);
 recipes.addShapeless(<thermaldynamics:servo:4>, [conveyorInsane]);
 <thermaldynamics:servo:4>.displayName = "Insane Servo";
 
+  #Tome of Knowledge
+recipes.remove(<thermalfoundation:tome_experience>);
+recipes.addShaped(<thermalfoundation:tome_experience> , [
+  [null, <ore:plateLapis>, null ],
+  [<ore:plateLiquifiedCoralium>, <minecraft:book>, <ore:plateLiquifiedCoralium>],
+  [null, <ore:plateLapis>, null]]);
 
 
 print("-------------------Thermal Suite End-------------------");

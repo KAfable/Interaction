@@ -2,10 +2,22 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
+import mods.artisanworktables.builder.RecipeBuilder;
 
-var tinCableInsulatedIC2 = <ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte});
-var copCableInsultedIC2 = <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte});
+print("----------------Forestry Start----------------");
 
+	#Bog Earth
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:dirt>, <minecraft:sand>, <minecraft:dirt>],
+    [<minecraft:sand>, <minecraft:rotten_flesh>, <minecraft:sand>],
+    [<minecraft:dirt>, <minecraft:sand>, <minecraft:dirt>]])
+  .addOutput(<forestry:bog_earth>*6)
+  .setFluid(<liquid:water>*100)
+  .create();
+
+	#Bronze Pickaxe (Survivalist's Pickaxe)
+mods.jei.JEI.removeAndHide(<forestry:bronze_pickaxe>);
 
 	#Carpenter
 recipes.remove(<forestry:carpenter>);
@@ -25,9 +37,9 @@ mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
 	#Circuit Board - Basic 
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>);
 recipes.addShaped(<forestry:chipsets>*2, [
-	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2],
+	[plateRubber, plateRubber, plateRubber],
 	[plateTin, plateTin, plateTin],
-	[tinCableInsulatedIC2, tinCableInsulatedIC2, tinCableInsulatedIC2]]);
+	[plateRubber, plateRubber, plateRubber]]);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets>, [
 	[null, null, null],
 	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
@@ -36,9 +48,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets>, [
 	#Circuit Board - Enhanced 
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>);
 recipes.addShaped(<forestry:chipsets:1>, [
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
-	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
+	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]]);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>, [
 	[null, null, null],
 	[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
@@ -50,51 +60,49 @@ mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as shor
 	#Circuit Board - Refined 
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
 recipes.addShaped(<forestry:chipsets:2>, [
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2],
-	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>],
-	[copCableInsultedIC2, copCableInsultedIC2, copCableInsultedIC2]]);
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, <ore:plateRefinedIron>]]);
 
 
 	#Farm - Arboretum
 recipes.removeByRegex("forestry:arboretum");
 recipes.addShaped(<forestry:arboretum>, [
 	[<ore:plateBronze>, <ore:treeSapling>, <ore:plateBronze>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <itank:blocktank>],
 	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
 
 	#Farm - Farm (Crops)
 recipes.removeByRegex("forestry:farm_crops");
 recipes.addShaped(<forestry:farm_crops>, [
 	[<ore:plateBronze>, <ore:listAllseed>, <ore:plateBronze>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <itank:blocktank>],
 	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
 
 	#Farm - Farm (Gourd)
 recipes.removeByRegex("forestry:farm_gourd");
 recipes.addShaped(<forestry:farm_gourd>, [
 	[<ore:plateBronze>, <minecraft:melon_block>, <ore:plateBronze>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <itank:blocktank>],
 	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
 
 	#Farm - Farm (Netherwart)
 recipes.removeByRegex("forestry:farm_nether");
 recipes.addShaped(<forestry:farm_nether>, [
 	[<ore:plateBronze>, <ore:cropNetherWart>, <ore:plateBronze>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <itank:blocktank>],
 	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
 
 	#Farm - Farm (Ender)
 recipes.removeByRegex("forestry:farm_ender");
 recipes.addShaped(<forestry:farm_ender>, [
 	[<ore:plateBronze>, <minecraft:chorus_fruit>, <ore:plateBronze>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <itank:blocktank>],
 	[<ore:plateBronze>, robotArmBasic, <ore:plateBronze>]]);
 
 	#Farm - Peat_bog
 recipes.removeByRegex("forestry:peat_bog");
 recipes.addShaped(<forestry:peat_bog>, [
 	[<ore:brickPeat>, processorBasic, <ore:brickPeat>],
-	[<cyclicmagic:block_vacuum>, casingBasic, <itank:blocktank>],
+	[<randomthings:itemcollector>, casingBasic, <charset:fluidtank>],
 	[<ore:brickPeat>, robotArmBasic, <ore:brickPeat>]]);
 
 	#Multifarm Materials
@@ -153,6 +161,9 @@ for i in 0 to 11 {
 		<forestry:ffarm>.withTag(tag), <contenttweaker:basicvalve>]);
 }
 
+	#Pickaxe Kit
+mods.jei.JEI.removeAndHide(<forestry:kit_pickaxe>);
+
 	#Sturdy Casing
 recipes.remove(<forestry:sturdy_machine>);
 recipes.addShaped(<forestry:sturdy_machine>, [
@@ -166,12 +177,13 @@ mods.jei.JEI.removeAndHide(<forestry:fabricator>);
 	#Soldering Iron
 mods.forestry.Carpenter.removeRecipe(<forestry:soldering_iron>);
 
-	#Peat Engine
+	#Peat-Fired Engine
 recipes.remove(<forestry:engine_peat>);
 recipes.addShaped(<forestry:engine_peat>, [
-	[null,<thermaldynamics:duct_0>,null],
-	[<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>],
-	[<ore:blockBronze>,<forestry:peat>,<ore:blockBronze>]]);
+	[null, fluxductBasic, null],
+	[<ore:gearBronze>, <forestry:chipsets>, <ore:gearBronze>],
+	[<ore:blockBronze>, electricPistonBasic, <ore:blockBronze>]]);
+
 	#Biogas Engine
 recipes.remove(<forestry:engine_biogas>);
 recipes.addShaped(<forestry:engine_biogas>, [
@@ -186,3 +198,6 @@ recipes.addShaped(<forestry:soldering_iron>, [
 	[null,<ore:ingotIron>,null],
 	[<ore:ingotIron>,null,<ore:ingotIron>],
 	[null,null,<ore:ingotSteel>]]);
+
+
+print("-----------------Forestry End-----------------");
